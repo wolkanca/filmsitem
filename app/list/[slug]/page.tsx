@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getMovies } from '@/lib/db';
 import { slugify } from '@/lib/utils';
-import MovieCard from '@/components/MovieCard';
+import ArchiveGrid from '@/components/ArchiveGrid';
 import Link from 'next/link';
 import { ArrowLeft, List } from 'lucide-react';
 
@@ -97,12 +97,8 @@ export default async function ListDetailPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Movies Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        {listMovies.map((movie) => (
-          <MovieCard key={movie.imdbId} movie={movie} />
-        ))}
-      </div>
+      {/* Movies Grid with sorting + infinite scroll */}
+      <ArchiveGrid movies={listMovies} flat defaultSort="myrating-desc" />
     </div>
   );
 }

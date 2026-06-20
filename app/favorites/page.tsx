@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { getMovies } from '@/lib/db';
-import MovieCard from '@/components/MovieCard';
+import ArchiveGrid from '@/components/ArchiveGrid';
 import { Heart } from 'lucide-react';
 
 export const revalidate = 3600; // Revalidate every hour (ISR)
@@ -15,8 +15,7 @@ export default async function FavoritesPage() {
   
   // Filter movies rated 8, 9, or 10
   const favoriteMovies = movies
-    .filter((m) => m.myRating >= 8)
-    .sort((a, b) => b.myRating - a.myRating || b.imdbRating - a.imdbRating);
+    .filter((m) => m.myRating >= 8);
 
   return (
     <div className="space-y-8 animate-fade-in">
@@ -43,12 +42,7 @@ export default async function FavoritesPage() {
           </p>
         </div>
       ) : (
-        /* Favorites Grid */
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {favoriteMovies.map((movie) => (
-            <MovieCard key={movie.imdbId} movie={movie} />
-          ))}
-        </div>
+        <ArchiveGrid movies={favoriteMovies} flat defaultSort="myrating-desc" />
       )}
     </div>
   );

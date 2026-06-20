@@ -11,7 +11,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   return {
-    title: `${resolvedParams.year} Yılı Yapımları - Arşiv`,
+    title: `${resolvedParams.year} Yılı Yapımları`,
     description: `Kütüphanemdeki ${resolvedParams.year} yılı yapımı filmler, incelemelerim ve kişisel puanlarım.`,
   };
 }

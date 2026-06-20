@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     default: 'Film Günlüğüm - Kişisel Sinema Arşivim',
-    template: '%s | Film Günlüğüm',
+    template: '%s - Film Günlüğüm',
   },
   description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
   keywords: ['film günlüğü', 'sinema arşivi', 'izleme geçmişi', 'film puanları', 'IMDb', 'sinefil'],

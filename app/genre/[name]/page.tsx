@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const decodedName = decodeURIComponent(resolvedParams.name);
   return {
-    title: `${decodedName} Filmleri - Arşiv`,
+    title: `${decodedName} Filmleri`,
     description: `Kütüphanemdeki en iyi ${decodedName} türündeki filmler, incelemelerim ve kişisel puanlarım.`,
   };
 }

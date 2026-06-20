@@ -27,8 +27,11 @@ export default async function HomePage() {
     .sort((a, b) => new Date(b.watchDate).getTime() - new Date(a.watchDate).getTime())
     .slice(0, 5);
 
-  // Pick a single featured banner movie from high-rated ones
-  const featuredMovie = movies.find(m => m.myRating >= 8) || movies[0];
+  // Pick a single featured banner movie from high-rated ones (preferring those with trailers)
+  const featuredMovie =
+    movies.find(m => m.myRating >= 8 && m.trailerYoutubeId) ||
+    movies.find(m => m.myRating >= 8) ||
+    movies[0];
 
   return (
     <div className="space-y-12">
@@ -125,54 +128,72 @@ export default async function HomePage() {
         
         {/* Recommended Movie Preview */}
         {featuredMovie && (
-          <div className="mt-6 flex flex-col md:flex-row gap-6 bg-zinc-950/40 border border-white/5 rounded-2xl p-4 sm:p-6 items-center">
-            <div className="relative aspect-[2/3] w-36 sm:w-44 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
-              {featuredMovie.poster ? (
-                <Image
-                  src={featuredMovie.poster}
-                  alt={featuredMovie.title}
-                  fill
-                  sizes="(max-width: 640px) 150px, 200px"
-                  className="object-cover"
-                />
-              ) : (
-                <div className="flex h-full w-full items-center justify-center">🎬</div>
-              )}
-            </div>
-            <div className="flex-grow space-y-4 text-center md:text-left">
-              <div>
-                <span className="text-[10px] bg-brand-primary/10 text-brand-primary border border-brand-primary/20 px-2 py-0.5 rounded-md font-semibold">
-                  TAVSİYE EDİLEN
-                </span>
-                <h3 className="text-xl sm:text-2xl font-black text-white mt-1">
-                  {featuredMovie.title}{' '}
-                  <span className="text-zinc-500 font-normal text-lg">({featuredMovie.year})</span>
-                </h3>
-                <p className="text-xs text-zinc-400 mt-1">
-                  Yönetmen: {featuredMovie.director} • Tür: {featuredMovie.genres.join(', ')}
+          <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-zinc-950/40 border border-white/5 rounded-2xl p-4 sm:p-6 items-stretch">
+            {/* Left side: Poster + Movie Details */}
+            <div className={`flex flex-col md:flex-row gap-6 items-center md:items-start ${featuredMovie.trailerYoutubeId ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
+              <div className="relative aspect-[2/3] w-36 sm:w-40 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+                {featuredMovie.poster ? (
+                  <Image
+                    src={featuredMovie.poster}
+                    alt={featuredMovie.title}
+                    fill
+                    sizes="(max-width: 640px) 150px, 200px"
+                    className="object-cover"
+                  />
+                ) : (
+                  <div className="flex h-full w-full items-center justify-center">🎬</div>
+                )}
+              </div>
+              <div className="flex-grow space-y-4 text-center md:text-left flex flex-col justify-between h-full">
+                <div className="space-y-1">
+                  <span className="text-[10px] bg-brand-primary/10 text-brand-primary border border-brand-primary/20 px-2 py-0.5 rounded-md font-semibold">
+                    TAVSİYE EDİLEN
+                  </span>
+                  <h3 className="text-xl sm:text-2xl font-black text-white mt-1">
+                    {featuredMovie.title}{' '}
+                    <span className="text-zinc-500 font-normal text-lg">({featuredMovie.year})</span>
+                  </h3>
+                  <p className="text-xs text-zinc-400 mt-1">
+                    Yönetmen: {featuredMovie.director} • Tür: {featuredMovie.genres.join(', ')}
+                  </p>
+                </div>
+                <p className="text-sm text-zinc-400 line-clamp-3 leading-relaxed max-w-3xl">
+                  {featuredMovie.overview}
                 </p>
-              </div>
-              <p className="text-sm text-zinc-400 line-clamp-3 leading-relaxed max-w-3xl">
-                {featuredMovie.overview}
-              </p>
-              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
-                <div className="flex items-center gap-1">
-                  <span className="text-xs text-zinc-500">Benim Puanım:</span>
-                  <Star className="w-4 h-4 text-brand-accent fill-brand-accent" />
-                  <span className="text-sm font-bold text-white">{featuredMovie.myRating}/10</span>
+                <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                  <div className="flex items-center gap-1">
+                    <span className="text-xs text-zinc-500">Benim Puanım:</span>
+                    <Star className="w-4 h-4 text-brand-accent fill-brand-accent" />
+                    <span className="text-sm font-bold text-white">{featuredMovie.myRating}/10</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <span className="text-xs text-zinc-500">IMDb Puanı:</span>
+                    <span className="text-sm font-bold text-zinc-300">{featuredMovie.imdbRating}</span>
+                  </div>
+                  <Link
+                    href={`/movie/${featuredMovie.imdbId}`}
+                    className="text-xs text-brand-primary font-bold hover:underline inline-flex items-center gap-1"
+                  >
+                    Detayları Gör <ArrowRight className="w-3 h-3" />
+                  </Link>
                 </div>
-                <div className="flex items-center gap-1">
-                  <span className="text-xs text-zinc-500">IMDb Puanı:</span>
-                  <span className="text-sm font-bold text-zinc-300">{featuredMovie.imdbRating}</span>
-                </div>
-                <Link
-                  href={`/movie/${featuredMovie.imdbId}`}
-                  className="text-xs text-brand-primary font-bold hover:underline inline-flex items-center gap-1"
-                >
-                  Detayları Gör <ArrowRight className="w-3 h-3" />
-                </Link>
               </div>
             </div>
+
+            {/* Right side: Trailer Player */}
+            {featuredMovie.trailerYoutubeId && (
+              <div className="lg:col-span-5 w-full flex flex-col justify-center">
+                <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/5 shadow-lg bg-black">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${featuredMovie.trailerYoutubeId}?autoplay=0&rel=0`}
+                    title={`${featuredMovie.title} Fragman`}
+                    className="absolute inset-0 h-full w-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </section>
