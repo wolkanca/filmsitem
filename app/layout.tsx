@@ -11,12 +11,12 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Film Günlüğüm - Kişisel Sinema Arşivim',
-    template: '%s - Film Günlüğüm',
+    default: 'İzlediklerim - Kişisel Sinema Arşivim',
+    template: '%s - İzlediklerim',
   },
-  description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
+  description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü. Volkan Yılmaz',
   keywords: ['film günlüğü', 'sinema arşivi', 'izleme geçmişi', 'film puanları', 'IMDb', 'sinefil'],
-  authors: [{ name: 'Sinefil' }],
+  authors: [{ name: 'Volkan Yılmaz' }],
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },

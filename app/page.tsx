@@ -18,10 +18,14 @@ export default async function HomePage() {
   const PLACEHOLDER_PATTERNS = ['images.unsplash.com', 'unsplash.com/photo', 'via.placeholder.com', 'placehold.co', 'placeholder.com', 'dummyimage.com'];
   const hasRealPoster = (url?: string) => !!url && !PLACEHOLDER_PATTERNS.some(p => url.includes(p));
 
-  const highestRated = [...movies]
-    .filter(m => m.myRating > 0 && hasRealPoster(m.poster))
-    .sort((a, b) => b.myRating - a.myRating || b.imdbRating - a.imdbRating)
-    .slice(0, 5);
+  // Başyapıtlar havuzu: puan >= 8 ve gerçek posteri olan filmler
+  const masterpieces = [...movies].filter(m => m.myRating >= 8 && hasRealPoster(m.poster));
+  // Fisher-Yates shuffle → rastgele 5 seç
+  for (let i = masterpieces.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [masterpieces[i], masterpieces[j]] = [masterpieces[j], masterpieces[i]];
+  }
+  const highestRated = masterpieces.slice(0, 5);
 
   const recentlyWatched = [...movies]
     .sort((a, b) => new Date(b.watchDate).getTime() - new Date(a.watchDate).getTime())
@@ -35,7 +39,7 @@ export default async function HomePage() {
 
   return (
     <div className="space-y-12">
-      
+
       {/* Hero Section */}
       <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/40 p-8 sm:p-12 lg:p-16">
         {/* Backdrop glass blur effect */}
@@ -60,10 +64,10 @@ export default async function HomePage() {
               <Sparkles className="w-3.5 h-3.5" /> Kişisel Sinema Günlüğüm
             </span>
             <h1 className="text-4xl sm:text-5xl font-black tracking-tight leading-tight">
-              🎬 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">Film Günlüğüm</span>
+              🎬 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">İzlediklerim</span>
             </h1>
             <p className="text-base sm:text-lg text-zinc-400 max-w-xl leading-relaxed">
-              Yıllardır izlediğim filmler, verdiğim puanlar ve kişisel sinema arşivim. Hoş geldiniz, benimle birlikte sinema yolculuğumu keşfedin.
+              Yıllardır izlediğim filmler, verdiğim puanlar ve kişisel sinema arşivim. Hoş geldiniz, benimle birlikte sinema yolculuğumu keşfedin. <br />Volkan Yılmaz
             </p>
 
             {/* CTA Buttons */}
@@ -91,7 +95,7 @@ export default async function HomePage() {
               <span className="text-3xl font-black text-white glow-text-red">{stats.totalCount}</span>
               <span className="text-xs text-zinc-500 font-semibold mt-1">Toplam İzlenen</span>
             </div>
-            
+
             <div className="glass p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center">
               <Star className="w-6 h-6 text-brand-accent mb-2 fill-brand-accent/10" />
               <span className="text-3xl font-black text-white">{stats.averageRating}</span>
@@ -125,7 +129,7 @@ export default async function HomePage() {
             Çarkı Döndür 🎰
           </Link>
         </div>
-        
+
         {/* Recommended Movie Preview */}
         {featuredMovie && (
           <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-zinc-950/40 border border-white/5 rounded-2xl p-4 sm:p-6 items-stretch">
