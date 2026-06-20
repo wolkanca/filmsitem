@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-zinc-500 text-sm">
             © {currentYear}{' '}
-            <span className="text-zinc-300 font-semibold">Film Günlüğüm</span>
+            <span className="text-zinc-300 font-semibold">İzlediklerim</span>
             {' '}— Kişisel Sinema Arşivi
           </p>
           <div className="flex items-center gap-3 text-sm text-zinc-500">
@@ -16,7 +16,7 @@ export default function Footer() {
                 href="https://wolkanca.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-primary hover:text-brand-secondary font-semibold transition-colors"
+                className="hover:text-brand-secondary font-semibold transition-colors"
               >
                 Volkan Yılmaz
               </a>
