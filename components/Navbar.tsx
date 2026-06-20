@@ -35,22 +35,29 @@ export default function Navbar() {
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
-              
+
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    isActive
-                      ? 'bg-gradient-to-r from-red-950/40 to-rose-950/40 border border-brand-primary/30 text-white shadow-[0_0_15px_rgba(239,68,68,0.15)]'
-                      : 'text-zinc-400 hover:text-white hover:bg-white/5 border border-transparent'
-                  }`}
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${isActive
+                    ? 'bg-gradient-to-r from-red-950/40 to-rose-950/40 border border-brand-primary/30 text-white shadow-[0_0_15px_rgba(239,68,68,0.15)]'
+                    : 'text-zinc-400 hover:text-white hover:bg-white/5 border border-transparent'
+                    }`}
                 >
                   <Icon className={`w-4 h-4 ${isActive ? 'text-brand-primary animate-pulse' : 'text-zinc-500'}`} />
                   {item.name}
                 </Link>
               );
             })}
+            <a
+              href="https://www.imdb.com/user/p.jrcoverqguo4wfi652fsteuhpi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-white/5 border border-transparent transition-all duration-300"
+            >
+              <span className="px-1.5 py-0.5 rounded bg-[#f5c518] text-black text-[10px] font-extrabold leading-none">IMDb</span>
+            </a>
           </div>
 
           {/* Mobile Menu Icon / Indicator */}
@@ -58,22 +65,30 @@ export default function Navbar() {
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
-              
+
               return (
                 <Link
                   key={item.href}
                   href={item.href}
                   aria-label={item.name}
-                  className={`p-2 rounded-lg transition-all duration-300 ${
-                    isActive
-                      ? 'bg-gradient-to-r from-red-950/40 to-rose-950/40 border border-brand-primary/30 text-white'
-                      : 'text-zinc-400 hover:text-white'
-                  }`}
+                  className={`p-2 rounded-lg transition-all duration-300 ${isActive
+                    ? 'bg-gradient-to-r from-red-950/40 to-rose-950/40 border border-brand-primary/30 text-white'
+                    : 'text-zinc-400 hover:text-white'
+                    }`}
                 >
                   <Icon className="w-4 h-4" />
                 </Link>
               );
             })}
+            <a
+              href="https://www.imdb.com/user/p.jrcoverqguo4wfi652fsteuhpi"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="IMDb Profilim"
+              className="p-2 rounded-lg text-zinc-400 hover:text-white transition-all duration-300 flex items-center justify-center"
+            >
+              <span className="px-1.5 py-0.5 rounded bg-[#f5c518] text-black text-[10px] font-extrabold leading-none">IMDb</span>
+            </a>
           </div>
         </div>
       </div>
