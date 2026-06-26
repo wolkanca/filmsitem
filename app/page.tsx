@@ -32,10 +32,20 @@ export default async function HomePage() {
     .slice(0, 5);
 
   // Pick a single featured banner movie from high-rated ones (preferring those with trailers)
-  const featuredMovie =
-    movies.find(m => m.myRating >= 8 && m.trailerYoutubeId) ||
-    movies.find(m => m.myRating >= 8) ||
-    movies[0];
+
+  // 1. Öne çıkan film için bir havuz oluştur
+  // Öncelik: Puanı >= 8 ve fragmanı olanlar. Yoksa sadece puanı >= 8 olanlar. O da yoksa tüm filmler.
+  const highRatedWithTrailer = movies.filter(m => m.myRating >= 8 && m.trailerYoutubeId);
+  const highRated = movies.filter(m => m.myRating >= 8);
+  const featuredPool = highRatedWithTrailer.length > 0 ? highRatedWithTrailer : (highRated.length > 0 ? highRated : movies);
+
+  // 2. Bugünün benzersiz gün numarasını hesapla (1 Ocak 1970'ten bu yana geçen toplam gün)
+  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+
+  // 3. Havuzdaki film sayısına göre modulo (%) alarak bugünün filmini seç
+  // Bu sayede indeks her gün 1 artar ve liste bitince başa döner.
+  const featuredMovie = featuredPool[currentDay % featuredPool.length];
+
 
   return (
     <div className="space-y-12">
