@@ -30,9 +30,23 @@ export default async function HomePage() {
   }
   const highestRated = masterpieces.slice(0, 5);
 
-  const recentlyWatched = [...movies]
-    .sort((a, b) => new Date(b.watchDate).getTime() - new Date(a.watchDate).getTime())
-    .slice(0, 5);
+  // Keşfedilmemiş Hazineler: Benim yüksek puan verip IMDb'de düşük kalan filmler
+  const hiddenGemsPool = [...movies].filter(
+    m => m.myRating >= 7 && m.imdbRating > 0 && m.imdbRating <= 6.5 && (m.myRating - m.imdbRating) >= 2 && hasRealPoster(m.poster)
+  );
+  // Havuz küçükse kriterleri biraz gevşet
+  const hiddenGemsPoolFallback = hiddenGemsPool.length >= 5
+    ? hiddenGemsPool
+    : [...movies].filter(
+        m => m.myRating > 0 && m.imdbRating > 0 && (m.myRating - m.imdbRating) >= 1.5 && hasRealPoster(m.poster)
+      );
+  const gemsSource = hiddenGemsPoolFallback.length >= 5 ? hiddenGemsPoolFallback : hiddenGemsPool;
+  // Fisher-Yates shuffle → rastgele 5 seç
+  for (let i = gemsSource.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [gemsSource[i], gemsSource[j]] = [gemsSource[j], gemsSource[i]];
+  }
+  const hiddenGems = gemsSource.slice(0, 5);
 
   // Pick a single featured banner movie from high-rated ones (preferring those with trailers)
 
@@ -249,22 +263,27 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Son İzlediklerim Geçmişi */}
-      <section className="space-y-6">
-        <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
-          <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <span>📅</span> Son İzleme Geçmişim
-          </h2>
-          <Link href="/movies" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
-            İzleme Geçmişi <ArrowRight className="w-3 h-3" />
-          </Link>
-        </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-          {recentlyWatched.map((movie) => (
-            <MovieCard key={movie.imdbId} movie={movie} />
-          ))}
-        </div>
-      </section>
+      {/* Keşfedilmemiş Hazineler */}
+      {hiddenGems.length > 0 && (
+        <section className="space-y-6">
+          <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
+            <div>
+              <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
+                <span>🌟</span> Keşfedilmemiş Hazineler
+              </h2>
+              <p className="text-xs text-zinc-500 mt-1">IMDb&apos;de düşük puanlı ama benim favorilerim olan sürpriz yapımlar</p>
+            </div>
+            <Link href="/movies?sort=rating" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
+              Tümünü Gör <ArrowRight className="w-3 h-3" />
+            </Link>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            {hiddenGems.map((movie) => (
+              <MovieCard key={movie.imdbId} movie={movie} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Blog Yazıları */}
       {blogPosts.length > 0 && (
