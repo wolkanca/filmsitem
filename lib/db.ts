@@ -19,7 +19,21 @@ export async function getMovies(): Promise<Movie[]> {
 
 export async function getMovieById(imdbId: string): Promise<Movie | null> {
   const movies = await getMovies();
-  return movies.find((m) => m.imdbId === imdbId) || null;
+  const found = movies.find((m) => m.imdbId === imdbId);
+  if (found) return found;
+
+  // Search inside nested episodes and return the parent series
+  for (const m of movies) {
+    if (m.seasons) {
+      for (const s of m.seasons) {
+        const ep = s.episodes.find((e) => e.imdbId === imdbId);
+        if (ep) {
+          return m;
+        }
+      }
+    }
+  }
+  return null;
 }
 
 export async function getMoviesByList(listName: string): Promise<Movie[]> {
@@ -71,7 +85,41 @@ const MONTH_NAMES_TR = [
 ];
 
 export async function getStats(): Promise<Stats> {
-  const movies = await getMovies();
+  const rawMovies = await getMovies();
+  
+  // Flatten nested episodes into virtual movie items for accurate stats calculation
+  const movies: Movie[] = [];
+  rawMovies.forEach(m => {
+    if ((m.type === 'TV Series' || m.type === 'TV Mini Series') && m.seasons && m.seasons.length > 0) {
+      m.seasons.forEach(s => {
+        s.episodes.forEach(ep => {
+          movies.push({
+            imdbId: ep.imdbId,
+            title: ep.title,
+            originalTitle: ep.title,
+            year: m.year,
+            type: 'TV Episode',
+            myRating: ep.myRating,
+            watchDate: ep.watchDate,
+            listName: m.listName,
+            poster: m.poster,
+            backdrop: m.backdrop,
+            overview: ep.overview || m.overview || '',
+            genres: m.genres || [],
+            runtime: ep.runtime || m.runtime || 0,
+            cast: m.cast || [],
+            director: m.director || '',
+            writers: m.writers || [],
+            imdbRating: ep.imdbRating || m.imdbRating || 0,
+            tmdbRating: ep.imdbRating || m.imdbRating || 0,
+            releaseDate: m.releaseDate
+          });
+        });
+      });
+    } else {
+      movies.push(m);
+    }
+  });
   
   if (movies.length === 0) {
     return {

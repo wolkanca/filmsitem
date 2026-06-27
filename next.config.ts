@@ -9,7 +9,8 @@ const nextConfig: NextConfig = {
       "m.media-amazon.com",
       "ia.media-imdb.com",
       "img.omdbapi.com",
-      "img.youtube.com"
+      "img.youtube.com",
+      "i0.wp.com"
     ],
   },
 

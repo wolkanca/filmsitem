@@ -60,6 +60,55 @@ function parseCSVLine(line) {
   return result;
 }
 
+// Parse episode title to extract parent show name, season, and episode numbers
+function parseEpisodeTitle(title) {
+  let match = title.match(/^(.*?):\s*#(\d+)\.(\d+)$/);
+  if (match) {
+    return {
+      parentTitle: match[1].trim(),
+      seasonNumber: parseInt(match[2], 10),
+      episodeNumber: parseInt(match[3], 10)
+    };
+  }
+
+  match = title.match(/^(.*?):\s*(?:Season|Sezon|S)\s*(\d+)\s*(?:Episode|Bölüm|B|E)\s*(\d+)$/i);
+  if (match) {
+    return {
+      parentTitle: match[1].trim(),
+      seasonNumber: parseInt(match[2], 10),
+      episodeNumber: parseInt(match[3], 10)
+    };
+  }
+
+  match = title.match(/^(.*?):\s*(?:Avsnitt|Episode|Bölüm|B|E|Ep)\s*(\d+)$/i);
+  if (match) {
+    return {
+      parentTitle: match[1].trim(),
+      seasonNumber: 1,
+      episodeNumber: parseInt(match[2], 10)
+    };
+  }
+
+  const colonIndex = title.indexOf(':');
+  if (colonIndex > 0) {
+    const parentTitle = title.substring(0, colonIndex).trim();
+    const episodeTitle = title.substring(colonIndex + 1).trim();
+    const numMatch = episodeTitle.match(/\d+/);
+    const episodeNumber = numMatch ? parseInt(numMatch[0], 10) : 1;
+    return {
+      parentTitle,
+      seasonNumber: 1,
+      episodeNumber
+    };
+  }
+
+  return {
+    parentTitle: title,
+    seasonNumber: 1,
+    episodeNumber: 1
+  };
+}
+
 // Find a CSV file in the parent directory if not provided
 function findCSVFile() {
   const files = fs.readdirSync(path.join(__dirname, '..'));
@@ -164,7 +213,7 @@ async function start() {
     indexMap[normalized] = idx;
   });
 
-  const movies = [];
+  let movies = [];
   console.log(`Parsing ${lines.length - 1} records...`);
 
   // Process rows
@@ -224,6 +273,109 @@ async function start() {
   }
 
   console.log(`Parsed ${movies.length} valid entries.`);
+
+  // Group TV Episodes under their parent TV Series to avoid cluttering the main lists
+  const standaloneList = [];
+  const episodesList = [];
+
+  movies.forEach(item => {
+    if (item.type === 'TV Episode') {
+      episodesList.push(item);
+    } else {
+      standaloneList.push(item);
+    }
+  });
+
+  const seriesMap = {};
+  standaloneList.forEach(item => {
+    if (item.type === 'TV Series' || item.type === 'TV Mini Series') {
+      seriesMap[item.title.toLowerCase()] = item;
+      if (item.originalTitle) {
+        seriesMap[item.originalTitle.toLowerCase()] = item;
+      }
+    }
+  });
+
+  episodesList.forEach(ep => {
+    const { parentTitle, seasonNumber, episodeNumber } = parseEpisodeTitle(ep.title);
+    const parentTitleLower = parentTitle.toLowerCase();
+
+    let parentSeries = seriesMap[parentTitleLower];
+    if (!parentSeries) {
+      parentSeries = standaloneList.find(s =>
+        (s.type === 'TV Series' || s.type === 'TV Mini Series') &&
+        (s.title.toLowerCase().includes(parentTitleLower) || parentTitleLower.includes(s.title.toLowerCase()))
+      );
+    }
+
+    if (!parentSeries) {
+      // Create a mock parent series for the episode
+      const parentId = 'parent_' + parentTitleLower.replace(/[^a-z0-9]/g, '');
+      parentSeries = {
+        imdbId: parentId,
+        title: parentTitle,
+        originalTitle: parentTitle,
+        year: ep.year,
+        type: 'TV Series',
+        myRating: 0,
+        watchDate: ep.watchDate,
+        listName: [],
+        poster: '',
+        backdrop: '',
+        overview: 'Dizi detayları yükleniyor...',
+        genres: ep.genres || [],
+        runtime: ep.runtime || 0,
+        cast: [],
+        director: '',
+        writers: [],
+        imdbRating: ep.imdbRating || 0,
+        tmdbRating: ep.tmdbRating || 0,
+        releaseDate: ep.releaseDate || '',
+        seasons: []
+      };
+      standaloneList.push(parentSeries);
+      seriesMap[parentTitleLower] = parentSeries;
+      console.log(`Created mock parent series for: "${parentTitle}"`);
+    }
+
+    if (!parentSeries.seasons) {
+      parentSeries.seasons = [];
+    }
+
+    let season = parentSeries.seasons.find(s => s.seasonNumber === seasonNumber);
+    if (!season) {
+      season = {
+        seasonNumber: seasonNumber,
+        episodes: []
+      };
+      parentSeries.seasons.push(season);
+    }
+
+    season.episodes.push({
+      imdbId: ep.imdbId,
+      title: ep.title,
+      episodeNumber: episodeNumber,
+      seasonNumber: seasonNumber,
+      myRating: ep.myRating,
+      watchDate: ep.watchDate,
+      runtime: ep.runtime || 0,
+      imdbRating: ep.imdbRating || 0,
+      overview: ep.overview || ''
+    });
+  });
+
+  // Sort seasons and episodes in each series
+  standaloneList.forEach(item => {
+    if (item.seasons) {
+      item.seasons.sort((a, b) => a.seasonNumber - b.seasonNumber);
+      item.seasons.forEach(s => {
+        s.episodes.sort((a, b) => a.episodeNumber - b.episodeNumber);
+      });
+    }
+  });
+
+  console.log(`Grouped ${episodesList.length} episodes under parent series. Total unique items for import: ${standaloneList.length}`);
+  movies = standaloneList;
   
   if (TMDB_API_KEY) {
     console.log(`Enriching data using TMDb API (Key: ${TMDB_API_KEY.substring(0, 4)}***)...`);

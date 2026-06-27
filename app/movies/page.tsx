@@ -10,9 +10,9 @@ import { Search, SlidersHorizontal, LayoutGrid, List, RotateCcw, Sparkles, Play,
 type TabType = 'all' | 'movie' | 'tv';
 
 const TABS: { key: TabType; label: string; icon: React.ReactNode }[] = [
-  { key: 'all',   label: 'Tümü',   icon: <Library className="w-4 h-4" /> },
+  { key: 'all', label: 'Tümü', icon: <Library className="w-4 h-4" /> },
   { key: 'movie', label: 'Filmler', icon: <Film className="w-4 h-4" /> },
-  { key: 'tv',    label: 'Diziler', icon: <Tv className="w-4 h-4" /> },
+  { key: 'tv', label: 'Diziler', icon: <Tv className="w-4 h-4" /> },
 ];
 
 // A movie is considered TV if its type starts with "TV" or equals known TV types
@@ -36,14 +36,18 @@ export default function MoviesPage() {
   const [loading, setLoading] = useState(true);
   const [isAdmin, setIsAdmin] = useState(false);
 
-  // Active tab — default 'movie', persisted in localStorage
-  const [activeTab, setActiveTab] = useState<TabType>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('movies-active-tab') as TabType | null;
-      if (saved === 'all' || saved === 'movie' || saved === 'tv') return saved;
+  // Active tab — default 'all', persisted in localStorage
+  const [activeTab, setActiveTab] = useState<TabType>('all');
+  const [isMounted, setIsMounted] = useState(false);
+
+  // Load from localStorage on mount to avoid Next.js hydration mismatches
+  useEffect(() => {
+    const saved = localStorage.getItem('movies-active-tab') as TabType | null;
+    if (saved === 'all' || saved === 'movie' || saved === 'tv') {
+      setActiveTab(saved);
     }
-    return 'movie';
-  });
+    setIsMounted(true);
+  }, []);
 
   // Load movies from local API
   useEffect(() => {
@@ -100,8 +104,9 @@ export default function MoviesPage() {
     return Array.from(new Set(all)).sort((a, b) => b - a);
   }, [tabFilteredMovies]);
 
-  // Persist tab selection + reset filters on tab change
+  // Persist tab selection + reset filters on tab change (only after mounting)
   useEffect(() => {
+    if (!isMounted) return;
     localStorage.setItem('movies-active-tab', activeTab);
     setSearchQuery('');
     setSelectedGenre('');
@@ -109,7 +114,7 @@ export default function MoviesPage() {
     setMinMyRating('');
     setMinImdbRating('');
     setSortBy('watchDate-desc');
-  }, [activeTab]);
+  }, [activeTab, isMounted]);
 
   // Reset all filters
   const resetFilters = () => {
@@ -254,11 +259,10 @@ export default function MoviesPage() {
 
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all duration-300 ${
-              showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating
+            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all duration-300 ${showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating
                 ? 'bg-brand-primary/10 border-brand-primary/30 text-brand-primary'
                 : 'bg-zinc-900 border-white/5 text-zinc-400 hover:text-white'
-            }`}
+              }`}
           >
             <SlidersHorizontal className="w-4 h-4" />
             Filtreler
@@ -267,18 +271,16 @@ export default function MoviesPage() {
           <div className="bg-zinc-950/60 p-1 rounded-xl border border-white/5 flex items-center gap-1">
             <button
               onClick={() => setViewMode('grid')}
-              className={`p-2 rounded-lg transition-all ${
-                viewMode === 'grid' ? 'bg-zinc-800 text-brand-primary shadow' : 'text-zinc-500 hover:text-zinc-300'
-              }`}
+              className={`p-2 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-zinc-800 text-brand-primary shadow' : 'text-zinc-500 hover:text-zinc-300'
+                }`}
               aria-label="Grid view"
             >
               <LayoutGrid className="w-4 h-4" />
             </button>
             <button
               onClick={() => setViewMode('list')}
-              className={`p-2 rounded-lg transition-all ${
-                viewMode === 'list' ? 'bg-zinc-800 text-brand-primary shadow' : 'text-zinc-500 hover:text-zinc-300'
-              }`}
+              className={`p-2 rounded-lg transition-all ${viewMode === 'list' ? 'bg-zinc-800 text-brand-primary shadow' : 'text-zinc-500 hover:text-zinc-300'
+                }`}
               aria-label="List view"
             >
               <List className="w-4 h-4" />
@@ -295,21 +297,19 @@ export default function MoviesPage() {
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`relative flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                active
+              className={`relative flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${active
                   ? 'bg-brand-primary text-white shadow-[0_4px_15px_rgba(239,68,68,0.35)]'
                   : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
-              }`}
+                }`}
             >
               {tab.icon}
               {tab.label}
               {/* Count badge */}
               <span
-                className={`text-[10px] font-black px-1.5 py-0.5 rounded-md leading-none ${
-                  active
+                className={`text-[10px] font-black px-1.5 py-0.5 rounded-md leading-none ${active
                     ? 'bg-white/20 text-white'
                     : 'bg-zinc-800 text-zinc-400'
-                }`}
+                  }`}
               >
                 {tabCounts[tab.key]}
               </span>
@@ -431,8 +431,8 @@ export default function MoviesPage() {
             activeTab === 'tv'
               ? 'Dizi adı, yönetmen veya oyuncu ara...'
               : activeTab === 'movie'
-              ? 'Film adı, yönetmen veya oyuncu ara...'
-              : 'Film adı, yönetmen veya oyuncu ara...'
+                ? 'Film adı, yönetmen veya oyuncu ara...'
+                : 'Film adı, yönetmen veya oyuncu ara...'
           }
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}

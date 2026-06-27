@@ -1,3 +1,20 @@
+export interface Episode {
+  imdbId: string;
+  title: string;
+  episodeNumber: number;
+  seasonNumber: number;
+  myRating: number;
+  watchDate: string;
+  runtime: number;
+  imdbRating: number;
+  overview?: string;
+}
+
+export interface Season {
+  seasonNumber: number;
+  episodes: Episode[];
+}
+
 export interface Movie {
   imdbId: string;
   title: string;
@@ -28,4 +45,5 @@ export interface Movie {
   tmdbRating: number;
   releaseDate?: string;
   trailerYoutubeId?: string;
+  seasons?: Season[];
 }

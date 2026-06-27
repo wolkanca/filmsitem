@@ -1,14 +1,17 @@
 import Link from 'next/link';
 import { getMovies, getStats } from '@/lib/db';
+import { getBlogPosts } from '@/lib/blog';
 import MovieCard from '@/components/MovieCard';
-import { Star, Film, Clock, Award, Sparkles, ArrowRight } from 'lucide-react';
+import { Star, Film, Clock, Award, Sparkles, ArrowRight, ExternalLink, Newspaper } from 'lucide-react';
 import Image from 'next/image';
+import { formatDate } from '@/lib/utils';
 
 export const revalidate = 3600; // Revalidate every hour (ISR)
 
 export default async function HomePage() {
   const movies = await getMovies();
   const stats = await getStats();
+  const blogPosts = await getBlogPosts(4);
 
   // Sorting movies for sections
   const recentlyAdded = [...movies]
@@ -262,6 +265,71 @@ export default async function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Blog Yazıları */}
+      {blogPosts.length > 0 && (
+        <section className="space-y-6">
+          <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
+            <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
+              <Newspaper className="w-6 h-6 text-brand-primary" /> Blogumdan Son Yazılar
+            </h2>
+            <a
+              href="https://wolkanca.com/kategori/eglence"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold transition-colors"
+            >
+              Tümünü Gör <ExternalLink className="w-3 h-3" />
+            </a>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {blogPosts.map((post) => (
+              <a
+                key={post.link}
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group glass rounded-2xl border border-white/5 overflow-hidden hover:border-brand-primary/30 transition-all duration-500 hover:shadow-[0_8px_30px_rgba(239,68,68,0.12)] flex flex-col"
+              >
+                {/* Thumbnail */}
+                <div className="relative aspect-square w-full overflow-hidden bg-zinc-900">
+                  {post.thumbnail ? (
+                    <Image
+                      src={post.thumbnail}
+                      alt={post.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-4xl">📝</div>
+                  )}
+                  {/* Gradient overlay at bottom */}
+                  <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-zinc-950/80 to-transparent" />
+                </div>
+
+                {/* Content */}
+                <div className="p-4 sm:p-5 flex flex-col flex-grow space-y-2.5">
+                  <h3 className="text-sm font-extrabold text-zinc-200 group-hover:text-white transition-colors leading-snug line-clamp-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-xs text-zinc-500 leading-relaxed line-clamp-3 flex-grow">
+                    {post.description}
+                  </p>
+                  <div className="flex items-center justify-between pt-2 border-t border-white/5">
+                    <span className="text-[10px] font-bold text-zinc-500">
+                      {formatDate(post.pubDate)}
+                    </span>
+                    <span className="text-[10px] font-bold text-brand-primary flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Oku <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
 
     </div>
   );
