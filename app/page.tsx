@@ -51,10 +51,19 @@ export default async function HomePage() {
   // Pick a single featured banner movie from high-rated ones (preferring those with trailers)
 
   // 1. Öne çıkan film için bir havuz oluştur
-  // Öncelik: Puanı >= 8 ve fragmanı olanlar. Yoksa sadece puanı >= 8 olanlar. O da yoksa tüm filmler.
-  const highRatedWithTrailer = movies.filter(m => m.myRating >= 8 && m.trailerYoutubeId);
-  const highRated = movies.filter(m => m.myRating >= 8);
-  const featuredPool = highRatedWithTrailer.length > 0 ? highRatedWithTrailer : (highRated.length > 0 ? highRated : movies);
+  // Kesin kriter: Hem gerçek posteri hem de fragmanı olan filmler
+  // Öncelik sırası: Puanı >= 8 + poster + fragman → Puanı >= 7 + poster + fragman → poster + fragman olan herhangi bir film → tüm filmler
+  const withPosterAndTrailer = (m: typeof movies[number]) => hasRealPoster(m.poster) && !!m.trailerYoutubeId;
+  const highRatedWithBoth = movies.filter(m => m.myRating >= 8 && withPosterAndTrailer(m));
+  const midRatedWithBoth = movies.filter(m => m.myRating >= 7 && withPosterAndTrailer(m));
+  const anyWithBoth = movies.filter(m => withPosterAndTrailer(m));
+  const featuredPool = highRatedWithBoth.length > 0
+    ? highRatedWithBoth
+    : midRatedWithBoth.length > 0
+      ? midRatedWithBoth
+      : anyWithBoth.length > 0
+        ? anyWithBoth
+        : movies;
 
   // 2. Bugünün benzersiz gün numarasını hesapla (1 Ocak 1970'ten bu yana geçen toplam gün)
   const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
