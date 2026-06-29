@@ -1,8 +1,8 @@
 import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://film-gunlugum.vercel.app';
-  
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://izlediklerim.wolkanca.com';
+
   return {
     rules: {
       userAgent: '*',

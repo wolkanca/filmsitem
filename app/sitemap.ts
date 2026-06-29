@@ -3,7 +3,7 @@ import { getMovies } from '@/lib/db';
 import { slugify } from '@/lib/utils';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://film-gunlugum.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://izlediklerim.wolkanca.com';
 
   // Base routes
   const routes = ['', '/movies', '/lists', '/favorites', '/stats', '/random'].map((route) => ({
