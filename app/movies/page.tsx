@@ -130,7 +130,7 @@ export default function MoviesPage() {
   const filteredAndSortedMovies = useMemo(() => {
     let result = [...tabFilteredMovies];
 
-    // Search query (title, original title, director, cast)
+    // Search query (title, original title, director, cast, writers, genres, lists)
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
       result = result.filter(
@@ -138,7 +138,10 @@ export default function MoviesPage() {
           m.title.toLowerCase().includes(query) ||
           m.originalTitle.toLowerCase().includes(query) ||
           (m.director && m.director.toLowerCase().includes(query)) ||
-          m.cast.some((c) => c.toLowerCase().includes(query))
+          m.cast.some((c) => c.toLowerCase().includes(query)) ||
+          (m.writers && m.writers.some((w) => w.toLowerCase().includes(query))) ||
+          (m.genres && m.genres.some((g) => g.toLowerCase().includes(query))) ||
+          (m.listName && m.listName.some((ln) => ln.toLowerCase().includes(query)))
       );
     }
 

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import GlobalSearch from '@/components/GlobalSearch';
 import '@/app/global.css';
 
 const inter = Inter({
@@ -52,6 +53,9 @@ export default function RootLayout({
 
         {/* Footer */}
         <Footer />
+
+        {/* Global Search Dialog */}
+        <GlobalSearch />
       </body>
     </html>
   );

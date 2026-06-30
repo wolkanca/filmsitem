@@ -69,6 +69,16 @@ export default function Navbar() {
                   </Link>
                 );
               })}
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent('open-global-search'))}
+                className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium text-zinc-400 hover:text-white hover:bg-white/5 border border-transparent transition-all duration-300 cursor-pointer"
+                title="Hızlı Arama (Ctrl+K / Cmd+K / /)"
+              >
+                <Search className="w-4 h-4 text-zinc-500" />
+                <span>Ara</span>
+                <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-black bg-zinc-950 text-zinc-500 rounded border border-white/5 font-sans leading-none ml-1">⌘K</kbd>
+              </button>
+
               <a
                 href="https://www.imdb.com/user/p.jrcoverqguo4wfi652fsteuhpi"
                 target="_blank"
@@ -79,17 +89,27 @@ export default function Navbar() {
               </a>
             </div>
 
-            {/* Mobile: Hamburger Button */}
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              aria-label={mobileOpen ? 'Menüyü kapat' : 'Menüyü aç'}
-              className="lg:hidden flex items-center justify-center w-10 h-10 rounded-lg border border-white/10 bg-white/5 text-zinc-300 hover:text-white hover:bg-white/10 transition-all duration-200 active:scale-95"
-            >
-              {mobileOpen
-                ? <X className="w-5 h-5" />
-                : <Menu className="w-5 h-5" />
-              }
-            </button>
+            {/* Mobile: Search & Hamburger Button */}
+            <div className="lg:hidden flex items-center gap-2">
+              <button
+                onClick={() => window.dispatchEvent(new CustomEvent('open-global-search'))}
+                aria-label="Hızlı Arama"
+                className="flex items-center justify-center w-10 h-10 rounded-lg border border-white/10 bg-white/5 text-zinc-300 hover:text-white hover:bg-white/10 transition-all duration-200 active:scale-95 cursor-pointer"
+              >
+                <Search className="w-5 h-5" />
+              </button>
+
+              <button
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label={mobileOpen ? 'Menüyü kapat' : 'Menüyü aç'}
+                className="flex items-center justify-center w-10 h-10 rounded-lg border border-white/10 bg-white/5 text-zinc-300 hover:text-white hover:bg-white/10 transition-all duration-200 active:scale-95"
+              >
+                {mobileOpen
+                  ? <X className="w-5 h-5" />
+                  : <Menu className="w-5 h-5" />
+                }
+              </button>
+            </div>
 
           </div>
         </div>
@@ -117,7 +137,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
             <img src="/favicon.svg" alt="logo" className="w-6 h-6" />
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-base tracking-wider">
-              FILM GÜNLÜĞÜM
+              İZLEDİKLERİM
             </span>
           </Link>
           <button
@@ -131,6 +151,19 @@ export default function Navbar() {
 
         {/* Drawer Links */}
         <div className="flex flex-col px-3 py-4 gap-1">
+          <button
+            onClick={() => {
+              setMobileOpen(false);
+              setTimeout(() => {
+                window.dispatchEvent(new CustomEvent('open-global-search'));
+              }, 100);
+            }}
+            className="flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-zinc-400 hover:text-white hover:bg-white/5 border border-transparent transition-all duration-300 text-left cursor-pointer"
+          >
+            <Search className="w-5 h-5 flex-shrink-0 text-zinc-500" />
+            <span>Arama Yap...</span>
+            <span className="ml-auto text-[10px] text-zinc-600 bg-zinc-900 px-1.5 py-0.5 rounded border border-white/5 font-sans">/</span>
+          </button>
           {navItems.map((item, idx) => {
             const Icon = item.icon;
             const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
