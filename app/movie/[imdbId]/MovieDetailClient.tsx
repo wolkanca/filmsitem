@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDownLeft, Eye, Play } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDownLeft, Eye, Play, Pencil, X, Check, Loader2 } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -41,6 +41,25 @@ export default function MovieDetailClient({
   const router = useRouter();
   const [isPosterModalOpen, setIsPosterModalOpen] = useState(false);
 
+  // Admin state
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  // Live editable movie data (poster, trailer)
+  const [livePoster, setLivePoster] = useState(movie.poster);
+  const [liveTrailerId, setLiveTrailerId] = useState(movie.trailerYoutubeId || '');
+
+  // Poster edit state
+  const [isPosterEditing, setIsPosterEditing] = useState(false);
+  const [posterInput, setPosterInput] = useState(movie.poster || '');
+  const [posterSaving, setPosterSaving] = useState(false);
+  const [posterError, setPosterError] = useState('');
+
+  // Trailer edit state
+  const [isTrailerEditing, setIsTrailerEditing] = useState(false);
+  const [trailerInput, setTrailerInput] = useState(movie.trailerYoutubeId || '');
+  const [trailerSaving, setTrailerSaving] = useState(false);
+  const [trailerError, setTrailerError] = useState('');
+
   // Active season tab for series
   const [activeSeasonTab, setActiveSeasonTab] = useState<number>(() => {
     if (movie.seasons && movie.seasons.length > 0) {
@@ -48,6 +67,13 @@ export default function MovieDetailClient({
     }
     return 1;
   });
+
+  // Detect admin cookie
+  useEffect(() => {
+    const cookies = document.cookie.split(';');
+    const adminCookie = cookies.some((c) => c.trim().startsWith('is_admin=true'));
+    setIsAdmin(adminCookie);
+  }, []);
 
   // Calculate average rating of episodes if the series itself is not rated
   const averageEpisodeRating = useMemo(() => {
@@ -68,8 +94,8 @@ export default function MovieDetailClient({
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Ignore if modal is open to prevent double actions
-      if (isPosterModalOpen) return;
+      // Ignore if modal or edit mode is open
+      if (isPosterModalOpen || isPosterEditing || isTrailerEditing) return;
 
       if (e.key === 'ArrowLeft' && prevImdbId) {
         router.push(`/movie/${prevImdbId}`);
@@ -82,9 +108,59 @@ export default function MovieDetailClient({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [prevImdbId, nextImdbId, router, isPosterModalOpen]);
+  }, [prevImdbId, nextImdbId, router, isPosterModalOpen, isPosterEditing, isTrailerEditing]);
 
   const ratingColor = getRatingColor(movie.myRating);
+
+  // Save poster URL
+  const savePoster = async () => {
+    setPosterSaving(true);
+    setPosterError('');
+    try {
+      const res = await fetch(`/api/movies/${movie.imdbId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ poster: posterInput }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Kaydetme başarısız.');
+      setLivePoster(posterInput);
+      setIsPosterEditing(false);
+    } catch (err: unknown) {
+      setPosterError(err instanceof Error ? err.message : 'Hata oluştu.');
+    } finally {
+      setPosterSaving(false);
+    }
+  };
+
+  // Save trailer YouTube ID
+  const saveTrailer = async () => {
+    setTrailerSaving(true);
+    setTrailerError('');
+    try {
+      // Accept full YouTube URL or just the ID
+      let youtubeId = trailerInput.trim();
+      const ytMatch = youtubeId.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{11})/);
+      if (ytMatch) youtubeId = ytMatch[1];
+
+      const res = await fetch(`/api/movies/${movie.imdbId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ trailerYoutubeId: youtubeId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Kaydetme başarısız.');
+      setLiveTrailerId(youtubeId);
+      setTrailerInput(youtubeId);
+      setIsTrailerEditing(false);
+    } catch (err: unknown) {
+      setTrailerError(err instanceof Error ? err.message : 'Hata oluştu.');
+    } finally {
+      setTrailerSaving(false);
+    }
+  };
+
+  const hasRealPoster = !!livePoster && !isPlaceholderUrl(livePoster);
 
   return (
     <div className="space-y-10 relative">
@@ -137,7 +213,7 @@ export default function MovieDetailClient({
         {/* Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <PosterImage
-            src={movie.backdrop || movie.poster}
+            src={movie.backdrop || livePoster}
             alt={movie.title}
             fill
             className="object-cover opacity-30 select-none pointer-events-none"
@@ -152,35 +228,79 @@ export default function MovieDetailClient({
         <div className="relative z-10 p-6 sm:p-10 w-full flex flex-col md:flex-row gap-8 items-start md:items-end">
 
           {/* Movie Poster Image (clickable) */}
-          {(() => {
-            // A "real" poster = has a URL AND it's not a known placeholder
-            const hasRealPoster = !!movie.poster && !isPlaceholderUrl(movie.poster);
-            return (
-              <div
-                onClick={() => hasRealPoster && setIsPosterModalOpen(true)}
-                className={`relative aspect-[2/3] w-40 sm:w-52 md:w-60 flex-shrink-0 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${hasRealPoster ? 'cursor-zoom-in' : 'cursor-default'
-                  }`}
+          <div className="relative flex-shrink-0">
+            <div
+              onClick={() => !isPosterEditing && hasRealPoster && setIsPosterModalOpen(true)}
+              className={`relative aspect-[2/3] w-40 sm:w-52 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${hasRealPoster && !isPosterEditing ? 'cursor-zoom-in' : 'cursor-default'}`}
+            >
+              <PosterImage
+                src={livePoster}
+                alt={movie.title}
+                fill
+                className="object-cover"
+                priority
+                fallbackTitle={movie.title}
+                trailerYoutubeId={liveTrailerId}
+              />
+              {/* Zoom hint only when there is a real (non-placeholder) poster */}
+              {hasRealPoster && !isPosterEditing && (
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                  <span className="text-white text-xs font-bold bg-black/60 px-3 py-1.5 rounded-full border border-white/10 flex items-center gap-1">
+                    <Eye className="w-3.5 h-3.5" /> Büyüt
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Admin: Poster Edit Button */}
+            {isAdmin && !isPosterEditing && (
+              <button
+                onClick={(e) => { e.stopPropagation(); setPosterInput(livePoster || ''); setIsPosterEditing(true); setPosterError(''); }}
+                className="absolute -bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-zinc-900 border border-brand-primary/40 text-brand-primary text-[11px] font-bold shadow-lg hover:bg-brand-primary/10 transition-all z-20 whitespace-nowrap"
+                title="Posteri Düzenle"
               >
-                <PosterImage
-                  src={movie.poster}
-                  alt={movie.title}
-                  fill
-                  className="object-cover"
-                  priority
-                  fallbackTitle={movie.title}
-                  trailerYoutubeId={movie.trailerYoutubeId}
-                />
-                {/* Zoom hint only when there is a real (non-placeholder) poster */}
-                {hasRealPoster && (
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                    <span className="text-white text-xs font-bold bg-black/60 px-3 py-1.5 rounded-full border border-white/10 flex items-center gap-1">
-                      <Eye className="w-3.5 h-3.5" /> Büyüt
-                    </span>
-                  </div>
-                )}
+                <Pencil className="w-3 h-3" /> Poster Düzenle
+              </button>
+            )}
+          </div>
+
+          {/* Admin: Poster Edit Form (below poster, full width on mobile) */}
+          {isAdmin && isPosterEditing && (
+            <div className="w-full md:w-auto md:absolute md:bottom-6 md:left-72 z-30 bg-zinc-950/95 border border-brand-primary/30 rounded-2xl p-4 shadow-2xl backdrop-blur-sm flex flex-col gap-3 min-w-[280px] max-w-md">
+              <div className="flex items-center justify-between mb-1">
+                <span className="text-xs font-black text-brand-primary uppercase tracking-wider">🖼️ Poster URL'si</span>
+                <button onClick={() => setIsPosterEditing(false)} className="text-zinc-500 hover:text-white transition-colors">
+                  <X className="w-4 h-4" />
+                </button>
               </div>
-            );
-          })()}
+              <input
+                type="url"
+                value={posterInput}
+                onChange={(e) => setPosterInput(e.target.value)}
+                placeholder="https://example.com/poster.jpg"
+                className="w-full bg-zinc-900 border border-zinc-700 focus:border-brand-primary/60 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
+                autoFocus
+                onKeyDown={(e) => { if (e.key === 'Enter') savePoster(); if (e.key === 'Escape') setIsPosterEditing(false); }}
+              />
+              {posterError && <p className="text-red-400 text-xs font-semibold">{posterError}</p>}
+              <div className="flex gap-2">
+                <button
+                  onClick={savePoster}
+                  disabled={posterSaving}
+                  className="flex-1 flex items-center justify-center gap-1.5 bg-brand-primary hover:bg-brand-primary/90 text-white text-xs font-bold py-2.5 rounded-xl transition-all disabled:opacity-60 cursor-pointer"
+                >
+                  {posterSaving ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+                  {posterSaving ? 'Kaydediliyor...' : 'Kaydet'}
+                </button>
+                <button
+                  onClick={() => setIsPosterEditing(false)}
+                  className="px-4 py-2.5 rounded-xl border border-zinc-700 text-zinc-400 hover:text-white text-xs font-bold transition-all cursor-pointer"
+                >
+                  İptal
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* Title & Stats */}
           <div className="flex-grow space-y-4 text-left">
@@ -496,22 +616,90 @@ export default function MovieDetailClient({
 
         {/* Trailer */}
         <div className="lg:col-span-12">
-          {movie.trailerYoutubeId && (
-            <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
+            {/* Trailer Header with edit button */}
+            <div className="flex items-center justify-between">
               <h2 className="text-xl font-extrabold text-zinc-200 flex items-center gap-2">
                 <Play className="w-5 h-5 text-red-500 fill-red-500" /> Resmi Fragman
               </h2>
+              {isAdmin && !isTrailerEditing && (
+                <button
+                  onClick={() => { setTrailerInput(liveTrailerId); setIsTrailerEditing(true); setTrailerError(''); }}
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-900 border border-brand-primary/30 text-brand-primary text-xs font-bold hover:bg-brand-primary/10 transition-all cursor-pointer"
+                >
+                  <Pencil className="w-3.5 h-3.5" /> Fragman Düzenle
+                </button>
+              )}
+            </div>
+
+            {/* Trailer Edit Form */}
+            {isAdmin && isTrailerEditing && (
+              <div className="bg-zinc-950/80 border border-brand-primary/20 rounded-2xl p-4 space-y-3">
+                <p className="text-xs text-zinc-400 font-medium">YouTube video ID veya tam URL girebilirsiniz:</p>
+                <input
+                  type="text"
+                  value={trailerInput}
+                  onChange={(e) => setTrailerInput(e.target.value)}
+                  placeholder="Örn: dQw4w9WgXcQ veya https://youtube.com/watch?v=dQw4w9WgXcQ"
+                  className="w-full bg-zinc-900 border border-zinc-700 focus:border-brand-primary/60 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all font-mono"
+                  autoFocus
+                  onKeyDown={(e) => { if (e.key === 'Enter') saveTrailer(); if (e.key === 'Escape') setIsTrailerEditing(false); }}
+                />
+                {trailerError && <p className="text-red-400 text-xs font-semibold">{trailerError}</p>}
+                <div className="flex gap-2">
+                  <button
+                    onClick={saveTrailer}
+                    disabled={trailerSaving}
+                    className="flex items-center gap-1.5 bg-brand-primary hover:bg-brand-primary/90 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-all disabled:opacity-60 cursor-pointer"
+                  >
+                    {trailerSaving ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />}
+                    {trailerSaving ? 'Kaydediliyor...' : 'Kaydet'}
+                  </button>
+                  <button
+                    onClick={() => setIsTrailerEditing(false)}
+                    className="px-4 py-2.5 rounded-xl border border-zinc-700 text-zinc-400 hover:text-white text-xs font-bold transition-all cursor-pointer"
+                  >
+                    İptal
+                  </button>
+                  {liveTrailerId && (
+                    <button
+                      onClick={() => { setTrailerInput(''); }}
+                      className="ml-auto px-3 py-2.5 rounded-xl border border-red-500/20 text-red-400 hover:text-red-300 text-xs font-bold transition-all cursor-pointer"
+                    >
+                      Sil
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Trailer Player */}
+            {liveTrailerId ? (
               <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/5 shadow-md">
                 <iframe
-                  src={`https://www.youtube.com/embed/${movie.trailerYoutubeId}?autoplay=0&rel=0`}
+                  key={liveTrailerId}
+                  src={`https://www.youtube.com/embed/${liveTrailerId}?autoplay=0&rel=0`}
                   title={`${movie.title} Fragman`}
                   className="absolute inset-0 h-full w-full border-0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
               </div>
-            </div>
-          )}
+            ) : (
+              <div className="flex flex-col items-center justify-center py-10 rounded-2xl border border-dashed border-zinc-800 bg-zinc-950/30 text-zinc-500 gap-3">
+                <Play className="w-10 h-10 opacity-30" />
+                <p className="text-sm font-medium">Fragman henüz eklenmemiş.</p>
+                {isAdmin && !isTrailerEditing && (
+                  <button
+                    onClick={() => { setTrailerInput(''); setIsTrailerEditing(true); setTrailerError(''); }}
+                    className="mt-1 flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-900 border border-brand-primary/30 text-brand-primary text-xs font-bold hover:bg-brand-primary/10 transition-all cursor-pointer"
+                  >
+                    <Pencil className="w-3.5 h-3.5" /> Fragman Ekle
+                  </button>
+                )}
+              </div>
+            )}
+          </div>
         </div>
 
       </div>
@@ -531,11 +719,11 @@ export default function MovieDetailClient({
       )}
 
       {/* Large Poster view overlay modal */}
-      {movie.poster && (
+      {livePoster && (
         <PosterModal
           isOpen={isPosterModalOpen}
           onClose={() => setIsPosterModalOpen(false)}
-          imageUrl={movie.poster}
+          imageUrl={livePoster}
           title={movie.title}
         />
       )}
