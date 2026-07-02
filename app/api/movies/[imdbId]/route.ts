@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { revalidatePath } from 'next/cache';
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'movies.json');
 
@@ -49,6 +50,11 @@ export async function PATCH(
     }
 
     fs.writeFileSync(DATA_FILE, JSON.stringify(movies, null, 2), 'utf8');
+
+    // On-demand cache revalidation
+    revalidatePath(`/movie/${imdbId}`);
+    revalidatePath('/movies');
+    revalidatePath('/');
 
     return NextResponse.json({ success: true, movie: movies[idx] });
   } catch (error: unknown) {

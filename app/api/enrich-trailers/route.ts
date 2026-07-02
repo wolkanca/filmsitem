@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { revalidatePath } from 'next/cache';
 
 // Global variable to maintain enrichment state across calls
 const state = {
@@ -194,10 +195,18 @@ export async function POST(req: Request) {
 
       state.isRunning = false;
       state.status = 'Tamamlandı';
+      try {
+        revalidatePath('/', 'layout');
+      } catch (e) {
+        console.error('Revalidation error:', e);
+      }
     })().catch((err) => {
       console.error('Background trailer enrichment crashed:', err);
       state.isRunning = false;
       state.status = 'Hata Verildi';
+      try {
+        revalidatePath('/', 'layout');
+      } catch (e) {}
     });
 
     return NextResponse.json({ message: 'Enrichment başlatıldı.', ...state });

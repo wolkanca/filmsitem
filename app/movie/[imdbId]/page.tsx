@@ -4,9 +4,6 @@ import { notFound } from 'next/navigation';
 import { getMovies, getMovieById } from '@/lib/db';
 import MovieDetailClient from './MovieDetailClient';
 
-// Her istekte taze veri oku — admin'den yapılan poster/fragman güncellemeleri anında yansısın
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
 
 interface Props {
   params: Promise<{ imdbId: string }>;
