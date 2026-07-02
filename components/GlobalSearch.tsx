@@ -108,13 +108,14 @@ export default function GlobalSearch() {
 
     const term = query.toLowerCase().trim();
 
-    // 1. Movies & TV Series
+    // 1. Movies & TV Series (including IMDb ID search, e.g. tt29730305)
     const matchedMovies = movies.filter(
       (m) =>
         m.title.toLowerCase().includes(term) ||
         m.originalTitle.toLowerCase().includes(term) ||
         (m.overview && m.overview.toLowerCase().includes(term)) ||
-        m.year.toString().includes(term)
+        m.year.toString().includes(term) ||
+        m.imdbId.toLowerCase().includes(term)
     );
 
     // 2. Actors (cast)

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Movie } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -12,6 +12,11 @@ interface FeaturedSliderProps {
 
 export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Touch swipe state
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
+  const SWIPE_THRESHOLD = 50; // px
 
   if (!movies || movies.length === 0) return null;
 
@@ -30,12 +35,37 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
     return () => clearInterval(timer);
   }, [currentIndex]);
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.changedTouches[0].clientX;
+    touchEndX.current = null;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.changedTouches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStartX.current === null || touchEndX.current === null) return;
+    const diff = touchStartX.current - touchEndX.current;
+    if (Math.abs(diff) >= SWIPE_THRESHOLD) {
+      if (diff > 0) nextSlide();
+      else prevSlide();
+    }
+    touchStartX.current = null;
+    touchEndX.current = null;
+  };
+
   const currentMovie = movies[currentIndex];
 
   return (
     <div className="relative group/slider">
       {/* Recommended Movie Preview */}
-      <div className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-zinc-950/40 border border-white/5 rounded-2xl p-4 sm:p-6 items-stretch relative min-h-[350px] transition-all duration-500 overflow-hidden">
+      <div
+        className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-zinc-950/40 border border-white/5 rounded-2xl p-4 sm:p-6 items-stretch relative min-h-[350px] transition-all duration-500 overflow-hidden select-none"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         {/* Left side: Poster + Movie Details */}
         <div className={`flex flex-col md:flex-row gap-6 items-center md:items-start ${currentMovie.trailerYoutubeId ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
           <div className="relative aspect-[2/3] w-36 sm:w-40 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
@@ -55,7 +85,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
           <div className="flex-grow space-y-4 text-center md:text-left flex flex-col justify-between h-full">
             <div className="space-y-1">
               <span className="text-[10px] bg-brand-primary/10 text-brand-primary border border-brand-primary/20 px-2 py-0.5 rounded-md font-semibold">
-                GÜNÜN ÖNERİSİ {currentIndex + 1}/5
+                GÜNÜN ÖNERİSİ {currentIndex + 1}/{movies.length}
               </span>
               <h3 className="text-xl sm:text-2xl font-black text-white mt-1">
                 {currentMovie.title}{' '}
@@ -104,17 +134,19 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
         )}
       </div>
 
-      {/* Navigation Buttons */}
+      {/* Navigation Buttons — always visible on mobile, hover-only on desktop */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg opacity-0 group-hover/slider:opacity-100 focus:opacity-100 z-20"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg
+          opacity-100 sm:opacity-0 sm:group-hover/slider:opacity-100 focus:opacity-100 z-20"
         aria-label="Previous recommendation"
       >
         <ChevronLeft className="w-5 h-5" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg opacity-0 group-hover/slider:opacity-100 focus:opacity-100 z-20"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg
+          opacity-100 sm:opacity-0 sm:group-hover/slider:opacity-100 focus:opacity-100 z-20"
         aria-label="Next recommendation"
       >
         <ChevronRight className="w-5 h-5" />

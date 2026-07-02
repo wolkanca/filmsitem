@@ -12,12 +12,12 @@ export const revalidate = 3600; // Revalidate every hour (ISR)
 export default async function HomePage() {
   const movies = await getMovies();
   const stats = await getStats();
-  const blogPosts = await getBlogPosts(4);
+  const blogPosts = await getBlogPosts(8);
 
   // Sorting movies for sections
   const recentlyAdded = [...movies]
     .sort((a, b) => new Date(b.watchDate).getTime() - new Date(a.watchDate).getTime())
-    .slice(0, 5);
+    .slice(0, 8);
 
   const PLACEHOLDER_PATTERNS = ['images.unsplash.com', 'unsplash.com/photo', 'via.placeholder.com', 'placehold.co', 'placeholder.com', 'dummyimage.com'];
   const hasRealPoster = (url?: string) => !!url && !PLACEHOLDER_PATTERNS.some(p => url.includes(p));
@@ -29,7 +29,7 @@ export default async function HomePage() {
     const j = Math.floor(Math.random() * (i + 1));
     [masterpieces[i], masterpieces[j]] = [masterpieces[j], masterpieces[i]];
   }
-  const highestRated = masterpieces.slice(0, 5);
+  const highestRated = masterpieces.slice(0, 8);
 
   // Keşfedilmemiş Hazineler: Benim yüksek puan verip IMDb'de düşük kalan filmler
   const hiddenGemsPool = [...movies].filter(
@@ -39,15 +39,15 @@ export default async function HomePage() {
   const hiddenGemsPoolFallback = hiddenGemsPool.length >= 5
     ? hiddenGemsPool
     : [...movies].filter(
-        m => m.myRating > 0 && m.imdbRating > 0 && (m.myRating - m.imdbRating) >= 1.5 && hasRealPoster(m.poster)
-      );
+      m => m.myRating > 0 && m.imdbRating > 0 && (m.myRating - m.imdbRating) >= 1.5 && hasRealPoster(m.poster)
+    );
   const gemsSource = hiddenGemsPoolFallback.length >= 5 ? hiddenGemsPoolFallback : hiddenGemsPool;
   // Fisher-Yates shuffle → rastgele 5 seç
   for (let i = gemsSource.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [gemsSource[i], gemsSource[j]] = [gemsSource[j], gemsSource[i]];
   }
-  const hiddenGems = gemsSource.slice(0, 5);
+  const hiddenGems = gemsSource.slice(0, 8);
 
   // Pick a single featured banner movie from high-rated ones (preferring those with trailers)
 
@@ -77,7 +77,7 @@ export default async function HomePage() {
   const featuredMovies = [];
   if (featuredPool.length > 0) {
     const uniqueIndices = new Set<number>();
-    const countToPick = Math.min(5, featuredPool.length);
+    const countToPick = Math.min(5, featuredPool.length); // Slider still shows 5
     let offset = 0;
     while (uniqueIndices.size < countToPick) {
       const idx = (currentDay + offset) % featuredPool.length;
@@ -196,7 +196,7 @@ export default async function HomePage() {
             Tümünü Gör <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {recentlyAdded.map((movie) => (
             <MovieCard key={movie.imdbId} movie={movie} />
           ))}
@@ -213,7 +213,7 @@ export default async function HomePage() {
             Tümünü Gör <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {highestRated.map((movie) => (
             <MovieCard key={movie.imdbId} movie={movie} />
           ))}
@@ -234,7 +234,7 @@ export default async function HomePage() {
               Tümünü Gör <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {hiddenGems.map((movie) => (
               <MovieCard key={movie.imdbId} movie={movie} />
             ))}
