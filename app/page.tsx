@@ -171,7 +171,7 @@ export default async function HomePage() {
             <h2 className="text-xl sm:text-2xl font-extrabold text-zinc-100 flex items-center gap-2">
               <Sparkles className="w-5.5 h-5.5 text-brand-accent" /> Günün Rastgele Film Önerileri
             </h2>
-            <p className="text-sm text-zinc-400 max-w-xl">
+            <p className="text-sm text-zinc-400 max-w-3xl">
               Kararsız mısınız? Kütüphanenizden özenle seçilen bu yapımlar sinema gecenizi renklendirebilir.
             </p>
           </div>

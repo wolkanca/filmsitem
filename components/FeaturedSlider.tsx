@@ -68,7 +68,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
       >
         {/* Left side: Poster + Movie Details */}
         <div className={`flex flex-col md:flex-row gap-6 items-center md:items-start ${currentMovie.trailerYoutubeId ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
-          <div className="relative aspect-[2/3] w-36 sm:w-40 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+          <div className="relative aspect-[2/3] w-full md:w-56 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
             {currentMovie.poster ? (
               <Image
                 src={currentMovie.poster}
@@ -158,9 +158,8 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex ? 'bg-brand-primary w-6' : 'bg-zinc-700 hover:bg-zinc-500'
-            }`}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-brand-primary w-6' : 'bg-zinc-700 hover:bg-zinc-500'
+              }`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
