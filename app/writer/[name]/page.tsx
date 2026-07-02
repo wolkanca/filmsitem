@@ -3,6 +3,7 @@ import ArchiveGrid from '@/components/ArchiveGrid';
 import Link from 'next/link';
 import { ArrowLeft, Film, Clock, Star, User } from 'lucide-react';
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 interface Props {
   params: Promise<{ name: string }>;
@@ -11,6 +12,14 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const decodedName = decodeURIComponent(resolvedParams.name);
+  const movies = await getMovies();
+  const exists = movies.some((m) => {
+    if (!m.writers) return false;
+    return m.writers.some((w) => w.toLowerCase() === decodedName.toLowerCase());
+  });
+  if (!exists) {
+    notFound();
+  }
   return {
     title: `${decodedName} Filmleri`,
     description: `Kütüphanemdeki senarist ${decodedName} tarafından yazılmış filmler, incelemelerim ve kişisel puanlarım.`,
@@ -26,6 +35,10 @@ export default async function WriterPage({ params }: Props) {
     if (!m.writers) return false;
     return m.writers.some((w) => w.toLowerCase() === decodedName.toLowerCase());
   });
+
+  if (filteredMovies.length === 0) {
+    notFound();
+  }
 
   // Calculate statistics
   const totalCount = filteredMovies.length;

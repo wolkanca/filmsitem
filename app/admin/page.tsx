@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import {
   Shield, Lock, User, LogOut, ArrowRight, Sparkles, Video,
   Search, Pencil, Check, X, Loader2, Film, Image as ImageIcon,
+  FileSpreadsheet,
 } from 'lucide-react';
 import { Movie } from '@/types';
 
@@ -211,7 +212,7 @@ export default function AdminPage() {
           </div>
 
           {/* Wizard Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Poster Wizard Card */}
             <Link href="/enrich" className="group">
               <div className="glass-card p-8 rounded-3xl border border-white/5 bg-gradient-to-br from-zinc-950/40 to-red-950/10 hover:border-brand-primary/30 hover:to-red-950/20 transition-all duration-300 h-full flex flex-col justify-between relative overflow-hidden group shadow-lg hover:shadow-[0_15px_40px_rgba(239,68,68,0.1)]">
@@ -220,12 +221,12 @@ export default function AdminPage() {
                   <div className="p-3 bg-brand-primary/10 rounded-2xl text-brand-primary border border-brand-primary/20 w-fit mb-6">
                     <Sparkles className="w-7 h-7" />
                   </div>
-                  <h2 className="text-2xl font-black text-white group-hover:text-brand-primary transition-colors">Poster Sihirbazı</h2>
-                  <p className="text-zinc-400 text-sm mt-3 leading-relaxed">
+                  <h2 className="text-xl font-black text-white group-hover:text-brand-primary transition-colors">Poster Sihirbazı</h2>
+                  <p className="text-zinc-400 text-xs mt-3 leading-relaxed">
                     Kitaplığınızdaki afişi olmayan veya görseli kırık/eksik olan filmlerin afişlerini ve genel bilgilerini OMDB API üzerinden otomatik olarak güncelleyin.
                   </p>
                 </div>
-                <div className="flex items-center gap-2 text-brand-primary font-bold text-sm mt-8 group-hover:translate-x-1 transition-transform">
+                <div className="flex items-center gap-2 text-brand-primary font-bold text-xs mt-8 group-hover:translate-x-1 transition-transform">
                   Sihirbaza Git <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -239,12 +240,12 @@ export default function AdminPage() {
                   <div className="p-3 bg-red-500/10 rounded-2xl text-red-500 border border-red-500/20 w-fit mb-6">
                     <Video className="w-7 h-7" />
                   </div>
-                  <h2 className="text-2xl font-black text-white group-hover:text-red-500 transition-colors">Fragman Sihirbazı</h2>
-                  <p className="text-zinc-400 text-sm mt-3 leading-relaxed">
+                  <h2 className="text-xl font-black text-white group-hover:text-red-500 transition-colors">Fragman Sihirbazı</h2>
+                  <p className="text-zinc-400 text-xs mt-3 leading-relaxed">
                     Sinema kitaplığınızdaki yapımların resmi YouTube fragman linklerini TMDb API ile otomatik olarak sorgulayarak veritabanınıza eşleyin.
                   </p>
                 </div>
-                <div className="flex items-center gap-2 text-red-500 font-bold text-sm mt-8 group-hover:translate-x-1 transition-transform">
+                <div className="flex items-center gap-2 text-red-500 font-bold text-xs mt-8 group-hover:translate-x-1 transition-transform">
                   Sihirbaza Git <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -258,13 +259,32 @@ export default function AdminPage() {
                   <div className="p-3 bg-red-500/10 rounded-2xl text-red-500 border border-red-500/20 w-fit mb-6">
                     <Video className="w-7 h-7" />
                   </div>
-                  <h2 className="text-2xl font-black text-white group-hover:text-red-500 transition-colors">Bozuk Fragman Kontrolcü</h2>
-                  <p className="text-zinc-400 text-sm mt-3 leading-relaxed">
+                  <h2 className="text-xl font-black text-white group-hover:text-red-500 transition-colors">Bozuk Fragman Kontrolcü</h2>
+                  <p className="text-zinc-400 text-xs mt-3 leading-relaxed">
                     YouTube fragmanlarını otomatik doğrulayarak silinmiş, özel veya ulaşılamayan videoları saptayın ve tek tıkla düzeltin.
                   </p>
                 </div>
-                <div className="flex items-center gap-2 text-red-500 font-bold text-sm mt-8 group-hover:translate-x-1 transition-transform">
+                <div className="flex items-center gap-2 text-red-500 font-bold text-xs mt-8 group-hover:translate-x-1 transition-transform">
                   Kontrolcüye Git <ArrowRight className="w-4 h-4" />
+                </div>
+              </div>
+            </Link>
+
+            {/* IMDb CSV Import Card */}
+            <Link href="/admin/import" className="group">
+              <div className="glass-card p-8 rounded-3xl border border-white/5 bg-gradient-to-br from-zinc-950/40 to-emerald-950/10 hover:border-emerald-500/30 hover:to-emerald-950/20 transition-all duration-300 h-full flex flex-col justify-between relative overflow-hidden group shadow-lg hover:shadow-[0_15px_40px_rgba(16,185,129,0.1)]">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-3xl -z-10 group-hover:bg-emerald-500/20 transition-colors" />
+                <div>
+                  <div className="p-3 bg-emerald-500/10 rounded-2xl text-emerald-400 border border-emerald-500/20 w-fit mb-6">
+                    <FileSpreadsheet className="w-7 h-7" />
+                  </div>
+                  <h2 className="text-xl font-black text-white group-hover:text-emerald-400 transition-colors">IMDb CSV Yükleyici</h2>
+                  <p className="text-zinc-400 text-xs mt-3 leading-relaxed">
+                    IMDb listenizden dışa aktardığınız CSV dosyasını yükleyin, yalnızca yeni eklenen yapımları akıllıca sisteme kaydedin.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs mt-8 group-hover:translate-x-1 transition-transform">
+                  Yükleyiciye Git <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
             </Link>

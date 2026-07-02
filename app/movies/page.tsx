@@ -272,7 +272,7 @@ export default function MoviesPage() {
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-5">
         <div>
-          <h1 className="text-3xl font-black text-white">🎬 Sinema Kitaplığım</h1>
+          <h1 className="text-3xl font-black text-white">🎬 Kitaplığım</h1>
           <p className="text-zinc-500 text-sm mt-1">
             Toplam {filteredAndSortedMovies.length} yapım gösteriliyor
           </p>
@@ -303,8 +303,8 @@ export default function MoviesPage() {
           <button
             onClick={() => setShowFilters(!showFilters)}
             className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all duration-300 ${showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating || sortBy !== 'watchDate-desc'
-                ? 'bg-brand-primary/10 border-brand-primary/30 text-brand-primary'
-                : 'bg-zinc-900 border-white/5 text-zinc-400 hover:text-white'
+              ? 'bg-brand-primary/10 border-brand-primary/30 text-brand-primary'
+              : 'bg-zinc-900 border-white/5 text-zinc-400 hover:text-white'
               }`}
           >
             <SlidersHorizontal className="w-4 h-4" />
@@ -341,8 +341,8 @@ export default function MoviesPage() {
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
               className={`relative flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${active
-                  ? 'bg-brand-primary text-white shadow-[0_4px_15px_rgba(239,68,68,0.35)]'
-                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+                ? 'bg-brand-primary text-white shadow-[0_4px_15px_rgba(239,68,68,0.35)]'
+                : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
                 }`}
             >
               {tab.icon}
@@ -350,8 +350,8 @@ export default function MoviesPage() {
               {/* Count badge */}
               <span
                 className={`text-[10px] font-black px-1.5 py-0.5 rounded-md leading-none ${active
-                    ? 'bg-white/20 text-white'
-                    : 'bg-zinc-800 text-zinc-400'
+                  ? 'bg-white/20 text-white'
+                  : 'bg-zinc-800 text-zinc-400'
                   }`}
               >
                 {tabCounts[tab.key] ?? 0}

@@ -3,6 +3,7 @@ import ArchiveGrid from '@/components/ArchiveGrid';
 import Link from 'next/link';
 import { ArrowLeft, Film, Clock, Star, Calendar } from 'lucide-react';
 import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 interface Props {
   params: Promise<{ year: string }>;
@@ -10,6 +11,12 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
+  const yearInt = parseInt(resolvedParams.year, 10);
+  const movies = await getMovies();
+  const exists = movies.some((m) => m.year === yearInt);
+  if (!exists) {
+    notFound();
+  }
   return {
     title: `${resolvedParams.year} Yılı Yapımları`,
     description: `Kütüphanemdeki ${resolvedParams.year} yılı yapımı filmler, incelemelerim ve kişisel puanlarım.`,
@@ -22,6 +29,10 @@ export default async function YearPage({ params }: Props) {
   
   const movies = await getMovies();
   const filteredMovies = movies.filter((m) => m.year === yearInt);
+
+  if (filteredMovies.length === 0) {
+    notFound();
+  }
 
   // Calculate statistics
   const totalCount = filteredMovies.length;
