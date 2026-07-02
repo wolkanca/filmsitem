@@ -68,7 +68,7 @@ export default async function MovieDetailPage({ params }: Props) {
   const prevMovie = currentIndex > 0 ? allMovies[currentIndex - 1] : null;
   const nextMovie = currentIndex < allMovies.length - 1 ? allMovies[currentIndex + 1] : null;
 
-  // Find similar movies (matching genres or director)
+  // Find similar movies (matching genres or director) - select top 15, then client shuffles to pick 5 randomly
   const similarMovies = allMovies
     .filter((m) => m.imdbId !== imdbId)
     .map((m) => {
@@ -85,7 +85,7 @@ export default async function MovieDetailPage({ params }: Props) {
     })
     .filter((x) => x.score > 0)
     .sort((a, b) => b.score - a.score)
-    .slice(0, 5)
+    .slice(0, 15)
     .map((x) => x.movie);
 
   // JSON-LD Movie Schema Markup

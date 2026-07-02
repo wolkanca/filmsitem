@@ -42,9 +42,9 @@ export default function MovieCard({ movie }: MovieCardProps) {
 
           {/* Genre tags as plain spans — no nested <a> inside <a> */}
           <div className="flex flex-wrap gap-1 mt-1">
-            {movie.genres.slice(0, 2).map((g) => (
+            {Array.from(new Set(movie.genres.slice(0, 2))).map((g, idx) => (
               <span
-                key={g}
+                key={`${g}-${idx}`}
                 className="text-[10px] bg-zinc-800/80 px-2 py-0.5 rounded border border-zinc-700/50 text-zinc-300"
               >
                 {g}

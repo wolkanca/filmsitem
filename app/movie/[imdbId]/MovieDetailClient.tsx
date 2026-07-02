@@ -44,6 +44,19 @@ export default function MovieDetailClient({
   // Admin state
   const [isAdmin, setIsAdmin] = useState(false);
 
+  // Client-side random selection of 5 movies from top 15 similar movies
+  const [randomSimilarMovies, setRandomSimilarMovies] = useState<Movie[]>([]);
+
+  useEffect(() => {
+    if (similarMovies && similarMovies.length > 0) {
+      // Shuffle array and pick first 5
+      const shuffled = [...similarMovies].sort(() => 0.5 - Math.random());
+      setRandomSimilarMovies(shuffled.slice(0, 5));
+    } else {
+      setRandomSimilarMovies([]);
+    }
+  }, [similarMovies]);
+
   // Live editable movie data (poster, backdrop, trailer)
   const [livePoster, setLivePoster] = useState(movie.poster);
   // Backdrop olarak placeholder/unsplash URL'si varsa boş say — poster fallback'e düşsün
@@ -315,8 +328,8 @@ export default function MovieDetailClient({
                 <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-red-500/10 text-red-300 border border-red-500/20 uppercase tracking-wider">
                   {movie.type === 'Movie' ? 'Sinema Filmi' : movie.type}
                 </span>
-                {movie.listName.map((list) => (
-                  <span key={list} className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-500/10 text-rose-300 border border-rose-500/20">
+                {Array.from(new Set(movie.listName)).map((list, idx) => (
+                  <span key={`${list}-${idx}`} className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-500/10 text-rose-300 border border-rose-500/20">
                     {list}
                   </span>
                 ))}
@@ -485,9 +498,9 @@ export default function MovieDetailClient({
                   <div>
                     <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Yönetmen</h3>
                     <div className="flex flex-wrap gap-1.5">
-                      {movie.director.split(',').map((d) => d.trim()).filter(Boolean).map((d) => (
+                      {Array.from(new Set(movie.director.split(',').map((d) => d.trim()).filter(Boolean))).map((d, idx) => (
                         <Link
-                          key={d}
+                          key={`${d}-${idx}`}
                           href={`/director/${encodeURIComponent(d)}`}
                           className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-primary/40 hover:bg-brand-primary/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
                         >
@@ -503,8 +516,8 @@ export default function MovieDetailClient({
                   <div>
                     <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Senaristler</h3>
                     <div className="flex flex-wrap gap-1.5">
-                      {movie.writers.map((w) => (
-                        <span key={w} className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
+                      {Array.from(new Set(movie.writers)).map((w, idx) => (
+                        <span key={`${w}-${idx}`} className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
                           {w}
                         </span>
                       ))}
@@ -515,9 +528,9 @@ export default function MovieDetailClient({
                 <div>
                   <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Kategoriler / Türler</h3>
                   <div className="flex flex-wrap gap-1.5">
-                    {movie.genres.map((g) => (
+                    {Array.from(new Set(movie.genres)).map((g, idx) => (
                       <Link
-                        key={g}
+                        key={`${g}-${idx}`}
                         href={`/genre/${encodeURIComponent(g)}`}
                         className="bg-gradient-to-r from-zinc-900 to-slate-900 border border-zinc-800 hover:border-brand-primary/40 hover:from-zinc-900/80 hover:to-slate-900/80 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-bold transition-all"
                       >
@@ -533,9 +546,9 @@ export default function MovieDetailClient({
                 <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Başrol Oyuncuları</h3>
                 {movie.cast && movie.cast.length > 0 ? (
                   <div className="flex flex-col gap-2">
-                    {movie.cast.map((actor, idx) => (
+                    {Array.from(new Set(movie.cast)).map((actor, idx) => (
                       <Link
-                        key={actor}
+                        key={`${actor}-${idx}`}
                         href={`/actor/${encodeURIComponent(actor)}`}
                         className="flex items-center gap-2 text-zinc-300 hover:text-brand-primary hover:border-brand-primary/20 bg-zinc-900/40 border border-white/5 px-3 py-2 rounded-xl text-xs font-semibold transition-all"
                       >
@@ -711,13 +724,13 @@ export default function MovieDetailClient({
       </div>
 
       {/* Similar Movies Section */}
-      {similarMovies.length > 0 && (
+      {randomSimilarMovies.length > 0 && (
         <section className="space-y-6 pt-6 border-t border-zinc-800">
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <span>🎬</span> Benzer Yapım Önerileri
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
-            {similarMovies.map((sm) => (
+            {randomSimilarMovies.map((sm) => (
               <MovieCard key={sm.imdbId} movie={sm} />
             ))}
           </div>

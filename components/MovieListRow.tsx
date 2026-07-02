@@ -82,34 +82,37 @@ export default function MovieListRow({ movie }: MovieListRowProps) {
           {movie.director && (
             <span className="truncate">
               Yönetmen:{' '}
-              {movie.director.split(',').map((d, i) => (
-                <span key={d}>
-                  <Link
-                    href={`/director/${encodeURIComponent(d.trim())}`}
-                    className="text-zinc-300 font-medium hover:text-brand-primary transition-colors"
-                  >
-                    {d.trim()}
-                  </Link>
-                  {i < movie.director!.split(',').length - 1 && ', '}
-                </span>
-              ))}
+              {(() => {
+                const directors = Array.from(new Set(movie.director.split(',').map((d) => d.trim()).filter(Boolean)));
+                return directors.map((d, i) => (
+                  <span key={`${d}-${i}`}>
+                    <Link
+                      href={`/director/${encodeURIComponent(d)}`}
+                      className="text-zinc-300 font-medium hover:text-brand-primary transition-colors"
+                    >
+                      {d}
+                    </Link>
+                    {i < directors.length - 1 && ', '}
+                  </span>
+                ));
+              })()}
             </span>
           )}
         </div>
 
         {/* Genre and list tags */}
         <div className="flex flex-wrap items-center gap-1.5 mt-2.5">
-          {movie.genres.map((g) => (
+          {Array.from(new Set(movie.genres)).map((g, idx) => (
             <Link
-              key={g}
+              key={`${g}-${idx}`}
               href={`/genre/${encodeURIComponent(g)}`}
               className="text-[10px] bg-zinc-800 hover:bg-brand-primary/20 hover:border-brand-primary/30 border border-transparent px-2 py-0.5 rounded-md text-zinc-300 transition-colors"
             >
               {g}
             </Link>
           ))}
-          {movie.listName.slice(0, 2).map((l) => (
-            <span key={l} className="text-[10px] bg-red-950/40 text-red-300 border border-red-900/30 px-2 py-0.5 rounded-md">
+          {Array.from(new Set(movie.listName.slice(0, 2))).map((l, idx) => (
+            <span key={`${l}-${idx}`} className="text-[10px] bg-red-950/40 text-red-300 border border-red-900/30 px-2 py-0.5 rounded-md">
               {l}
             </span>
           ))}
