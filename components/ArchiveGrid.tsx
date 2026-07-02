@@ -143,6 +143,8 @@ interface ArchiveGridProps {
   flat?: boolean;
   /** Default sort option */
   defaultSort?: SortOption;
+  /** localStorage namespace key to persist sort/tab preferences */
+  storageKey?: string;
 }
 
 function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption }) {
@@ -222,8 +224,22 @@ function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption
   );
 }
 
-export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrating-desc' }: ArchiveGridProps) {
-  const [sortOption, setSortOption] = useState<SortOption>(defaultSort);
+export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrating-desc', storageKey }: ArchiveGridProps) {
+  const sortStorageKey = storageKey ? `archive-sort-${storageKey}` : null;
+  const tabStorageKey  = storageKey ? `archive-tab-${storageKey}`  : null;
+
+  // Read persisted sort from localStorage (SSR-safe)
+  const [sortOption, setSortOptionState] = useState<SortOption>(() => {
+    if (typeof window === 'undefined' || !sortStorageKey) return defaultSort;
+    const saved = localStorage.getItem(sortStorageKey);
+    const valid: SortOption[] = ['imdb-desc','imdb-asc','myrating-desc','myrating-asc','year-desc','year-asc','watchdate-desc','watchdate-asc'];
+    return (saved && valid.includes(saved as SortOption)) ? (saved as SortOption) : defaultSort;
+  });
+
+  const setSortOption = (v: SortOption) => {
+    setSortOptionState(v);
+    if (sortStorageKey) localStorage.setItem(sortStorageKey, v);
+  };
 
   const cinemaMovies = movies.filter((m) => m.type === 'Movie');
   const tvContent = movies.filter(
@@ -246,9 +262,17 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
   const defaultTab =
     cinemaMovies.length >= tvContent.length ? 'cinema' : 'tv';
 
-  const [activeTab, setActiveTab] = useState<'cinema' | 'tv' | 'other'>(
-    defaultTab
-  );
+  // Read persisted tab from localStorage (SSR-safe)
+  const [activeTab, setActiveTabState] = useState<'cinema' | 'tv' | 'other'>(() => {
+    if (typeof window === 'undefined' || !tabStorageKey) return defaultTab;
+    const saved = localStorage.getItem(tabStorageKey);
+    return (saved === 'cinema' || saved === 'tv' || saved === 'other') ? saved : defaultTab;
+  });
+
+  const setActiveTab = (v: 'cinema' | 'tv' | 'other') => {
+    setActiveTabState(v);
+    if (tabStorageKey) localStorage.setItem(tabStorageKey, v);
+  };
 
   // Flat mode: show all movies in one grid
   if (flat) {

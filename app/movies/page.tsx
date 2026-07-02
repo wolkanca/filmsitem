@@ -42,10 +42,22 @@ export default function MoviesPage() {
 
   // Load from localStorage on mount to avoid Next.js hydration mismatches
   useEffect(() => {
-    const saved = localStorage.getItem('movies-active-tab') as TabType | null;
-    if (saved === 'all' || saved === 'movie' || saved === 'tv') {
-      setActiveTab(saved);
+    const savedTab = localStorage.getItem('movies-active-tab') as TabType | null;
+    if (savedTab === 'all' || savedTab === 'movie' || savedTab === 'tv') {
+      setActiveTab(savedTab);
     }
+    const savedSort = localStorage.getItem('movies-sort-by');
+    if (savedSort) setSortByState(savedSort);
+    const savedView = localStorage.getItem('movies-view-mode');
+    if (savedView === 'grid' || savedView === 'list') setViewModeState(savedView);
+    const savedGenre = localStorage.getItem('movies-genre');
+    if (savedGenre) setSelectedGenre(savedGenre);
+    const savedYear = localStorage.getItem('movies-year');
+    if (savedYear) setSelectedYear(savedYear);
+    const savedMinMyRating = localStorage.getItem('movies-min-my-rating');
+    if (savedMinMyRating) setMinMyRating(savedMinMyRating);
+    const savedMinImdb = localStorage.getItem('movies-min-imdb-rating');
+    if (savedMinImdb) setMinImdbRating(savedMinImdb);
     setIsMounted(true);
   }, []);
 
@@ -76,9 +88,21 @@ export default function MoviesPage() {
   const [selectedYear, setSelectedYear] = useState('');
   const [minMyRating, setMinMyRating] = useState('');
   const [minImdbRating, setMinImdbRating] = useState('');
-  const [sortBy, setSortBy] = useState('watchDate-desc');
-  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [sortBy, setSortByState] = useState('watchDate-desc');
+  const [viewMode, setViewModeState] = useState<'grid' | 'list'>('grid');
   const [showFilters, setShowFilters] = useState(false);
+
+  // Persist sortBy
+  const setSortBy = (v: string) => {
+    setSortByState(v);
+    localStorage.setItem('movies-sort-by', v);
+  };
+
+  // Persist viewMode
+  const setViewMode = (v: 'grid' | 'list') => {
+    setViewModeState(v);
+    localStorage.setItem('movies-view-mode', v);
+  };
 
   // Tab counts
   const tabCounts = useMemo(() => ({
@@ -104,7 +128,7 @@ export default function MoviesPage() {
     return Array.from(new Set(all)).sort((a, b) => b - a);
   }, [tabFilteredMovies]);
 
-  // Persist tab selection + reset filters on tab change (only after mounting)
+  // Persist tab selection + reset content filters on tab change (only after mounting)
   useEffect(() => {
     if (!isMounted) return;
     localStorage.setItem('movies-active-tab', activeTab);
@@ -113,7 +137,11 @@ export default function MoviesPage() {
     setSelectedYear('');
     setMinMyRating('');
     setMinImdbRating('');
-    setSortBy('watchDate-desc');
+    localStorage.removeItem('movies-genre');
+    localStorage.removeItem('movies-year');
+    localStorage.removeItem('movies-min-my-rating');
+    localStorage.removeItem('movies-min-imdb-rating');
+    // sortBy and viewMode are intentionally kept across tab changes
   }, [activeTab, isMounted]);
 
   // Reset all filters
@@ -124,6 +152,11 @@ export default function MoviesPage() {
     setMinMyRating('');
     setMinImdbRating('');
     setSortBy('watchDate-desc');
+    localStorage.removeItem('movies-genre');
+    localStorage.removeItem('movies-year');
+    localStorage.removeItem('movies-min-my-rating');
+    localStorage.removeItem('movies-min-imdb-rating');
+    localStorage.setItem('movies-sort-by', 'watchDate-desc');
   };
 
   // Perform filtering & sorting
@@ -262,7 +295,7 @@ export default function MoviesPage() {
 
           <button
             onClick={() => setShowFilters(!showFilters)}
-            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all duration-300 ${showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating
+            className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all duration-300 ${showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating || sortBy !== 'watchDate-desc'
                 ? 'bg-brand-primary/10 border-brand-primary/30 text-brand-primary'
                 : 'bg-zinc-900 border-white/5 text-zinc-400 hover:text-white'
               }`}
@@ -322,14 +355,14 @@ export default function MoviesPage() {
       </div>
 
       {/* Filters Box */}
-      {(showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating) && (
+      {(showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating || sortBy !== 'watchDate-desc') && (
         <div className="glass p-6 rounded-2xl border border-white/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 animate-fade-in">
           {/* Genre Filter */}
           <div className="space-y-1.5">
             <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Tür</label>
             <select
               value={selectedGenre}
-              onChange={(e) => setSelectedGenre(e.target.value)}
+              onChange={(e) => { setSelectedGenre(e.target.value); localStorage.setItem('movies-genre', e.target.value); }}
               className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
             >
               <option value="">Tümü</option>
@@ -346,7 +379,7 @@ export default function MoviesPage() {
             <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Yapım Yılı</label>
             <select
               value={selectedYear}
-              onChange={(e) => setSelectedYear(e.target.value)}
+              onChange={(e) => { setSelectedYear(e.target.value); localStorage.setItem('movies-year', e.target.value); }}
               className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
             >
               <option value="">Tümü</option>
@@ -363,7 +396,7 @@ export default function MoviesPage() {
             <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Benim Puanım (Min)</label>
             <select
               value={minMyRating}
-              onChange={(e) => setMinMyRating(e.target.value)}
+              onChange={(e) => { setMinMyRating(e.target.value); localStorage.setItem('movies-min-my-rating', e.target.value); }}
               className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
             >
               <option value="">Tümü</option>
@@ -380,7 +413,7 @@ export default function MoviesPage() {
             <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">IMDb Puanı (Min)</label>
             <select
               value={minImdbRating}
-              onChange={(e) => setMinImdbRating(e.target.value)}
+              onChange={(e) => { setMinImdbRating(e.target.value); localStorage.setItem('movies-min-imdb-rating', e.target.value); }}
               className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
             >
               <option value="">Tümü</option>

@@ -42,7 +42,7 @@ export default async function FavoritesPage() {
           </p>
         </div>
       ) : (
-        <ArchiveGrid movies={favoriteMovies} flat defaultSort="myrating-desc" />
+        <ArchiveGrid movies={favoriteMovies} flat defaultSort="watchdate-desc" storageKey="favorites" />
       )}
     </div>
   );
