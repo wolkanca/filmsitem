@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="dark scroll-smooth">
-      <body className={`${inter.variable} font-sans min-h-screen bg-background text-foreground flex flex-col antialiased`}>
+      <body className={`${inter.variable} font-sans min-h-screen bg-background text-foreground flex flex-col antialiased min-w-[320px]`}>
         {/* Navbar */}
         <Navbar />
 

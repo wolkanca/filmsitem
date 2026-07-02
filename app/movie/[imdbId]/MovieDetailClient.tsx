@@ -49,9 +49,9 @@ export default function MovieDetailClient({
 
   useEffect(() => {
     if (similarMovies && similarMovies.length > 0) {
-      // Shuffle array and pick first 5
-      const shuffled = [...similarMovies].sort(() => 0.5 - Math.random());
-      setRandomSimilarMovies(shuffled.slice(0, 5));
+      // Shuffle array and pick first 4
+      const shuffled = [...similarMovies].sort(() => 0.4 - Math.random());
+      setRandomSimilarMovies(shuffled.slice(0, 4));
     } else {
       setRandomSimilarMovies([]);
     }
@@ -247,10 +247,13 @@ export default function MovieDetailClient({
         <div className="relative z-10 p-6 sm:p-10 w-full flex flex-col md:flex-row gap-8 items-start md:items-end">
 
           {/* Movie Poster Image (clickable) */}
-          <div className="relative flex-shrink-0">
+          <div className="relative flex-shrink-0 mx-auto">
             <div
               onClick={() => !isPosterEditing && hasRealPoster && setIsPosterModalOpen(true)}
-              className={`relative aspect-[2/3] w-40 sm:w-52 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${hasRealPoster && !isPosterEditing ? 'cursor-zoom-in' : 'cursor-default'}`}
+              className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl
+      
+                bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300
+                 group ${hasRealPoster && !isPosterEditing ? 'cursor-zoom-in' : 'cursor-default'}`}
             >
               <PosterImage
                 src={livePoster}
@@ -418,11 +421,10 @@ export default function MovieDetailClient({
                       <button
                         key={s.seasonNumber}
                         onClick={() => setActiveSeasonTab(s.seasonNumber)}
-                        className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all duration-200 ${
-                          isActive
-                            ? 'bg-brand-primary border-brand-primary/30 text-white shadow-[0_4px_12px_rgba(239,68,68,0.25)]'
-                            : 'bg-zinc-950/60 border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-900/60'
-                        }`}
+                        className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all duration-200 ${isActive
+                          ? 'bg-brand-primary border-brand-primary/30 text-white shadow-[0_4px_12px_rgba(239,68,68,0.25)]'
+                          : 'bg-zinc-950/60 border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-900/60'
+                          }`}
                       >
                         {s.seasonNumber}. Sezon ({s.episodes.length} Bölüm)
                       </button>
@@ -729,7 +731,7 @@ export default function MovieDetailClient({
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <span>🎬</span> Benzer Yapım Önerileri
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-6">
             {randomSimilarMovies.map((sm) => (
               <MovieCard key={sm.imdbId} movie={sm} />
             ))}
