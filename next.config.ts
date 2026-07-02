@@ -10,7 +10,9 @@ const nextConfig: NextConfig = {
       "ia.media-imdb.com",
       "img.omdbapi.com",
       "img.youtube.com",
-      "i0.wp.com"
+      "i0.wp.com",
+      "upload.wikimedia.org",
+      "encrypted-tbn0.gstatic.com"
     ],
   },
 

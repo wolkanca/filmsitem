@@ -44,8 +44,12 @@ export default function MovieDetailClient({
   // Admin state
   const [isAdmin, setIsAdmin] = useState(false);
 
-  // Live editable movie data (poster, trailer)
+  // Live editable movie data (poster, backdrop, trailer)
   const [livePoster, setLivePoster] = useState(movie.poster);
+  // Backdrop olarak placeholder/unsplash URL'si varsa boş say — poster fallback'e düşsün
+  const [liveBackdrop, setLiveBackdrop] = useState(
+    !isPlaceholderUrl(movie.backdrop) ? movie.backdrop : undefined
+  );
   const [liveTrailerId, setLiveTrailerId] = useState(movie.trailerYoutubeId || '');
 
   // Poster edit state
@@ -120,11 +124,13 @@ export default function MovieDetailClient({
       const res = await fetch(`/api/movies/${movie.imdbId}`, {
         method: 'PATCH',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ poster: posterInput }),
+        // Poster kaydedilince backdrop'u da aynı URL ile güncelle
+        body: JSON.stringify({ poster: posterInput, backdrop: posterInput }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || 'Kaydetme başarısız.');
       setLivePoster(posterInput);
+      setLiveBackdrop(posterInput); // Hero alanı da anında güncellenir
       setIsPosterEditing(false);
     } catch (err: unknown) {
       setPosterError(err instanceof Error ? err.message : 'Hata oluştu.');
@@ -213,7 +219,7 @@ export default function MovieDetailClient({
         {/* Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <PosterImage
-            src={movie.backdrop || livePoster}
+            src={liveBackdrop || livePoster}
             alt={movie.title}
             fill
             className="object-cover opacity-30 select-none pointer-events-none"

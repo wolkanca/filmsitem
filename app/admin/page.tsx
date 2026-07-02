@@ -23,6 +23,7 @@ export default function AdminPage() {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [moviesLoading, setMoviesLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [filterMode, setFilterMode] = useState<'all' | 'no-poster' | 'no-trailer' | 'both-missing'>('all');
 
   // Per-movie edit states: { [imdbId]: { poster, trailer, saving, error, posterOpen, trailerOpen } }
   const [editStates, setEditStates] = useState<
@@ -84,15 +85,31 @@ export default function AdminPage() {
 
   // Filter movies by search
   const filteredMovies = useMemo(() => {
-    if (!searchQuery.trim()) return movies;
+    let list = movies;
+
+    // Apply filter mode
+    if (filterMode === 'no-poster') {
+      list = list.filter((m) => !m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder'));
+    } else if (filterMode === 'no-trailer') {
+      list = list.filter((m) => !m.trailerYoutubeId);
+    } else if (filterMode === 'both-missing') {
+      list = list.filter(
+        (m) =>
+          (!m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')) &&
+          !m.trailerYoutubeId
+      );
+    }
+
+    // Apply text search on top
+    if (!searchQuery.trim()) return list;
     const q = searchQuery.toLowerCase();
-    return movies.filter(
+    return list.filter(
       (m) =>
         m.title.toLowerCase().includes(q) ||
         m.imdbId.toLowerCase().includes(q) ||
         (m.originalTitle && m.originalTitle.toLowerCase().includes(q))
     );
-  }, [movies, searchQuery]);
+  }, [movies, searchQuery, filterMode]);
 
   // Update a single movie's field in editStates
   const setField = (imdbId: string, field: string, value: string | boolean) => {
@@ -120,7 +137,10 @@ export default function AdminPage() {
 
     try {
       const body: Record<string, string> = {};
-      if (field === 'poster') body.poster = value;
+      if (field === 'poster') {
+        body.poster = value;
+        body.backdrop = value; // Hero kapak alanını da güncelle
+      }
       if (field === 'trailer') body.trailerYoutubeId = value;
 
       const res = await fetch(`/api/movies/${imdbId}`, {
@@ -244,8 +264,41 @@ export default function AdminPage() {
                 </div>
               </div>
               <span className="text-xs font-bold text-zinc-500 bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-lg">
-                {movies.length} film
+                {filteredMovies.length} / {movies.length} film
               </span>
+            </div>
+
+            {/* Filter Mode Buttons */}
+            <div className="flex flex-wrap gap-2">
+              {([
+                { key: 'all',          label: '🎬 Tümü',               desc: `${movies.length} film` },
+                { key: 'no-poster',    label: '🖼️ Posteri Eksik/Bozuk', desc: `${movies.filter((m) => !m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')).length} film` },
+                { key: 'no-trailer',   label: '▶️ Fragmanı Eksik',      desc: `${movies.filter((m) => !m.trailerYoutubeId).length} film` },
+                { key: 'both-missing', label: '⚠️ İkisi de Eksik',      desc: `${movies.filter((m) => (!m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')) && !m.trailerYoutubeId).length} film` },
+              ] as { key: 'all' | 'no-poster' | 'no-trailer' | 'both-missing'; label: string; desc: string }[]).map(({ key, label, desc }) => (
+                <button
+                  key={key}
+                  onClick={() => setFilterMode(key)}
+                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl border text-xs font-bold transition-all cursor-pointer ${
+                    filterMode === key
+                      ? key === 'all'
+                        ? 'bg-violet-500/20 border-violet-500/50 text-violet-300'
+                        : key === 'no-poster'
+                        ? 'bg-amber-500/15 border-amber-500/40 text-amber-300'
+                        : key === 'no-trailer'
+                        ? 'bg-blue-500/15 border-blue-500/40 text-blue-300'
+                        : 'bg-red-500/15 border-red-500/40 text-red-300'
+                      : 'bg-zinc-900/60 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
+                  }`}
+                >
+                  {label}
+                  <span className={`px-1.5 py-0.5 rounded-md text-[10px] font-black ${
+                    filterMode === key ? 'bg-white/10' : 'bg-zinc-800'
+                  }`}>
+                    {desc}
+                  </span>
+                </button>
+              ))}
             </div>
 
             {/* Search */}
