@@ -7,12 +7,13 @@ import MovieListRow from '@/components/MovieListRow';
 import Link from 'next/link';
 import { Search, SlidersHorizontal, LayoutGrid, List, RotateCcw, Sparkles, Play, Film, Tv, Library } from 'lucide-react';
 
-type TabType = 'all' | 'movie' | 'tv';
+type TabType = 'all' | 'movie' | 'tv' | 'other';
 
 const TABS: { key: TabType; label: string; icon: React.ReactNode }[] = [
   { key: 'all', label: 'Tümü', icon: <Library className="w-4 h-4" /> },
   { key: 'movie', label: 'Filmler', icon: <Film className="w-4 h-4" /> },
   { key: 'tv', label: 'Diziler', icon: <Tv className="w-4 h-4" /> },
+  { key: 'other', label: 'Diğer', icon: <LayoutGrid className="w-4 h-4" /> },
 ];
 
 // A movie is considered TV if its type starts with "TV" or equals known TV types
@@ -43,7 +44,7 @@ export default function MoviesPage() {
   // Load from localStorage on mount to avoid Next.js hydration mismatches
   useEffect(() => {
     const savedTab = localStorage.getItem('movies-active-tab') as TabType | null;
-    if (savedTab === 'all' || savedTab === 'movie' || savedTab === 'tv') {
+    if (savedTab === 'all' || savedTab === 'movie' || savedTab === 'tv' || savedTab === 'other') {
       setActiveTab(savedTab);
     }
     const savedSort = localStorage.getItem('movies-sort-by');
@@ -105,16 +106,22 @@ export default function MoviesPage() {
   };
 
   // Tab counts
+  function isOther(movie: Movie): boolean {
+    return !isTV(movie) && movie.type !== 'Movie';
+  }
+
   const tabCounts = useMemo(() => ({
     all: movies.length,
-    movie: movies.filter((m) => !isTV(m)).length,
+    movie: movies.filter((m) => m.type === 'Movie').length,
     tv: movies.filter((m) => isTV(m)).length,
+    other: movies.filter((m) => isOther(m)).length,
   }), [movies]);
 
   // Calculate unique filters from data (scoped to active tab)
   const tabFilteredMovies = useMemo(() => {
-    if (activeTab === 'movie') return movies.filter((m) => !isTV(m));
+    if (activeTab === 'movie') return movies.filter((m) => m.type === 'Movie');
     if (activeTab === 'tv') return movies.filter((m) => isTV(m));
+    if (activeTab === 'other') return movies.filter((m) => isOther(m));
     return movies;
   }, [movies, activeTab]);
 
@@ -327,7 +334,7 @@ export default function MoviesPage() {
 
       {/* ── Tabs ── */}
       <div className="flex items-center gap-1 p-1 bg-zinc-900/60 border border-white/5 rounded-2xl w-fit">
-        {TABS.map((tab) => {
+        {TABS.filter((tab) => tab.key !== 'other' || tabCounts.other > 0).map((tab) => {
           const active = activeTab === tab.key;
           return (
             <button
@@ -347,7 +354,7 @@ export default function MoviesPage() {
                     : 'bg-zinc-800 text-zinc-400'
                   }`}
               >
-                {tabCounts[tab.key]}
+                {tabCounts[tab.key] ?? 0}
               </span>
             </button>
           );

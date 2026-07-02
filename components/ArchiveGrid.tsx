@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { Film, Tv, ArrowUpDown, Star, Calendar, Eye, ChevronDown, Loader2 } from 'lucide-react';
+import { Film, Tv, ArrowUpDown, Star, Calendar, Eye, ChevronDown, Loader2, LayoutGrid } from 'lucide-react';
 import { Movie } from '@/types';
 import MovieCard from '@/components/MovieCard';
 import { Clock } from 'lucide-react';
@@ -91,11 +91,10 @@ function SortDropdown({ value, onChange }: { value: SortOption; onChange: (v: So
                 <button
                   key={opt.value}
                   onClick={() => { onChange(opt.value); setOpen(false); }}
-                  className={`w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-left text-sm transition-all duration-150 ${
-                    isActive
-                      ? 'bg-brand-primary/15 text-white font-semibold'
-                      : 'text-zinc-400 hover:text-white hover:bg-white/5'
-                  }`}
+                  className={`w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-left text-sm transition-all duration-150 ${isActive
+                    ? 'bg-brand-primary/15 text-white font-semibold'
+                    : 'text-zinc-400 hover:text-white hover:bg-white/5'
+                    }`}
                 >
                   <Icon className={`w-3.5 h-3.5 shrink-0 ${isActive ? 'text-brand-accent' : 'text-zinc-600'}`} />
                   <span>{opt.label}</span>
@@ -115,8 +114,8 @@ function StatsBar({ movies }: { movies: Movie[] }) {
   const avgRating =
     ratedMovies.length > 0
       ? (
-          ratedMovies.reduce((acc, m) => acc + m.myRating, 0) / ratedMovies.length
-        ).toFixed(1)
+        ratedMovies.reduce((acc, m) => acc + m.myRating, 0) / ratedMovies.length
+      ).toFixed(1)
       : 'N/A';
   const totalRuntimeHours = Math.round(
     movies.reduce((acc, m) => acc + (m.runtime || 0), 0) / 60
@@ -226,13 +225,13 @@ function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption
 
 export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrating-desc', storageKey }: ArchiveGridProps) {
   const sortStorageKey = storageKey ? `archive-sort-${storageKey}` : null;
-  const tabStorageKey  = storageKey ? `archive-tab-${storageKey}`  : null;
+  const tabStorageKey = storageKey ? `archive-tab-${storageKey}` : null;
 
   // Read persisted sort from localStorage (SSR-safe)
   const [sortOption, setSortOptionState] = useState<SortOption>(() => {
     if (typeof window === 'undefined' || !sortStorageKey) return defaultSort;
     const saved = localStorage.getItem(sortStorageKey);
-    const valid: SortOption[] = ['imdb-desc','imdb-asc','myrating-desc','myrating-asc','year-desc','year-asc','watchdate-desc','watchdate-asc'];
+    const valid: SortOption[] = ['imdb-desc', 'imdb-asc', 'myrating-desc', 'myrating-asc', 'year-desc', 'year-asc', 'watchdate-desc', 'watchdate-asc'];
     return (saved && valid.includes(saved as SortOption)) ? (saved as SortOption) : defaultSort;
   });
 
@@ -259,17 +258,16 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
   );
 
   // Determine default tab
-  const defaultTab =
-    cinemaMovies.length >= tvContent.length ? 'cinema' : 'tv';
+  const defaultTab = 'all' as const;
 
   // Read persisted tab from localStorage (SSR-safe)
-  const [activeTab, setActiveTabState] = useState<'cinema' | 'tv' | 'other'>(() => {
+  const [activeTab, setActiveTabState] = useState<'all' | 'cinema' | 'tv' | 'other'>(() => {
     if (typeof window === 'undefined' || !tabStorageKey) return defaultTab;
     const saved = localStorage.getItem(tabStorageKey);
-    return (saved === 'cinema' || saved === 'tv' || saved === 'other') ? saved : defaultTab;
+    return (saved === 'all' || saved === 'cinema' || saved === 'tv' || saved === 'other') ? saved : defaultTab;
   });
 
-  const setActiveTab = (v: 'cinema' | 'tv' | 'other') => {
+  const setActiveTab = (v: 'all' | 'cinema' | 'tv' | 'other') => {
     setActiveTabState(v);
     if (tabStorageKey) localStorage.setItem(tabStorageKey, v);
   };
@@ -300,8 +298,18 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
 
   const tabs = [
     {
+      id: 'all' as const,
+      label: 'Tümü',
+      icon: LayoutGrid,
+      count: movies.length,
+      items: movies,
+      color: 'text-zinc-300',
+      activeBg:
+        'bg-gradient-to-r from-zinc-800/60 to-zinc-700/40 border-zinc-600/40 text-white',
+    },
+    {
       id: 'cinema' as const,
-      label: 'Sinema Filmleri',
+      label: 'Filmler',
       icon: Film,
       count: cinemaMovies.length,
       items: cinemaMovies,
@@ -311,7 +319,7 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
     },
     {
       id: 'tv' as const,
-      label: 'Dizi & Bölümler',
+      label: 'Diziler',
       icon: Tv,
       count: tvContent.length,
       items: tvContent,
@@ -321,25 +329,27 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
     },
     ...(otherContent.length > 0
       ? [
-          {
-            id: 'other' as const,
-            label: 'Diğer',
-            icon: Film,
-            count: otherContent.length,
-            items: otherContent,
-            color: 'text-zinc-400',
-            activeBg: 'bg-zinc-800/60 border-zinc-700 text-white',
-          },
-        ]
+        {
+          id: 'other' as const,
+          label: 'Diğer',
+          icon: Film,
+          count: otherContent.length,
+          items: otherContent,
+          color: 'text-zinc-400',
+          activeBg: 'bg-zinc-800/60 border-zinc-700 text-white',
+        },
+      ]
       : []),
   ];
 
   const activeItems =
-    activeTab === 'cinema'
-      ? cinemaMovies
-      : activeTab === 'tv'
-      ? tvContent
-      : otherContent;
+    activeTab === 'all'
+      ? movies
+      : activeTab === 'cinema'
+        ? cinemaMovies
+        : activeTab === 'tv'
+          ? tvContent
+          : otherContent;
 
   return (
     <div className="space-y-6">
@@ -352,20 +362,18 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl border text-sm font-bold transition-all duration-300 ${
-                isActive
-                  ? `${tab.activeBg} shadow-[0_0_20px_rgba(239,68,68,0.15)]`
-                  : 'bg-zinc-950/60 border-white/5 text-zinc-400 hover:text-white hover:border-white/10'
-              }`}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-xl border text-sm font-bold transition-all duration-300 ${isActive
+                ? `${tab.activeBg} shadow-[0_0_20px_rgba(239,68,68,0.15)]`
+                : 'bg-zinc-950/60 border-white/5 text-zinc-400 hover:text-white hover:border-white/10'
+                }`}
             >
               <Icon className={`w-4 h-4 ${isActive ? 'text-current' : tab.color}`} />
               {tab.label}
               <span
-                className={`text-xs px-2 py-0.5 rounded-full font-black ${
-                  isActive
-                    ? 'bg-white/10 text-white'
-                    : 'bg-zinc-800 text-zinc-400'
-                }`}
+                className={`text-xs px-2 py-0.5 rounded-full font-black ${isActive
+                  ? 'bg-white/10 text-white'
+                  : 'bg-zinc-800 text-zinc-400'
+                  }`}
               >
                 {tab.count}
               </span>
