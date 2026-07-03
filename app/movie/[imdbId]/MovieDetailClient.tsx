@@ -373,24 +373,29 @@ export default function MovieDetailClient({
                   {movie.runtime} dakika
                 </span>
               )}
+              {movie.omdbType && (
+                <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
+                  Tür: <strong className="text-zinc-300 capitalize">{movie.omdbType}</strong>
+                </span>
+              )}
+
+              {movie.country && (
+                <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
+                  Ülke: <strong className="text-zinc-300">{movie.country}</strong>
+                </span>
+              )}
+
+              {movie.boxOffice && (
+                <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
+                  Box Office: <strong className="text-zinc-300">{movie.boxOffice}</strong>
+                </span>
+              )}
+
               {movie.releaseDate && (
                 <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
                   Vizyon Tarihi: <strong className="text-zinc-300">{formatDate(movie.releaseDate)}</strong>
                 </span>
               )}
-
-              {/* IMDb External Link */}
-              <a
-                href={`https://www.imdb.com/title/${movie.imdbId}/`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-auto flex items-center gap-2 px-4 py-1.5 rounded-lg font-bold text-xs bg-[#f5c518]/10 hover:bg-[#f5c518]/20 text-[#f5c518] border border-[#f5c518]/30 hover:border-[#f5c518]/60 transition-all duration-200 shadow-[0_0_12px_rgba(245,197,24,0.08)] hover:shadow-[0_0_16px_rgba(245,197,24,0.2)]"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M14.31 9.588v.005c-.077-.048-1.575-.31-1.575-.31l-.35 2.06-.342-2.06S10.551 9.54 10.473 9.588C10.247 9.732 10.1 10.127 10.1 10.7v2.602c0 .572.145.964.37 1.108.076.048.575.1.575.1l.342-2.268.35 2.268s.498-.052.575-.1c.226-.144.37-.536.37-1.108V10.7c0-.573-.147-.968-.372-1.112zM6.792 9.35L6.35 12.23l-.44-2.88H4.2v5.3h1.2v-3.3l.527 3.3h.848l.526-3.3v3.3h1.2v-5.3H6.792zm5.36-5.85C5.664 3.5 1 8.164 1 13.652c0 5.488 4.664 9.848 11.152 9.848S23.5 19.14 23.5 13.652C23.5 8.164 18.64 3.5 12.152 3.5zm4.33 12.51a.5.5 0 01-.5.5H8.02a.5.5 0 01-.5-.5V8.64a.5.5 0 01.5-.5h7.962a.5.5 0 01.5.5v7.37zm-.45-6.01h-1.42v5.3h1.42v-5.3z" />
-                </svg>
-                IMDb&apos;de Gör
-              </a>
             </div>
           </div>
         </div>
@@ -412,7 +417,7 @@ export default function MovieDetailClient({
             {movie.plot && (
               <>
                 <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
-                  <strong className="text-white">Konu <small className="text-zinc-500 font-light italic">(IMDb)</small>:</strong> {movie.plot}
+                  <strong className="text-white">Konu:</strong> {movie.plot}
                 </p>
               </>
             )}
@@ -489,44 +494,6 @@ export default function MovieDetailClient({
                   </div>
                 ) : (
                   <span className="text-zinc-500 text-xs italic">Oyuncu bilgisi eklenmemiş.</span>
-                )}
-              </div>
-
-              <div className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-4 gap-4">
-                {movie.country && (
-                  <div>
-                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Ülke</h3>
-                    <span className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
-                      {movie.country}
-                    </span>
-                  </div>
-                )}
-
-                {movie.omdbType && (
-                  <div>
-                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Tür</h3>
-                    <span className="capitalize bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
-                      {movie.omdbType}
-                    </span>
-                  </div>
-                )}
-
-                {movie.runtime && (
-                  <div>
-                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Süre</h3>
-                    <span className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
-                      {movie.runtime} dakika
-                    </span>
-                  </div>
-                )}
-
-                {movie.boxOffice && (
-                  <div>
-                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Box Office</h3>
-                    <span className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
-                      {movie.boxOffice}
-                    </span>
-                  </div>
                 )}
               </div>
 
@@ -635,7 +602,7 @@ export default function MovieDetailClient({
               <Eye className="w-5 h-5 text-brand-primary" /> Notlarım
             </h2>
 
-            <div className="space-y-4">
+            <div>
               {/* My Rating */}
               <div className="bg-zinc-950/60 border border-white/5 rounded-2xl p-4 text-center">
                 <span className="text-xs font-bold text-zinc-500 uppercase tracking-wider">
@@ -680,6 +647,19 @@ export default function MovieDetailClient({
                   <span className="text-sm font-extrabold text-zinc-300 mt-0.5 block">{movie.tmdbRating || movie.imdbRating} / 10</span>
                 </div>
               </div>
+
+              {/* IMDb External Link */}
+              <a
+                href={`https://www.imdb.com/title/${movie.imdbId}/`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-auto flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg font-bold bg-[#f5c518]/10 hover:bg-[#f5c518]/20 text-[#f5c518] border border-[#f5c518]/30 hover:border-[#f5c518]/60 transition-all duration-200 shadow-[0_0_12px_rgba(245,197,24,0.08)] hover:shadow-[0_0_16px_rgba(245,197,24,0.2)]"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M14.31 9.588v.005c-.077-.048-1.575-.31-1.575-.31l-.35 2.06-.342-2.06S10.551 9.54 10.473 9.588C10.247 9.732 10.1 10.127 10.1 10.7v2.602c0 .572.145.964.37 1.108.076.048.575.1.575.1l.342-2.268.35 2.268s.498-.052.575-.1c.226-.144.37-.536.37-1.108V10.7c0-.573-.147-.968-.372-1.112zM6.792 9.35L6.35 12.23l-.44-2.88H4.2v5.3h1.2v-3.3l.527 3.3h.848l.526-3.3v3.3h1.2v-5.3H6.792zm5.36-5.85C5.664 3.5 1 8.164 1 13.652c0 5.488 4.664 9.848 11.152 9.848S23.5 19.14 23.5 13.652C23.5 8.164 18.64 3.5 12.152 3.5zm4.33 12.51a.5.5 0 01-.5.5H8.02a.5.5 0 01-.5-.5V8.64a.5.5 0 01.5-.5h7.962a.5.5 0 01.5.5v7.37zm-.45-6.01h-1.42v5.3h1.42v-5.3z" />
+                </svg>
+                IMDb&apos;de Gör
+              </a>
             </div>
           </div>
 
@@ -694,7 +674,7 @@ export default function MovieDetailClient({
             </a>
 
             <a
-              href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' izle')}`}
+              href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-opacity w-full shadow-[0_10px_25px_rgba(239,68,68,0.3)]"
