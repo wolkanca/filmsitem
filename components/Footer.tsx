@@ -30,30 +30,51 @@ export default function Footer() {
     <footer className="w-full glass border-t border-card-border mt-16 py-10 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <section className="pb-8 mb-8 border-b border-zinc-800/80">
-          <div className="flex flex-col lg:flex-row gap-6 lg:items-start lg:justify-between">
+          <div className="flex flex-col lg:flex-row gap-8 lg:items-start lg:justify-between">
+            <div className="flex-1 space-y-4">
+              <div>
+                <h2 className="text-sm font-black text-white uppercase tracking-wider">
+                  Koleksiyonlar
+                </h2>
+                <p className="text-xs text-zinc-500 mt-2 leading-relaxed max-w-2xl">
+                  İzlediğim yapımları tür, dönem, puan ve formatlarına göre otomatik oluşturulan{' '}
+                  <a className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" href="/lists">
+                    akıllı listelerle
+                  </a>{' '}
+                  keşfet.
+                </p>
+              </div>
+
+              <nav
+                aria-label="Footer koleksiyon linkleri"
+                className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2"
+              >
+                {collectionLinks.map((collection) => (
+                  <Link
+                    key={collection.href}
+                    href={collection.href}
+                    className="rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-2 text-[11px] font-bold text-zinc-400 transition-all duration-200 hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
+                  >
+                    {collection.name}
+                  </Link>
+                ))}
+              </nav>
+            </div>
             <div className="max-w-sm">
               <h2 className="text-sm font-black text-white uppercase tracking-wider">
-                Koleksiyonlar
+                Veri Kaynağı
               </h2>
-              <p className="text-xs text-zinc-500 mt-2 leading-relaxed">
-                İzlediğim yapımları tür, dönem, puan ve formatlarına göre otomatik oluşturulan akıllı listelerle keşfet.
+              <p className="text-sm text-zinc-500 mt-2 mb-4 leading-relaxed">
+                Sitedeki veriler Volkan Yılmaz’ın izlediği ve IMDb’de puanladığı filmleri içermektedir, verilerin çoğu{' '}
+                <a className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
+                  TMDB API
+                </a>
+                ’den alınmıştır. Afişler, fragmanlar, IMDB verileri ve puanlar TMDB’den, YouTube’dan ise fragmanlar eklenmektedir.
+              </p>
+              <p className="text-sm text-zinc-500 my-2 leading-relaxed">
+                Bu site wolkanca.com’un bir parçasıdır, her türlü görüş ve öneri için <a href="https://wolkanca.com" className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" target="_blank" rel="noopener noreferrer">wolkanca.com</a> adresinden bana ulaşabilirsiniz.
               </p>
             </div>
-
-            <nav
-              aria-label="Footer koleksiyon linkleri"
-              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 flex-1"
-            >
-              {collectionLinks.map((collection) => (
-                <Link
-                  key={collection.href}
-                  href={collection.href}
-                  className="rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-2 text-xs font-bold text-zinc-400 transition-all duration-200 hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
-                >
-                  {collection.name}
-                </Link>
-              ))}
-            </nav>
           </div>
         </section>
 
@@ -66,7 +87,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 text-sm text-zinc-500">
             <span>
               <a
-                href="https://wolkanca.com"
+                href="https://volkanyilmaz.tr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-brand-secondary font-semibold transition-colors"
