@@ -30,6 +30,10 @@ export interface Movie {
   backdrop: string;
 
   overview: string;
+  plot: string;
+  country: string;
+  omdbType: string;
+  boxOffice: string;
 
   genres: string[];
 

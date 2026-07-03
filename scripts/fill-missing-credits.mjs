@@ -1,0 +1,189 @@
+import fs from 'fs/promises';
+import path from 'path';
+
+// const OMDB_API_KEY = process.env.OMDB_API_KEY;
+// const OMDB_API_KEY = '859a3a89';
+const OMDB_API_KEY = 'e1747d32';
+
+if (!OMDB_API_KEY) {
+    console.error('OMDB_API_KEY eksik.');
+    process.exit(1);
+}
+
+const args = process.argv.slice(2);
+
+const forceUpdate = args.includes('--force');
+const debugId = args.find((arg) => arg.startsWith('--id='))?.replace('--id=', '');
+
+const inputPathArg = args.find((arg) => !arg.startsWith('--')) || './data/movies.json';
+
+const inputPath = path.resolve(process.cwd(), inputPathArg);
+const outputPath = inputPath;
+
+console.log('Okunacak dosya:', inputPath);
+console.log('Güncellenecek dosya:', outputPath);
+console.log('Force update:', forceUpdate ? 'Açık - hedef alanlar yeniden sorgulanır' : 'Kapalı - sadece eksik hedef alanlar sorgulanır');
+console.log('Debug ID:', debugId || 'Yok');
+console.log('İşleme sırası: Dosyanın sonundan başa doğru');
+console.log('Hedef alanlar: plot, country, omdbType, boxOffice');
+
+const raw = await fs.readFile(inputPath, 'utf8');
+const movies = JSON.parse(raw);
+
+async function writeOutput() {
+    await fs.writeFile(outputPath, JSON.stringify(movies, null, 2), 'utf8');
+}
+
+function isTargetFieldMissing(movie, field) {
+    return (
+        !Object.prototype.hasOwnProperty.call(movie, field) ||
+        movie[field] === undefined ||
+        movie[field] === null ||
+        movie[field] === 'N/A'
+    );
+}
+
+function cleanOmdbValue(value) {
+    if (!value || value === 'N/A') return '';
+    return String(value).trim();
+}
+
+function getMissingTargetFields(movie) {
+    const targetFields = ['plot', 'country', 'omdbType', 'boxOffice'];
+
+    if (forceUpdate) {
+        return targetFields;
+    }
+
+    return targetFields.filter((field) => isTargetFieldMissing(movie, field));
+}
+
+async function fetchOmdb(imdbId) {
+    const url = `https://www.omdbapi.com/?i=${encodeURIComponent(imdbId)}&plot=full&apikey=${OMDB_API_KEY}`;
+
+    const res = await fetch(url);
+    const text = await res.text();
+
+    let data;
+
+    try {
+        data = JSON.parse(text);
+    } catch {
+        throw new Error(`OMDb JSON dönmedi: ${text}`);
+    }
+
+    if (!res.ok) {
+        throw new Error(`OMDb hata: ${res.status} - ${data?.Error || text}`);
+    }
+
+    if (data.Response === 'False') {
+        throw new Error(data.Error || 'OMDb kayıt bulamadı');
+    }
+
+    return data;
+}
+
+let updatedCount = 0;
+let checkedCount = 0;
+let failedCount = 0;
+let skippedCount = 0;
+let apiRequestCount = 0;
+
+const moviesToProcess = [...movies].reverse();
+
+for (const movie of moviesToProcess) {
+    if (debugId && movie.imdbId !== debugId) {
+        continue;
+    }
+
+    if (!movie.imdbId) {
+        skippedCount++;
+        console.log(`Atlandı: ${movie.title || 'Başlıksız kayıt'} - imdbId yok`);
+        continue;
+    }
+
+    const missingFields = getMissingTargetFields(movie);
+
+    if (missingFields.length === 0) {
+        skippedCount++;
+        console.log(`API çağrısı yapılmadı, hedef alanlar dolu: ${movie.title} (${movie.imdbId})`);
+        continue;
+    }
+
+    checkedCount++;
+
+    try {
+        console.log(`API çağrısı yapılacak: ${movie.title} (${movie.imdbId}) -> eksik: ${missingFields.join(', ')}`);
+
+        const omdb = await fetchOmdb(movie.imdbId);
+        apiRequestCount++;
+
+        const changedFields = [];
+
+        if (missingFields.includes('plot')) {
+            movie.plot = cleanOmdbValue(omdb.Plot);
+            changedFields.push('plot');
+        }
+
+        if (missingFields.includes('country')) {
+            movie.country = cleanOmdbValue(omdb.Country);
+            changedFields.push('country');
+        }
+
+        if (missingFields.includes('omdbType')) {
+            movie.omdbType = cleanOmdbValue(omdb.Type);
+            changedFields.push('omdbType');
+        }
+
+        if (missingFields.includes('boxOffice')) {
+            movie.boxOffice = cleanOmdbValue(omdb.BoxOffice);
+            changedFields.push('boxOffice');
+        }
+
+        updatedCount++;
+        await writeOutput();
+
+        console.log(`Güncellendi ve dosyaya yazıldı: ${movie.title} (${movie.imdbId}) -> ${changedFields.join(', ')}`);
+
+        console.log({
+            plot: movie.plot,
+            country: movie.country,
+            omdbType: movie.omdbType,
+            boxOffice: movie.boxOffice,
+        });
+
+        await new Promise((resolve) => setTimeout(resolve, 250));
+    } catch (error) {
+        failedCount++;
+        console.warn(`Atlandı: ${movie.title} (${movie.imdbId}) - ${error.message}`);
+    }
+}
+
+await writeOutput();
+
+const writtenRaw = await fs.readFile(outputPath, 'utf8');
+const writtenMovies = JSON.parse(writtenRaw);
+
+const testMovie = debugId
+    ? writtenMovies.find((movie) => movie.imdbId === debugId)
+    : writtenMovies.find((movie) => movie.imdbId === 'tt0337579');
+
+if (testMovie) {
+    console.log('Dosya yazma kontrolü:', {
+        imdbId: testMovie.imdbId,
+        title: testMovie.title,
+        plot: testMovie.plot,
+        country: testMovie.country,
+        omdbType: testMovie.omdbType,
+        boxOffice: testMovie.boxOffice,
+    });
+}
+
+console.log('Dosya güncellendi:', outputPath);
+console.log('Bitti');
+console.log(`Toplam kayıt: ${movies.length}`);
+console.log(`Kontrol edilen/API için uygun bulunan: ${checkedCount}`);
+console.log(`Güncellenen: ${updatedCount}`);
+console.log(`Hedef alanları dolu olduğu için atlanan: ${skippedCount}`);
+console.log(`OMDb API çağrısı yapılan: ${apiRequestCount}`);
+console.log(`Hatalı/atlanmış: ${failedCount}`);

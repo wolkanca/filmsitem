@@ -179,6 +179,15 @@ export default function MovieDetailClient({
     }
   };
 
+
+
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://izlediklerim.wolkanca.com';
+  const movieUrl = `${baseUrl}/movie/${movie.imdbId}`;
+
+  const whatsappShareUrl = `https://wa.me/?text=${encodeURIComponent(
+    `${movie.title} - ${movieUrl}`
+  )}`;
+
   const hasRealPoster = !!livePoster && !isPlaceholderUrl(livePoster);
 
   return (
@@ -232,11 +241,13 @@ export default function MovieDetailClient({
         {/* Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <PosterImage
-            src={liveBackdrop || livePoster}
+            src={livePoster}
             alt={movie.title}
             fill
             className="object-cover opacity-30 select-none pointer-events-none"
             priority
+            fallbackTitle={movie.title}
+            trailerYoutubeId={liveTrailerId}
           />
           {/* Dark gradient to cover bottom & edges */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#080c14] via-zinc-950/70 to-transparent"></div>
@@ -398,7 +409,130 @@ export default function MovieDetailClient({
             <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
               {movie.overview || 'Özet eklenmemiş.'}
             </p>
+            {movie.plot && (
+              <>
+                <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
+                  <strong className="text-white">Konu <small className="text-zinc-500 font-light italic">(IMDb)</small>:</strong> {movie.plot}
+                </p>
+              </>
+            )}
           </div>
+
+          {/* Credits Box */}
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
+            <h2 className="text-xl font-extrabold text-zinc-200">Künye ve Ekip</h2>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+              <div className="space-y-4">
+                {movie.director && (
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Yönetmen</h3>
+                    <div className="flex flex-wrap gap-1.5">
+                      {Array.from(new Set(movie.director.split(',').map((d) => d.trim()).filter(Boolean))).map((d, idx) => (
+                        <Link
+                          key={`${d}-${idx}`}
+                          href={`/director/${encodeURIComponent(d)}`}
+                          className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-primary/40 hover:bg-brand-primary/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+                        >
+                          <User className="w-3.5 h-3.5 text-brand-primary" />
+                          {d}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {movie.writers && movie.writers.length > 0 && (
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Senaristler</h3>
+                    <div className="flex flex-wrap gap-1.5">
+                      {Array.from(new Set(movie.writers)).map((w, idx) => (
+                        <span key={`${w}-${idx}`} className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
+                          {w}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                <div>
+                  <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Kategoriler / Türler</h3>
+                  <div className="flex flex-wrap gap-1.5">
+                    {Array.from(new Set(movie.genres)).map((g, idx) => (
+                      <Link
+                        key={`${g}-${idx}`}
+                        href={`/genre/${encodeURIComponent(g)}`}
+                        className="bg-gradient-to-r from-zinc-900 to-slate-900 border border-zinc-800 hover:border-brand-primary/40 hover:from-zinc-900/80 hover:to-slate-900/80 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-bold transition-all"
+                      >
+                        {g}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Cast */}
+              <div>
+                <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Başrol Oyuncuları</h3>
+                {movie.cast && movie.cast.length > 0 ? (
+                  <div className="flex flex-col gap-2">
+                    {Array.from(new Set(movie.cast)).map((actor, idx) => (
+                      <Link
+                        key={`${actor}-${idx}`}
+                        href={`/actor/${encodeURIComponent(actor)}`}
+                        className="flex items-center gap-2 text-zinc-300 hover:text-brand-primary hover:border-brand-primary/20 bg-zinc-900/40 border border-white/5 px-3 py-2 rounded-xl text-xs font-semibold transition-all"
+                      >
+                        <span className="text-zinc-500 font-mono">{idx + 1}.</span>
+                        <span>{actor}</span>
+                      </Link>
+                    ))}
+                  </div>
+                ) : (
+                  <span className="text-zinc-500 text-xs italic">Oyuncu bilgisi eklenmemiş.</span>
+                )}
+              </div>
+
+              <div className="sm:col-span-2 grid grid-cols-1 sm:grid-cols-4 gap-4">
+                {movie.country && (
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Ülke</h3>
+                    <span className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
+                      {movie.country}
+                    </span>
+                  </div>
+                )}
+
+                {movie.omdbType && (
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Tür</h3>
+                    <span className="capitalize bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
+                      {movie.omdbType}
+                    </span>
+                  </div>
+                )}
+
+                {movie.runtime && (
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Süre</h3>
+                    <span className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
+                      {movie.runtime} dakika
+                    </span>
+                  </div>
+                )}
+
+                {movie.boxOffice && (
+                  <div>
+                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Box Office</h3>
+                    <span className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
+                      {movie.boxOffice}
+                    </span>
+                  </div>
+                )}
+              </div>
+
+            </div>
+          </div>
+
 
           {/* Seasons & Episodes */}
           {movie.seasons && movie.seasons.length > 0 && (
@@ -490,88 +624,13 @@ export default function MovieDetailClient({
             </div>
           )}
 
-          {/* Credits Box */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
-            <h2 className="text-xl font-extrabold text-zinc-200">Künye ve Ekip</h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
-              <div className="space-y-4">
-                {movie.director && (
-                  <div>
-                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Yönetmen</h3>
-                    <div className="flex flex-wrap gap-1.5">
-                      {Array.from(new Set(movie.director.split(',').map((d) => d.trim()).filter(Boolean))).map((d, idx) => (
-                        <Link
-                          key={`${d}-${idx}`}
-                          href={`/director/${encodeURIComponent(d)}`}
-                          className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-primary/40 hover:bg-brand-primary/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
-                        >
-                          <User className="w-3.5 h-3.5 text-brand-primary" />
-                          {d}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {movie.writers && movie.writers.length > 0 && (
-                  <div>
-                    <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Senaristler</h3>
-                    <div className="flex flex-wrap gap-1.5">
-                      {Array.from(new Set(movie.writers)).map((w, idx) => (
-                        <span key={`${w}-${idx}`} className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
-                          {w}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                <div>
-                  <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Kategoriler / Türler</h3>
-                  <div className="flex flex-wrap gap-1.5">
-                    {Array.from(new Set(movie.genres)).map((g, idx) => (
-                      <Link
-                        key={`${g}-${idx}`}
-                        href={`/genre/${encodeURIComponent(g)}`}
-                        className="bg-gradient-to-r from-zinc-900 to-slate-900 border border-zinc-800 hover:border-brand-primary/40 hover:from-zinc-900/80 hover:to-slate-900/80 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-bold transition-all"
-                      >
-                        {g}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Cast */}
-              <div>
-                <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Başrol Oyuncuları</h3>
-                {movie.cast && movie.cast.length > 0 ? (
-                  <div className="flex flex-col gap-2">
-                    {Array.from(new Set(movie.cast)).map((actor, idx) => (
-                      <Link
-                        key={`${actor}-${idx}`}
-                        href={`/actor/${encodeURIComponent(actor)}`}
-                        className="flex items-center gap-2 text-zinc-300 hover:text-brand-primary hover:border-brand-primary/20 bg-zinc-900/40 border border-white/5 px-3 py-2 rounded-xl text-xs font-semibold transition-all"
-                      >
-                        <span className="text-zinc-500 font-mono">{idx + 1}.</span>
-                        <span>{actor}</span>
-                      </Link>
-                    ))}
-                  </div>
-                ) : (
-                  <span className="text-zinc-500 text-xs italic">Oyuncu bilgisi eklenmemiş.</span>
-                )}
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Right side: Personal entry details */}
         <div className="lg:col-span-4 space-y-6">
 
           {/* Personal review card */}
-          <div className="glass bg-gradient-to-br from-zinc-900/60 to-red-950/10 p-6 sm:p-8 rounded-3xl border border-brand-primary/20 space-y-6 shadow-[0_10px_35px_rgba(239,68,68,0.1)]">
+          <div className="glass bg-gradient-to-br from-zinc-900/60 to-red-950/10 p-6 sm:p-8 rounded-3xl border border-brand-primary/20 space-y-6 mb-8 shadow-[0_10px_35px_rgba(239,68,68,0.1)]">
             <h2 className="text-lg font-black text-white tracking-tight flex items-center gap-2">
               <Eye className="w-5 h-5 text-brand-primary" /> Notlarım
             </h2>
@@ -624,14 +683,25 @@ export default function MovieDetailClient({
             </div>
           </div>
 
-          <a
-            href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' izle')}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-center bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-opacity w-full shadow-[0_10px_25px_rgba(239,68,68,0.3)]"
-          >
-            Filmi İzle
-          </a>
+          <div className="mt-6 space-y-6 pt-6">
+            <a
+              href={whatsappShareUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center bg-zinc-900/80 hover:bg-zinc-800 text-zinc-200 hover:text-white px-4 py-3 rounded-xl text-sm font-bold transition-all"
+            >
+              Paylaş
+            </a>
+
+            <a
+              href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' izle')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-center bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-opacity w-full shadow-[0_10px_25px_rgba(239,68,68,0.3)]"
+            >
+              Filmi İzle
+            </a>
+          </div>
 
         </div>
 
