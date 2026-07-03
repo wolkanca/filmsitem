@@ -86,7 +86,7 @@ const MONTH_NAMES_TR = [
 
 export async function getStats(): Promise<Stats> {
   const rawMovies = await getMovies();
-  
+
   // Flatten nested episodes into virtual movie items for accurate stats calculation
   const movies: Movie[] = [];
   rawMovies.forEach(m => {
@@ -103,7 +103,6 @@ export async function getStats(): Promise<Stats> {
             watchDate: ep.watchDate,
             listName: m.listName,
             poster: m.poster,
-            backdrop: m.backdrop,
             overview: ep.overview || m.overview || '',
             genres: m.genres || [],
             runtime: ep.runtime || m.runtime || 0,
@@ -112,7 +111,12 @@ export async function getStats(): Promise<Stats> {
             writers: m.writers || [],
             imdbRating: ep.imdbRating || m.imdbRating || 0,
             tmdbRating: ep.imdbRating || m.imdbRating || 0,
-            releaseDate: m.releaseDate
+            releaseDate: m.releaseDate || '',
+
+            plot: ep.overview || m.plot || m.overview || '',
+            country: m.country || '',
+            omdbType: 'episode',
+            boxOffice: ''
           });
         });
       });
@@ -120,7 +124,7 @@ export async function getStats(): Promise<Stats> {
       movies.push(m);
     }
   });
-  
+
   if (movies.length === 0) {
     return {
       totalCount: 0,
@@ -160,11 +164,11 @@ export async function getStats(): Promise<Stats> {
   }
 
   const totalCount = movies.length;
-  
+
   // Average rating
   const ratedMovies = movies.filter(m => m.myRating > 0);
-  const averageRating = ratedMovies.length > 0 
-    ? parseFloat((ratedMovies.reduce((acc, m) => acc + m.myRating, 0) / ratedMovies.length).toFixed(1)) 
+  const averageRating = ratedMovies.length > 0
+    ? parseFloat((ratedMovies.reduce((acc, m) => acc + m.myRating, 0) / ratedMovies.length).toFixed(1))
     : 0;
 
   // Total runtime
