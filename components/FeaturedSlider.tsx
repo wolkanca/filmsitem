@@ -68,7 +68,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
       >
         {/* Left side: Poster + Movie Details */}
         <div className={`flex flex-col md:flex-row gap-6 items-center md:items-start ${currentMovie.trailerYoutubeId ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
-          <div className="relative aspect-[2/3] w-full md:w-56 flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
+          <div className="relative aspect-[2/3] w-full md:w-[200px] md:h-[300px] flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
             {currentMovie.poster ? (
               <Image
                 src={currentMovie.poster}
