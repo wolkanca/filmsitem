@@ -27,7 +27,7 @@ export interface Movie {
   listName: string[];
 
   poster: string;
-  backdrop: string;
+  backdrop?: string;
 
   overview: string;
   plot: string;
