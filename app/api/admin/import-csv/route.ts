@@ -206,6 +206,7 @@ export async function POST(req: Request) {
           watchDate,
           listName: listNames,
           poster: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=500&auto=format&fit=crop',
+          backdrop?: string; // bunu opsiyonel yap
           overview: `Bu yapım "${csvDirector || 'Bilinmeyen Yönetmen'}" tarafından yönetilmiş ${year} yapımı bir ${genres.join(', ') || 'sinema'} eseridir. IMDb puanı ${imdbRating} olarak kaydedilmiştir.`,
           genres,
           runtime,
@@ -272,6 +273,7 @@ export async function POST(req: Request) {
           watchDate: ep.watchDate,
           listName: [],
           poster: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=500&auto=format&fit=crop',
+          backdrop?: string; // bunu opsiyonel yap
           overview: `Bu dizi "${ep.director || 'Bilinmeyen Yönetmen'}" tarafından yönetilmiş/oluşturulmuş ${ep.year} yapımı bir dizi eseridir.`,
           genres: ep.genres || [],
           runtime: ep.runtime || 0,
