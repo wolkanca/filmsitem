@@ -87,7 +87,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
               <span className="text-[10px] bg-brand-primary/10 text-brand-primary border border-brand-primary/20 px-2 py-0.5 rounded-md font-semibold">
                 GÜNÜN ÖNERİSİ {currentIndex + 1}/{movies.length}
               </span>
-              <h3 className="text-xl sm:text-2xl font-black text-white mt-1">
+              <h3 className="text-xl sm:text-2xl font-black text-white mt-1 py-2">
                 {currentMovie.title}{' '}
                 <span className="text-zinc-500 font-normal text-lg">({currentMovie.year})</span>
               </h3>
