@@ -15,7 +15,7 @@ export default async function HomePage() {
   const blogPosts = await getBlogPosts(8);
 
   // Sorting movies for sections
-  const recentlyAdded = movies.slice(-8);
+  const recentlyAdded = movies.slice(-8).reverse();
 
   const PLACEHOLDER_PATTERNS = ['images.unsplash.com', 'unsplash.com/photo', 'via.placeholder.com', 'placehold.co', 'placeholder.com', 'dummyimage.com'];
   const hasRealPoster = (url?: string) => !!url && !PLACEHOLDER_PATTERNS.some(p => url.includes(p));
@@ -199,8 +199,11 @@ export default async function HomePage() {
           </Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
-          {recentlyAdded.map((movie) => (
-            <MovieCard key={movie.imdbId} movie={movie} />
+          {recentlyAdded.map((movie, index) => (
+            <MovieCard
+              key={`recent-${movie.imdbId}-${index}`}
+              movie={movie}
+            />
           ))}
         </div>
       </section>

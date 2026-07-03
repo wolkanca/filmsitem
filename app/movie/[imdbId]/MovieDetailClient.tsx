@@ -244,6 +244,7 @@ export default function MovieDetailClient({
             src={livePoster}
             alt={movie.title}
             fill
+            sizes="100vw"
             className="object-cover opacity-30 select-none pointer-events-none"
             priority
             fallbackTitle={movie.title}
@@ -270,6 +271,7 @@ export default function MovieDetailClient({
                 src={livePoster}
                 alt={movie.title}
                 fill
+                sizes="(max-width: 640px) 240px, 240px"
                 className="object-cover"
                 priority
                 fallbackTitle={movie.title}
