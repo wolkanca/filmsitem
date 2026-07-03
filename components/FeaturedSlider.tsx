@@ -70,14 +70,16 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
         <div className={`flex flex-col md:flex-row gap-6 items-center md:items-start ${currentMovie.trailerYoutubeId ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
           <div className="relative aspect-[2/3] w-full md:w-[200px] md:h-[300px] flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
             {currentMovie.poster ? (
-              <Image
-                src={currentMovie.poster}
-                alt={currentMovie.title}
-                fill
-                sizes="(max-width: 640px) 150px, 200px"
-                className="object-cover transition-transform duration-500 hover:scale-105"
-                priority={currentIndex === 0}
-              />
+              <Link href={`/movie/${currentMovie.imdbId}`}>
+                <Image
+                  src={currentMovie.poster}
+                  alt={currentMovie.title}
+                  fill
+                  sizes="(max-width: 640px) 150px, 200px"
+                  className="object-cover transition-transform duration-500 hover:scale-105"
+                  priority={currentIndex === 0}
+                />
+              </Link>
             ) : (
               <div className="flex h-full w-full items-center justify-center">🎬</div>
             )}
