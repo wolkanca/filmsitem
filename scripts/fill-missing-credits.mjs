@@ -2,8 +2,10 @@ import fs from 'fs/promises';
 import path from 'path';
 
 // const OMDB_API_KEY = process.env.OMDB_API_KEY;
+// const OMDB_API_KEY = 'b9dc3c69';
 // const OMDB_API_KEY = '859a3a89';
-const OMDB_API_KEY = 'e1747d32';
+// const OMDB_API_KEY = 'e1747d32';
+const OMDB_API_KEY = '7d2a01bd';
 
 if (!OMDB_API_KEY) {
     console.error('OMDB_API_KEY eksik.');
@@ -58,6 +60,48 @@ function getMissingTargetFields(movie) {
     return targetFields.filter((field) => isTargetFieldMissing(movie, field));
 }
 
+function normalizeText(value) {
+    return String(value || '')
+        .toLowerCase()
+        .replace(/&/g, 'and')
+        .replace(/[^a-z0-9]+/g, '')
+        .trim();
+}
+
+function isValidImdbId(imdbId) {
+    return /^tt\d+$/.test(String(imdbId || ''));
+}
+
+function isParentImdbId(imdbId) {
+    return String(imdbId || '').startsWith('parent_');
+}
+
+function findRealImdbIdForParentMovie(parentMovie, allMovies) {
+    if (!isParentImdbId(parentMovie.imdbId)) {
+        return null;
+    }
+
+    const parentSlug = normalizeText(parentMovie.imdbId.replace(/^parent_/, ''));
+    const parentTitle = normalizeText(parentMovie.title);
+
+    const match = allMovies.find((candidate) => {
+        if (candidate === parentMovie) return false;
+        if (!isValidImdbId(candidate.imdbId)) return false;
+
+        const candidateTitle = normalizeText(candidate.title);
+        const candidateSlug = normalizeText(candidate.slug || candidate.id || candidate.key || '');
+
+        return (
+            candidateTitle === parentTitle ||
+            candidateTitle === parentSlug ||
+            candidateSlug === parentSlug ||
+            candidateSlug === parentTitle
+        );
+    });
+
+    return match?.imdbId || null;
+}
+
 async function fetchOmdb(imdbId) {
     const url = `https://www.omdbapi.com/?i=${encodeURIComponent(imdbId)}&plot=full&apikey=${OMDB_API_KEY}`;
 
@@ -88,6 +132,7 @@ let checkedCount = 0;
 let failedCount = 0;
 let skippedCount = 0;
 let apiRequestCount = 0;
+let parentFixedCount = 0;
 
 const moviesToProcess = [...movies].reverse();
 
@@ -100,6 +145,24 @@ for (const movie of moviesToProcess) {
         skippedCount++;
         console.log(`Atlandı: ${movie.title || 'Başlıksız kayıt'} - imdbId yok`);
         continue;
+    }
+
+    if (!isValidImdbId(movie.imdbId)) {
+        const realImdbId = findRealImdbIdForParentMovie(movie, movies);
+
+        if (realImdbId) {
+            const oldImdbId = movie.imdbId;
+            movie.imdbId = realImdbId;
+            parentFixedCount++;
+
+            await writeOutput();
+
+            console.log(`Parent IMDb ID düzeltildi: ${movie.title || 'Başlıksız kayıt'} (${oldImdbId}) -> ${realImdbId}`);
+        } else {
+            skippedCount++;
+            console.log(`Atlandı: ${movie.title || 'Başlıksız kayıt'} (${movie.imdbId}) - geçerli IMDb ID değil ve eşleşen gerçek IMDb ID bulunamadı`);
+            continue;
+        }
     }
 
     const missingFields = getMissingTargetFields(movie);
@@ -115,8 +178,8 @@ for (const movie of moviesToProcess) {
     try {
         console.log(`API çağrısı yapılacak: ${movie.title} (${movie.imdbId}) -> eksik: ${missingFields.join(', ')}`);
 
-        const omdb = await fetchOmdb(movie.imdbId);
         apiRequestCount++;
+        const omdb = await fetchOmdb(movie.imdbId);
 
         const changedFields = [];
 
@@ -140,6 +203,11 @@ for (const movie of moviesToProcess) {
             changedFields.push('boxOffice');
         }
 
+        if (movie.omdbError) {
+            delete movie.omdbError;
+            changedFields.push('omdbError temizlendi');
+        }
+
         updatedCount++;
         await writeOutput();
 
@@ -155,7 +223,11 @@ for (const movie of moviesToProcess) {
         await new Promise((resolve) => setTimeout(resolve, 250));
     } catch (error) {
         failedCount++;
-        console.warn(`Atlandı: ${movie.title} (${movie.imdbId}) - ${error.message}`);
+
+        movie.omdbError = error.message;
+        await writeOutput();
+
+        console.log(`Atlandı ve hata kaydedildi: ${movie.title} (${movie.imdbId}) - ${error.message}`);
     }
 }
 
@@ -176,14 +248,19 @@ if (testMovie) {
         country: testMovie.country,
         omdbType: testMovie.omdbType,
         boxOffice: testMovie.boxOffice,
+        omdbError: testMovie.omdbError,
     });
 }
+
+const moviesWithOmdbError = writtenMovies.filter((movie) => movie.omdbError);
 
 console.log('Dosya güncellendi:', outputPath);
 console.log('Bitti');
 console.log(`Toplam kayıt: ${movies.length}`);
 console.log(`Kontrol edilen/API için uygun bulunan: ${checkedCount}`);
 console.log(`Güncellenen: ${updatedCount}`);
-console.log(`Hedef alanları dolu olduğu için atlanan: ${skippedCount}`);
+console.log(`Parent IMDb ID düzeltilen: ${parentFixedCount}`);
+console.log(`Hedef alanları dolu/geçersiz olduğu için atlanan: ${skippedCount}`);
 console.log(`OMDb API çağrısı yapılan: ${apiRequestCount}`);
 console.log(`Hatalı/atlanmış: ${failedCount}`);
+console.log(`OMDb hatası kayıtlı kayıt sayısı: ${moviesWithOmdbError.length}`);

@@ -12,11 +12,85 @@ export const metadata: Metadata = {
   description: 'Otomatik olarak oluşturulmuş kişisel film koleksiyonları ve kategoriler. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
 };
 
+type MovieItem = Awaited<ReturnType<typeof getMovies>>[number];
+
+type ListCard = {
+  name: string;
+  count: number;
+  backdrop: string;
+  description: string;
+};
+
+type SmartCollection = {
+  name: string;
+  description: string;
+  filter: (movie: MovieItem) => boolean;
+};
+
+function normalizeText(value: unknown) {
+  return String(value || '')
+    .toLocaleLowerCase('tr-TR')
+    .trim();
+}
+
+function includesAny(value: unknown, words: string[]) {
+  const normalized = normalizeText(value);
+  return words.some((word) => normalized.includes(normalizeText(word)));
+}
+
+function getMovieCountry(movie: MovieItem) {
+  return normalizeText((movie as any).country);
+}
+
+function getMovieGenres(movie: MovieItem) {
+  return Array.isArray((movie as any).genres) ? ((movie as any).genres as string[]) : [];
+}
+
+function getMovieType(movie: MovieItem) {
+  return normalizeText((movie as any).type || (movie as any).omdbType);
+}
+
+function getMovieRuntime(movie: MovieItem) {
+  const runtime = Number((movie as any).runtime || 0);
+  return Number.isFinite(runtime) ? runtime : 0;
+}
+
+function getMovieYear(movie: MovieItem) {
+  const year = Number((movie as any).year || 0);
+  return Number.isFinite(year) ? year : 0;
+}
+
+function hasGenre(movie: MovieItem, genres: string[]) {
+  return getMovieGenres(movie).some((genre) => includesAny(genre, genres));
+}
+
+function addMovieToList(
+  listsMap: Record<string, ListCard>,
+  listName: string,
+  movie: MovieItem,
+  description: string
+) {
+  if (!listsMap[listName]) {
+    listsMap[listName] = {
+      name: listName,
+      count: 0,
+      backdrop: '',
+      description,
+    };
+  }
+
+  listsMap[listName].count++;
+
+  // Set the backdrop of the list to be the backdrop of one of the highest-rated movies in that list
+  if (!listsMap[listName].backdrop && (movie as any).backdrop) {
+    listsMap[listName].backdrop = (movie as any).backdrop;
+  }
+}
+
 export default async function ListsPage() {
   const movies = await getMovies();
 
-  // Find all unique list names and map movies belonging to them
-  const listsMap: Record<string, { name: string; count: number; backdrop: string; description: string }> = {};
+  const listsMap: Record<string, ListCard> = {};
 
   // Standard predefined descriptions
   const listDescriptions: Record<string, string> = {
@@ -29,25 +103,105 @@ export default async function ListsPage() {
     'Uzun Metraj Maratonu': 'Süresi 150 dakikanın üzerinde olan, derin hikaye anlatımlı uzun soluklu maraton yapımları.',
   };
 
-  movies.forEach((m) => {
-    (m.listName || []).forEach((listName) => {
-      if (!listsMap[listName]) {
-        listsMap[listName] = {
-          name: listName,
-          count: 0,
-          backdrop: '',
-          description: listDescriptions[listName] || `"${listName}" kategorisine ait izlediğim yapımlardan oluşan seçki.`,
-        };
-      }
-      listsMap[listName].count++;
-      // Set the backdrop of the list to be the backdrop of one of the highest-rated movies in that list
-      if (!listsMap[listName].backdrop && m.backdrop) {
-        listsMap[listName].backdrop = m.backdrop;
+  const smartCollections: SmartCollection[] = [
+    {
+      name: 'Video Game',
+      description: 'IMDb türü veya kayıt tipi Video Game olan oyun odaklı yapımlar.',
+      filter: (movie) => getMovieType(movie).includes('video game'),
+    },
+    {
+      name: 'TV Mini Series',
+      description: 'Kısa sezonlu, mini dizi formatındaki seçili yapımlar.',
+      filter: (movie) => getMovieType(movie).includes('tv mini series'),
+    },
+    {
+      name: 'TV Series',
+      description: 'Dizi formatındaki tüm izlediğim yapımlar.',
+      filter: (movie) => getMovieType(movie).includes('tv series') || getMovieType(movie) === 'series',
+    },
+    {
+      name: 'Türk Filmleri',
+      description: 'Türkiye yapımı veya ülke bilgisi Türkiye/Turkey olan yerli yapımlar.',
+      filter: (movie) => includesAny(getMovieCountry(movie), ['türkiye', 'turkey']),
+    },
+    {
+      name: 'Animasyon',
+      description: 'Animasyon türündeki film ve dizilerden oluşan renkli arşiv.',
+      filter: (movie) => hasGenre(movie, ['animation']),
+    },
+    {
+      name: 'Belgeseller',
+      description: 'Documentary türündeki belgesel film, dizi ve özel yapımlar.',
+      filter: (movie) => hasGenre(movie, ['documentary']),
+    },
+    {
+      name: 'Korku ve Gerilim',
+      description: 'Horror ve Thriller türlerini barındıran karanlık atmosferli yapımlar.',
+      filter: (movie) => hasGenre(movie, ['horror', 'thriller']),
+    },
+    {
+      name: 'Aksiyon',
+      description: 'Aksiyon türündeki tempolu, yüksek enerjili yapımlar.',
+      filter: (movie) => hasGenre(movie, ['action']),
+    },
+    {
+      name: 'Dram',
+      description: 'Drama türündeki güçlü hikaye anlatımına sahip yapımlar.',
+      filter: (movie) => hasGenre(movie, ['drama']),
+    },
+    {
+      name: '2020 Sonrası',
+      description: '2020 ve sonrası çıkan yeni dönem yapımlar.',
+      filter: (movie) => getMovieYear(movie) >= 2020,
+    },
+    {
+      name: '90lar',
+      description: '1990-1999 yılları arasında çıkan nostaljik yapımlar.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1990 && year <= 1999;
+      },
+    },
+    {
+      name: '80ler',
+      description: '1980-1989 yılları arasında çıkan dönem yapımları.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1980 && year <= 1989;
+      },
+    },
+    {
+      name: 'Kısa Yapımlar',
+      description: 'Süresi 60 dakika ve altında olan kısa film, özel bölüm veya kısa içerikler.',
+      filter: (movie) => {
+        const runtime = getMovieRuntime(movie);
+        return runtime > 0 && runtime <= 60;
+      },
+    },
+  ];
+
+  movies.forEach((movie) => {
+    // Existing manual/custom collections from listName
+    ((movie as any).listName || []).forEach((listName: string) => {
+      addMovieToList(
+        listsMap,
+        listName,
+        movie,
+        listDescriptions[listName] || `"${listName}" kategorisine ait izlediğim yapımlardan oluşan seçki.`
+      );
+    });
+
+    // Automatic smart collections
+    smartCollections.forEach((collection) => {
+      if (collection.filter(movie)) {
+        addMovieToList(listsMap, collection.name, movie, collection.description);
       }
     });
   });
 
-  const lists = Object.values(listsMap).sort((a, b) => b.count - a.count);
+  const lists = Object.values(listsMap)
+    .filter((list) => list.count > 0)
+    .sort((a, b) => b.count - a.count);
 
   return (
     <div className="space-y-10 animate-fade-in">

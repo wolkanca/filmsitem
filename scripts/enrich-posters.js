@@ -15,7 +15,12 @@ const path = require('path');
 const https = require('https');
 
 // ─── Config ────────────────────────────────────────────────────────────────
-const OMDB_API_KEY = 'c5444d0b';
+// const OMDB_API_KEY = 'b9dc3c69';
+// const OMDB_API_KEY = '859a3a89';
+// const OMDB_API_KEY = 'e1747d32';
+const OMDB_API_KEY = '7d2a01bd';
+
+
 const MOVIE_DATA_FILE = path.join(__dirname, '..', 'data', 'movies.json');
 const PLACEHOLDER = 'images.unsplash.com/photo-1489599849927-2ee91cede3ba';
 const DELAY_MS = 200; // OMDB rate limit için bekleme süresi (ms)

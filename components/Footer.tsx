@@ -1,10 +1,63 @@
+import Link from 'next/link';
+
+const collectionLinks = [
+  { name: 'Komedi Günlükleri', href: '/list/komedi-gunlukleri' },
+  { name: 'Bilim Kurgu', href: '/list/bilim-kurgu' },
+  { name: 'Favoriler', href: '/list/favoriler' },
+  { name: 'Sinema Klasikleri', href: '/list/sinema-klasikleri' },
+  { name: 'Kült Eserler', href: '/list/kult-eserler' },
+  { name: 'Uzun Metraj Maratonu', href: '/list/uzun-metraj-maratonu' },
+  { name: '10 Puanlık Başyapıtlar', href: '/list/10-puanlik-basyapitlar' },
+  { name: 'Türk Filmleri', href: '/list/turk-filmleri' },
+  { name: 'TV Series', href: '/list/tv-series' },
+  { name: 'TV Mini Series', href: '/list/tv-mini-series' },
+  { name: 'Video Game', href: '/list/video-game' },
+  { name: 'Belgeseller', href: '/list/belgeseller' },
+  { name: 'Animasyon', href: '/list/animasyon' },
+  { name: 'Korku ve Gerilim', href: '/list/korku-ve-gerilim' },
+  { name: 'Aksiyon', href: '/list/aksiyon' },
+  { name: 'Dram', href: '/list/dram' },
+  { name: '2020 Sonrası', href: '/list/2020-sonrasi' },
+  { name: '90lar', href: '/list/90lar' },
+  { name: '80ler', href: '/list/80ler' },
+  { name: 'Kısa Yapımlar', href: '/list/kisa-yapimlar' },
+];
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full glass border-t border-card-border mt-16 py-8 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <footer className="w-full glass border-t border-card-border mt-16 py-10 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="pb-8 mb-8 border-b border-zinc-800/80">
+          <div className="flex flex-col lg:flex-row gap-6 lg:items-start lg:justify-between">
+            <div className="max-w-sm">
+              <h2 className="text-sm font-black text-white uppercase tracking-wider">
+                Koleksiyonlar
+              </h2>
+              <p className="text-xs text-zinc-500 mt-2 leading-relaxed">
+                İzlediğim yapımları tür, dönem, puan ve formatlarına göre otomatik oluşturulan akıllı listelerle keşfet.
+              </p>
+            </div>
+
+            <nav
+              aria-label="Footer koleksiyon linkleri"
+              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2 flex-1"
+            >
+              {collectionLinks.map((collection) => (
+                <Link
+                  key={collection.href}
+                  href={collection.href}
+                  className="rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-2 text-xs font-bold text-zinc-400 transition-all duration-200 hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
+                >
+                  {collection.name}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </section>
+
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
           <p className="text-zinc-500 text-sm">
             © {currentYear}{' '}
             <span className="text-zinc-300 font-semibold">İzlediklerim</span>
