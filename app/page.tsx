@@ -15,9 +15,7 @@ export default async function HomePage() {
   const blogPosts = await getBlogPosts(8);
 
   // Sorting movies for sections
-  const recentlyAdded = [...movies]
-    .sort((a, b) => new Date(b.watchDate).getTime() - new Date(a.watchDate).getTime())
-    .slice(0, 8);
+  const recentlyAdded = movies.slice(-8);
 
   const PLACEHOLDER_PATTERNS = ['images.unsplash.com', 'unsplash.com/photo', 'via.placeholder.com', 'placehold.co', 'placeholder.com', 'dummyimage.com'];
   const hasRealPoster = (url?: string) => !!url && !PLACEHOLDER_PATTERNS.some(p => url.includes(p));

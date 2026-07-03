@@ -56907,7 +56907,7 @@
     "imdbRating": 9,
     "tmdbRating": 9,
     "releaseDate": "2020-03-09",
-    "trailerYoutubeId": ""
+    "trailerYoutubeId": "QoNSU9o6464"
   },
   {
     "imdbId": "tt8806524",
@@ -58410,5 +58410,667 @@
     "tmdbRating": 4.7,
     "releaseDate": "2024-11-15",
     "trailerYoutubeId": "qiNMU9gwo6c"
+  },
+  {
+    "imdbId": "tt32252772",
+    "title": "Dexter: Original Sin",
+    "originalTitle": "Dexter: Original Sin",
+    "year": 2024,
+    "type": "TV Series",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTVlZjNhYjktMWYyNy00MmYyLTk3ZjctMDQwMWIwYjdkODc3XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYTVlZjNhYjktMWYyNy00MmYyLTk3ZjctMDQwMWIwYjdkODc3XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2024 yapımı bir Crime, Drama, Mystery eseridir. IMDb puanı 8.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Mystery"
+    ],
+    "runtime": 60,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.2,
+    "tmdbRating": 8.2,
+    "releaseDate": "2024-12-13",
+    "trailerYoutubeId": "Bw8ZdQpVtdU"
+  },
+  {
+    "imdbId": "tt32278481",
+    "title": "Enola Holmes 3",
+    "originalTitle": "Enola Holmes 3",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzVhNmQ0MzItNjg3Mi00MzM1LWI5MDUtOGZlMTFjNTJjMTM2XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYzVhNmQ0MzItNjg3Mi00MzM1LWI5MDUtOGZlMTFjNTJjMTM2XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Philip Barantini\" tarafından yönetilmiş 2026 yapımı bir Crime, Action, Mystery, Adventure, Drama, Comedy eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Action",
+      "Mystery",
+      "Adventure",
+      "Drama",
+      "Comedy"
+    ],
+    "runtime": 105,
+    "cast": [],
+    "director": "Philip Barantini",
+    "writers": [],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "2026-07-01",
+    "trailerYoutubeId": "n_pEJjq-9xQ"
+  },
+  {
+    "imdbId": "tt0401422",
+    "title": "Finding Nemo",
+    "originalTitle": "Finding Nemo",
+    "year": 2003,
+    "type": "Video Game",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTc5NjExNTA5OV5BMl5BanBnXkFtZTYwMTQ0ODY2._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTc5NjExNTA5OV5BMl5BanBnXkFtZTYwMTQ0ODY2._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2003 yapımı bir Adventure, Action, Drama, Mystery eseridir. IMDb puanı 7.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Drama",
+      "Mystery"
+    ],
+    "runtime": 0,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.1,
+    "tmdbRating": 7.1,
+    "releaseDate": "2003-11-11",
+    "trailerYoutubeId": "kkrMNimjo_M"
+  },
+  {
+    "imdbId": "tt0070047",
+    "title": "The Exorcist",
+    "originalTitle": "The Exorcist",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjg3YjE4ZjAtYTdmYS00ZTBkLWE1ZjgtNzAzODUwNzRiYjlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZjg3YjE4ZjAtYTdmYS00ZTBkLWE1ZjgtNzAzODUwNzRiYjlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"William Friedkin\" tarafından yönetilmiş 1973 yapımı bir Horror eseridir. IMDb puanı 8.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror"
+    ],
+    "runtime": 122,
+    "cast": [],
+    "director": "William Friedkin",
+    "writers": [],
+    "imdbRating": 8.1,
+    "tmdbRating": 8.1,
+    "releaseDate": "1973-12-26",
+    "trailerYoutubeId": "BU2eYAO31Cc"
+  },
+  {
+    "imdbId": "tt15239678",
+    "title": "Dune: Part Two",
+    "originalTitle": "Dune: Part Two",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu",
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Denis Villeneuve\" tarafından yönetilmiş 2024 yapımı bir Adventure, Drama, Sci-Fi, Action eseridir. IMDb puanı 8.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 166,
+    "cast": [],
+    "director": "Denis Villeneuve",
+    "writers": [],
+    "imdbRating": 8.4,
+    "tmdbRating": 8.4,
+    "releaseDate": "2024-03-01",
+    "trailerYoutubeId": "j0e5Wnxs5BI"
+  },
+  {
+    "imdbId": "tt6320628",
+    "title": "Spider-Man: Far from Home",
+    "originalTitle": "Spider-Man: Far from Home",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu",
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzNhNTE0NWQtN2E1Ny00NjcwLTg1YTctMGY1NmMwODJmY2NmXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMzNhNTE0NWQtN2E1Ny00NjcwLTg1YTctMGY1NmMwODJmY2NmXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Jon Watts\" tarafından yönetilmiş 2019 yapımı bir Action, Adventure, Sci-Fi, Comedy, Fantasy eseridir. IMDb puanı 7.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Comedy",
+      "Fantasy"
+    ],
+    "runtime": 129,
+    "cast": [],
+    "director": "Jon Watts",
+    "writers": [],
+    "imdbRating": 7.3,
+    "tmdbRating": 7.3,
+    "releaseDate": "2019-07-02",
+    "trailerYoutubeId": "GkLnm1oyLn8"
+  },
+  {
+    "imdbId": "tt0145487",
+    "title": "Spider-Man",
+    "originalTitle": "Spider-Man",
+    "year": 2002,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWM0OWVmNTEtNWVkOS00MzgyLTkyMzgtMmE2ZTZiNjY4MmFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZWM0OWVmNTEtNWVkOS00MzgyLTkyMzgtMmE2ZTZiNjY4MmFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Sam Raimi\" tarafından yönetilmiş 2002 yapımı bir Adventure, Sci-Fi, Action eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 121,
+    "cast": [],
+    "director": "Sam Raimi",
+    "writers": [],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2002-05-03",
+    "trailerYoutubeId": "t06RUxPbp_c"
+  },
+  {
+    "imdbId": "tt3322940",
+    "title": "Annabelle",
+    "originalTitle": "Annabelle",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjkyMDU5ZWQtZDhkOC00ZWFjLWIyM2MtZWFhMDUzNjdlNzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjkyMDU5ZWQtZDhkOC00ZWFjLWIyM2MtZWFhMDUzNjdlNzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"John R. Leonetti\" tarafından yönetilmiş 2014 yapımı bir Horror, Mystery, Thriller eseridir. IMDb puanı 5.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "runtime": 99,
+    "cast": [],
+    "director": "John R. Leonetti",
+    "writers": [],
+    "imdbRating": 5.5,
+    "tmdbRating": 5.5,
+    "releaseDate": "2014-10-03",
+    "trailerYoutubeId": "MQpq7gmXpq0"
+  },
+  {
+    "imdbId": "tt8350360",
+    "title": "Annabelle Comes Home",
+    "originalTitle": "Annabelle Comes Home",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjRjYmQ5NTQtYzIyNi00MmNlLTlmNjYtNjQ3NzRlZmY3YjFlXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMjRjYmQ5NTQtYzIyNi00MmNlLTlmNjYtNjQ3NzRlZmY3YjFlXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Gary Dauberman\" tarafından yönetilmiş 2019 yapımı bir Horror, Mystery, Thriller eseridir. IMDb puanı 5.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "runtime": 106,
+    "cast": [],
+    "director": "Gary Dauberman",
+    "writers": [],
+    "imdbRating": 5.9,
+    "tmdbRating": 5.9,
+    "releaseDate": "2019-06-26",
+    "trailerYoutubeId": "glyDaM-NV74"
+  },
+  {
+    "imdbId": "tt0099864",
+    "title": "IT",
+    "originalTitle": "IT",
+    "year": 1990,
+    "type": "TV Mini Series",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZDFhODExOTctNTFkZS00NjE1LWE2MWMtY2Q1ZThhMGY5NjJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1990 yapımı bir Drama, Thriller, Mystery, Horror eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Mystery",
+      "Horror"
+    ],
+    "runtime": 192,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "1990-11-18",
+    "trailerYoutubeId": "A4vPcP_tPQE"
+  },
+  {
+    "imdbId": "tt1457767",
+    "title": "The Conjuring",
+    "originalTitle": "The Conjuring",
+    "year": 2013,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg",
+    "overview": "Bu yapım \"James Wan\" tarafından yönetilmiş 2013 yapımı bir Horror, Mystery, Thriller eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "runtime": 112,
+    "cast": [],
+    "director": "James Wan",
+    "writers": [],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2013-07-19",
+    "trailerYoutubeId": "5u5A471adxg"
+  },
+  {
+    "imdbId": "tt19244304",
+    "title": "It: Welcome to Derry",
+    "originalTitle": "IT: Welcome to Derry",
+    "year": 2025,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWE0ZWM1MjUtNmYzYS00NzU3LTkxYmQtNmI3NTc0ZTY1NmVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZWE0ZWM1MjUtNmYzYS00NzU3LTkxYmQtNmI3NTc0ZTY1NmVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2025 yapımı bir Horror, Fantasy eseridir. IMDb puanı 7.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "runtime": 60,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.9,
+    "tmdbRating": 7.9,
+    "releaseDate": "2025-10-26",
+    "trailerYoutubeId": "QWwgPcSaNYQ"
+  },
+  {
+    "imdbId": "tt7349950",
+    "title": "It: Chapter Two",
+    "originalTitle": "It: Chapter Two",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzUxM2VhOGItZTY2My00OTA4LWI4NjUtMDA5YWJjM2M2NDJjXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYzUxM2VhOGItZTY2My00OTA4LWI4NjUtMDA5YWJjM2M2NDJjXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Andy Muschietti\" tarafından yönetilmiş 2019 yapımı bir Horror, Drama, Fantasy eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Drama",
+      "Fantasy"
+    ],
+    "runtime": 169,
+    "cast": [],
+    "director": "Andy Muschietti",
+    "writers": [],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "2019-09-06",
+    "trailerYoutubeId": "PmJUdkNgoRM"
+  },
+  {
+    "imdbId": "tt4919268",
+    "title": "Bad Boys: Ride or Die",
+    "originalTitle": "Bad Boys: Ride or Die",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZWNjZWUwNDgtYTM4ZC00Zjk0LTg3ZWItNGEyZmVkZTIxZDk0XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Adil El Arbi,Bilall Fallah\" tarafından yönetilmiş 2024 yapımı bir Action, Comedy, Adventure, Crime, Thriller eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Adventure",
+      "Crime",
+      "Thriller"
+    ],
+    "runtime": 115,
+    "cast": [],
+    "director": "Adil El Arbi,Bilall Fallah",
+    "writers": [],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "2024-06-07",
+    "trailerYoutubeId": "Oz7jwZyJ4NA"
+  },
+  {
+    "imdbId": "tt0181316",
+    "title": "Blue Streak",
+    "originalTitle": "Blue Streak",
+    "year": 1999,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2RmODQxZmQtZjAzYy00MWQxLWFmN2MtMWJiOGIxOGQxOWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BY2RmODQxZmQtZjAzYy00MWQxLWFmN2MtMWJiOGIxOGQxOWU4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Les Mayfield\" tarafından yönetilmiş 1999 yapımı bir Crime, Thriller, Comedy, Action eseridir. IMDb puanı 6.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Comedy",
+      "Action"
+    ],
+    "runtime": 93,
+    "cast": [],
+    "director": "Les Mayfield",
+    "writers": [],
+    "imdbRating": 6.4,
+    "tmdbRating": 6.4,
+    "releaseDate": "1999-09-17",
+    "trailerYoutubeId": "zxfFGW00EB0"
+  },
+  {
+    "imdbId": "tt0421729",
+    "title": "Big Momma's House 2",
+    "originalTitle": "Big Momma's House 2",
+    "year": 2006,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGUwZjlkNGQtMzlmNi00OGM1LTgyZGYtMWVhY2FiMmEyMjkxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNGUwZjlkNGQtMzlmNi00OGM1LTgyZGYtMWVhY2FiMmEyMjkxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"John Whitesell\" tarafından yönetilmiş 2006 yapımı bir Comedy, Crime eseridir. IMDb puanı 4.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "runtime": 99,
+    "cast": [],
+    "director": "John Whitesell",
+    "writers": [],
+    "imdbRating": 4.8,
+    "tmdbRating": 4.8,
+    "releaseDate": "2006-01-27",
+    "trailerYoutubeId": "8RkSH3iCZDs"
+  },
+  {
+    "imdbId": "tt0117218",
+    "title": "The Nutty Professor",
+    "originalTitle": "The Nutty Professor",
+    "year": 1996,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu",
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ4MDQ4YTctZjExZi00MzRlLTlkODUtZjQxYmU5YzE2ZWVlXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTQ4MDQ4YTctZjExZi00MzRlLTlkODUtZjQxYmU5YzE2ZWVlXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Tom Shadyac\" tarafından yönetilmiş 1996 yapımı bir Sci-Fi, Romance, Comedy eseridir. IMDb puanı 5.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 95,
+    "cast": [],
+    "director": "Tom Shadyac",
+    "writers": [],
+    "imdbRating": 5.7,
+    "tmdbRating": 5.7,
+    "releaseDate": "1996-06-28",
+    "trailerYoutubeId": "FFVbS0qm0TI"
+  },
+  {
+    "imdbId": "tt0208003",
+    "title": "Big Momma's House",
+    "originalTitle": "Big Momma's House",
+    "year": 2000,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg4YWY4MjEtNzQ2NC00MDJjLTg3YWEtZDI1ODkzYjEwNjczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTg4YWY4MjEtNzQ2NC00MDJjLTg3YWEtZDI1ODkzYjEwNjczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Raja Gosnell\" tarafından yönetilmiş 2000 yapımı bir Action, Crime, Comedy eseridir. IMDb puanı 5.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Comedy"
+    ],
+    "runtime": 99,
+    "cast": [],
+    "director": "Raja Gosnell",
+    "writers": [],
+    "imdbRating": 5.3,
+    "tmdbRating": 5.3,
+    "releaseDate": "2000-06-02",
+    "trailerYoutubeId": "QPEzzJYsPbY"
+  },
+  {
+    "imdbId": "tt0430304",
+    "title": "Little Man",
+    "originalTitle": "Little Man",
+    "year": 2006,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTI0NTA3MjI3NV5BMl5BanBnXkFtZTcwNTI1ODYzMQ@@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTI0NTA3MjI3NV5BMl5BanBnXkFtZTcwNTI1ODYzMQ@@._V1_.jpg",
+    "overview": "Bu yapım \"Keenen Ivory Wayans\" tarafından yönetilmiş 2006 yapımı bir Comedy, Crime eseridir. IMDb puanı 4.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Crime"
+    ],
+    "runtime": 98,
+    "cast": [],
+    "director": "Keenen Ivory Wayans",
+    "writers": [],
+    "imdbRating": 4.6,
+    "tmdbRating": 4.6,
+    "releaseDate": "2006-07-14",
+    "trailerYoutubeId": "x9STUnqrE_c"
+  },
+  {
+    "imdbId": "tt0175142",
+    "title": "Scary Movie",
+    "originalTitle": "Scary Movie",
+    "year": 2000,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGRmMGRhOWMtOTk3Ni00OTRjLTkyYTAtYzA1M2IzMGE3NGRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZGRmMGRhOWMtOTk3Ni00OTRjLTkyYTAtYzA1M2IzMGE3NGRkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Keenen Ivory Wayans\" tarafından yönetilmiş 2000 yapımı bir Comedy eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 88,
+    "cast": [],
+    "director": "Keenen Ivory Wayans",
+    "writers": [],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "2000-07-07",
+    "trailerYoutubeId": "HTLPULt0eJ4"
+  },
+  {
+    "imdbId": "tt0362120",
+    "title": "Scary Movie 4",
+    "originalTitle": "Scary Movie 4",
+    "year": 2006,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjExNDQwM2QtYjFiNy00N2ZlLWE4ZGEtODdmYjY5NDdhNWE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMjExNDQwM2QtYjFiNy00N2ZlLWE4ZGEtODdmYjY5NDdhNWE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"David Zucker\" tarafından yönetilmiş 2006 yapımı bir Comedy eseridir. IMDb puanı 5.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 83,
+    "cast": [],
+    "director": "David Zucker",
+    "writers": [],
+    "imdbRating": 5.1,
+    "tmdbRating": 5.1,
+    "releaseDate": "2006-04-14",
+    "trailerYoutubeId": "h0zAlXr1UOs"
+  },
+  {
+    "imdbId": "tt0110622",
+    "title": "Naked Gun 33 1/3: The Final Insult",
+    "originalTitle": "Naked Gun 33 1/3: The Final Insult",
+    "year": 1994,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2ViYTFhMTktMjU0OC00ZWY3LWEzZDItMTExNDc2NDNjN2I3XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BM2ViYTFhMTktMjU0OC00ZWY3LWEzZDItMTExNDc2NDNjN2I3XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Peter Segal\" tarafından yönetilmiş 1994 yapımı bir Crime, Comedy eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Comedy"
+    ],
+    "runtime": 83,
+    "cast": [],
+    "director": "Peter Segal",
+    "writers": [],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "1994-03-18",
+    "trailerYoutubeId": "WQ3p19A1mbw"
+  },
+  {
+    "imdbId": "tt0102510",
+    "title": "The Naked Gun 2½: The Smell of Fear",
+    "originalTitle": "The Naked Gun 2½: The Smell of Fear",
+    "year": 1991,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjcyNmNkMTItNzkzMi00NmY5LTg5MzQtMjg2YzRmOTY0ZmQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjcyNmNkMTItNzkzMi00NmY5LTg5MzQtMjg2YzRmOTY0ZmQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"David Zucker\" tarafından yönetilmiş 1991 yapımı bir Crime, Comedy eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Comedy"
+    ],
+    "runtime": 85,
+    "cast": [],
+    "director": "David Zucker",
+    "writers": [],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "1991-06-28",
+    "trailerYoutubeId": "WvY-X4P5y7Y"
+  },
+  {
+    "imdbId": "tt0095705",
+    "title": "The Naked Gun: From the Files of Police Squad!",
+    "originalTitle": "The Naked Gun: From the Files of Police Squad!",
+    "year": 1988,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTI5N2I1MjAtNTc0Yy00ZDIyLThkZTctMGQ5NTBhNjIwMWQ0XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZTI5N2I1MjAtNTc0Yy00ZDIyLThkZTctMGQ5NTBhNjIwMWQ0XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"David Zucker\" tarafından yönetilmiş 1988 yapımı bir Crime, Comedy eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Comedy"
+    ],
+    "runtime": 85,
+    "cast": [],
+    "director": "David Zucker",
+    "writers": [],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "1988-12-02",
+    "trailerYoutubeId": "PACTQutbow4"
   }
 ]

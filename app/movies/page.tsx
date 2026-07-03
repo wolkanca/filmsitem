@@ -119,10 +119,11 @@ export default function MoviesPage() {
 
   // Calculate unique filters from data (scoped to active tab)
   const tabFilteredMovies = useMemo(() => {
+    const reversedMovies = [...movies].reverse();
     if (activeTab === 'movie') return movies.filter((m) => m.type === 'Movie');
     if (activeTab === 'tv') return movies.filter((m) => isTV(m));
     if (activeTab === 'other') return movies.filter((m) => isOther(m));
-    return movies;
+    return reversedMovies;
   }, [movies, activeTab]);
 
   const genres = useMemo(() => {
@@ -215,7 +216,8 @@ export default function MoviesPage() {
       if (sortBy === 'myRating-asc') return a.myRating - b.myRating;
       if (sortBy === 'imdbRating-desc') return b.imdbRating - a.imdbRating;
       if (sortBy === 'watchDate-desc') {
-        return new Date(b.watchDate).getTime() - new Date(a.watchDate).getTime();
+        if (activeTab === 'all') return 0;
+        return 0;
       }
       if (sortBy === 'watchDate-asc') {
         return new Date(a.watchDate).getTime() - new Date(b.watchDate).getTime();
@@ -278,28 +280,8 @@ export default function MoviesPage() {
           </p>
         </div>
 
-        {/* Admin wizards + layout togglers */}
+        {/* layout togglers */}
         <div className="flex items-center gap-3">
-          {isAdmin && (
-            <>
-              <Link
-                href="/enrich"
-                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-brand-primary/20 bg-brand-primary/5 hover:bg-brand-primary/10 text-brand-primary text-sm font-semibold transition-all duration-300 shadow-[0_0_15px_rgba(239,68,68,0.1)] hover:shadow-[0_0_20px_rgba(239,68,68,0.2)]"
-              >
-                <Sparkles className="w-4 h-4 animate-pulse-subtle" />
-                Poster Sihirbazı
-              </Link>
-
-              <Link
-                href="/enrich-trailers"
-                className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl border border-red-500/20 bg-red-500/5 hover:bg-red-500/10 text-red-500 text-sm font-semibold transition-all duration-300 shadow-[0_0_15px_rgba(239,68,68,0.1)] hover:shadow-[0_0_20px_rgba(239,68,68,0.2)]"
-              >
-                <Play className="w-4 h-4 animate-pulse-subtle" />
-                Fragman Sihirbazı
-              </Link>
-            </>
-          )}
-
           <button
             onClick={() => setShowFilters(!showFilters)}
             className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all duration-300 ${showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating || sortBy !== 'watchDate-desc'
