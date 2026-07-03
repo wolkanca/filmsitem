@@ -124,7 +124,7 @@ export default async function HomePage() {
               🎬 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">İzlediklerim</span>
             </h1>
             <p className="text-base sm:text-lg text-zinc-400 max-w-xl leading-relaxed">
-              Yıllardır izlediğim filmler, verdiğim puanlar ve kişisel sinema arşivim. Hoş geldiniz, benimle birlikte sinema yolculuğumu keşfedin. <br />Volkan Yılmaz
+              Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran <strong className="text-white">modern film günlüğü</strong>.
             </p>
 
             {/* CTA Buttons */}

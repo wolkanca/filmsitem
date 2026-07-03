@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${movie.title} (${movie.year})`,
-    description: movie.overview || `${movie.title} (${movie.year}) filmine ait detaylar, kişisel puanlarım ve izleme notlarım.`,
+    description: movie.overview || `${movie.title} (${movie.year}) filmine ait detaylar, kişisel puanlarım ve izleme notlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
     openGraph: {
       title: `${movie.title} (${movie.year}) | Film Günlüğüm`,
       description: movie.overview,
@@ -60,7 +60,7 @@ export default async function MovieDetailPage({ params }: Props) {
   // Load all movies to calculate prev/next indices for keyboard navigation
   const allMovies = await getMovies();
   const currentIndex = allMovies.findIndex((m) => m.imdbId === imdbId);
-  
+
   // Sorting matches IMDb CSV chronological order
   const prevMovie = currentIndex > 0 ? allMovies[currentIndex - 1] : null;
   const nextMovie = currentIndex < allMovies.length - 1 ? allMovies[currentIndex + 1] : null;

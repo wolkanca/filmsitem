@@ -1,7 +1,7 @@
 {
-  "name": "Film Günlüğüm",
-  "short_name": "Film Günlüğüm",
-  "description": "Kişisel sinema arşivim ve film günlüğüm",
+  "name": "İzlediklerim - Film Günlüğüm",
+  "short_name": "İzlediklerim",
+  "description": "Kişisel sinema istatistiklerimi barındıran modern film günlüğü.",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",

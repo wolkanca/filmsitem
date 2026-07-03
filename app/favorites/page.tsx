@@ -7,12 +7,12 @@ export const revalidate = 3600; // Revalidate every hour (ISR)
 
 export const metadata: Metadata = {
   title: 'Favorilerim',
-  description: 'Kişisel film arşivimde 8 ve üzeri yüksek puan verdiğim gözbebeğim yapımlar.',
+  description: 'Kişisel film arşivimde 8 ve üzeri yüksek puan verdiğim gözbebeğim yapımlar. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
 };
 
 export default async function FavoritesPage() {
   const movies = await getMovies();
-  
+
   // Filter movies rated 8, 9, or 10
   const favoriteMovies = movies
     .filter((m) => m.myRating >= 8);

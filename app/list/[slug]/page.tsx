@@ -27,7 +27,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const movies = await getMovies();
-  
+
   // Resolve list name from slug
   let listName = '';
   movies.forEach((m) => {
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${listName} Koleksiyonu`,
-    description: `"${listName}" koleksiyonunda bulunan filmler, diziler, kişisel yorumlarım ve puanlarım.`,
+    description: `"${listName}" koleksiyonunda bulunan filmler, diziler, kişisel yorumlarım ve puanlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
   };
 }
 

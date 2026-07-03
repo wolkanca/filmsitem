@@ -2,8 +2,8 @@ import { NextResponse } from 'next/server';
 import { getMovies } from '@/lib/db';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://film-gunlugum.vercel.app';
-  
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://izlediklerim.wolkanca.com';
+
   try {
     const movies = await getMovies();
     const sortedMovies = [...movies]
@@ -28,7 +28,7 @@ export async function GET() {
     const rssXml = `<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Film Günlüğüm</title>
+    <title>İzlediklerim</title>
     <link>${baseUrl}</link>
     <description>Kişisel film izleme geçmişi ve günlük arşivim.</description>
     <language>tr</language>

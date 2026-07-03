@@ -7,7 +7,7 @@ export const revalidate = 3600; // Revalidate every hour (ISR)
 
 export const metadata: Metadata = {
   title: 'İstatistikler',
-  description: 'Kişisel film izleme istatistiklerim, puan dağılımım ve en çok izlediğim yönetmen/oyuncu analizleri.',
+  description: 'Kişisel film izleme istatistiklerim, puan dağılımım ve en çok izlediğim yönetmen/oyuncu analizleri. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
 };
 
 export default async function StatsPage() {

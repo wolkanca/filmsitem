@@ -22,14 +22,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   return {
     title: `${decodedName} Filmleri`,
-    description: `Kütüphanemdeki senarist ${decodedName} tarafından yazılmış filmler, incelemelerim ve kişisel puanlarım.`,
+    description: `Kütüphanemdeki senarist ${decodedName} tarafından yazılmış filmler, incelemelerim ve kişisel puanlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
   };
 }
 
 export default async function WriterPage({ params }: Props) {
   const resolvedParams = await params;
   const decodedName = decodeURIComponent(resolvedParams.name);
-  
+
   const movies = await getMovies();
   const filteredMovies = movies.filter((m) => {
     if (!m.writers) return false;
@@ -62,7 +62,7 @@ export default async function WriterPage({ params }: Props) {
       {/* Header and Statistics Banner */}
       <div className="glass-card p-6 sm:p-8 rounded-2xl relative overflow-hidden border border-card-border/50">
         <div className="absolute top-0 right-0 w-80 h-80 bg-brand-rose/10 rounded-full blur-[100px] -z-10" />
-        
+
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
             <span className="text-xs font-bold text-brand-rose uppercase tracking-widest block mb-1">Senariste Göre Arşiv</span>

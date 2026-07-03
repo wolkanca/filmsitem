@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Film Arşivi - Tüm İzlediğim Filmler',
   description:
-    'İzlediğim tüm filmleri puan, tür, yıl ve yönetmene göre filtreleyerek keşfedin. Kişisel sinema arşivim.',
+    'İzlediğim tüm filmleri puan, tür, yıl ve yönetmene göre filtreleyerek keşfedin. Kişisel sinema arşivim. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
 };
 
 export default function MoviesLayout({

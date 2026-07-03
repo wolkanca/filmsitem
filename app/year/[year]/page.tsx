@@ -19,14 +19,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   return {
     title: `${resolvedParams.year} Yılı Yapımları`,
-    description: `Kütüphanemdeki ${resolvedParams.year} yılı yapımı filmler, incelemelerim ve kişisel puanlarım.`,
+    description: `Kütüphanemdeki ${resolvedParams.year} yılı yapımı filmler, incelemelerim ve kişisel puanlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
   };
 }
 
 export default async function YearPage({ params }: Props) {
   const resolvedParams = await params;
   const yearInt = parseInt(resolvedParams.year, 10);
-  
+
   const movies = await getMovies();
   const filteredMovies = movies.filter((m) => m.year === yearInt);
 
@@ -56,7 +56,7 @@ export default async function YearPage({ params }: Props) {
       {/* Header and Statistics Banner */}
       <div className="glass-card p-6 sm:p-8 rounded-2xl relative overflow-hidden border border-card-border/50">
         <div className="absolute top-0 right-0 w-80 h-80 bg-brand-secondary/10 rounded-full blur-[100px] -z-10" />
-        
+
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
             <span className="text-xs font-bold text-brand-secondary uppercase tracking-widest block mb-1">Yıla Göre Arşiv</span>

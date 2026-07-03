@@ -9,7 +9,7 @@ export const revalidate = 3600; // Revalidate every hour (ISR)
 
 export const metadata: Metadata = {
   title: 'Listeler',
-  description: 'Otomatik olarak oluşturulmuş kişisel film koleksiyonları ve kategoriler.',
+  description: 'Otomatik olarak oluşturulmuş kişisel film koleksiyonları ve kategoriler. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
 };
 
 export default async function ListsPage() {

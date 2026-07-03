@@ -21,14 +21,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
   return {
     title: `${decodedName} Filmleri`,
-    description: `Kütüphanemdeki en iyi ${decodedName} türündeki filmler, incelemelerim ve kişisel puanlarım.`,
+    description: `Kütüphanemdeki en iyi ${decodedName} türündeki filmler, incelemelerim ve kişisel puanlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
   };
 }
 
 export default async function GenrePage({ params }: Props) {
   const resolvedParams = await params;
   const decodedName = decodeURIComponent(resolvedParams.name);
-  
+
   const movies = await getMovies();
   const filteredMovies = movies.filter((m) =>
     m.genres.some((g) => g.toLowerCase() === decodedName.toLowerCase())
@@ -60,7 +60,7 @@ export default async function GenrePage({ params }: Props) {
       {/* Header and Statistics Banner */}
       <div className="glass-card p-6 sm:p-8 rounded-2xl relative overflow-hidden border border-card-border/50">
         <div className="absolute top-0 right-0 w-80 h-80 bg-brand-primary/10 rounded-full blur-[100px] -z-10" />
-        
+
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
             <span className="text-xs font-bold text-brand-primary uppercase tracking-widest block mb-1">Türe Göre Arşiv</span>

@@ -19,9 +19,19 @@ export const metadata: Metadata = {
     default: 'İzlediklerim - Kişisel Sinema Arşivim',
     template: '%s - İzlediklerim',
   },
-  description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü. Volkan Yılmaz',
-  keywords: ['film günlüğü', 'sinema arşivi', 'izleme geçmişi', 'film puanları', 'IMDb', 'sinefil'],
+  description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
+  keywords: ['film günlüğü', 'sinema arşivi', 'izleme geçmişi', 'film puanları', 'IMDb', 'sinefil', 'volkan yılmaz', 'kişisel sinema günlüğü'],
   authors: [{ name: 'Volkan Yılmaz' }],
+  other: {
+    'dns-prefetch': [
+      'https://m.media-amazon.com',
+      'https://www.imdb.com',
+      'https://images.unsplash.com',
+      'https://cdn.jsdelivr.net',
+      'https://fonts.googleapis.com',
+      'https://fonts.gstatic.com',
+    ],
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
