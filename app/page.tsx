@@ -55,16 +55,20 @@ export default async function HomePage() {
   // Kesin kriter: Hem gerçek posteri hem de fragmanı olan filmler
   // Öncelik sırası: Puanı >= 8 + poster + fragman → Puanı >= 7 + poster + fragman → poster + fragman olan herhangi bir film → tüm filmler
   const withPosterAndTrailer = (m: typeof movies[number]) => hasRealPoster(m.poster) && !!m.trailerYoutubeId;
-  const highRatedWithBoth = movies.filter(m => m.myRating >= 8 && withPosterAndTrailer(m));
-  const midRatedWithBoth = movies.filter(m => m.myRating >= 7 && withPosterAndTrailer(m));
-  const anyWithBoth = movies.filter(m => withPosterAndTrailer(m));
+  const onlyCinema = (m: typeof movies[number]) => m.type === 'Movie';
+  const highRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 8 && withPosterAndTrailer(m));
+  const midRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 7 && withPosterAndTrailer(m));
+  const anyWithBoth = movies.filter(m => onlyCinema(m) && withPosterAndTrailer(m));
+  const anyCinema = movies.filter(m => onlyCinema(m));
   const featuredPool = highRatedWithBoth.length > 0
     ? highRatedWithBoth
     : midRatedWithBoth.length > 0
       ? midRatedWithBoth
       : anyWithBoth.length > 0
         ? anyWithBoth
-        : movies;
+        : anyCinema.length > 0
+          ? anyCinema
+          : movies;
 
   // 2. Bugünün benzersiz gün numarasını hesapla (1 Ocak 1970'ten bu yana geçen toplam gün)
   const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
