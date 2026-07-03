@@ -32385,8 +32385,8 @@
     "listName": [
       "Komedi Günlükleri"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNWM0N2YzNTctYjE4Ny00N2JiLThiN2ItZTQwNjJjMjJiZGE2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTgwMjkzMDE@._V1_SX300.jpg",
-    "backdrop": "https://m.media-amazon.com/images/M/MV5BNWM0N2YzNTctYjE4Ny00N2JiLThiN2ItZTQwNjJjMjJiZGE2L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNTgwMjkzMDE@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWJmNTVhZTMtMTIxNS00ZTJiLWI4MjMtMzBiZTc1ODAyNTJkXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNWJmNTVhZTMtMTIxNS00ZTJiLWI4MjMtMzBiZTc1ODAyNTJkXkEyXkFqcGc@._V1_.jpg",
     "overview": "Bu yapım \"Selçuk Aydemir\" tarafından yönetilmiş 2017 yapımı bir Comedy eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
@@ -32420,8 +32420,8 @@
       "Komedi Günlükleri",
       "Kült Eserler"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNDI2YThjNzAtZWZiMS00OWZkLWIwY2UtN2RjNTU5MGE1ODdkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
-    "backdrop": "https://m.media-amazon.com/images/M/MV5BNDI2YThjNzAtZWZiMS00OWZkLWIwY2UtN2RjNTU5MGE1ODdkXkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODhjMmE0ZjMtNzU0Yi00YzFmLTg1OGItMDM2M2I1OGMxMjBiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BODhjMmE0ZjMtNzU0Yi00YzFmLTg1OGItMDM2M2I1OGMxMjBiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2014 yapımı bir Comedy eseridir. IMDb puanı 8.6 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
@@ -47804,7 +47804,25 @@
     "imdbRating": 7.8,
     "tmdbRating": 7.8,
     "releaseDate": "2013-12-31",
-    "trailerYoutubeId": "wC2T_8q95yQ"
+    "trailerYoutubeId": "wC2T_8q95yQ",
+    "seasons": [
+      {
+        "seasonNumber": 1,
+        "episodes": [
+          {
+            "imdbId": "tt7862588",
+            "title": "Arkadasim Hosgeldin: 1. Bolum",
+            "episodeNumber": 1,
+            "seasonNumber": 1,
+            "myRating": 7,
+            "watchDate": "2026-07-01",
+            "runtime": 0,
+            "imdbRating": 7.8,
+            "overview": "Bu bölüm \"Ebru Yalçin\" tarafından yönetilmiş 2013 yapımı bir dizi bölümüdür."
+          }
+        ]
+      }
+    ]
   },
   {
     "imdbId": "tt0087469",
@@ -56016,5 +56034,2381 @@
       }
     ],
     "trailerYoutubeId": "5llijIj186k"
+  },
+  {
+    "imdbId": "tt0469287",
+    "title": "Call of Duty 2",
+    "originalTitle": "Call of Duty 2",
+    "year": 2005,
+    "type": "Video Game",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzgyMzczMTQzNF5BMl5BanBnXkFtZTgwMjM4MTk4MDE@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMzgyMzczMTQzNF5BMl5BanBnXkFtZTgwMjM4MTk4MDE@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Keith Arem,Jason West\" tarafından yönetilmiş 2005 yapımı bir Action, War eseridir. IMDb puanı 8.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "War"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Michael Cudlitz",
+      "Rick Gomez",
+      "Frank John Hughes",
+      "James Madio"
+    ],
+    "director": "Keith Arem,Jason West",
+    "writers": [
+      "Steve Fukuda",
+      "Zied Rieke",
+      "Michael Schiffer"
+    ],
+    "imdbRating": 8.7,
+    "tmdbRating": 8.7,
+    "releaseDate": "2005-10-25",
+    "trailerYoutubeId": "XexzQKXGQrk"
+  },
+  {
+    "imdbId": "tt1450746",
+    "title": "Call of Duty: Modern Warfare 2",
+    "originalTitle": "Call of Duty: Modern Warfare 2",
+    "year": 2009,
+    "type": "Video Game",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWEzOTA4MTktNGM2Mi00NTMwLWEzZjctYjU2OWFkNjVmY2YxXkEyXkFqcGdeQXVyMzM2MzI5MzU@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZWEzOTA4MTktNGM2Mi00NTMwLWEzZjctYjU2OWFkNjVmY2YxXkEyXkFqcGdeQXVyMzM2MzI5MzU@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Jason West\" tarafından yönetilmiş 2009 yapımı bir Action, Thriller eseridir. IMDb puanı 8.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Lance Henriksen",
+      "Keith David",
+      "Barry Pepper",
+      "Kevin McKidd"
+    ],
+    "director": "Jason West",
+    "writers": [
+      "Jesse Stern",
+      "Steve Fukuda",
+      "Todd Alderman",
+      "Steve Fukuda",
+      "Mackey McCandlish",
+      "Zied Rieke",
+      "Jesse Stern",
+      "Jason West",
+      "Sean Slayback"
+    ],
+    "imdbRating": 8.8,
+    "tmdbRating": 8.8,
+    "releaseDate": "2009-11-10",
+    "trailerYoutubeId": "P7vyLDEwF5I"
+  },
+  {
+    "imdbId": "tt0420798",
+    "title": "Need for Speed: Underground 2",
+    "originalTitle": "Need for Speed: Underground 2",
+    "year": 2004,
+    "type": "Video Game",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDM2NDAwMGEtZTI4NS00OGE3LWI2MjUtOTQzM2Q5ZGIwZjMyXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNDM2NDAwMGEtZTI4NS00OGE3LWI2MjUtOTQzM2Q5ZGIwZjMyXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2004 yapımı bir Action, Sport, Adventure eseridir. IMDb puanı 8.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sport",
+      "Adventure"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Kelly Brook",
+      "Brooke Burke",
+      "Laura Ainsley",
+      "Sharon Alexander"
+    ],
+    "director": "Chuck Osieja, Tom Raycove",
+    "writers": [
+      "Adrian Vershinin"
+    ],
+    "imdbRating": 8.2,
+    "tmdbRating": 8.2,
+    "releaseDate": "2004-11-09",
+    "trailerYoutubeId": "0w2ep42kiz4"
+  },
+  {
+    "imdbId": "tt0390296",
+    "title": "Need for Speed: Underground",
+    "originalTitle": "Need for Speed: Underground",
+    "year": 2003,
+    "type": "Video Game",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNThlMTc1Y2EtY2IwYS00YzdhLWJjNjItOTk1MGU4OWFlNDFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNThlMTc1Y2EtY2IwYS00YzdhLWJjNjItOTk1MGU4OWFlNDFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2003 yapımı bir Crime, Action, Sport, Adventure eseridir. IMDb puanı 7.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Action",
+      "Sport",
+      "Adventure"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Nacho Aldeguer",
+      "Sharon Alexander",
+      "David Barrera",
+      "Michael Benyaer"
+    ],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.9,
+    "tmdbRating": 7.9,
+    "releaseDate": "2003-11-17",
+    "trailerYoutubeId": "60hdb1oY-fk"
+  },
+  {
+    "imdbId": "tt0314123",
+    "title": "Grand Theft Auto: Vice City",
+    "originalTitle": "Grand Theft Auto: Vice City",
+    "year": 2002,
+    "type": "Video Game",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTcwMWYzMjgtYjQwYy00ODA2LTlkMTgtMzE0Y2RlYzJlMGI5XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYTcwMWYzMjgtYjQwYy00ODA2LTlkMTgtMzE0Y2RlYzJlMGI5XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2002 yapımı bir Crime, Action eseridir. IMDb puanı 9.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Action"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Ray Liotta",
+      "William Fichtner",
+      "Tom Sizemore",
+      "Dennis Hopper"
+    ],
+    "director": "Marco Fernandez, Navid Khonsari",
+    "writers": [
+      "Dan Houser",
+      "James Worrall",
+      "Dan Houser",
+      "James Worrall",
+      "Dan Houser",
+      "Marco Fernandez",
+      "Gillian Telling",
+      "Navid Khonsari",
+      "Jeremy Pope",
+      "Lance Williams",
+      "Jennymarie Jemison",
+      "Dan Houser",
+      "Lazlow"
+    ],
+    "imdbRating": 9.2,
+    "tmdbRating": 9.2,
+    "releaseDate": "2002-10-29",
+    "trailerYoutubeId": "Mnb-tmlTSqU"
+  },
+  {
+    "imdbId": "tt0462495",
+    "title": "The Punisher",
+    "originalTitle": "The Punisher",
+    "year": 1993,
+    "type": "Video Game",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDMxMjIzYjgtYmI4NC00ZjRlLTg4YWMtMjMzZTUzN2Q3ODhhXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMDMxMjIzYjgtYmI4NC00ZjRlLTg4YWMtMjMzZTUzN2Q3ODhhXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Noritaka Funamizu\" tarafından yönetilmiş 1993 yapımı bir Action, Adventure, Thriller eseridir. IMDb puanı 7.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "runtime": 0,
+    "cast": [],
+    "director": "Noritaka Funamizu",
+    "writers": [
+      "Jack Kirby"
+    ],
+    "imdbRating": 8.6,
+    "tmdbRating": 8.6,
+    "releaseDate": "1993",
+    "trailerYoutubeId": "uyfxIlLlx_U"
+  },
+  {
+    "imdbId": "tt0353451",
+    "title": "Final Fight",
+    "originalTitle": "Final Fight",
+    "year": 1989,
+    "type": "Video Game",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjlkYWI0ZTQtYTJjYS00OTkxLTg2OTAtMDVjMDc3NGExMzg4XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjlkYWI0ZTQtYTJjYS00OTkxLTg2OTAtMDVjMDc3NGExMzg4XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Akira Nishitani,Akira Yasuda\" tarafından yönetilmiş 1989 yapımı bir Crime, Adventure, Action eseridir. IMDb puanı 7.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Adventure",
+      "Action"
+    ],
+    "runtime": 0,
+    "cast": [],
+    "director": "Akira Nishitani,Akira Yasuda",
+    "writers": [],
+    "imdbRating": 8,
+    "tmdbRating": 8,
+    "releaseDate": "1990-01-12",
+    "trailerYoutubeId": "x4UxS994z4I"
+  },
+  {
+    "imdbId": "tt0314270",
+    "title": "The King of Fighters '95",
+    "originalTitle": "The King of Fighters '95",
+    "year": 1995,
+    "type": "Video Game",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjMyMzk4ZTktZDI5Yi00NzBkLThmNGEtNjYwOWFlOTAyNDQ5XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYjMyMzk4ZTktZDI5Yi00NzBkLThmNGEtNjYwOWFlOTAyNDQ5XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Nenko,M. Kuwasashi\" tarafından yönetilmiş 1995 yapımı bir Action eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Action"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Akoya Sogi",
+      "Monster Maetsuka",
+      "Eiji Tsuda",
+      "Eiji Yano"
+    ],
+    "director": "Nenko,M. Kuwasashi",
+    "writers": [],
+    "imdbRating": 7.7,
+    "tmdbRating": 7.7,
+    "releaseDate": "1996-08-31",
+    "trailerYoutubeId": "d0woBrbZLDU"
+  },
+  {
+    "imdbId": "tt0278746",
+    "title": "Street Fighter II: The World Warrior",
+    "originalTitle": "Street Fighter II: The World Warrior",
+    "year": 1991,
+    "type": "Video Game",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWQ1MGViNWUtZjgwNy00MGUwLWI5Y2MtNjdlYWViNzVhMzFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNWQ1MGViNWUtZjgwNy00MGUwLWI5Y2MtNjdlYWViNzVhMzFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1991 yapımı bir Sci-Fi, Action eseridir. IMDb puanı 8.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Johnpaul Williams"
+    ],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.6,
+    "tmdbRating": 8.6,
+    "releaseDate": "1991-02-06",
+    "trailerYoutubeId": "5dHGuALQHIM"
+  },
+  {
+    "imdbId": "tt9663764",
+    "title": "Aquaman and the Lost Kingdom",
+    "originalTitle": "Aquaman and the Lost Kingdom",
+    "year": 2023,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYjQ1ZTUzMWMtY2VkNS00ZDRjLWEwODYtYmFkMWJiNTQxMDUzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "overview": "Bu yapım \"James Wan\" tarafından yönetilmiş 2023 yapımı bir Action, Sci-Fi, Adventure, Fantasy eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Adventure",
+      "Fantasy"
+    ],
+    "runtime": 124,
+    "cast": [
+      "Jason Momoa",
+      "Patrick Wilson",
+      "Yahya Abdul-Mateen II"
+    ],
+    "director": "James Wan",
+    "writers": [
+      "David Leslie Johnson-McGoldrick",
+      "James Wan",
+      "Jason Momoa"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "2023-12-22",
+    "trailerYoutubeId": "s-3I9Acuw6A"
+  },
+  {
+    "imdbId": "tt1477834",
+    "title": "Aquaman",
+    "originalTitle": "Aquaman",
+    "year": 2018,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOTk5ODg0OTU5M15BMl5BanBnXkFtZTgwMDQ3MDY3NjM@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "overview": "Bu yapım \"James Wan\" tarafından yönetilmiş 2018 yapımı bir Action, Adventure, Sci-Fi, Fantasy eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "runtime": 143,
+    "cast": [
+      "Jason Momoa",
+      "Amber Heard",
+      "Willem Dafoe"
+    ],
+    "director": "James Wan",
+    "writers": [
+      "David Leslie Johnson-McGoldrick",
+      "Will Beall",
+      "Geoff Johns"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "2018-12-21",
+    "trailerYoutubeId": "qOu6a3kmLZQ"
+  },
+  {
+    "imdbId": "tt5950044",
+    "title": "Superman",
+    "originalTitle": "Superman",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg",
+    "overview": "Bu yapım \"James Gunn\" tarafından yönetilmiş 2025 yapımı bir Adventure, Sci-Fi, Action eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 129,
+    "cast": [
+      "David Corenswet",
+      "Rachel Brosnahan",
+      "Nicholas Hoult"
+    ],
+    "director": "James Gunn",
+    "writers": [
+      "James Gunn",
+      "Jerry Siegel",
+      "Joe Shuster"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "2025-07-11",
+    "trailerYoutubeId": "cInHRPdnz_w"
+  },
+  {
+    "imdbId": "tt4154664",
+    "title": "Captain Marvel",
+    "originalTitle": "Captain Marvel",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDI1NGU2ODAtNzBiNy00MWY5LWIyMGEtZjUxZjUwZmZiNjBlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZDI1NGU2ODAtNzBiNy00MWY5LWIyMGEtZjUxZjUwZmZiNjBlXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "overview": "Bu yapım \"Anna Boden,Ryan Fleck\" tarafından yönetilmiş 2019 yapımı bir Action, Adventure, Sci-Fi eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "runtime": 123,
+    "cast": [
+      "Brie Larson",
+      "Samuel L. Jackson",
+      "Ben Mendelsohn"
+    ],
+    "director": "Anna Boden,Ryan Fleck",
+    "writers": [
+      "Anna Boden",
+      "Ryan Fleck",
+      "Geneva Robertson-Dworet"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2019-03-08",
+    "trailerYoutubeId": "5OPoRPSYURQ"
+  },
+  {
+    "imdbId": "tt10648342",
+    "title": "Thor: Love and Thunder",
+    "originalTitle": "Thor: Love and Thunder",
+    "year": 2022,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu",
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjRiMDhiZjQtNjk5Yi00ZDcwLTkyYTEtMDc1NjdmNjFhNGIzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZjRiMDhiZjQtNjk5Yi00ZDcwLTkyYTEtMDc1NjdmNjFhNGIzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "overview": "Bu yapım \"Taika Waititi\" tarafından yönetilmiş 2022 yapımı bir Adventure, Romance, Sci-Fi, Comedy, Action eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Romance",
+      "Sci-Fi",
+      "Comedy",
+      "Action"
+    ],
+    "runtime": 118,
+    "cast": [
+      "Chris Hemsworth",
+      "Natalie Portman",
+      "Christian Bale"
+    ],
+    "director": "Taika Waititi",
+    "writers": [
+      "Taika Waititi",
+      "Jennifer Kaytin Robinson",
+      "Stan Lee"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "2022-07-08",
+    "trailerYoutubeId": "ZoC1NzNrDU0"
+  },
+  {
+    "imdbId": "tt14513804",
+    "title": "Captain America: Brave New World",
+    "originalTitle": "Captain America: Brave New World",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDRjY2E0ZmEtN2QwNi00NTEwLWI3MWItODNkMGYwYWFjNGE0XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNDRjY2E0ZmEtN2QwNi00NTEwLWI3MWItODNkMGYwYWFjNGE0XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Julius Onah\" tarafından yönetilmiş 2025 yapımı bir Action, Adventure, Sci-Fi eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "runtime": 118,
+    "cast": [
+      "Anthony Mackie",
+      "Harrison Ford",
+      "Danny Ramirez"
+    ],
+    "director": "Julius Onah",
+    "writers": [
+      "Rob Edwards",
+      "Malcolm Spellman",
+      "Dalan Musson"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "2025-02-14",
+    "trailerYoutubeId": "EwHNE_ijjR4"
+  },
+  {
+    "imdbId": "tt1462764",
+    "title": "Indiana Jones and the Dial of Destiny",
+    "originalTitle": "Indiana Jones and the Dial of Destiny",
+    "year": 2023,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu",
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWJlOWE2ZjEtZGRhOC00M2YzLWFkZGEtYzIzZWI2Zjg3NWYxXkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYWJlOWE2ZjEtZGRhOC00M2YzLWFkZGEtYzIzZWI2Zjg3NWYxXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"James Mangold\" tarafından yönetilmiş 2023 yapımı bir Action, Adventure, Sci-Fi eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "runtime": 154,
+    "cast": [
+      "Harrison Ford",
+      "Phoebe Waller-Bridge",
+      "Antonio Banderas"
+    ],
+    "director": "James Mangold",
+    "writers": [
+      "Jez Butterworth",
+      "John-Henry Butterworth",
+      "David Koepp"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "2023-06-30",
+    "trailerYoutubeId": "FLMB9FQJvUU"
+  },
+  {
+    "imdbId": "tt11389872",
+    "title": "Kingdom of the Planet of the Apes",
+    "originalTitle": "Kingdom of the Planet of the Apes",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDRlZTc3YTItOTk3Yi00NmU4LWFiOGUtNjgwMDZjNjIzNTU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZDRlZTc3YTItOTk3Yi00NmU4LWFiOGUtNjgwMDZjNjIzNTU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Wes Ball\" tarafından yönetilmiş 2024 yapımı bir Action, Sci-Fi, Adventure, Drama, Thriller eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Adventure",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime": 145,
+    "cast": [
+      "Owen Teague",
+      "Freya Allan",
+      "Kevin Durand"
+    ],
+    "director": "Wes Ball",
+    "writers": [
+      "Josh Friedman",
+      "Rick Jaffa",
+      "Amanda Silver"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "2024-05-10",
+    "trailerYoutubeId": "Tg1FesR8X90"
+  },
+  {
+    "imdbId": "tt2103281",
+    "title": "Dawn of the Planet of the Apes",
+    "originalTitle": "Dawn of the Planet of the Apes",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWNjYzQ4ZGItZTg1My00NTM2LTg1NDUtYThjOTQwMTYyNjU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNWNjYzQ4ZGItZTg1My00NTM2LTg1NDUtYThjOTQwMTYyNjU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Matt Reeves\" tarafından yönetilmiş 2014 yapımı bir Action, Adventure, Drama, Sci-Fi, Thriller eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "runtime": 130,
+    "cast": [
+      "Gary Oldman",
+      "Keri Russell",
+      "Andy Serkis"
+    ],
+    "director": "Matt Reeves",
+    "writers": [
+      "Mark Bomback",
+      "Rick Jaffa",
+      "Amanda Silver"
+    ],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "2014-07-11",
+    "trailerYoutubeId": "P7vvLaenLLc"
+  },
+  {
+    "imdbId": "tt1318514",
+    "title": "Rise of the Planet of the Apes",
+    "originalTitle": "Rise of the Planet of the Apes",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjllODU1NDItODU1Ni00N2Y2LTg4Y2ItOTJjMTczZDliN2FhXkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMjllODU1NDItODU1Ni00N2Y2LTg4Y2ItOTJjMTczZDliN2FhXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Rupert Wyatt\" tarafından yönetilmiş 2011 yapımı bir Action, Sci-Fi, Drama, Thriller eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime": 105,
+    "cast": [
+      "James Franco",
+      "Andy Serkis",
+      "Freida Pinto"
+    ],
+    "director": "Rupert Wyatt",
+    "writers": [
+      "Rick Jaffa",
+      "Amanda Silver",
+      "Pierre Boulle"
+    ],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "2011-08-05",
+    "trailerYoutubeId": "StvDUi2Xofg"
+  },
+  {
+    "imdbId": "tt0831387",
+    "title": "Godzilla",
+    "originalTitle": "Godzilla",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BODE2NTdmMmYtY2U1OS00MjExLWIwNjQtYjQ5NTA0ZDZmZjZiXkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BODE2NTdmMmYtY2U1OS00MjExLWIwNjQtYjQ5NTA0ZDZmZjZiXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Gareth Edwards\" tarafından yönetilmiş 2014 yapımı bir Action, Sci-Fi, Adventure, Thriller eseridir. IMDb puanı 6.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Adventure",
+      "Thriller"
+    ],
+    "runtime": 123,
+    "cast": [
+      "Aaron Taylor-Johnson",
+      "Elizabeth Olsen",
+      "Bryan Cranston"
+    ],
+    "director": "Gareth Edwards",
+    "writers": [
+      "Dave Callaham",
+      "Max Borenstein"
+    ],
+    "imdbRating": 6.4,
+    "tmdbRating": 6.4,
+    "releaseDate": "2014-05-16",
+    "trailerYoutubeId": "N-5Lq7Q5z9Q"
+  },
+  {
+    "imdbId": "tt3741700",
+    "title": "Godzilla: King of the Monsters",
+    "originalTitle": "Godzilla: King of the Monsters",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDVhMjk2OGUtYzYxNS00NzBjLTk5YTItYzI0ZjgzNjY1NmI0XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMDVhMjk2OGUtYzYxNS00NzBjLTk5YTItYzI0ZjgzNjY1NmI0XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Michael Dougherty\" tarafından yönetilmiş 2019 yapımı bir Action, Adventure, Sci-Fi, Fantasy eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Fantasy"
+    ],
+    "runtime": 132,
+    "cast": [
+      "Kyle Chandler",
+      "Vera Farmiga",
+      "Millie Bobby Brown"
+    ],
+    "director": "Michael Dougherty",
+    "writers": [
+      "Michael Dougherty",
+      "Zach Shields",
+      "Max Borenstein"
+    ],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "2019-05-31",
+    "trailerYoutubeId": "ycyTaBEf6cw"
+  },
+  {
+    "imdbId": "tt17220216",
+    "title": "Monarch: Legacy of Monsters",
+    "originalTitle": "Monarch: Legacy of Monsters",
+    "year": 2023,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjZjNGFmYmItMzVjYy00Yzc3LWFhN2EtOGU1ZTc2MWEwODUzXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMjZjNGFmYmItMzVjYy00Yzc3LWFhN2EtOGU1ZTc2MWEwODUzXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2023 yapımı bir Action, Sci-Fi, Adventure eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "runtime": 0,
+    "cast": [
+      "Anna Sawai",
+      "Kiersey Clemons",
+      "Ren Watabe"
+    ],
+    "director": "",
+    "writers": [
+      "Chris Black",
+      "Matt Fraction"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "2023-11-17",
+    "trailerYoutubeId": "oNjnEFEheh4"
+  },
+  {
+    "imdbId": "tt9805678",
+    "title": "Frozen Planet II",
+    "originalTitle": "Frozen Planet II",
+    "year": 2022,
+    "type": "TV Mini Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGM3YjE4MjItNWMwNC00NGM1LWJkNGUtMzg0MDVmYzBhMGEwXkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNGM3YjE4MjItNWMwNC00NGM1LWJkNGUtMzg0MDVmYzBhMGEwXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2022 yapımı bir Documentary, Family eseridir. IMDb puanı 9 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Family"
+    ],
+    "runtime": 49,
+    "cast": [
+      "David Attenborough",
+      "Jamie McPherson",
+      "Olly Jelley"
+    ],
+    "director": "",
+    "writers": [],
+    "imdbRating": 9,
+    "tmdbRating": 9,
+    "releaseDate": "2023-01-28",
+    "trailerYoutubeId": "XIZd_wsLYwQ"
+  },
+  {
+    "imdbId": "tt10394800",
+    "title": "The Planets",
+    "originalTitle": "The Planets",
+    "year": 2019,
+    "type": "TV Mini Series",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTUyYmExOTEtNzYxMy00MzFiLTgwNmItYzk3NzI1YWI2OWE4XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNTUyYmExOTEtNzYxMy00MzFiLTgwNmItYzk3NzI1YWI2OWE4XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2019 yapımı bir Documentary, Family eseridir. IMDb puanı 9 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Family"
+    ],
+    "runtime": 59,
+    "cast": [
+      "Brian Cox",
+      "Fran Bagenal",
+      "Heidi Becker"
+    ],
+    "director": "",
+    "writers": [],
+    "imdbRating": 9,
+    "tmdbRating": 9,
+    "releaseDate": "2019-05-28",
+    "trailerYoutubeId": "b-zfnudBDDQ"
+  },
+  {
+    "imdbId": "tt11170862",
+    "title": "Cosmos: Possible Worlds",
+    "originalTitle": "Cosmos: Possible Worlds",
+    "year": 2020,
+    "type": "TV Mini Series",
+    "myRating": 9,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Favoriler",
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWUyOGQ5ZDItY2FiNC00ZDQ5LWI4ZjUtOTM3ZjNiNTNlNDJlXkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMWUyOGQ5ZDItY2FiNC00ZDQ5LWI4ZjUtOTM3ZjNiNTNlNDJlXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2020 yapımı bir Documentary, Family eseridir. IMDb puanı 9 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Family"
+    ],
+    "runtime": 45,
+    "cast": [
+      "Neil deGrasse Tyson",
+      "Seth MacFarlane",
+      "Trang Vo"
+    ],
+    "director": "",
+    "writers": [],
+    "imdbRating": 9,
+    "tmdbRating": 9,
+    "releaseDate": "2020-03-09",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt8806524",
+    "title": "Star Trek: Picard",
+    "originalTitle": "Star Trek: Picard",
+    "year": 2020,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BODEzZWRiYWQtYjMwYi00YThhLWE4OWEtMzY2MWMxNWNhYzY5XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BODEzZWRiYWQtYjMwYi00YThhLWE4OWEtMzY2MWMxNWNhYzY5XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2020 yapımı bir Sci-Fi, Drama, Action, Adventure eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Action",
+      "Adventure"
+    ],
+    "runtime": 46,
+    "cast": [
+      "Patrick Stewart",
+      "Michelle Hurd",
+      "Jeri Ryan"
+    ],
+    "director": "",
+    "writers": [
+      "Kirsten Beyer",
+      "Michael Chabon",
+      "Akiva Goldsman"
+    ],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2020-01-23",
+    "trailerYoutubeId": "Ws9jU1Pe8Ic"
+  },
+  {
+    "imdbId": "tt0120844",
+    "title": "Star Trek: Insurrection",
+    "originalTitle": "Star Trek: Insurrection",
+    "year": 1998,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTQwZDg2NGQtNjEwNS00ZWVhLWE0YTEtYjhkZWM0NjdkOWIzXkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNTQwZDg2NGQtNjEwNS00ZWVhLWE0YTEtYjhkZWM0NjdkOWIzXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Jonathan Frakes\" tarafından yönetilmiş 1998 yapımı bir Adventure, Thriller, Sci-Fi, Action eseridir. IMDb puanı 6.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Thriller",
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 103,
+    "cast": [
+      "Patrick Stewart",
+      "Jonathan Frakes",
+      "Brent Spiner"
+    ],
+    "director": "Jonathan Frakes",
+    "writers": [
+      "Rick Berman",
+      "Michael Piller"
+    ],
+    "imdbRating": 6.4,
+    "tmdbRating": 6.4,
+    "releaseDate": "1998-12-11",
+    "trailerYoutubeId": "gm2M8oUrEyg"
+  },
+  {
+    "imdbId": "tt0092455",
+    "title": "Star Trek: The Next Generation",
+    "originalTitle": "Star Trek: The Next Generation",
+    "year": 1987,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu",
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmNiNTQ2YzYtODBjYy00ZWMwLTlmNWMtYWE1NTQ2ZTYyZmMwXkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMmNiNTQ2YzYtODBjYy00ZWMwLTlmNWMtYWE1NTQ2ZTYyZmMwXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1987 yapımı bir Action, Drama, Sci-Fi, Adventure eseridir. IMDb puanı 8.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Drama",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "runtime": 45,
+    "cast": [
+      "Patrick Stewart",
+      "Brent Spiner",
+      "Jonathan Frakes"
+    ],
+    "director": "",
+    "writers": [
+      "Gene Roddenberry"
+    ],
+    "imdbRating": 8.7,
+    "tmdbRating": 8.7,
+    "releaseDate": "1987-09-28",
+    "trailerYoutubeId": "HnDtvZXYHgE"
+  },
+  {
+    "imdbId": "tt0117731",
+    "title": "Star Trek: First Contact",
+    "originalTitle": "Star Trek: First Contact",
+    "year": 1996,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjc0OWE1NDMtNjRmMi00ZDc2LWI2ZmQtNzEwNWU4Nzg4NDA5XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZjc0OWE1NDMtNjRmMi00ZDc2LWI2ZmQtNzEwNWU4Nzg4NDA5XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Jonathan Frakes\" tarafından yönetilmiş 1996 yapımı bir Adventure, Thriller, Drama, Sci-Fi, Action eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Thriller",
+      "Drama",
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 111,
+    "cast": [
+      "Patrick Stewart",
+      "Jonathan Frakes",
+      "Brent Spiner"
+    ],
+    "director": "Jonathan Frakes",
+    "writers": [
+      "Gene Roddenberry",
+      "Rick Berman",
+      "Brannon Braga"
+    ],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "1996-11-22",
+    "trailerYoutubeId": "YQ1eiEvefKI"
+  },
+  {
+    "imdbId": "tt6565702",
+    "title": "X-Men: Dark Phoenix",
+    "originalTitle": "X-Men: Dark Phoenix",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjcwMDIyNjctMDVmNS00MzkyLTgxMDMtNTFmNTk0NDkyNzdjXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZjcwMDIyNjctMDVmNS00MzkyLTgxMDMtNTFmNTk0NDkyNzdjXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "overview": "Bu yapım \"Simon Kinberg\" tarafından yönetilmiş 2019 yapımı bir Action, Adventure, Sci-Fi eseridir. IMDb puanı 5.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "runtime": 113,
+    "cast": [
+      "James McAvoy",
+      "Michael Fassbender",
+      "Jennifer Lawrence"
+    ],
+    "director": "Simon Kinberg",
+    "writers": [
+      "Simon Kinberg"
+    ],
+    "imdbRating": 5.7,
+    "tmdbRating": 5.7,
+    "releaseDate": "2019-06-07",
+    "trailerYoutubeId": "KXeu5fAF8Y0"
+  },
+  {
+    "imdbId": "tt1071875",
+    "title": "Ghost Rider: Spirit of Vengeance",
+    "originalTitle": "Ghost Rider: Spirit of Vengeance",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2FmZGVlNTgtYTllNC00YmUzLTk5YmUtNWNhMzk3ZmE2NmQ0XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BN2FmZGVlNTgtYTllNC00YmUzLTk5YmUtNWNhMzk3ZmE2NmQ0XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Mark Neveldine,Brian Taylor\" tarafından yönetilmiş 2011 yapımı bir Action, Fantasy, Thriller, Sci-Fi, Adventure eseridir. IMDb puanı 4.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Thriller",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "runtime": 96,
+    "cast": [
+      "Nicolas Cage",
+      "Ciarán Hinds",
+      "Idris Elba"
+    ],
+    "director": "Mark Neveldine,Brian Taylor",
+    "writers": [
+      "Scott M. Gimple",
+      "Seth Hoffman",
+      "David S. Goyer"
+    ],
+    "imdbRating": 4.4,
+    "tmdbRating": 4.4,
+    "releaseDate": "2012-02-17",
+    "trailerYoutubeId": "b2w0A6MAVhY"
+  },
+  {
+    "imdbId": "tt0359013",
+    "title": "Blade: Trinity",
+    "originalTitle": "Blade: Trinity",
+    "year": 2004,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjE0Nzg2MzI3MF5BMl5BanBnXkFtZTYwMjExODQ3._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMjE0Nzg2MzI3MF5BMl5BanBnXkFtZTYwMjExODQ3._V1_SX300.jpg",
+    "overview": "Bu yapım \"David S. Goyer\" tarafından yönetilmiş 2004 yapımı bir Horror, Sci-Fi, Action eseridir. IMDb puanı 5.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 113,
+    "cast": [
+      "Wesley Snipes",
+      "Kris Kristofferson",
+      "Parker Posey"
+    ],
+    "director": "David S. Goyer",
+    "writers": [
+      "David S. Goyer",
+      "Marv Wolfman",
+      "Gene Colan"
+    ],
+    "imdbRating": 5.8,
+    "tmdbRating": 5.8,
+    "releaseDate": "2004-12-08",
+    "trailerYoutubeId": "qcHEDGs7eAY"
+  },
+  {
+    "imdbId": "tt0187738",
+    "title": "Blade II",
+    "originalTitle": "Blade II",
+    "year": 2002,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGE5ZmY2NzEtZTEyMi00MWIyLThmOWYtYzJkOTQ0Y2U3ZWU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMGE5ZmY2NzEtZTEyMi00MWIyLThmOWYtYzJkOTQ0Y2U3ZWU1XkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Guillermo del Toro\" tarafından yönetilmiş 2002 yapımı bir Horror, Sci-Fi, Thriller, Action eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller",
+      "Action"
+    ],
+    "runtime": 117,
+    "cast": [
+      "Wesley Snipes",
+      "Kris Kristofferson",
+      "Ron Perlman"
+    ],
+    "director": "Guillermo del Toro",
+    "writers": [
+      "Marv Wolfman",
+      "Gene Colan",
+      "David S. Goyer"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2002-03-22",
+    "trailerYoutubeId": "fcCQ7xk8zzM"
+  },
+  {
+    "imdbId": "tt29430113",
+    "title": "Ghost Rider",
+    "originalTitle": "Ghost Rider",
+    "year": 2015,
+    "type": "Short",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNmE5OTFjYjItZjIyYS00OTBhLWEzMmItZGJlOTEyZmVlYWVlXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNmE5OTFjYjItZjIyYS00OTBhLWEzMmItZGJlOTEyZmVlYWVlXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"David Noble\" tarafından yönetilmiş 2015 yapımı bir Short, Comedy, Horror eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Short",
+      "Comedy",
+      "Horror"
+    ],
+    "runtime": 4,
+    "cast": [
+      "Hiram Piskitel"
+    ],
+    "director": "David Noble",
+    "writers": [],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "2015-10-12",
+    "trailerYoutubeId": "pOvfmpgbzHI"
+  },
+  {
+    "imdbId": "tt0259324",
+    "title": "Ghost Rider",
+    "originalTitle": "Ghost Rider",
+    "year": 2007,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzIyNDE5ODI1OV5BMl5BanBnXkFtZTcwNTIyNDE0MQ@@._V1_SX300.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMzIyNDE5ODI1OV5BMl5BanBnXkFtZTcwNTIyNDE0MQ@@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Mark Steven Johnson\" tarafından yönetilmiş 2007 yapımı bir Thriller, Fantasy, Action eseridir. IMDb puanı 5.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Thriller",
+      "Fantasy",
+      "Action"
+    ],
+    "runtime": 110,
+    "cast": [
+      "Nicolas Cage",
+      "Eva Mendes",
+      "Sam Elliott"
+    ],
+    "director": "Mark Steven Johnson",
+    "writers": [
+      "Mark Steven Johnson"
+    ],
+    "imdbRating": 5.3,
+    "tmdbRating": 5.3,
+    "releaseDate": "2007-02-16",
+    "trailerYoutubeId": "nu6R7ypaz5g"
+  },
+  {
+    "imdbId": "tt0486576",
+    "title": "Fantastic Four: Rise of the Silver Surfer",
+    "originalTitle": "4: Rise of the Silver Surfer",
+    "year": 2007,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNmZmMTU0OGQtOWRmNS00ZjA1LWJkM2EtYmUwNGEzMjIyZDM1XkEyXkFqcGc@._V1_QL75_UY562_CR5,0,380,562_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNmZmMTU0OGQtOWRmNS00ZjA1LWJkM2EtYmUwNGEzMjIyZDM1XkEyXkFqcGc@._V1_QL75_UY562_CR5,0,380,562_.jpg",
+    "overview": "Bu yapım \"Tim Story\" tarafından yönetilmiş 2007 yapımı bir Fantasy, Adventure, Action, Sci-Fi eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Action",
+      "Sci-Fi"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Ioan Gruffudd",
+      "Jessica Alba",
+      "Chris Evans"
+    ],
+    "director": "Tim Story",
+    "writers": [
+      "Don Payne",
+      "Mark Frost",
+      "John Turman"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "2007-06-15",
+    "trailerYoutubeId": "7whodtti908"
+  },
+  {
+    "imdbId": "tt10676052",
+    "title": "The Fantastic Four: First Steps",
+    "originalTitle": "The Fantastic Four: First Steps",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGM5MzA3MDAtYmEwMi00ZDNiLTg4MDgtMTZjOTc0ZGMyNTIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOGM5MzA3MDAtYmEwMi00ZDNiLTg4MDgtMTZjOTc0ZGMyNTIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Matt Shakman\" tarafından yönetilmiş 2025 yapımı bir Adventure, Action, Sci-Fi eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Action",
+      "Sci-Fi"
+    ],
+    "runtime": 115,
+    "cast": [],
+    "director": "Matt Shakman",
+    "writers": [],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "2025-07-25",
+    "trailerYoutubeId": "j0fopIiZvuA"
+  },
+  {
+    "imdbId": "tt9892936",
+    "title": "One Hundred Years of Solitude",
+    "originalTitle": "Cien años de soledad",
+    "year": 2024,
+    "type": "TV Series",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjFjNTdiMmQtZjQ5Yi00MWMzLWJjMWMtNmI1ZTgzYmE5NjNiXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMjFjNTdiMmQtZjQ5Yi00MWMzLWJjMWMtNmI1ZTgzYmE5NjNiXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2024 yapımı bir Drama, Fantasy, History eseridir. IMDb puanı 8.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "History"
+    ],
+    "runtime": 60,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.3,
+    "tmdbRating": 8.3,
+    "releaseDate": "2024-12-11",
+    "trailerYoutubeId": "4oQeQR1DEjw"
+  },
+  {
+    "imdbId": "tt0460780",
+    "title": "In the Name of the King: A Dungeon Siege Tale",
+    "originalTitle": "In the Name of the King: A Dungeon Siege Tale",
+    "year": 2007,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ4ODI0ODA1Ml5BMl5BanBnXkFtZTcwNzMzMjU1MQ@@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTQ4ODI0ODA1Ml5BMl5BanBnXkFtZTcwNzMzMjU1MQ@@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Uwe Boll\" tarafından yönetilmiş 2007 yapımı bir Adventure, Fantasy, Action, Thriller, War eseridir. IMDb puanı 3.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action",
+      "Thriller",
+      "War"
+    ],
+    "runtime": 127,
+    "cast": [],
+    "director": "Uwe Boll",
+    "writers": [],
+    "imdbRating": 3.8,
+    "tmdbRating": 3.8,
+    "releaseDate": "2008-01-11",
+    "trailerYoutubeId": "Jo1zfiEeZZs"
+  },
+  {
+    "imdbId": "tt2719848",
+    "title": "Everest",
+    "originalTitle": "Everest",
+    "year": 2015,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDAzOTYxMTctY2ViNi00NDI3LTgwMGItY2FhN2JjZWE5MjRkXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNDAzOTYxMTctY2ViNi00NDI3LTgwMGItY2FhN2JjZWE5MjRkXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Baltasar Kormákur\" tarafından yönetilmiş 2015 yapımı bir Adventure, Drama, Thriller, Biography eseridir. IMDb puanı 7.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Thriller",
+      "Biography"
+    ],
+    "runtime": 121,
+    "cast": [],
+    "director": "Baltasar Kormákur",
+    "writers": [],
+    "imdbRating": 7.1,
+    "tmdbRating": 7.1,
+    "releaseDate": "2015-09-25",
+    "trailerYoutubeId": "ZwPGQSBCxlA"
+  },
+  {
+    "imdbId": "tt1055369",
+    "title": "Transformers: Revenge of the Fallen",
+    "originalTitle": "Transformers: Revenge of the Fallen",
+    "year": 2009,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjk4OTczOTk0NF5BMl5BanBnXkFtZTcwNjQ0NzMzMw@@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjk4OTczOTk0NF5BMl5BanBnXkFtZTcwNjQ0NzMzMw@@._V1_.jpg",
+    "overview": "Bu yapım \"Michael Bay\" tarafından yönetilmiş 2009 yapımı bir Sci-Fi, Action, Adventure eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "runtime": 149,
+    "cast": [],
+    "director": "Michael Bay",
+    "writers": [],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "2009-06-24",
+    "trailerYoutubeId": "fnXzKwUgDhg"
+  },
+  {
+    "imdbId": "tt1872194",
+    "title": "The Judge",
+    "originalTitle": "The Judge",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTcyNzIxOTIwMV5BMl5BanBnXkFtZTgwMzE0NjQwMjE@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"David Dobkin\" tarafından yönetilmiş 2014 yapımı bir Drama, Crime, Mystery, Thriller eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Mystery",
+      "Thriller"
+    ],
+    "runtime": 141,
+    "cast": [],
+    "director": "David Dobkin",
+    "writers": [],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2014-10-10",
+    "trailerYoutubeId": "tgU4Kne6SVM"
+  },
+  {
+    "imdbId": "tt6856242",
+    "title": "The King's Man",
+    "originalTitle": "The King's Man",
+    "year": 2021,
+    "type": "Movie",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjY3YTY3MGMtMjVmYS00ZmM3LWIxMDAtYWVhZTAyZDMwNmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjY3YTY3MGMtMjVmYS00ZmM3LWIxMDAtYWVhZTAyZDMwNmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Matthew Vaughn\" tarafından yönetilmiş 2021 yapımı bir Action, Adventure, Thriller eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "runtime": 131,
+    "cast": [],
+    "director": "Matthew Vaughn",
+    "writers": [],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "2021-12-22",
+    "trailerYoutubeId": "dgJ6TGYeByg"
+  },
+  {
+    "imdbId": "tt0117060",
+    "title": "Mission: Impossible",
+    "originalTitle": "Mission: Impossible",
+    "year": 1996,
+    "type": "Movie",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGZjNDlkMTYtMTJkZi00OTkzLWI4NDEtYTA2ODQyMjcwYTdlXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOGZjNDlkMTYtMTJkZi00OTkzLWI4NDEtYTA2ODQyMjcwYTdlXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Brian De Palma\" tarafından yönetilmiş 1996 yapımı bir Thriller, Adventure, Action eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Thriller",
+      "Adventure",
+      "Action"
+    ],
+    "runtime": 110,
+    "cast": [],
+    "director": "Brian De Palma",
+    "writers": [],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "1996-05-22",
+    "trailerYoutubeId": "L8Pbjh4EZRk"
+  },
+  {
+    "imdbId": "tt0286716",
+    "title": "Hulk",
+    "originalTitle": "Hulk",
+    "year": 2003,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTQxMmVlMTItMGFjYi00MTc2LWE5MzMtYjFhZWJmZGY0MTY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNTQxMmVlMTItMGFjYi00MTc2LWE5MzMtYjFhZWJmZGY0MTY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Ang Lee\" tarafından yönetilmiş 2003 yapımı bir Sci-Fi, Action eseridir. IMDb puanı 5.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 138,
+    "cast": [],
+    "director": "Ang Lee",
+    "writers": [],
+    "imdbRating": 5.7,
+    "tmdbRating": 5.7,
+    "releaseDate": "2003-06-20",
+    "trailerYoutubeId": "2ErnLuJKQA4"
+  },
+  {
+    "imdbId": "tt1661199",
+    "title": "Cinderella",
+    "originalTitle": "Cinderella",
+    "year": 2015,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjMxODYyODEzN15BMl5BanBnXkFtZTgwMDk4OTU0MzE@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMjMxODYyODEzN15BMl5BanBnXkFtZTgwMDk4OTU0MzE@._V1_.jpg",
+    "overview": "Bu yapım \"Kenneth Branagh\" tarafından yönetilmiş 2015 yapımı bir Romance, Fantasy, Drama, Family, Adventure eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Drama",
+      "Family",
+      "Adventure"
+    ],
+    "runtime": 105,
+    "cast": [],
+    "director": "Kenneth Branagh",
+    "writers": [],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "2015-03-13",
+    "trailerYoutubeId": "n44EWI92Tc8"
+  },
+  {
+    "imdbId": "tt0988045",
+    "title": "Sherlock Holmes",
+    "originalTitle": "Sherlock Holmes",
+    "year": 2009,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg0NjEwNjUxM15BMl5BanBnXkFtZTcwMzk0MjQ5Mg@@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTg0NjEwNjUxM15BMl5BanBnXkFtZTcwMzk0MjQ5Mg@@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Guy Ritchie\" tarafından yönetilmiş 2009 yapımı bir Adventure, Mystery, Action eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Mystery",
+      "Action"
+    ],
+    "runtime": 128,
+    "cast": [],
+    "director": "Guy Ritchie",
+    "writers": [],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2009-12-25",
+    "trailerYoutubeId": "zBQfbc1t_I8"
+  },
+  {
+    "imdbId": "tt1870479",
+    "title": "The Newsroom",
+    "originalTitle": "The Newsroom",
+    "year": 2012,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzk4ZjllMjktY2MyMy00N2M3LWFhYjYtM2FkY2YxMzkyNzgyXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNzk4ZjllMjktY2MyMy00N2M3LWFhYjYtM2FkY2YxMzkyNzgyXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2012 yapımı bir Drama eseridir. IMDb puanı 8.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 60,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.6,
+    "tmdbRating": 8.6,
+    "releaseDate": "2012-06-24",
+    "trailerYoutubeId": "wC8ovJYAU3U"
+  },
+  {
+    "imdbId": "tt1170358",
+    "title": "The Hobbit: The Desolation of Smaug",
+    "originalTitle": "The Hobbit: The Desolation of Smaug",
+    "year": 2013,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMzU0NDY0NDEzNV5BMl5BanBnXkFtZTgwOTIxNDU1MDE@._V1_.jpg",
+    "overview": "Bu yapım \"Peter Jackson\" tarafından yönetilmiş 2013 yapımı bir Fantasy, Adventure eseridir. IMDb puanı 7.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Fantasy",
+      "Adventure"
+    ],
+    "runtime": 161,
+    "cast": [],
+    "director": "Peter Jackson",
+    "writers": [],
+    "imdbRating": 7.8,
+    "tmdbRating": 7.8,
+    "releaseDate": "2013-12-13",
+    "trailerYoutubeId": "srZPaImc_tE"
+  },
+  {
+    "imdbId": "tt0800080",
+    "title": "The Incredible Hulk",
+    "originalTitle": "The Incredible Hulk",
+    "year": 2008,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTUyNzk3MjA1OF5BMl5BanBnXkFtZTcwMTE1Njg2MQ@@._V1_.jpg",
+    "overview": "Bu yapım \"Louis Leterrier\" tarafından yönetilmiş 2008 yapımı bir Action, Sci-Fi eseridir. IMDb puanı 6.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi"
+    ],
+    "runtime": 112,
+    "cast": [],
+    "director": "Louis Leterrier",
+    "writers": [],
+    "imdbRating": 6.6,
+    "tmdbRating": 6.6,
+    "releaseDate": "2008-06-13",
+    "trailerYoutubeId": "dz6eBeW19Lg"
+  },
+  {
+    "imdbId": "tt1475582",
+    "title": "Sherlock",
+    "originalTitle": "Sherlock",
+    "year": 2010,
+    "type": "TV Series",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2010 yapımı bir Crime, Mystery, Drama, Thriller eseridir. IMDb puanı 9 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime": 90,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 9,
+    "tmdbRating": 9,
+    "releaseDate": "2010-10-24",
+    "trailerYoutubeId": "gGqWqGOSTGQ"
+  },
+  {
+    "imdbId": "tt0903747",
+    "title": "Breaking Bad",
+    "originalTitle": "Breaking Bad",
+    "year": 2008,
+    "type": "TV Series",
+    "myRating": 8,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2008 yapımı bir Drama, Crime, Thriller eseridir. IMDb puanı 9.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "runtime": 48,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 9.5,
+    "tmdbRating": 9.5,
+    "releaseDate": "2008-01-20",
+    "trailerYoutubeId": "5__TMsX-enM"
+  },
+  {
+    "imdbId": "tt1520211",
+    "title": "The Walking Dead",
+    "originalTitle": "The Walking Dead",
+    "year": 2010,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1NjY3ODM5Nl5BMl5BanBnXkFtZTcwMjYzNzQ5Mw@@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTQ1NjY3ODM5Nl5BMl5BanBnXkFtZTcwMjYzNzQ5Mw@@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2010 yapımı bir Horror, Drama, Thriller eseridir. IMDb puanı 8.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Drama",
+      "Thriller"
+    ],
+    "runtime": 45,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.1,
+    "tmdbRating": 8.1,
+    "releaseDate": "2010-10-31",
+    "trailerYoutubeId": "cu2ApTImBKc"
+  },
+  {
+    "imdbId": "tt1016150",
+    "title": "All Quiet on the Western Front",
+    "originalTitle": "Im Westen nichts Neues",
+    "year": 2022,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWJiYWMyYTktZThhOS00ZjgxLWE0YTQtZDMyNTQxMjMyYjI2XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOWJiYWMyYTktZThhOS00ZjgxLWE0YTQtZDMyNTQxMjMyYjI2XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Edward Berger\" tarafından yönetilmiş 2022 yapımı bir Drama, History, War eseridir. IMDb puanı 7.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "runtime": 148,
+    "cast": [],
+    "director": "Edward Berger",
+    "writers": [],
+    "imdbRating": 7.8,
+    "tmdbRating": 7.8,
+    "releaseDate": "2022-10-28",
+    "trailerYoutubeId": "BWi8bdr_LTw"
+  },
+  {
+    "imdbId": "tt30825738",
+    "title": "Star Wars: The Mandalorian and Grogu",
+    "originalTitle": "The Mandalorian and Grogu",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjYwYzM4OTUtMDhmMy00ZTZiLTk0YzMtZGQ1MTRhMDNjZjMzXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjYwYzM4OTUtMDhmMy00ZTZiLTk0YzMtZGQ1MTRhMDNjZjMzXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Jon Favreau\" tarafından yönetilmiş 2026 yapımı bir Sci-Fi, Adventure, Fantasy, Family, Action eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Adventure",
+      "Fantasy",
+      "Family",
+      "Action"
+    ],
+    "runtime": 132,
+    "cast": [],
+    "director": "Jon Favreau",
+    "writers": [],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "2026-05-22",
+    "trailerYoutubeId": "1hFAP22hmnw"
+  },
+  {
+    "imdbId": "tt27497448",
+    "title": "A Knight of the Seven Kingdoms",
+    "originalTitle": "A Knight of the Seven Kingdoms",
+    "year": 2026,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzg4M2U3YWMtMWY4MS00MzFkLTk2ZWQtOThiOGYxZDEyMGQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYzg4M2U3YWMtMWY4MS00MzFkLTk2ZWQtOThiOGYxZDEyMGQ2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2026 yapımı bir Adventure, Drama, Fantasy eseridir. IMDb puanı 8.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "runtime": 60,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.6,
+    "tmdbRating": 8.6,
+    "releaseDate": "2026-01-18",
+    "trailerYoutubeId": "dHSrpx-ECeM"
+  },
+  {
+    "imdbId": "tt11198330",
+    "title": "House of the Dragon",
+    "originalTitle": "House of the Dragon",
+    "year": 2022,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjBhMTU2N2EtYjVkYS00ODBiLTk3MDUtYWFmZTM2M2JkNzcwXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYjBhMTU2N2EtYjVkYS00ODBiLTk3MDUtYWFmZTM2M2JkNzcwXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2022 yapımı bir Fantasy, Adventure, Drama, Action eseridir. IMDb puanı 8.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Fantasy",
+      "Adventure",
+      "Drama",
+      "Action"
+    ],
+    "runtime": 60,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.3,
+    "tmdbRating": 8.3,
+    "releaseDate": "2022-08-21",
+    "trailerYoutubeId": "awZ-DceQYN4"
+  },
+  {
+    "imdbId": "tt17490712",
+    "title": "Mortal Kombat II",
+    "originalTitle": "Mortal Kombat II",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTg2YWNkN2EtMzc1Ny00ZTBhLWFmYTItMmMyNzhjNjhhNmVhXkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNTg2YWNkN2EtMzc1Ny00ZTBhLWFmYTItMmMyNzhjNjhhNmVhXkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg",
+    "overview": "Bu yapım \"Simon McQuoid\" tarafından yönetilmiş 2026 yapımı bir Action, Adventure, Fantasy, Sci-Fi eseridir. IMDb puanı 6.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "runtime": 116,
+    "cast": [],
+    "director": "Simon McQuoid",
+    "writers": [],
+    "imdbRating": 6.4,
+    "tmdbRating": 6.4,
+    "releaseDate": "2026-05-08",
+    "trailerYoutubeId": "00EFQ2Fr0Go"
+  },
+  {
+    "imdbId": "tt0298148",
+    "title": "Shrek 2",
+    "originalTitle": "Shrek 2",
+    "year": 2004,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMzBhOWZkZjQtOTU0Zi00NGViLTlkZWQtOWU1ZTlhMDg3MWRjXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMzBhOWZkZjQtOTU0Zi00NGViLTlkZWQtOWU1ZTlhMDg3MWRjXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Andrew Adamson,Kelly Asbury,Conrad Vernon\" tarafından yönetilmiş 2004 yapımı bir Animation, Romance, Comedy, Family, Adventure, Fantasy eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Animation",
+      "Romance",
+      "Comedy",
+      "Family",
+      "Adventure",
+      "Fantasy"
+    ],
+    "runtime": 93,
+    "cast": [],
+    "director": "Andrew Adamson,Kelly Asbury,Conrad Vernon",
+    "writers": [],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2004-05-19",
+    "trailerYoutubeId": "iuNghO1XsHI"
+  },
+  {
+    "imdbId": "tt1845307",
+    "title": "2 Broke Girls",
+    "originalTitle": "2 Broke Girls",
+    "year": 2011,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTYxMDA3Mzg5NV5BMl5BanBnXkFtZTgwNDIxOTcwMDI@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMTYxMDA3Mzg5NV5BMl5BanBnXkFtZTgwNDIxOTcwMDI@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2011 yapımı bir Comedy eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 22,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2011-09-19",
+    "trailerYoutubeId": "aUkwxpMVW9M"
+  },
+  {
+    "imdbId": "tt0780504",
+    "title": "Drive",
+    "originalTitle": "Drive",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTFmNTFlOTAtNzEyNi00MWU2LTg3MGEtYjA2NWY3MDliNjlkXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYTFmNTFlOTAtNzEyNi00MWU2LTg3MGEtYjA2NWY3MDliNjlkXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Nicolas Winding Refn\" tarafından yönetilmiş 2011 yapımı bir Drama, Action eseridir. IMDb puanı 7.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Action"
+    ],
+    "runtime": 100,
+    "cast": [],
+    "director": "Nicolas Winding Refn",
+    "writers": [],
+    "imdbRating": 7.8,
+    "tmdbRating": 7.8,
+    "releaseDate": "2011-09-16",
+    "trailerYoutubeId": "PjvMChPpUNQ"
+  },
+  {
+    "imdbId": "tt2193021",
+    "title": "Arrow",
+    "originalTitle": "Arrow",
+    "year": 2012,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjRlNjNlY2YtYzQxNS00ZTUzLTkwMTQtMjM0YjZlOWQwZmFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjRlNjNlY2YtYzQxNS00ZTUzLTkwMTQtMjM0YjZlOWQwZmFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2012 yapımı bir Action, Drama, Mystery, Adventure, Sci-Fi, Crime eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Drama",
+      "Mystery",
+      "Adventure",
+      "Sci-Fi",
+      "Crime"
+    ],
+    "runtime": 42,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2012-10-10",
+    "trailerYoutubeId": "QLVHmovfMQI"
+  },
+  {
+    "imdbId": "tt2661044",
+    "title": "The 100",
+    "originalTitle": "The 100",
+    "year": 2014,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDdmZGYwOWEtN2FkZC00Y2ExLWJkY2UtNzFlODVlNzc3MGIzXkEyXkFqcGc@._V1_QL75_UY281_CR6,0,190,281_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNDdmZGYwOWEtN2FkZC00Y2ExLWJkY2UtNzFlODVlNzc3MGIzXkEyXkFqcGc@._V1_QL75_UY281_CR6,0,190,281_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2014 yapımı bir Sci-Fi, Drama, Action eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Action"
+    ],
+    "runtime": 43,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2014-03-19",
+    "trailerYoutubeId": "aDrsItJ_HU4"
+  },
+  {
+    "imdbId": "tt3107288",
+    "title": "The Flash",
+    "originalTitle": "The Flash",
+    "year": 2014,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWJjZjUyZGQtZWZkZi00NWRhLWExMGEtOGIxOGQ0OTgyNDk5XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZWJjZjUyZGQtZWZkZi00NWRhLWExMGEtOGIxOGQ0OTgyNDk5XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2014 yapımı bir Action, Adventure, Drama, Sci-Fi eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama",
+      "Sci-Fi"
+    ],
+    "runtime": 43,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2014-10-07",
+    "trailerYoutubeId": "IgVyroQjZbE"
+  },
+  {
+    "imdbId": "tt1119646",
+    "title": "The Hangover",
+    "originalTitle": "The Hangover",
+    "year": 2009,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNDI2MzBhNzgtOWYyOS00NDM2LWE0OGYtOGQ0M2FjMTI2NTllXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Todd Phillips\" tarafından yönetilmiş 2009 yapımı bir Comedy eseridir. IMDb puanı 7.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 100,
+    "cast": [],
+    "director": "Todd Phillips",
+    "writers": [],
+    "imdbRating": 7.7,
+    "tmdbRating": 7.7,
+    "releaseDate": "2009-06-05",
+    "trailerYoutubeId": "tlize92ffnY"
+  },
+  {
+    "imdbId": "tt1478022",
+    "title": "Genis Aile",
+    "originalTitle": "Genis Aile",
+    "year": 2009,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGE0ZTQ2NGQtMDQ3My00Mzc0LThmYjItNjRjZjQyMDA3OWMzXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOGE0ZTQ2NGQtMDQ3My00Mzc0LThmYjItNjRjZjQyMDA3OWMzXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2009 yapımı bir Comedy eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 90,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2009-07-08",
+    "trailerYoutubeId": "gjr-X2vFNaQ"
+  },
+  {
+    "imdbId": "tt0426672",
+    "title": "Crazy Heart",
+    "originalTitle": "Deli Yürek",
+    "year": 1998,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzZkMGY4NzItMTAxZC00ZmQ5LTg4NjktMThjMWFlYjAzZTIyXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYzZkMGY4NzItMTAxZC00ZmQ5LTg4NjktMThjMWFlYjAzZTIyXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1998 yapımı bir Drama, Action eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Action"
+    ],
+    "runtime": 60,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "1998-10-05",
+    "trailerYoutubeId": "5xbEoKBkuWg"
+  },
+  {
+    "imdbId": "tt0302199",
+    "title": "Sweet Life",
+    "originalTitle": "Tatli Hayat",
+    "year": 2001,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri",
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGZkYWJlYjUtNmI1NC00MWIyLWJmMjEtN2UzNDI1ZGNiN2ZjXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZGZkYWJlYjUtNmI1NC00MWIyLWJmMjEtN2UzNDI1ZGNiN2ZjXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2001 yapımı bir Comedy eseridir. IMDb puanı 8.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 58,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.5,
+    "tmdbRating": 8.5,
+    "releaseDate": "2001",
+    "trailerYoutubeId": "AUkIOaFiCbM"
+  },
+  {
+    "imdbId": "tt2184065",
+    "title": "Almost Famous",
+    "originalTitle": "Yalan Dünya",
+    "year": 2012,
+    "type": "TV Series",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDg4NmM0ZGItYzc0My00YThlLThiNDktYTJkY2JiM2RkMDdlXkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNDg4NmM0ZGItYzc0My00YThlLThiNDktYTJkY2JiM2RkMDdlXkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2012 yapımı bir Comedy eseridir. IMDb puanı 7.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 120,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.3,
+    "tmdbRating": 7.3,
+    "releaseDate": "2012-01-13",
+    "trailerYoutubeId": "pDfRU81OI7E"
+  },
+  {
+    "imdbId": "tt5365760",
+    "title": "Guldur Guldur Show",
+    "originalTitle": "Güldür Güldür Show",
+    "year": 2013,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjAyMGUzNzAtNDcxZC00M2IxLWIzMDktOGQxNjVjNjVkZjEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYjAyMGUzNzAtNDcxZC00M2IxLWIzMDktOGQxNjVjNjVkZjEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2013 yapımı bir Comedy eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 105,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2013-02-27",
+    "trailerYoutubeId": "-N8HvT0oYms"
+  },
+  {
+    "imdbId": "tt7827112",
+    "title": "Tolgshow",
+    "originalTitle": "Tolgshow",
+    "year": 2017,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzU5ZGQ3ZWItNmZjZi00NGRlLWJkMDItYTNjODQ5NWUyN2Q1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNzU5ZGQ3ZWItNmZjZi00NGRlLWJkMDItYTNjODQ5NWUyN2Q1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2017 yapımı bir Reality-TV, Comedy eseridir. IMDb puanı 7.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Reality-TV",
+      "Comedy"
+    ],
+    "runtime": 100,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.8,
+    "tmdbRating": 7.8,
+    "releaseDate": "2017-12-30",
+    "trailerYoutubeId": "sgyfeha5JZE"
+  },
+  {
+    "imdbId": "tt9355244",
+    "title": "Very Beautiful Movements 2",
+    "originalTitle": "Çok Güzel Hareketler 2",
+    "year": 2019,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWVjOGE5MGUtMDAwYS00YzE0LWJiOGYtYmFmNWUyNzc4OWQxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOWVjOGE5MGUtMDAwYS00YzE0LWJiOGYtYmFmNWUyNzc4OWQxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2019 yapımı bir Comedy eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 120,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "2019-02-10",
+    "trailerYoutubeId": "r9x9vJvdi2I"
+  },
+  {
+    "imdbId": "tt3811760",
+    "title": "Yasemince",
+    "originalTitle": "Yasemince",
+    "year": 1997,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTViNDUxZjYtNWNlZS00YTY1LTg3YWUtMjU2MWEwMTEzOWQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYTViNDUxZjYtNWNlZS00YTY1LTg3YWUtMjU2MWEwMTEzOWQzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1997 yapımı bir Comedy eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 45,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "1997",
+    "trailerYoutubeId": "ay0k8pBRfIg"
+  },
+  {
+    "imdbId": "tt31961610",
+    "title": "Yaseminname",
+    "originalTitle": "Yaseminname",
+    "year": 1994,
+    "type": "TV Series",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWE4ODMwN2YtZDQxZi00ZDZkLTg2YTktODUxN2ZiZGIzZDNkXkEyXkFqcGc@._V1_QL75_UY281_CR101,0,190,281_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMWE4ODMwN2YtZDQxZi00ZDZkLTg2YTktODUxN2ZiZGIzZDNkXkEyXkFqcGc@._V1_QL75_UY281_CR101,0,190,281_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1994 yapımı bir Comedy eseridir. IMDb puanı 4.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 32,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 4.9,
+    "tmdbRating": 4.9,
+    "releaseDate": "1994",
+    "trailerYoutubeId": "dHDvZ2mbUCk"
+  },
+  {
+    "imdbId": "tt0346211",
+    "title": "Bir Demet Tiyatro",
+    "originalTitle": "Bir Demet Tiyatro",
+    "year": 1995,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri",
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZTkwMWY3NWMtZjI3MS00ODMzLTkwZTctZTg3YTk1ODRjYTk2XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZTkwMWY3NWMtZjI3MS00ODMzLTkwZTctZTg3YTk1ODRjYTk2XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1995 yapımı bir Family, Comedy eseridir. IMDb puanı 8.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "runtime": 45,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 8.5,
+    "tmdbRating": 8.5,
+    "releaseDate": "1995-01-14",
+    "trailerYoutubeId": "6_2qqPlzb9I"
+  },
+  {
+    "imdbId": "tt33998293",
+    "title": "Karsilasmalar",
+    "originalTitle": "Karsilasmalar",
+    "year": 2024,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDczMjA3MDUtMTBlOS00MDliLTkxY2YtNjVlZjJhNWQ0NmY4XkEyXkFqcGc@._V1_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BMDczMjA3MDUtMTBlOS00MDliLTkxY2YtNjVlZjJhNWQ0NmY4XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2024 yapımı bir Comedy eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 30,
+    "cast": [],
+    "director": "",
+    "writers": [],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2024-10-04",
+    "trailerYoutubeId": "zaLETmaPeoo"
+  },
+  {
+    "imdbId": "tt34339057",
+    "title": "Nemlizade",
+    "originalTitle": "Nemlizade",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjRlNzFmYWUtOWE4NS00NDFjLWEzZGMtOTNhNzlhMzU2OTdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BNjRlNzFmYWUtOWE4NS00NDFjLWEzZGMtOTNhNzlhMzU2OTdjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Selçuk Aydemir\" tarafından yönetilmiş 2024 yapımı bir Comedy eseridir. IMDb puanı 4.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 100,
+    "cast": [],
+    "director": "Selçuk Aydemir",
+    "writers": [],
+    "imdbRating": 4.7,
+    "tmdbRating": 4.7,
+    "releaseDate": "2024-11-15",
+    "trailerYoutubeId": "qiNMU9gwo6c"
   }
 ]
