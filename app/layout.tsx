@@ -8,6 +8,7 @@ import '@/app/global.css';
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-sans',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -30,6 +31,12 @@ export const metadata: Metadata = {
       'https://cdn.jsdelivr.net',
       'https://fonts.googleapis.com',
       'https://fonts.gstatic.com',
+      'https://www.youtube.com',
+      'https://www.youtube-nocookie.com',
+      'https://i.ytimg.com',
+      'https://s.ytimg.com',
+      'https://img.youtube.com',
+      'https://lh3.googleusercontent.com',
     ],
   },
   icons: {
