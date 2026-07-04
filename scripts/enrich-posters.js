@@ -18,7 +18,8 @@ const https = require('https');
 // const OMDB_API_KEY = 'b9dc3c69';
 // const OMDB_API_KEY = '859a3a89';
 // const OMDB_API_KEY = 'e1747d32';
-const OMDB_API_KEY = '7d2a01bd';
+// const OMDB_API_KEY = '7d2a01bd';
+const OMDB_API_KEY = '8231aea7';
 
 
 const MOVIE_DATA_FILE = path.join(__dirname, '..', 'data', 'movies.json');

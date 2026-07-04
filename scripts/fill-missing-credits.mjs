@@ -5,7 +5,8 @@ import path from 'path';
 // const OMDB_API_KEY = 'b9dc3c69';
 // const OMDB_API_KEY = '859a3a89';
 // const OMDB_API_KEY = 'e1747d32';
-const OMDB_API_KEY = '7d2a01bd';
+// const OMDB_API_KEY = '7d2a01bd';
+const OMDB_API_KEY = '8231aea7';
 
 if (!OMDB_API_KEY) {
     console.error('OMDB_API_KEY eksik.');
@@ -42,6 +43,18 @@ function isTargetFieldMissing(movie, field) {
         movie[field] === undefined ||
         movie[field] === null ||
         movie[field] === 'N/A'
+    );
+}
+
+function isOldTargetFieldMissing(movie, field) {
+    const value = movie[field];
+
+    return (
+        !Object.prototype.hasOwnProperty.call(movie, field) ||
+        value === undefined ||
+        value === null ||
+        String(value).trim() === '' ||
+        String(value).trim().toUpperCase() === 'N/A'
     );
 }
 

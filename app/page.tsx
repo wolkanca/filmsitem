@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getMovies, getStats } from '@/lib/db';
 import { getBlogPosts } from '@/lib/blog';
 import MovieCard from '@/components/MovieCard';
-import { Star, Film, Clock, Award, Sparkles, ArrowRight, ExternalLink, Newspaper } from 'lucide-react';
+import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper } from 'lucide-react';
 import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
@@ -96,71 +96,143 @@ export default async function HomePage() {
     <div className="space-y-12">
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-black/40 p-8 sm:p-12 lg:p-16">
-        {/* Backdrop glass blur effect */}
+      <section
+        className="relative isolate overflow-hidden rounded-3xl border border-red-300/20 px-6 py-8 shadow-[0_24px_80px_rgba(127,29,29,0.35)] sm:px-10 sm:py-12 lg:px-14 lg:py-16"
+        style={{
+          background:
+            'radial-gradient(circle at 18% 18%, rgba(239,68,68,0.82) 0%, rgba(185,28,28,0.50) 28%, transparent 46%), radial-gradient(circle at 76% 24%, rgba(248,113,113,0.34) 0%, transparent 32%), linear-gradient(135deg, #4c0505 0%, #991b1b 42%, #1f0505 72%, #050505 100%)',
+        }}
+      >
+        {/* Cinematic red backdrop */}
         {featuredMovie?.backdrop && (
-          <div className="absolute inset-0 z-0 opacity-20">
+          <div className="absolute inset-0 -z-20 opacity-25 mix-blend-overlay">
             <Image
               src={featuredMovie.backdrop}
               alt="Backdrop blur"
               fill
               sizes="100vw"
-              className="object-cover blur-xl"
+              className="object-cover blur-sm scale-105"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
           </div>
         )}
 
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_115%,rgba(239,68,68,0.45),transparent_42%)]" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-br from-white/10 via-transparent to-black/[0.55]" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-1/2 bg-gradient-to-t from-black/[0.65] via-black/20 to-transparent" />
+        <div className="absolute -left-24 top-24 -z-10 h-72 w-72 rounded-full bg-red-500/30 blur-3xl" />
+        <div className="absolute right-10 top-8 -z-10 h-56 w-56 rounded-full bg-rose-400/20 blur-3xl" />
+
+        {/* Film strip detail */}
+        <div
+          className="absolute -left-20 top-36 -z-10 h-28 w-[560px] -rotate-12 border-y border-black/30 opacity-25"
+          style={{
+            backgroundImage:
+              'repeating-linear-gradient(90deg, rgba(0,0,0,0.42) 0 20px, transparent 20px 42px)',
+          }}
+        />
+
+        {/* Soft particle texture */}
+        <div className="absolute inset-0 -z-10 opacity-[0.08] [background-image:radial-gradient(circle_at_1px_1px,white_1px,transparent_0)] [background-size:22px_22px]" />
+        <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-inset ring-white/10" />
+
+        <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-10">
+          {/* Hero visual */}
+          <div className="relative mx-auto flex h-56 w-full max-w-[320px] items-center justify-center lg:col-span-3 lg:h-72">
+            <div className="absolute bottom-4 h-12 w-56 rounded-[50%] border border-red-300/25 bg-red-500/[0.15] blur-sm" />
+            <div className="absolute bottom-6 h-8 w-64 rounded-[50%] border border-red-500/[0.45] bg-black/20 shadow-[0_0_38px_rgba(239,68,68,0.45)]" />
+
+            <Image
+              src="/izlediklerim.webp"
+              alt="İzlediklerim Logo"
+              width={320}
+              height={260}
+              className="relative z-10 h-auto w-56 drop-shadow-[0_24px_35px_rgba(0,0,0,0.55)] sm:w-64 lg:w-72"
+              priority
+            />
+          </div>
+
           {/* Hero text */}
-          <div className="lg:col-span-8 space-y-6">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-red-500/10 text-red-300 border border-red-500/20">
-              <Sparkles className="w-3.5 h-3.5" /> Kişisel Sinema Günlüğüm
+          <div className="space-y-6 text-center lg:col-span-5 lg:text-left">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.15] bg-black/[0.35] px-4 py-1.5 text-xs font-bold text-red-100 shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
+              <Sparkles className="h-3.5 w-3.5 text-red-100" />
+              Kişisel Sinema Günlüğüm
             </span>
-            <h1 className="text-4xl sm:text-5xl font-black tracking-tight leading-tight">
-              <img src="/izlediklerim.webp" alt="İzlediklerim Logo" className="sm:w-36 lg:w-64 h-auto float-left" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">İzlediklerim</span>
-            </h1>
-            <p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
-              İzlediğim filmler, verdiğim puanlar, listeler ve kişisel sinema istatistiklerimi barındıran <strong className="text-white">modern film günlüğü</strong>.
-            </p>
+
+            <div className="space-y-4">
+              <h1 className="text-6xl font-black leading-none tracking-tight text-white [text-shadow:0_0_28px_rgba(255,255,255,0.28)]">
+                İzlediklerim
+              </h1>
+
+              <p className="mx-auto max-w-2xl text-base leading-relaxed text-white/[0.78] sm:text-lg lg:mx-0">
+                İzlediğim filmleri, verdiğim puanları, oluşturduğum listeleri ve kişisel sinema
+                istatistiklerimi tek yerde buluşturan; anılarla, favorilerle ve keşiflerle büyüyen{' '}
+                <strong className="text-white">modern bir film günlüğü</strong>.
+              </p>
+            </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex flex-wrap justify-center gap-4 pt-2 lg:justify-start">
               <Link
                 href="/movies"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-primary to-brand-secondary hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl transition-all duration-300 shadow-[0_4px_20px_rgba(239,68,68,0.3)] hover:shadow-[0_4px_25px_rgba(239,68,68,0.5)]"
+                className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-500 via-red-600 to-rose-600 px-7 py-3.5 font-extrabold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_12px_32px_rgba(239,68,68,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_18px_42px_rgba(239,68,68,0.6)]"
               >
                 Arşiv
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
+
               <Link
                 href="/random"
-                className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-200 hover:text-white font-bold px-6 py-3 rounded-xl transition-all duration-300"
+                className="inline-flex items-center gap-2 rounded-xl border border-white/[0.15] bg-black/[0.35] px-7 py-3.5 font-extrabold text-white shadow-[0_12px_28px_rgba(0,0,0,0.28)] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-[0_16px_34px_rgba(0,0,0,0.38)]"
               >
-                <span>🎲</span> Rastgele
+                <span>🎲</span>
+                Rastgele
               </Link>
             </div>
           </div>
 
           {/* Quick Stats Grid */}
-          <div className="lg:col-span-4 grid grid-cols-2 gap-4">
-            <div className="glass p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center">
-              <Film className="w-6 h-6 text-brand-primary mb-2" />
-              <span className="text-3xl font-black text-white glow-text-red">{stats.totalCount}</span>
-              <span className="text-xs text-zinc-500 font-semibold mt-1">Toplam İzlenen</span>
+          <div className="grid grid-cols-2 gap-4 lg:col-span-4">
+            <div className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/[0.35] p-5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_20px_44px_rgba(0,0,0,0.28)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-red-200/40">
+              <div className="absolute inset-x-6 bottom-0 h-px bg-red-300 shadow-[0_0_22px_3px_rgba(248,113,113,0.8)]" />
+
+              <div className="flex min-h-[112px] flex-col items-center justify-center">
+                <Film className="mb-3 h-7 w-7 text-red-300 drop-shadow-[0_0_14px_rgba(248,113,113,0.55)]" />
+                <span className="text-3xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
+                  {stats.totalCount}
+                </span>
+                <span className="mt-2 text-xs font-semibold text-white/[0.55]">
+                  Toplam İzlenen
+                </span>
+              </div>
             </div>
 
-            <div className="glass p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center">
-              <Star className="w-6 h-6 text-brand-accent mb-2 fill-brand-accent/10" />
-              <span className="text-3xl font-black text-white">{stats.averageRating}</span>
-              <span className="text-xs text-zinc-500 font-semibold mt-1">Ortalama Puanım</span>
+            <div className="group relative overflow-hidden rounded-2xl border border-white/20 bg-black/[0.35] p-5 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_20px_44px_rgba(0,0,0,0.28)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-yellow-200/40">
+              <div className="absolute inset-x-6 bottom-0 h-px bg-yellow-300 shadow-[0_0_22px_3px_rgba(250,204,21,0.65)]" />
+
+              <div className="flex min-h-[112px] flex-col items-center justify-center">
+                <Star className="mb-3 h-7 w-7 text-brand-accent drop-shadow-[0_0_14px_rgba(250,204,21,0.45)]" />
+                <span className="text-3xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
+                  {stats.averageRating}
+                </span>
+                <span className="mt-2 text-xs font-semibold text-white/[0.55]">
+                  Ortalama Puanım
+                </span>
+              </div>
             </div>
 
-            <div className="glass p-5 rounded-2xl border border-white/5 text-center flex flex-col justify-center items-center col-span-2">
-              <Clock className="w-6 h-6 text-brand-rose mb-2" />
-              <span className="text-3xl font-black text-white glow-text-rose">{stats.totalRuntimeHours} Saat</span>
-              <span className="text-xs text-zinc-500 font-semibold mt-1">Toplam İzleme Süresi</span>
+            <div className="group relative col-span-2 overflow-hidden rounded-2xl border border-white/20 bg-black/[0.35] p-6 text-center shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_20px_44px_rgba(0,0,0,0.28)] backdrop-blur-md transition-all duration-300 hover:-translate-y-1 hover:border-rose-200/40">
+              <div className="absolute inset-x-10 bottom-0 h-px bg-rose-300 shadow-[0_0_26px_4px_rgba(244,63,94,0.8)]" />
+
+              <div className="flex min-h-[120px] flex-col items-center justify-center">
+                <Clock className="mb-3 h-8 w-8 text-rose-300 drop-shadow-[0_0_16px_rgba(244,63,94,0.55)]" />
+                <span className="text-4xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
+                  {stats.totalRuntimeHours} Saat
+                </span>
+                <span className="mt-2 text-xs font-semibold text-white/[0.55]">
+                  Toplam İzleme Süresi
+                </span>
+              </div>
             </div>
           </div>
         </div>
