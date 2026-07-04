@@ -96,7 +96,7 @@ export default async function HomePage() {
     <div className="space-y-12">
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/40 p-8 sm:p-12 lg:p-16">
+      <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-black/40 p-8 sm:p-12 lg:p-16">
         {/* Backdrop glass blur effect */}
         {featuredMovie?.backdrop && (
           <div className="absolute inset-0 z-0 opacity-20">
@@ -119,10 +119,10 @@ export default async function HomePage() {
               <Sparkles className="w-3.5 h-3.5" /> Kişisel Sinema Günlüğüm
             </span>
             <h1 className="text-4xl sm:text-5xl font-black tracking-tight leading-tight">
-              🎬 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">İzlediklerim</span>
+              <img src="/izlediklerim.webp" alt="İzlediklerim Logo" className="sm:w-36 lg:w-64 h-auto float-left" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-400">İzlediklerim</span>
             </h1>
-            <p className="text-base sm:text-lg text-zinc-400 max-w-xl leading-relaxed">
-              Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran <strong className="text-white">modern film günlüğü</strong>.
+            <p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed">
+              İzlediğim filmler, verdiğim puanlar, listeler ve kişisel sinema istatistiklerimi barındıran <strong className="text-white">modern film günlüğü</strong>.
             </p>
 
             {/* CTA Buttons */}
@@ -131,14 +131,14 @@ export default async function HomePage() {
                 href="/movies"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-primary to-brand-secondary hover:opacity-95 text-white font-bold px-6 py-3 rounded-xl transition-all duration-300 shadow-[0_4px_20px_rgba(239,68,68,0.3)] hover:shadow-[0_4px_25px_rgba(239,68,68,0.5)]"
               >
-                Arşivi Keşfet
+                Arşiv
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link
                 href="/random"
                 className="inline-flex items-center gap-2 bg-white/5 hover:bg-white/10 border border-white/10 text-zinc-200 hover:text-white font-bold px-6 py-3 rounded-xl transition-all duration-300"
               >
-                <span>🎲</span> Bu Akşam Ne İzlesem?
+                <span>🎲</span> Rastgele
               </Link>
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Film, List, Heart, BarChart2, Sparkles, Search, Menu, X } from 'lucide-react';
+import { Home, Clapperboard, List, BarChart2, Sparkles, Search, Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -25,8 +25,8 @@ export default function Navbar() {
   }, [mobileOpen]);
 
   const navItems = [
-    { name: 'Ana Sayfa', href: '/', icon: Film },
-    { name: 'Filmler', href: '/movies', icon: Search },
+    { name: 'Ana Sayfa', href: '/', icon: Home },
+    { name: 'Filmler', href: '/movies', icon: Clapperboard },
     { name: 'Listeler', href: '/lists', icon: List },
     { name: 'İstatistik', href: '/stats', icon: BarChart2 },
     { name: 'Rastgele', href: '/random', icon: Sparkles },
@@ -41,7 +41,7 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="flex items-center gap-2 group">
-                <img src="/favicon.svg" alt="logo" className="w-7 h-7 drop-shadow-[0_0_6px_rgba(239,68,68,0.5)] group-hover:scale-110 transition-transform duration-200" />
+                <img src="/izlediklerim.webp" alt="logo" className="w-7 h-7 drop-shadow-[0_0_6px_rgba(239,68,68,0.5)] group-hover:scale-110 transition-transform duration-200" />
                 <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent tracking-wider text-xl group-hover:opacity-90 transition-opacity">
                   İZLEDİKLERİM
                 </span>

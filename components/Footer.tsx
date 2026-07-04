@@ -69,9 +69,9 @@ export default function Footer() {
                 <a className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
                   TMDB API
                 </a>
-                ’den alınmıştır. Afişler, fragmanlar, IMDB verileri ve puanlar TMDB’den, YouTube’dan ise fragmanlar eklenmektedir.
-              </p>
-              <p className="text-sm text-zinc-500 my-2 leading-relaxed">
+                ’den alınmıştır.<br />
+                Afişler, fragmanlar, IMDB verileri ve puanlar TMDB’den, YouTube’dan ise fragmanlar eklenmektedir.
+                <br /><br />
                 Bu site wolkanca.com’un bir parçasıdır, her türlü görüş ve öneri için <a href="https://wolkanca.com" className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" target="_blank" rel="noopener noreferrer">wolkanca.com</a> adresinden bana ulaşabilirsiniz.
               </p>
             </div>
