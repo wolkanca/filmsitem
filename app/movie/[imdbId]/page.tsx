@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${movie.title} (${movie.year})`,
     description: movie.overview || `${movie.title} (${movie.year}) filmine ait detaylar, kişisel puanlarım ve izleme notlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
     openGraph: {
-      title: `${movie.title} (${movie.year}) | Film Günlüğüm`,
+      title: `${movie.title} (${movie.year}) - İzlediklerim`,
       description: movie.overview,
       images: movie.poster ? [{ url: movie.poster }] : [],
       type: 'video.movie',
@@ -65,25 +65,126 @@ export default async function MovieDetailPage({ params }: Props) {
   const prevMovie = currentIndex > 0 ? allMovies[currentIndex - 1] : null;
   const nextMovie = currentIndex < allMovies.length - 1 ? allMovies[currentIndex + 1] : null;
 
-  // Find similar movies (matching genres or director) - select top 15, then client shuffles to pick 5 randomly
-  const similarMovies = allMovies
-    .filter((m) => m.imdbId !== imdbId)
-    .map((m) => {
+  // Find similar movies with a weighted, period-aware scoring system.
+  // The client receives a relevant pool and randomly displays 4 of them.
+  const normalize = (value?: string | null) => value?.trim().toLowerCase() || '';
+
+  const splitNames = (value?: string | null) =>
+    new Set(
+      (value || '')
+        .split(',')
+        .map((item) => normalize(item))
+        .filter(Boolean)
+    );
+
+  const getYearDiff = (candidateYear?: number | string) => {
+    if (!movie.year || !candidateYear) return 0;
+    return Math.abs(Number(movie.year) - Number(candidateYear));
+  };
+
+  const currentGenres = new Set((movie.genres || []).map((genre) => normalize(genre)));
+  const currentDirectors = splitNames(movie.director);
+  const currentWriters = new Set((movie.writers || []).map((writer) => normalize(writer)));
+  const currentCast = new Set((movie.cast || []).map((actor) => normalize(actor)));
+  const currentCountry = normalize(movie.country);
+  const currentType = normalize(movie.type);
+  const currentOmdbType = normalize(movie.omdbType);
+
+  const scoredSimilarMovies = allMovies
+    .filter((candidate) => candidate.imdbId !== imdbId)
+    .map((candidate) => {
       let score = 0;
-      // Genre intersection
-      m.genres.forEach((g) => {
-        if (movie.genres.includes(g)) score += 2;
-      });
-      // Director match
-      if (m.director && movie.director && m.director.toLowerCase() === movie.director.toLowerCase()) {
-        score += 5;
+
+      const candidateGenres = new Set((candidate.genres || []).map((genre) => normalize(genre)));
+      const sharedGenres = [...candidateGenres].filter((genre) => currentGenres.has(genre));
+
+      if (sharedGenres.length > 0) {
+        score += sharedGenres.length * 20;
       }
-      return { movie: m, score };
+
+      if (currentType && normalize(candidate.type) === currentType) {
+        score += 10;
+      }
+
+      if (currentOmdbType && normalize(candidate.omdbType) === currentOmdbType) {
+        score += 8;
+      }
+
+      const candidateDirectors = splitNames(candidate.director);
+      const sharedDirectors = [...candidateDirectors].filter((director) => currentDirectors.has(director));
+      score += sharedDirectors.length * 45;
+
+      const candidateWriters = new Set((candidate.writers || []).map((writer) => normalize(writer)));
+      const sharedWriters = [...candidateWriters].filter((writer) => currentWriters.has(writer));
+      score += sharedWriters.length * 18;
+
+      const candidateCast = new Set((candidate.cast || []).map((actor) => normalize(actor)));
+      const sharedCast = [...candidateCast].filter((actor) => currentCast.has(actor));
+      score += sharedCast.length * 8;
+
+      if (currentCountry && normalize(candidate.country) === currentCountry) {
+        score += 6;
+      }
+
+      const yearDiff = getYearDiff(candidate.year);
+
+      if (yearDiff <= 3) score += 25;
+      else if (yearDiff <= 7) score += 16;
+      else if (yearDiff <= 15) score += 8;
+      else if (yearDiff <= 25) score -= 8;
+      else if (yearDiff <= 40) score -= 35;
+      else score -= 70;
+
+      if (movie.myRating > 0 && candidate.myRating > 0) {
+        const ratingDiff = Math.abs(movie.myRating - candidate.myRating);
+        if (ratingDiff <= 1) score += 8;
+        else if (ratingDiff <= 2) score += 4;
+      }
+
+      if (movie.imdbRating > 0 && candidate.imdbRating > 0) {
+        const imdbDiff = Math.abs(movie.imdbRating - candidate.imdbRating);
+        if (imdbDiff <= 0.5) score += 5;
+        else if (imdbDiff <= 1) score += 2;
+      }
+
+      return {
+        movie: candidate,
+        score,
+        yearDiff,
+      };
     })
-    .filter((x) => x.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 15)
-    .map((x) => x.movie);
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  // Prefer the same era. If there are enough close-period matches, avoid old classics dominating.
+  const closePeriodItems = scoredSimilarMovies.filter((item) => item.yearDiff <= 25);
+  const baseSimilarItems =
+    closePeriodItems.length >= 12
+      ? closePeriodItems
+      : [...closePeriodItems, ...scoredSimilarMovies.filter((item) => item.yearDiff > 25)];
+
+  // Keep the pool diverse: maximum 1 movie per exact director string where possible.
+  const diverseSimilarMovies = [];
+  const directorCounts = new Map<string, number>();
+
+  for (const item of baseSimilarItems) {
+    const directorKey = normalize(item.movie.director) || 'unknown';
+    const currentCount = directorCounts.get(directorKey) || 0;
+
+    if (currentCount >= 1) continue;
+
+    diverseSimilarMovies.push(item.movie);
+    directorCounts.set(directorKey, currentCount + 1);
+
+    if (diverseSimilarMovies.length === 12) break;
+  }
+
+  const diverseMovieIds = new Set(diverseSimilarMovies.map((candidate) => candidate.imdbId));
+  const backupSimilarMovies = baseSimilarItems
+    .map((item) => item.movie)
+    .filter((candidate) => !diverseMovieIds.has(candidate.imdbId));
+
+  const similarMovies = [...diverseSimilarMovies, ...backupSimilarMovies].slice(0, 12);
 
   // JSON-LD Movie Schema Markup
   const jsonLd = {
