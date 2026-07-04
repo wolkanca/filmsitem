@@ -199,7 +199,7 @@ export default async function HomePage() {
               <div className="flex min-h-[112px] flex-col items-center justify-center">
                 <Film className="mb-3 h-7 w-7 text-red-300 drop-shadow-[0_0_14px_rgba(248,113,113,0.55)]" />
                 <span className="text-3xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  {stats.totalCount}
+                  <Link href="/stats" >{stats.totalCount}</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Toplam İzlenen
@@ -213,7 +213,7 @@ export default async function HomePage() {
               <div className="flex min-h-[112px] flex-col items-center justify-center">
                 <Star className="mb-3 h-7 w-7 text-brand-accent drop-shadow-[0_0_14px_rgba(250,204,21,0.45)]" />
                 <span className="text-3xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  {stats.averageRating}
+                  <Link href="/stats" >{stats.averageRating}</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Ortalama Puanım
@@ -227,7 +227,7 @@ export default async function HomePage() {
               <div className="flex min-h-[120px] flex-col items-center justify-center">
                 <Clock className="mb-3 h-8 w-8 text-rose-300 drop-shadow-[0_0_16px_rgba(244,63,94,0.55)]" />
                 <span className="text-4xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  {stats.totalRuntimeHours} Saat
+                  <Link href="/stats" >{stats.totalRuntimeHours} Saat</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Toplam İzleme Süresi
