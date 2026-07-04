@@ -232,7 +232,7 @@ export default async function ListDetailPage({ params }: Props) {
             <span className="text-xs font-extrabold uppercase tracking-wider">Otomatik Koleksiyon</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-black text-white mt-1">
-            📁 {collection.name}
+            🗁 {collection.name}
           </h1>
           <p className="text-zinc-500 text-sm mt-1">
             Bu koleksiyonda toplam {collection.movies.length} yapım kayıtlı.
