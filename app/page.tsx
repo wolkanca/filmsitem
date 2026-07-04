@@ -153,14 +153,14 @@ export default async function HomePage() {
           </div>
 
           {/* Hero text */}
-          <div className="space-y-6 text-center lg:col-span-5 lg:text-left">
+          <div className="min-w-0 space-y-6 text-center lg:col-span-5 lg:text-left">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-white/[0.15] bg-black/[0.35] px-4 py-1.5 text-xs font-bold text-red-100 shadow-[0_8px_24px_rgba(0,0,0,0.24)] backdrop-blur-md">
               <Sparkles className="h-3.5 w-3.5 text-red-100" />
               Kişisel Sinema Günlüğüm
             </span>
 
             <div className="space-y-4">
-              <h1 className="text-6xl font-black leading-none tracking-tight text-white [text-shadow:0_0_28px_rgba(255,255,255,0.28)]">
+              <h1 className="text-4xl md:text-6xl font-black leading-none tracking-tight text-white [text-shadow:0_0_28px_rgba(255,255,255,0.28)]">
                 İzlediklerim
               </h1>
 

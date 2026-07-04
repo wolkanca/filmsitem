@@ -124,7 +124,7 @@ export default function Navbar() {
       {/* Mobile Drawer */}
       <div
         className={`
-          fixed top-0 right-0 z-50 h-full w-72 lg:hidden
+          fixed top-0 right-0 z-50 h-full w-full lg:hidden
           bg-zinc-950/95 border-l border-white/10 backdrop-blur-xl shadow-2xl
           transform transition-transform duration-300 ease-in-out
           ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}
