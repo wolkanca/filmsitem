@@ -34952,7 +34952,7 @@
     "listName": [
       "Favoriler"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMzkyNTNiOWMtZTY3Yy00YjkzLThlYjQtYWM4NWE0ZmY0OTBlXkEyXkFqcGdeQXVyNDg4MjkzNDk@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWJjYmJhNjYtYTRhYi00Zjk1LTg1YjItMDU4Y2FhYzI2YjY2XkEyXkFqcGc@._V1_.jpg",
     "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2012 yapımı bir Drama, Romance eseridir. IMDb puanı 4.4 olarak kaydedilmiştir.",
     "genres": [
       "Drama",
@@ -34973,7 +34973,8 @@
     "plot": "A woman falls in love with the man who killed her husband.",
     "country": "Türkiye",
     "omdbType": "series",
-    "boxOffice": ""
+    "boxOffice": "",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOWJjYmJhNjYtYTRhYi00Zjk1LTg1YjItMDU4Y2FhYzI2YjY2XkEyXkFqcGc@._V1_.jpg"
   },
   {
     "imdbId": "tt2201063",
@@ -66760,7 +66761,7 @@
     "omdbType": "series",
     "boxOffice": ""
   },
-   {
+  {
     "imdbId": "tt33560536",
     "title": "Lucky Luke",
     "originalTitle": "Lucky Luke",
