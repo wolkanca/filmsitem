@@ -207,7 +207,7 @@ export default async function ListsPage() {
     <div className="space-y-10 animate-fade-in">
       {/* Title */}
       <div className="border-b border-zinc-800 pb-5">
-        <h1 className="text-3xl font-black text-white">📁 Film Koleksiyonlarım</h1>
+        <h1 className="text-3xl font-black text-white">🗁 Film Koleksiyonlarım</h1>
         <p className="text-zinc-500 text-sm mt-1">
           Kişisel puanlarıma, yapım yılına ve türlerine göre otomatik olarak derlenen akıllı listeler.
         </p>
@@ -215,7 +215,7 @@ export default async function ListsPage() {
 
       {lists.length === 0 ? (
         <div className="text-center py-20 border border-dashed border-zinc-800 rounded-2xl bg-zinc-950/20">
-          <span className="text-4xl">📁</span>
+          <span className="text-4xl">🗁</span>
           <h3 className="text-lg font-bold text-zinc-300 mt-4">Hiçbir Koleksiyon Bulunamadı</h3>
           <p className="text-sm text-zinc-500 mt-1">
             CSV kütüphaneniz yüklendikten sonra listeleriniz burada otomatik olarak oluşacaktır.
