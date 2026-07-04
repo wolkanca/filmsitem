@@ -28,7 +28,6 @@ export default function Navbar() {
     { name: 'Ana Sayfa', href: '/', icon: Film },
     { name: 'Filmler', href: '/movies', icon: Search },
     { name: 'Listeler', href: '/lists', icon: List },
-    { name: 'Favoriler', href: '/favorites', icon: Heart },
     { name: 'İstatistik', href: '/stats', icon: BarChart2 },
     { name: 'Rastgele', href: '/random', icon: Sparkles },
   ];

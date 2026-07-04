@@ -120,9 +120,9 @@ export default function MoviesPage() {
   // Calculate unique filters from data (scoped to active tab)
   const tabFilteredMovies = useMemo(() => {
     const reversedMovies = [...movies].reverse();
-    if (activeTab === 'movie') return movies.filter((m) => m.type === 'Movie');
-    if (activeTab === 'tv') return movies.filter((m) => isTV(m));
-    if (activeTab === 'other') return movies.filter((m) => isOther(m));
+    if (activeTab === 'movie') return movies.filter((m) => m.type === 'Movie').reverse();
+    if (activeTab === 'tv') return movies.filter((m) => isTV(m)).reverse();
+    if (activeTab === 'other') return movies.filter((m) => isOther(m)).reverse();
     return reversedMovies;
   }, [movies, activeTab]);
 

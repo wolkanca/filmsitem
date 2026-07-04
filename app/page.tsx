@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
 
-export const revalidate = 3600; // Revalidate every hour (ISR)
+export const revalidate = 36000; // Revalidate every hour (ISR)
 
 export default async function HomePage() {
   const movies = await getMovies();
