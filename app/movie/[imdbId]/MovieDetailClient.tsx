@@ -44,18 +44,118 @@ export default function MovieDetailClient({
   // Admin state
   const [isAdmin, setIsAdmin] = useState(false);
 
-  // Client-side random selection of 5 movies from top 15 similar movies
+  // Client-side ranked selection from similar movies.
+  // The server still provides the candidate pool; this makes the displayed 4 items more relevant.
   const [randomSimilarMovies, setRandomSimilarMovies] = useState<Movie[]>([]);
 
-  useEffect(() => {
-    if (similarMovies && similarMovies.length > 0) {
-      // Shuffle array and pick first 4
-      const shuffled = [...similarMovies].sort(() => 0.4 - Math.random());
-      setRandomSimilarMovies(shuffled.slice(0, 4));
-    } else {
-      setRandomSimilarMovies([]);
+  const getSimilarScore = (current: Movie, candidate: Movie): number => {
+    let score = 0;
+
+    const currentGenres = new Set(current.genres || []);
+    const candidateGenres = new Set(candidate.genres || []);
+    const sharedGenres = [...candidateGenres].filter((genre) => currentGenres.has(genre));
+    score += sharedGenres.length * 25;
+
+    if (current.type && candidate.type && current.type === candidate.type) {
+      score += 15;
     }
-  }, [similarMovies]);
+
+    if (current.omdbType && candidate.omdbType && current.omdbType === candidate.omdbType) {
+      score += 10;
+    }
+
+    const currentDirectors = new Set(
+      (current.director || '')
+        .split(',')
+        .map((director) => director.trim())
+        .filter(Boolean)
+    );
+    const candidateDirectors = new Set(
+      (candidate.director || '')
+        .split(',')
+        .map((director) => director.trim())
+        .filter(Boolean)
+    );
+    const sharedDirectors = [...candidateDirectors].filter((director) => currentDirectors.has(director));
+    score += sharedDirectors.length * 35;
+
+    const currentWriters = new Set(current.writers || []);
+    const candidateWriters = new Set(candidate.writers || []);
+    const sharedWriters = [...candidateWriters].filter((writer) => currentWriters.has(writer));
+    score += sharedWriters.length * 18;
+
+    const currentCast = new Set(current.cast || []);
+    const candidateCast = new Set(candidate.cast || []);
+    const sharedCast = [...candidateCast].filter((actor) => currentCast.has(actor));
+    score += sharedCast.length * 8;
+
+    if (current.country && candidate.country && current.country === candidate.country) {
+      score += 6;
+    }
+
+    if (current.year && candidate.year) {
+      const yearDiff = Math.abs(Number(current.year) - Number(candidate.year));
+
+      if (yearDiff <= 2) score += 10;
+      else if (yearDiff <= 5) score += 6;
+      else if (yearDiff <= 10) score += 3;
+    }
+
+    if (candidate.myRating >= 8) {
+      score += 5;
+    }
+
+    if (candidate.imdbRating >= 7.5) {
+      score += 3;
+    }
+
+    return score;
+  };
+
+  useEffect(() => {
+    if (!similarMovies || similarMovies.length === 0) {
+      setRandomSimilarMovies([]);
+      return;
+    }
+
+    const rankedSimilarMovies = similarMovies
+      .filter((similarMovie) => similarMovie.imdbId !== movie.imdbId)
+      .map((similarMovie) => ({
+        movie: similarMovie,
+        score: getSimilarScore(movie, similarMovie),
+      }))
+      .sort((a, b) => b.score - a.score)
+      .map((item) => item.movie);
+
+    // Keep recommendations diverse: avoid showing too many works from the same director.
+    // First build a relevant candidate pool of 12, then randomly display 4 of them.
+    const diversifiedMovies: Movie[] = [];
+    const directorCounts = new Map<string, number>();
+
+    for (const similarMovie of rankedSimilarMovies) {
+      const directorKey = similarMovie.director?.trim() || 'unknown';
+      const currentCount = directorCounts.get(directorKey) || 0;
+
+      if (currentCount >= 1) continue;
+
+      diversifiedMovies.push(similarMovie);
+      directorCounts.set(directorKey, currentCount + 1);
+
+      if (diversifiedMovies.length === 12) break;
+    }
+
+    const diversifiedMovieIds = new Set(diversifiedMovies.map((similarMovie) => similarMovie.imdbId));
+    const backupMovies = rankedSimilarMovies.filter(
+      (similarMovie) => !diversifiedMovieIds.has(similarMovie.imdbId)
+    );
+
+    const candidatePool = [...diversifiedMovies, ...backupMovies].slice(0, 12);
+    const selectedMovies = [...candidatePool]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 4);
+
+    setRandomSimilarMovies(selectedMovies);
+  }, [similarMovies, movie]);
 
   // Live editable movie data (poster, backdrop, trailer)
   const [livePoster, setLivePoster] = useState(movie.poster);
