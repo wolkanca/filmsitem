@@ -315,14 +315,14 @@ export default function MoviesPage() {
       </div>
 
       {/* ── Tabs ── */}
-      <div className="flex items-center gap-1 p-1 bg-zinc-900/60 border border-white/5 rounded-2xl w-fit">
+      <div className="grid grid-cols-2 sm:flex sm:items-center gap-1 p-1 bg-zinc-900/60 border border-white/5 rounded-2xl w-full sm:w-fit">
         {TABS.filter((tab) => tab.key !== 'other' || tabCounts.other > 0).map((tab) => {
           const active = activeTab === tab.key;
           return (
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`relative flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${active
+              className={`relative flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${active
                 ? 'bg-brand-primary text-white shadow-[0_4px_15px_rgba(239,68,68,0.35)]'
                 : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
                 }`}
