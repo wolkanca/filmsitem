@@ -38,7 +38,7 @@ export default function RandomPage() {
   }, []);
 
   // Filter genres list
-  const genres = useEffect(() => {}, [movies]);
+  const genres = useEffect(() => { }, [movies]);
   const availableGenres = Array.from(new Set(movies.flatMap(m => m.genres || []))).sort();
 
   // Filter movies pool
@@ -63,7 +63,7 @@ export default function RandomPage() {
 
     setIsShuffling(true);
     setSelectedMovie(null);
-    
+
     let speed = 60; // Initial shuffle interval speed in ms
     let iterations = 0;
     const maxIterations = 20; // Number of flashes
@@ -113,7 +113,7 @@ export default function RandomPage() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-          
+
           {/* Left panel: Filters / Settings */}
           <div className="md:col-span-4 glass p-6 rounded-3xl border border-white/5 space-y-6">
             <h2 className="text-sm font-extrabold uppercase tracking-wider text-zinc-400 border-b border-zinc-800 pb-2">
@@ -125,14 +125,12 @@ export default function RandomPage() {
               <span className="text-xs font-semibold text-zinc-300">Sadece Sinema Filmleri</span>
               <button
                 onClick={() => setOnlyMovies(!onlyMovies)}
-                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 ${
-                  onlyMovies ? 'bg-brand-primary' : 'bg-zinc-800 border border-zinc-700'
-                }`}
+                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 ${onlyMovies ? 'bg-brand-primary' : 'bg-zinc-800 border border-zinc-700'
+                  }`}
               >
                 <span
-                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-300 ${
-                    onlyMovies ? 'translate-x-6' : 'translate-x-1'
-                  }`}
+                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-300 ${onlyMovies ? 'translate-x-6' : 'translate-x-1'
+                    }`}
                 />
               </button>
             </div>
@@ -189,7 +187,7 @@ export default function RandomPage() {
 
           {/* Right panel: Spinner Screen & Reveal */}
           <div className="md:col-span-8 flex flex-col items-center justify-center min-h-[380px] glass bg-zinc-950/30 rounded-3xl border border-white/5 p-8 relative overflow-hidden">
-            
+
             {/* Shuffling animation flash card */}
             {isShuffling && tempMovie && (
               <div className="flex flex-col items-center space-y-4 animate-shuffle">
@@ -217,7 +215,7 @@ export default function RandomPage() {
                 <div className="absolute -inset-10 bg-red-500/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
 
                 <div className="relative z-10 aspect-[2/3] w-48 sm:w-56 overflow-hidden rounded-2xl border border-red-500/30 bg-zinc-900 shadow-[0_15px_40px_rgba(239,68,68,0.25)] group hover:scale-105 transition-transform duration-300">
-                  <PosterImage
+                  <Link href={`/movie/${selectedMovie.imdbId}`}><PosterImage
                     src={selectedMovie.poster}
                     alt={selectedMovie.title}
                     fill
@@ -225,7 +223,7 @@ export default function RandomPage() {
                     fallbackTitle={selectedMovie.title}
                     trailerYoutubeId={selectedMovie.trailerYoutubeId}
                     disableYoutubeClick
-                  />
+                  /></Link>
                   {/* Rating badge */}
                   {selectedMovie.myRating > 0 && (
                     <div className="absolute top-3 left-3 bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-xl border border-white/10 flex items-center gap-1 shadow-lg">
