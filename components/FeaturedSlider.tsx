@@ -28,10 +28,10 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
   };
 
-  // Auto-play effect: slide every 30 seconds.
+  // Auto-play effect: slide every 15 seconds.
   // Triggers/resets when currentIndex changes (manual navigation resets the timer).
   useEffect(() => {
-    const timer = setInterval(nextSlide, 30000);
+    const timer = setInterval(nextSlide, 15000);
     return () => clearInterval(timer);
   }, [currentIndex]);
 
@@ -93,8 +93,10 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
                 GÜNÜN ÖNERİSİ {currentIndex + 1}/{movies.length}
               </span>
               <h3 className="text-xl sm:text-2xl font-black text-white mt-1 py-2">
-                {currentMovie.title}{' '}
-                <span className="text-zinc-500 font-normal text-lg">({currentMovie.year})</span>
+                <Link href={`/movie/${currentMovie.imdbId}`}>
+                  {currentMovie.title}{' '}
+                  <span className="text-zinc-500 font-normal text-lg">({currentMovie.year})</span>
+                </Link>
               </h3>
               <p className="text-xs text-zinc-400 mt-1">
                 Yönetmen: {currentMovie.director} • Tür: {currentMovie.genres.join(', ')}
