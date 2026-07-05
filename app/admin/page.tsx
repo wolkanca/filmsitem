@@ -31,6 +31,18 @@ export default function AdminPage() {
     Record<string, { poster: string; trailer: string; saving: boolean; error: string; posterOpen: boolean; trailerOpen: boolean }>
   >({});
 
+
+  const [enrichStatus, setEnrichStatus] = useState<{
+    isRunning: boolean;
+    total: number;
+    processed: number;
+    updated: number;
+    failed: number;
+    status: string;
+    changes?: string[];
+  } | null>(null);
+
+
   // Check login cookie on mount
   useEffect(() => {
     setMounted(true);
@@ -38,6 +50,8 @@ export default function AdminPage() {
     const isAlreadyAdmin = cookies.some((c) => c.trim().startsWith('is_admin=true'));
     setIsLoggedIn(isAlreadyAdmin);
   }, []);
+
+
 
   // Load movies when logged in
   useEffect(() => {
@@ -61,8 +75,26 @@ export default function AdminPage() {
         });
         setEditStates(initStates);
       })
-      .catch(() => {})
+      .catch(() => { })
       .finally(() => setMoviesLoading(false));
+  }, [isLoggedIn]);
+
+  useEffect(() => {
+    if (!isLoggedIn) return;
+
+    async function checkEnrichStatus() {
+      try {
+        const res = await fetch('/api/enrich');
+        const data = await res.json();
+        setEnrichStatus(data);
+      } catch { }
+    }
+
+    checkEnrichStatus();
+
+    const interval = setInterval(checkEnrichStatus, 1500);
+
+    return () => clearInterval(interval);
   }, [isLoggedIn]);
 
   const handleLogin = (e: React.FormEvent) => {
@@ -140,7 +172,6 @@ export default function AdminPage() {
       const body: Record<string, string> = {};
       if (field === 'poster') {
         body.poster = value;
-        body.backdrop = value; // Hero kapak alanını da güncelle
       }
       if (field === 'trailer') body.trailerYoutubeId = value;
 
@@ -290,6 +321,57 @@ export default function AdminPage() {
             </Link>
           </div>
 
+
+          {enrichStatus && enrichStatus.changes && enrichStatus.changes.length > 0 && (
+            <div className="glass-card p-6 rounded-3xl border border-white/5 bg-zinc-950/40">
+              <div className="flex items-center justify-between gap-4 mb-4">
+                <div>
+                  <h2 className="text-lg font-black text-white">Poster Sihirbazı Değişiklik Özeti</h2>
+                  <p className="text-zinc-500 text-xs mt-1">
+                    Durum: {enrichStatus.status} · {enrichStatus.processed} / {enrichStatus.total} işlendi
+                  </p>
+                </div>
+
+                {enrichStatus.isRunning && (
+                  <Loader2 className="w-5 h-5 text-brand-primary animate-spin" />
+                )}
+              </div>
+
+              <div className="grid grid-cols-3 gap-3 mb-4">
+                <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3 text-center">
+                  <span className="block text-[10px] text-zinc-500 font-bold uppercase">Güncellenen</span>
+                  <span className="block text-xl font-black text-emerald-400 mt-1">{enrichStatus.updated}</span>
+                </div>
+
+                <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3 text-center">
+                  <span className="block text-[10px] text-zinc-500 font-bold uppercase">Hatalı</span>
+                  <span className="block text-xl font-black text-red-400 mt-1">{enrichStatus.failed}</span>
+                </div>
+
+                <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3 text-center">
+                  <span className="block text-[10px] text-zinc-500 font-bold uppercase">Toplam</span>
+                  <span className="block text-xl font-black text-white mt-1">{enrichStatus.total}</span>
+                </div>
+              </div>
+
+              <div className="max-h-72 overflow-y-auto rounded-xl border border-zinc-800 bg-zinc-950/60 p-4">
+                <ul className="space-y-2">
+                  {enrichStatus.changes.map((change, index) => (
+                    <li
+                      key={index}
+                      className="text-xs text-zinc-400 border-b border-zinc-800/70 pb-2 last:border-b-0 last:pb-0"
+                    >
+                      {change}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
+
+
+
+
           {/* ─── Manuel Film Düzenleyici ─── */}
           <div className="space-y-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-800 pb-5">
@@ -310,30 +392,28 @@ export default function AdminPage() {
             {/* Filter Mode Buttons */}
             <div className="flex flex-wrap gap-2">
               {([
-                { key: 'all',          label: '🎬 Tümü',               desc: `${movies.length} film` },
-                { key: 'no-poster',    label: '🖼️ Posteri Eksik/Bozuk', desc: `${movies.filter((m) => !m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')).length} film` },
-                { key: 'no-trailer',   label: '▶️ Fragmanı Eksik',      desc: `${movies.filter((m) => !m.trailerYoutubeId).length} film` },
-                { key: 'both-missing', label: '⚠️ İkisi de Eksik',      desc: `${movies.filter((m) => (!m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')) && !m.trailerYoutubeId).length} film` },
+                { key: 'all', label: '🎬 Tümü', desc: `${movies.length} film` },
+                { key: 'no-poster', label: '🖼️ Posteri Eksik/Bozuk', desc: `${movies.filter((m) => !m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')).length} film` },
+                { key: 'no-trailer', label: '▶️ Fragmanı Eksik', desc: `${movies.filter((m) => !m.trailerYoutubeId).length} film` },
+                { key: 'both-missing', label: '⚠️ İkisi de Eksik', desc: `${movies.filter((m) => (!m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')) && !m.trailerYoutubeId).length} film` },
               ] as { key: 'all' | 'no-poster' | 'no-trailer' | 'both-missing'; label: string; desc: string }[]).map(({ key, label, desc }) => (
                 <button
                   key={key}
                   onClick={() => setFilterMode(key)}
-                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl border text-xs font-bold transition-all cursor-pointer ${
-                    filterMode === key
-                      ? key === 'all'
-                        ? 'bg-violet-500/20 border-violet-500/50 text-violet-300'
-                        : key === 'no-poster'
+                  className={`flex items-center gap-2 px-3.5 py-2 rounded-xl border text-xs font-bold transition-all cursor-pointer ${filterMode === key
+                    ? key === 'all'
+                      ? 'bg-violet-500/20 border-violet-500/50 text-violet-300'
+                      : key === 'no-poster'
                         ? 'bg-amber-500/15 border-amber-500/40 text-amber-300'
                         : key === 'no-trailer'
-                        ? 'bg-blue-500/15 border-blue-500/40 text-blue-300'
-                        : 'bg-red-500/15 border-red-500/40 text-red-300'
-                      : 'bg-zinc-900/60 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
-                  }`}
+                          ? 'bg-blue-500/15 border-blue-500/40 text-blue-300'
+                          : 'bg-red-500/15 border-red-500/40 text-red-300'
+                    : 'bg-zinc-900/60 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
+                    }`}
                 >
                   {label}
-                  <span className={`px-1.5 py-0.5 rounded-md text-[10px] font-black ${
-                    filterMode === key ? 'bg-white/10' : 'bg-zinc-800'
-                  }`}>
+                  <span className={`px-1.5 py-0.5 rounded-md text-[10px] font-black ${filterMode === key ? 'bg-white/10' : 'bg-zinc-800'
+                    }`}>
                     {desc}
                   </span>
                 </button>

@@ -12,6 +12,7 @@ interface ProgressState {
   updated: number;
   failed: number;
   status: string;
+  changes?: string[];
 }
 
 export default function EnrichTrailersPage() {
@@ -167,6 +168,26 @@ export default function EnrichTrailersPage() {
               </div>
             </div>
 
+
+            {status.changes && status.changes.length > 0 && (
+              <div className="mt-6 bg-zinc-950/50 border border-zinc-800 rounded-xl p-4 max-h-72 overflow-y-auto">
+                <h3 className="text-sm font-semibold text-zinc-300 mb-3">
+                  Yapılan Değişiklikler
+                </h3>
+
+                <ul className="space-y-2">
+                  {status.changes.map((change, index) => (
+                    <li
+                      key={index}
+                      className="text-xs text-zinc-400 border-b border-zinc-800/60 pb-2 last:border-b-0 last:pb-0"
+                    >
+                      {change}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             <p className="text-zinc-500 text-center text-xs">
               Bu işlem arka planda çalışmaya devam eder. Sayfayı kapatabilir veya kitaplığınızda dolaşmaya devam edebilirsiniz.
             </p>
@@ -199,22 +220,20 @@ export default function EnrichTrailersPage() {
                 <button
                   type="button"
                   onClick={() => setUpdateMode('missing')}
-                  className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-all text-center cursor-pointer ${
-                    updateMode === 'missing'
-                      ? 'bg-red-500/10 border-red-500 text-white shadow-sm'
-                      : 'bg-zinc-900/50 border-zinc-800 text-zinc-400 hover:text-white'
-                  }`}
+                  className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-all text-center cursor-pointer ${updateMode === 'missing'
+                    ? 'bg-red-500/10 border-red-500 text-white shadow-sm'
+                    : 'bg-zinc-900/50 border-zinc-800 text-zinc-400 hover:text-white'
+                    }`}
                 >
                   Sadece Eksik Olanlar
                 </button>
                 <button
                   type="button"
                   onClick={() => setUpdateMode('all')}
-                  className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-all text-center cursor-pointer ${
-                    updateMode === 'all'
-                      ? 'bg-red-500/10 border-red-500 text-white shadow-sm'
-                      : 'bg-zinc-900/50 border-zinc-800 text-zinc-400 hover:text-white'
-                  }`}
+                  className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-all text-center cursor-pointer ${updateMode === 'all'
+                    ? 'bg-red-500/10 border-red-500 text-white shadow-sm'
+                    : 'bg-zinc-900/50 border-zinc-800 text-zinc-400 hover:text-white'
+                    }`}
                 >
                   Tüm Kitaplık (Yeniden Tara)
                 </button>
@@ -229,6 +248,25 @@ export default function EnrichTrailersPage() {
                 <p className="text-zinc-400 text-xs mt-1">
                   Toplam {status.total} taranmamış yapım incelendi. {status.updated} adet fragman başarıyla sisteme kazandırıldı.
                 </p>
+              </div>
+            )}
+
+            {status && status.status === 'Tamamlandı' && status.changes && status.changes.length > 0 && (
+              <div className="bg-zinc-950/50 border border-zinc-800 rounded-xl p-4 max-h-72 overflow-y-auto">
+                <h3 className="text-sm font-semibold text-zinc-300 mb-3">
+                  Son Fragman Değişiklikleri
+                </h3>
+
+                <ul className="space-y-2">
+                  {status.changes.map((change, index) => (
+                    <li
+                      key={index}
+                      className="text-xs text-zinc-400 border-b border-zinc-800/60 pb-2 last:border-b-0 last:pb-0"
+                    >
+                      {change}
+                    </li>
+                  ))}
+                </ul>
               </div>
             )}
 

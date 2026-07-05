@@ -1,0 +1,319 @@
+Toplam film: 1777
+
+Eksik alanı olan film: 52
+
+Kontrol edilen alanlar: poster, genres, plot, country
+
+
+
+1. Beyoglu Beyoglu (1984)
+   IMDb ID: tt1578117
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt1578117
+
+2. Yasaklar (1984)
+   IMDb ID: tt1577122
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt1577122
+
+3. Ask Olsun (1985)
+   IMDb ID: tt1575513
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt1575513
+
+4. Varsayalim Ismail (1986)
+   IMDb ID: tt5887804
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt5887804
+
+5. Güler Misin Aglar Misin? (1988)
+   IMDb ID: tt5887944
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt5887944
+
+6. Deliler (1988)
+   IMDb ID: tt1569372
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt1569372
+
+7. Reklamlar (1988)
+   IMDb ID: tt1578131
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt1578131
+
+8. Dün Bugün (1990)
+   IMDb ID: tt1584919
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt1584919
+
+9. Yaseminname (1994)
+   IMDb ID: tt31961610
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt31961610
+
+10. Doga Icin Cal 1 - Divane Asik Gibi (2009)
+   IMDb ID: tt11574202
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11574202
+
+11. Muhabbet Krali (2009)
+   IMDb ID: tt1589147
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt1589147
+
+12. Doga Icin Cal 2 - Uzun Ince Bir Yoldayim (2010)
+   IMDb ID: tt11629472
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11629472
+
+13. Knight and Day: Story (2010)
+   IMDb ID: tt5304900
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt5304900
+
+14. Doga Icin Cal 3 - Gesi Baglari, Cemberimde Gul Oya, Cayeli'nden Oteye (2011)
+   IMDb ID: tt11637804
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11637804
+
+15. Doga Icin Cal 4 - Selvi Boylum Al Yazmalim, Cicek Abbas, Devlerin Aski (2012)
+   IMDb ID: tt11639918
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11639918
+
+16. Lucky Luke (2012)
+   IMDb ID: tt6419014
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt6419014
+
+17. Doga Icin Cal 5 - Bitlis'te Bes Minare (2013)
+   IMDb ID: tt11640606
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11640606
+
+18. Ketenpere: Dalavere (2026)
+   IMDb ID: tt38974342
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt38974342
+
+19. Doga Icin Cal 6 - Cokertme, Ates Attim Samana(Gimildan) (2015)
+   IMDb ID: tt11650374
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11650374
+
+20. James Bond: World of Espionage (2015)
+   IMDb ID: tt5177694
+   Tür: Video Game
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt5177694
+
+21. Doga Icin Cal 7 - Havada Bulut Yok (Yemen Turkusu) (2016)
+   IMDb ID: tt11664592
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11664592
+
+22. Maigret (2016)
+   IMDb ID: parent_maigret
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/parent_maigret
+
+23. Doga Icin Cal 8 - Hayde (2017)
+   IMDb ID: tt11670042
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11670042
+
+24. Doga Icin Cal 9 - Hey Onbesli (2017)
+   IMDb ID: tt11670060
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11670060
+
+25. Enes Batur Feat. Kaya Giray - Gel Hadi Gel (2018)
+   IMDb ID: tt8688356
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt8688356
+
+26. Enes Batur feat. Kaya Giray: Egilimler (2018)
+   IMDb ID: tt9064032
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt9064032
+
+27. Doga Icin Cal 10 - Iki Keklik, Dere Geliyor Dere (2018)
+   IMDb ID: tt11670068
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11670068
+
+28. Doga Icin Cal 11 - Carsamba'yi Sel Aldi (2019)
+   IMDb ID: tt11670076
+   Tür: Music Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt11670076
+
+29. The Family (2019)
+   IMDb ID: parent_thefamily
+   Tür: TV Series
+   Eksik alanlar: plot, country
+   Admin: /admin/movies/parent_thefamily
+
+30. Basimiz Belaya Girecek (2021)
+   IMDb ID: tt15334854
+   Tür: Short
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt15334854
+
+31. Spoof Trailer: Squid Game Season 2 (2022)
+   IMDb ID: tt24325460
+   Tür: Video
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt24325460
+
+32. Var Bunlar (2022)
+   IMDb ID: parent_varbunlar
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/parent_varbunlar
+
+33. Rosinante (2023)
+   IMDb ID: tt29414950
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt29414950
+
+34. Secret Invasion (2023)
+   IMDb ID: parent_secretinvasion
+   Tür: TV Series
+   Eksik alanlar: plot, country
+   Admin: /admin/movies/parent_secretinvasion
+
+35. Nemlizade (2024)
+   IMDb ID: tt34339057
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt34339057
+
+36. Portrait of a Scandalous Family (2024)
+   IMDb ID: tt34678524
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt34678524
+
+37. Karsilasmalar (2024)
+   IMDb ID: tt33998293
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt33998293
+
+38. Dayi: Bir Adamin Hikayesi 2 (2025)
+   IMDb ID: tt33268102
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt33268102
+
+39. C Takimi 2 (2025)
+   IMDb ID: tt32992562
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt32992562
+
+40. Temiz Para (2026)
+   IMDb ID: tt38794271
+   Tür: TV Series
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt38794271
+
+41. Parmaksiz Salih (1968)
+   IMDb ID: tt0345772
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0345772
+
+42. Paydos (1968)
+   IMDb ID: tt0347754
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0347754
+
+43. Kanli Nigar (1968)
+   IMDb ID: tt0211455
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0211455
+
+44. Alnimin kara yazisi (1968)
+   IMDb ID: tt0344811
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0344811
+
+45. Aysecik: Cimcime Hanim (1964)
+   IMDb ID: tt0208705
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0208705
+
+46. Turist Ömer: Dümenciler Krali (1965)
+   IMDb ID: tt0413401
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0413401
+
+47. Agora meyhanesi (1968)
+   IMDb ID: tt0344799
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0344799
+
+48. Kirmizi fener sokagi (1968)
+   IMDb ID: tt0256132
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0256132
+
+49. Vagabond (1967)
+   IMDb ID: tt0431387
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0431387
+
+50. Gariban (1966)
+   IMDb ID: tt0416762
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0416762
+
+51. Berdus milyoner (1965)
+   IMDb ID: tt0405759
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0405759
+
+52. Serseri (1967)
+   IMDb ID: tt0429681
+   Tür: Movie
+   Eksik alanlar: plot
+   Admin: /admin/movies/tt0429681

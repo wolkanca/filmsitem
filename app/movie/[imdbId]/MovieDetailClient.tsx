@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -50,6 +50,10 @@ export default function MovieDetailClient({
   // Client-side random selection.
   // Server sends a relevant pool of up to 12 similar movies; this displays 4 of them randomly.
   const [randomSimilarMovies, setRandomSimilarMovies] = useState<Movie[]>([]);
+
+
+  const overviewContentRef = useRef<HTMLDivElement | null>(null);
+  const [isOverviewOverflowing, setIsOverviewOverflowing] = useState(false);
 
   useEffect(() => {
     if (!similarMovies || similarMovies.length === 0) {
@@ -114,6 +118,20 @@ export default function MovieDetailClient({
     });
     return count > 0 ? parseFloat((total / count).toFixed(1)) : 0;
   }, [movie]);
+
+  useEffect(() => {
+    const checkOverflow = () => {
+      const el = overviewContentRef.current;
+      if (!el) return;
+
+      setIsOverviewOverflowing(el.scrollHeight > 160);
+    };
+
+    checkOverflow();
+    window.addEventListener('resize', checkOverflow);
+
+    return () => window.removeEventListener('resize', checkOverflow);
+  }, [movie.overview, movie.plot, movie.plotTr]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -420,7 +438,8 @@ export default function MovieDetailClient({
             </h2>
 
             <div
-              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded ? 'max-h-none' : 'max-h-[160px]'
+              ref={overviewContentRef}
+              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[160px]'
                 }`}
             >
               <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
@@ -432,12 +451,12 @@ export default function MovieDetailClient({
                 </p>
               )}
 
-              {!isOverviewExpanded && (
+              {!isOverviewExpanded && isOverviewOverflowing && (
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#080c14] to-transparent" />
               )}
             </div>
 
-            {movie.plot && (
+            {isOverviewOverflowing && (
               <button
                 type="button"
                 onClick={() => setIsOverviewExpanded((prev) => !prev)}
