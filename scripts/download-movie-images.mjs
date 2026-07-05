@@ -3,7 +3,7 @@ import path from "path";
 
 const INPUT_PATH = "./data/movies.json";
 const OUTPUT_DIR = "./public/images/movies";
-const DELAY_MS = 300;
+const DELAY_MS = 1300;
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -45,33 +45,32 @@ async function downloadImage(url, filePath) {
     await fs.writeFile(filePath, Buffer.from(arrayBuffer));
 }
 
-async function processImage(movie, field) {
-    const url = movie[field];
+async function processPoster(movie) {
+    const url = movie.poster;
 
-    if (!isRemoteUrl(url)) return false;
+    if (!isRemoteUrl(url)) return null;
 
     const ext = getExtFromUrl(url);
     const id = movie.imdbId || safeName(movie.title);
-    const fileName = `${id}-${field}${ext}`;
+    const fileName = `${id}-poster${ext}`;
     const filePath = path.join(OUTPUT_DIR, fileName);
     const publicPath = `/images/movies/${fileName}`;
 
     try {
         await fs.access(filePath);
-        movie[field] = publicPath;
         console.log(`Zaten var: ${fileName}`);
-        return true;
+        return publicPath;
     } catch {
-        console.log(`İndiriliyor: ${movie.title} - ${field}`);
+        console.log(`İndiriliyor: ${movie.title} - poster`);
     }
 
     await downloadImage(url, filePath);
 
-    movie[field] = publicPath;
     console.log(`Kaydedildi: ${fileName}`);
 
     await wait(DELAY_MS);
-    return true;
+
+    return publicPath;
 }
 
 async function main() {
@@ -80,16 +79,14 @@ async function main() {
     const raw = await fs.readFile(INPUT_PATH, "utf8");
     const movies = JSON.parse(raw);
 
-    let changedCount = 0;
+    const posterUpdates = new Map();
 
     for (const movie of movies) {
         try {
-            const posterChanged = await processImage(movie, "poster");
-            const backdropChanged = await processImage(movie, "backdrop");
+            const localPosterPath = await processPoster(movie);
 
-            if (posterChanged || backdropChanged) {
-                changedCount++;
-                await fs.writeFile(INPUT_PATH, JSON.stringify(movies, null, 2), "utf8");
+            if (localPosterPath) {
+                posterUpdates.set(movie.imdbId, localPosterPath);
             }
         } catch (error) {
             console.error(`Hata: ${movie.title} (${movie.imdbId})`);
@@ -97,9 +94,15 @@ async function main() {
         }
     }
 
+    for (const movie of movies) {
+        if (posterUpdates.has(movie.imdbId)) {
+            movie.poster = posterUpdates.get(movie.imdbId);
+        }
+    }
+
     await fs.writeFile(INPUT_PATH, JSON.stringify(movies, null, 2), "utf8");
 
-    console.log(`Bitti. Güncellenen film sayısı: ${changedCount}`);
+    console.log(`Bitti. Güncellenen poster sayısı: ${posterUpdates.size}`);
 }
 
 main();
