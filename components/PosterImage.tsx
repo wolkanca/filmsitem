@@ -55,7 +55,8 @@ export default function PosterImage({
     ? `https://img.youtube.com/vi/${trailerYoutubeId}/hqdefault.jpg`
     : src;
 
-  const safeSrc = isPlaceholderUrl(initialSrc) ? null : initialSrc;
+  const safeSrc: string | null =
+    !initialSrc || isPlaceholderUrl(initialSrc) ? null : initialSrc;
 
   const [imgSrc, setImgSrc] = useState<string | null>(safeSrc);
   const [triedYoutube, setTriedYoutube] = useState(!!shouldUseYoutubeDirect);
@@ -71,7 +72,7 @@ export default function PosterImage({
       setTriedYoutube(true);
       setIsYoutubeFallback(true);
     } else {
-      setImgSrc(isPlaceholderUrl(src) ? null : src);
+      setImgSrc(!src || isPlaceholderUrl(src) ? null : src);
       setTriedYoutube(false);
       setIsYoutubeFallback(false);
     }
