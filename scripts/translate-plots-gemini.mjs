@@ -1,10 +1,11 @@
 import fs from "fs/promises";
 import { GoogleGenAI } from "@google/genai";
 
-const GEMINI_API_KEY = "AIzaSyA5l8T30OSXofhdUumnpkUOZIKTbuOp7QM";
+//const GEMINI_API_KEY = "AIzaSyA5l8T30OSXofhdUumnpkUOZIKTbuOp7QM";
+const GEMINI_API_KEY = "AIzaSyBK9NRprrNK3KfSH1urtg82qSKiEmAZCTc";
 const INPUT_PATH = "./data/movies.json";
-const BATCH_SIZE = 10;
-const DELAY_MS = 1500;
+const BATCH_SIZE = 20;
+const DELAY_MS = 5000;
 
 if (!GEMINI_API_KEY) {
     console.error("GEMINI_API_KEY eksik.");
