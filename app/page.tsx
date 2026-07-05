@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
 
-export const revalidate = 36000; // Revalidate every hour (ISR)
+export const revalidate = 86400; // Revalidate every day (ISR)
 
 export default async function HomePage() {
   const movies = await getMovies();
@@ -17,11 +17,8 @@ export default async function HomePage() {
   // Sorting movies for sections
   const recentlyAdded = movies.slice(-8).reverse();
 
-  const PLACEHOLDER_PATTERNS = ['images.unsplash.com', 'unsplash.com/photo', 'via.placeholder.com', 'placehold.co', 'placeholder.com', 'dummyimage.com'];
-  const hasRealPoster = (url?: string) => !!url && !PLACEHOLDER_PATTERNS.some(p => url.includes(p));
-
-  // Başyapıtlar havuzu: puan >= 8 ve gerçek posteri olan filmler
-  const masterpieces = [...movies].filter(m => m.myRating >= 8 && hasRealPoster(m.poster));
+  // Başyapıtlar havuzu: puan >= 8 olan filmler
+  const masterpieces = [...movies].filter(m => m.myRating >= 10);
   // Fisher-Yates shuffle → rastgele 5 seç
   for (let i = masterpieces.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -31,13 +28,13 @@ export default async function HomePage() {
 
   // Keşfedilmemiş Hazineler: Benim yüksek puan verip IMDb'de düşük kalan filmler
   const hiddenGemsPool = [...movies].filter(
-    m => m.myRating >= 7 && m.imdbRating > 0 && m.imdbRating <= 6.5 && (m.myRating - m.imdbRating) >= 2 && hasRealPoster(m.poster)
+    m => m.myRating >= 6 && m.imdbRating > 0 && m.imdbRating <= 5.5 && (m.myRating - m.imdbRating) >= 2
   );
   // Havuz küçükse kriterleri biraz gevşet
   const hiddenGemsPoolFallback = hiddenGemsPool.length >= 5
     ? hiddenGemsPool
     : [...movies].filter(
-      m => m.myRating > 0 && m.imdbRating > 0 && (m.myRating - m.imdbRating) >= 1.5 && hasRealPoster(m.poster)
+      m => m.myRating > 0 && m.imdbRating > 0 && (m.myRating - m.imdbRating) >= 1.5
     );
   const gemsSource = hiddenGemsPoolFallback.length >= 5 ? hiddenGemsPoolFallback : hiddenGemsPool;
   // Fisher-Yates shuffle → rastgele 5 seç
@@ -50,13 +47,13 @@ export default async function HomePage() {
   // Pick a single featured banner movie from high-rated ones (preferring those with trailers)
 
   // 1. Öne çıkan film için bir havuz oluştur
-  // Kesin kriter: Hem gerçek posteri hem de fragmanı olan filmler
-  // Öncelik sırası: Puanı >= 8 + poster + fragman → Puanı >= 7 + poster + fragman → poster + fragman olan herhangi bir film → tüm filmler
-  const withPosterAndTrailer = (m: typeof movies[number]) => hasRealPoster(m.poster) && !!m.trailerYoutubeId;
+  // Kesin kriter: fragmanı olan filmler
+  // Öncelik sırası: Puanı >= 8 + fragman → Puanı >= 7 + fragman → fragman olan herhangi bir film → tüm filmler
+  const withTrailer = (m: typeof movies[number]) => !!m.trailerYoutubeId;
   const onlyCinema = (m: typeof movies[number]) => m.type === 'Movie';
-  const highRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 8 && withPosterAndTrailer(m));
-  const midRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 7 && withPosterAndTrailer(m));
-  const anyWithBoth = movies.filter(m => onlyCinema(m) && withPosterAndTrailer(m));
+  const highRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 8 && withTrailer(m));
+  const midRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 7 && withTrailer(m));
+  const anyWithBoth = movies.filter(m => onlyCinema(m) && withTrailer(m));
   const anyCinema = movies.filter(m => onlyCinema(m));
   const featuredPool = highRatedWithBoth.length > 0
     ? highRatedWithBoth
@@ -69,17 +66,17 @@ export default async function HomePage() {
           : movies;
 
   // 2. Bugünün benzersiz gün numarasını hesapla (1 Ocak 1970'ten bu yana geçen toplam gün)
-  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24));
+  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 15;
 
   // 3. Havuzdaki film sayısına göre modulo (%) alarak bugünün filmini seç
   // Bu sayede indeks her gün 1 artar ve liste bitince başa döner.
   const featuredMovie = featuredPool[currentDay % featuredPool.length];
 
-  // 4. Günün rastgele film önerileri için 5 benzersiz film seç
+  // 4. Günün rastgele film önerileri için 7 benzersiz film seç
   const featuredMovies = [];
   if (featuredPool.length > 0) {
     const uniqueIndices = new Set<number>();
-    const countToPick = Math.min(5, featuredPool.length); // Slider still shows 5
+    const countToPick = Math.min(7, featuredPool.length); // Slider still shows 7
     let offset = 0;
     while (uniqueIndices.size < countToPick) {
       const idx = (currentDay + offset) % featuredPool.length;
@@ -284,7 +281,7 @@ export default async function HomePage() {
       <section className="space-y-6">
         <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <span>👑</span> Başyapıtlarım (En Yüksek Puanlılar)
+            <span>👑</span> Başyapıtlarım
           </h2>
           <Link href="/favorites" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
             Tümünü Gör <ArrowRight className="w-3 h-3" />
