@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   ]
     .filter(Boolean)
     .join(' ')
-    .slice(0, 157)
+    .slice(0, 250)
     .trimEnd() + '...';
 
   return {

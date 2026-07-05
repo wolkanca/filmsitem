@@ -22,22 +22,6 @@ export const metadata: Metadata = {
   },
   description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
   authors: [{ name: 'Volkan Yılmaz' }],
-  other: {
-    'dns-prefetch': [
-      'https://m.media-amazon.com',
-      'https://www.imdb.com',
-      'https://images.unsplash.com',
-      'https://cdn.jsdelivr.net',
-      'https://fonts.googleapis.com',
-      'https://fonts.gstatic.com',
-      'https://www.youtube.com',
-      'https://www.youtube-nocookie.com',
-      'https://i.ytimg.com',
-      'https://s.ytimg.com',
-      'https://img.youtube.com',
-      'https://lh3.googleusercontent.com',
-    ],
-  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
