@@ -5,6 +5,7 @@ const GEMINI_API_KEYS = [
     "AIzaSyA5l8T30OSXofhdUumnpkUOZIKTbuOp7QM",
     "AIzaSyBK9NRprrNK3KfSH1urtg82qSKiEmAZCTc",
     "AIzaSyBTtm65n_qwuVXllkfwxnfInCCVpBhdDYg",
+    "AIzaSyD7roLwD-tn_S0ocMp1YOFY9cBolIX9NDI",
 ].filter(Boolean);
 
 const INPUT_PATH = "./data/movies.json";
