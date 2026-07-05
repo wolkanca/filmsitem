@@ -29,23 +29,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const moviePlot = movie.plotTr || movie.plot || '';
-  const metaDescription =
-    movie.overview ||
-    `${movie.title} (${movie.year}) filmine ait detaylar.${moviePlot ? ` Konu: ${moviePlot}` : ''}`;
+  const metaDescription = [
+    movie.overview,
+    moviePlot ? `Konu: ${moviePlot}` : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .slice(0, 157)
+    .trimEnd() + '...';
 
   return {
     title: `${movie.title} (${movie.year})`,
     description: metaDescription,
     openGraph: {
       title: `${movie.title} (${movie.year}) - İzlediklerim`,
-      description: movie.overview,
+      description: metaDescription,
       images: movie.poster ? [{ url: movie.poster }] : [],
       type: 'video.movie',
     },
     twitter: {
       card: 'summary_large_image',
       title: `${movie.title} (${movie.year})`,
-      description: movie.overview,
+      description: metaDescription,
       images: movie.poster ? [movie.poster] : [],
     },
     alternates: {
