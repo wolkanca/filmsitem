@@ -1,17 +1,22 @@
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
+
 import fs from 'fs/promises';
 import path from 'path';
 
-// const OMDB_API_KEY = process.env.OMDB_API_KEY;
-// const OMDB_API_KEY = 'b9dc3c69';
-// const OMDB_API_KEY = '859a3a89';
-// const OMDB_API_KEY = 'e1747d32';
-// const OMDB_API_KEY = '7d2a01bd';
-const OMDB_API_KEY = '8231aea7';
+const OMDB_API_KEYS = String(process.env.OMDB_API_KEY || '')
+    .split(',')
+    .map((key) => key.trim())
+    .filter(Boolean);
 
-if (!OMDB_API_KEY) {
-    console.error('OMDB_API_KEY eksik.');
+if (OMDB_API_KEYS.length === 0) {
+    console.error('OMDB_API_KEY eksik. .env.local içine virgülle ayrılmış şekilde ekleyin.');
     process.exit(1);
 }
+
+const BATCH_SIZE = 50;
+const BATCH_DELAY = 5000;
+const REQUEST_DELAY = 500;
 
 const args = process.argv.slice(2);
 
@@ -115,29 +120,82 @@ function findRealImdbIdForParentMovie(parentMovie, allMovies) {
     return match?.imdbId || null;
 }
 
+let currentApiKeyIndex = 0;
+let requestCount = 0;
+
 async function fetchOmdb(imdbId) {
-    const url = `https://www.omdbapi.com/?i=${encodeURIComponent(imdbId)}&plot=full&apikey=${OMDB_API_KEY}`;
+    let lastError;
 
-    const res = await fetch(url);
-    const text = await res.text();
+    for (let i = 0; i < OMDB_API_KEYS.length; i++) {
+        const apiKey = OMDB_API_KEYS[currentApiKeyIndex];
 
-    let data;
+        try {
+            console.log(
+                `[API ${currentApiKeyIndex + 1}/${OMDB_API_KEYS.length}] ${apiKey.slice(0, 4)}**** -> ${imdbId}`
+            );
 
-    try {
-        data = JSON.parse(text);
-    } catch {
-        throw new Error(`OMDb JSON dönmedi: ${text}`);
+            const url = `https://www.omdbapi.com/?i=${encodeURIComponent(imdbId)}&plot=full&apikey=${apiKey}`;
+
+            const res = await fetch(url);
+            const text = await res.text();
+
+            let data;
+
+            try {
+                data = JSON.parse(text);
+            } catch {
+                throw new Error(`OMDb JSON dönmedi: ${text}`);
+            }
+
+            if (!res.ok) {
+                throw new Error(`OMDb hata: ${res.status} - ${data?.Error || text}`);
+            }
+
+            // API limiti dolmuşsa sonraki key'e geç
+            if (
+                data.Response === 'False' &&
+                (
+                    /limit/i.test(data.Error || '') ||
+                    /request/i.test(data.Error || '') ||
+                    /too many/i.test(data.Error || '')
+                )
+            ) {
+                console.log(`⚠️ API limiti doldu. Sonraki key'e geçiliyor...`);
+
+                currentApiKeyIndex = (currentApiKeyIndex + 1) % OMDB_API_KEYS.length;
+                lastError = new Error(data.Error);
+                continue;
+            }
+
+            if (data.Response === 'False') {
+                throw new Error(data.Error || 'OMDb kayıt bulamadı');
+            }
+
+            requestCount++;
+
+            if (requestCount % BATCH_SIZE === 0) {
+                console.log(
+                    `⏳ ${requestCount} istek tamamlandı. ${BATCH_DELAY / 1000} saniye bekleniyor...`
+                );
+
+                await new Promise((resolve) => setTimeout(resolve, BATCH_DELAY));
+            } else {
+                await new Promise((resolve) => setTimeout(resolve, REQUEST_DELAY));
+            }
+
+            return data;
+        } catch (err) {
+            lastError = err;
+
+            console.log(
+                `❌ API ${currentApiKeyIndex + 1} başarısız: ${err.message}`
+            );
+
+            currentApiKeyIndex = (currentApiKeyIndex + 1) % OMDB_API_KEYS.length;
+        }
     }
 
-    if (!res.ok) {
-        throw new Error(`OMDb hata: ${res.status} - ${data?.Error || text}`);
-    }
-
-    if (data.Response === 'False') {
-        throw new Error(data.Error || 'OMDb kayıt bulamadı');
-    }
-
-    return data;
+    throw lastError || new Error('Hiçbir OMDb API anahtarı çalışmadı.');
 }
 
 let updatedCount = 0;
