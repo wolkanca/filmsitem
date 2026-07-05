@@ -16289,7 +16289,7 @@
     "originalTitle": "American Beauty",
     "year": 1999,
     "type": "Movie",
-    "myRating": 3,
+    "myRating": 5,
     "watchDate": "2015-07-29",
     "listName": [],
     "poster": "https://m.media-amazon.com/images/M/MV5BMDI1MDE0OTMtMmI2MS00Yjc2LTg2MTItMWExYTg5NzA1OGUzXkEyXkFqcGc@._V1_SX300.jpg",
@@ -35870,6 +35870,86 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$162,805,434"
+  },
+  {
+    "imdbId": "tt0108778",
+    "title": "Friends",
+    "originalTitle": "Friends",
+    "year": 1994,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-04",
+    "listName": [
+      "Komedi Günlükleri",
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"David Crane, Marta Kauffman\" tarafından yönetilmiş 1994 yapımı bir Romance, Comedy eseridir. IMDb puanı 8.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 22,
+    "cast": [
+      "Jennifer Aniston",
+      "Courteney Cox",
+      "Lisa Kudrow"
+    ],
+    "director": "David Crane, Marta Kauffman",
+    "writers": [
+      "David Crane",
+      "Marta Kauffman"
+    ],
+    "imdbRating": 8.8,
+    "tmdbRating": 8.8,
+    "releaseDate": "1994-09-22",
+    "plot": "Ross Geller, Rachel Green, Monica Geller, Joey Tribbiani, Chandler Bing, and Phoebe Buffay are six twenty-somethings living in New York City. Over the course of 10 years and seasons, these friends go through life lessons, family, love, drama, friendship, and comedy.",
+    "country": "United States",
+    "omdbType": "series",
+    "boxOffice": "",
+    "trailerYoutubeId": "H29XSxoKp80",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "imdbId": "tt0804503",
+    "title": "Mad Men",
+    "originalTitle": "Mad Men",
+    "year": 2007,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-04",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTNjNjc5OWQtYjMxNC00MzEwLWIxM2UtNjU3NzhkNjZmNGI3XkEyXkFqcGc@._V1_.jpg",
+    "overview": "Bu yapım \"Phil Abraham\" tarafından yönetilmiş 2007 yapımı bir Drama eseridir. IMDb puanı 8.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 45,
+    "cast": [
+      "Jon Hamm",
+      "January Jones",
+      "Elisabeth Moss",
+      "Vincent Kartheiser",
+      "Christina Hendricks"
+    ],
+    "director": "Phil Abraham",
+    "writers": [
+      "Matthew Weiner",
+      "Jonathan Igla",
+      "Robin Veith",
+      "Carly Wray"
+    ],
+    "imdbRating": 8.7,
+    "tmdbRating": 8.7,
+    "releaseDate": "2007-07-19",
+    "plot": "The professional and personal lives of those who work in advertising on Madison Avenue - self-coined \"mad men\" - in the 1960s are presented. The stories focus on those at one of the avenue's smaller firms, Sterling Cooper, and its various incarnations over the decade. At the heart of these stories is Donald Draper, the creative genius of the company. That professional creative brilliance belies the fact of a troubled childhood, one that he would rather forget and not let anyone know about except for a select few, but one that shaped who he is as an adult and as an ad man in the need not only to sell products but sell himself to the outside world. His outward confidence also masks many insecurities as evidenced through his many vices, such as excessive smoking, drinking and womanizing - the latter despite being a family man - and how he deals with the aftermath of some of the negative aspects of his life.",
+    "country": "United States",
+    "omdbType": "series",
+    "boxOffice": "",
+    "trailerYoutubeId": "B8b0B2-hvhc",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYTNjNjc5OWQtYjMxNC00MzEwLWIxM2UtNjU3NzhkNjZmNGI3XkEyXkFqcGc@._V1_.jpg"
   },
   {
     "imdbId": "tt1707386",
@@ -68351,86 +68431,6 @@
     "boxOffice": "$340,068,767",
     "trailerYoutubeId": "GYQa5UvwQ8g",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNzllNmRlN2EtMDQyOC00ODJjLTg4OWQtZDNmNGU3YzlkNjc1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-  },
-  {
-    "imdbId": "tt0108778",
-    "title": "Friends",
-    "originalTitle": "Friends",
-    "year": 1994,
-    "type": "TV Series",
-    "myRating": 6,
-    "watchDate": "2026-07-04",
-    "listName": [
-      "Komedi Günlükleri",
-      "Kült Eserler"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "overview": "Bu yapım \"David Crane, Marta Kauffman\" tarafından yönetilmiş 1994 yapımı bir Romance, Comedy eseridir. IMDb puanı 8.8 olarak kaydedilmiştir.",
-    "genres": [
-      "Romance",
-      "Comedy"
-    ],
-    "runtime": 22,
-    "cast": [
-      "Jennifer Aniston",
-      "Courteney Cox",
-      "Lisa Kudrow"
-    ],
-    "director": "David Crane, Marta Kauffman",
-    "writers": [
-      "David Crane",
-      "Marta Kauffman"
-    ],
-    "imdbRating": 8.8,
-    "tmdbRating": 8.8,
-    "releaseDate": "1994-09-22",
-    "plot": "Ross Geller, Rachel Green, Monica Geller, Joey Tribbiani, Chandler Bing, and Phoebe Buffay are six twenty-somethings living in New York City. Over the course of 10 years and seasons, these friends go through life lessons, family, love, drama, friendship, and comedy.",
-    "country": "United States",
-    "omdbType": "series",
-    "boxOffice": "",
-    "trailerYoutubeId": "H29XSxoKp80",
-    "backdrop": "https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-  },
-  {
-    "imdbId": "tt0804503",
-    "title": "Mad Men",
-    "originalTitle": "Mad Men",
-    "year": 2007,
-    "type": "TV Series",
-    "myRating": 7,
-    "watchDate": "2026-07-04",
-    "listName": [
-      "Kült Eserler"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTNjNjc5OWQtYjMxNC00MzEwLWIxM2UtNjU3NzhkNjZmNGI3XkEyXkFqcGc@._V1_.jpg",
-    "overview": "Bu yapım \"Phil Abraham\" tarafından yönetilmiş 2007 yapımı bir Drama eseridir. IMDb puanı 8.7 olarak kaydedilmiştir.",
-    "genres": [
-      "Drama"
-    ],
-    "runtime": 45,
-    "cast": [
-      "Jon Hamm",
-      "January Jones",
-      "Elisabeth Moss",
-      "Vincent Kartheiser",
-      "Christina Hendricks"
-    ],
-    "director": "Phil Abraham",
-    "writers": [
-      "Matthew Weiner",
-      "Jonathan Igla",
-      "Robin Veith",
-      "Carly Wray"
-    ],
-    "imdbRating": 8.7,
-    "tmdbRating": 8.7,
-    "releaseDate": "2007-07-19",
-    "plot": "The professional and personal lives of those who work in advertising on Madison Avenue - self-coined \"mad men\" - in the 1960s are presented. The stories focus on those at one of the avenue's smaller firms, Sterling Cooper, and its various incarnations over the decade. At the heart of these stories is Donald Draper, the creative genius of the company. That professional creative brilliance belies the fact of a troubled childhood, one that he would rather forget and not let anyone know about except for a select few, but one that shaped who he is as an adult and as an ad man in the need not only to sell products but sell himself to the outside world. His outward confidence also masks many insecurities as evidenced through his many vices, such as excessive smoking, drinking and womanizing - the latter despite being a family man - and how he deals with the aftermath of some of the negative aspects of his life.",
-    "country": "United States",
-    "omdbType": "series",
-    "boxOffice": "",
-    "trailerYoutubeId": "B8b0B2-hvhc",
-    "backdrop": "https://m.media-amazon.com/images/M/MV5BYTNjNjc5OWQtYjMxNC00MzEwLWIxM2UtNjU3NzhkNjZmNGI3XkEyXkFqcGc@._V1_.jpg"
   },
   {
     "imdbId": "tt30825738",
