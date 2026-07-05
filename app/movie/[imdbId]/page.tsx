@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${movie.title} (${movie.year})`,
-    description: movie.overview || `${movie.title} (${movie.year}) filmine ait detaylar. Konu: ${movie.plotTr || movie.plot}`,
+    description: movie.overview || movie.title + " (" + movie.year + ") filmine ait detaylar. Konu: " + movie.plotTr || movie.plot,
     openGraph: {
       title: `${movie.title} (${movie.year}) - İzlediklerim`,
       description: movie.overview,
