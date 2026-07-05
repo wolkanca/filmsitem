@@ -1,19 +1,40 @@
 import fs from "fs/promises";
 import { GoogleGenAI } from "@google/genai";
 
-//const GEMINI_API_KEY = "AIzaSyA5l8T30OSXofhdUumnpkUOZIKTbuOp7QM";
-//const GEMINI_API_KEY = "AIzaSyBK9NRprrNK3KfSH1urtg82qSKiEmAZCTc";
-const GEMINI_API_KEY = "AIzaSyBTtm65n_qwuVXllkfwxnfInCCVpBhdDYg";
+const GEMINI_API_KEYS = [
+    "AIzaSyA5l8T30OSXofhdUumnpkUOZIKTbuOp7QM",
+    "AIzaSyBK9NRprrNK3KfSH1urtg82qSKiEmAZCTc",
+    "AIzaSyBTtm65n_qwuVXllkfwxnfInCCVpBhdDYg",
+].filter(Boolean);
+
 const INPUT_PATH = "./data/movies.json";
 const BATCH_SIZE = 20;
 const DELAY_MS = 5000;
 
-if (!GEMINI_API_KEY) {
-    console.error("GEMINI_API_KEY eksik.");
+let currentKeyIndex = 0;
+
+if (!GEMINI_API_KEYS.length) {
+    console.error("GEMINI_API_KEYS eksik.");
     process.exit(1);
 }
 
-const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+function getAiClient() {
+    return new GoogleGenAI({
+        apiKey: GEMINI_API_KEYS[currentKeyIndex],
+    });
+}
+
+function switchApiKey() {
+    currentKeyIndex++;
+
+    if (currentKeyIndex >= GEMINI_API_KEYS.length) {
+        throw new Error("Tüm Gemini API keyleri denendi ama başarılı olmadı.");
+    }
+
+    console.log(
+        `Yeni Gemini API key seçildi: ${currentKeyIndex + 1}/${GEMINI_API_KEYS.length}`
+    );
+}
 
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -54,17 +75,31 @@ ${JSON.stringify(
     )}
 `;
 
-    const response = await ai.models.generateContent({
-        model: "gemini-2.5-flash",
-        contents: prompt,
-        config: {
-            responseMimeType: "application/json",
-            temperature: 0.2,
-        },
-    });
+    while (currentKeyIndex < GEMINI_API_KEYS.length) {
+        try {
+            const ai = getAiClient();
 
-    const text = cleanJsonText(response.text || "");
-    return JSON.parse(text);
+            const response = await ai.models.generateContent({
+                model: "gemini-2.5-flash",
+                contents: prompt,
+                config: {
+                    responseMimeType: "application/json",
+                    temperature: 0.2,
+                },
+            });
+
+            const text = cleanJsonText(response.text || "");
+            return JSON.parse(text);
+        } catch (error) {
+            console.error(`Gemini key ${currentKeyIndex + 1} hata verdi:`);
+            console.error(error.message);
+
+            switchApiKey();
+            await wait(3000);
+        }
+    }
+
+    throw new Error("Çeviri başarısız: kullanılabilir Gemini API key kalmadı.");
 }
 
 async function main() {
