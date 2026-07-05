@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     template: '%s - İzlediklerim',
   },
   description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
-  keywords: ['film günlüğü', 'sinema arşivi', 'izleme geçmişi', 'film puanları', 'IMDb', 'sinefil', 'volkan yılmaz', 'kişisel sinema günlüğü'],
   authors: [{ name: 'Volkan Yılmaz' }],
   other: {
     'dns-prefetch': [
