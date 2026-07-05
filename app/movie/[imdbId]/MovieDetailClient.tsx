@@ -44,6 +44,9 @@ export default function MovieDetailClient({
   // Admin state
   const [isAdmin, setIsAdmin] = useState(false);
 
+  // Long overview / plot collapse state
+  const [isOverviewExpanded, setIsOverviewExpanded] = useState(false);
+
   // Client-side random selection.
   // Server sends a relevant pool of up to 12 similar movies; this displays 4 of them randomly.
   const [randomSimilarMovies, setRandomSimilarMovies] = useState<Movie[]>([]);
@@ -415,15 +418,33 @@ export default function MovieDetailClient({
             <h2 className="text-xl font-extrabold text-zinc-200">
               {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
             </h2>
-            <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
-              {movie.overview || 'Özet eklenmemiş.'}
-            </p>
-            {movie.plot && (
-              <>
-                <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
+
+            <div
+              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded ? 'max-h-none' : 'max-h-[160px]'
+                }`}
+            >
+              <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
+                {movie.overview || 'Özet eklenmemiş.'}
+              </p>
+              {movie.plot && (
+                <p className="mt-4 text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
                   <strong className="text-white">Konu:</strong> {movie.plotTr || movie.plot}
                 </p>
-              </>
+              )}
+
+              {!isOverviewExpanded && (
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#080c14] to-transparent" />
+              )}
+            </div>
+
+            {movie.plot && (
+              <button
+                type="button"
+                onClick={() => setIsOverviewExpanded((prev) => !prev)}
+                className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-zinc-900/80 px-4 py-2 text-xs font-bold text-zinc-300 transition-all hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
+              >
+                {isOverviewExpanded ? 'Daha Az Göster' : 'Tamamını Göster'}
+              </button>
             )}
           </div>
 
