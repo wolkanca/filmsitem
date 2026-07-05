@@ -31,6 +31,7 @@ export interface Movie {
 
   overview: string;
   plot: string;
+  plotTr?: string;
   country: string;
   omdbType: string;
   boxOffice: string;

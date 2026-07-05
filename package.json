@@ -9,13 +9,13 @@
     "lint": "next lint",
     "import": "node scripts/import.js",
     "enrich-posters": "node scripts/enrich-posters.js"
-
   },
   "dependencies": {
+    "@google/genai": "^2.10.0",
+    "lucide-react": "^0.468.0",
     "next": "^15.3.3",
     "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "lucide-react": "^0.468.0"
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.9",
