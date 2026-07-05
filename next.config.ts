@@ -1,21 +1,28 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  htmlLimitedBots: /.*/,
+  async redirects() {
+    return [
+      {
+        source: "/list/drama",
+        destination: "/genre/Drama",
+        permanent: true,
+      },
+    ];
+  },
+
   images: {
     remotePatterns: [
       {
-        protocol: "http",
-        hostname: "**",
+        protocol: "https",
+        hostname: "m.media-amazon.com",
       },
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "image.tmdb.org",
       },
     ],
   },
-
 };
 
 export default nextConfig;
