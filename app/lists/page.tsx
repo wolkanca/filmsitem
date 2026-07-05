@@ -145,11 +145,6 @@ export default async function ListsPage() {
       filter: (movie) => hasGenre(movie, ['action']),
     },
     {
-      name: 'Dram',
-      description: 'Drama türündeki güçlü hikaye anlatımına sahip yapımlar.',
-      filter: (movie) => hasGenre(movie, ['drama']),
-    },
-    {
       name: '2020 Sonrası',
       description: '2020 ve sonrası çıkan yeni dönem yapımlar.',
       filter: (movie) => getMovieYear(movie) >= 2020,
