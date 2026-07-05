@@ -12,7 +12,7 @@ const adminBaseArg = args
 
 const adminBase = adminBaseArg || '/admin/movies';
 
-const outputDir = './missing-fields-output';
+const outputDir = './scripts';
 const txtOutputPath = path.join(outputDir, 'missing-admin-fields.txt');
 const jsonOutputPath = path.join(outputDir, 'missing-admin-fields.json');
 
