@@ -17,77 +17,109 @@ export default async function HomePage() {
   // Sorting movies for sections
   const recentlyAdded = movies.slice(-8).reverse();
 
-  // Başyapıtlar havuzu: puan >= 8 olan filmler
-  const masterpieces = [...movies].filter(m => m.myRating >= 10 && m.myRating >= 9 && m.type === 'Movie');
-  // Fisher-Yates shuffle → rastgele 5 seç
+  // Başyapıtlar havuzu
+  const masterpieces = [...movies].filter(
+    (m) => m.myRating >= 10 && m.myRating >= 9 && m.type === 'Movie'
+  );
+
+  // Fisher-Yates shuffle → rastgele 8 seç
   for (let i = masterpieces.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [masterpieces[i], masterpieces[j]] = [masterpieces[j], masterpieces[i]];
   }
+
   const highestRated = masterpieces.slice(0, 8);
 
-  // Keşfedilmemiş Hazineler: Benim yüksek puan verip IMDb'de düşük kalan filmler
-  const hiddenGemsPool = [...movies].filter(
-    m => m.myRating >= 7 && m.imdbRating > 0 && m.imdbRating <= 5.5 && (m.myRating - m.imdbRating) >= 2
-      && m.type === 'Movie');
-  // Havuz küçükse kriterleri biraz gevşet
-  const hiddenGemsPoolFallback = hiddenGemsPool.length >= 5
-    ? hiddenGemsPool
-    : [...movies].filter(
-      m => m.myRating > 0 && m.imdbRating > 0 && (m.myRating - m.imdbRating) >= 1.5
-    );
-  const gemsSource = hiddenGemsPoolFallback.length >= 5 ? hiddenGemsPoolFallback : hiddenGemsPool;
-  // Fisher-Yates shuffle → rastgele 5 seç
-  for (let i = gemsSource.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [gemsSource[i], gemsSource[j]] = [gemsSource[j], gemsSource[i]];
-  }
-  const hiddenGems = gemsSource.slice(0, 8);
-
-  // Pick a single featured banner movie from high-rated ones (preferring those with trailers)
-
-  // 1. Öne çıkan film için bir havuz oluştur
-  // Kesin kriter: fragmanı olan filmler
-  // Öncelik sırası: Puanı >= 8 + fragman → Puanı >= 7 + fragman → fragman olan herhangi bir film → tüm filmler
+  // Pick a single featured banner movie from high-rated ones
   const withTrailer = (m: typeof movies[number]) => !!m.trailerYoutubeId;
   const onlyCinema = (m: typeof movies[number]) => m.type === 'Movie';
-  const highRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 8 && withTrailer(m));
-  const midRatedWithBoth = movies.filter(m => onlyCinema(m) && m.myRating >= 7 && withTrailer(m));
-  const anyWithBoth = movies.filter(m => onlyCinema(m) && withTrailer(m));
-  const anyCinema = movies.filter(m => onlyCinema(m));
-  const featuredPool = highRatedWithBoth.length > 0
-    ? highRatedWithBoth
-    : midRatedWithBoth.length > 0
-      ? midRatedWithBoth
-      : anyWithBoth.length > 0
-        ? anyWithBoth
-        : anyCinema.length > 0
-          ? anyCinema
-          : movies;
 
-  // 2. Bugünün benzersiz gün numarasını hesapla (1 Ocak 1970'ten bu yana geçen toplam gün)
+  const highRatedWithBoth = movies.filter((m) => onlyCinema(m) && m.myRating >= 8 && withTrailer(m));
+  const midRatedWithBoth = movies.filter((m) => onlyCinema(m) && m.myRating >= 7 && withTrailer(m));
+  const anyWithBoth = movies.filter((m) => onlyCinema(m) && withTrailer(m));
+  const anyCinema = movies.filter((m) => onlyCinema(m));
+
+  const featuredPool =
+    highRatedWithBoth.length > 0
+      ? highRatedWithBoth
+      : midRatedWithBoth.length > 0
+        ? midRatedWithBoth
+        : anyWithBoth.length > 0
+          ? anyWithBoth
+          : anyCinema.length > 0
+            ? anyCinema
+            : movies;
+
   const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 15;
 
-  // 3. Havuzdaki film sayısına göre modulo (%) alarak bugünün filmini seç
-  // Bu sayede indeks her gün 1 artar ve liste bitince başa döner.
   const featuredMovie = featuredPool[currentDay % featuredPool.length];
 
-  // 4. Günün rastgele film önerileri için 7 benzersiz film seç
+  // Günün rastgele film önerileri için 7 benzersiz film seç
   const featuredMovies = [];
+
   if (featuredPool.length > 0) {
     const uniqueIndices = new Set<number>();
-    const countToPick = Math.min(7, featuredPool.length); // Slider still shows 7
-    let offset = 470;
+    const countToPick = Math.min(7, featuredPool.length);
+    let offset = 70;
+
     while (uniqueIndices.size < countToPick) {
       const idx = (currentDay + offset) % featuredPool.length;
       uniqueIndices.add(idx);
       offset++;
     }
+
     for (const idx of uniqueIndices) {
       featuredMovies.push(featuredPool[idx]);
     }
   }
 
+  // Keşfedilmemiş Hazineler:
+  // Bu bölümde, sayfadaki diğer film section'larında gösterilen filmler tekrar gösterilmez.
+  const usedMovieIds = new Set<string>();
+
+  recentlyAdded.forEach((movie) => {
+    if (movie.imdbId) usedMovieIds.add(movie.imdbId);
+  });
+
+  highestRated.forEach((movie) => {
+    if (movie.imdbId) usedMovieIds.add(movie.imdbId);
+  });
+
+  featuredMovies.forEach((movie) => {
+    if (movie.imdbId) usedMovieIds.add(movie.imdbId);
+  });
+
+  const hiddenGemsPool = [...movies].filter(
+    (m) =>
+      m.myRating >= 6 &&
+      m.imdbRating > 0 &&
+      m.imdbRating <= 5.0 &&
+      m.myRating - m.imdbRating >= 3 &&
+      onlyCinema(m) &&
+      !usedMovieIds.has(m.imdbId)
+  );
+
+  const hiddenGemsPoolFallback =
+    hiddenGemsPool.length >= 5
+      ? hiddenGemsPool
+      : [...movies].filter(
+        (m) =>
+          m.myRating > 0 &&
+          m.imdbRating > 0 &&
+          m.myRating - m.imdbRating >= 1.5 &&
+          onlyCinema(m) &&
+          !usedMovieIds.has(m.imdbId)
+      );
+
+  const gemsSource =
+    hiddenGemsPoolFallback.length >= 5 ? hiddenGemsPoolFallback : hiddenGemsPool;
+
+  for (let i = gemsSource.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [gemsSource[i], gemsSource[j]] = [gemsSource[j], gemsSource[i]];
+  }
+
+  const hiddenGems = gemsSource.slice(0, 8);
 
   return (
     <div className="space-y-12">
@@ -196,7 +228,7 @@ export default async function HomePage() {
               <div className="flex min-h-[112px] flex-col items-center justify-center">
                 <Film className="mb-3 h-7 w-7 text-red-300 drop-shadow-[0_0_14px_rgba(248,113,113,0.55)]" />
                 <span className="text-3xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  <Link href="/stats" >{stats.totalCount}</Link>
+                  <Link href="/stats">{stats.totalCount}</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Toplam İzlenen
@@ -210,7 +242,7 @@ export default async function HomePage() {
               <div className="flex min-h-[112px] flex-col items-center justify-center">
                 <Star className="mb-3 h-7 w-7 text-brand-accent drop-shadow-[0_0_14px_rgba(250,204,21,0.45)]" />
                 <span className="text-3xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  <Link href="/stats" >{stats.averageRating}</Link>
+                  <Link href="/stats">{stats.averageRating}</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Ortalama Puanım
@@ -224,7 +256,7 @@ export default async function HomePage() {
               <div className="flex min-h-[120px] flex-col items-center justify-center">
                 <Clock className="mb-3 h-8 w-8 text-rose-300 drop-shadow-[0_0_16px_rgba(244,63,94,0.55)]" />
                 <span className="text-4xl font-black text-white [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  <Link href="/stats" >{stats.totalRuntimeHours} Saat</Link>
+                  <Link href="/stats">{stats.totalRuntimeHours} Saat</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Toplam İzleme Süresi
@@ -235,7 +267,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* Featured Recommendation Widget (Random Suggestion Card Slider) */}
+      {/* Featured Recommendation Widget */}
       <section className="glass rounded-3xl border border-white/5 p-6 sm:p-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-6">
           <div className="space-y-2">
@@ -302,7 +334,9 @@ export default async function HomePage() {
               <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
                 <span>🌟</span> Keşfedilmemiş Hazineler
               </h2>
-              <p className="text-xs text-zinc-500 mt-1">IMDb&apos;de düşük puanlı ama benim favorilerim olan sürpriz yapımlar</p>
+              <p className="text-xs text-zinc-500 mt-1">
+                IMDb&apos;de düşük puanlı ama benim favorilerim olan sürpriz yapımlar
+              </p>
             </div>
             <Link href="/movies?sort=rating" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
               Tümünü Gör <ArrowRight className="w-3 h-3" />
@@ -341,7 +375,6 @@ export default async function HomePage() {
                 rel="noopener noreferrer"
                 className="group glass rounded-2xl border border-white/5 overflow-hidden hover:border-brand-primary/30 transition-all duration-500 hover:shadow-[0_8px_30px_rgba(239,68,68,0.12)] flex flex-col"
               >
-                {/* Thumbnail */}
                 <div className="relative aspect-square w-full overflow-hidden bg-zinc-900">
                   {post.thumbnail ? (
                     <Image
@@ -354,11 +387,9 @@ export default async function HomePage() {
                   ) : (
                     <div className="w-full h-full flex items-center justify-center text-4xl">📝</div>
                   )}
-                  {/* Gradient overlay at bottom */}
                   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-zinc-950/80 to-transparent" />
                 </div>
 
-                {/* Content */}
                 <div className="p-4 sm:p-5 flex flex-col flex-grow space-y-2.5">
                   <h3 className="text-sm font-extrabold text-zinc-200 group-hover:text-white transition-colors leading-snug line-clamp-2">
                     {post.title}
