@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
 
-export const revalidate = 86400; // Revalidate every day (ISR)
+export const revalidate = 604800; // 7 gün (saniye)
 
 export default async function HomePage() {
   const movies = await getMovies();

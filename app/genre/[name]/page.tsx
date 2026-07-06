@@ -5,6 +5,8 @@ import { ArrowLeft, Film, Clock, Star } from 'lucide-react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
+export const revalidate = 604800; // 7 gün (saniye)
+
 interface Props {
   params: Promise<{ name: string }>;
 }

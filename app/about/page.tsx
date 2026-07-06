@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Film, Star, Heart, Database, ArrowRight } from "lucide-react";
 
-export const revalidate = 86400; // Revalidate every day (ISR)
+export const revalidate = 604800; // 7 gün (saniye)
 
 export const metadata = {
   title: "Hakkında | İzlediklerim",

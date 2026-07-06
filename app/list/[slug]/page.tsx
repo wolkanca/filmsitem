@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { ArrowLeft, List } from 'lucide-react';
 import ListDetailTabs from '@/components/ListDetailTabs';
 
+export const revalidate = 604800; // 7 gün (saniye)
+
 interface Props {
   params: Promise<{ slug: string }>;
 }

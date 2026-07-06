@@ -5,7 +5,7 @@ import { getMovies } from '@/lib/db';
 import { slugify } from '@/lib/utils';
 import { List, Film, ChevronRight } from 'lucide-react';
 
-export const revalidate = 86400; // Revalidate every day (ISR)
+export const revalidate = 604800; // 7 gün (saniye)
 
 export const metadata: Metadata = {
   title: 'Listeler',

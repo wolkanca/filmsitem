@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { getMovies, getMovieById } from '@/lib/db';
 import MovieDetailClient from './MovieDetailClient';
 
+export const revalidate = 604800; // 7 gün (saniye)
 
 interface Props {
   params: Promise<{ imdbId: string }>;
