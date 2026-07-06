@@ -15,14 +15,14 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-10">
         <div className="max-w-3xl">
-          <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-red-600/15">
-            <Film className="h-8 w-8 text-red-500" />
+          <div className="mb-6 flex flex-wrap items-center gap-5">
+            <div className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-red-600/15">
+              <Film className="h-8 w-8 text-red-500" />
+            </div>
+            <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+              Hakkında
+            </h1>
           </div>
-
-          <h1 className="mb-6 text-4xl font-bold tracking-tight text-white md:text-5xl">
-            Hakkında
-          </h1>
-
           <p className="text-lg leading-8 text-zinc-300">
             <strong>İzlediklerim</strong>, yıllardır izlediğim film ve dizileri
             kayıt altına almak, puanlamak ve kendi sinema arşivimi oluşturmak
@@ -35,11 +35,13 @@ export default function AboutPage() {
 
       <section className="mt-10 grid gap-6 md:grid-cols-2">
         <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-6">
-          <Database className="mb-4 h-8 w-8 text-red-500" />
+          <div className="mb-5 flex items-center gap-4">
+            <Database className="h-8 w-8 shrink-0 text-red-500" />
 
-          <h2 className="mb-3 text-xl font-semibold text-white">
-            Neden Bu Site?
-          </h2>
+            <h2 className="text-xl font-semibold text-white">
+              Neden Bu Site?
+            </h2>
+          </div>
 
           <p className="leading-8 text-zinc-300">
             Uzun yıllar boyunca izlediğim filmleri IMDb üzerinde puanladım,
@@ -54,11 +56,12 @@ export default function AboutPage() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-6">
-          <Star className="mb-4 h-8 w-8 text-yellow-400" />
-
-          <h2 className="mb-3 text-xl font-semibold text-white">
-            Puanlar Nasıl Veriliyor?
-          </h2>
+          <div className="mb-5 flex items-center gap-4">
+            <Star className="h-8 w-8 shrink-0 text-yellow-400" />
+            <h2 className="text-xl font-semibold text-white">
+              Puanlar Nasıl Veriliyor?
+            </h2>
+          </div>
 
           <p className="leading-8 text-zinc-300">
             Buradaki tüm puanlar tamamen kişisel görüşümü yansıtır.
@@ -71,11 +74,12 @@ export default function AboutPage() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-6">
-          <Heart className="mb-4 h-8 w-8 text-pink-500" />
-
-          <h2 className="mb-3 text-xl font-semibold text-white">
-            Bu Sitede Neler Var?
-          </h2>
+          <div className="mb-5 flex items-center gap-4">
+            <Heart className="h-8 w-8 shrink-0 text-pink-500" />
+            <h2 className="text-xl font-semibold text-white">
+              Bu Sitede Neler Var?
+            </h2>
+          </div>
 
           <ul className="space-y-3 text-zinc-300">
             <li>• İzlediğim filmler ve diziler</li>
@@ -90,11 +94,12 @@ export default function AboutPage() {
         </div>
 
         <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-6">
-          <Film className="mb-4 h-8 w-8 text-cyan-400" />
-
-          <h2 className="mb-3 text-xl font-semibold text-white">
-            Veriler Nereden Geliyor?
-          </h2>
+          <div className="mb-5 flex items-center gap-4">
+            <Film className="h-8 w-8 shrink-0 text-cyan-400" />
+            <h2 className="text-xl font-semibold text-white">
+              Veriler Nereden Geliyor?
+            </h2>
+          </div>
 
           <p className="leading-8 text-zinc-300">
             Film afişleri, oyuncular, yönetmenler, özetler ve teknik bilgiler
@@ -114,7 +119,7 @@ export default function AboutPage() {
           Kişisel Bir Sinema Günlüğü
         </h2>
 
-        <div className="space-y-6 leading-8 text-zinc-300">
+        <div className="space-y-6 text-zinc-300">
           <p>
             İzlediklerim bir film veritabanı olmaktan çok, yıllar boyunca
             oluşturduğum kişisel sinema geçmişini saklayan dijital bir günlük.
@@ -138,10 +143,10 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <h2 className="mb-6 mt-10 text-3xl font-bold text-white">
+        <h3 className="mb-3 mt-10 text-2xl font-semibold text-white">
           İletişim
-        </h2>
-        <div className="space-y-6 leading-8 text-zinc-300">
+        </h3>
+        <div className="space-y-3 text-zinc-300">
           <p>
             Her türlü görüş, öneri veya geri bildiriminiz için bana <a href="https://wolkanca.com" className="text-red-500">wolkanca.com</a> üzerinden ulaşabilirsiniz.
           </p>
