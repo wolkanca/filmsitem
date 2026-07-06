@@ -127,12 +127,23 @@ function getMoviePages(): SitemapItem[] {
 }
 
 function getListPages(): SitemapItem[] {
-    const listSlugs = uniqueValues(
-        (movies as Movie[]).flatMap((movie) => getArray(movie.lists))
-    );
+    const collectionNames = [
+        'Video Game',
+        'TV Mini Series',
+        'TV Series',
+        'Türk Filmleri',
+        'Animasyon',
+        'Belgeseller',
+        'Korku ve Gerilim',
+        'Aksiyon',
+        '2020 Sonrası',
+        '90lar',
+        '80ler',
+        'Kısa Yapımlar',
+    ];
 
-    return listSlugs.map((slug) => ({
-        loc: `${SITE_URL}/lists/${slugify(slug)}`,
+    return collectionNames.map((name) => ({
+        loc: `${SITE_URL}/list/${slugify(name)}`,
         changefreq: 'weekly',
         priority: 0.7,
     }));
