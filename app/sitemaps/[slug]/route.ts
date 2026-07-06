@@ -140,6 +140,7 @@ function getListPages(): SitemapItem[] {
         '90lar',
         '80ler',
         'Kısa Yapımlar',
+        'Dram',
     ];
 
     return collectionNames.map((name) => ({

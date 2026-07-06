@@ -132,6 +132,11 @@ function getSmartCollections(): SmartCollection[] {
         return runtime > 0 && runtime <= 60;
       },
     },
+    {
+      name: 'Dram',
+      description: 'Dram türündeki duygusal ve etkileyici yapımlar.',
+      filter: (movie) => hasGenre(movie, ['drama']),
+    },
   ];
 }
 
