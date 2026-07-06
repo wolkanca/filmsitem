@@ -7,6 +7,8 @@ import MovieListRow from '@/components/MovieListRow';
 import Link from 'next/link';
 import { Search, SlidersHorizontal, LayoutGrid, List, RotateCcw, Sparkles, Play, Film, Tv, Library } from 'lucide-react';
 
+const PAGE_SIZE = 25;
+
 type TabType = 'all' | 'movie' | 'tv' | 'other';
 
 const TABS: { key: TabType; label: string; icon: React.ReactNode }[] = [
@@ -229,11 +231,11 @@ export default function MoviesPage() {
   }, [tabFilteredMovies, searchQuery, selectedGenre, selectedYear, minMyRating, minImdbRating, sortBy]);
 
   // Infinite scroll/lazy load state
-  const [visibleCount, setVisibleCount] = useState(25);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   // Reset pagination when filters, search, sort or tab change
   useEffect(() => {
-    setVisibleCount(25);
+    setVisibleCount(PAGE_SIZE);
   }, [searchQuery, selectedGenre, selectedYear, minMyRating, minImdbRating, sortBy, activeTab]);
 
   // Load more items on scroll
@@ -244,7 +246,7 @@ export default function MoviesPage() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const clientHeight = window.innerHeight;
       if (scrollHeight - scrollTop - clientHeight < 300) {
-        setVisibleCount((prev) => Math.min(prev + 25, filteredAndSortedMovies.length));
+        setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, filteredAndSortedMovies.length));
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -257,7 +259,7 @@ export default function MoviesPage() {
       const hasScrollbar = document.documentElement.scrollHeight > window.innerHeight;
       if (!hasScrollbar) {
         const timer = setTimeout(() => {
-          setVisibleCount((prev) => Math.min(prev + 25, filteredAndSortedMovies.length));
+          setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, filteredAndSortedMovies.length));
         }, 150);
         return () => clearTimeout(timer);
       }
