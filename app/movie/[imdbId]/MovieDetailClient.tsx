@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDownLeft, Eye, Play, Pencil, X, Check, Loader2 } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDownLeft, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -714,13 +714,14 @@ export default function MovieDetailClient({
             </div>
           </div>
 
-          <div className="mt-6 space-y-6 pt-6">
+          <div className="mt-6 grid grid-cols-1 gap-4 pt-6 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
             <a
               href={whatsappShareUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center bg-zinc-900/80 hover:bg-zinc-800 text-zinc-200 hover:text-white px-4 py-3 rounded-xl text-sm font-bold transition-all"
+              className="flex h-12 items-center justify-center gap-2 rounded-xl bg-zinc-900/80 px-5 text-center text-sm font-bold leading-none text-zinc-200 shadow-[0_10px_25px_rgba(39,39,42,0.35)] transition-all hover:bg-zinc-800 hover:text-white"
             >
+              <Share2 className="h-4 w-4" />
               Paylaş
             </a>
 
@@ -728,8 +729,9 @@ export default function MovieDetailClient({
               href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-xl font-bold hover:opacity-90 transition-opacity w-full shadow-[0_10px_25px_rgba(239,68,68,0.3)]"
+              className="flex h-12 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary px-5 text-center text-sm font-bold leading-none text-white shadow-[0_10px_25px_rgba(239,68,68,0.3)] transition-opacity hover:opacity-90"
             >
+              <Play className="h-4 w-4 fill-white" />
               Filmi İzle
             </a>
           </div>
