@@ -18,7 +18,7 @@ export default async function HomePage() {
   const recentlyAdded = movies.slice(-8).reverse();
 
   // Başyapıtlar havuzu: puan >= 8 olan filmler
-  const masterpieces = [...movies].filter(m => m.myRating >= 10);
+  const masterpieces = [...movies].filter(m => m.myRating >= 10 && m.myRating >= 9 && m.type === 'Movie');
   // Fisher-Yates shuffle → rastgele 5 seç
   for (let i = masterpieces.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -28,8 +28,8 @@ export default async function HomePage() {
 
   // Keşfedilmemiş Hazineler: Benim yüksek puan verip IMDb'de düşük kalan filmler
   const hiddenGemsPool = [...movies].filter(
-    m => m.myRating >= 6 && m.imdbRating > 0 && m.imdbRating <= 5.5 && (m.myRating - m.imdbRating) >= 2
-  );
+    m => m.myRating >= 7 && m.imdbRating > 0 && m.imdbRating <= 5.5 && (m.myRating - m.imdbRating) >= 2
+      && m.type === 'Movie');
   // Havuz küçükse kriterleri biraz gevşet
   const hiddenGemsPoolFallback = hiddenGemsPool.length >= 5
     ? hiddenGemsPool
@@ -77,7 +77,7 @@ export default async function HomePage() {
   if (featuredPool.length > 0) {
     const uniqueIndices = new Set<number>();
     const countToPick = Math.min(7, featuredPool.length); // Slider still shows 7
-    let offset = -30;
+    let offset = 470;
     while (uniqueIndices.size < countToPick) {
       const idx = (currentDay + offset) % featuredPool.length;
       uniqueIndices.add(idx);

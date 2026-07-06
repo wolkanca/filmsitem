@@ -100,7 +100,7 @@ export default async function WriterPage({ params }: Props) {
       </div>
 
       {/* Movie Grid with tabs */}
-      <ArchiveGrid movies={filteredMovies} defaultSort="year-desc" />
+      <ArchiveGrid movies={filteredMovies} defaultSort="watchdate-desc" />
     </div>
   );
 }

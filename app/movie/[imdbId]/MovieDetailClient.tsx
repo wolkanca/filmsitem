@@ -124,6 +124,13 @@ export default function MovieDetailClient({
       const el = overviewContentRef.current;
       if (!el) return;
 
+      // Sadece lg (1024px+) ve üzeri ekranlarda çalışsın
+      if (window.innerWidth < 1024) {
+        setIsOverviewOverflowing(false);
+        setIsOverviewExpanded(true);
+        return;
+      }
+
       setIsOverviewOverflowing(el.scrollHeight > 221);
     };
 

@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getMovies } from '@/lib/db';
 import { slugify } from '@/lib/utils';
-import ArchiveGrid from '@/components/ArchiveGrid';
 import Link from 'next/link';
 import { ArrowLeft, List } from 'lucide-react';
+import ListDetailTabs from '@/components/ListDetailTabs';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -34,7 +34,9 @@ function getMovieCountry(movie: MovieItem) {
 }
 
 function getMovieGenres(movie: MovieItem) {
-  return Array.isArray((movie as any).genres) ? ((movie as any).genres as string[]) : [];
+  return Array.isArray((movie as any).genres)
+    ? ((movie as any).genres as string[])
+    : [];
 }
 
 function getMovieType(movie: MovieItem) {
@@ -70,7 +72,9 @@ function getSmartCollections(): SmartCollection[] {
     {
       name: 'TV Series',
       description: 'Dizi formatındaki tüm izlediğim yapımlar.',
-      filter: (movie) => getMovieType(movie).includes('tv series') || getMovieType(movie) === 'series',
+      filter: (movie) =>
+        getMovieType(movie).includes('tv series') ||
+        getMovieType(movie) === 'series',
     },
     {
       name: 'Türk Filmleri',
@@ -142,17 +146,23 @@ function getManualListNames(movies: MovieItem[]) {
 }
 
 function resolveCollection(slug: string, movies: MovieItem[]) {
-  const manualListName = getManualListNames(movies).find((listName) => slugify(listName) === slug);
+  const manualListName = getManualListNames(movies).find(
+    (listName) => slugify(listName) === slug
+  );
 
   if (manualListName) {
     return {
       name: manualListName,
       description: `"${manualListName}" koleksiyonunda bulunan filmler, diziler, kişisel yorumlarım ve puanlarım.`,
-      movies: movies.filter((movie) => ((movie as any).listName || []).includes(manualListName)),
+      movies: movies.filter((movie) =>
+        ((movie as any).listName || []).includes(manualListName)
+      ),
     };
   }
 
-  const smartCollection = getSmartCollections().find((collection) => slugify(collection.name) === slug);
+  const smartCollection = getSmartCollections().find(
+    (collection) => slugify(collection.name) === slug
+  );
 
   if (smartCollection) {
     return {
@@ -165,7 +175,6 @@ function resolveCollection(slug: string, movies: MovieItem[]) {
   return null;
 }
 
-// Generate static routes for manual and smart lists
 export async function generateStaticParams() {
   const movies = await getMovies();
 
@@ -180,7 +189,6 @@ export async function generateStaticParams() {
   return [...manualParams, ...smartParams];
 }
 
-// Dynamic SEO metadata
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const movies = await getMovies();
@@ -211,7 +219,6 @@ export default async function ListDetailPage({ params }: Props) {
 
   return (
     <div className="space-y-8 animate-fade-in">
-      {/* Navigation and header */}
       <div className="space-y-4">
         <Link
           href="/lists"
@@ -221,22 +228,69 @@ export default async function ListDetailPage({ params }: Props) {
           Koleksiyonlara Dön
         </Link>
 
-        <div className="border-b border-zinc-800 pb-5">
-          <div className="flex items-center gap-2 text-brand-primary">
-            <List className="w-5 h-5" />
-            <span className="text-xs font-extrabold uppercase tracking-wider">Otomatik Koleksiyon</span>
+
+        <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-zinc-950 via-zinc-950 to-red-950/20 p-6 sm:p-8">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+            <div>
+              <div className="flex items-center gap-3 text-brand-primary">
+                <List className="w-7 h-7" />
+                <span className="text-xs font-extrabold uppercase tracking-[0.22em]">
+                  Koleksiyon Arşivi
+                </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl font-black text-white mt-2">
+                {collection.name}
+              </h1>
+
+              <p className="text-zinc-500 text-sm mt-2">
+                Bu koleksiyonda toplam {collection.movies.length} yapım izlediniz.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-3 gap-3">
+              <div className="rounded-xl border border-white/10 bg-black/20 px-5 py-4 text-center min-w-[105px]">
+                <div className="text-[10px] font-black uppercase tracking-wider text-zinc-500">
+                  Yapım Sayısı
+                </div>
+                <div className="mt-2 text-2xl font-black text-white">
+                  {collection.movies.length}
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-white/10 bg-black/20 px-5 py-4 text-center min-w-[105px]">
+                <div className="text-[10px] font-black uppercase tracking-wider text-zinc-500">
+                  Ortalama Puan
+                </div>
+                <div className="mt-2 text-2xl font-black text-brand-accent">
+                  ★{' '}
+                  {(
+                    collection.movies
+                      .filter((m) => m.myRating > 0)
+                      .reduce((acc, m) => acc + m.myRating, 0) /
+                    Math.max(collection.movies.filter((m) => m.myRating > 0).length, 1)
+                  ).toFixed(1)}
+                </div>
+              </div>
+
+              <div className="rounded-xl border border-white/10 bg-black/20 px-5 py-4 text-center min-w-[105px]">
+                <div className="text-[10px] font-black uppercase tracking-wider text-zinc-500">
+                  Toplam Süre
+                </div>
+                <div className="mt-2 text-2xl font-black text-zinc-200">
+                  {Math.round(
+                    collection.movies.reduce((acc, m) => acc + (m.runtime || 0), 0) / 60
+                  )}{' '}
+                  sa
+                </div>
+              </div>
+            </div>
           </div>
-          <h1 className="text-3xl sm:text-4xl font-black text-white mt-1">
-            🗁 {collection.name}
-          </h1>
-          <p className="text-zinc-500 text-sm mt-1">
-            Bu koleksiyonda toplam {collection.movies.length} yapım kayıtlı.
-          </p>
         </div>
+
       </div>
 
-      {/* Movies Grid with sorting + infinite scroll */}
-      <ArchiveGrid movies={collection.movies} flat defaultSort="myrating-desc" />
+      <ListDetailTabs movies={collection.movies} />
     </div>
   );
 }

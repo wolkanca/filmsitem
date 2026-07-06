@@ -1,14 +1,32 @@
 'use client';
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { Film, Tv, ArrowUpDown, Star, Calendar, Eye, ChevronDown, Loader2, LayoutGrid } from 'lucide-react';
+import {
+  Film,
+  Tv,
+  ArrowUpDown,
+  Star,
+  Calendar,
+  Eye,
+  ChevronDown,
+  Loader2,
+  LayoutGrid,
+  Clock,
+} from 'lucide-react';
 import { Movie } from '@/types';
 import MovieCard from '@/components/MovieCard';
-import { Clock } from 'lucide-react';
 
 const PAGE_SIZE = 20;
 
-type SortOption = 'imdb-desc' | 'imdb-asc' | 'myrating-desc' | 'myrating-asc' | 'year-desc' | 'year-asc' | 'watchdate-desc' | 'watchdate-asc';
+type SortOption =
+  | 'imdb-desc'
+  | 'imdb-asc'
+  | 'myrating-desc'
+  | 'myrating-asc'
+  | 'year-desc'
+  | 'year-asc'
+  | 'watchdate-desc'
+  | 'watchdate-asc';
 
 const SORT_OPTIONS: { value: SortOption; label: string; icon: typeof Star }[] = [
   { value: 'imdb-desc', label: 'IMDb Puanı (Yüksek → Düşük)', icon: Star },
@@ -23,6 +41,7 @@ const SORT_OPTIONS: { value: SortOption; label: string; icon: typeof Star }[] = 
 
 function sortMovies(movies: Movie[], sort: SortOption): Movie[] {
   const sorted = [...movies];
+
   switch (sort) {
     case 'imdb-desc':
       return sorted.sort((a, b) => b.imdbRating - a.imdbRating || b.myRating - a.myRating);
@@ -53,7 +72,13 @@ function sortMovies(movies: Movie[], sort: SortOption): Movie[] {
   }
 }
 
-function SortDropdown({ value, onChange }: { value: SortOption; onChange: (v: SortOption) => void }) {
+function SortDropdown({
+  value,
+  onChange,
+}: {
+  value: SortOption;
+  onChange: (v: SortOption) => void;
+}) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -63,11 +88,12 @@ function SortDropdown({ value, onChange }: { value: SortOption; onChange: (v: So
         setOpen(false);
       }
     }
+
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const currentLabel = SORT_OPTIONS.find(o => o.value === value)?.label || '';
+  const currentLabel = SORT_OPTIONS.find((o) => o.value === value)?.label || '';
 
   return (
     <div ref={ref} className="relative">
@@ -78,7 +104,10 @@ function SortDropdown({ value, onChange }: { value: SortOption; onChange: (v: So
         <ArrowUpDown className="w-4 h-4 text-brand-accent shrink-0" />
         <span className="hidden sm:inline truncate max-w-[200px]">{currentLabel}</span>
         <span className="sm:hidden">Sırala</span>
-        <ChevronDown className={`w-3.5 h-3.5 text-zinc-500 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
+        <ChevronDown
+          className={`w-3.5 h-3.5 text-zinc-500 transition-transform duration-200 ${open ? 'rotate-180' : ''
+            }`}
+        />
       </button>
 
       {open && (
@@ -87,16 +116,23 @@ function SortDropdown({ value, onChange }: { value: SortOption; onChange: (v: So
             {SORT_OPTIONS.map((opt) => {
               const isActive = value === opt.value;
               const Icon = opt.icon;
+
               return (
                 <button
                   key={opt.value}
-                  onClick={() => { onChange(opt.value); setOpen(false); }}
+                  onClick={() => {
+                    onChange(opt.value);
+                    setOpen(false);
+                  }}
                   className={`w-full flex items-center gap-2.5 px-3 py-2.5 rounded-lg text-left text-sm transition-all duration-150 ${isActive
                     ? 'bg-brand-primary/15 text-white font-semibold'
                     : 'text-zinc-400 hover:text-white hover:bg-white/5'
                     }`}
                 >
-                  <Icon className={`w-3.5 h-3.5 shrink-0 ${isActive ? 'text-brand-accent' : 'text-zinc-600'}`} />
+                  <Icon
+                    className={`w-3.5 h-3.5 shrink-0 ${isActive ? 'text-brand-accent' : 'text-zinc-600'
+                      }`}
+                  />
                   <span>{opt.label}</span>
                   {isActive && <span className="ml-auto text-brand-accent text-xs">✓</span>}
                 </button>
@@ -111,12 +147,12 @@ function SortDropdown({ value, onChange }: { value: SortOption; onChange: (v: So
 
 function StatsBar({ movies }: { movies: Movie[] }) {
   const ratedMovies = movies.filter((m) => m.myRating > 0);
+
   const avgRating =
     ratedMovies.length > 0
-      ? (
-        ratedMovies.reduce((acc, m) => acc + m.myRating, 0) / ratedMovies.length
-      ).toFixed(1)
+      ? (ratedMovies.reduce((acc, m) => acc + m.myRating, 0) / ratedMovies.length).toFixed(1)
       : 'N/A';
+
   const totalRuntimeHours = Math.round(
     movies.reduce((acc, m) => acc + (m.runtime || 0), 0) / 60
   );
@@ -138,11 +174,8 @@ function StatsBar({ movies }: { movies: Movie[] }) {
 
 interface ArchiveGridProps {
   movies: Movie[];
-  /** If true, skip the Cinema/TV tabs and show a flat grid (used by favorites, list pages) */
   flat?: boolean;
-  /** Default sort option */
   defaultSort?: SortOption;
-  /** localStorage namespace key to persist sort/tab preferences */
   storageKey?: string;
 }
 
@@ -151,7 +184,6 @@ function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption
   const sentinelRef = useRef<HTMLDivElement>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  // Reset visible count when movies or sort changes
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
   }, [movies, sort]);
@@ -162,10 +194,11 @@ function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption
 
   const loadMore = useCallback(() => {
     if (!hasMore || isLoading) return;
+
     setIsLoading(true);
-    // Tiny delay for smooth animation feel
+
     setTimeout(() => {
-      setVisibleCount(prev => Math.min(prev + PAGE_SIZE, sortedMovies.length));
+      setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, sortedMovies.length));
       setIsLoading(false);
     }, 300);
   }, [hasMore, isLoading, sortedMovies.length]);
@@ -194,24 +227,26 @@ function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption
           <div
             key={movie.imdbId}
             className="animate-fade-in"
-            style={{ animationDelay: `${Math.max(0, index - (visibleCount - PAGE_SIZE)) * 40}ms` }}
+            style={{
+              animationDelay: `${Math.max(0, index - (visibleCount - PAGE_SIZE)) * 40}ms`,
+            }}
           >
             <MovieCard movie={movie} />
           </div>
         ))}
       </div>
 
-      {/* Load more sentinel / indicator */}
       {hasMore && (
         <div ref={sentinelRef} className="flex items-center justify-center py-10">
           <div className="flex items-center gap-3 text-zinc-500 text-sm">
             <Loader2 className="w-5 h-5 animate-spin text-brand-primary" />
-            <span>Daha fazla yükleniyor… ({visibleCount} / {sortedMovies.length})</span>
+            <span>
+              Daha fazla yükleniyor… ({visibleCount} / {sortedMovies.length})
+            </span>
           </div>
         </div>
       )}
 
-      {/* Bottom indicator when all loaded */}
       {!hasMore && sortedMovies.length > PAGE_SIZE && (
         <div className="flex items-center justify-center py-8">
           <div className="text-xs text-zinc-600 font-medium bg-zinc-900/50 border border-white/5 px-4 py-2 rounded-full">
@@ -223,16 +258,31 @@ function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption
   );
 }
 
-export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrating-desc', storageKey }: ArchiveGridProps) {
+export default function ArchiveGrid({
+  movies,
+  flat = false,
+  defaultSort = 'watchdate-desc',
+  storageKey,
+}: ArchiveGridProps) {
   const sortStorageKey = storageKey ? `archive-sort-${storageKey}` : null;
   const tabStorageKey = storageKey ? `archive-tab-${storageKey}` : null;
 
-  // Read persisted sort from localStorage (SSR-safe)
   const [sortOption, setSortOptionState] = useState<SortOption>(() => {
     if (typeof window === 'undefined' || !sortStorageKey) return defaultSort;
+
     const saved = localStorage.getItem(sortStorageKey);
-    const valid: SortOption[] = ['imdb-desc', 'imdb-asc', 'myrating-desc', 'myrating-asc', 'year-desc', 'year-asc', 'watchdate-desc', 'watchdate-asc'];
-    return (saved && valid.includes(saved as SortOption)) ? (saved as SortOption) : defaultSort;
+    const valid: SortOption[] = [
+      'imdb-desc',
+      'imdb-asc',
+      'myrating-desc',
+      'myrating-asc',
+      'year-desc',
+      'year-asc',
+      'watchdate-desc',
+      'watchdate-asc',
+    ];
+
+    return saved && valid.includes(saved as SortOption) ? (saved as SortOption) : defaultSort;
   });
 
   const setSortOption = (v: SortOption) => {
@@ -241,6 +291,7 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
   };
 
   const cinemaMovies = movies.filter((m) => m.type === 'Movie');
+
   const tvContent = movies.filter(
     (m) =>
       m.type === 'TV Series' ||
@@ -248,6 +299,7 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
       m.type === 'TV Special' ||
       m.type === 'TV Mini Series'
   );
+
   const otherContent = movies.filter(
     (m) =>
       m.type !== 'Movie' &&
@@ -257,14 +309,16 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
       m.type !== 'TV Mini Series'
   );
 
-  // Determine default tab
   const defaultTab = 'all' as const;
 
-  // Read persisted tab from localStorage (SSR-safe)
   const [activeTab, setActiveTabState] = useState<'all' | 'cinema' | 'tv' | 'other'>(() => {
     if (typeof window === 'undefined' || !tabStorageKey) return defaultTab;
+
     const saved = localStorage.getItem(tabStorageKey);
-    return (saved === 'all' || saved === 'cinema' || saved === 'tv' || saved === 'other') ? saved : defaultTab;
+
+    return saved === 'all' || saved === 'cinema' || saved === 'tv' || saved === 'other'
+      ? saved
+      : defaultTab;
   });
 
   const setActiveTab = (v: 'all' | 'cinema' | 'tv' | 'other') => {
@@ -272,7 +326,6 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
     if (tabStorageKey) localStorage.setItem(tabStorageKey, v);
   };
 
-  // Flat mode: show all movies in one grid
   if (flat) {
     return (
       <div className="space-y-5">
@@ -304,29 +357,39 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
       count: movies.length,
       items: movies,
       color: 'text-zinc-300',
-      activeBg:
-        'bg-gradient-to-r from-zinc-800/60 to-zinc-700/40 border-zinc-600/40 text-white',
+      activeBg: 'bg-gradient-to-r from-zinc-800/60 to-zinc-700/40 border-zinc-600/40 text-white',
     },
-    {
-      id: 'cinema' as const,
-      label: 'Filmler',
-      icon: Film,
-      count: cinemaMovies.length,
-      items: cinemaMovies,
-      color: 'text-brand-primary',
-      activeBg:
-        'bg-gradient-to-r from-red-950/40 to-rose-950/40 border-brand-primary/30 text-white',
-    },
-    {
-      id: 'tv' as const,
-      label: 'Diziler',
-      icon: Tv,
-      count: tvContent.length,
-      items: tvContent,
-      color: 'text-brand-secondary',
-      activeBg:
-        'bg-gradient-to-r from-rose-950/40 to-red-950/40 border-brand-secondary/30 text-white',
-    },
+
+    ...(cinemaMovies.length > 0
+      ? [
+        {
+          id: 'cinema' as const,
+          label: 'Filmler',
+          icon: Film,
+          count: cinemaMovies.length,
+          items: cinemaMovies,
+          color: 'text-brand-primary',
+          activeBg:
+            'bg-gradient-to-r from-red-950/40 to-rose-950/40 border-brand-primary/30 text-white',
+        },
+      ]
+      : []),
+
+    ...(tvContent.length > 0
+      ? [
+        {
+          id: 'tv' as const,
+          label: 'Diziler',
+          icon: Tv,
+          count: tvContent.length,
+          items: tvContent,
+          color: 'text-brand-secondary',
+          activeBg:
+            'bg-gradient-to-r from-rose-950/40 to-red-950/40 border-brand-secondary/30 text-white',
+        },
+      ]
+      : []),
+
     ...(otherContent.length > 0
       ? [
         {
@@ -353,11 +416,11 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
 
   return (
     <div className="space-y-6">
-      {/* Tab Bar + Sort */}
       <div className="flex items-center gap-2 flex-wrap">
         {tabs.map((tab) => {
           const Icon = tab.icon;
           const isActive = activeTab === tab.id;
+
           return (
             <button
               key={tab.id}
@@ -369,10 +432,9 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
             >
               <Icon className={`w-4 h-4 ${isActive ? 'text-current' : tab.color}`} />
               {tab.label}
+
               <span
-                className={`text-xs px-2 py-0.5 rounded-full font-black ${isActive
-                  ? 'bg-white/10 text-white'
-                  : 'bg-zinc-800 text-zinc-400'
+                className={`text-xs px-2 py-0.5 rounded-full font-black ${isActive ? 'bg-white/10 text-white' : 'bg-zinc-800 text-zinc-400'
                   }`}
               >
                 {tab.count}
@@ -381,18 +443,17 @@ export default function ArchiveGrid({ movies, flat = false, defaultSort = 'myrat
           );
         })}
 
-        {/* Sort dropdown + Stats */}
         <div className="ml-auto flex items-center gap-4">
           {activeItems.length > 0 && (
             <div className="hidden lg:block">
               <StatsBar movies={activeItems} />
             </div>
           )}
+
           <SortDropdown value={sortOption} onChange={setSortOption} />
         </div>
       </div>
 
-      {/* Grid */}
       {activeItems.length > 0 ? (
         <InfiniteMovieGrid movies={activeItems} sort={sortOption} />
       ) : (
