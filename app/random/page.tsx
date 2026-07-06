@@ -7,8 +7,6 @@ import { Movie } from '@/types';
 import { getRatingColor } from '@/lib/utils';
 import PosterImage from '@/components/PosterImage';
 
-export const revalidate = 604800; // 7 gün (saniye)
-
 export default function RandomPage() {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [loading, setLoading] = useState(true);
