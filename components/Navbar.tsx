@@ -29,6 +29,7 @@ export default function Navbar() {
     { name: 'Filmler', href: '/movies', icon: Clapperboard },
     { name: 'Listeler', href: '/lists', icon: List },
     { name: 'İstatistik', href: '/stats', icon: BarChart2 },
+    { name: 'Hakkında', href: '/about', icon: BarChart2 },
   ];
 
   return (
