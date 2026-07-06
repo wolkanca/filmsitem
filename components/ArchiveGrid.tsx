@@ -6,7 +6,7 @@ import { Movie } from '@/types';
 import MovieCard from '@/components/MovieCard';
 import { Clock } from 'lucide-react';
 
-const PAGE_SIZE = 15;
+const PAGE_SIZE = 20;
 
 type SortOption = 'imdb-desc' | 'imdb-asc' | 'myrating-desc' | 'myrating-asc' | 'year-desc' | 'year-asc' | 'watchdate-desc' | 'watchdate-asc';
 

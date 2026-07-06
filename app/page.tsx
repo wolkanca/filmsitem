@@ -77,7 +77,7 @@ export default async function HomePage() {
   if (featuredPool.length > 0) {
     const uniqueIndices = new Set<number>();
     const countToPick = Math.min(7, featuredPool.length); // Slider still shows 7
-    let offset = 0;
+    let offset = -30;
     while (uniqueIndices.size < countToPick) {
       const idx = (currentDay + offset) % featuredPool.length;
       uniqueIndices.add(idx);
