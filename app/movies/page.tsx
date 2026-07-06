@@ -229,11 +229,11 @@ export default function MoviesPage() {
   }, [tabFilteredMovies, searchQuery, selectedGenre, selectedYear, minMyRating, minImdbRating, sortBy]);
 
   // Infinite scroll/lazy load state
-  const [visibleCount, setVisibleCount] = useState(20);
+  const [visibleCount, setVisibleCount] = useState(25);
 
   // Reset pagination when filters, search, sort or tab change
   useEffect(() => {
-    setVisibleCount(20);
+    setVisibleCount(25);
   }, [searchQuery, selectedGenre, selectedYear, minMyRating, minImdbRating, sortBy, activeTab]);
 
   // Load more items on scroll
@@ -244,7 +244,7 @@ export default function MoviesPage() {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const clientHeight = window.innerHeight;
       if (scrollHeight - scrollTop - clientHeight < 300) {
-        setVisibleCount((prev) => Math.min(prev + 20, filteredAndSortedMovies.length));
+        setVisibleCount((prev) => Math.min(prev + 25, filteredAndSortedMovies.length));
       }
     };
     window.addEventListener('scroll', handleScroll);
@@ -257,7 +257,7 @@ export default function MoviesPage() {
       const hasScrollbar = document.documentElement.scrollHeight > window.innerHeight;
       if (!hasScrollbar) {
         const timer = setTimeout(() => {
-          setVisibleCount((prev) => Math.min(prev + 20, filteredAndSortedMovies.length));
+          setVisibleCount((prev) => Math.min(prev + 25, filteredAndSortedMovies.length));
         }, 150);
         return () => clearTimeout(timer);
       }
