@@ -185,14 +185,6 @@ export default function AboutPage() {
           <ArrowRight size={18} />
         </Link>
       </section>
-
-      {/* Netlify Forms algılaması için gizli form */}
-      <form name="contact" data-netlify="true" hidden>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <input type="text" name="subject" />
-        <textarea name="message"></textarea>
-      </form>
     </main>
   );
 }
