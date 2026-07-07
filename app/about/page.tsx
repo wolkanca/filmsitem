@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Film, Star, Heart, Database, ArrowRight } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export const revalidate = 604800; // 7 gün (saniye)
 
@@ -31,8 +32,38 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Cards */}
+      {/* Story */}
+      <section className="mt-12 rounded-3xl border border-white/10 bg-zinc-900/40 p-8">
+        <h2 className="mb-6 text-3xl font-bold text-white">
+          Kişisel Bir Sinema Günlüğü
+        </h2>
 
+        <div className="space-y-6 text-zinc-300">
+          <p>
+            İzlediklerim bir film veritabanı olmaktan çok, yıllar boyunca
+            oluşturduğum kişisel sinema geçmişini saklayan dijital bir günlük.
+          </p>
+
+          <p>
+            Burada yer alan her puan, her favori ve her liste zaman içinde
+            oluşmuş gerçek izleme alışkanlıklarımı yansıtıyor.
+          </p>
+
+          <p>
+            Amacım yalnızca film listelemek değil; yıllar sonra dönüp
+            baktığımda hangi filmi ne zaman izlediğimi, nasıl değerlendirdiğimi
+            ve sinema zevkimin nasıl değiştiğini görebileceğim kalıcı bir arşiv
+            oluşturmak.
+          </p>
+
+          <p>
+            Site sürekli geliştiriliyor. Yeni özellikler eklenmeye ve koleksiyon
+            büyümeye devam ediyor.
+          </p>
+        </div>
+      </section>
+
+      {/* Cards */}
       <section className="mt-10 grid gap-6 md:grid-cols-2">
         <div className="rounded-2xl border border-white/10 bg-zinc-900/60 p-6">
           <div className="mb-5 flex items-center gap-4">
@@ -112,45 +143,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Story */}
-
       <section className="mt-12 rounded-3xl border border-white/10 bg-zinc-900/40 p-8">
         <h2 className="mb-6 text-3xl font-bold text-white">
-          Kişisel Bir Sinema Günlüğü
+          İletişim
         </h2>
 
-        <div className="space-y-6 text-zinc-300">
-          <p>
-            İzlediklerim bir film veritabanı olmaktan çok, yıllar boyunca
-            oluşturduğum kişisel sinema geçmişini saklayan dijital bir günlük.
-          </p>
-
-          <p>
-            Burada yer alan her puan, her favori ve her liste zaman içinde
-            oluşmuş gerçek izleme alışkanlıklarımı yansıtıyor.
-          </p>
-
-          <p>
-            Amacım yalnızca film listelemek değil; yıllar sonra dönüp
-            baktığımda hangi filmi ne zaman izlediğimi, nasıl değerlendirdiğimi
-            ve sinema zevkimin nasıl değiştiğini görebileceğim kalıcı bir arşiv
-            oluşturmak.
-          </p>
-
-          <p>
-            Site sürekli geliştiriliyor. Yeni özellikler eklenmeye ve koleksiyon
-            büyümeye devam ediyor.
-          </p>
-        </div>
-
-        <h3 className="mb-3 mt-10 text-2xl font-semibold text-white">
-          İletişim
-        </h3>
-        <div className="space-y-3 text-zinc-300">
-          <p>
-            Her türlü görüş, öneri veya geri bildiriminiz için bana <a href="https://wolkanca.com" className="text-red-500">wolkanca.com</a> üzerinden ulaşabilirsiniz.
-          </p>
-
+        <div className="mt-12 border-t border-white/5 pt-10">
+          <div className="grid gap-8 md:grid-cols-2 items-start">
+            <div className="space-y-4 text-zinc-300">
+              <p className="leading-relaxed">
+                Site hakkında görüş, öneri, hata bildirimi veya herhangi bir sinema sohbeti için yandaki formu kullanarak bana doğrudan mesaj gönderebilirsiniz.
+              </p>
+              <p className="leading-relaxed">
+                Ayrıca her türlü görüş, öneri veya geri bildiriminiz için bana <a href="https://wolkanca.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline decoration-red-500/30 underline-offset-4 transition">wolkanca.com</a> üzerinden de ulaşabilirsiniz.
+              </p>
+            </div>
+            <div>
+              <ContactForm />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -174,6 +185,14 @@ export default function AboutPage() {
           <ArrowRight size={18} />
         </Link>
       </section>
+
+      {/* Netlify Forms algılaması için gizli form */}
+      <form name="contact" data-netlify="true" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="text" name="subject" />
+        <textarea name="message"></textarea>
+      </form>
     </main>
   );
 }

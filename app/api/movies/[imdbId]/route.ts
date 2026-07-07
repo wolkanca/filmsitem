@@ -21,12 +21,47 @@ export async function PATCH(
     const { imdbId } = await params;
     const body = await req.json();
 
-    const allowedFields = ['poster', 'backdrop', 'trailerYoutubeId'];
-    const updates: Record<string, string> = {};
-    for (const field of allowedFields) {
-      if (field in body && typeof body[field] === 'string') {
-        updates[field] = body[field];
+    const stringFields = [
+      'title', 'originalTitle', 'type', 'watchDate', 'poster', 'backdrop',
+      'overview', 'plot', 'plotTr', 'country', 'omdbType', 'boxOffice',
+      'director', 'releaseDate', 'trailerYoutubeId'
+    ];
+    const numberFields = [
+      'year', 'myRating', 'runtime', 'imdbRating', 'tmdbRating'
+    ];
+    const stringArrayFields = [
+      'listName', 'genres', 'cast', 'writers'
+    ];
+
+    const updates: Record<string, any> = {};
+
+    for (const field of stringFields) {
+      if (field in body) {
+        updates[field] = typeof body[field] === 'string' ? body[field] : String(body[field] || '');
       }
+    }
+
+    for (const field of numberFields) {
+      if (field in body) {
+        const num = Number(body[field]);
+        updates[field] = isNaN(num) ? 0 : num;
+      }
+    }
+
+    for (const field of stringArrayFields) {
+      if (field in body) {
+        if (Array.isArray(body[field])) {
+          updates[field] = body[field].map((val: any) => String(val).trim());
+        } else if (typeof body[field] === 'string') {
+          updates[field] = body[field].split(',').map((val: string) => val.trim()).filter((val: string) => val.length > 0);
+        } else {
+          updates[field] = [];
+        }
+      }
+    }
+
+    if ('seasons' in body && Array.isArray(body.seasons)) {
+      updates.seasons = body.seasons;
     }
 
     if (Object.keys(updates).length === 0) {
