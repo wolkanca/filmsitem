@@ -27,7 +27,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full glass border-t border-card-border mt-16 py-10 backdrop-blur-md">
+    <footer className="w-full glass border-t border-card-border mt-8 py-10 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <section className="pb-8 mb-8 border-b border-zinc-800/80">
           <div className="flex flex-col lg:flex-row gap-8 lg:items-start lg:justify-between">
@@ -72,7 +72,7 @@ export default function Footer() {
                 ’den alınmıştır.<br />
                 Afişler, fragmanlar, IMDB verileri ve puanlar TMDB’den, YouTube’dan ise fragmanlar eklenmektedir.
                 <br /><br />
-                Bu site wolkanca.com’un bir parçasıdır, her türlü görüş ve öneri için <a href="https://wolkanca.com" className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" target="_blank" rel="noopener noreferrer">wolkanca.com</a> adresinden bana ulaşabilirsiniz.
+                Bu site wolkanca.com’un bir parçasıdır, her türlü görüş ve öneri için <a href="/about#iletisim" className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" >İletişim</a> sayfasından bana ulaşabilirsiniz.
               </p>
             </div>
           </div>

@@ -10,6 +10,8 @@ export const metadata = {
     "İzlediklerim projesinin hikâyesi, amacı ve kişisel sinema arşivim hakkında bilgiler.",
 };
 
+const email = ["wolkanca", "@", "gmail.com"].join('');
+
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-6xl px-6 py-12">
@@ -144,7 +146,7 @@ export default function AboutPage() {
       </section>
 
       <section className="mt-12 rounded-3xl border border-white/10 bg-zinc-900/40 p-8">
-        <h2 className="mb-6 text-3xl font-bold text-white">
+        <h2 className="mb-6 text-3xl font-bold text-white" id="iletisim">
           İletişim
         </h2>
 
@@ -155,7 +157,13 @@ export default function AboutPage() {
                 Site hakkında görüş, öneri, hata bildirimi veya herhangi bir sinema sohbeti için yandaki formu kullanarak bana doğrudan mesaj gönderebilirsiniz.
               </p>
               <p className="leading-relaxed">
-                Ayrıca her türlü görüş, öneri veya geri bildiriminiz için bana <a href="https://wolkanca.com" target="_blank" rel="noopener noreferrer" className="text-red-500 hover:text-red-400 underline decoration-red-500/30 underline-offset-4 transition">wolkanca.com</a> üzerinden de ulaşabilirsiniz.
+                Ayrıca her türlü görüş, öneri veya geri bildiriminiz için bana <a href="https://wolkanca.com" target="_blank" rel="noopener noreferrer"
+                  className="text-blue-400 hover:text-blue-300 underline decoration-red-500/30 underline-offset-4 transition">wolkanca.com</a> üzerinden <a
+                    href={`mailto:${email}`}
+                    className="text-blue-400 hover:text-blue-300 underline decoration-red-500/30 underline-offset-4 transition"
+                  >
+                  {email}
+                </a> mail adresinden de ulaşabilirsiniz.
               </p>
             </div>
             <div>
