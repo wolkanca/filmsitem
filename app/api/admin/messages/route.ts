@@ -1,8 +1,5 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-
-const MESSAGES_FILE = path.join(process.cwd(), 'data', 'messages.json');
+import { getStore } from '@netlify/blobs';
 
 // Helper to check admin status
 function checkIsAdmin(req: Request): boolean {
@@ -17,22 +14,20 @@ export async function GET(req: Request) {
       return NextResponse.json({ error: 'Yetkisiz erişim.' }, { status: 401 });
     }
 
-    let messages = [];
-    if (fs.existsSync(MESSAGES_FILE)) {
-      try {
-        const fileContent = fs.readFileSync(MESSAGES_FILE, 'utf8');
-        messages = JSON.parse(fileContent);
-        if (!Array.isArray(messages)) {
-          messages = [];
-        }
-      } catch (err) {
-        console.error('messages.json okuma hatası:', err);
-        messages = [];
+    const store = getStore('contact-messages');
+
+    let messages: Array<Record<string, string>> = [];
+    try {
+      const existing = await store.get('messages', { type: 'json' });
+      if (Array.isArray(existing)) {
+        messages = existing;
       }
+    } catch {
+      messages = [];
     }
 
     // Sort by date descending
-    messages.sort((a: any, b: any) => {
+    messages.sort((a, b) => {
       const dateA = new Date(a.createdAt || 0).getTime();
       const dateB = new Date(b.createdAt || 0).getTime();
       return dateB - dateA;
@@ -59,30 +54,26 @@ export async function DELETE(req: Request) {
       return NextResponse.json({ error: 'Mesaj ID (id) parametresi gerekli.' }, { status: 400 });
     }
 
-    if (!fs.existsSync(MESSAGES_FILE)) {
+    const store = getStore('contact-messages');
+
+    let messages: Array<Record<string, string>> = [];
+    try {
+      const existing = await store.get('messages', { type: 'json' });
+      if (Array.isArray(existing)) {
+        messages = existing;
+      }
+    } catch {
       return NextResponse.json({ error: 'Mesaj bulunamadı.' }, { status: 404 });
     }
 
-    let messages = [];
-    try {
-      const fileContent = fs.readFileSync(MESSAGES_FILE, 'utf8');
-      messages = JSON.parse(fileContent);
-      if (!Array.isArray(messages)) {
-        messages = [];
-      }
-    } catch (err) {
-      console.error('messages.json okuma hatası:', err);
-      return NextResponse.json({ error: 'Dosya okunurken bir hata oluştu.' }, { status: 500 });
-    }
-
     const initialLength = messages.length;
-    messages = messages.filter((msg: any) => msg.id !== id);
+    messages = messages.filter((msg) => msg.id !== id);
 
     if (messages.length === initialLength) {
       return NextResponse.json({ error: 'Belirtilen ID ile eşleşen mesaj bulunamadı.' }, { status: 404 });
     }
 
-    fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2), 'utf8');
+    await store.setJSON('messages', messages);
 
     return NextResponse.json({ success: true, message: 'Mesaj başarıyla silindi.' });
   } catch (error) {

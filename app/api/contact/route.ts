@@ -1,9 +1,6 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { getStore } from '@netlify/blobs';
 import crypto from 'crypto';
-
-const MESSAGES_FILE = path.join(process.cwd(), 'data', 'messages.json');
 
 export async function POST(request: Request) {
   try {
@@ -25,19 +22,18 @@ export async function POST(request: Request) {
       );
     }
 
-    // Mevcut mesajları oku
-    let messages = [];
-    if (fs.existsSync(MESSAGES_FILE)) {
-      try {
-        const fileContent = fs.readFileSync(MESSAGES_FILE, 'utf8');
-        messages = JSON.parse(fileContent);
-        if (!Array.isArray(messages)) {
-          messages = [];
-        }
-      } catch (err) {
-        console.error('messages.json okuma hatası:', err);
-        messages = [];
+    const store = getStore('contact-messages');
+
+    // Mevcut mesajlar listesini oku
+    let messages: Array<Record<string, string>> = [];
+    try {
+      const existing = await store.get('messages', { type: 'json' });
+      if (Array.isArray(existing)) {
+        messages = existing;
       }
+    } catch {
+      // İlk mesajsa liste boş olabilir
+      messages = [];
     }
 
     const newMessage = {
@@ -51,13 +47,7 @@ export async function POST(request: Request) {
 
     messages.push(newMessage);
 
-    // data klasörünün varlığını kontrol et
-    const dataDir = path.dirname(MESSAGES_FILE);
-    if (!fs.existsSync(dataDir)) {
-      fs.mkdirSync(dataDir, { recursive: true });
-    }
-
-    fs.writeFileSync(MESSAGES_FILE, JSON.stringify(messages, null, 2), 'utf8');
+    await store.setJSON('messages', messages);
 
     return NextResponse.json({ success: true, message: 'Mesaj başarıyla kaydedildi.' });
   } catch (error) {
