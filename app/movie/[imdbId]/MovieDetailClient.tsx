@@ -220,6 +220,19 @@ export default function MovieDetailClient({
 
   const hasRealPoster = !!livePoster && !isPlaceholderUrl(livePoster);
 
+
+  function formatBoxOffice(value?: string | null) {
+    if (!value || value === 'N/A') return null;
+
+    const number = Number(value.replace(/[^0-9]/g, ''));
+
+    if (number >= 1_000_000_000) return `$${(number / 1_000_000_000).toFixed(1)}B`;
+    if (number >= 1_000_000) return `$${(number / 1_000_000).toFixed(1)}M`;
+    if (number >= 1_000) return `$${(number / 1_000).toFixed(1)}K`;
+
+    return value;
+  }
+
   return (
     <div className="space-y-10 relative">
 
@@ -413,19 +426,19 @@ export default function MovieDetailClient({
 
               {movie.country && (
                 <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  Ülke: <strong className="text-zinc-300">{movie.country}</strong>
+                  Ülke: <strong className="text-zinc-300">{movie.country?.split(",").slice(0, 3).join(", ")}</strong>
                 </span>
               )}
 
               {movie.boxOffice && (
                 <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  Box Office: <strong className="text-zinc-300">{movie.boxOffice}</strong>
+                  Gişe: <strong className="text-zinc-300">{formatBoxOffice(movie.boxOffice)}</strong>
                 </span>
               )}
 
               {movie.releaseDate && (
                 <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  Vizyon Tarihi: <strong className="text-zinc-300">{formatDate(movie.releaseDate)}</strong>
+                  Vizyon: <strong className="text-zinc-300">{formatDate(movie.releaseDate)}</strong>
                 </span>
               )}
             </div>
