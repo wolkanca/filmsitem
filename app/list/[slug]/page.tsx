@@ -137,6 +137,11 @@ function getSmartCollections(): SmartCollection[] {
       description: 'Dram türündeki duygusal ve etkileyici yapımlar.',
       filter: (movie) => hasGenre(movie, ['drama']),
     },
+    {
+      name: 'Müzikal',
+      description: 'Müzikal türündeki film ve dizilerden oluşan renkli arşiv.',
+      filter: (movie) => hasGenre(movie, ['musical', 'music', 'soundtrack']),
+    },
   ];
 }
 
