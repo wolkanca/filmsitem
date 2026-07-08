@@ -92,7 +92,7 @@ export default function ListDetailTabs({ movies }: { movies: Movie[] }) {
                     })}
             </div>
 
-            <ArchiveGrid movies={filteredMovies} flat defaultSort="watchdate-desc" />
+            <ArchiveGrid movies={filteredMovies} flat defaultSort="year-desc" />
         </div>
     );
 }
