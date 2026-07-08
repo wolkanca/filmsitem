@@ -131,7 +131,7 @@ export default function MovieDetailClient({
         return;
       }
 
-      setIsOverviewOverflowing(el.scrollHeight > 221);
+      setIsOverviewOverflowing(el.scrollHeight > 250);
     };
 
     checkOverflow();
@@ -446,7 +446,7 @@ export default function MovieDetailClient({
 
             <div
               ref={overviewContentRef}
-              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[221px]'
+              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[250px]'
                 }`}
             >
               <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
