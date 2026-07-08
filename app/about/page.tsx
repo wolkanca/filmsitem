@@ -119,7 +119,7 @@ export default function AboutPage() {
 
       <section className="mt-12 rounded-3xl border border-white/10 bg-zinc-900/40 p-8">
         <div className="mb-5 flex items-center gap-4">
-          <Info className="h-8 w-8 shrink-0 text-cyan-400" />
+          <Info className="h-8 w-8 shrink-0 text-green-400" />
           <h2 className="text-xl font-semibold text-white" id="iletisim">
             İletişim
           </h2>
