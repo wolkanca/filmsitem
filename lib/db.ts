@@ -223,7 +223,7 @@ export async function getStats(): Promise<Stats> {
   const topDirectors = Object.entries(directorsMap)
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 5);
+    .slice(0, 8);
 
   const favoriteDirector = topDirectors.length > 0 ? topDirectors[0].name : 'N/A';
 
@@ -237,7 +237,7 @@ export async function getStats(): Promise<Stats> {
   const topActors = Object.entries(actorsMap)
     .map(([name, count]) => ({ name, count }))
     .sort((a, b) => b.count - a.count)
-    .slice(0, 5);
+    .slice(0, 8);
 
   const mostWatchedActor = topActors.length > 0 ? topActors[0].name : 'N/A';
 
