@@ -19,38 +19,30 @@ import MovieCard from '@/components/MovieCard';
 const PAGE_SIZE = 25;
 
 type SortOption =
-  | 'imdb-desc'
-  | 'imdb-asc'
-  | 'myrating-desc'
-  | 'myrating-asc'
   | 'year-desc'
   | 'year-asc'
   | 'watchdate-desc'
-  | 'watchdate-asc';
+  | 'watchdate-asc'
+  | 'imdb-desc'
+  | 'imdb-asc'
+  | 'myrating-desc'
+  | 'myrating-asc';
 
 const SORT_OPTIONS: { value: SortOption; label: string; icon: typeof Star }[] = [
-  { value: 'imdb-desc', label: 'IMDb Puanı (Yüksek → Düşük)', icon: Star },
-  { value: 'imdb-asc', label: 'IMDb Puanı (Düşük → Yüksek)', icon: Star },
-  { value: 'myrating-desc', label: 'Benim Puanım (Yüksek → Düşük)', icon: Star },
-  { value: 'myrating-asc', label: 'Benim Puanım (Düşük → Yüksek)', icon: Star },
   { value: 'year-desc', label: 'Yapım Yılı (Yeni → Eski)', icon: Calendar },
   { value: 'year-asc', label: 'Yapım Yılı (Eski → Yeni)', icon: Calendar },
   { value: 'watchdate-desc', label: 'İzlenme Tarihi (Yeni → Eski)', icon: Eye },
   { value: 'watchdate-asc', label: 'İzlenme Tarihi (Eski → Yeni)', icon: Eye },
+  { value: 'imdb-desc', label: 'IMDb Puanı (Yüksek → Düşük)', icon: Star },
+  { value: 'imdb-asc', label: 'IMDb Puanı (Düşük → Yüksek)', icon: Star },
+  { value: 'myrating-desc', label: 'Benim Puanım (Yüksek → Düşük)', icon: Star },
+  { value: 'myrating-asc', label: 'Benim Puanım (Düşük → Yüksek)', icon: Star },
 ];
 
 function sortMovies(movies: Movie[], sort: SortOption): Movie[] {
   const sorted = [...movies];
 
   switch (sort) {
-    case 'imdb-desc':
-      return sorted.sort((a, b) => b.imdbRating - a.imdbRating || b.myRating - a.myRating);
-    case 'imdb-asc':
-      return sorted.sort((a, b) => a.imdbRating - b.imdbRating || a.myRating - b.myRating);
-    case 'myrating-desc':
-      return sorted.sort((a, b) => b.myRating - a.myRating || b.imdbRating - a.imdbRating);
-    case 'myrating-asc':
-      return sorted.sort((a, b) => a.myRating - b.myRating || a.imdbRating - b.imdbRating);
     case 'year-desc':
       return sorted.sort((a, b) => b.year - a.year || b.imdbRating - a.imdbRating);
     case 'year-asc':
@@ -67,6 +59,14 @@ function sortMovies(movies: Movie[], sort: SortOption): Movie[] {
         const dateB = b.watchDate ? new Date(b.watchDate).getTime() : 0;
         return dateA - dateB || a.imdbRating - b.imdbRating;
       });
+    case 'imdb-desc':
+      return sorted.sort((a, b) => b.imdbRating - a.imdbRating || b.myRating - a.myRating);
+    case 'imdb-asc':
+      return sorted.sort((a, b) => a.imdbRating - b.imdbRating || a.myRating - b.myRating);
+    case 'myrating-desc':
+      return sorted.sort((a, b) => b.myRating - a.myRating || b.imdbRating - a.imdbRating);
+    case 'myrating-asc':
+      return sorted.sort((a, b) => a.myRating - b.myRating || a.imdbRating - b.imdbRating);
     default:
       return sorted;
   }

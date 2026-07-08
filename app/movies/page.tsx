@@ -426,11 +426,11 @@ export default function MoviesPage() {
             >
               <option value="watchDate-desc">Son İzlenenler</option>
               <option value="watchDate-asc">İlk İzlenenler</option>
+              <option value="year-desc">Yapım Yılı (Yeni)</option>
+              <option value="year-asc">Yapım Yılı (Eski)</option>
               <option value="myRating-desc">Benim Puanım (Yüksek)</option>
               <option value="myRating-asc">Benim Puanım (Düşük)</option>
               <option value="imdbRating-desc">IMDb Puanı (Yüksek)</option>
-              <option value="year-desc">Yapım Yılı (Yeni)</option>
-              <option value="year-asc">Yapım Yılı (Eski)</option>
               <option value="title-asc">İsim (A-Z)</option>
               <option value="title-desc">İsim (Z-A)</option>
             </select>

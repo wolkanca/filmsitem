@@ -102,7 +102,7 @@ export default async function ActorPage({ params }: Props) {
       </div>
 
       {/* Movie Grid with tabs */}
-      <ArchiveGrid movies={filteredMovies} defaultSort="watchdate-desc" />
+      <ArchiveGrid movies={filteredMovies} defaultSort="year-desc" />
     </div>
   );
 }
