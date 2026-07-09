@@ -140,13 +140,12 @@ export default function AboutPage() {
       {/* Footer */}
 
       <section className="mt-12 rounded-3xl border border-red-500/20 bg-red-500/5 p-8 text-center">
-        <h2 className="mb-4 text-2xl font-bold text-white">
+        <h2 className="mb-4 text-3xl font-bold text-white">
           İyi Seyirler 🍿
         </h2>
 
-        <p className="mx-auto mb-8 max-w-5xl leading-8 text-zinc-300">
-          Umarım bu kişisel arşiv sayesinde yeni filmler keşfeder, benzer
-          yapımlara ulaşır ve sinema dünyasında keyifli vakit geçirirsiniz.
+        <p className="mx-auto mb-8 text-xl max-w-5xl leading-8 text-zinc-300">
+          Umarım bu kişisel arşiv sayesinde yeni filmler keşfeder sinema dünyasında keyifli vakit geçirirsiniz.
         </p>
 
         <Link

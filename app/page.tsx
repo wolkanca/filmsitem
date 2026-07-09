@@ -296,7 +296,7 @@ export default async function HomePage() {
             <span>🔥</span> Son Eklenen Yapımlar
           </h2>
           <Link href="/movies?sort=watchDate" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
-            Tümünü Gör <ArrowRight className="w-3 h-3" />
+            Tümü <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -316,7 +316,7 @@ export default async function HomePage() {
             <span>👑</span> Başyapıtlarım
           </h2>
           <Link href="/favorites" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
-            Tümünü Gör <ArrowRight className="w-3 h-3" />
+            Tümü <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -339,7 +339,7 @@ export default async function HomePage() {
               </p>
             </div>
             <Link href="/movies?sort=rating" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
-              Tümünü Gör <ArrowRight className="w-3 h-3" />
+              Tümü <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -363,7 +363,7 @@ export default async function HomePage() {
               rel="noopener noreferrer"
               className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold transition-colors"
             >
-              Tümünü Gör <ExternalLink className="w-3 h-3" />
+              Tümü <ExternalLink className="w-3 h-3" />
             </a>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
