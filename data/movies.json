@@ -68529,66 +68529,6 @@
     "plotTr": "Genç bir çift olan Salih ve Ayşe, altı yaşındaki hiç konuşmayan oğulları ile birlikte İstanbul'da kentsel dönüşüme girmek üzere olan bir semtte yaşar."
   },
   {
-    "imdbId": "parent_secretinvasion",
-    "title": "Secret Invasion",
-    "originalTitle": "Secret Invasion",
-    "year": 2023,
-    "type": "TV Series",
-    "myRating": 0,
-    "watchDate": "2023-06-25",
-    "listName": [],
-    "poster": "/images/movies/parent_secretinvasion-poster.webp",
-    "overview": "Bu dizi \"Secret Invasion\" başlığı altındaki bölümleri içerir.",
-    "genres": [
-      "Action",
-      "Sci-Fi",
-      "Thriller",
-      "Adventure",
-      "Mystery"
-    ],
-    "runtime": 53,
-    "cast": [
-      "Samuel L. Jackson",
-      "Ben Mendelsohn",
-      "Cobie Smulders"
-    ],
-    "director": "Ali Selim",
-    "writers": [
-      "Kyle Bradstreet",
-      "Brian Tucker",
-      "Jonathan Hirschbein"
-    ],
-    "imdbRating": 7,
-    "tmdbRating": 7,
-    "country": "United States",
-    "seasons": [
-      {
-        "seasonNumber": 1,
-        "episodes": [
-          {
-            "imdbId": "tt13221172",
-            "title": "Secret Invasion: Resurrection",
-            "episodeNumber": 1,
-            "seasonNumber": 1,
-            "myRating": 6,
-            "watchDate": "2023-06-25",
-            "runtime": 53,
-            "imdbRating": 7,
-            "overview": "Bu yapım \"Ali Selim\" tarafından yönetilmiş 2023 yapımı bir Action, Sci-Fi, Thriller, Adventure, Mystery eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
-            "origSeason": 1
-          }
-        ]
-      }
-    ],
-    "trailerYoutubeId": "Tp_YZNqNBhw",
-    "backdrop": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWC1vewQ_42N3tg8_9qvXXQtD3oABFmYF7INSXzZxeCKmajGhwXZLH9SE2&s=10",
-    "plot": "Nick Fury'nin şekil değiştiren uzaylı ırkı Skrull'ların Dünya'yı gizlice ele geçirme planını öğrenmesini ve müttefikleriyle birlikte bu sızmayı durdurmak için verdiği mücadeleyi konu alan altı bölümlük bir Marvel Sinematik Evreni (MCU) dizisidir.",
-    "plotTr": "Nick Fury'nin şekil değiştiren uzaylı ırkı Skrull'ların Dünya'yı gizlice ele geçirme planını öğrenmesini ve müttefikleriyle birlikte bu sızmayı durdurmak için verdiği mücadeleyi konu alan altı bölümlük bir Marvel Sinematik Evreni (MCU) dizisidir.",
-    "omdbType": "",
-    "boxOffice": "",
-    "releaseDate": "2023-6-1"
-  },
-  {
     "imdbId": "tt15314262",
     "title": "The Beekeeper",
     "originalTitle": "The Beekeeper",

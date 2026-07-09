@@ -24,8 +24,6 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
     topDirectors,
     topActors,
     typeBreakdown,
-    decadeDistribution,
-    watchYearDistribution,
     monthlyWatchDistribution,
     imdbRatingDistribution,
     ratingComparison,
@@ -42,8 +40,6 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
   const maxGenreCount = Math.max(...genreDistribution.map((d) => d.count), 1);
   const maxDirectorCount = Math.max(...topDirectors.map((d) => d.count), 1);
   const maxActorCount = Math.max(...topActors.map((d) => d.count), 1);
-  const maxDecadeCount = Math.max(...decadeDistribution.map((d) => d.count), 1);
-  const maxWatchYearCount = Math.max(...watchYearDistribution.map((d) => d.count), 1);
   const maxMonthCount = Math.max(...monthlyWatchDistribution.map((d) => d.count), 1);
   const maxImdbRatingCount = Math.max(...imdbRatingDistribution.map((d) => d.count), 1);
 
@@ -167,64 +163,6 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
               );
             })}
           </div>
-        </div>
-      </div>
-
-      {/* Row 3: Decade + Watch Year distribution */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Decade distribution */}
-        <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col h-[350px]">
-          <SectionTitle emoji="📆" title="On Yıllara Göre Dağılım" />
-          <div className="flex-grow flex items-end justify-between gap-1.5 px-2 pb-6 border-b border-zinc-800 overflow-x-auto">
-            {decadeDistribution.map((item) => {
-              const heightPercent = (item.count / maxDecadeCount) * 100;
-              const rawDecade = item.decade.replace("'ler", '');
-              return (
-                <Link
-                  key={item.decade}
-                  href={`/year/${rawDecade}`}
-                  className="flex-1 min-w-[40px] flex flex-col items-center group h-full justify-end"
-                >
-                  <div className="text-[9px] text-zinc-400 font-bold opacity-0 group-hover:opacity-100 transition-opacity mb-1.5 duration-200 bg-zinc-900 px-1 py-0.5 rounded border border-white/10">
-                    {item.count}
-                  </div>
-                  <div
-                    style={{ height: `${Math.max(heightPercent, 4)}%` }}
-                    className="w-full rounded-t bg-gradient-to-t from-emerald-600 to-emerald-400 hover:from-emerald-500 hover:to-green-300 transition-all duration-300 shadow-[0_0_15px_rgba(16,185,129,0.2)] group-hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]"
-                  ></div>
-                  <span className="text-[10px] text-zinc-500 font-bold mt-2 whitespace-nowrap group-hover:text-emerald-400 transition-colors">{item.decade}</span>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Watch year distribution */}
-        <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col h-[350px]">
-          <SectionTitle emoji="👁️" title="İzlenme Yılına Göre Dağılım" />
-          {watchYearDistribution.length === 0 ? (
-            <div className="flex-grow flex items-center justify-center text-zinc-500 text-sm">
-              İzlenme tarihi verisi bulunamadı
-            </div>
-          ) : (
-            <div className="flex-grow flex items-end justify-between gap-1.5 px-2 pb-6 border-b border-zinc-800 overflow-x-auto">
-              {watchYearDistribution.map((item) => {
-                const heightPercent = (item.count / maxWatchYearCount) * 100;
-                return (
-                  <div key={item.year} className="flex-1 min-w-[32px] flex flex-col items-center group h-full justify-end">
-                    <div className="text-[9px] text-zinc-400 font-bold opacity-0 group-hover:opacity-100 transition-opacity mb-1.5 duration-200 bg-zinc-900 px-1 py-0.5 rounded border border-white/10">
-                      {item.count}
-                    </div>
-                    <div
-                      style={{ height: `${Math.max(heightPercent, 4)}%` }}
-                      className="w-full rounded-t bg-gradient-to-t from-sky-600 to-sky-400 hover:from-sky-500 hover:to-cyan-300 transition-all duration-300 shadow-[0_0_15px_rgba(14,165,233,0.2)] group-hover:shadow-[0_0_20px_rgba(14,165,233,0.4)]"
-                    ></div>
-                    <span className="text-[10px] text-zinc-500 font-bold mt-2 whitespace-nowrap">{item.year}</span>
-                  </div>
-                );
-              })}
-            </div>
-          )}
         </div>
       </div>
 
@@ -451,11 +389,10 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
                     <span className="text-amber-400">IMDb: {m.imdbRating}</span>
                   </div>
                 </div>
-                <span className={`text-xs font-black shrink-0 px-2 py-0.5 rounded-full ${
-                  m.myRating > m.imdbRating
-                    ? 'text-emerald-400 bg-emerald-500/10'
-                    : 'text-red-400 bg-red-500/10'
-                }`}>
+                <span className={`text-xs font-black shrink-0 px-2 py-0.5 rounded-full ${m.myRating > m.imdbRating
+                  ? 'text-emerald-400 bg-emerald-500/10'
+                  : 'text-red-400 bg-red-500/10'
+                  }`}>
                   {m.myRating > m.imdbRating ? '+' : ''}{(m.myRating - m.imdbRating).toFixed(1)}
                 </span>
               </Link>
