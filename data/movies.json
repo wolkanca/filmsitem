@@ -37437,7 +37437,7 @@
     "myRating": 6,
     "watchDate": "2026-07-05",
     "listName": [],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjhjYjdhOGUtM2EzOC00NGFkLWE1ODEtM2I4NGRiNmYyY2Q2XkEyXkFqcGdeQXVyNTI2OTA2NjM@._V1_SX300.jpg",
+    "poster": "/images/movies/tt0092558-poster.jpg",
     "overview": "Bu yapım \"Ömer Kavur\" tarafından yönetilmiş 1987 yapımı bir Thriller, Crime, Drama eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
     "genres": [
       "Thriller",
@@ -72002,6 +72002,6309 @@
     "plot": "Detective Enola Holmes heads to Malta, where her aspirations merge in her most complex and dangerous case yet.",
     "country": "United States",
     "omdbType": "movie",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0061402",
+    "title": "The Big Shave",
+    "originalTitle": "The Big Shave",
+    "year": 1967,
+    "type": "Short",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0061402-poster.jpg",
+    "overview": "Bu yapım \"Martin Scorsese\" tarafından yönetilmiş 1967 yapımı bir Short, Horror, Drama eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Short",
+      "Horror",
+      "Drama"
+    ],
+    "runtime": 5,
+    "cast": [
+      "Peter Bernuth"
+    ],
+    "director": "Martin Scorsese",
+    "writers": [
+      "Martin Scorsese"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "1968-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0107473",
+    "title": "Mad Dog and Glory",
+    "originalTitle": "Mad Dog and Glory",
+    "year": 1993,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0107473-poster.jpg",
+    "overview": "Bu yapım \"John McNaughton\" tarafından yönetilmiş 1993 yapımı bir Crime, Romance, Drama, Comedy eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Romance",
+      "Drama",
+      "Comedy"
+    ],
+    "runtime": 97,
+    "cast": [
+      "Robert De Niro",
+      "Uma Thurman",
+      "Bill Murray"
+    ],
+    "director": "John McNaughton",
+    "writers": [
+      "Richard Price"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "1993-03-05",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "FyMnAp0WWJA"
+  },
+  {
+    "imdbId": "tt0112688",
+    "title": "Clockers",
+    "originalTitle": "Clockers",
+    "year": 1995,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0112688-poster.jpg",
+    "overview": "Bu yapım \"Spike Lee\" tarafından yönetilmiş 1995 yapımı bir Crime, Mystery, Drama eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Drama"
+    ],
+    "runtime": 128,
+    "cast": [
+      "Harvey Keitel",
+      "John Turturro",
+      "Delroy Lindo"
+    ],
+    "director": "Spike Lee",
+    "writers": [
+      "Richard Price",
+      "Spike Lee"
+    ],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "1995-09-13",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "YsFUoioGePc"
+  },
+  {
+    "imdbId": "tt0114371",
+    "title": "Search and Destroy",
+    "originalTitle": "Search and Destroy",
+    "year": 1995,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0114371-poster.jpg",
+    "overview": "Bu yapım \"David Salle\" tarafından yönetilmiş 1995 yapımı bir Action, Drama, Comedy eseridir. IMDb puanı 5.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Drama",
+      "Comedy"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Griffin Dunne",
+      "Dennis Hopper",
+      "Jason Ferraro"
+    ],
+    "director": "David Salle",
+    "writers": [
+      "Howard Korder",
+      "Michael Almereyda"
+    ],
+    "imdbRating": 5.3,
+    "tmdbRating": 5.3,
+    "releaseDate": "1995-05-05",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0110623",
+    "title": "Naked in New York",
+    "originalTitle": "Naked in New York",
+    "year": 1993,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0110623-poster.jpg",
+    "overview": "Bu yapım \"Daniel Algrant\" tarafından yönetilmiş 1993 yapımı bir Romance, Comedy eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 95,
+    "cast": [
+      "Eric Stoltz",
+      "Mary-Louise Parker",
+      "Ralph Macchio"
+    ],
+    "director": "Daniel Algrant",
+    "writers": [
+      "Daniel Algrant",
+      "John Warren"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "1994-04-13",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "KeFUNWc0oeE"
+  },
+  {
+    "imdbId": "tt0397430",
+    "title": "Frankenstein",
+    "originalTitle": "Frankenstein",
+    "year": 2004,
+    "type": "TV Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt0397430-poster.jpg",
+    "overview": "Bu yapım \"Marcus Nispel\" tarafından yönetilmiş 2004 yapımı bir Horror, Mystery, Sci-Fi, Crime eseridir. IMDb puanı 4.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Sci-Fi",
+      "Crime"
+    ],
+    "runtime": 87,
+    "cast": [
+      "Parker Posey",
+      "Vincent Perez",
+      "Thomas Kretschmann"
+    ],
+    "director": "Marcus Nispel",
+    "writers": [
+      "John Shiban",
+      "Dean R. Koontz",
+      "Mary Shelley"
+    ],
+    "imdbRating": 4.5,
+    "tmdbRating": 4.5,
+    "releaseDate": "2004-10-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0368619",
+    "title": "Brides",
+    "originalTitle": "Nyfes",
+    "year": 2004,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0368619-poster.jpg",
+    "overview": "Bu yapım \"Pantelis Voulgaris\" tarafından yönetilmiş 2004 yapımı bir Drama, Romance eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 128,
+    "cast": [
+      "Damian Lewis",
+      "Victoria Haralabidou",
+      "Andréa Ferréol"
+    ],
+    "director": "Pantelis Voulgaris",
+    "writers": [
+      "Ioanna Karystiani"
+    ],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "2004-10-22",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "6OkEehGMMQA"
+  },
+  {
+    "imdbId": "tt0962736",
+    "title": "The Young Victoria",
+    "originalTitle": "The Young Victoria",
+    "year": 2009,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0962736-poster.jpg",
+    "overview": "Bu yapım \"Jean-Marc Vallée\" tarafından yönetilmiş 2009 yapımı bir Drama, History, Romance, Biography eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "History",
+      "Romance",
+      "Biography"
+    ],
+    "runtime": 105,
+    "cast": [
+      "Emily Blunt",
+      "Rupert Friend",
+      "Paul Bettany"
+    ],
+    "director": "Jean-Marc Vallée",
+    "writers": [
+      "Julian Fellowes"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2010-01-08",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "MElrsyE_QAM"
+  },
+  {
+    "imdbId": "tt1734477",
+    "title": "Public Speaking",
+    "originalTitle": "Public Speaking",
+    "year": 2010,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt1734477-poster.jpg",
+    "overview": "Bu yapım \"Martin Scorsese\" tarafından yönetilmiş 2010 yapımı bir Documentary eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime": 84,
+    "cast": [
+      "James Baldwin",
+      "William F. Buckley",
+      "Truman Capote"
+    ],
+    "director": "Martin Scorsese",
+    "writers": [],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "2010-11-22",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "1DLgoKejUVE"
+  },
+  {
+    "imdbId": "tt1462014",
+    "title": "Surviving Progress",
+    "originalTitle": "Surviving Progress",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt1462014-poster.jpg",
+    "overview": "Bu yapım \"Mathieu Roy,Harold Crooks\" tarafından yönetilmiş 2011 yapımı bir Documentary eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Ronald Wright",
+      "Mark Levine",
+      "Robert Wright"
+    ],
+    "director": "Mathieu Roy,Harold Crooks",
+    "writers": [
+      "Harold Crooks",
+      "Mathieu Roy"
+    ],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2013-03-23",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "sDdhA_qCfYw"
+  },
+  {
+    "imdbId": "tt3264982",
+    "title": "Glickman",
+    "originalTitle": "Glickman",
+    "year": 2013,
+    "type": "TV Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt3264982-poster.jpg",
+    "overview": "Bu yapım \"James L. Freedman\" tarafından yönetilmiş 2013 yapımı bir Documentary, Biography, Sport eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Biography",
+      "Sport"
+    ],
+    "runtime": 84,
+    "cast": [
+      "Seth Abraham",
+      "Marv Albert",
+      "Red Auerbach"
+    ],
+    "director": "James L. Freedman",
+    "writers": [
+      "James L. Freedman"
+    ],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "2013-08-26",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt2404311",
+    "title": "The Family",
+    "originalTitle": "The Family",
+    "year": 2013,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt2404311-poster.jpg",
+    "overview": "Bu yapım \"Luc Besson\" tarafından yönetilmiş 2013 yapımı bir Comedy, Crime, Thriller eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Thriller"
+    ],
+    "runtime": 111,
+    "cast": [
+      "Robert De Niro",
+      "Michelle Pfeiffer",
+      "Dianna Agron"
+    ],
+    "director": "Luc Besson",
+    "writers": [
+      "Luc Besson",
+      "Michael Caleo",
+      "Tonino Benacquista"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "2013-09-13",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "-SwDU04Oeak"
+  },
+  {
+    "imdbId": "tt0979432",
+    "title": "Boardwalk Empire",
+    "originalTitle": "Boardwalk Empire",
+    "year": 2010,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Kült Eserler"
+    ],
+    "poster": "/images/movies/tt0979432-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2010 yapımı bir Drama, Crime eseridir. IMDb puanı 8.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "runtime": 60,
+    "cast": [
+      "Steve Buscemi",
+      "Kelly Macdonald",
+      "Michael Shannon"
+    ],
+    "director": "",
+    "writers": [
+      "Terence Winter"
+    ],
+    "imdbRating": 8.5,
+    "tmdbRating": 8.5,
+    "releaseDate": "2010-09-19",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "SPlBxJs3npQ"
+  },
+  {
+    "imdbId": "tt3186130",
+    "title": "Vinyl",
+    "originalTitle": "Vinyl",
+    "year": 2016,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt3186130-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2016 yapımı bir Drama, Music eseridir. IMDb puanı 7.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Music"
+    ],
+    "runtime": 60,
+    "cast": [
+      "Bobby Cannavale",
+      "Paul Ben-Victor",
+      "P.J. Byrne"
+    ],
+    "director": "",
+    "writers": [
+      "Rich Cohen",
+      "Mick Jagger",
+      "Martin Scorsese"
+    ],
+    "imdbRating": 7.7,
+    "tmdbRating": 7.7,
+    "releaseDate": "2016-02-14",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "1iphllcTYOs"
+  },
+  {
+    "imdbId": "tt4143508",
+    "title": "Long Strange Trip",
+    "originalTitle": "Long Strange Trip",
+    "year": 2017,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "/images/movies/tt4143508-poster.jpg",
+    "overview": "Bu yapım \"Amir Bar-Lev\" tarafından yönetilmiş 2017 yapımı bir Documentary, Music, Biography eseridir. IMDb puanı 8.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Music",
+      "Biography"
+    ],
+    "runtime": 238,
+    "cast": [
+      "John Perry Barlow",
+      "Tom Constanten",
+      "Sam Cutler"
+    ],
+    "director": "Amir Bar-Lev",
+    "writers": [],
+    "imdbRating": 8.2,
+    "tmdbRating": 8.2,
+    "releaseDate": "2017-05-26",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "CzJFPlLdISo"
+  },
+  {
+    "imdbId": "tt0490215",
+    "title": "Silence",
+    "originalTitle": "Silence",
+    "year": 2016,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "/images/movies/tt0490215-poster.jpg",
+    "overview": "Bu yapım \"Martin Scorsese\" tarafından yönetilmiş 2016 yapımı bir Drama, History eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "runtime": 161,
+    "cast": [
+      "Andrew Garfield",
+      "Adam Driver",
+      "Liam Neeson"
+    ],
+    "director": "Martin Scorsese",
+    "writers": [
+      "Jay Cocks",
+      "Martin Scorsese",
+      "Shûsaku Endô"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2017-01-13",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "IqrgxZLd_gE"
+  },
+  {
+    "imdbId": "tt6752992",
+    "title": "Happy as Lazzaro",
+    "originalTitle": "Lazzaro felice",
+    "year": 2018,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt6752992-poster.jpg",
+    "overview": "Bu yapım \"Alice Rohrwacher\" tarafından yönetilmiş 2018 yapımı bir Drama, Fantasy, Mystery eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Mystery"
+    ],
+    "runtime": 128,
+    "cast": [
+      "Adriano Tardiolo",
+      "Agnese Graziani",
+      "Alba Rohrwacher"
+    ],
+    "director": "Alice Rohrwacher",
+    "writers": [
+      "Alice Rohrwacher",
+      "Carmela Covino"
+    ],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2018-11-30",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "IqFevMa_e8Q"
+  },
+  {
+    "imdbId": "tt10334456",
+    "title": "Once Were Brothers",
+    "originalTitle": "Once Were Brothers: Robbie Robertson & The Band",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt10334456-poster.jpg",
+    "overview": "Bu yapım \"Daniel Roher\" tarafından yönetilmiş 2019 yapımı bir Documentary, Music, Biography, History eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Music",
+      "Biography",
+      "History"
+    ],
+    "runtime": 100,
+    "cast": [
+      "The Band",
+      "Robbie Robertson",
+      "Bruce Springsteen"
+    ],
+    "director": "Daniel Roher",
+    "writers": [
+      "Daniel Roher"
+    ],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2020-02-21",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "ZYTpMZjZxwI"
+  },
+  {
+    "imdbId": "tt6920356",
+    "title": "The Souvenir",
+    "originalTitle": "The Souvenir",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt6920356-poster.jpg",
+    "overview": "Bu yapım \"Joanna Hogg\" tarafından yönetilmiş 2019 yapımı bir Drama, Romance eseridir. IMDb puanı 6.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 120,
+    "cast": [
+      "Tom Burke",
+      "Tilda Swinton",
+      "Frankie Wilson"
+    ],
+    "director": "Joanna Hogg",
+    "writers": [
+      "Joanna Hogg"
+    ],
+    "imdbRating": 6.4,
+    "tmdbRating": 6.4,
+    "releaseDate": "2019-06-07",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "t9Al2nC0vzY"
+  },
+  {
+    "imdbId": "tt5727208",
+    "title": "Uncut Gems",
+    "originalTitle": "Uncut Gems",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt5727208-poster.jpg",
+    "overview": "Bu yapım \"Benny Safdie,Josh Safdie\" tarafından yönetilmiş 2019 yapımı bir Drama, Crime, Thriller eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "runtime": 135,
+    "cast": [
+      "Adam Sandler",
+      "Julia Fox",
+      "Idina Menzel"
+    ],
+    "director": "Benny Safdie,Josh Safdie",
+    "writers": [
+      "Ronald Bronstein",
+      "Josh Safdie",
+      "Benny Safdie"
+    ],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2019-12-25",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Twz17MTYA5Y"
+  },
+  {
+    "imdbId": "tt8434110",
+    "title": "Murina",
+    "originalTitle": "Murina",
+    "year": 2021,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt8434110-poster.jpg",
+    "overview": "Bu yapım \"Antoneta Alamat Kusijanovic\" tarafından yönetilmiş 2021 yapımı bir Drama eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 96,
+    "cast": [
+      "Gracija Filipovic",
+      "Leon Lucev",
+      "Danica Curcic"
+    ],
+    "director": "Antoneta Alamat Kusijanovic",
+    "writers": [
+      "Antoneta Alamat Kusijanovic",
+      "Frank Graziano"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "2022-04-08",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "yigfQEbn17I"
+  },
+  {
+    "imdbId": "tt6992978",
+    "title": "The Souvenir: Part II",
+    "originalTitle": "The Souvenir: Part II",
+    "year": 2021,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt6992978-poster.jpg",
+    "overview": "Bu yapım \"Joanna Hogg\" tarafından yönetilmiş 2021 yapımı bir Drama, Romance eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 107,
+    "cast": [
+      "Tilda Swinton",
+      "Honor Swinton Byrne",
+      "James Spencer Ashworth"
+    ],
+    "director": "Joanna Hogg",
+    "writers": [
+      "Joanna Hogg"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "2021-11-19",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "BTlNhzjkq2g"
+  },
+  {
+    "imdbId": "tt14679114",
+    "title": "Dreaming Walls: Inside the Chelsea Hotel",
+    "originalTitle": "Dreaming Walls",
+    "year": 2022,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt14679114-poster.jpg",
+    "overview": "Bu yapım \"Maya Duverdier,Amélie van Elmbt\" tarafından yönetilmiş 2022 yapımı bir Documentary eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime": 77,
+    "cast": [
+      "Merle Lister"
+    ],
+    "director": "Maya Duverdier,Amélie van Elmbt",
+    "writers": [
+      "Maya Duverdier",
+      "Amélie van Elmbt"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "2022-08-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "DR5yGo0BY7o"
+  },
+  {
+    "imdbId": "tt11196036",
+    "title": "The Card Counter",
+    "originalTitle": "The Card Counter",
+    "year": 2021,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt11196036-poster.jpg",
+    "overview": "Bu yapım \"Paul Schrader\" tarafından yönetilmiş 2021 yapımı bir Thriller, Drama, Crime eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Thriller",
+      "Drama",
+      "Crime"
+    ],
+    "runtime": 111,
+    "cast": [
+      "Oscar Isaac",
+      "Tiffany Haddish",
+      "Tye Sheridan"
+    ],
+    "director": "Paul Schrader",
+    "writers": [
+      "Paul Schrader"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "2021-09-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Ym83GAtg4GQ"
+  },
+  {
+    "imdbId": "tt13101040",
+    "title": "The Last Movie Stars",
+    "originalTitle": "The Last Movie Stars",
+    "year": 2022,
+    "type": "TV Mini Series",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt13101040-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2022 yapımı bir Documentary eseridir. IMDb puanı 8 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime": 60,
+    "cast": [
+      "George Clooney",
+      "Zoe Kazan",
+      "Laura Linney"
+    ],
+    "director": "",
+    "writers": [
+      "Paul Newman",
+      "Stewart Stern"
+    ],
+    "imdbRating": 8,
+    "tmdbRating": 8,
+    "releaseDate": "2022-07-21",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "EQvU_ry6OhI"
+  },
+  {
+    "imdbId": "tt33986138",
+    "title": "Beatles '64",
+    "originalTitle": "Beatles '64",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt33986138-poster.jpg",
+    "overview": "Bu yapım \"David Tedeschi\" tarafından yönetilmiş 2024 yapımı bir Documentary, Music eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Music"
+    ],
+    "runtime": 106,
+    "cast": [
+      "The Beatles",
+      "John Lennon",
+      "Paul McCartney"
+    ],
+    "director": "David Tedeschi",
+    "writers": [],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2024-11-29",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Iwo8OgJzmm4"
+  },
+  {
+    "imdbId": "tt26733325",
+    "title": "Homebound",
+    "originalTitle": "Homebound",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt26733325-poster.jpg",
+    "overview": "Bu yapım \"Neeraj Ghaywan\" tarafından yönetilmiş 2025 yapımı bir Drama eseridir. IMDb puanı 7.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 119,
+    "cast": [
+      "Ishaan Khatter",
+      "Janhvi Kapoor",
+      "Vishal Jethwa"
+    ],
+    "director": "Neeraj Ghaywan",
+    "writers": [
+      "Neeraj Ghaywan"
+    ],
+    "imdbRating": 7.9,
+    "tmdbRating": 7.9,
+    "releaseDate": "2025-09-26",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "WojNkusud84"
+  },
+  {
+    "imdbId": "tt38119836",
+    "title": "Saquon",
+    "originalTitle": "Saquon",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt38119836-poster.jpg",
+    "overview": "Bu yapım \"Alexander Pappas\" tarafından yönetilmiş 2025 yapımı bir Documentary eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime": 101,
+    "cast": [
+      "Tiki Barber",
+      "Alibay Barkley Jr.",
+      "Saquon Barkley"
+    ],
+    "director": "Alexander Pappas",
+    "writers": [],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2025-10-09",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "0p0LEmgd1uE"
+  },
+  {
+    "imdbId": "tt0411302",
+    "title": "Doodlebug",
+    "originalTitle": "Doodlebug",
+    "year": 1997,
+    "type": "Short",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0411302-poster.jpg",
+    "overview": "Bu yapım \"Christopher Nolan\" tarafından yönetilmiş 1997 yapımı bir Short, Fantasy, Mystery eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Short",
+      "Fantasy",
+      "Mystery"
+    ],
+    "runtime": 3,
+    "cast": [
+      "Jeremy Theobald"
+    ],
+    "director": "Christopher Nolan",
+    "writers": [
+      "Christopher Nolan"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "1997",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0154506",
+    "title": "Following",
+    "originalTitle": "Following",
+    "year": 1998,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0154506-poster.jpg",
+    "overview": "Bu yapım \"Christopher Nolan\" tarafından yönetilmiş 1998 yapımı bir Crime, Thriller, Mystery eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
+    "runtime": 69,
+    "cast": [
+      "Jeremy Theobald",
+      "Alex Haw",
+      "Lucy Russell"
+    ],
+    "director": "Christopher Nolan",
+    "writers": [
+      "Christopher Nolan"
+    ],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "1999-11-05",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "62TTN6gD2So"
+  },
+  {
+    "imdbId": "tt4907572",
+    "title": "Quay",
+    "originalTitle": "Quay",
+    "year": 2015,
+    "type": "Short",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt4907572-poster.jpg",
+    "overview": "Bu yapım \"Christopher Nolan\" tarafından yönetilmiş 2015 yapımı bir Documentary, Short eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Short"
+    ],
+    "runtime": 8,
+    "cast": [
+      "Stephen Quay",
+      "Timothy Quay"
+    ],
+    "director": "Christopher Nolan",
+    "writers": [],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "2016-07-30",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "dtT3e3exJA0"
+  },
+  {
+    "imdbId": "tt2209764",
+    "title": "Transcendence",
+    "originalTitle": "Transcendence",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt2209764-poster.jpg",
+    "overview": "Bu yapım \"Wally Pfister\" tarafından yönetilmiş 2014 yapımı bir Drama, Sci-Fi, Thriller eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "runtime": 119,
+    "cast": [
+      "Johnny Depp",
+      "Rebecca Hall",
+      "Morgan Freeman"
+    ],
+    "director": "Wally Pfister",
+    "writers": [
+      "Jack Paglen"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "2014-04-18",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "h2QA2UnV5LQ"
+  },
+  {
+    "imdbId": "tt0214938",
+    "title": "Medal of Honor",
+    "originalTitle": "Medal of Honor",
+    "year": 1999,
+    "type": "Video Game",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0214938-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1999 yapımı bir War, Adventure, Action eseridir. IMDb puanı 8.3 olarak kaydedilmiştir.",
+    "genres": [
+      "War",
+      "Adventure",
+      "Action"
+    ],
+    "runtime": 90,
+    "cast": [
+      "William Morgan Sheppard",
+      "Charles de Vries",
+      "Kai Wulff",
+      "George Salden"
+    ],
+    "director": "",
+    "writers": [
+      "Peter Hirschmann",
+      "Steven Spielberg"
+    ],
+    "imdbRating": 8.3,
+    "tmdbRating": 8.3,
+    "releaseDate": "1999-11-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "cFypGVGWDPI",
+    "backdrop": "",
+    "plotTr": ""
+  },
+  {
+    "imdbId": "tt0275511",
+    "title": "Medal of Honor: Allied Assault",
+    "originalTitle": "Medal of Honor: Allied Assault",
+    "year": 2002,
+    "type": "Video Game",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0275511-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2002 yapımı bir War, Adventure, Action eseridir. IMDb puanı 8.4 olarak kaydedilmiştir.",
+    "genres": [
+      "War",
+      "Adventure",
+      "Action"
+    ],
+    "runtime": 90,
+    "cast": [
+      "William Bassett",
+      "Steve Blum",
+      "Steve Bulen",
+      "Cam Clarke"
+    ],
+    "director": "",
+    "writers": [
+      "Zied Rieke",
+      "Steven Spielberg"
+    ],
+    "imdbRating": 8.4,
+    "tmdbRating": 8.4,
+    "releaseDate": "2002-01-22",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "6rfal-ICxKg",
+    "backdrop": "",
+    "plotTr": ""
+  },
+  {
+    "imdbId": "tt0498380",
+    "title": "Letters from Iwo Jima",
+    "originalTitle": "Letters from Iwo Jima",
+    "year": 2006,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt0498380-poster.jpg",
+    "overview": "Bu yapım \"Clint Eastwood\" tarafından yönetilmiş 2006 yapımı bir Drama, War, History, Action, Adventure eseridir. IMDb puanı 7.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "War",
+      "History",
+      "Action",
+      "Adventure"
+    ],
+    "runtime": 141,
+    "cast": [
+      "Ken Watanabe",
+      "Kazunari Ninomiya",
+      "Tsuyoshi Ihara"
+    ],
+    "director": "Clint Eastwood",
+    "writers": [
+      "Iris Yamashita",
+      "Paul Haggis",
+      "Tadamichi Kuribayashi"
+    ],
+    "imdbRating": 7.8,
+    "tmdbRating": 7.8,
+    "releaseDate": "2007-02-02",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "g65ewJJ1USc"
+  },
+  {
+    "imdbId": "tt1650062",
+    "title": "Super 8",
+    "originalTitle": "Super 8",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt1650062-poster.jpg",
+    "overview": "Bu yapım \"J.J. Abrams\" tarafından yönetilmiş 2011 yapımı bir Sci-Fi, Thriller, Action eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Thriller",
+      "Action"
+    ],
+    "runtime": 112,
+    "cast": [
+      "Elle Fanning",
+      "AJ Michalka",
+      "Kyle Chandler"
+    ],
+    "director": "J.J. Abrams",
+    "writers": [
+      "J.J. Abrams"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "2011-06-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "t-0XuYxh67w"
+  },
+  {
+    "imdbId": "tt1403865",
+    "title": "True Grit",
+    "originalTitle": "True Grit",
+    "year": 2010,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt1403865-poster.jpg",
+    "overview": "Bu yapım \"Ethan Coen,Joel Coen\" tarafından yönetilmiş 2010 yapımı bir Drama, Western eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Western"
+    ],
+    "runtime": 110,
+    "cast": [
+      "Jeff Bridges",
+      "Matt Damon",
+      "Hailee Steinfeld"
+    ],
+    "director": "Ethan Coen,Joel Coen",
+    "writers": [
+      "Joel Coen",
+      "Ethan Coen",
+      "Charles Portis"
+    ],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "2010-12-22",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Q5fEgKj9QNs"
+  },
+  {
+    "imdbId": "tt0433035",
+    "title": "Real Steel",
+    "originalTitle": "Real Steel",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt0433035-poster.jpg",
+    "overview": "Bu yapım \"Shawn Levy\" tarafından yönetilmiş 2011 yapımı bir Drama, Sci-Fi, Sport, Action eseridir. IMDb puanı 7.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Sci-Fi",
+      "Sport",
+      "Action"
+    ],
+    "runtime": 127,
+    "cast": [
+      "Hugh Jackman",
+      "Evangeline Lilly",
+      "Dakota Goyo"
+    ],
+    "director": "Shawn Levy",
+    "writers": [
+      "Richard Matheson",
+      "John Gatins",
+      "Dan Gilroy"
+    ],
+    "imdbRating": 7.1,
+    "tmdbRating": 7.1,
+    "releaseDate": "2011-10-07",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "lR2YR50xx9o"
+  },
+  {
+    "imdbId": "tt1568911",
+    "title": "War Horse",
+    "originalTitle": "War Horse",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt1568911-poster.jpg",
+    "overview": "Bu yapım \"Steven Spielberg\" tarafından yönetilmiş 2011 yapımı bir War, Drama, Adventure, History eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "War",
+      "Drama",
+      "Adventure",
+      "History"
+    ],
+    "runtime": 146,
+    "cast": [
+      "Jeremy Irvine",
+      "Emily Watson",
+      "David Thewlis"
+    ],
+    "director": "Steven Spielberg",
+    "writers": [
+      "Lee Hall",
+      "Richard Curtis",
+      "Michael Morpurgo"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2011-12-25",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "tafBTls8RuA"
+  },
+  {
+    "imdbId": "tt2980648",
+    "title": "The Hundred-Foot Journey",
+    "originalTitle": "The Hundred-Foot Journey",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt2980648-poster.jpg",
+    "overview": "Bu yapım \"Lasse Hallström\" tarafından yönetilmiş 2014 yapımı bir Drama, Comedy eseridir. IMDb puanı 7.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "runtime": 122,
+    "cast": [
+      "Helen Mirren",
+      "Om Puri",
+      "Manish Dayal"
+    ],
+    "director": "Lasse Hallström",
+    "writers": [
+      "Steven Knight",
+      "Richard C. Morais"
+    ],
+    "imdbRating": 7.3,
+    "tmdbRating": 7.3,
+    "releaseDate": "2014-08-08",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "_kgUXVQiJYs"
+  },
+  {
+    "imdbId": "tt3691740",
+    "title": "The BFG",
+    "originalTitle": "The BFG",
+    "year": 2016,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt3691740-poster.jpg",
+    "overview": "Bu yapım \"Steven Spielberg\" tarafından yönetilmiş 2016 yapımı bir Family, Fantasy, Adventure eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Family",
+      "Fantasy",
+      "Adventure"
+    ],
+    "runtime": 117,
+    "cast": [
+      "Mark Rylance",
+      "Ruby Barnhill",
+      "Penelope Wilton"
+    ],
+    "director": "Steven Spielberg",
+    "writers": [
+      "Melissa Mathison",
+      "Roald Dahl"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "2016-07-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Y6ZbRD1T7uI"
+  },
+  {
+    "imdbId": "tt3791216",
+    "title": "All the Way",
+    "originalTitle": "All the Way",
+    "year": 2016,
+    "type": "TV Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt3791216-poster.jpg",
+    "overview": "Bu yapım \"Jay Roach\" tarafından yönetilmiş 2016 yapımı bir Drama, Biography, History eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Biography",
+      "History"
+    ],
+    "runtime": 132,
+    "cast": [
+      "Bryan Cranston",
+      "Anthony Mackie",
+      "Melissa Leo"
+    ],
+    "director": "Jay Roach",
+    "writers": [
+      "Robert Schenkkan"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2016-05-21",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "eLwSeF35jfo"
+  },
+  {
+    "imdbId": "tt6294822",
+    "title": "The Post",
+    "originalTitle": "The Post",
+    "year": 2017,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt6294822-poster.jpg",
+    "overview": "Bu yapım \"Steven Spielberg\" tarafından yönetilmiş 2017 yapımı bir Drama, Biography, History, Thriller, War eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Biography",
+      "History",
+      "Thriller",
+      "War"
+    ],
+    "runtime": 116,
+    "cast": [
+      "Meryl Streep",
+      "Tom Hanks",
+      "Sarah Paulson"
+    ],
+    "director": "Steven Spielberg",
+    "writers": [
+      "Liz Hannah",
+      "Josh Singer"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2018-01-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "nrXlY6gzTTM"
+  },
+  {
+    "imdbId": "tt1677720",
+    "title": "Ready Player One",
+    "originalTitle": "Ready Player One",
+    "year": 2018,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt1677720-poster.jpg",
+    "overview": "Bu yapım \"Steven Spielberg\" tarafından yönetilmiş 2018 yapımı bir Sci-Fi, Action, Adventure eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "runtime": 140,
+    "cast": [
+      "Tye Sheridan",
+      "Olivia Cooke",
+      "Ben Mendelsohn"
+    ],
+    "director": "Steven Spielberg",
+    "writers": [
+      "Zak Penn",
+      "Ernest Cline"
+    ],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2018-03-29",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "F8jUr_nIkyE"
+  },
+  {
+    "imdbId": "tt4701182",
+    "title": "Bumblebee",
+    "originalTitle": "Bumblebee",
+    "year": 2018,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt4701182-poster.jpg",
+    "overview": "Bu yapım \"Travis Knight\" tarafından yönetilmiş 2018 yapımı bir Action, Adventure, Sci-Fi eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "runtime": 114,
+    "cast": [
+      "Hailee Steinfeld",
+      "Jorge Lendeborg Jr.",
+      "John Cena"
+    ],
+    "director": "Travis Knight",
+    "writers": [
+      "Christina Hodson"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2018-12-21",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "RRe9Ls-xAvU"
+  },
+  {
+    "imdbId": "tt2283336",
+    "title": "Men in Black: International",
+    "originalTitle": "Men in Black: International",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu",
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt2283336-poster.jpg",
+    "overview": "Bu yapım \"F. Gary Gray\" tarafından yönetilmiş 2019 yapımı bir Comedy, Sci-Fi, Action, Adventure eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Action",
+      "Adventure"
+    ],
+    "runtime": 114,
+    "cast": [
+      "Chris Hemsworth",
+      "Tessa Thompson",
+      "Kumail Nanjiani"
+    ],
+    "director": "F. Gary Gray",
+    "writers": [
+      "Matt Holloway",
+      "Art Marcum",
+      "Lowell Cunningham"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "2019-06-14",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "_j_PSRxK8uw"
+  },
+  {
+    "imdbId": "tt11790674",
+    "title": "Oslo",
+    "originalTitle": "Oslo",
+    "year": 2021,
+    "type": "TV Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt11790674-poster.jpg",
+    "overview": "Bu yapım \"Bartlett Sher\" tarafından yönetilmiş 2021 yapımı bir Drama, History, Thriller eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "History",
+      "Thriller"
+    ],
+    "runtime": 118,
+    "cast": [
+      "Ruth Wilson",
+      "Jeff Wilbusch",
+      "Andrew Scott"
+    ],
+    "director": "Bartlett Sher",
+    "writers": [
+      "J.T. Rogers"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2021-05-29",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "4SHzOLfyAwM"
+  },
+  {
+    "imdbId": "tt14208870",
+    "title": "The Fabelmans",
+    "originalTitle": "The Fabelmans",
+    "year": 2022,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "/images/movies/tt14208870-poster.jpg",
+    "overview": "Bu yapım \"Steven Spielberg\" tarafından yönetilmiş 2022 yapımı bir Drama, Biography eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Biography"
+    ],
+    "runtime": 151,
+    "cast": [
+      "Michelle Williams",
+      "Gabriel LaBelle",
+      "Paul Dano"
+    ],
+    "director": "Steven Spielberg",
+    "writers": [
+      "Steven Spielberg",
+      "Tony Kushner"
+    ],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2022-11-23",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "lIg-yVen9y4"
+  },
+  {
+    "imdbId": "tt5090568",
+    "title": "Transformers: Rise of the Beasts",
+    "originalTitle": "Transformers: Rise of the Beasts",
+    "year": 2023,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt5090568-poster.jpg",
+    "overview": "Bu yapım \"Steven Caple Jr.\" tarafından yönetilmiş 2023 yapımı bir Action, Adventure, Sci-Fi eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "runtime": 127,
+    "cast": [
+      "Anthony Ramos",
+      "Dominique Fishback",
+      "Luna Lauren Velez"
+    ],
+    "director": "Steven Caple Jr.",
+    "writers": [
+      "Joby Harold",
+      "Darnell Metayer",
+      "Josh Peters"
+    ],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "2023-06-09",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "TWKrilwqrLw"
+  },
+  {
+    "imdbId": "tt5535276",
+    "title": "Maestro",
+    "originalTitle": "Maestro",
+    "year": 2023,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt5535276-poster.jpg",
+    "overview": "Bu yapım \"Bradley Cooper\" tarafından yönetilmiş 2023 yapımı bir Biography, Drama, Music, Romance, History eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Biography",
+      "Drama",
+      "Music",
+      "Romance",
+      "History"
+    ],
+    "runtime": 129,
+    "cast": [
+      "Carey Mulligan",
+      "Bradley Cooper",
+      "Matt Bomer"
+    ],
+    "director": "Bradley Cooper",
+    "writers": [
+      "Bradley Cooper",
+      "Josh Singer"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "2023-12-20",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "B6YP94OA25A"
+  },
+  {
+    "imdbId": "tt31510396",
+    "title": "The Bloody Hundredth",
+    "originalTitle": "The Bloody Hundredth",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt31510396-poster.jpg",
+    "overview": "Bu yapım \"Laurent Bouzereau,Mark Herzog\" tarafından yönetilmiş 2024 yapımı bir Documentary eseridir. IMDb puanı 7.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary"
+    ],
+    "runtime": 62,
+    "cast": [
+      "Tom Hanks",
+      "Robert Rosenthal",
+      "Steven Spielberg"
+    ],
+    "director": "Laurent Bouzereau,Mark Herzog",
+    "writers": [],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2024-03-15",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "ZkYOtyp3hKU"
+  },
+  {
+    "imdbId": "tt1200263",
+    "title": "The Color Purple",
+    "originalTitle": "The Color Purple",
+    "year": 2023,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt1200263-poster.jpg",
+    "overview": "Bu yapım \"Blitz Bazawule\" tarafından yönetilmiş 2023 yapımı bir Musical, Drama eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Musical",
+      "Drama"
+    ],
+    "runtime": 141,
+    "cast": [
+      "Fantasia Barrino",
+      "Taraji P. Henson",
+      "Danielle Brooks"
+    ],
+    "director": "Blitz Bazawule",
+    "writers": [
+      "Marcus Gardley",
+      "Alice Walker",
+      "Marsha Norman"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "2023-12-25",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "zTnircQsMaM"
+  },
+  {
+    "imdbId": "tt12584954",
+    "title": "Twisters",
+    "originalTitle": "Twisters",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-09",
+    "listName": [],
+    "poster": "/images/movies/tt12584954-poster.jpg",
+    "overview": "Bu yapım \"Lee Isaac Chung\" tarafından yönetilmiş 2024 yapımı bir Action, Adventure, Thriller eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "runtime": 122,
+    "cast": [
+      "Daisy Edgar-Jones",
+      "Glen Powell",
+      "Anthony Ramos"
+    ],
+    "director": "Lee Isaac Chung",
+    "writers": [
+      "Mark L. Smith",
+      "Joseph Kosinski",
+      "Michael Crichton"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "2024-07-19",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "AJAChi0RrAw"
+  },
+  {
+    "imdbId": "tt0253639",
+    "title": "The Confused Groom",
+    "originalTitle": "Saskin Damat",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0253639-poster.jpg",
+    "overview": "Bu yapım \"Zeki Ökten\" tarafından yönetilmiş 1975 yapımı bir Comedy eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 78,
+    "cast": [
+      "Kemal Sunal",
+      "Meral Zeren",
+      "Bülent Kayabas"
+    ],
+    "director": "Zeki Ökten",
+    "writers": [
+      "Sadik Sendil"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "1975-03",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "XrpZje7tPd4"
+  },
+  {
+    "imdbId": "tt0279880",
+    "title": "Iste Hayat",
+    "originalTitle": "Iste Hayat",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0279880-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1975 yapımı bir Crime, Romance, Comedy eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 78,
+    "cast": [
+      "Hülya Koçyigit",
+      "Ugur Dündar",
+      "Adile Nasit"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Umur Bugay"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0756199",
+    "title": "Bitirimler Sinifi",
+    "originalTitle": "Bitirimler Sinifi",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0756199-poster.jpg",
+    "overview": "Bu yapım \"Ülkü Erakalin\" tarafından yönetilmiş 1975 yapımı bir Comedy eseridir. IMDb puanı 5.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 82,
+    "cast": [
+      "Sezer Inanoglu",
+      "Perihan Savas",
+      "Adile Nasit"
+    ],
+    "director": "Ülkü Erakalin",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 5.1,
+    "tmdbRating": 5.1,
+    "releaseDate": "1975",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "P1biAMkLdxs"
+  },
+  {
+    "imdbId": "tt1670641",
+    "title": "Gel Barisalim",
+    "originalTitle": "Gel Barisalim",
+    "year": 1976,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1670641-poster.jpg",
+    "overview": "Bu yapım \"Ergin Orbey\" tarafından yönetilmiş 1976 yapımı bir Comedy, Romance eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime": 74,
+    "cast": [
+      "Müjde Ar",
+      "Mahmut Cevher",
+      "Adile Nasit"
+    ],
+    "director": "Ergin Orbey",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "1976",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "14eB7mVeAuc"
+  },
+  {
+    "imdbId": "tt0282239",
+    "title": "Vay Basimiza Gelenler",
+    "originalTitle": "Vay Basimiza Gelenler",
+    "year": 1979,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0282239-poster.jpg",
+    "overview": "Bu yapım \"Zeki Alasya\" tarafından yönetilmiş 1979 yapımı bir Comedy eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 84,
+    "cast": [
+      "Zeki Alasya",
+      "Metin Akpinar",
+      "Adile Nasit"
+    ],
+    "director": "Zeki Alasya",
+    "writers": [
+      "Ahmet Üstel"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "NwIx8OO7hvU"
+  },
+  {
+    "imdbId": "tt0369292",
+    "title": "Bos Besik",
+    "originalTitle": "Bos Besik",
+    "year": 1969,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0369292-poster.jpg",
+    "overview": "Bu yapım \"Orhan Elmas\" tarafından yönetilmiş 1969 yapımı bir Drama eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 75,
+    "cast": [
+      "Fatma Girik",
+      "Tugay Toksöz",
+      "Handan Adali"
+    ],
+    "director": "Orhan Elmas",
+    "writers": [
+      "Necati Cumali",
+      "Orhan Elmas",
+      "Duygu Sagiroglu"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "RayC5a5zXns"
+  },
+  {
+    "imdbId": "tt0279174",
+    "title": "Kesanli Ali Destani",
+    "originalTitle": "Kesanli Ali Destani",
+    "year": 1965,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0279174-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1965 yapımı bir Musical, Comedy eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Musical",
+      "Comedy"
+    ],
+    "runtime": 83,
+    "cast": [
+      "Fikret Hakan",
+      "Fatma Girik",
+      "Aydemir Akbas"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Atif Yilmaz",
+      "Haldun Taner"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "1965",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "LB3sagcxaP4"
+  },
+  {
+    "imdbId": "tt0345209",
+    "title": "Ezo Gelin",
+    "originalTitle": "Ezo Gelin",
+    "year": 1968,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0345209-poster.jpg",
+    "overview": "Bu yapım \"Orhan Elmas\" tarafından yönetilmiş 1968 yapımı bir Drama, Romance eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 84,
+    "cast": [
+      "Fatma Girik",
+      "Tugay Toksöz",
+      "Gülten Ceylan"
+    ],
+    "director": "Orhan Elmas",
+    "writers": [
+      "Orhan Elmas",
+      "Behçet Kemal Çaglar"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Tbl7Xkhn5xo"
+  },
+  {
+    "imdbId": "tt10045434",
+    "title": "The Door",
+    "originalTitle": "Kapi",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt10045434-poster.jpg",
+    "overview": "Bu yapım \"Nihat Durak\" tarafından yönetilmiş 2019 yapımı bir Drama eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 110,
+    "cast": [
+      "Kadir Inanir",
+      "Vahide Perçin",
+      "Timur Acar"
+    ],
+    "director": "Nihat Durak",
+    "writers": [
+      "Tolga Aydin",
+      "Filiz Üstün Durak"
+    ],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "2019-04-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "kiNa9NiZSM0"
+  },
+  {
+    "imdbId": "tt2593100",
+    "title": "Elveda Katya",
+    "originalTitle": "Elveda Katya",
+    "year": 2012,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt2593100-poster.jpg",
+    "overview": "Bu yapım \"Ahmet Sönmez\" tarafından yönetilmiş 2012 yapımı bir Drama eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 109,
+    "cast": [
+      "Beliz Aksoy",
+      "Alev Alemdaroglu",
+      "Anna Andrusenko"
+    ],
+    "director": "Ahmet Sönmez",
+    "writers": [
+      "Nalan Merter Savas"
+    ],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "2012-12-21",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "6i_KzAIqXMw"
+  },
+  {
+    "imdbId": "tt0798796",
+    "title": "Tatar Ramazan: Sürgünde",
+    "originalTitle": "Tatar Ramazan: Sürgünde",
+    "year": 1992,
+    "type": "Movie",
+    "myRating": 8,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0798796-poster.jpg",
+    "overview": "Bu yapım \"Melih Gülgen\" tarafından yönetilmiş 1992 yapımı bir Drama eseridir. IMDb puanı 8 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 80,
+    "cast": [
+      "Kadir Inanir",
+      "Esin Moralioglu",
+      "Hayati Hamzaoglu"
+    ],
+    "director": "Melih Gülgen",
+    "writers": [
+      "Kerim Korcan",
+      "Safa Önal"
+    ],
+    "imdbRating": 8,
+    "tmdbRating": 8,
+    "releaseDate": "1992",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt1365022",
+    "title": "The Junkman and His Sons",
+    "originalTitle": "Eskici ve Ogullari",
+    "year": 1991,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt1365022-poster.jpg",
+    "overview": "Bu yapım \"Sahin Gök\" tarafından yönetilmiş 1991 yapımı bir Drama eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 96,
+    "cast": [
+      "Kadir Inanir",
+      "Fikret Hakan",
+      "Levent Inanir"
+    ],
+    "director": "Sahin Gök",
+    "writers": [
+      "Yasar Güner",
+      "Orhan Kemal"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "1991-03-22",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0447484",
+    "title": "Tatar Ramazan",
+    "originalTitle": "Tatar Ramazan",
+    "year": 1990,
+    "type": "Movie",
+    "myRating": 8,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0447484-poster.jpg",
+    "overview": "Bu yapım \"Melih Gülgen\" tarafından yönetilmiş 1990 yapımı bir Drama eseridir. IMDb puanı 7.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 95,
+    "cast": [
+      "Kadir Inanir",
+      "Esin Moralioglu",
+      "Hayati Hamzaoglu"
+    ],
+    "director": "Melih Gülgen",
+    "writers": [
+      "Safa Önal",
+      "Kerim Korcan"
+    ],
+    "imdbRating": 7.9,
+    "tmdbRating": 7.9,
+    "releaseDate": "1990",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "aNJLjHWPUCc"
+  },
+  {
+    "imdbId": "tt0288588",
+    "title": "Women's Ward",
+    "originalTitle": "Karilar Kogusu",
+    "year": 1990,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0288588-poster.jpg",
+    "overview": "Bu yapım \"Halit Refig\" tarafından yönetilmiş 1990 yapımı bir Drama eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 146,
+    "cast": [
+      "Kadir Inanir",
+      "Hülya Koçyigit",
+      "Perihan Savas"
+    ],
+    "director": "Halit Refig",
+    "writers": [
+      "Halit Refig",
+      "Kemal Tahir"
+    ],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "1990-05-18",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0967942",
+    "title": "Muleteers",
+    "originalTitle": "Katircilar",
+    "year": 1987,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0967942-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1987 yapımı bir Drama, Adventure eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Adventure"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Kadir Inanir",
+      "Halil Ergün",
+      "Bülent Bilgiç"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Hüseyin Kuzu",
+      "Eyüp Halit Türkyazici",
+      "Fuat Çelik"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "1987",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0960714",
+    "title": "Ward 72",
+    "originalTitle": "72. Kogus",
+    "year": 1987,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0960714-poster.jpg",
+    "overview": "Bu yapım \"Erdogan Tokatli\" tarafından yönetilmiş 1987 yapımı bir Drama eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 98,
+    "cast": [
+      "Kadir Inanir",
+      "Halil Ergün",
+      "Tülay Arda"
+    ],
+    "director": "Erdogan Tokatli",
+    "writers": [
+      "Orhan Kemal",
+      "Erdogan Tokatli",
+      "Çetin Öner"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "EtJMoVAPExY"
+  },
+  {
+    "imdbId": "tt0200428",
+    "title": "Amansiz Yol",
+    "originalTitle": "Amansiz Yol",
+    "year": 1985,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0200428-poster.jpg",
+    "overview": "Bu yapım \"Ömer Kavur\" tarafından yönetilmiş 1985 yapımı bir Crime, Drama eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "runtime": 91,
+    "cast": [
+      "Kadir Inanir",
+      "Zuhal Olcay",
+      "Yavuzer Çetinkaya"
+    ],
+    "director": "Ömer Kavur",
+    "writers": [
+      "Baris Pirhasan"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "rSS0PJBQ_uA"
+  },
+  {
+    "imdbId": "tt0930098",
+    "title": "Revenge of the Snakes",
+    "originalTitle": "Yilanlarin Öcü",
+    "year": 1985,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0930098-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1985 yapımı bir Drama eseridir. IMDb puanı 7.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 98,
+    "cast": [
+      "Kadir Inanir",
+      "Fatma Girik",
+      "Serpil Çakmakli"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Fakir Baykurt",
+      "Yavuzer Çetinkaya"
+    ],
+    "imdbRating": 7.6,
+    "tmdbRating": 7.6,
+    "releaseDate": "1985-01-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "4IVs2aGWjy0"
+  },
+  {
+    "imdbId": "tt0200490",
+    "title": "A Sip of Love",
+    "originalTitle": "Bir Yudum Sevgi",
+    "year": 1984,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0200490-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1984 yapımı bir Drama, Romance eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 93,
+    "cast": [
+      "Kadir Inanir",
+      "Hale Soygazi",
+      "Macit Koper"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Latife Tekin",
+      "Fehmi Yasar",
+      "Atif Yilmaz"
+    ],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "https://mubi.com/tr/films/a-sip-of-love/trailer"
+  },
+  {
+    "imdbId": "tt0492410",
+    "title": "Yürek Yarasi",
+    "originalTitle": "Yürek Yarasi",
+    "year": 1983,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0492410-poster.jpg",
+    "overview": "Bu yapım \"Orhan Elmas\" tarafından yönetilmiş 1983 yapımı bir Drama, Romance eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 84,
+    "cast": [
+      "Kadir Inanir",
+      "Serpil Çakmakli",
+      "Reha Yurdakul"
+    ],
+    "director": "Orhan Elmas",
+    "writers": [
+      "Memduh Ün"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "1983-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "cqa9fBzVt4Y"
+  },
+  {
+    "imdbId": "tt6030654",
+    "title": "Amansizlar",
+    "originalTitle": "Amansizlar",
+    "year": 1982,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt6030654-poster.jpg",
+    "overview": "Bu yapım \"T. Fikret Uçak\" tarafından yönetilmiş 1982 yapımı bir Adventure eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Kadir Inanir",
+      "Perihan Savas",
+      "Yasar Sener"
+    ],
+    "director": "T. Fikret Uçak",
+    "writers": [],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1982",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "-Hr7Oll7JgE",
+    "backdrop": "",
+    "plotTr": ""
+  },
+  {
+    "imdbId": "tt0492381",
+    "title": "Tomruk",
+    "originalTitle": "Tomruk",
+    "year": 1982,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0492381-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1982 yapımı bir Adventure, Drama eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama"
+    ],
+    "runtime": 83,
+    "cast": [
+      "Kadir Inanir",
+      "Serpil Çakmakli",
+      "Selçuk Özer"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Ahmet Soner"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "jn03rsbsGUE"
+  },
+  {
+    "imdbId": "tt0489631",
+    "title": "Ah Güzel Istanbul",
+    "originalTitle": "Ah Güzel Istanbul",
+    "year": 1981,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0489631-poster.jpg",
+    "overview": "Bu yapım \"Ömer Kavur\" tarafından yönetilmiş 1981 yapımı bir Adventure, Drama, Romance eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Kadir Inanir",
+      "Müjde Ar",
+      "Hakan Tanfer"
+    ],
+    "director": "Ömer Kavur",
+    "writers": [
+      "Füruzan",
+      "Ömer Kavur"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "7e5yeNyRxko"
+  },
+  {
+    "imdbId": "tt0291271",
+    "title": "Istanbul 79",
+    "originalTitle": "Istanbul 79",
+    "year": 1980,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0291271-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1980 yapımı bir Drama eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 83,
+    "cast": [
+      "Kadir Inanir",
+      "Semra Türel",
+      "Mahmut Cevher"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Orhan Aksoy"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "1980-02",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Ol1EEOQMUV8"
+  },
+  {
+    "imdbId": "tt2002690",
+    "title": "Isyan",
+    "originalTitle": "Isyan",
+    "year": 1979,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt2002690-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1979 yapımı bir Drama eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 82,
+    "cast": [
+      "Kadir Inanir",
+      "Melike Zobu",
+      "Erol Tas"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Sadik Sendil"
+    ],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "1979",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "nx4xQCm9Vkw"
+  },
+  {
+    "imdbId": "tt1988593",
+    "title": "Dervis Bey",
+    "originalTitle": "Dervis Bey",
+    "year": 1978,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1988593-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1978 yapımı bir Drama, Romance eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Kadir Inanir",
+      "Melike Zobu",
+      "Ahu Tugba"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Safa Önal"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1979-03-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "jwXLV3qEWmk"
+  },
+  {
+    "imdbId": "tt0263273",
+    "title": "Madam Dila",
+    "originalTitle": "Dila Hanim",
+    "year": 1977,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0263273-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1977 yapımı bir Romance, Drama eseridir. IMDb puanı 7.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Türkan Soray",
+      "Kadir Inanir",
+      "Erol Tas"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Necati Cumali",
+      "Safa Önal"
+    ],
+    "imdbRating": 7.3,
+    "tmdbRating": 7.3,
+    "releaseDate": "1978-01-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "9M1es1WQIGk"
+  },
+  {
+    "imdbId": "tt0263260",
+    "title": "Deprem",
+    "originalTitle": "Deprem",
+    "year": 1976,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0263260-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1976 yapımı bir Romance, Drama eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 83,
+    "cast": [
+      "Türkan Soray",
+      "Kadir Inanir",
+      "Naser Malek Motiee"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Safa Önal"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "1976",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "KeaNnfvQKnU"
+  },
+  {
+    "imdbId": "tt0263269",
+    "title": "Love of Giant",
+    "originalTitle": "Devlerin Aski",
+    "year": 1976,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0263269-poster.jpg",
+    "overview": "Bu yapım \"Osman F. Seden\" tarafından yönetilmiş 1976 yapımı bir Drama, Romance eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 80,
+    "cast": [
+      "Türkan Soray",
+      "Kadir Inanir",
+      "Savas Basar"
+    ],
+    "director": "Osman F. Seden",
+    "writers": [
+      "Bülent Oran"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "B-cD3KLOuD8"
+  },
+  {
+    "imdbId": "tt2121774",
+    "title": "Iki Kizgin Adam",
+    "originalTitle": "Iki Kizgin Adam",
+    "year": 1976,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt2121774-poster.jpg",
+    "overview": "Bu yapım \"Ertem Göreç\" tarafından yönetilmiş 1976 yapımı bir Adventure, Drama, Romance eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 81,
+    "cast": [
+      "Kadir Inanir",
+      "Perihan Savas",
+      "Bilal Inci"
+    ],
+    "director": "Ertem Göreç",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1976",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "XZd_GrJ8CHU"
+  },
+  {
+    "imdbId": "tt1852878",
+    "title": "Pisi Pisi",
+    "originalTitle": "Pisi Pisi",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1852878-poster.jpg",
+    "overview": "Bu yapım \"Zeki Ökten\" tarafından yönetilmiş 1975 yapımı bir Drama, Romance eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 62,
+    "cast": [
+      "Kadir Inanir",
+      "Müjde Ar",
+      "Diler Saraç"
+    ],
+    "director": "Zeki Ökten",
+    "writers": [
+      "Zeki Ökten"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1975",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "CqWJQHLurFQ"
+  },
+  {
+    "imdbId": "tt0273724",
+    "title": "The Bridge",
+    "originalTitle": "Köprü",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0273724-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1975 yapımı bir Drama eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 78,
+    "cast": [
+      "Kadir Inanir",
+      "Fikret Hakan",
+      "Necla Nazir"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Fuat Özlüer",
+      "Ahmet Üstel"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "1975-11-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "9SJcnXJh2fU"
+  },
+  {
+    "imdbId": "tt0280440",
+    "title": "Askerin Dönüsü",
+    "originalTitle": "Askerin Dönüsü",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0280440-poster.jpg",
+    "overview": "Bu yapım \"Zeki Ökten\" tarafından yönetilmiş 1975 yapımı bir Drama eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 74,
+    "cast": [
+      "Kadir Inanir",
+      "Selma Güneri",
+      "Tufan Tümer"
+    ],
+    "director": "Zeki Ökten",
+    "writers": [
+      "Selim Ileri",
+      "Vural Pakel"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "1975-03-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "wZaV-O5gaM8"
+  },
+  {
+    "imdbId": "tt5123984",
+    "title": "Ceza",
+    "originalTitle": "Ceza",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt5123984-poster.jpg",
+    "overview": "Bu yapım \"Mehmet Dinler\" tarafından yönetilmiş 1974 yapımı bir Adventure, Drama eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama"
+    ],
+    "runtime": 84,
+    "cast": [
+      "Kadir Inanir",
+      "Hale Soygazi",
+      "Metin Serezli"
+    ],
+    "director": "Mehmet Dinler",
+    "writers": [
+      "Bülent Oran"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "1974",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "1Du77zCaTFw"
+  },
+  {
+    "imdbId": "tt0279162",
+    "title": "Kambur",
+    "originalTitle": "Kambur",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0279162-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1973 yapımı bir Drama eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 89,
+    "cast": [
+      "Fatma Girik",
+      "Kadir Inanir",
+      "Suzan Avci"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Ayse Sasa"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "BRTTAWHlbA0"
+  },
+  {
+    "imdbId": "tt1626654",
+    "title": "Yaban",
+    "originalTitle": "Yaban",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1626654-poster.jpg",
+    "overview": "Bu yapım \"Osman F. Seden\" tarafından yönetilmiş 1973 yapımı bir Romance, Drama eseridir. IMDb puanı 5.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 80,
+    "cast": [
+      "Kadir Inanir",
+      "Gülsen Bubikoglu",
+      "Emel Özden"
+    ],
+    "director": "Osman F. Seden",
+    "writers": [
+      "Bülent Oran"
+    ],
+    "imdbRating": 5.4,
+    "tmdbRating": 5.4,
+    "releaseDate": "1973",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "W-sgidUyJgc"
+  },
+  {
+    "imdbId": "tt0282279",
+    "title": "Three Friends",
+    "originalTitle": "Üç Arkadas",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0282279-poster.jpg",
+    "overview": "Bu yapım \"Memduh Ün\" tarafından yönetilmiş 1972 yapımı bir Romance, Drama eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Hülya Koçyigit",
+      "Kadir Inanir",
+      "Halit Akçatepe"
+    ],
+    "director": "Memduh Ün",
+    "writers": [
+      "Aydin Arakon",
+      "Duygu Sagiroglu",
+      "Memduh Ün"
+    ],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "1972-02",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt1852742",
+    "title": "Bitirimler Sosyetede",
+    "originalTitle": "Bitirimler Sosyetede",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1852742-poster.jpg",
+    "overview": "Bu yapım \"Zeki Ökten\" tarafından yönetilmiş 1973 yapımı bir Comedy eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Kadir Inanir",
+      "Kartal Tibet",
+      "Gülsen Bubikoglu"
+    ],
+    "director": "Zeki Ökten",
+    "writers": [
+      "Fuat Özlüer"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1973-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "TwjRBJ7wB68"
+  },
+  {
+    "imdbId": "tt0182749",
+    "title": "Ayri Dünyalar",
+    "originalTitle": "Ayri Dünyalar",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0182749-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1974 yapımı bir Romance, Drama eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 96,
+    "cast": [
+      "Abdi Algül",
+      "Mehtap Ar",
+      "Cüneyt Arkin"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Erdogan Tünas",
+      "Fuat Özlüer"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "1974-03",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "19nytsT9EAk"
+  },
+  {
+    "imdbId": "tt0451475",
+    "title": "The Three Superboys Strike Again",
+    "originalTitle": "Üç Kagitçilar",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0451475-poster.jpg",
+    "overview": "Bu yapım \"Natuk Baytan,Ernst Hofbauer\" tarafından yönetilmiş 1975 yapımı bir Comedy, Adventure eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Adventure"
+    ],
+    "runtime": 89,
+    "cast": [
+      "Cüneyt Arkin",
+      "Gülsen Bubikoglu",
+      "Alberto Dell'Acqua"
+    ],
+    "director": "Natuk Baytan,Ernst Hofbauer",
+    "writers": [
+      "Erdogan Tünas",
+      "Fuat Özlüer"
+    ],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "1975-10-27",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0277598",
+    "title": "The Flying Superboy",
+    "originalTitle": "Bas Belasi",
+    "year": 1976,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0277598-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1976 yapımı bir Comedy, Adventure eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Adventure"
+    ],
+    "runtime": 80,
+    "cast": [
+      "Gülsen Bubikoglu",
+      "Alberto Dell'Acqua",
+      "Sadri Alisik"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Erdogan Tünas",
+      "Fuat Özlüer"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "1976-11-23",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt1401253",
+    "title": "Vahsi Gelin",
+    "originalTitle": "Vahsi Gelin",
+    "year": 1978,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1401253-poster.jpg",
+    "overview": "Bu yapım \"Osman F. Seden\" tarafından yönetilmiş 1978 yapımı bir Adventure, Comedy, Romance eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Romance"
+    ],
+    "runtime": 81,
+    "cast": [
+      "Cüneyt Arkin",
+      "Gülsen Bubikoglu",
+      "Tanju Gürsu"
+    ],
+    "director": "Osman F. Seden",
+    "writers": [
+      "Osman F. Seden",
+      "Fuat Özlüer"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1978",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "CnWlezxVqXY"
+  },
+  {
+    "imdbId": "tt0489713",
+    "title": "Girgiriye",
+    "originalTitle": "Girgiriye",
+    "year": 1981,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0489713-poster.jpg",
+    "overview": "Bu yapım \"Kartal Tibet\" tarafından yönetilmiş 1981 yapımı bir Comedy eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Müjdat Gezen",
+      "Gülsen Bubikoglu",
+      "Münir Özkul"
+    ],
+    "director": "Kartal Tibet",
+    "writers": [
+      "Müjdat Gezen",
+      "Sadik Sendil"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "-E8we7Lwtss"
+  },
+  {
+    "imdbId": "tt0293827",
+    "title": "Görgüsüzler",
+    "originalTitle": "Görgüsüzler",
+    "year": 1982,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0293827-poster.jpg",
+    "overview": "Bu yapım \"Osman F. Seden\" tarafından yönetilmiş 1982 yapımı bir Comedy eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Gülsen Bubikoglu",
+      "Müjdat Gezen",
+      "Perran Kutman"
+    ],
+    "director": "Osman F. Seden",
+    "writers": [],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "jmCtIrtMitw"
+  },
+  {
+    "imdbId": "tt0494952",
+    "title": "Girgiriye'de Cümbüs",
+    "originalTitle": "Girgiriye'de Cümbüs",
+    "year": 1983,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0494952-poster.jpg",
+    "overview": "Bu yapım \"Temel Gürsu\" tarafından yönetilmiş 1983 yapımı bir Comedy eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 88,
+    "cast": [
+      "Gülsen Bubikoglu",
+      "Müjdat Gezen",
+      "Münir Özkul"
+    ],
+    "director": "Temel Gürsu",
+    "writers": [
+      "Sadik Sendil",
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "qO3hNNcMt1s"
+  },
+  {
+    "imdbId": "tt0878123",
+    "title": "Girgiriye'de Büyük Seçim",
+    "originalTitle": "Girgiriye'de Büyük Seçim",
+    "year": 1984,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0878123-poster.jpg",
+    "overview": "Bu yapım \"Temel Gürsu\" tarafından yönetilmiş 1984 yapımı bir Comedy eseridir. IMDb puanı 5.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Müjdat Gezen",
+      "Gülsen Bubikoglu",
+      "Münir Özkul"
+    ],
+    "director": "Temel Gürsu",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 5.5,
+    "tmdbRating": 5.5,
+    "releaseDate": "1984-08-16",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt21223496",
+    "title": "Suçlu",
+    "originalTitle": "Suçlu",
+    "year": 1989,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt21223496-poster.jpg",
+    "overview": "Bu yapım \"Osman F. Seden\" tarafından yönetilmiş 1989 yapımı bir Drama eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 99,
+    "cast": [
+      "Gülsen Bubikoglu",
+      "Tarik Tarcan",
+      "Bülent Bilgiç"
+    ],
+    "director": "Osman F. Seden",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "1989",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "1uT71fqZR9A"
+  },
+  {
+    "imdbId": "tt0462075",
+    "title": "Affet Bizi Hocam",
+    "originalTitle": "Affet Bizi Hocam",
+    "year": 1998,
+    "type": "TV Series",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0462075-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 1998 yapımı bir Drama eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 45,
+    "cast": [
+      "Özgü Namal",
+      "Levent Özdilek",
+      "Sevket Çoruh"
+    ],
+    "director": "",
+    "writers": [],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "gcEP_uaPhAE"
+  },
+  {
+    "imdbId": "tt0329866",
+    "title": "Koçum Benim",
+    "originalTitle": "Koçum Benim",
+    "year": 2002,
+    "type": "TV Series",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0329866-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2002 yapımı bir Comedy, Sport eseridir. IMDb puanı 6.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Sport"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Tarik Akan",
+      "Ebru Cündübeyoglu",
+      "Sevil Üstekin"
+    ],
+    "director": "",
+    "writers": [],
+    "imdbRating": 6.9,
+    "tmdbRating": 6.9,
+    "releaseDate": "2002-03-07",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "PyYUzEtUiBM",
+    "backdrop": "",
+    "plotTr": ""
+  },
+  {
+    "imdbId": "tt8135550",
+    "title": "Passed by Censor",
+    "originalTitle": "Görülmüstür",
+    "year": 2019,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt8135550-poster.jpg",
+    "overview": "Bu yapım \"Serhat Karaaslan\" tarafından yönetilmiş 2019 yapımı bir Drama eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 96,
+    "cast": [
+      "Berkay Ates",
+      "Saadet Aksoy",
+      "Ipek Türktan"
+    ],
+    "director": "Serhat Karaaslan",
+    "writers": [
+      "Serhat Karaaslan"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "2019-09-20",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "y7y3t6_HaQE"
+  },
+  {
+    "imdbId": "tt0200762",
+    "title": "Karartma Geceleri",
+    "originalTitle": "Karartma Geceleri",
+    "year": 1990,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0200762-poster.jpg",
+    "overview": "Bu yapım \"Yusuf Kurçenli\" tarafından yönetilmiş 1990 yapımı bir Drama eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 85,
+    "cast": [
+      "Tarik Akan",
+      "Bülent Bilgiç",
+      "Nurseli Idiz"
+    ],
+    "director": "Yusuf Kurçenli",
+    "writers": [
+      "Rifat Ilgaz",
+      "Yusuf Kurçenli"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "1990-04-27",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt2093321",
+    "title": "Çark",
+    "originalTitle": "Çark",
+    "year": 1987,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt2093321-poster.jpg",
+    "overview": "Bu yapım \"Muzaffer Hiçdurmaz\" tarafından yönetilmiş 1987 yapımı bir Drama eseridir. IMDb puanı 7.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 75,
+    "cast": [
+      "Tarik Akan",
+      "Müge Akyamaç",
+      "Savas Yurttas"
+    ],
+    "director": "Muzaffer Hiçdurmaz",
+    "writers": [
+      "Bekir Yildiz",
+      "Hasmet Zeybek"
+    ],
+    "imdbRating": 7.1,
+    "tmdbRating": 7.1,
+    "releaseDate": "1987",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "QdUVgySE0bw"
+  },
+  {
+    "imdbId": "tt0429509",
+    "title": "Aci Dünya",
+    "originalTitle": "Aci Dünya",
+    "year": 1986,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0429509-poster.jpg",
+    "overview": "Bu yapım \"Ümit Efekan\" tarafından yönetilmiş 1986 yapımı bir Drama eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 83,
+    "cast": [
+      "Tarik Akan",
+      "Harika Avci",
+      "Sümer Tilmaç"
+    ],
+    "director": "Ümit Efekan",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt1172505",
+    "title": "Beyoglu'nun Arka Yakasi",
+    "originalTitle": "Beyoglu'nun Arka Yakasi",
+    "year": 1986,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt1172505-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1986 yapımı bir Drama eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Tarik Akan",
+      "Oya Aydogan",
+      "Erdal Özyagcilar"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Hüseyin Kuzu",
+      "Eyüp Halit Türkyazici"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "1986",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt1998201",
+    "title": "Damga",
+    "originalTitle": "Damga",
+    "year": 1984,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt1998201-poster.jpg",
+    "overview": "Bu yapım \"Osman F. Seden\" tarafından yönetilmiş 1984 yapımı bir Drama eseridir. IMDb puanı 5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 80,
+    "cast": [
+      "Tarik Akan",
+      "Yaprak Özdemiroglu",
+      "Yusuf Sezgin"
+    ],
+    "director": "Osman F. Seden",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 5,
+    "tmdbRating": 5,
+    "releaseDate": "1984",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0088808",
+    "title": "Bir Avuç Cennet",
+    "originalTitle": "Bir Avuç Cennet",
+    "year": 1985,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0088808-poster.jpg",
+    "overview": "Bu yapım \"Muammer Özer\" tarafından yönetilmiş 1985 yapımı bir Drama eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 97,
+    "cast": [
+      "Tarik Akan",
+      "Hale Soygazi",
+      "Baris Adali"
+    ],
+    "director": "Muammer Özer",
+    "writers": [
+      "Muammer Özer"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "1985",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "4wNzgUDpvZM"
+  },
+  {
+    "imdbId": "tt0124048",
+    "title": "Pehlivan",
+    "originalTitle": "Pehlivan",
+    "year": 1984,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0124048-poster.jpg",
+    "overview": "Bu yapım \"Zeki Ökten\" tarafından yönetilmiş 1984 yapımı bir Drama, Sport eseridir. IMDb puanı 6.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Sport"
+    ],
+    "runtime": 91,
+    "cast": [
+      "Tarik Akan",
+      "Meral Orhonsay",
+      "Erol Günaydin"
+    ],
+    "director": "Zeki Ökten",
+    "writers": [
+      "Fehmi Yasar"
+    ],
+    "imdbRating": 6.6,
+    "tmdbRating": 6.6,
+    "releaseDate": "1984",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0353347",
+    "title": "Remedy",
+    "originalTitle": "Derman",
+    "year": 1983,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0353347-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1983 yapımı bir Drama eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 88,
+    "cast": [
+      "Hülya Koçyigit",
+      "Tarik Akan",
+      "Talat Bulut"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Osman Sahin",
+      "Ahmet Soner"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "1983",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "-yboCXDKBXk"
+  },
+  {
+    "imdbId": "tt0492093",
+    "title": "Kaçak",
+    "originalTitle": "Kaçak",
+    "year": 1983,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0492093-poster.jpg",
+    "overview": "Bu yapım \"Memduh Ün\" tarafından yönetilmiş 1983 yapımı bir Adventure, Drama eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Tarik Akan",
+      "Fatma Girik",
+      "Celile Toyon Uysal"
+    ],
+    "director": "Memduh Ün",
+    "writers": [
+      "Orhan Kemal",
+      "Memduh Ün"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1983-02",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "8n9-nsrm_BM"
+  },
+  {
+    "imdbId": "tt0491315",
+    "title": "Arkadasim",
+    "originalTitle": "Arkadasim",
+    "year": 1982,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0491315-poster.jpg",
+    "overview": "Bu yapım \"Nazmi Özer\" tarafından yönetilmiş 1982 yapımı bir Drama, Romance eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 100,
+    "cast": [
+      "Tarik Akan",
+      "Erdinç Akbas",
+      "Benek Aksoy"
+    ],
+    "director": "Nazmi Özer",
+    "writers": [
+      "Ihsan Yüce"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "1982",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "99Kn5q3RoWs"
+  },
+  {
+    "imdbId": "tt0489021",
+    "title": "Deli Kan",
+    "originalTitle": "Deli Kan",
+    "year": 1981,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0489021-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1981 yapımı bir Drama eseridir. IMDb puanı 5.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 87,
+    "cast": [
+      "Tarik Akan",
+      "Müjde Ar",
+      "Kamil Sönmez"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Zeyyat Selimoglu",
+      "Atif Yilmaz"
+    ],
+    "imdbRating": 5.3,
+    "tmdbRating": 5.3,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "F9EPjdxyIj8"
+  },
+  {
+    "imdbId": "tt0490429",
+    "title": "Herhangi Bir Kadin",
+    "originalTitle": "Herhangi Bir Kadin",
+    "year": 1981,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0490429-poster.jpg",
+    "overview": "Bu yapım \"Serif Gören\" tarafından yönetilmiş 1981 yapımı bir Adventure, Drama, Romance eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 95,
+    "cast": [
+      "Hülya Koçyigit",
+      "Tarik Akan",
+      "Cihan Ünal"
+    ],
+    "director": "Serif Gören",
+    "writers": [
+      "Ahmet Soner"
+    ],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "A60Ljs9WXTk"
+  },
+  {
+    "imdbId": "tt0121051",
+    "title": "Adak",
+    "originalTitle": "Adak",
+    "year": 1980,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [],
+    "poster": "/images/movies/tt0121051-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1980 yapımı bir Drama eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 76,
+    "cast": [
+      "Tarik Akan",
+      "Necla Nazir",
+      "Yaman Okay"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Basar Sabuncu"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "1980-02",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "5-1QTHnCuSk"
+  },
+  {
+    "imdbId": "tt4195262",
+    "title": "Demiryol",
+    "originalTitle": "Demiryol",
+    "year": 1979,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt4195262-poster.jpg",
+    "overview": "Bu yapım \"Yavuz Özkan\" tarafından yönetilmiş 1979 yapımı bir Drama eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 82,
+    "cast": [
+      "Tarik Akan",
+      "Fikret Hakan",
+      "Sevda Aktolga"
+    ],
+    "director": "Yavuz Özkan",
+    "writers": [
+      "Mahmut Tali Öngören",
+      "Yavuz Özkan"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1979",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "s-dBnRduAR8"
+  },
+  {
+    "imdbId": "tt0280819",
+    "title": "Kanal",
+    "originalTitle": "Kanal",
+    "year": 1978,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0280819-poster.jpg",
+    "overview": "Bu yapım \"Erden Kiral\" tarafından yönetilmiş 1978 yapımı bir Drama eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 78,
+    "cast": [
+      "Tarik Akan",
+      "Tuncel Kurtiz",
+      "Meral Orhonsay"
+    ],
+    "director": "Erden Kiral",
+    "writers": [
+      "Ihsan Yüce"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "1978",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": ""
+  },
+  {
+    "imdbId": "tt0263104",
+    "title": "Baraj",
+    "originalTitle": "Baraj",
+    "year": 1977,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0263104-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1977 yapımı bir Drama, Romance, Crime, Thriller eseridir. IMDb puanı 6.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance",
+      "Crime",
+      "Thriller"
+    ],
+    "runtime": 93,
+    "cast": [
+      "Türkan Soray",
+      "Tarik Akan",
+      "Naser Malek Motiee"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Safa Önal"
+    ],
+    "imdbRating": 6.4,
+    "tmdbRating": 6.4,
+    "releaseDate": "1977-10-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "XbFxucDhxq0"
+  },
+  {
+    "imdbId": "tt0278700",
+    "title": "My Dear Uncle",
+    "originalTitle": "Sevgili Dayim",
+    "year": 1977,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0278700-poster.jpg",
+    "overview": "Bu yapım \"Zeki Ökten\" tarafından yönetilmiş 1977 yapımı bir Romance, Comedy eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 82,
+    "cast": [
+      "Tarik Akan",
+      "Hale Soygazi",
+      "Süleyman Turan"
+    ],
+    "director": "Zeki Ökten",
+    "writers": [
+      "Süleyman Turan"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "1977-04",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0074302",
+    "title": "The Three Superboys in the Snow",
+    "originalTitle": "Babanin Evlatlari",
+    "year": 1977,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0074302-poster.jpg",
+    "overview": "Bu yapım \"Natuk Baytan,Ernst Hofbauer\" tarafından yönetilmiş 1977 yapımı bir Comedy, Adventure eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Adventure"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Tarik Akan",
+      "Alberto Dell'Acqua",
+      "Öztürk Serengil"
+    ],
+    "director": "Natuk Baytan,Ernst Hofbauer",
+    "writers": [
+      "Fuat Özlüer",
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "1977-02-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt5175468",
+    "title": "Evcilik Oyunu",
+    "originalTitle": "Evcilik Oyunu",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt5175468-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1975 yapımı bir Comedy, Romance eseridir. IMDb puanı 6.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime": 89,
+    "cast": [
+      "Gülsen Bubikoglu",
+      "Tarik Akan",
+      "Hulusi Kentmen"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Safa Önal"
+    ],
+    "imdbRating": 6.4,
+    "tmdbRating": 6.4,
+    "releaseDate": "1975",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0281406",
+    "title": "Çapkin Hirsiz",
+    "originalTitle": "Çapkin Hirsiz",
+    "year": 1975,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0281406-poster.jpg",
+    "overview": "Bu yapım \"Atıf Yılmaz\" tarafından yönetilmiş 1975 yapımı bir Romance, Comedy eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Tarik Akan",
+      "Necla Nazir",
+      "Adile Nasit"
+    ],
+    "director": "Atıf Yılmaz",
+    "writers": [
+      "Selim Ileri",
+      "Atif Yilmaz"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1975-04",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "8cE3ACIEr9k"
+  },
+  {
+    "imdbId": "tt0279954",
+    "title": "Memleketim",
+    "originalTitle": "Memleketim",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0279954-poster.jpg",
+    "overview": "Bu yapım \"Yücel Çakmakli\" tarafından yönetilmiş 1974 yapımı bir Drama eseridir. IMDb puanı 5.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 85,
+    "cast": [
+      "Filiz Akin",
+      "Tarik Akan",
+      "Cemil Sahbaz"
+    ],
+    "director": "Yücel Çakmakli",
+    "writers": [
+      "Atilla Gökbürü"
+    ],
+    "imdbRating": 5.4,
+    "tmdbRating": 5.4,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0281383",
+    "title": "Yaz Bekari",
+    "originalTitle": "Yaz Bekari",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0281383-poster.jpg",
+    "overview": "Bu yapım \"Osman F. Seden\" tarafından yönetilmiş 1974 yapımı bir Comedy, Romance eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime": 65,
+    "cast": [
+      "Tarik Akan",
+      "Gülsen Bubikoglu",
+      "Deniz Erkanat"
+    ],
+    "director": "Osman F. Seden",
+    "writers": [
+      "Erdogan Tünas",
+      "Fuat Özlüer"
+    ],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "yeDdYh-dJHk"
+  },
+  {
+    "imdbId": "tt6107468",
+    "title": "Mahçup Delikanli",
+    "originalTitle": "Mahçup Delikanli",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt6107468-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1974 yapımı bir Romance, Comedy eseridir. IMDb puanı 5.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 71,
+    "cast": [
+      "Tarik Akan",
+      "Gülsen Bubikoglu",
+      "Handan Adali",
+      "Nazan Adali"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Ahmet Üstel"
+    ],
+    "imdbRating": 5.9,
+    "tmdbRating": 5.9,
+    "releaseDate": "1974-12-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "yPdwtodHe0U"
+  },
+  {
+    "imdbId": "tt0279896",
+    "title": "Kanli Deniz",
+    "originalTitle": "Kanli Deniz",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0279896-poster.jpg",
+    "overview": "Bu yapım \"Orhan Elmas\" tarafından yönetilmiş 1974 yapımı bir Drama eseridir. IMDb puanı 6.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 81,
+    "cast": [
+      "Tarik Akan",
+      "Hale Soygazi",
+      "Orçun Sonat",
+      "Tekin Akmansoy"
+    ],
+    "director": "Orhan Elmas",
+    "writers": [
+      "Sadik Sendil",
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 6.2,
+    "tmdbRating": 6.2,
+    "releaseDate": "1974-11-11",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "ip4EkJ1sMW8"
+  },
+  {
+    "imdbId": "tt0279801",
+    "title": "Esir Hayat",
+    "originalTitle": "Esir Hayat",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0279801-poster.jpg",
+    "overview": "Bu yapım \"Lütfi Ö. Akad\" tarafından yönetilmiş 1974 yapımı bir Romance, Drama eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 91,
+    "cast": [
+      "Tarik Akan",
+      "Perihan Savas",
+      "Hulusi Kentmen"
+    ],
+    "director": "Lütfi Ö. Akad",
+    "writers": [
+      "Lütfi Ö. Akad",
+      "Erol Keskin"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "1974-04",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "DNKU8E9_QyM"
+  },
+  {
+    "imdbId": "tt0268046",
+    "title": "Yeryüzünde Bir Melek",
+    "originalTitle": "Yeryüzünde Bir Melek",
+    "year": 1974,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0268046-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1974 yapımı bir Romance, Drama eseridir. IMDb puanı 5.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Hülya Koçyigit",
+      "Tarik Akan",
+      "Zerrin Arbas"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Orhan Aksoy",
+      "Ahmet Üstel"
+    ],
+    "imdbRating": 5.4,
+    "tmdbRating": 5.4,
+    "releaseDate": "1974-02",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "SRWLeOGKoB4"
+  },
+  {
+    "imdbId": "tt0308015",
+    "title": "Bebek Yüzlü",
+    "originalTitle": "Bebek Yüzlü",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0308015-poster.jpg",
+    "overview": "Bu yapım \"Vural Pakel\" tarafından yönetilmiş 1973 yapımı bir Drama eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 71,
+    "cast": [
+      "Tarik Akan",
+      "Perihan Savas",
+      "Ahmet Mekin"
+    ],
+    "director": "Vural Pakel",
+    "writers": [
+      "Vural Pakel"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "lAyUSLRwOec"
+  },
+  {
+    "imdbId": "tt0253960",
+    "title": "Yalanci Yarim",
+    "originalTitle": "Yalanci Yarim",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0253960-poster.jpg",
+    "overview": "Bu yapım \"Ertem Egilmez\" tarafından yönetilmiş 1973 yapımı bir Romance, Comedy eseridir. IMDb puanı 7.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 94,
+    "cast": [
+      "Emel Sayin",
+      "Tarik Akan",
+      "Münir Özkul"
+    ],
+    "director": "Ertem Egilmez",
+    "writers": [
+      "Sadik Sendil"
+    ],
+    "imdbRating": 7.1,
+    "tmdbRating": 7.1,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt1899336",
+    "title": "World of Hope",
+    "originalTitle": "Umut Dünyasi",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1899336-poster.jpg",
+    "overview": "Bu yapım \"Safa Önal\" tarafından yönetilmiş 1973 yapımı bir Drama, Romance eseridir. IMDb puanı 7.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Tarik Akan",
+      "Necla Nazir",
+      "Sükriye Atav"
+    ],
+    "director": "Safa Önal",
+    "writers": [
+      "Safa Önal"
+    ],
+    "imdbRating": 7.1,
+    "tmdbRating": 7.1,
+    "releaseDate": "1973-11-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "_EgRCUh0vkE"
+  },
+  {
+    "imdbId": "tt0903004",
+    "title": "Para",
+    "originalTitle": "Para",
+    "year": 1973,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0903004-poster.jpg",
+    "overview": "Bu yapım \"Memduh Ün\" tarafından yönetilmiş 1973 yapımı bir Drama, Romance eseridir. IMDb puanı 6.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 88,
+    "cast": [
+      "Tarik Akan",
+      "Perihan Savas",
+      "Yalçin Gülhan"
+    ],
+    "director": "Memduh Ün",
+    "writers": [
+      "Erdogan Tünas"
+    ],
+    "imdbRating": 6.6,
+    "tmdbRating": 6.6,
+    "releaseDate": "1973-02",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt1184942",
+    "title": "Asklarin En Güzeli",
+    "originalTitle": "Asklarin En Güzeli",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1184942-poster.jpg",
+    "overview": "Bu yapım \"Nejat Saydam\" tarafından yönetilmiş 1972 yapımı bir Romance, Drama eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Tarik Akan",
+      "Deniz Gökçer",
+      "Ali Sen"
+    ],
+    "director": "Nejat Saydam",
+    "writers": [
+      "Nejat Saydam"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt1184947",
+    "title": "Azat Kusu",
+    "originalTitle": "Azat Kusu",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt1184947-poster.jpg",
+    "overview": "Bu yapım \"Orhan Elmas\" tarafından yönetilmiş 1972 yapımı bir Drama, Romance eseridir. IMDb puanı 5.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 61,
+    "cast": [
+      "Tarik Akan",
+      "Hülya Koçyigit",
+      "Yildirim Önal"
+    ],
+    "director": "Orhan Elmas",
+    "writers": [
+      "Vural Pakel"
+    ],
+    "imdbRating": 5.4,
+    "tmdbRating": 5.4,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "8vEfncvjoCU"
+  },
+  {
+    "imdbId": "tt2259430",
+    "title": "Feryat",
+    "originalTitle": "Feryat",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt2259430-poster.jpg",
+    "overview": "Bu yapım \"Orhan Elmas\" tarafından yönetilmiş 1972 yapımı bir Drama eseridir. IMDb puanı 5.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 91,
+    "cast": [
+      "Handan Adali",
+      "Tarik Akan",
+      "Halit Akçatepe"
+    ],
+    "director": "Orhan Elmas",
+    "writers": [
+      "Sadik Sendil"
+    ],
+    "imdbRating": 5.3,
+    "tmdbRating": 5.3,
+    "releaseDate": "1973-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0827739",
+    "title": "Sev Kardesim",
+    "originalTitle": "Sev Kardesim",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0827739-poster.jpg",
+    "overview": "Bu yapım \"Ertem Egilmez\" tarafından yönetilmiş 1972 yapımı bir Romance, Comedy eseridir. IMDb puanı 6.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Hülya Koçyigit",
+      "Tarik Akan",
+      "Münir Özkul"
+    ],
+    "director": "Ertem Egilmez",
+    "writers": [
+      "Sadik Sendil"
+    ],
+    "imdbRating": 6.6,
+    "tmdbRating": 6.6,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0264008",
+    "title": "Sisli Hatiralar",
+    "originalTitle": "Sisli Hatiralar",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0264008-poster.jpg",
+    "overview": "Bu yapım \"Nejat Saydam\" tarafından yönetilmiş 1972 yapımı bir Drama, Romance eseridir. IMDb puanı 5.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 88,
+    "cast": [
+      "Türkan Soray",
+      "Tarik Akan",
+      "Metin Serezli"
+    ],
+    "director": "Nejat Saydam",
+    "writers": [
+      "Kerime Nadir",
+      "Bülent Oran"
+    ],
+    "imdbRating": 5.3,
+    "tmdbRating": 5.3,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "QZLEjhVpPzA"
+  },
+  {
+    "imdbId": "tt0827748",
+    "title": "Üç Sevgili",
+    "originalTitle": "Üç Sevgili",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0827748-poster.jpg",
+    "overview": "Bu yapım \"Mehmet Dinler\" tarafından yönetilmiş 1972 yapımı bir Comedy, Romance eseridir. IMDb puanı 5.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime": 77,
+    "cast": [
+      "Tarik Akan",
+      "Meral Zeren",
+      "Fatma Belgen"
+    ],
+    "director": "Mehmet Dinler",
+    "writers": [
+      "Bülent Oran"
+    ],
+    "imdbRating": 5.5,
+    "tmdbRating": 5.5,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "xHJXk9UH0SU"
+  },
+  {
+    "imdbId": "tt0474978",
+    "title": "Vefasiz",
+    "originalTitle": "Vefasiz",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0474978-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1972 yapımı bir Drama eseridir. IMDb puanı 5.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 88,
+    "cast": [
+      "Tarik Akan",
+      "Hülya Koçyigit",
+      "Sükriye Atav"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Orhan Aksoy",
+      "Safa Önal"
+    ],
+    "imdbRating": 5.1,
+    "tmdbRating": 5.1,
+    "releaseDate": "1972",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "JLrJHH-XrV8"
+  },
+  {
+    "imdbId": "tt0277772",
+    "title": "Kaderimin Oyunu",
+    "originalTitle": "Kaderimin Oyunu",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0277772-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1972 yapımı bir Drama eseridir. IMDb puanı 6.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 85,
+    "cast": [
+      "Hülya Koçyigit",
+      "Tarik Akan",
+      "Nihat Ziyalan"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Safa Önal"
+    ],
+    "imdbRating": 6.5,
+    "tmdbRating": 6.5,
+    "releaseDate": "1972-11",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0284529",
+    "title": "Suçlu",
+    "originalTitle": "Suçlu",
+    "year": 1972,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0284529-poster.jpg",
+    "overview": "Bu yapım \"Mehmet Dinler\" tarafından yönetilmiş 1972 yapımı bir Drama eseridir. IMDb puanı 5.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 83,
+    "cast": [
+      "Tarik Akan",
+      "Bahar Erdeniz",
+      "Fatma Belgen"
+    ],
+    "director": "Mehmet Dinler",
+    "writers": [
+      "Burhan Bolan"
+    ],
+    "imdbRating": 5.5,
+    "tmdbRating": 5.5,
+    "releaseDate": "1972-11",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "TWR0q3QnizY"
+  },
+  {
+    "imdbId": "tt0263730",
+    "title": "Asrin Kadini: Melek Mi Seytan Mi",
+    "originalTitle": "Asrin Kadini: Melek Mi Seytan Mi",
+    "year": 1971,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0263730-poster.jpg",
+    "overview": "Bu yapım \"Mehmet Dinler\" tarafından yönetilmiş 1971 yapımı bir Comedy, Romance eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "runtime": 88,
+    "cast": [
+      "Türkan Soray",
+      "Tarik Akan",
+      "Süleyman Turan"
+    ],
+    "director": "Mehmet Dinler",
+    "writers": [
+      "Burhan Bolan"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "1971-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0487359",
+    "title": "Beyoglu Güzeli",
+    "originalTitle": "Beyoglu Güzeli",
+    "year": 1971,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0487359-poster.jpg",
+    "overview": "Bu yapım \"Ertem Egilmez\" tarafından yönetilmiş 1971 yapımı bir Drama eseridir. IMDb puanı 5.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama"
+    ],
+    "runtime": 94,
+    "cast": [
+      "Tarik Akan",
+      "Hülya Koçyigit",
+      "Münir Özkul"
+    ],
+    "director": "Ertem Egilmez",
+    "writers": [
+      "Sadik Sendil"
+    ],
+    "imdbRating": 5.7,
+    "tmdbRating": 5.7,
+    "releaseDate": "1972",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0487404",
+    "title": "Emine",
+    "originalTitle": "Emine",
+    "year": 1971,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0487404-poster.jpg",
+    "overview": "Bu yapım \"Orhan Aksoy\" tarafından yönetilmiş 1971 yapımı bir Drama, Romance eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Filiz Akin",
+      "Tarik Akan",
+      "Ekrem Bora"
+    ],
+    "director": "Orhan Aksoy",
+    "writers": [
+      "Sadik Sendil"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0477876",
+    "title": "Solan Bir Yaprak Gibi",
+    "originalTitle": "Solan Bir Yaprak Gibi",
+    "year": 1971,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-08",
+    "listName": [
+      "Komedi Günlükleri",
+      "Sinema Klasikleri"
+    ],
+    "poster": "/images/movies/tt0477876-poster.jpg",
+    "overview": "Bu yapım \"Mehmet Dinler\" tarafından yönetilmiş 1971 yapımı bir Romance, Comedy eseridir. IMDb puanı 5 olarak kaydedilmiştir.",
+    "genres": [
+      "Romance",
+      "Comedy"
+    ],
+    "runtime": 80,
+    "cast": [
+      "Fatma Girik",
+      "Tarik Akan",
+      "Münir Özkul"
+    ],
+    "director": "Mehmet Dinler",
+    "writers": [
+      "Burhan Bolan",
+      "Mehmet Dinler"
+    ],
+    "imdbRating": 5,
+    "tmdbRating": 5,
+    "releaseDate": "1971",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "-aFc-UKCZOA"
+  },
+  {
+    "imdbId": "tt0277296",
+    "title": "The Scorpion King",
+    "originalTitle": "The Scorpion King",
+    "year": 2002,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-07",
+    "listName": [],
+    "poster": "/images/movies/tt0277296-poster.jpg",
+    "overview": "Bu yapım \"Chuck Russell\" tarafından yönetilmiş 2002 yapımı bir Adventure, Fantasy, Action eseridir. IMDb puanı 5.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Action"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Dwayne Johnson",
+      "Steven Brand",
+      "Michael Clarke Duncan"
+    ],
+    "director": "Chuck Russell",
+    "writers": [
+      "Stephen Sommers",
+      "Jonathan Hales",
+      "William Osborne"
+    ],
+    "imdbRating": 5.5,
+    "tmdbRating": 5.5,
+    "releaseDate": "2002-04-19",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt5594954",
+    "title": "Capio",
+    "originalTitle": "Capio",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt5594954-poster.jpg",
+    "overview": "Bu yapım \"Aleksandar Kostic\" tarafından yönetilmiş 2025 yapımı bir Sci-Fi eseridir. IMDb puanı 6 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi"
+    ],
+    "runtime": 81,
+    "cast": [
+      "Diana Lotus",
+      "Didier Flamand",
+      "Madeleine Assas"
+    ],
+    "director": "Aleksandar Kostic",
+    "writers": [
+      "Michael Eisenstein",
+      "Aleksandar Kostic"
+    ],
+    "imdbRating": 6,
+    "tmdbRating": 6,
+    "releaseDate": "2025-11-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "-sW7wKabX8M"
+  },
+  {
+    "imdbId": "tt34685692",
+    "title": "Over Your Dead Body",
+    "originalTitle": "Over Your Dead Body",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt34685692-poster.jpg",
+    "overview": "Bu yapım \"Jorma Taccone\" tarafından yönetilmiş 2026 yapımı bir Thriller, Action, Comedy eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Thriller",
+      "Action",
+      "Comedy"
+    ],
+    "runtime": 105,
+    "cast": [
+      "Samara Weaving",
+      "Jason Segel",
+      "Timothy Olyphant"
+    ],
+    "director": "Jorma Taccone",
+    "writers": [
+      "Tommy Wirkola",
+      "Nick Ball",
+      "John Niven"
+    ],
+    "imdbRating": 6.3,
+    "tmdbRating": 6.3,
+    "releaseDate": "2026-04-24",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0432291",
+    "title": "The Fog",
+    "originalTitle": "The Fog",
+    "year": 2005,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt0432291-poster.jpg",
+    "overview": "Bu yapım \"Rupert Wainwright\" tarafından yönetilmiş 2005 yapımı bir Horror, Mystery eseridir. IMDb puanı 3.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "runtime": 100,
+    "cast": [
+      "Tom Welling",
+      "Maggie Grace",
+      "Selma Blair"
+    ],
+    "director": "Rupert Wainwright",
+    "writers": [
+      "Cooper Layne",
+      "John Carpenter",
+      "Debra Hill"
+    ],
+    "imdbRating": 3.7,
+    "tmdbRating": 3.7,
+    "releaseDate": "2005-10-14",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0450345",
+    "title": "The Wicker Man",
+    "originalTitle": "The Wicker Man",
+    "year": 2006,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt0450345-poster.jpg",
+    "overview": "Bu yapım \"Neil LaBute\" tarafından yönetilmiş 2006 yapımı bir Mystery, Thriller, Horror eseridir. IMDb puanı 3.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Mystery",
+      "Thriller",
+      "Horror"
+    ],
+    "runtime": 102,
+    "cast": [
+      "Nicolas Cage",
+      "Ellen Burstyn",
+      "Leelee Sobieski"
+    ],
+    "director": "Neil LaBute",
+    "writers": [
+      "Neil LaBute",
+      "Anthony Shaffer"
+    ],
+    "imdbRating": 3.8,
+    "tmdbRating": 3.8,
+    "releaseDate": "2006-09-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt1716747",
+    "title": "Hellraiser: Revelations",
+    "originalTitle": "Hellraiser: Revelations",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 2,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt1716747-poster.jpg",
+    "overview": "Bu yapım \"Víctor Garcia\" tarafından yönetilmiş 2011 yapımı bir Horror eseridir. IMDb puanı 2.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror"
+    ],
+    "runtime": 75,
+    "cast": [
+      "Jolene Andersen",
+      "Steven Brand",
+      "Dan Buran"
+    ],
+    "director": "Víctor Garcia",
+    "writers": [
+      "Gary J. Tunnicliffe",
+      "Clive Barker"
+    ],
+    "imdbRating": 2.7,
+    "tmdbRating": 2.7,
+    "releaseDate": "2011-10-18",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt1411664",
+    "title": "Bucky Larson: Born to Be a Star",
+    "originalTitle": "Bucky Larson: Born to Be a Star",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt1411664-poster.jpg",
+    "overview": "Bu yapım \"Tom Brady\" tarafından yönetilmiş 2011 yapımı bir Comedy eseridir. IMDb puanı 3.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 97,
+    "cast": [
+      "Nick Swardson",
+      "Don Johnson",
+      "Christina Ricci"
+    ],
+    "director": "Tom Brady",
+    "writers": [
+      "Adam Sandler",
+      "Allen Covert",
+      "Nick Swardson"
+    ],
+    "imdbRating": 3.4,
+    "tmdbRating": 3.4,
+    "releaseDate": "2011-09-09",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0810913",
+    "title": "Jack and Jill",
+    "originalTitle": "Jack and Jill",
+    "year": 2011,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0810913-poster.jpg",
+    "overview": "Bu yapım \"Dennis Dugan\" tarafından yönetilmiş 2011 yapımı bir Comedy, Family eseridir. IMDb puanı 3.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "runtime": 91,
+    "cast": [
+      "Adam Sandler",
+      "Katie Holmes",
+      "Al Pacino"
+    ],
+    "director": "Dennis Dugan",
+    "writers": [
+      "Ben Zook",
+      "Steve Koren",
+      "Adam Sandler"
+    ],
+    "imdbRating": 3.3,
+    "tmdbRating": 3.3,
+    "releaseDate": "2011-11-11",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt2403029",
+    "title": "The Starving Games",
+    "originalTitle": "The Starving Games",
+    "year": 2013,
+    "type": "Movie",
+    "myRating": 2,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu",
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt2403029-poster.jpg",
+    "overview": "Bu yapım \"Jason Friedberg,Aaron Seltzer\" tarafından yönetilmiş 2013 yapımı bir Comedy, Sci-Fi, Adventure eseridir. IMDb puanı 3.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "runtime": 83,
+    "cast": [
+      "Maiara Walsh",
+      "Brant Daugherty",
+      "Cody Christian"
+    ],
+    "director": "Jason Friedberg,Aaron Seltzer",
+    "writers": [
+      "Jason Friedberg",
+      "Aaron Seltzer"
+    ],
+    "imdbRating": 3.3,
+    "tmdbRating": 3.3,
+    "releaseDate": "2013-10-31",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt0795461",
+    "title": "Scary Movie 5",
+    "originalTitle": "Scary Movie 5",
+    "year": 2013,
+    "type": "Movie",
+    "myRating": 2,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt0795461-poster.jpg",
+    "overview": "Bu yapım \"Malcolm D. Lee,David Zucker\" tarafından yönetilmiş 2013 yapımı bir Comedy, Horror eseridir. IMDb puanı 3.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Horror"
+    ],
+    "runtime": 86,
+    "cast": [
+      "Simon Rex",
+      "Ashley Tisdale",
+      "Charlie Sheen"
+    ],
+    "director": "Malcolm D. Lee,David Zucker",
+    "writers": [
+      "David Zucker",
+      "Pat Proft",
+      "Shawn Wayans"
+    ],
+    "imdbRating": 3.6,
+    "tmdbRating": 3.6,
+    "releaseDate": "2013-04-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt4009460",
+    "title": "Saving Christmas",
+    "originalTitle": "Saving Christmas",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 1,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt4009460-poster.jpg",
+    "overview": "Bu yapım \"Darren Doane\" tarafından yönetilmiş 2014 yapımı bir Family, Comedy eseridir. IMDb puanı 1.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Family",
+      "Comedy"
+    ],
+    "runtime": 79,
+    "cast": [
+      "Kirk Cameron",
+      "Darren Doane",
+      "Bridgette Cameron"
+    ],
+    "director": "Darren Doane",
+    "writers": [
+      "Darren Doane",
+      "Cheston Hervey"
+    ],
+    "imdbRating": 1.3,
+    "tmdbRating": 1.3,
+    "releaseDate": "2014-10-14",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt2467046",
+    "title": "Left Behind",
+    "originalTitle": "Left Behind",
+    "year": 2014,
+    "type": "Movie",
+    "myRating": 2,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt2467046-poster.jpg",
+    "overview": "Bu yapım \"Vic Armstrong\" tarafından yönetilmiş 2014 yapımı bir Action, Thriller, Fantasy, Sci-Fi eseridir. IMDb puanı 3.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Fantasy",
+      "Sci-Fi"
+    ],
+    "runtime": 110,
+    "cast": [
+      "Nicolas Cage",
+      "Lea Thompson",
+      "Cassi Thomson"
+    ],
+    "director": "Vic Armstrong",
+    "writers": [
+      "Paul Lalonde",
+      "John Patus",
+      "Tim LaHaye"
+    ],
+    "imdbRating": 3.1,
+    "tmdbRating": 3.1,
+    "releaseDate": "2014-10-03",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt4667094",
+    "title": "Fifty Shades of Black",
+    "originalTitle": "Fifty Shades of Black",
+    "year": 2016,
+    "type": "Movie",
+    "myRating": 2,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt4667094-poster.jpg",
+    "overview": "Bu yapım \"Michael Tiddes\" tarafından yönetilmiş 2016 yapımı bir Comedy eseridir. IMDb puanı 3.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Marlon Wayans",
+      "Kali Hawk",
+      "Fred Willard"
+    ],
+    "director": "Michael Tiddes",
+    "writers": [
+      "Marlon Wayans",
+      "Rick Alvarez"
+    ],
+    "imdbRating": 3.6,
+    "tmdbRating": 3.6,
+    "releaseDate": "2016-01-29",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt7668842",
+    "title": "Enes Batur: Imagination or Reality?",
+    "originalTitle": "Enes Batur Hayal mi Gerçek Mi?",
+    "year": 2018,
+    "type": "Movie",
+    "myRating": 1,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt7668842-poster.jpg",
+    "overview": "Bu yapım \"Kamil Çetin\" tarafından yönetilmiş 2018 yapımı bir sinema eseridir. IMDb puanı 2 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 110,
+    "cast": [
+      "Enes Batur",
+      "Baran Teyin",
+      "Egemen Erturk"
+    ],
+    "director": "Kamil Çetin",
+    "writers": [
+      "Enes Batur",
+      "Busra Nur Karahan",
+      "Enver Sülük"
+    ],
+    "imdbRating": 2,
+    "tmdbRating": 2,
+    "releaseDate": "2018-01-19",
+    "plot": "",
+    "country": "Türkiye",
+    "omdbType": "",
+    "boxOffice": "4.632.207",
+    "trailerYoutubeId": "u6HaP0J0Fzg",
+    "backdrop": "",
+    "plotTr": ""
+  },
+  {
+    "imdbId": "tt5690360",
+    "title": "Slender Man",
+    "originalTitle": "Slender Man",
+    "year": 2018,
+    "type": "Movie",
+    "myRating": 2,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt5690360-poster.jpg",
+    "overview": "Bu yapım \"Sylvain White\" tarafından yönetilmiş 2018 yapımı bir Horror, Mystery, Thriller eseridir. IMDb puanı 3.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Thriller"
+    ],
+    "runtime": 93,
+    "cast": [
+      "Joey King",
+      "Julia Goldani Telles",
+      "Jaz Sinclair"
+    ],
+    "director": "Sylvain White",
+    "writers": [
+      "David Birke",
+      "Eric Knudsen"
+    ],
+    "imdbRating": 3.3,
+    "tmdbRating": 3.3,
+    "releaseDate": "2018-08-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt9624766",
+    "title": "Jiu Jitsu",
+    "originalTitle": "Jiu Jitsu",
+    "year": 2020,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt9624766-poster.jpg",
+    "overview": "Bu yapım \"Dimitri Logothetis\" tarafından yönetilmiş 2020 yapımı bir Action, Sci-Fi, Thriller eseridir. IMDb puanı 2.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "runtime": 102,
+    "cast": [
+      "Alain Moussi",
+      "Nicolas Cage",
+      "Raymond Pinharry"
+    ],
+    "director": "Dimitri Logothetis",
+    "writers": [
+      "Dimitri Logothetis",
+      "Jim McGrath"
+    ],
+    "imdbRating": 2.9,
+    "tmdbRating": 2.9,
+    "releaseDate": "2020-11-20",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt9820556",
+    "title": "Breach",
+    "originalTitle": "Breach",
+    "year": 2020,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt9820556-poster.jpg",
+    "overview": "Bu yapım \"John Suits\" tarafından yönetilmiş 2020 yapımı bir Action, Sci-Fi, Horror eseridir. IMDb puanı 2.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Horror"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Cody Kearsley",
+      "Bruce Willis",
+      "Rachel Nichols"
+    ],
+    "director": "John Suits",
+    "writers": [
+      "Edward Drake",
+      "Corey Large"
+    ],
+    "imdbRating": 2.9,
+    "tmdbRating": 2.9,
+    "releaseDate": "2020-12-18",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt11762434",
+    "title": "Cosmic Sin",
+    "originalTitle": "Cosmic Sin",
+    "year": 2021,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt11762434-poster.jpg",
+    "overview": "Bu yapım \"Edward Drake\" tarafından yönetilmiş 2021 yapımı bir Sci-Fi, Action eseridir. IMDb puanı 2.5 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Action"
+    ],
+    "runtime": 88,
+    "cast": [
+      "Frank Grillo",
+      "Bruce Willis",
+      "Brandon Thomas Lee"
+    ],
+    "director": "Edward Drake",
+    "writers": [
+      "Edward Drake",
+      "Corey Large"
+    ],
+    "imdbRating": 2.5,
+    "tmdbRating": 2.5,
+    "releaseDate": "2021-03-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt32890033",
+    "title": "Minions & Monsters",
+    "originalTitle": "Minions & Monsters",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu",
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt32890033-poster.jpg",
+    "overview": "Bu yapım \"Pierre Coffin\" tarafından yönetilmiş 2026 yapımı bir Animation, Adventure, Comedy, Crime, Family, Sci-Fi eseridir. IMDb puanı 6.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Animation",
+      "Adventure",
+      "Comedy",
+      "Crime",
+      "Family",
+      "Sci-Fi"
+    ],
+    "runtime": 90,
+    "cast": [
+      "Pierre Coffin",
+      "Trey Parker",
+      "Allison Janney"
+    ],
+    "director": "Pierre Coffin",
+    "writers": [
+      "Pierre Coffin",
+      "Brian Lynch"
+    ],
+    "imdbRating": 6.6,
+    "tmdbRating": 6.6,
+    "releaseDate": "2026-07-01",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt32104007",
+    "title": "Young Washington",
+    "originalTitle": "Young Washington",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt32104007-poster.jpg",
+    "overview": "Bu yapım \"Jon Erwin\" tarafından yönetilmiş 2026 yapımı bir Action, War, Adventure, Biography eseridir. IMDb puanı 7.4 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "War",
+      "Adventure",
+      "Biography"
+    ],
+    "runtime": 121,
+    "cast": [
+      "William Franklyn-Miller",
+      "Mary-Louise Parker",
+      "Leo Hanna"
+    ],
+    "director": "Jon Erwin",
+    "writers": [
+      "Diederik Hoogstraten",
+      "Tom Provost",
+      "Jon Erwin"
+    ],
+    "imdbRating": 7.4,
+    "tmdbRating": 7.4,
+    "releaseDate": "2026-07-03",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt8814476",
+    "title": "Supergirl",
+    "originalTitle": "Supergirl",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt8814476-poster.jpg",
+    "overview": "Bu yapım \"Craig Gillespie\" tarafından yönetilmiş 2026 yapımı bir Action, Adventure, Sci-Fi, Drama eseridir. IMDb puanı 6.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi",
+      "Drama"
+    ],
+    "runtime": 108,
+    "cast": [
+      "Milly Alcock",
+      "David Corenswet",
+      "Eve Ridley"
+    ],
+    "director": "Craig Gillespie",
+    "writers": [
+      "Ana Nogueira",
+      "Jerry Siegel",
+      "Joe Shuster"
+    ],
+    "imdbRating": 6.1,
+    "tmdbRating": 6.1,
+    "releaseDate": "2026-06-26",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt15047880",
+    "title": "Disclosure Day",
+    "originalTitle": "Disclosure Day",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt15047880-poster.jpg",
+    "overview": "Bu yapım \"Steven Spielberg\" tarafından yönetilmiş 2026 yapımı bir Sci-Fi, Thriller, Drama, Mystery, Action eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Sci-Fi",
+      "Thriller",
+      "Drama",
+      "Mystery",
+      "Action"
+    ],
+    "runtime": 145,
+    "cast": [
+      "Emily Blunt",
+      "Josh O&apos;Connor",
+      "Colin Firth"
+    ],
+    "director": "Steven Spielberg",
+    "writers": [
+      "David Koepp",
+      "Steven Spielberg"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2026-06-12",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt26657236",
+    "title": "Backrooms",
+    "originalTitle": "Backrooms",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt26657236-poster.jpg",
+    "overview": "Bu yapım \"Kane Parsons\" tarafından yönetilmiş 2026 yapımı bir Horror, Sci-Fi, Thriller eseridir. IMDb puanı 7 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller"
+    ],
+    "runtime": 110,
+    "cast": [
+      "Chiwetel Ejiofor",
+      "Renate Reinsve",
+      "Mark Duplass"
+    ],
+    "director": "Kane Parsons",
+    "writers": [
+      "Will Soodik",
+      "Kane Parsons"
+    ],
+    "imdbRating": 7,
+    "tmdbRating": 7,
+    "releaseDate": "2026-05-29",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt39316472",
+    "title": "Jackass: Best and Last",
+    "originalTitle": "Jackass: Best and Last",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 5,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt39316472-poster.jpg",
+    "overview": "Bu yapım \"Jeff Tremaine\" tarafından yönetilmiş 2026 yapımı bir Documentary, Comedy eseridir. IMDb puanı 6.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Documentary",
+      "Comedy"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Johnny Knoxville",
+      "Steve-O",
+      "Chris Pontius"
+    ],
+    "director": "Jeff Tremaine",
+    "writers": [
+      "Jason &apos;Wee Man&apos; Acuña",
+      "Tory Belleci",
+      "J.P. Blackmon"
+    ],
+    "imdbRating": 6.7,
+    "tmdbRating": 6.7,
+    "releaseDate": "2026-06-26",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt14173636",
+    "title": "The Invite",
+    "originalTitle": "The Invite",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt14173636-poster.jpg",
+    "overview": "Bu yapım \"Olivia Wilde\" tarafından yönetilmiş 2026 yapımı bir Comedy, Drama, Romance eseridir. IMDb puanı 7.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "runtime": 107,
+    "cast": [
+      "Seth Rogen",
+      "Olivia Wilde",
+      "Penélope Cruz"
+    ],
+    "director": "Olivia Wilde",
+    "writers": [
+      "Cesc Gay",
+      "Will McCormack",
+      "Rashida Jones"
+    ],
+    "imdbRating": 7.8,
+    "tmdbRating": 7.8,
+    "releaseDate": "2026-07-10",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt32093575",
+    "title": "Scary Movie",
+    "originalTitle": "Scary Movie",
+    "year": 2026,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "/images/movies/tt32093575-poster.jpg",
+    "overview": "Bu yapım \"Michael Tiddes\" tarafından yönetilmiş 2026 yapımı bir Horror, Comedy eseridir. IMDb puanı 5.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Comedy"
+    ],
+    "runtime": 96,
+    "cast": [
+      "Marlon Wayans",
+      "Shawn Wayans",
+      "Anna Faris"
+    ],
+    "director": "Michael Tiddes",
+    "writers": [
+      "Marlon Wayans",
+      "Shawn Wayans",
+      "Keenen Ivory Wayans"
+    ],
+    "imdbRating": 5.2,
+    "tmdbRating": 5.2,
+    "releaseDate": "2026-06-05",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt37287335",
+    "title": "Obsession",
+    "originalTitle": "Obsession",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt37287335-poster.jpg",
+    "overview": "Bu yapım \"Curry Barker\" tarafından yönetilmiş 2025 yapımı bir Horror, Thriller, Romance eseridir. IMDb puanı 8 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Romance"
+    ],
+    "runtime": 108,
+    "cast": [
+      "Michael Johnston",
+      "Inde Navarrette",
+      "Cooper Tomlinson"
+    ],
+    "director": "Curry Barker",
+    "writers": [
+      "Curry Barker"
+    ],
+    "imdbRating": 8,
+    "tmdbRating": 8,
+    "releaseDate": "2026-05-15",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt6019206",
+    "title": "Kill Bill: The Whole Bloody Affair",
+    "originalTitle": "Kill Bill: The Whole Bloody Affair",
+    "year": 2004,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-06",
+    "listName": [
+      "Kült Eserler",
+      "Uzun Metraj Maratonu"
+    ],
+    "poster": "/images/movies/tt6019206-poster.jpg",
+    "overview": "Bu yapım \"Quentin Tarantino\" tarafından yönetilmiş 2004 yapımı bir Action, Crime, Thriller eseridir. IMDb puanı 8.7 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "runtime": 253,
+    "cast": [
+      "Vivica A. Fox",
+      "Ambrosia Kelley",
+      "Michael Parks"
+    ],
+    "director": "Quentin Tarantino",
+    "writers": [
+      "Quentin Tarantino",
+      "Uma Thurman"
+    ],
+    "imdbRating": 8.7,
+    "tmdbRating": 8.7,
+    "releaseDate": "2025-12-05",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt5813916",
+    "title": "The Mountain II",
+    "originalTitle": "Dag II",
+    "year": 2016,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-06",
+    "listName": [],
+    "poster": "/images/movies/tt5813916-poster.jpg",
+    "overview": "Bu yapım \"Alper Caglar\" tarafından yönetilmiş 2016 yapımı bir Drama, War, Action eseridir. IMDb puanı 8.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "War",
+      "Action"
+    ],
+    "runtime": 135,
+    "cast": [
+      "Caglar Ertugrul",
+      "Ufuk Bayraktar",
+      "Ahu Türkpençe"
+    ],
+    "director": "Alper Caglar",
+    "writers": [
+      "Alper Caglar"
+    ],
+    "imdbRating": 8.1,
+    "tmdbRating": 8.1,
+    "releaseDate": "2016-11-04",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
+    "boxOffice": ""
+  },
+  {
+    "imdbId": "tt13157618",
+    "title": "Secret Invasion",
+    "originalTitle": "Secret Invasion",
+    "year": 2023,
+    "type": "TV Mini Series",
+    "myRating": 6,
+    "watchDate": "2026-07-05",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt13157618-poster.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2023 yapımı bir Action, Sci-Fi, Thriller, Adventure, Mystery eseridir. IMDb puanı 5.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Action",
+      "Sci-Fi",
+      "Thriller",
+      "Adventure",
+      "Mystery"
+    ],
+    "runtime": 45,
+    "cast": [
+      "Samuel L. Jackson",
+      "Emilia Clarke",
+      "Don Cheadle"
+    ],
+    "director": "",
+    "writers": [
+      "Kyle Bradstreet"
+    ],
+    "imdbRating": 5.8,
+    "tmdbRating": 5.8,
+    "releaseDate": "2023-06-21",
+    "plot": "",
+    "country": "",
+    "omdbType": "",
     "boxOffice": ""
   }
 ]

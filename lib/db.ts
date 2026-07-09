@@ -214,7 +214,7 @@ export async function getStats(): Promise<Stats> {
   const directorsMap: Record<string, number> = {};
   movies.forEach(m => {
     if (m.director) {
-      const dirs = m.director.split(',').map(d => d.trim()).filter(d => d.length > 0);
+      const dirs = m.director.split(',').map(d => d.trim()).filter(d => d.length > 0 && m.type === 'Movie');
       dirs.forEach(d => {
         directorsMap[d] = (directorsMap[d] || 0) + 1;
       });
@@ -313,7 +313,7 @@ export async function getStats(): Promise<Stats> {
   }));
 
   // Average IMDb rating
-  const imdbRatedMovies = movies.filter(m => m.imdbRating > 0);
+  const imdbRatedMovies = movies.filter(m => m.imdbRating > 0 && m.type === 'Movie');
   const avgImdbRating = imdbRatedMovies.length > 0
     ? parseFloat((imdbRatedMovies.reduce((acc, m) => acc + m.imdbRating, 0) / imdbRatedMovies.length).toFixed(1))
     : 0;
@@ -348,7 +348,7 @@ export async function getStats(): Promise<Stats> {
     .map(m => ({ title: m.title, runtime: m.runtime, year: m.year, imdbId: m.imdbId }));
 
   // Highest rated by me
-  const highestRatedByMe = [...ratedMovies]
+  const highestRatedByMe = [...ratedMovies].filter(m => m.type === 'Movie')
     .sort((a, b) => b.myRating - a.myRating || b.imdbRating - a.imdbRating)
     .slice(0, 5)
     .map(m => ({ title: m.title, myRating: m.myRating, imdbRating: m.imdbRating, year: m.year, imdbId: m.imdbId }));
@@ -360,7 +360,7 @@ export async function getStats(): Promise<Stats> {
     .map(m => ({ title: m.title, myRating: m.myRating, imdbRating: m.imdbRating, year: m.year, imdbId: m.imdbId }));
 
   // Most controversial (biggest difference between my rating and IMDb)
-  const bothRated = movies.filter(m => m.myRating > 0 && m.imdbRating > 0);
+  const bothRated = movies.filter(m => m.myRating > 0 && m.imdbRating > 0 && m.type === 'Movie');
   const mostControversial = [...bothRated]
     .map(m => ({
       title: m.title,
