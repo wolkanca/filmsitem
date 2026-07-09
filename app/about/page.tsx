@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-12">
+    <main className="mx-auto max-w-6xl">
       {/* Hero */}
       <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-10 mb-6">
         <div className="max-w-5xl">
@@ -144,7 +144,7 @@ export default function AboutPage() {
           İyi Seyirler 🍿
         </h2>
 
-        <p className="mx-auto mb-8 max-w-2xl leading-8 text-zinc-300">
+        <p className="mx-auto mb-8 max-w-5xl leading-8 text-zinc-300">
           Umarım bu kişisel arşiv sayesinde yeni filmler keşfeder, benzer
           yapımlara ulaşır ve sinema dünyasında keyifli vakit geçirirsiniz.
         </p>
