@@ -186,43 +186,70 @@ export default async function ListsPage() {
       order: 18,
     },
     {
+      name: '70ler',
+      description: '1970-1979 yılları arasında çıkan dönem yapımları.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1970 && year <= 1979;
+      },
+      order: 19,
+    },
+    {
+      name: '60lar',
+      description: '1960-1969 yılları arasında çıkan dönem yapımları.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1960 && year <= 1969;
+      },
+      order: 20,
+    },
+    {
+      name: '50ler',
+      description: '1950-1959 yılları arasında çıkan dönem yapımları.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1950 && year <= 1959;
+      },
+      order: 21,
+    },
+    {
       name: 'Kısa Yapımlar',
       description: 'Süresi 60 dakika ve altında olan kısa film, özel bölüm veya kısa içerikler.',
       filter: (movie) => {
         const runtime = getMovieRuntime(movie);
         return runtime > 0 && runtime <= 60;
       },
-      order: 19,
+      order: 22,
     },
     {
       name: 'TV Series',
       description: 'Dizi formatındaki tüm izlediğim yapımlar.',
       filter: (movie) => getMovieType(movie).includes('tv series') || getMovieType(movie) === 'series',
-      order: 20,
+      order: 23,
     },
     {
       name: 'Animasyon',
       description: 'Animasyon türündeki film ve dizilerden oluşan renkli arşiv.',
       filter: (movie) => hasGenre(movie, ['animation']),
-      order: 21,
+      order: 24,
     },
     {
       name: 'Müzikal',
       description: 'Müzikal türündeki film ve dizilerden oluşan renkli arşiv.',
       filter: (movie) => hasGenre(movie, ['musical', 'music', 'soundtrack']),
-      order: 22,
+      order: 25,
     },
     {
       name: 'TV Mini Series',
       description: 'Kısa sezonlu, mini dizi formatındaki seçili yapımlar.',
       filter: (movie) => getMovieType(movie).includes('tv mini series'),
-      order: 23,
+      order: 26,
     },
     {
       name: 'Video Game',
       description: 'IMDb türü veya kayıt tipi Video Game olan oyun odaklı yapımlar.',
       filter: (movie) => getMovieType(movie).includes('video game'),
-      order: 24,
+      order: 27,
     },
   ];
 
