@@ -18,7 +18,7 @@ export default function AdminMoviesPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [filterMode, setFilterMode] = useState<
     'all' | 'no-poster' | 'no-trailer' | 'both-missing' |
-    'no-overview' | 'no-plot' | 'no-genres' | 'no-director' |
+    'no-overview' | 'no-plot' | 'no-plotTr' | 'no-genres' | 'no-director' |
     'no-cast' | 'no-runtime' | 'no-country' | 'no-year' | 'no-imdb-rating' | 'no-release-date'
   >('all');
   const [sortBy, setSortBy] = useState<'default' | 'watch-date' | 'imdb-rating' | 'my-rating' | 'country' | 'year' | 'title'>('default');
@@ -141,6 +141,8 @@ export default function AdminMoviesPage() {
       list = list.filter((m) => !m.overview || m.overview.trim().length === 0);
     } else if (filterMode === 'no-plot') {
       list = list.filter((m) => !m.plot || m.plot.trim().length === 0);
+    } else if (filterMode === 'no-plotTr') {
+      list = list.filter((m) => !m.plotTr || m.plotTr.trim().length === 0);
     } else if (filterMode === 'no-genres') {
       list = list.filter((m) => !m.genres || m.genres.length === 0);
     } else if (filterMode === 'no-director') {
@@ -401,6 +403,7 @@ export default function AdminMoviesPage() {
               { key: 'both-missing', label: '⚠️ Afiş+Fragman Yok', color: 'red', count: movies.filter((m) => (!m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')) && !m.trailerYoutubeId).length },
               { key: 'no-overview', label: '📝 Özet Yok', color: 'orange', count: movies.filter((m) => !m.overview || m.overview.trim().length === 0).length },
               { key: 'no-plot', label: '📖 Konu Yok', color: 'orange', count: movies.filter((m) => !m.plot || m.plot.trim().length === 0).length },
+              { key: 'no-plotTr', label: '📖 Konu TR Yok', color: 'orange', count: movies.filter((m) => !m.plotTr || m.plotTr.trim().length === 0).length },
               { key: 'no-genres', label: '🏷️ Tür Yok', color: 'pink', count: movies.filter((m) => !m.genres || m.genres.length === 0).length },
               { key: 'no-director', label: '🎥 Yönetmen Yok', color: 'pink', count: movies.filter((m) => !m.director || m.director.trim().length === 0).length },
               { key: 'no-cast', label: '👥 Oyuncu Yok', color: 'pink', count: movies.filter((m) => !m.cast || m.cast.length === 0).length },
