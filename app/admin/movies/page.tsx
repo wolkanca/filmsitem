@@ -19,9 +19,9 @@ export default function AdminMoviesPage() {
   const [filterMode, setFilterMode] = useState<
     'all' | 'no-poster' | 'no-trailer' | 'both-missing' |
     'no-overview' | 'no-plot' | 'no-genres' | 'no-director' |
-    'no-cast' | 'no-runtime' | 'no-year' | 'no-imdb-rating' | 'no-release-date'
+    'no-cast' | 'no-runtime' | 'no-country' | 'no-year' | 'no-imdb-rating' | 'no-release-date'
   >('all');
-  const [sortBy, setSortBy] = useState<'default' | 'watch-date' | 'imdb-rating' | 'my-rating' | 'year' | 'title'>('default');
+  const [sortBy, setSortBy] = useState<'default' | 'watch-date' | 'imdb-rating' | 'my-rating' | 'country' | 'year' | 'title'>('default');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
 
   // Per-movie edit states: { [imdbId]: { poster, trailer, saving, error, posterOpen, trailerOpen } }
@@ -149,6 +149,8 @@ export default function AdminMoviesPage() {
       list = list.filter((m) => !m.cast || m.cast.length === 0);
     } else if (filterMode === 'no-runtime') {
       list = list.filter((m) => !m.runtime || m.runtime === 0);
+    } else if (filterMode === 'no-country') {
+      list = list.filter((m) => !m.country || m.country.trim().length === 0);
     } else if (filterMode === 'no-year') {
       list = list.filter((m) => !m.year || m.year === 0);
     } else if (filterMode === 'no-imdb-rating') {
@@ -404,6 +406,7 @@ export default function AdminMoviesPage() {
               { key: 'no-cast', label: '👥 Oyuncu Yok', color: 'pink', count: movies.filter((m) => !m.cast || m.cast.length === 0).length },
               { key: 'no-runtime', label: '⏱️ Süre Yok', color: 'teal', count: movies.filter((m) => !m.runtime || m.runtime === 0).length },
               { key: 'no-year', label: '📅 Yıl Yok', color: 'teal', count: movies.filter((m) => !m.year || m.year === 0).length },
+              { key: 'no-country', label: '🌍 Ülke Yok', color: 'teal', count: movies.filter((m) => !m.country || m.country.trim().length === 0).length },
               { key: 'no-imdb-rating', label: '⭐ IMDb Puanı Yok', color: 'yellow', count: movies.filter((m) => !m.imdbRating || m.imdbRating === 0).length },
               { key: 'no-release-date', label: '🗓️ Vizyon Tarihi Yok', color: 'yellow', count: movies.filter((m) => !m.releaseDate || m.releaseDate.trim().length === 0).length },
             ] as { key: any; label: string; color: string; count: number }[]).map(({ key, label, color, count }) => {
@@ -423,8 +426,8 @@ export default function AdminMoviesPage() {
                   key={key}
                   onClick={() => setFilterMode(key)}
                   className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-bold transition-all cursor-pointer ${isActive
-                      ? activeClasses[color]
-                      : 'bg-zinc-900/60 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
+                    ? activeClasses[color]
+                    : 'bg-zinc-900/60 border-zinc-800 text-zinc-500 hover:text-zinc-300 hover:border-zinc-700'
                     }`}
                 >
                   {label}

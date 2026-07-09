@@ -465,7 +465,7 @@ export default function MovieDetailClient({
               <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
                 {movie.overview || 'Özet eklenmemiş.'}
               </p>
-              {movie.plot && (
+              {(movie.plot || movie.plotTr) && (
                 <p className="mt-4 text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
                   <strong className="text-white">Konu:</strong> {movie.plotTr || movie.plot}
                 </p>
