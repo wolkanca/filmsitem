@@ -61,7 +61,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
     <div className="relative group/slider">
       {/* Recommended Movie Preview */}
       <div
-        className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-zinc-950/40 border border-white/5 rounded-2xl p-4 sm:p-6 items-stretch relative min-h-[350px] transition-all duration-500 overflow-hidden select-none"
+        className="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-6 bg-zinc-950/40 p-4 items-stretch relative min-h-[350px] transition-all duration-500 overflow-hidden select-none"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
