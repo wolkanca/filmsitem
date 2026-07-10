@@ -315,7 +315,7 @@ export default async function HomePage() {
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <span>👑</span> Başyapıtlarım
           </h2>
-          <Link href="/favorites" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
+          <Link href="/list/favoriler" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
             Tümü <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
