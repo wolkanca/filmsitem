@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Sparkles, Star, Calendar, RefreshCw, Film, ArrowRight } from 'lucide-react';
+import { Sparkles, Star, Calendar, RefreshCw, Film, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor } from '@/lib/utils';
 import PosterImage from '@/components/PosterImage';
@@ -15,6 +15,7 @@ export default function RandomPage() {
   const [genreFilter, setGenreFilter] = useState('');
   const [ratingFilter, setRatingFilter] = useState('');
   const [onlyMovies, setOnlyMovies] = useState(true);
+  const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
 
   // Selection states
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
@@ -115,64 +116,79 @@ export default function RandomPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
 
           {/* Left panel: Filters / Settings */}
-          <div className="md:col-span-4 glass p-6 rounded-3xl border border-white/5 space-y-6">
-            <h2 className="text-sm font-extrabold uppercase tracking-wider text-zinc-400 border-b border-zinc-800 pb-2">
-              Çark Ayarları
-            </h2>
+          <div className="md:col-span-4 glass p-6 rounded-3xl border border-white/5 flex flex-col gap-6">
+            <button
+              onClick={() => setIsFiltersExpanded(!isFiltersExpanded)}
+              className="w-full flex items-center justify-between text-left focus:outline-none md:pointer-events-none border-b border-zinc-800 pb-2"
+            >
+              <h2 className="text-sm font-extrabold uppercase tracking-wider text-zinc-400">
+                Çark Ayarları
+              </h2>
+              <div className="md:hidden text-zinc-400">
+                {isFiltersExpanded ? (
+                  <ChevronUp className="w-4 h-4" />
+                ) : (
+                  <ChevronDown className="w-4 h-4" />
+                )}
+              </div>
+            </button>
 
-            {/* Only Movies Toggle */}
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-semibold text-zinc-300">Sadece Sinema Filmleri</span>
-              <button
-                onClick={() => setOnlyMovies(!onlyMovies)}
-                className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 ${onlyMovies ? 'bg-brand-primary' : 'bg-zinc-800 border border-zinc-700'
-                  }`}
-              >
-                <span
-                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-300 ${onlyMovies ? 'translate-x-6' : 'translate-x-1'
+            {/* Collapsible Filters */}
+            <div className={`${isFiltersExpanded ? 'flex' : 'hidden md:flex'} flex-col gap-6`}>
+              {/* Only Movies Toggle */}
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-semibold text-zinc-300">Sadece Sinema Filmleri</span>
+                <button
+                  onClick={() => setOnlyMovies(!onlyMovies)}
+                  className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors duration-300 ${onlyMovies ? 'bg-brand-primary' : 'bg-zinc-800 border border-zinc-700'
                     }`}
-                />
-              </button>
-            </div>
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-300 ${onlyMovies ? 'translate-x-6' : 'translate-x-1'
+                      }`}
+                  />
+                </button>
+              </div>
 
-            {/* Genre Filter */}
-            <div className="space-y-1.5">
-              <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Tür Sınırla</label>
-              <select
-                value={genreFilter}
-                onChange={(e) => setGenreFilter(e.target.value)}
-                className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
-              >
-                <option value="">Tüm Türler</option>
-                {availableGenres.map((g) => (
-                  <option key={g} value={g}>
-                    {g}
-                  </option>
-                ))}
-              </select>
-            </div>
+              {/* Genre Filter */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Tür Sınırla</label>
+                <select
+                  value={genreFilter}
+                  onChange={(e) => setGenreFilter(e.target.value)}
+                  className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
+                >
+                  <option value="">Tüm Türler</option>
+                  {availableGenres.map((g) => (
+                    <option key={g} value={g}>
+                      {g}
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-            {/* Min Rating Filter */}
-            <div className="space-y-1.5">
-              <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Puan Eşiği (Min)</label>
-              <select
-                value={ratingFilter}
-                onChange={(e) => setRatingFilter(e.target.value)}
-                className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
-              >
-                <option value="">Tüm Puanlar</option>
-                {[9, 8, 7, 6, 5].map((r) => (
-                  <option key={r} value={r}>
-                    Benim Puanım: {r}+
-                  </option>
-                ))}
-              </select>
-            </div>
+              {/* Min Rating Filter */}
+              <div className="space-y-1.5">
+                <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Puan Eşiği (Min)</label>
+                <select
+                  value={ratingFilter}
+                  onChange={(e) => setRatingFilter(e.target.value)}
+                  className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
+                >
+                  <option value="">Tüm Puanlar</option>
+                  {[9, 8, 7, 6, 5].map((r) => (
+                    <option key={r} value={r}>
+                      Benim Puanım: {r}+
+                    </option>
+                  ))}
+                </select>
+              </div>
 
-            {/* Pool indicator */}
-            <div className="text-xs text-zinc-500 font-medium">
-              Eşleşen aday havuzu:{' '}
-              <strong className="text-zinc-300 font-bold">{getFilteredPool().length}</strong> yapım.
+              {/* Pool indicator */}
+              <div className="text-xs text-zinc-500 font-medium">
+                Eşleşen aday havuzu:{' '}
+                <strong className="text-zinc-300 font-bold">{getFilteredPool().length}</strong> yapım.
+              </div>
             </div>
 
             <button

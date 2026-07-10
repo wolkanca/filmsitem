@@ -91,7 +91,7 @@ export default function MoviesPage() {
   const [selectedYear, setSelectedYear] = useState('');
   const [minMyRating, setMinMyRating] = useState('');
   const [minImdbRating, setMinImdbRating] = useState('');
-  const [sortBy, setSortByState] = useState('watchDate-desc');
+  const [sortBy, setSortByState] = useState('year-desc');
   const [viewMode, setViewModeState] = useState<'grid' | 'list'>('grid');
   const [showFilters, setShowFilters] = useState(false);
 
@@ -161,12 +161,12 @@ export default function MoviesPage() {
     setSelectedYear('');
     setMinMyRating('');
     setMinImdbRating('');
-    setSortBy('watchDate-desc');
+    setSortBy('year-desc');
     localStorage.removeItem('movies-genre');
     localStorage.removeItem('movies-year');
     localStorage.removeItem('movies-min-my-rating');
     localStorage.removeItem('movies-min-imdb-rating');
-    localStorage.setItem('movies-sort-by', 'watchDate-desc');
+    localStorage.setItem('movies-sort-by', 'year-desc');
   };
 
   // Perform filtering & sorting
