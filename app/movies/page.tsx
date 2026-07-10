@@ -346,7 +346,7 @@ export default function MoviesPage() {
       </div>
 
       {/* Filters Box */}
-      {(showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating || sortBy !== 'watchDate-desc') && (
+      {(showFilters || selectedGenre || selectedYear || minMyRating || minImdbRating || sortBy !== 'year-desc') && (
         <div className="glass p-6 rounded-2xl border border-white/5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 animate-fade-in">
           {/* Genre Filter */}
           <div className="space-y-1.5">
