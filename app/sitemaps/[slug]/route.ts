@@ -128,19 +128,29 @@ function getMoviePages(): SitemapItem[] {
 
 function getListPages(): SitemapItem[] {
     const collectionNames = [
-        'Video Game',
-        'TV Mini Series',
-        'TV Series',
-        'Türk Filmleri',
-        'Animasyon',
-        'Belgeseller',
-        'Korku ve Gerilim',
+        '10 Puanlık Başyapıtlar',
+        'Bilim Kurgu',
+        'Komedi Günlükleri',
+        'Sinema Klasikleri',
+        'Kült Eserler',
+        'Uzun Metraj Maratonu',
         'Aksiyon',
+        'Dram',
+        'Korku ve Gerilim',
+        'Belgeseller',
+        'Türk Filmleri',
         '2020 Sonrası',
         '90lar',
         '80ler',
+        '70ler',
+        '60lar',
+        '50ler',
         'Kısa Yapımlar',
-        'Dram',
+        'TV Series',
+        'Animasyon',
+        'Müzikal',
+        'TV Mini Series',
+        'Video Game',
     ];
 
     return collectionNames.map((name) => ({
@@ -159,7 +169,7 @@ function getGenrePages(): SitemapItem[] {
     );
 
     return genres.map((genre) => ({
-        loc: `${SITE_URL}/movies?genre=${encodeURIComponent(genre)}`,
+        loc: `${SITE_URL}/genre/${encodeURIComponent(genre)}`,
         changefreq: 'weekly',
         priority: 0.5,
     }));
@@ -171,7 +181,7 @@ function getYearPages(): SitemapItem[] {
     );
 
     return years.map((year) => ({
-        loc: `${SITE_URL}/movies?year=${encodeURIComponent(year)}`,
+        loc: `${SITE_URL}/year/${encodeURIComponent(year)}`,
         changefreq: 'weekly',
         priority: 0.5,
     }));
@@ -183,7 +193,7 @@ function getDirectorPages(): SitemapItem[] {
     );
 
     return directors.map((director) => ({
-        loc: `${SITE_URL}/movies?director=${encodeURIComponent(director)}`,
+        loc: `${SITE_URL}/director/${encodeURIComponent(director)}`,
         changefreq: 'weekly',
         priority: 0.5,
     }));
@@ -198,7 +208,7 @@ function getWriterPages(): SitemapItem[] {
     );
 
     return writers.map((writer) => ({
-        loc: `${SITE_URL}/movies?writer=${encodeURIComponent(writer)}`,
+        loc: `${SITE_URL}/writer/${encodeURIComponent(writer)}`,
         changefreq: 'weekly',
         priority: 0.5,
     }));
@@ -213,7 +223,7 @@ function getActorPages(): SitemapItem[] {
     );
 
     return actors.map((actor) => ({
-        loc: `${SITE_URL}/movies?actor=${encodeURIComponent(actor)}`,
+        loc: `${SITE_URL}/actor/${encodeURIComponent(actor)}`,
         changefreq: 'weekly',
         priority: 0.5,
     }));
