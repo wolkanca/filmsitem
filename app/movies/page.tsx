@@ -424,10 +424,10 @@ export default function MoviesPage() {
               onChange={(e) => setSortBy(e.target.value)}
               className="w-full bg-zinc-900 border border-white/5 rounded-xl px-3 py-2 text-sm text-zinc-300 focus:border-brand-primary/50 focus:outline-none"
             >
-              <option value="watchDate-desc">Son İzlenenler</option>
-              <option value="watchDate-asc">İlk İzlenenler</option>
               <option value="year-desc">Yapım Yılı (Yeni)</option>
               <option value="year-asc">Yapım Yılı (Eski)</option>
+              <option value="watchDate-desc">Son İzlenenler</option>
+              <option value="watchDate-asc">İlk İzlenenler</option>
               <option value="myRating-desc">Benim Puanım (Yüksek)</option>
               <option value="myRating-asc">Benim Puanım (Düşük)</option>
               <option value="imdbRating-desc">IMDb Puanı (Yüksek)</option>
