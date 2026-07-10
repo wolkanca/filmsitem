@@ -338,7 +338,7 @@ export default async function HomePage() {
                 IMDb&apos;de düşük puanlı ama benim favorilerim olan sürpriz yapımlar
               </p>
             </div>
-            <Link href="/movies?sort=rating" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
+            <Link href="/movies?sort=myRating-desc" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
               Tümü <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
