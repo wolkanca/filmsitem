@@ -125,6 +125,30 @@ function getSmartCollections(): SmartCollection[] {
       },
     },
     {
+      name: '70ler',
+      description: '1970-1979 yılları arasında çıkan dönem yapımları.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1970 && year <= 1979;
+      },
+    },
+    {
+      name: '60lar',
+      description: '1960-1969 yılları arasında çıkan dönem yapımları.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1960 && year <= 1969;
+      },
+    },
+    {
+      name: '50ler',
+      description: '1950-1959 yılları arasında çıkan dönem yapımları.',
+      filter: (movie) => {
+        const year = getMovieYear(movie);
+        return year >= 1950 && year <= 1959;
+      },
+    },
+    {
       name: 'Kısa Yapımlar',
       description: 'Süresi 60 dakika ve altında olan kısa film, özel bölüm veya kısa içerikler.',
       filter: (movie) => {
