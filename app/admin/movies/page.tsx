@@ -364,7 +364,7 @@ export default function AdminMoviesPage() {
   if (!authorized) return null;
 
   return (
-    <div className="max-w-5xl mx-auto py-12 px-4 sm:px-6">
+    <div className="max-w-5xl mx-auto py-12 px-4 sm:px-6 min-h-[70vh]">
       <div className="space-y-6 animate-fade-in">
         {/* Header / Back */}
         <div className="flex items-center gap-4 border-b border-zinc-800 pb-5">
