@@ -30,6 +30,7 @@ interface MovieDetailClientProps {
   prevImdbId: string | null;
   nextImdbId: string | null;
   similarMovies: Movie[];
+  franchiseMovies: Movie[];
 }
 
 export default function MovieDetailClient({
@@ -37,6 +38,7 @@ export default function MovieDetailClient({
   prevImdbId,
   nextImdbId,
   similarMovies,
+  franchiseMovies,
 }: MovieDetailClientProps) {
   const router = useRouter();
   const [isPosterModalOpen, setIsPosterModalOpen] = useState(false);
@@ -840,6 +842,61 @@ export default function MovieDetailClient({
         </div>
 
       </div>
+
+
+      {/* Franchise / Film Series Section */}
+      {franchiseMovies.length > 1 && (
+        <section className="space-y-6 pt-6 border-t border-zinc-800">
+          <div className="flex items-center justify-between gap-4">
+            <div>
+              <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
+                <Film className="h-6 w-6 text-brand-primary" />
+                {movie.franchiseName || 'Film Serisi'}
+              </h2>
+
+              <p className="mt-1 text-sm text-zinc-500">
+                Serideki {franchiseMovies.length} yapım
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+            {franchiseMovies.map((franchiseMovie) => {
+              const isCurrentMovie =
+                franchiseMovie.imdbId === movie.imdbId;
+
+              return (
+                <div
+                  key={franchiseMovie.imdbId}
+                  className="relative"
+                >
+                  {isCurrentMovie && (
+                    <div className="absolute -top-3 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-full bg-brand-primary px-3 py-1 text-[10px] font-black uppercase tracking-wider text-white shadow-lg">
+                      Şu an görüntüleniyor
+                    </div>
+                  )}
+
+                  <div
+                    className={
+                      isCurrentMovie
+                        ? 'rounded-2xl ring-2 ring-brand-primary ring-offset-4 ring-offset-zinc-950'
+                        : ''
+                    }
+                  >
+                    <MovieCard movie={franchiseMovie} />
+                  </div>
+
+                  {franchiseMovie.franchiseOrder && (
+                    <div className="mt-3 text-center text-xs font-bold text-zinc-500">
+                      Serinin {franchiseMovie.franchiseOrder}. yapımı
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
 
       {/* Similar Movies Section */}
       {randomSimilarMovies.length > 0 && (

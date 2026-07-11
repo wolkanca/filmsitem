@@ -51,4 +51,9 @@ export interface Movie {
   releaseDate?: string;
   trailerYoutubeId?: string;
   seasons?: Season[];
+
+  // Film serisi bilgileri
+  franchiseId?: string;
+  franchiseName?: string;
+  franchiseOrder?: number;
 }
