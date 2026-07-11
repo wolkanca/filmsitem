@@ -1,8 +1,6 @@
 import Link from 'next/link';
 
 const collectionLinks = [
-  { name: 'Komedi Günlükleri', href: '/list/komedi-gunlukleri' },
-  { name: 'Bilim Kurgu', href: '/list/bilim-kurgu' },
   { name: 'Favoriler', href: '/list/favoriler' },
   { name: 'Sinema Klasikleri', href: '/list/sinema-klasikleri' },
   { name: 'Kült Eserler', href: '/list/kult-eserler' },
@@ -13,9 +11,10 @@ const collectionLinks = [
   { name: 'Diziler', href: '/list/tv-series' },
   { name: 'Belgeseller', href: '/list/belgeseller' },
   { name: 'Animasyon', href: '/list/animasyon' },
+  { name: 'Komedi Günlükleri', href: '/list/komedi-gunlukleri' },
+  { name: 'Bilim Kurgu', href: '/list/bilim-kurgu' },
   { name: 'Korku ve Gerilim', href: '/list/korku-ve-gerilim' },
   { name: 'Aksiyon', href: '/list/aksiyon' },
-  { name: 'Video Game', href: '/list/video-game' },
   { name: 'Dram', href: '/list/dram' },
 ];
 
@@ -29,10 +28,10 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row gap-8 lg:items-start lg:justify-between">
             <div className="flex-1 space-y-4">
               <div>
-                <h2 className="text-sm font-black text-white uppercase tracking-wider">
+                <h2 className="text-md font-black text-white uppercase tracking-wider">
                   Koleksiyonlar
                 </h2>
-                <p className="text-xs text-zinc-500 mt-2 leading-relaxed max-w-2xl">
+                <p className="text-sm text-zinc-500 mt-2 leading-relaxed max-w-2xl">
                   İzlediğim yapımları tür, dönem, puan ve formatlarına göre otomatik oluşturulan{' '}
                   <a className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" href="/lists">
                     akıllı listelerle
@@ -57,7 +56,7 @@ export default function Footer() {
               </nav>
             </div>
             <div className="max-w-sm">
-              <h2 className="text-sm font-black text-white uppercase tracking-wider">
+              <h2 className="text-md font-black text-white uppercase tracking-wider">
                 Veri Kaynağı
               </h2>
               <p className="text-sm text-zinc-500 mt-2 mb-4 leading-relaxed">

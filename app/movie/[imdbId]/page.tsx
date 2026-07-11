@@ -372,10 +372,15 @@ export default async function MovieDetailPage({ params }: Props) {
           return orderA - orderB;
         }
 
-        return (
-          Number(a.year || 0) -
-          Number(b.year || 0)
-        );
+        const dateA = a.releaseDate
+          ? new Date(a.releaseDate).getTime()
+          : Number(a.year || 0) * 10000;
+
+        const dateB = b.releaseDate
+          ? new Date(b.releaseDate).getTime()
+          : Number(b.year || 0) * 10000;
+
+        return dateA - dateB;
       })
     : [];
 
