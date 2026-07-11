@@ -123,25 +123,6 @@ export default function AdminPage() {
               </div>
             </Link>
 
-            {/* Messages Inbox Card */}
-            <Link href="/admin/messages" className="group">
-              <div className="glass-card p-8 rounded-3xl border border-white/5 bg-gradient-to-br from-zinc-950/40 to-rose-950/10 hover:border-rose-500/30 hover:to-rose-950/20 transition-all duration-300 h-full flex flex-col justify-between relative overflow-hidden group shadow-lg hover:shadow-[0_15px_40px_rgba(244,63,94,0.08)]">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/10 rounded-full blur-3xl -z-10 group-hover:bg-rose-500/20 transition-colors" />
-                <div>
-                  <div className="p-3 bg-rose-500/10 rounded-2xl text-rose-400 border border-rose-500/20 w-fit mb-6">
-                    <Mail className="w-7 h-7" />
-                  </div>
-                  <h2 className="text-xl font-black text-white group-hover:text-rose-400 transition-colors">Mesaj Kutusu (Inbox)</h2>
-                  <p className="text-zinc-400 text-xs mt-3 leading-relaxed">
-                    İletişim formundan ziyaretçileriniz tarafından gönderilen son e-postaları ve mesajları listeleyin, okuyun veya silin.
-                  </p>
-                </div>
-                <div className="flex items-center gap-2 text-rose-400 font-bold text-xs mt-8 group-hover:translate-x-1 transition-transform">
-                  Mesajlara Git <ArrowRight className="w-4 h-4" />
-                </div>
-              </div>
-            </Link>
-
             {/* Poster Wizard Card */}
             <Link href="/enrich" className="group">
               <div className="glass-card p-8 rounded-3xl border border-white/5 bg-gradient-to-br from-zinc-950/40 to-red-950/10 hover:border-brand-primary/30 hover:to-red-950/20 transition-all duration-300 h-full flex flex-col justify-between relative overflow-hidden group shadow-lg hover:shadow-[0_15px_40px_rgba(239,68,68,0.08)]">
