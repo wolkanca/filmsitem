@@ -13823,7 +13823,10 @@
     "country": "United States",
     "omdbType": "series",
     "boxOffice": "",
-    "plotTr": "Yirmi dördüncü yüzyılda ve orijinal Enterprise yıldız gemisi mürettebatının maceralarından yetmiş ila seksen yıl sonra geçen bu yeni dizi, Star Trek (1966)'in uzun zamandır beklenen devamıdır. Kaptan Jean-Luc Picard'ın komutası altında, yepyeni Enterprise NCC 1701-D, yeni yaşam formları aramak ve daha önce kimsenin gitmediği yerlere cesurca gitmek için uzak gezegenlere yolculuk eder."
+    "plotTr": "Yirmi dördüncü yüzyılda ve orijinal Enterprise yıldız gemisi mürettebatının maceralarından yetmiş ila seksen yıl sonra geçen bu yeni dizi, Star Trek (1966)'in uzun zamandır beklenen devamıdır. Kaptan Jean-Luc Picard'ın komutası altında, yepyeni Enterprise NCC 1701-D, yeni yaşam formları aramak ve daha önce kimsenin gitmediği yerlere cesurca gitmek için uzak gezegenlere yolculuk eder.",
+    "franchiseId": "star-trek",
+    "franchiseName": "Star Trek",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0093779",
@@ -18316,7 +18319,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$92,027,888",
-    "plotTr": "Yirmi dördüncü yüzyılda, U.S.S. Enterprise NCC-1701-E mürettebatına Federasyon tarafından Romulan Tarafsız Bölgesi'nde devriye gezmeleri emredilmiştir, böylece sinsi Borg'a karşı verdikleri savaşa müdahale etmeyeceklerdir. Savaşın kaybedildiğine tanık olan Kaptan Jean-Luc Picard, emirleri hiçe sayar ve Borg ile çatışan filonun komutasını alır. Ancak Borg, Dünya'nın uzaylı bir ırkla (Vulcanlar) ilk temasını durdurmak amacıyla bir girdap aracılığıyla yirmi birinci yüzyıla geri gitmeyi planlamaktadır. Borg küresini takip eden Picard ve mürettebatı, Borg'un görevlerini yerine getirmek için Enterprise'ı ele geçirdiğini fark eder. Borg'dan ve baştan çıkarıcı Kraliçelerinden kurtulmak için tek şansları, Zefram Cochrane'in yıldızlara yaptığı ünlü ışıktan hızlı yolculuğu gerçekleştirmesini sağlamaktır."
+    "plotTr": "Yirmi dördüncü yüzyılda, U.S.S. Enterprise NCC-1701-E mürettebatına Federasyon tarafından Romulan Tarafsız Bölgesi'nde devriye gezmeleri emredilmiştir, böylece sinsi Borg'a karşı verdikleri savaşa müdahale etmeyeceklerdir. Savaşın kaybedildiğine tanık olan Kaptan Jean-Luc Picard, emirleri hiçe sayar ve Borg ile çatışan filonun komutasını alır. Ancak Borg, Dünya'nın uzaylı bir ırkla (Vulcanlar) ilk temasını durdurmak amacıyla bir girdap aracılığıyla yirmi birinci yüzyıla geri gitmeyi planlamaktadır. Borg küresini takip eden Picard ve mürettebatı, Borg'un görevlerini yerine getirmek için Enterprise'ı ele geçirdiğini fark eder. Borg'dan ve baştan çıkarıcı Kraliçelerinden kurtulmak için tek şansları, Zefram Cochrane'in yıldızlara yaptığı ünlü ışıktan hızlı yolculuğu gerçekleştirmesini sağlamaktır.",
+    "franchiseId": "star-trek",
+    "franchiseName": "Star Trek",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0115433",
@@ -19906,7 +19912,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$70,187,658",
-    "plotTr": "Barışçıl Ba'ku ırkını gözlemleme görevindeyken, Teğmen Komutan Data aniden varlığından korkuyormuş gibi davranır. Gezegeni yenileyici radyasyon ve dolayısıyla inanılmaz yaşam süreleri sunan ölümsüz Ba'ku, doğayla uyum içinde yaşar ve ileri teknolojiyi reddeder. Gezegenleri ve kültürleri, Son'a adlı uzaylı bir ırkla ilişkili Federasyon tarafından gizlice araştırılmaktadır. Ancak Son'a, gezegeni kendileri ve bedenlerini yenilemek isteyen tüm Yıldız Filosu yetkilileri için ele geçirmek amacıyla Ba'ku'yu kaçırmayı planlar. Ancak Kaptan Jean-Luc Picard'ın ve U.S.S. Enterprise NCC-1701-E mürettebatının Temel Direktif'e olan sadakatini hesaba katmamışlardır."
+    "plotTr": "Barışçıl Ba'ku ırkını gözlemleme görevindeyken, Teğmen Komutan Data aniden varlığından korkuyormuş gibi davranır. Gezegeni yenileyici radyasyon ve dolayısıyla inanılmaz yaşam süreleri sunan ölümsüz Ba'ku, doğayla uyum içinde yaşar ve ileri teknolojiyi reddeder. Gezegenleri ve kültürleri, Son'a adlı uzaylı bir ırkla ilişkili Federasyon tarafından gizlice araştırılmaktadır. Ancak Son'a, gezegeni kendileri ve bedenlerini yenilemek isteyen tüm Yıldız Filosu yetkilileri için ele geçirmek amacıyla Ba'ku'yu kaçırmayı planlar. Ancak Kaptan Jean-Luc Picard'ın ve U.S.S. Enterprise NCC-1701-E mürettebatının Temel Direktif'e olan sadakatini hesaba katmamışlardır.",
+    "franchiseId": "star-trek",
+    "franchiseName": "Star Trek",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0382568",
@@ -22356,6 +22365,48 @@
     "franchiseOrder": 1
   },
   {
+    "imdbId": "tt0120611",
+    "title": "Blade",
+    "originalTitle": "Blade",
+    "year": 1998,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-03",
+    "listName": [
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt0120611-poster.jpg",
+    "overview": "Bu yapım \"Stephen Norrington\" tarafından yönetilmiş 1998 yapımı bir Horror, Sci-Fi, Thriller, Action eseridir. IMDb puanı 7.1 olarak kaydedilmiştir.",
+    "genres": [
+      "Horror",
+      "Sci-Fi",
+      "Thriller",
+      "Action"
+    ],
+    "runtime": 117,
+    "cast": [
+      "Wesley Snipes",
+      "Kris Kristofferson",
+      "Stephen Dorff"
+    ],
+    "director": "Stephen Norrington",
+    "writers": [
+      "David S. Goyer"
+    ],
+    "imdbRating": 7.1,
+    "tmdbRating": 7.1,
+    "releaseDate": "1999-02-12",
+    "trailerYoutubeId": "O2Y3FFFIvRI",
+    "plot": "A half-vampire, half-mortal man becomes a protector of the mortal race, while slaying evil vampires.",
+    "country": "United States, Germany",
+    "omdbType": "movie",
+    "boxOffice": "",
+    "plotTr": "Blade'in annesi, henüz Blade onun karnındayken vampirlerin acımasız saldırısı sonucunda katledilmiştir. İntikam ateşiyle yanıp tutuşan Blade, bilincini kazandığı günden itibaren kendisini vampirleri temizlemeye adamıştır. Henüz doğmamışken ucundan bulaştığı vampir saldırısı nedeniyle genlerinde onların özelliklerinden de bulunan Blade vampirler tarafından 'Gündüz Gezen' olarak isimlendirilmektedir. Blade'in kendileri için dev bir tehlike oluşturduğunu bilen vampirler de onu bir an önce avlamak istemektedirler.",
+    "franchiseId": "blade",
+    "franchiseName": "Blade",
+    "franchiseOrder": 1
+  },
+  {
     "imdbId": "tt0187738",
     "title": "Blade II",
     "originalTitle": "Blade II",
@@ -22397,7 +22448,7 @@
     "plotTr": "Vampir topluluğunda nadir bir mutasyon meydana gelmiştir: Biçici. Doymak bilmez bir kan arzusuna kapılmış bu vampirler, hem vampirleri hem de insanları avlar ve hayatta kalacak kadar şanssız kurbanları da Biçici'ye dönüştürürler. Hızla genişleyen popülasyonları artık vampirlerin varlığını tehdit etmekte ve yakında kan arzularını tatmin edecek kadar insan kalmayacaktır. Blade, Whistler ve Scud adında bir silah uzmanı, Gölge Konseyi tarafından merak uyandırıcı bir şekilde çağrılır. Konsey, isteksizce vahim bir durumda olduklarını ve Blade'in yardımına ihtiyaç duyduklarını kabul eder. Blade daha sonra, Biçici tehdidini yenmek için her türlü savaş modunda eğitilmiş seçkin bir vampir ekibi olan Bloodpack ile kırılgan bir ittifaka girer. Blade'in ekibi ve Bloodpack, Biçici popülasyonunun vampir ve insan popülasyonlarını yok etmesini engelleyebilecek tek savunma hattıdır.",
     "franchiseId": "blade",
     "franchiseName": "Blade",
-    "franchiseOrder": 1
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0257756",
@@ -25261,7 +25312,7 @@
     "plotTr": "Blade kendini düşmanlarla çevrili, vampir ulusu ve şimdi de insanlarla zorlu bir mücadele içinde bulur. Kendilerine Nightstalkers diyen bir grup vampir avcısıyla güçlerini birleştirir. Vampir ulusu, ilkel kanını kullanarak gündüz gezenlere dönüşmek amacıyla vampirlerin kralı Dracula'yı uykusundan uyandırır. Diğer tarafta ise Blade ve ekibi, vampir ırkını tamamen yok edebilecek bir virüs geliştirmektedir. Sonunda iki taraf çarpışacak ve sadece biri galip gelecektir; yenilgiyi hiç tatmamış nihai vampir ile en büyük vampir avcısının karşı karşıya geldiği bir savaş.",
     "franchiseId": "blade",
     "franchiseName": "Blade",
-    "franchiseOrder": 2
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0349903",
@@ -29822,7 +29873,10 @@
     "country": "United States",
     "omdbType": "series",
     "boxOffice": "",
-    "plotTr": "Bu dizi, Terminatör 2: Kıyamet Günü (1991) olaylarından sonra geçmektedir. Dr. Miles Dyson ve T-800 Model 101 Terminatör'ün fedakarlıklarından sonra, Connor'lar kendilerini bir kez daha Skynet'in gelecekten gelen ajanları tarafından takip edilirken bulurlar. Kabuslarının bitmediğini fark ederek, kaçmayı bırakmaya ve Skynet'in doğuşunu engellemeye odaklanmaya karar verirler. Gelecekle bağlantılı gizemli bir geçmişi olan güzel bir kız olan Cameron Phillips; geçmişi Connor'larla bağlantılı gelecekten gelen bir Tech-Com askeri olan Derek Reese; John'un güzel okul arkadaşı Riley; ve Connor'ları yakalamakla görevlendirilen ancak makinelerden biriyle kendi karşılaşmasından sonra onlara katılan FBI Ajanı James Ellison'ın yardımıyla. İnsanlığı sona erdirmek için hiçbir şeyden çekinmeyecek programı yaratmasını engellemek için Birleşik Devletler ordusunu ve gelecekten gelen gölgeli bir komployu durdurma arayışına başlarlar."
+    "plotTr": "Bu dizi, Terminatör 2: Kıyamet Günü (1991) olaylarından sonra geçmektedir. Dr. Miles Dyson ve T-800 Model 101 Terminatör'ün fedakarlıklarından sonra, Connor'lar kendilerini bir kez daha Skynet'in gelecekten gelen ajanları tarafından takip edilirken bulurlar. Kabuslarının bitmediğini fark ederek, kaçmayı bırakmaya ve Skynet'in doğuşunu engellemeye odaklanmaya karar verirler. Gelecekle bağlantılı gizemli bir geçmişi olan güzel bir kız olan Cameron Phillips; geçmişi Connor'larla bağlantılı gelecekten gelen bir Tech-Com askeri olan Derek Reese; John'un güzel okul arkadaşı Riley; ve Connor'ları yakalamakla görevlendirilen ancak makinelerden biriyle kendi karşılaşmasından sonra onlara katılan FBI Ajanı James Ellison'ın yardımıyla. İnsanlığı sona erdirmek için hiçbir şeyden çekinmeyecek programı yaratmasını engellemek için Birleşik Devletler ordusunu ve gelecekten gelen gölgeli bir komployu durdurma arayışına başlarlar.",
+    "franchiseId": "terminator",
+    "franchiseName": "Terminatör",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0903747",
@@ -32112,7 +32166,10 @@
     "country": "Germany, United States",
     "omdbType": "movie",
     "boxOffice": "$257,730,019",
-    "plotTr": "James T. Kirk'ün doğduğu gün, babası hasarlı yıldız gemisinde, bu zamanda yarı insan mirası yüzünden komşuları tarafından hor görülen Büyükelçi Spock'u arayan bir Romulan madencilik gemisine karşı son bir direnişte ölür. 25 yıl sonra, James T. Kirk genç, asi bir baş belası haline gelmiştir. Kaptan Christopher Pike tarafından Starfleet'teki potansiyelini gerçekleştirmesi için meydan okunduğunda, Komutan Spock gibi akademi eğitmenlerini rahatsız etmeye başlar. Aniden, Vulcan'da bir acil durum ortaya çıkar ve yeni görevlendirilen USS Enterprise, Nyota Uhura, Hikaru Sulu, Pavel Chekov ve hatta Leonard McCoy'un tıbbi hilesi sayesinde Kirk'ün kendisi gibi gelecek vaat eden kadetlerle mürettebatlandırılır. Birlikte, bu mürettebat, eski efsanenin sonsuza dek değiştiği ve efsanenin yeni bir versiyonunun başladığı son sınırda bir maceraya atılacaktır."
+    "plotTr": "James T. Kirk'ün doğduğu gün, babası hasarlı yıldız gemisinde, bu zamanda yarı insan mirası yüzünden komşuları tarafından hor görülen Büyükelçi Spock'u arayan bir Romulan madencilik gemisine karşı son bir direnişte ölür. 25 yıl sonra, James T. Kirk genç, asi bir baş belası haline gelmiştir. Kaptan Christopher Pike tarafından Starfleet'teki potansiyelini gerçekleştirmesi için meydan okunduğunda, Komutan Spock gibi akademi eğitmenlerini rahatsız etmeye başlar. Aniden, Vulcan'da bir acil durum ortaya çıkar ve yeni görevlendirilen USS Enterprise, Nyota Uhura, Hikaru Sulu, Pavel Chekov ve hatta Leonard McCoy'un tıbbi hilesi sayesinde Kirk'ün kendisi gibi gelecek vaat eden kadetlerle mürettebatlandırılır. Birlikte, bu mürettebat, eski efsanenin sonsuza dek değiştiği ve efsanenin yeni bir versiyonunun başladığı son sınırda bir maceraya atılacaktır.",
+    "franchiseId": "star-trek",
+    "franchiseName": "Star Trek",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt0808151",
@@ -32191,7 +32248,7 @@
     "plotTr": "2003 yılında, Longview Eyalet Islah Tesisi'nde, suçlu Marcus Wright idam sırasındadır ve kanserli Dr. Serena Kogan tarafından bedenini araştırmasına bağışlamaya ikna edilir ve kabul eder. 2018'de, bir Skynet tesisine yapılan başarısız bir saldırıdan sonra sadece John Connor hayatta kalır, ancak Skynet'in güçlü yeni T-800 modelini geliştirdiğini keşfeder. Ansızın, Marcus çıplak ve hafızasını kaybetmiş bir şekilde olay yerinde belirir. Marcus, ölümcül makinelerden kurtulmasına yardım eden genç Kyle Reese ve kız Star ile arkadaş olur ve bir Jeep ile birlikte seyahat ederler. Bu arada direniş, makineleri kapatabilecek bir sinyal keşfeder ve John bunu test etmeyi teklif eder. Kyle bir makine tarafından yakalanıp Skynet karargahına getirildiğinde, Marcus gence yardım etmeye karar verir ve Skynet'e doğru yola çıkar; yolda, ona önce John Connor ile tanışmasını öneren Blair Williams'ı kurtarır. Ancak Marcus bir mayına basar ve ameliyata alınır, bu sırada kökeniyle ilgili bir sır açığa çıkar.",
     "franchiseId": "terminator",
     "franchiseName": "Terminatör",
-    "franchiseOrder": 3
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt1049413",
@@ -50651,7 +50708,7 @@
     "plotTr": "İnsan direnişinin lideri John Connor, Sarah Connor'ı korumak ve geleceği güvence altına almak için Çavuş Kyle Reese'i 1984'e geri gönderdiğinde, beklenmedik bir olaylar zinciri parçalanmış bir zaman çizelgesi yaratır. Şimdi, Çavuş Reese kendini geçmişin yeni ve alışılmadık bir versiyonunda bulur; burada Koruyucu da dahil olmak üzere beklenmedik müttefiklerle, tehlikeli yeni düşmanlarla ve beklenmedik yeni bir görevle karşı karşıyadır: Geleceği sıfırlamak.",
     "franchiseId": "terminator",
     "franchiseName": "Terminatör",
-    "franchiseOrder": 4
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt2582496",
@@ -70676,7 +70733,7 @@
     "boxOffice": "$62,253,077",
     "franchiseId": "terminator",
     "franchiseName": "Terminatör",
-    "franchiseOrder": 5
+    "franchiseOrder": 6
   },
   {
     "imdbId": "tt7275830",
@@ -72229,7 +72286,11 @@
     "plot": "At the end of the 24th Century, and 14 years after his retirement from Starfleet, Jean-Luc Picard is living a quiet life on his vineyard, Chateau Picard. When he is sought out by a mysterious young woman, Dahj, in need of his help, he soon realizes she may have personal connections to his own past.",
     "country": "United States",
     "omdbType": "series",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "24. yüzyılın sonunda, Yıldız Filosu’ndan emekli olduktan 14 yıl sonra, Jean-Luc Picard, bağında, Chateau Picard’da sakin bir hayat sürmektedir. Yardımına ihtiyaç duyan gizemli genç bir kadın olan Dahj’ın kendisini bulmasıyla, kısa sürede bu kadının kendi geçmişiyle kişisel bir bağlantısı olabileceğini fark eder.",
+    "franchiseId": "star-trek",
+    "franchiseName": "Star Trek",
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt7713068",
@@ -75447,7 +75508,10 @@
     "plot": "Follows the story of a fair and loved bully.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "dayi",
+    "franchiseName": "Dayı",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt3581652",
@@ -80605,7 +80669,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "backdrop": "",
-    "plotTr": "Bir Adamın Hikâyesi, 10 Aralık 2021 tarihinde vizyona giren, senaryosunu Uğur Bayraktar ve Serkan Öztürk'ün kaleme aldığı, yönetmenliği Uğur Bayraktar'ın yaptığı, Ufuk Bayraktar'ın başrolünde yer aldığı aksiyon ve dram türündeki Türk yapımı sinema filmi."
+    "plotTr": "Bir Adamın Hikâyesi, 10 Aralık 2021 tarihinde vizyona giren, senaryosunu Uğur Bayraktar ve Serkan Öztürk'ün kaleme aldığı, yönetmenliği Uğur Bayraktar'ın yaptığı, Ufuk Bayraktar'ın başrolünde yer aldığı aksiyon ve dram türündeki Türk yapımı sinema filmi.",
+    "franchiseId": "dayi",
+    "franchiseName": "Dayı",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt32992562",
