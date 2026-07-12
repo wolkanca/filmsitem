@@ -19639,7 +19639,10 @@
     "country": "Türkiye",
     "omdbType": "series",
     "boxOffice": "",
-    "plotTr": "Deli Yürek, Osman Sınav'ın yönettiği bir Türk aksiyon, drama ve politik televizyon dizisidir. 5 Ekim 1998'de Show TV'de başlayan dizi, dördüncü sezonunda, ATV'nin son sezonunda yayınlandı. 4 sezonda yayınlanan 113 bölümden oluşan Deli Yürek, 24 Haziran 2002'de sona erdi."
+    "plotTr": "Deli Yürek, Osman Sınav'ın yönettiği bir Türk aksiyon, drama ve politik televizyon dizisidir. 5 Ekim 1998'de Show TV'de başlayan dizi, dördüncü sezonunda, ATV'nin son sezonunda yayınlandı. 4 sezonda yayınlanan 113 bölümden oluşan Deli Yürek, 24 Haziran 2002'de sona erdi.",
+    "franchiseId": "deli-yurek",
+    "franchiseName": "Deli Yürek",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0264700",
@@ -22080,7 +22083,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Yusuf Miroğlu ve nişanlısı Zeynep, askerlikten yakın arkadaşı Cemal'in düğününe katılmak üzere Diyarbakır'a giderler. Cemal, düğün sırasında gizemli bir suikast sonucu öldürülür. Bunun üzerine Miroğlu, olayın şüpheli faillerini aramaya başlar ve bu suikastın arkasında olabilecek birçok terör örgütü olduğunu öğrenir. Miroğlu, suikastı çözmek için \"Bozo\" kod adlı komutan çavuşundan yardım ister ve bölgedeki uyuşturucu ve silah kaçakçılığı gibi daha karmaşık sorunlarla karşılaşır. Bölgede neler olup bittiğini anlamaya çalışırken, terör örgütleriyle çalışan emekli bir Türk subayı tarafından komploya uğrar."
+    "plotTr": "Yusuf Miroğlu ve nişanlısı Zeynep, askerlikten yakın arkadaşı Cemal'in düğününe katılmak üzere Diyarbakır'a giderler. Cemal, düğün sırasında gizemli bir suikast sonucu öldürülür. Bunun üzerine Miroğlu, olayın şüpheli faillerini aramaya başlar ve bu suikastın arkasında olabilecek birçok terör örgütü olduğunu öğrenir. Miroğlu, suikastı çözmek için \"Bozo\" kod adlı komutan çavuşundan yardım ister ve bölgedeki uyuşturucu ve silah kaçakçılığı gibi daha karmaşık sorunlarla karşılaşır. Bölgede neler olup bittiğini anlamaya çalışırken, terör örgütleriyle çalışan emekli bir Türk subayı tarafından komploya uğrar.",
+    "franchiseId": "deli-yurek",
+    "franchiseName": "Deli Yürek",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0259711",
