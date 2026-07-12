@@ -67447,7 +67447,9 @@
     "cast": [
       "Ahmet Mümtaz Taylan",
       "Alper Kul",
-      "Sarp Apak"
+      "Sarp Apak",
+      "Feyyaz Yigit",
+      "Dogu Demirkol"
     ],
     "director": "Ali Atay",
     "writers": [
@@ -67462,7 +67464,11 @@
     "plot": "Mermer Family lives a double life working at their family owned restaurant while being undercover assassins for an international organization. After their secret is revealed, this dysfunctional family needs to work together to survive.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Ali Atay'ın yönettiği 2018 yapımı Ölümlü Dünya, nesillerdir dışarıdan Haydarpaşa Garı'ndaki -Anadolu Tat Lokantası-nı işleten sıradan bir esnaf ailesi gibi görünen, ancak aslında uluslararası gizli bir örgüt adına kiralık katillik yapan Mermer Ailesi'nin absürt ve aksiyon dolu hikayesini konu alır. Aile üyelerinin yaptıkları büyük bir kural hatası sonucu gizli kimlikleri deşifre olunca, uzun yıllardır hizmet ettikleri acımasız suç şebekesi Mermerlerin tamamen ortadan kaldırılması için peşlerine düşer. Canlarını kurtarmak için apar topar bir kaçış macerasına atılan bu disfonksiyonel aile, bir yandan peşlerindeki profesyonel katilleri atlatmaya çalışırken, diğer yandan kendi içlerindeki iletişim kopuklukları, sakarlıklar ve absürt anlaşmazlıklarla mücadele ederek hayatta kalmaya çalışır.",
+    "franchiseId": "olumlu-dunya",
+    "franchiseName": "Ölümlü Dünya",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt8000432",
@@ -79105,6 +79111,7 @@
     "cast": [
       "Ahmet Mümtaz Taylan",
       "Alper Kul",
+      "Feyyaz Yigit",
       "Dogu Demirkol"
     ],
     "director": "Ali Atay",
@@ -79120,7 +79127,11 @@
     "plot": "Each member of the Mermer family, struggles with their own problems. Serhan has difficulty adjusting Begüm, to their new life. While Serhat is now missing a woman in his life, Gazanfer struggles to keep his family together.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Ölümlü Dünya 2, nesillerdir gizli bir kiralık katil örgütü için çalışan Mermer ailesinin kanun kaçağı olarak verdiği mücadeleyi konu alır. Kimliklerinin deşifre olmasıyla zor duruma düşen aile, bir yandan kendi içsel ve kişisel sorunlarıyla boğuşurken; diğer yandan aile üyelerinden Zafer'in kaçırılmasıyla onu kurtarmak için maceraya atılır.",
+    "franchiseId": "olumlu-dunya",
+    "franchiseName": "Ölümlü Dünya",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt12747748",
