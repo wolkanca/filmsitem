@@ -26739,7 +26739,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Mücadele eden, intihara meyilli genç bir komedyen, ona mesleği hakkında birkaç şey öğretmeye istekli bir araba hırsızıyla tanışır."
+    "plotTr": "Mücadele eden, intihara meyilli genç bir komedyen, ona mesleği hakkında birkaç şey öğretmeye istekli bir araba hırsızıyla tanışır.",
+    "franchiseId": "organize-isler",
+    "franchiseName": "Organize İşler",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0388795",
@@ -26878,7 +26881,7 @@
     "cast": [
       "Mehmet Ali Erbil",
       "Seda Sayan",
-      "Safak Sezer"
+      "Şafak Sezer"
     ],
     "director": "Ferdi Egilmez",
     "writers": [
@@ -29520,7 +29523,7 @@
     ],
     "runtime": 105,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Eysan Özhim",
       "Ersin Korkut"
     ],
@@ -29536,7 +29539,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Fikret İstanbul'a gider. Asım'ın ondan öğrendiği bir günün, hayatları için büyük bir fırsat olacağını ummaktadır."
+    "plotTr": "Fikret İstanbul'a gider. Asım'ın ondan öğrendiği bir günün, hayatları için büyük bir fırsat olacağını ummaktadır.",
+    "franchiseId": "kutsal-damacana",
+    "franchiseName": "Kutsal Damacana",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0986264",
@@ -29818,7 +29824,7 @@
     "runtime": 87,
     "cast": [
       "Peker Açikalin",
-      "Safak Sezer",
+      "Şafak Sezer",
       "Cengiz Küçükayvaz"
     ],
     "director": "Murat Aslan",
@@ -29833,7 +29839,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Murat Aslan'ın yönettiği, beceriksiz bir suç çetesinin dürüst olmaya çalışmasını konu alan, 2008 yılının en çok hasılat yapan beşinci Türk filmi olan bir Türk komedi filmi."
+    "plotTr": "Murat Aslan'ın yönettiği, beceriksiz bir suç çetesinin dürüst olmaya çalışmasını konu alan, 2008 yılının en çok hasılat yapan beşinci Türk filmi olan bir Türk komedi filmi.",
+    "franchiseId": "maskeli-besler",
+    "franchiseName": "Maskeli Beşler",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0851851",
@@ -31806,7 +31815,7 @@
     ],
     "runtime": 102,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Esin Civangil",
       "Alp Kirsan"
     ],
@@ -31818,7 +31827,7 @@
     "tmdbRating": 3.2,
     "releaseDate": "2009-01-16",
     "trailerYoutubeId": "gvHTvT0NTfk",
-    "plot": "I am usually not very harsh on comedy movies since their aim is to make people laugh and if they can manage that, I don't criticize the technical aspects so much. But, that doesn't mean Safak Sezer should keep producing these pointless, mindless, good for nothing movies. If you have the slightest respect to yourself and cinema, don't even think about watching this movie. Even the cheapest movie requires some plot and this is where this movie fails. Comedy is a very serious business and Safak Sezer is certainly doing it for money, not for art. Thinking about the old Turkish comedy movies and the recent garbage, I feel like cheated. They ruined the whole prestige of movie industry.",
+    "plot": "I am usually not very harsh on comedy movies since their aim is to make people laugh and if they can manage that, I don't criticize the technical aspects so much. But, that doesn't mean Şafak Sezer should keep producing these pointless, mindless, good for nothing movies. If you have the slightest respect to yourself and cinema, don't even think about watching this movie. Even the cheapest movie requires some plot and this is where this movie fails. Comedy is a very serious business and Şafak Sezer is certainly doing it for money, not for art. Thinking about the old Turkish comedy movies and the recent garbage, I feel like cheated. They ruined the whole prestige of movie industry.",
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
@@ -32897,13 +32906,13 @@
     "runtime": 98,
     "cast": [
       "Aydemir Akbas",
-      "Safak Sezer",
+      "Şafak Sezer",
       "Ali Çatalbas"
     ],
     "director": "Atil Inaç",
     "writers": [
       "Kaan Ertem",
-      "Safak Sezer",
+      "Şafak Sezer",
       "Suat Özkan"
     ],
     "imdbRating": 6.5,
@@ -32914,7 +32923,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Şiddetli bir çatışmanın ardından bir grup adam iki cesedi saklamak zorunda kalır."
+    "plotTr": "Şiddetli bir çatışmanın ardından bir grup adam iki cesedi saklamak zorunda kalır.",
+    "franchiseId": "kolpacino",
+    "franchiseName": "Kolpaçino",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1450746",
@@ -33705,23 +33717,26 @@
     ],
     "runtime": 98,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Mustafa Üstündag",
       "Aydemir Akbas"
     ],
     "director": "Korhan Bozkurt",
     "writers": [
-      "Safak Sezer"
+      "Şafak Sezer"
     ],
     "imdbRating": 3,
     "tmdbRating": 3,
     "releaseDate": "2010-01-22",
     "trailerYoutubeId": "oiD9y69hDKk",
-    "plot": "Safak Sezer as a sailor who returns to Istanbul, following misadventures with Somali pirates and a sojourn in a Budhist monastery, to do battle with a werewolf.",
+    "plot": "Şafak Sezer as a sailor who returns to Istanbul, following misadventures with Somali pirates and a sojourn in a Budhist monastery, to do battle with a werewolf.",
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Şafak Sezer, Somalili korsanlarla yaşadığı talihsiz maceralar ve bir Budist manastırında geçirdiği sürenin ardından İstanbul'a dönen bir denizci olarak, bir kurt adamla savaşmak zorundadır."
+    "plotTr": "Şafak Sezer, Somalili korsanlarla yaşadığı talihsiz maceralar ve bir Budist manastırında geçirdiği sürenin ardından İstanbul'a dönen bir denizci olarak, bir kurt adamla savaşmak zorundadır.",
+    "franchiseId": "kutsal-damacana",
+    "franchiseName": "Kutsal Damacana",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt1570538",
@@ -33936,7 +33951,7 @@
     ],
     "runtime": 90,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Osman Sonant",
       "Hazal Senel"
     ],
@@ -35754,7 +35769,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMzE4ZjUwYjYtNTVhYy00NmU5LTg5YzUtMmM3Nzk3YjdhZWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "plotTr": "Ersin Korkut'un, efsanevi kan emici Kont Dracoola tarafından ziyaret edilen varlıklı bir aileye hizmet eden bir uşağı canlandırdığı bir Türk komedi filmi."
+    "plotTr": "Ersin Korkut'un, efsanevi kan emici Kont Dracoola tarafından ziyaret edilen varlıklı bir aileye hizmet eden bir uşağı canlandırdığı bir Türk komedi filmi.",
+    "franchiseId": "kutsal-damacana",
+    "franchiseName": "Kutsal Damacana",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0472399",
@@ -35931,29 +35949,32 @@
       "Komedi Günlükleri"
     ],
     "poster": "/images/movies/tt1862472-poster.webp",
-    "overview": "Bu yapım \"Safak Sezer\" tarafından yönetilmiş 2011 yapımı bir Comedy eseridir. IMDb puanı 5.8 olarak kaydedilmiştir.",
+    "overview": "Bu yapım \"Şafak Sezer\" tarafından yönetilmiş 2011 yapımı bir Comedy eseridir. IMDb puanı 5.8 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
     ],
     "runtime": 92,
     "cast": [
       "Aydemir Akbas",
-      "Safak Sezer",
+      "Şafak Sezer",
       "Ali Çatalbas"
     ],
-    "director": "Safak Sezer",
+    "director": "Şafak Sezer",
     "writers": [
-      "Safak Sezer"
+      "Şafak Sezer"
     ],
     "imdbRating": 5.8,
     "tmdbRating": 5.8,
     "releaseDate": "2011-03-11",
     "trailerYoutubeId": "_sBSqaHp8MA",
-    "plot": "Ozgur (Safak Sezer) is a child of a wealthy family. But he is not happy with his life. Neither he sees support from his stingy father, nor from his rich father-in-law. Ozgur's love from the past, Sale (Ozlem Hasgul), expects financial support for the album to be released. If she can not find this support, Ozgur threatened with a blackmail tape he sneaks. In order to get out of this situation Ozgur asks for help from friends Sabri (Aydemir Akbas) and Tayfun (Ali Catalbas). This team, who is very confident in themselves, finds themselves in bigger troubles while trying to save Ozgur.",
+    "plot": "Ozgur (Şafak Sezer) is a child of a wealthy family. But he is not happy with his life. Neither he sees support from his stingy father, nor from his rich father-in-law. Ozgur's love from the past, Sale (Ozlem Hasgul), expects financial support for the album to be released. If she can not find this support, Ozgur threatened with a blackmail tape he sneaks. In order to get out of this situation Ozgur asks for help from friends Sabri (Aydemir Akbas) and Tayfun (Ali Catalbas). This team, who is very confident in themselves, finds themselves in bigger troubles while trying to save Ozgur.",
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Özgür (Şafak Sezer) zengin bir ailenin çocuğudur. Ancak hayatından memnun değildir. Ne cimri babasından ne de zengin kayınpederinden destek görmektedir. Özgür'ün geçmişteki aşkı Şale (Özlem Hasgül), çıkacak albümü için maddi destek beklemektedir. Bu desteği bulamazsa, Özgür'ü elindeki şantaj kasetiyle tehdit eder. Bu durumdan kurtulmak için Özgür, arkadaşları Sabri (Aydemir Akbaş) ve Tayfun'dan (Ali Çatalbaş) yardım ister. Kendilerine çok güvenen bu ekip, Özgür'ü kurtarmaya çalışırken kendilerini daha büyük belaların içinde bulurlar."
+    "plotTr": "Özgür (Şafak Sezer) zengin bir ailenin çocuğudur. Ancak hayatından memnun değildir. Ne cimri babasından ne de zengin kayınpederinden destek görmektedir. Özgür'ün geçmişteki aşkı Şale (Özlem Hasgül), çıkacak albümü için maddi destek beklemektedir. Bu desteği bulamazsa, Özgür'ü elindeki şantaj kasetiyle tehdit eder. Bu durumdan kurtulmak için Özgür, arkadaşları Sabri (Aydemir Akbaş) ve Tayfun'dan (Ali Çatalbaş) yardım ister. Kendilerine çok güvenen bu ekip, Özgür'ü kurtarmaya çalışırken kendilerini daha büyük belaların içinde bulurlar.",
+    "franchiseId": "kolpacino",
+    "franchiseName": "Kolpaçino",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt1832382",
@@ -39436,7 +39457,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Bu hızlı tempolu fars, bir köy büyüğünden, yeni ölmüş bir adamı uygun bir şekilde defnedilmesi için memleketine götürme yönündeki görünüşte zararsız bir istekle başlar. Bu isteğin kendisine verildiği basit köylü Salim, ölümden ve dolayısıyla ölü insanlardan korkar, ancak iyi niyet kazanmak için ölü adamı kamyonetiyle götürmeyi isteksizce kabul eder. Yola çıktıktan hemen sonra, Salim'in iyi niyetli yolculuğu araba kazaları, silahlı soyguncular, tehlikede bir genç kadın ve gizemli bir serseri tarafından karmaşık hale gelir. Yaşayan ve ölü çeşitli kişilerin kimlikleri ortaya çıktıkça ceset sayısı artar ve Salim'i korkunç suçlardan sorumlu bırakarak eskiden keyif aldığı o sakin köy hayatına geri dönemez hale getirir."
+    "plotTr": "Bu hızlı tempolu fars, bir köy büyüğünden, yeni ölmüş bir adamı uygun bir şekilde defnedilmesi için memleketine götürme yönündeki görünüşte zararsız bir istekle başlar. Bu isteğin kendisine verildiği basit köylü Salim, ölümden ve dolayısıyla ölü insanlardan korkar, ancak iyi niyet kazanmak için ölü adamı kamyonetiyle götürmeyi isteksizce kabul eder. Yola çıktıktan hemen sonra, Salim'in iyi niyetli yolculuğu araba kazaları, silahlı soyguncular, tehlikede bir genç kadın ve gizemli bir serseri tarafından karmaşık hale gelir. Yaşayan ve ölü çeşitli kişilerin kimlikleri ortaya çıktıkça ceset sayısı artar ve Salim'i korkunç suçlardan sorumlu bırakarak eskiden keyif aldığı o sakin köy hayatına geri dönemez hale getirir.",
+    "franchiseId": "sag-salim",
+    "franchiseName": "Sağ Salim",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1409024",
@@ -42633,19 +42657,19 @@
     ],
     "runtime": 97,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Volkan Basaran",
       "Serkan Sengül"
     ],
     "director": "Murat Aslan",
     "writers": [
-      "Safak Sezer"
+      "Şafak Sezer"
     ],
     "imdbRating": 5.3,
     "tmdbRating": 5.3,
     "releaseDate": "2013-01-25",
     "trailerYoutubeId": "zQfex14HAi8",
-    "plot": "The name of the film, G.D.O. BlackCat comes from the names of three brothers; Gürkan (Safak Sezer), Duran (Volkan Basaran), Orhan (Serkan Sengül) - who all got lost in the big city and live in Balat district. Its script, which was written by Safak Sezer, tells us about the unnatural adventures of some people we always see but don't really know much about. The three brothers, who all have different points of view and jobs, start to investigate the strangest things that happened. The client of one of them dies in his car by accident, the other runs away with a girl who just came back for good from Germany and the third gets himself in trouble with the mob. They struggle all for one and one for all. Amazing and tragicomical incidents reveal.",
+    "plot": "The name of the film, G.D.O. BlackCat comes from the names of three brothers; Gürkan (Şafak Sezer), Duran (Volkan Basaran), Orhan (Serkan Sengül) - who all got lost in the big city and live in Balat district. Its script, which was written by Şafak Sezer, tells us about the unnatural adventures of some people we always see but don't really know much about. The three brothers, who all have different points of view and jobs, start to investigate the strangest things that happened. The client of one of them dies in his car by accident, the other runs away with a girl who just came back for good from Germany and the third gets himself in trouble with the mob. They struggle all for one and one for all. Amazing and tragicomical incidents reveal.",
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": ""
@@ -44500,7 +44524,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "İsmail'in oğlu Tarık, uzun yıllar sonra köyüne döner ve Letonyalı Nugesha adında bir kadınla nişanlandığını duyurur. Maddi imkanları olmamasına rağmen İsmail, düğün masraflarını karşılamak isteyen kişi olmak ister. Düğün için yeterli parayı sağlamaya çalışırken birçok sorun ortaya çıkar."
+    "plotTr": "İsmail'in oğlu Tarık, uzun yıllar sonra köyüne döner ve Letonyalı Nugesha adında bir kadınla nişanlandığını duyurur. Maddi imkanları olmamasına rağmen İsmail, düğün masraflarını karşılamak isteyen kişi olmak ister. Düğün için yeterli parayı sağlamaya çalışırken birçok sorun ortaya çıkar.",
+    "franchiseId": "dugun-dernek",
+    "franchiseName": "Düğün Dernek",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1170358",
@@ -44827,7 +44854,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BZTY2Y2U1NzQtNzAzMy00Y2QxLWI4YzktNjYyNDBhMDI4Y2VjXkEyXkFqcGc@._V1_.jpg",
-    "plotTr": "Salim'in sahipsiz bir cenazeyi memleketine götürmeye karar vermesiyle başlayan trajikomik macera, ayı oynatıcısı Nihal'in annesinin rehin alınmasıyla devam eder. Seri katil olarak aranırken, yakalanmamak için yeni bir kılık değiştirmeye karar verirler. Ancak işler beklendiği gibi gitmez. Salim beladan kurtulmak için bir silah aldığında, talihsiz olaylar yeniden başlar."
+    "plotTr": "Salim'in sahipsiz bir cenazeyi memleketine götürmeye karar vermesiyle başlayan trajikomik macera, ayı oynatıcısı Nihal'in annesinin rehin alınmasıyla devam eder. Seri katil olarak aranırken, yakalanmamak için yeni bir kılık değiştirmeye karar verirler. Ancak işler beklendiği gibi gitmez. Salim beladan kurtulmak için bir silah aldığında, talihsiz olaylar yeniden başlar.",
+    "franchiseId": "sag-salim",
+    "franchiseName": "Sağ Salim",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt3283556",
@@ -45275,7 +45305,8 @@
     "runtime": 115,
     "cast": [
       "İnan Ulaş Torun",
-      "Önder Açıkbaş"
+      "Önder Açıkbaş",
+      "Zafer Altun"
     ],
     "director": "Özgür Bakar",
     "writers": [
@@ -45289,7 +45320,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "trailerYoutubeId": "FAIQmdzu5ng",
-    "backdrop": "https://m.media-amazon.com/images/M/MV5BZDdhOTQ0YzAtMTc2Yi00ZTNmLTg0YTItYjk3OTA0MjIyOTA1XkEyXkFqcGc@._V1_.jpg"
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BZDdhOTQ0YzAtMTc2Yi00ZTNmLTg0YTItYjk3OTA0MjIyOTA1XkEyXkFqcGc@._V1_.jpg",
+    "franchiseId": "hep-yek",
+    "franchiseName": "Hep Yek",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt29454492",
@@ -45309,7 +45343,9 @@
     ],
     "runtime": 98,
     "cast": [
-      "Şafak Sezer"
+      "Şafak Sezer",
+      "Aydemir Akbas",
+      "Cem Kiliç"
     ],
     "director": "Kamil Çetin",
     "writers": [
@@ -45324,7 +45360,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "QWvDR02fgqE",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMWRjY2I1NjQtMDU0ZC00NGZhLTkwMzYtNzljZmQxNjk1Nzg4XkEyXkFqcGc@._V1_.jpg",
-    "plotTr": "İki rakip, eski hesaplaşmaları halletmek için bir kumarhanede buluşur ancak işler bir baskınla kesintiye uğrar."
+    "plotTr": "İki rakip, eski hesaplaşmaları halletmek için bir kumarhanede buluşur ancak işler bir baskınla kesintiye uğrar.",
+    "franchiseId": "kolpacino",
+    "franchiseName": "Kolpaçino",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt38974342",
@@ -45344,7 +45383,9 @@
     ],
     "runtime": 99,
     "cast": [
-      "Şafak Sezer"
+      "Şafak Sezer",
+      "Ugur Aslan",
+      "Toygan Avanoglu"
     ],
     "director": "Dogus Onur Karasu",
     "writers": [
@@ -45359,7 +45400,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "g6X84l1xmMs",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNWExYjhmZTEtMWMyNS00ZThhLThmYTctYTNlNmM4NDEwZWI4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "plotTr": "Film yapımcısı Kalender, ünlü ve zengin iş insanı Feza ve onun eşi Aydan'dan yeni bir sinema projesi için yatırım teklifi alır. Ancak Kalender’in bu teklifi kabul etmesinin ardındaki asıl kurnazlık, Feza'nın malikanesinde saklandığı iddia edilen büyük altın külçelerine ulaşmaktır. Amacına ulaşmak için eski dostları Vefa ve Namık ile iş birliği yapan Kalender, malikaneye oyuncuları göndererek sahte bir film çekimi organize eder. Görünürdeki çekim tamamen bir paravandır; fakat işler hiç de planlandığı gibi gitmez. Kalender ve Vefa tam hedeflerine ulaştıklarını düşünürken, Feza ve Aydan’ın aslında en başından beri her şeyi bildiği ve onlara büyük bir tuzak (dalavere) kurduğu ortaya çıkar. Geçmişten gelen intikam hesapları ve Ejder'in de devreye girmesiyle olaylar içinden çıkılmaz, tehlikeli ve komik bir hal alır."
+    "plotTr": "Film yapımcısı Kalender, ünlü ve zengin iş insanı Feza ve onun eşi Aydan'dan yeni bir sinema projesi için yatırım teklifi alır. Ancak Kalender’in bu teklifi kabul etmesinin ardındaki asıl kurnazlık, Feza'nın malikanesinde saklandığı iddia edilen büyük altın külçelerine ulaşmaktır. Amacına ulaşmak için eski dostları Vefa ve Namık ile iş birliği yapan Kalender, malikaneye oyuncuları göndererek sahte bir film çekimi organize eder. Görünürdeki çekim tamamen bir paravandır; fakat işler hiç de planlandığı gibi gitmez. Kalender ve Vefa tam hedeflerine ulaştıklarını düşünürken, Feza ve Aydan’ın aslında en başından beri her şeyi bildiği ve onlara büyük bir tuzak (dalavere) kurduğu ortaya çıkar. Geçmişten gelen intikam hesapları ve Ejder'in de devreye girmesiyle olaylar içinden çıkılmaz, tehlikeli ve komik bir hal alır.",
+    "franchiseId": "ketenpere",
+    "franchiseName": "Ketenpere",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt3655374",
@@ -45395,7 +45439,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Modern hayatı geride bırakıp Çökertme Köyü'nde yaşayan Mustafaali (45), günlerini kitap okuyarak geçirir. Çalışmaya karşı olan Mustafaali, tüm yaşamsal ihtiyaçlarını doğanın nimetlerinden karşılar. Öte yandan Cavit, İstanbul'da yaşayan zengin bir iş adamıdır. Hayatı boyunca çalışmış ve tek önemsediği şey çalışmak, kazanmak ve birikim yapmaktır. Cavit'in hayatı, Çökertme Koyu'nda butik otel inşa etmek için Mustafaali'nin arazisini satın almak istediğinde Mustafaali ile tanıştıktan sonra altüst olur. Küçük arazisinde doğal koşullar altında modern hayattan uzakta yaşayan Mustafaali'nin felsefesi, büyük şehirden gelen Cavit'in kafasını karıştırır."
+    "plotTr": "Modern hayatı geride bırakıp Çökertme Köyü'nde yaşayan Mustafaali (45), günlerini kitap okuyarak geçirir. Çalışmaya karşı olan Mustafaali, tüm yaşamsal ihtiyaçlarını doğanın nimetlerinden karşılar. Öte yandan Cavit, İstanbul'da yaşayan zengin bir iş adamıdır. Hayatı boyunca çalışmış ve tek önemsediği şey çalışmak, kazanmak ve birikim yapmaktır. Cavit'in hayatı, Çökertme Koyu'nda butik otel inşa etmek için Mustafaali'nin arazisini satın almak istediğinde Mustafaali ile tanıştıktan sonra altüst olur. Küçük arazisinde doğal koşullar altında modern hayattan uzakta yaşayan Mustafaali'nin felsefesi, büyük şehirden gelen Cavit'in kafasını karıştırır.",
+    "franchiseId": "mandira-filozofu",
+    "franchiseName": "Mandira Filozofu",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1843866",
@@ -45797,7 +45844,7 @@
       "Hamdi Alkan",
       "Meriç Acemi",
       "Pinar Altug",
-      "Safak Sezer",
+      "Şafak Sezer",
       "Ozcan Deniz"
     ],
     "director": "Hamdi Alkan",
@@ -45849,7 +45896,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "TiwBYMhba0g",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMGI0YjdiN2EtMDZlNi00ZGNkLTk0ODktMzc1NGFiOWQ0NWVhXkEyXkFqcGc@._V1_.jpg",
-    "plotTr": "Murat Aslan'ın yönettiği, hayatlarının en büyük soygununu yapmaya çalışan beceriksiz bir suç çetesini konu alan bir Türk komedi filmi. Film, 2005 yılının en çok hasılat yapan altıncı Türk filmi olmuştur."
+    "plotTr": "Murat Aslan'ın yönettiği, hayatlarının en büyük soygununu yapmaya çalışan beceriksiz bir suç çetesini konu alan bir Türk komedi filmi. Film, 2005 yılının en çok hasılat yapan altıncı Türk filmi olmuştur.",
+    "franchiseId": "maskeli-besler",
+    "franchiseName": "Maskeli Beşler",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0949751",
@@ -45870,7 +45920,8 @@
     "runtime": 104,
     "cast": [
       "Şafak Sezer",
-      "Peker Açıkalın"
+      "Peker Açıkalın",
+      "Cengiz Küçükayvaz"
     ],
     "director": "Murat Aslan",
     "writers": [
@@ -45885,7 +45936,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "9bwWC_xPufY",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BODY4MzkxODItNWE1My00ZmRkLThkNGUtZDhiYzI2Yjg1ZWE1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "plotTr": "Kuzey Irak'taki bir petrol tesisini ele geçirip petrolü Türkiye'ye yönlendirmeye çalışan beceriksiz bir suç çetesini konu alan bir Türk komedi filmi. Film, 2007 yılının en çok hasılat yapan üçüncü Türk filmi olmuştur."
+    "plotTr": "Kuzey Irak'taki bir petrol tesisini ele geçirip petrolü Türkiye'ye yönlendirmeye çalışan beceriksiz bir suç çetesini konu alan bir Türk komedi filmi. Film, 2007 yılının en çok hasılat yapan üçüncü Türk filmi olmuştur.",
+    "franchiseId": "maskeli-besler",
+    "franchiseName": "Maskeli Beşler",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt7588160",
@@ -45905,7 +45959,9 @@
     ],
     "runtime": 108,
     "cast": [
-      "Şafak Sezer"
+      "Şafak Sezer",
+      "Hakan Ural",
+      "Mehmet Esen"
     ],
     "director": "Kamil Çetin",
     "writers": [
@@ -45920,7 +45976,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "CNeCBDPoMis",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BYmJhOTAxMDEtMzk1ZC00Njc2LWE5ZDktZDlkYzkxNjI0ZTA0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "plotTr": "Sinema sektöründe çalışan bir adam, yapımcı olma hayalleri kurmaktadır. Hayallerini gerçekleştirmek için birçok şey dener ancak birçok kötü durumu da yönetmek zorunda kalır."
+    "plotTr": "Sinema sektöründe çalışan bir adam, yapımcı olma hayalleri kurmaktadır. Hayallerini gerçekleştirmek için birçok şey dener ancak birçok kötü durumu da yönetmek zorunda kalır.",
+    "franchiseId": "ketenpere",
+    "franchiseName": "Ketenpere",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0831387",
@@ -49258,7 +49317,10 @@
     "plot": "Mustafali is a man liberated from all ambitions, living in Çökertme Cove, keeping to his own life style. But due to the sickness of his father, who had left him and his mother years ago, he had to come to Istanbul. Mustafali's philosophy will perplex Istanbul, a city that had been living happily with its own truths before Mustafali came along. Mustafali, a man who is against money, accumulation, setting targets, success and living like we won't die, will be disputing everything we know to be true in this fun story. Since he does not see success as a reward, he does not submit to the threat of failure. He questions life in international companies, plaza offices, secure apartment complexes, university cafeterias and student houses. He tells us how to stand against the modern world, a world that wants to sell us more things by creating a fear of the future. Mustafali calls out to the young people of the world: \" I'm against young people being straightened out.\"",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "mandira-filozofu",
+    "franchiseName": "Mandira Filozofu",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt1661199",
@@ -52648,7 +52710,10 @@
     "plot": "The adventures of the box office sensation, Dügün Dernek (Unconventional Wedding) are all set to continue in Dügün Dernek 2: Sünnet (Unconventional Circumcision). After seeing his son married in the first movie of the series, Ismail is now having stress over his grandson's circumcision. When the old crew reunites, Ismail finds himself in all kinds of unthinkable trouble, and before he knows it the circumcision party has evolved into a citywide affair. Written and directed once again by Selçuk Aydemir, Dügün Dernek 2: Sünnet (Unconventional Circumcision) promises audiences plenty of nonstop laughter. As things quickly become complicated, there is even a place for romance in the rushed preparations, but this circumcision will happen, come hell or high water!",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "dugun-dernek",
+    "franchiseName": "Düğün Dernek",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt1390411",
@@ -54309,19 +54374,19 @@
       "Komedi Günlükleri"
     ],
     "poster": "/images/movies/tt5505316-poster.webp",
-    "overview": "Bu yapım \"Safak Sezer\" tarafından yönetilmiş 2016 yapımı bir Comedy eseridir. IMDb puanı 4.2 olarak kaydedilmiştir.",
+    "overview": "Bu yapım \"Şafak Sezer\" tarafından yönetilmiş 2016 yapımı bir Comedy eseridir. IMDb puanı 4.2 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
     ],
     "runtime": 93,
     "cast": [
       "Aydemir Akbas",
-      "Safak Sezer",
+      "Şafak Sezer",
       "Ali Çatalbas"
     ],
-    "director": "Safak Sezer",
+    "director": "Şafak Sezer",
     "writers": [
-      "Safak Sezer"
+      "Şafak Sezer"
     ],
     "imdbRating": 4.1,
     "tmdbRating": 4.1,
@@ -54330,7 +54395,10 @@
     "plot": "Özgür accidentally gets the money of a mafia leader.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "kolpacino",
+    "franchiseName": "Kolpaçino",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt5465868",
@@ -58496,7 +58564,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Aslında bir mafya olan Cevat, Şahin'i öldürür ve Altan ile Gürkan'dan cesedi bir daha asla bulunamayacak şekilde saklamalarını ister. Ancak bu görevi tamamen başarısız olurlar. Gürkan durumu öğrenince, şüpheci bir karısı ve oldukça tuhaf bir oğlu olan Ruhi'ye sahip Kerim'den yardım ister. Kerim, kaçak olan Altan ve Gürkan'ı aramaya başlarken, karısı ve oğlu Ruhi de onu takip eder."
+    "plotTr": "Aslında bir mafya olan Cevat, Şahin'i öldürür ve Altan ile Gürkan'dan cesedi bir daha asla bulunamayacak şekilde saklamalarını ister. Ancak bu görevi tamamen başarısız olurlar. Gürkan durumu öğrenince, şüpheci bir karısı ve oldukça tuhaf bir oğlu olan Ruhi'ye sahip Kerim'den yardım ister. Kerim, kaçak olan Altan ve Gürkan'ı aramaya başlarken, karısı ve oğlu Ruhi de onu takip eder.",
+    "franchiseId": "hep-yek",
+    "franchiseName": "Hep Yek",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1293847",
@@ -60247,7 +60318,9 @@
     ],
     "runtime": 96,
     "cast": [
-      "Şafak Sezer"
+      "Şafak Sezer",
+      "Ersin Korkut",
+      "Müjde Uzman"
     ],
     "director": "Kamil Çetin",
     "writers": [
@@ -60261,7 +60334,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "trailerYoutubeId": "BMznIv8jL9s",
-    "backdrop": "https://m.media-amazon.com/images/M/MV5BYWNlYWQ0OWMtNDNkNS00MTgxLThhNTMtZDM3NDY4ODYwNDEwXkEyXkFqcGc@._V1_.jpg"
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BYWNlYWQ0OWMtNDNkNS00MTgxLThhNTMtZDM3NDY4ODYwNDEwXkEyXkFqcGc@._V1_.jpg",
+    "franchiseId": "kutsal-damacana",
+    "franchiseName": "Kutsal Damacana",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt30445556",
@@ -65792,7 +65868,7 @@
     ],
     "runtime": 120,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Mehmet Ali Erbil",
       "Hasibe Eren"
     ],
@@ -68212,7 +68288,7 @@
     ],
     "runtime": 103,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Ayhan Tas",
       "Bülent Çolak"
     ],
@@ -68729,7 +68805,7 @@
     ],
     "runtime": 100,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Çetin Altay",
       "Umut Oguz"
     ],
@@ -69300,7 +69376,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "backdrop": "",
-    "plotTr": "İstanbul'un en kurnaz üçkâğıtçılarından biri olan Asım Noyan, kurduğu ekibiyle birlikte organize işlerine tam gaz devam etmektedir. Ancak bu kez darbe hiç beklenmedik bir yerden gelir: Asım'ın biricik kızı Nazlı dolandırılır. Dolandırıcılar kralının kızı dolandırıldığında, Asım ailesini kurtarmak ve intikam almak için harekete geçer. Bu mücadele onu yasa dışı bahis dünyasının acımasız ve deli fişek patronu \"Sarı Saruhan\" ile karşı karşıya getirerek tehlikeli bir sarmalın ortasına sürükler."
+    "plotTr": "İstanbul'un en kurnaz üçkâğıtçılarından biri olan Asım Noyan, kurduğu ekibiyle birlikte organize işlerine tam gaz devam etmektedir. Ancak bu kez darbe hiç beklenmedik bir yerden gelir: Asım'ın biricik kızı Nazlı dolandırılır. Dolandırıcılar kralının kızı dolandırıldığında, Asım ailesini kurtarmak ve intikam almak için harekete geçer. Bu mücadele onu yasa dışı bahis dünyasının acımasız ve deli fişek patronu \"Sarı Saruhan\" ile karşı karşıya getirerek tehlikeli bir sarmalın ortasına sürükler.",
+    "franchiseId": "organize-isler",
+    "franchiseName": "Organize İşler",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt9355244",
@@ -69370,7 +69449,10 @@
     "plot": "Hep Yek 3 tells the adventures of Altan and Gürkan, who cannot stay away from trouble.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "hep-yek",
+    "franchiseName": "Hep Yek",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt7903530",
@@ -79880,7 +79962,7 @@
     "runtime": 76,
     "cast": [
       "Aydemir Akbas",
-      "Safak Sezer",
+      "Şafak Sezer",
       "Çetin Altay"
     ],
     "director": "Hayal Aslanzade",
@@ -80616,13 +80698,13 @@
     ],
     "runtime": 96,
     "cast": [
-      "Safak Sezer",
+      "Şafak Sezer",
       "Ersin Korkut",
       "Yildirim Memisoglu"
     ],
     "director": "Kamil Çetin",
     "writers": [
-      "Safak Sezer"
+      "Şafak Sezer"
     ],
     "imdbRating": 1.8,
     "tmdbRating": 1.8,
@@ -80631,7 +80713,10 @@
     "plot": "During a zombie outbreak in Istanbul, Fikret navigates the streets on a journey mixing humor and terror.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "kutsal-damacana",
+    "franchiseName": "Kutsal Damacana",
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt33268102",
