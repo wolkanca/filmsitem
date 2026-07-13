@@ -77906,26 +77906,26 @@
     "originalTitle": "Var Bunlar",
     "year": 2022,
     "type": "TV Series",
-    "myRating": 0,
-    "watchDate": "2024-12-23",
-    "listName": [],
-    "poster": "/images/movies/parent_varbunlar-poster.webp",
-    "overview": "Bu dizi \"Var Bunlar\" başlığı altındaki bölümleri içerir.",
+    "myRating": 7,
+    "watchDate": "2026-07-12",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTQ1NThiMzMtNDRkMS00YmNkLTk0ZGEtOWJhZmU3NWQzNDhjXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2022 yapımı bir Comedy eseridir. IMDb puanı 8.1 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
     ],
-    "runtime": 99,
+    "runtime": 20,
     "cast": [
-      "Giray Altınok",
-      "Kerem Özdoğan"
+      "Giray Altinok",
+      "Kerem Özdogan",
+      "Cansu Diktas"
     ],
-    "director": "Gökdeniz Uslu",
-    "writers": [
-      "Giray Altınok",
-      "Kerem Özdoğan"
-    ],
-    "imdbRating": 7.1,
-    "tmdbRating": 7.1,
+    "director": "Arif Gokdeniz Uslu",
+    "writers": [],
+    "imdbRating": 8.1,
+    "tmdbRating": 8.1,
     "country": "Türkiye",
     "seasons": [
       {
@@ -77946,13 +77946,13 @@
         ]
       }
     ],
-    "trailerYoutubeId": "Dtyg0ZlRwJ0",
+    "trailerYoutubeId": "JEHGbK8IuaA",
     "backdrop": "",
-    "plot": "2022 yılında yayın hayatına başlayan, gündelik hayatın tekdüzeliğinde sürüklenen Samet ve Tufan adlı iki yakın arkadaşın bitmek bilmez eğlenceli ve absürt maceralarını konu alan bir Türk komedi dizisidir.",
-    "plotTr": "2022 yılında yayın hayatına başlayan, gündelik hayatın tekdüzeliğinde sürüklenen Samet ve Tufan adlı iki yakın arkadaşın bitmek bilmez eğlenceli ve absürt maceralarını konu alan bir Türk komedi dizisidir.",
+    "plot": "Directed by Arif Gökdeniz Uslu, this 2022 absurdist comedy series centers on the bizarre and humorous adventures of two close friends, Tufan and Samet, as they navigate the inextricable monotony of daily life. Written by lead actors Giray Altınok and Kerem Özdoğan, the show transforms ordinary situations—such as workplace issues, unemployment, complex relationships, and social obsessions—into absurd scenarios that quickly spiral out of control. Each episode features a unique theme and a revolving cast of guest stars who join the duo in their surreal journeys. Known for its witty dialogue and relatable observations, the series has become a cult favorite for its clever satire of societal norms and the dynamic chemistry between its two main characters.",
+    "plotTr": "Yönetmenliğini Arif Gökdeniz Uslu'nun üstlendiği bu absürt komedi dizisi, gündelik hayatın tekdüzeliği içinde sürüklenen Tufan ve Samet adındaki iki yakın arkadaşın başına gelen tuhaf olayları konu alır. Senaryosunu da başrol oyuncuları Giray Altınok ve Kerem Özdoğan’ın kaleme aldığı yapımda; apartman sorunları, işsizlik, ikili ilişkiler ve toplumsal takıntılar gibi sıradan durumlar, ikilinin kendine has bakış açısıyla kontrolden çıkan absürt maceralara dönüşür. Her bölüm farklı bir temayı işleyen dizide, Tufan ve Samet’e her hafta sürpriz konuk oyuncular eşlik ederken, izleyiciye \"aynı şeyi ben de yaşamıştım\" dedirten samimi ve zekice saptamalar sunulur. beIN CONNECT (TOD) platformunda yayınlanan dizi, modern hayatın saçmalıklarını hicveden özgün diliyle kısa sürede bir fenomene dönüşmüştür.",
     "omdbType": "",
     "boxOffice": "",
-    "releaseDate": "2022-6-1"
+    "releaseDate": "2022"
   },
   {
     "imdbId": "tt19246408",
@@ -81115,11 +81115,13 @@
     "imdbRating": 6.8,
     "tmdbRating": 6.8,
     "releaseDate": "2025-12-31",
-    "plot": "Turkish comedy heavyweight Cem Yilmaz takes the stand-up stage in this dynamic special - covering everything from cancel culture to regretful tattoos.",
+    "plot": "In this dynamic stand-up special, Turkish comedy star Cem Yilmaz evaluates his life and career as a divorced man in his fifties. He covers a wide array of contemporary topics, ranging from the unexpected downsides of starting the day late to the anxieties of artificial intelligence replacing professions. The performance delves into modern social issues such as \"cancel culture\" and humorous reflections on regretful tattoos. Known for his sharp observational power, Yilmaz transforms everyday moments into hilarious anecdotes, touching upon changing human relationships and the complexities of urban life. The special offers a blend of wit and social commentary, exploring the struggles of modern individuals while maintaining his signature comedic style.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "thOyBjgJUmw"
+    "trailerYoutubeId": "thOyBjgJUmw",
+    "backdrop": "",
+    "plotTr": "Cem Yılmaz bu dinamik stand-up gösterisinde, gündelik hayatın sıradan anlarını kendine özgü gözlem gücüyle kahkaha dolu hikâyelere dönüştürür. Elli yaşında boşanmış bir adam olarak kendi hayatını ve kariyerini değerlendiren sanatçı; teknolojiyle değişen alışkanlıklarımızdan yapay zekâ korkusuna, \"iptal kültürü\"nden (cancel culture) pişmanlık duyulan dövmelere kadar geniş bir yelpazede pek çok konuya değinir. Şehir yaşamının karmaşası ve insan ilişkilerini samimi bir dille sahneye taşıyan Yılmaz, izleyiciyi hem güldüren hem de modern hayat üzerine düşündüren bir performans sergiler."
   },
   {
     "imdbId": "tt2935510",
@@ -81155,11 +81157,13 @@
     "imdbRating": 6.5,
     "tmdbRating": 6.5,
     "releaseDate": "2019-09-20",
-    "plot": "Astronaut Roy McBride (Brad Pitt) travels to the outer edges of the solar system to find his missing father and unravel a mystery that threatens the survival of our planet. His journey will uncover secrets that challenge the nature of human existence and our place in the cosmos.",
+    "plot": "Directed by James Gray, Ad Astra (2019) is a contemplative science fiction film set in the near future, following astronaut Roy McBride (Brad Pitt) as he embarks on a mission across the solar system to uncover the truth about his missing father and a mysterious energy surge threatening all life on Earth. Thirty years after his father, H. Clifford McBride (Tommy Lee Jones), disappeared on a mission to Neptune searching for extraterrestrial life, Roy is tasked with traveling to the outer edges of the galaxy to stop the surges linked to his father's original \"Lima Project\". His odyssey through commercialized moon bases and isolated Mars outposts serves as a deeply psychological journey, forcing Roy to confront his father's obsessive legacy and the profound loneliness of the cosmos. The film is widely praised for its stunning technical elements and its introspective exploration of masculinity, the bond between fathers and sons, and humanity's place in the universe.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Gn-o75MM8yY"
+    "trailerYoutubeId": "Gn-o75MM8yY",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini James Gray'in üstlendiği bu psikolojik bilimkurgu filmi, yakın bir gelecekte Güneş Sistemi'nin tamamını tehdit eden gizemli enerji dalgalanmalarının (The Surge) izini süren astronot Roy McBride'ın (Brad Pitt) hikayesini anlatır. Roy, bu felaketi durdurmak ve 30 yıl önce \"Lima Projesi\" kapsamında uzayda hayat aramak için çıktığı görevde kaybolan babası Clifford McBride'ın (Tommy Lee Jones) akıbetini öğrenmek üzere Neptün'e doğru tehlikeli bir yolculuğa çıkar. Ay ve Mars üzerinden geçen bu zorlu yolculuk, Roy için sadece evreni kurtarma görevi değil, aynı zamanda babasıyla olan travmatik geçmişiyle yüzleştiği derin bir içsel yolculuğa dönüşür. Görsel açıdan büyüleyici olan yapım; insan varoluşunun doğasını, babaların oğulları üzerindeki etkisini ve sonsuz boşlukta anlam arayışını sorgulayan felsefi bir odyssey niteliğindedir."
   },
   {
     "imdbId": "tt10640346",
@@ -81192,11 +81196,13 @@
     "imdbRating": 7.1,
     "tmdbRating": 7.1,
     "releaseDate": "2022-12-23",
-    "plot": "A tale of outsized ambition and outrageous excess, it traces the rise and fall of multiple characters during an era of unbridled decadence and depravity in early Hollywood.",
+    "plot": "Written and directed by Damien Chazelle, Babylon (2022) is an epic period drama set in the late 1920s during Hollywood's chaotic transition from silent films to \"talkies\". The narrative follows multiple ambitious dreamers, including Manny Torres (Diego Calva), an outsider desperate to break into the industry; Nellie LaRoy (Margot Robbie), a fearless aspiring starlet chasing fame; and Jack Conrad (Brad Pitt), an aging silent film icon struggling with the industry's evolution. Amidst a backdrop of decadence, depravity, and outrageous excess, the film chronicles their dramatic rise and eventual fall as they navigate a changing cinematic landscape. It serves as a poignant exploration of the cost of chasing artistic dreams in an era where the magic of movies often masks a brutal reality.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "N-dZDoGld00"
+    "trailerYoutubeId": "N-dZDoGld00",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Damien Chazelle'in üstlendiği Babylon (2022), 1920'li yılların sonunda Hollywood'un sessiz sinema döneminden sesli filmlere geçiş yaptığı çalkantılı ve görkemli dönemi konu alır. Film, sinema dünyasına girmek için can atan Meksikalı göçmen Manny (Diego Calva), yükselme hırsıyla dolu cesur oyuncu Nellie LaRoy (Margot Robbie) ve kariyerinin zirvesinde olan ancak değişen sektöre ayak uydurmaya çalışan yıldız Jack Conrad (Brad Pitt) dahil olmak üzere birçok karakterin yükseliş ve çöküş öyküsünü anlatır. Sınırsız bir aşırılık, yozlaşma ve hırsın hüküm sürdüğü bu dönemde karakterler, sinemanın büyüsü ile sektörün acımasız gerçekleri arasında gidip gelirken hem başarıyı hem de derin başarısızlıkları tadarlar."
   },
   {
     "imdbId": "tt0477080",
@@ -81226,11 +81232,13 @@
     "imdbRating": 6.8,
     "tmdbRating": 6.8,
     "releaseDate": "2010-11-12",
-    "plot": "A runaway train carrying a cargo of toxic chemicals puts an engineer and his conductor in a race against time. They're chasing the runaway train in a separate locomotive and need to bring it under control before it derails on a curve and causes a toxic spill that will decimate a town.",
+    "plot": "Directed by Tony Scott and inspired by real-life events (the CSX 8888 incident), Unstoppable centers on a massive, unmanned freight train carrying toxic chemicals that roars out of control through the Pennsylvania countryside. The locomotive, nicknamed \"The Beast,\" threatens to derail in a heavily populated area, potentially causing a catastrophic environmental disaster. Veteran engineer Frank Barnes (Denzel Washington) and young conductor Will Colson (Chris Pine), who find themselves on the same track, devise a daring plan to chase down and couple with the runaway train to slow it down. The film depicts their heroic race against time as they risk their lives to stop the speeding locomotive before it reaches a dangerous curve and decimates a town.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "l__gGyq21U8"
+    "trailerYoutubeId": "l__gGyq21U8",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Tony Scott'ın üstlendiği ve gerçek bir olaya (CSX 8888 kazası) dayanan film, Pensilvanya'da kontrolden çıkan devasa bir yük treninin yarattığı tehlikeyi konu alır. İçinde tehlikeli kimyasallar bulunan, insansız ve tam güçle ilerleyen bu tren, yoğun nüfuslu bir bölgeye doğru hızla yol almaktadır. Deneyimli mühendis Frank Barnes (Denzel Washington) ve genç kondüktör Will Colson (Chris Pine), bir felaketi önlemek için hayatlarını riske atarak bu hızla ilerleyen treni durdurmak üzere tehlikeli bir operasyona girişirler. Zamana karşı amansız bir yarışın verildiği film, Frank ve Will'in kendi lokomotifleriyle treni yakalayıp durdurma çabalarını yüksek bir gerilimle anlatır."
   },
   {
     "imdbId": "tt0454848",
@@ -81262,11 +81270,13 @@
     "imdbRating": 7.6,
     "tmdbRating": 7.6,
     "releaseDate": "2006-03-24",
-    "plot": "Composed and meticulous, the soft-spoken and ingenious bank robber, Dalton Russell, has orchestrated the perfect heist--shortly, the Manhattan bank at the corner of Wall Street and Broadway along with dozens of hostages will be his to command. Try as he might, the rough hostage negotiator, Keith Frazier, is always one step behind the criminal mastermind--and what is more disheartening--the institution's silver-haired founder, Arthur Case, recruits the intelligent problem-fixer, Madeline White, to retrieve something of paramount importance. However, the thieves seem to procrastinate intentionally, when they should be rushing into action. Will Arthur and Madeline get what they want this time?",
+    "plot": "Dalton Russell (Clive Owen), the mastermind behind an elaborate bank heist on Wall Street, begins his story by inviting the audience to watch what he claims is the perfect robbery. Disguised as painters, Russell and his crew seize a Manhattan bank and take dozens of hostages, executing their plan with surgical precision. NYPD hostage negotiator Detective Keith Frazier (Denzel Washington) is tasked with the high-stakes negotiations, but he soon realizes that the robbers are always one step ahead and are not following the usual criminal playbook. Complicating matters, the bank's wealthy founder, Arthur Case (Christopher Plummer), hires a high-power Manhattan broker and fixer, Madeleine White (Jodie Foster), to ensure that the contents of his private safe deposit box—which hold dark, incriminating secrets from his past—remain hidden from both the police and the public. As the standoff intensifies, the film unravels a complex web of power, corruption, and buried history that goes far beyond a simple theft.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "4G7n7O5pel0"
+    "trailerYoutubeId": "4G7n7O5pel0",
+    "backdrop": "",
+    "plotTr": "Manhattan'da boyacı kılığındaki bir çete, Wall Street’in en büyük bankalarından birine girerek elliden fazla kişiyi rehin alır. Olay yerine gelen dedektif Keith Frazier (Denzel Washington), bu sıradışı soygunun başındaki zeki isim Dalton Russell (Clive Owen) ile müzakerelere başlar. Russell'ın planı, standart bir banka soygunundan çok daha karmaşık ve akıl oyunlarıyla doludur; soyguncular polisin her hamlesini önceden tahmin ederek onları bir adım geride bırakır. Bu sırada, bankanın kurucusu Arthur Case (Christopher Plummer), kasasındaki çok özel ve karanlık bir sırrı korumak için nüfuzlu bir aracı olan Madeleine White’ı (Jodie Foster) devreye sokar. Hırsız, polis ve güçlü üçüncü taraflar arasındaki bu gerilimli mücadele, sadece paranın değil, geçmişe gömülü sarsıcı gerçeklerin de peşine düşülen bir güç savaşına dönüşür."
   },
   {
     "imdbId": "tt1907668",
@@ -81296,11 +81306,13 @@
     "imdbRating": 7.3,
     "tmdbRating": 7.3,
     "releaseDate": "2012-11-02",
-    "plot": "Whip Whitaker is a commuter airline pilot. While on a flight from Orlando to Atlanta something goes wrong and the plane starts to fly erratically. With little choice Whip crashes the plane and saves almost all on board. When he wakes up in the hospital, his friend from the airline union introduces him to a lawyer who tells him there's a chance he could face criminal charges because his blood test reveals that he was intoxicated with alcohol and cocaine. He denies being impaired, so while an investigation is underway, he is told to keep his act together. However, letting go of his addiction is not as easy as it seems...",
+    "plot": "Directed by Robert Zemeckis, Flight (2012) follows the story of William \"Whip\" Whitaker Sr. (Denzel Washington), a veteran airline pilot who miraculously crash-lands a plane after a catastrophic mechanical failure, saving nearly everyone on board. While Whip is initially hailed as a national hero for his extraordinary flying skills, a federal investigation soon reveals a troubling secret: he was flying while under the influence of alcohol and cocaine. As the legal battle intensifies, Whip must navigate a complex investigation led by federal authorities while simultaneously battling his severe addiction and inner demons. The film is a powerful character study that explores themes of heroism, moral ambiguity, and the difficult journey toward redemption and personal truth.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "7-0bpipmQic"
+    "trailerYoutubeId": "7-0bpipmQic",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Robert Zemeckis'in üstlendiği Uçuş (2012), alkol ve uyuşturucu bağımlılığıyla mücadele eden deneyimli pilot Whip Whitaker'ın (Denzel Washington) dramatik hikayesini anlatır. Whip, teknik bir arıza nedeniyle kontrolden çıkan uçağı, imkansız manevralar yaparak neredeyse tüm yolcuların hayatını kurtaracak şekilde yere indirmeyi başarır ve başlangıçta bir halk kahramanı ilan edilir. Ancak kazadan hemen sonra yapılan rutin kan testinde kanında alkol ve kokain tespit edilmesi, Whip için kahramanlıktan hapse uzanan zorlu bir hukuk mücadelesini ve vicdani bir hesaplaşmayı başlatır. Film, bir yandan havacılık soruşturmasının gerilimini işlerken diğer yandan bir adamın kendi bağımlılıklarıyla ve gerçeklerle yüzleşme sürecini derinlemesine ele alır."
   },
   {
     "imdbId": "tt0139654",
@@ -81331,11 +81343,13 @@
     "imdbRating": 7.8,
     "tmdbRating": 7.8,
     "releaseDate": "2001-10-05",
-    "plot": "In Los Angeles, a city where streets are overrun by drug dealers, those who have sworn to uphold the law are breaking them to clean up the streets. Denzel Washington plays L.A.P.D. detective Alonzo Harris, a veteran narcotics officer whose methods of enforcing the law are questionable, if not corrupt. 'Training Day' follows Harris as he trains rookie Jake Hoyt over a 24-hour period. Ethical dilemmas arise for Hoyt as well as the audience as questions present themselves as to whether or not Harris' methodology for ridding the streets of South Central Los Angeles of drugs is right or wrong.",
+    "plot": "Directed by Antoine Fuqua, Training Day follows Jake Hoyt (Ethan Hawke), a fresh-faced LAPD rookie whose life's dream is to become an elite narcotics agent. To prove his worth, he is assigned to a 24-hour evaluation under the command of Detective Sergeant Alonzo Harris (Denzel Washington), a highly decorated but deeply corrupt veteran. Throughout the day, Alonzo subjects Jake to a harrowing crash course in street justice, forcing him to violate every principle he holds dear by engaging in illegal activities and drug use. As the evaluation intensifies, Jake realizes that Alonzo is not training him as a partner but is instead setting him up as a fall guy for his own criminal schemes. The film culminates in a high-stakes psychological and physical battle between the two officers, exploring the thin line between the law and the streets.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "VQ-SCoyUwfg"
+    "trailerYoutubeId": "VQ-SCoyUwfg",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Antoine Fuqua’nın üstlendiği İlk Gün (Training Day), Los Angeles Polis Teşkilatı’nda (LAPD) idealist bir çaylak olan Jake Hoyt'un (Ethan Hawke), narko-polis birimine katılabilmek için kıdemli dedektif Alonzo Harris (Denzel Washington) ile geçirdiği 24 saatlik deneme süresini konu alır. Jake, hayalini kurduğu bu seçkin ekibe girmek için can atarken, gün boyunca akıl hocasının sokaktaki suçlularla başa çıkmak için kullandığı yozlaşmış ve etik dışı yöntemlere tanık olur. Alonzo, Jake’i uyuşturucu kullanmaya zorlayarak ve suç mahallindeki kanunları çiğneterek onu manipüle etmeye çalışır. Jake, adalet ve ahlak arasındaki ince çizgide büyük bir ikilem yaşarken, aslında Alonzo'nun onu bir suçun kurbanı (günah keçisi) olarak seçtiğini fark eder ve hayatta kalmak için karanlık akıl hocasıyla amansız bir mücadeleye girişir."
   },
   {
     "imdbId": "tt3766354",
@@ -81369,11 +81383,13 @@
     "imdbRating": 6.7,
     "tmdbRating": 6.7,
     "releaseDate": "2018-07-20",
-    "plot": "Director Antoine Fuqua reunites with Denzel Washington in this sequel to 2014's The Equalizer. Washington resumes his role as Robert McCall: a retired CIA Black Ops operative who now works as a Lyft driver and moonlights as a vigilante. When his long-time friend is murdered he embarks on a relentless, globe-trotting quest for vengeance.",
+    "plot": "Directed by Antoine Fuqua, The Equalizer 2 (2018) follows Robert McCall (Denzel Washington), a retired CIA Black-Ops operative who leads a double life as a vigilante protector for the disempowered and dispossessed. While working as an unassuming Lyft driver in Massachusetts, McCall anonymously assists those facing injustice, such as retrieving a kidnapped girl in Istanbul or protecting vulnerable neighbors. The stakes become deeply personal when his close friend and former colleague, Susan Plummer (Melissa Leo), is brutally murdered while investigating a case in Brussels. Driven by a relentless quest for vengeance, McCall embarks on a journey to track down her killers, eventually discovering a conspiracy involving highly trained assassins who share his same lethal skillset. The film culminates in a high-stakes confrontation where McCall must use every ounce of his tactical expertise to secure justice for his fallen friend.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "tIHyWhi61mA"
+    "trailerYoutubeId": "tIHyWhi61mA",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Antoine Fuqua’nın üstlendiği The Equalizer 2 (2018), emekli CIA ajanı Robert McCall’un (Denzel Washington) sömürülen ve ezilenler için tavizsiz bir adalet savunucusu olarak sürdürdüğü gizli hayatını konu alır. Boston'da mütevazı bir Lyft şoförü olarak yaşamını sürdüren McCall, bir yandan yardıma muhtaç insanlara anonim olarak yardım ederken bir yandan da geçmişin izleriyle boğuşmaktadır. Ancak en yakın arkadaşı ve eski meslektaşı Susan Plummer'ın (Melissa Leo) bir suikast sonucu öldürülmesi, McCall için meseleyi tamamen kişisel bir savaşa dönüştürür. Arkadaşının intikamını almak için harekete geçen McCall, kendisi gibi yüksek eğitimli suikastçılardan oluşan tehlikeli bir şebekeyle karşı karşıya gelir ve adaleti sağlamak için bildiği en iyi yöntemlere başvurmak zorunda kalır."
   },
   {
     "imdbId": "tt22855966",
@@ -81407,11 +81423,13 @@
     "imdbRating": 5.4,
     "tmdbRating": 5.4,
     "releaseDate": "2024-04-05",
-    "plot": "",
+    "plot": "Directed by Tolga Örnek and adapted from six stories by the renowned author Aziz Nesin, Miracle Mirrors is a surreal dark comedy exploring the lives of dreamers who struggle to balance their grand ambitions with the reality of daily life. Set in the near future, the story centers on Şahap Cenabettin (Cengiz Bozkurt), a humble inventor who creates a device that can project a person's happiest memories and unrealized dreams back to them. Despite his groundbreaking invention, Şahap finds himself deeply in debt and his work stolen by others who profit millions from it. However, a secret design flaw in the mirrors—combined with the environmental effects of a passing meteorite—causes the lives of complete strangers to intersect in unexpected ways. The film serves as a timeless meditation on modern humanity, depicting the tenacity of those who fall and stumble while chasing miracles yet never give up on their dreams.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "xWWI5NMDnP0"
+    "trailerYoutubeId": "xWWI5NMDnP0",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Tolga Örnek'in üstlendiği ve Aziz Nesin'in altı farklı hikayesinden uyarlanan Mucize Aynalar, hayallerinin peşinden koşarken gerçek hayatı ıskalayan \"küçük insanların\" trajikomik hikayelerini anlatır. Yakın gelecekte geçen filmde, amatör bilim insanı Şahap Cenabettin (Cengiz Bozkurt), kullanıcıların beyin dalgalarını okuyarak en mutlu anlarını ve gerçekleşmemiş en büyük hayallerini yansıtan \"Mucize Aynalar\" adlı bir cihaz icat eder. Ancak icadı çalınan ve büyük borçlar altında ezilen Şahap, sadece kendisinin bildiği bir tasarım hatası ve dünyaya yakın geçen bir göktaşının etkisiyle, hayatları normalde asla kesişmeyecek insanların kaderlerini birbirine bağlar. Film, kaybetmeye mahkum gibi görünseler de umutlarını asla yitirmeyen insanların sürreal ve kara mizah dolu dünyasını, Aziz Nesin'in zamansız gözlemleriyle günümüze taşır."
   },
   {
     "imdbId": "tt11519740",
@@ -81444,13 +81462,13 @@
     "imdbRating": 7.3,
     "tmdbRating": 7.3,
     "releaseDate": "2020-01-07",
-    "plot": "Tarik, who has never worked in his life, falls in love with Irem in a job interview. Having no place to go, Irem comes to the neighborhood where Tarik lives and starts to work at the book cafe in the neighborhood. Irem's dream is to be successful, to establish her own business and to return to her old days one day.",
+    "plot": "Directed by Osman Nail Doğan and Murad Zaloğlu, Tutunamayanlar is a 2020 Turkish TV series that blends elements of dark comedy, parody, and magical realism. The story centers on Tarık (Doğu Demirkol), a man who has never worked a day in his life and has no intention of doing so, until he falls in love with İrem (Ece Çeşmioğlu) during a job interview. Having lost everything due to her father's bankruptcy, İrem moves to Tarık’s neighborhood and begins working at a local book cafe with the dream of one day rebuilding her lost business empire. In a desperate attempt to impress her by becoming a successful entrepreneur, Tarık crosses paths with İlhan (Zafer Algöz), a somewhat narrow-minded and eccentric \"Muse\" who offers him questionable guidance. The series explores the absurd and heartwarming struggles of marginalized individuals attempting to find their place in society, featuring a vibrant cast of neighborhood misfits and whimsical plotlines.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "e6n_xJQh270",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Yönetmenliğini Osman Nail Doğan ve Murad Zaloğlu’nun üstlendiği Tutunamayanlar, absürt komedi ve parodi ögelerini harmanlayan bir TRT 1 yapımıdır. Dizi, hayatı boyunca hiç çalışmamış ve çalışmaya da pek niyeti olmayan Tarık’ın (Doğu Demirkol), babasının iflası nedeniyle her şeyini kaybeden İrem’e (Ece Çeşmioğlu) bir iş görüşmesinde aşık olmasıyla başlar. Gidecek yeri olmayan İrem, Tarık’ın davetiyle onun yaşadığı mahalleye yerleşir ve oradaki kitap kafede çalışmaya başlar. İrem’i etkilemenin yolunun başarılı bir iş kurmaktan geçtiğini fark eden Tarık, bu süreçte kendisine rehberlik eden ancak pek de vizyoner olmayan \"İlham Perisi\" İlhan (Zafer Algöz) ile tanışır. Dizi, mahalle sakinlerinin tuhaf hikayeleri, Şair Lütfü (Barış Yıldız) gibi renkli karakterlerin eşliğinde, hayata tutunmaya çalışan \"başarısız\" insanların trajikomik dünyasını zekice bir mizahla işler."
   },
   {
     "imdbId": "tt30131883",
@@ -81481,11 +81499,13 @@
     "imdbRating": 3.8,
     "tmdbRating": 3.8,
     "releaseDate": "2024-01-12",
-    "plot": "Failing to confess his love and reluctantly accompanying the famous actress Helin as a mandatory friend Cafer who mocked life coaches, energetic individuals, fortune-tellers, suddenly finds himself as the country's most popular li...",
+    "plot": "Directed by Burak Kuka, this 2024 comedy follows the unexpected journey of Cafer (Doğu Demirkol), who inadvertently becomes Turkey's most popular life coach. The story centers on Helin (Yağmur Tanrısevsin), an ambitious woman who constantly seeks guidance from various life coaches and energy healers to advance her career. While accompanying his friend Helin—despite his skepticism towards such practices—Cafer jokingly identifies himself as her \"life coach\" to the paparazzi after a party. Following a series of coincidental successes in Helin's professional life, Cafer suddenly gains national fame, transforming into a prominent figure in the self-help industry. Blending social satire with a romantic subplot, the film explores Cafer's struggle to maintain his fabricated persona while trying to find a way to confess his true feelings for Helin.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "huL7tHA3mPM"
+    "trailerYoutubeId": "huL7tHA3mPM",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Burak Kuka'nın üstlendiği bu komedi filmi, kendisini bir anda Türkiye'nin en popüler yaşam koçu olarak bulan Cafer'in (Doğu Demirkol) trajikomik hikayesini anlatır. Kariyerinde büyük hedefleri olan Helin (Yağmur Tanrısevsin), enerji ve frekansını düzenlemesi için sürekli yeni yaşam koçlarına giderken, bu durumu saçma bulan yakın arkadaşı Cafer'i de yanına alır. Bir parti çıkışı magazincilerin \"sevgili misiniz?\" sorusuna ironik bir şekilde \"Yaşam Koçuyum\" yanıtını veren Cafer, Helin'in kariyerindeki ani yükselişle birlikte bir gecede ülkenin en çok aranan ismi haline gelir. Film; falcılar, enerji uzmanları ve kişisel gelişim dünyasını mizahi bir dille eleştirirken, Cafer'in bu yalan rüzgarı içinde hayatta kalma ve Helin'e olan gizli aşkını itiraf etme çabasını işler."
   },
   {
     "imdbId": "tt6628102",
@@ -81518,11 +81538,13 @@
     "imdbRating": 8,
     "tmdbRating": 8,
     "releaseDate": "2019-01-30",
-    "plot": "Sinan is passionate about literature and has always wanted to be a writer. Returning to the village where he was born, he pours his heart and soul into scraping together the money he needs to be published, but his father's debts catch up with him.",
+    "plot": "Directed by Nuri Bilge Ceylan, The Wild Pear Tree follows Sinan (Doğu Demirkol), an aspiring writer who returns to his rural hometown after graduating from university to find funding for his debut book. His literary ambitions are soon overshadowed by his father Idris's (Murat Cemcir) severe gambling addiction, which has depleted the family's savings and reputation. Through a series of long, testy conversations with locals, relatives, and established writers, Sinan grapples with existential despair and the crushing weight of small-town life. The narrative serves as a poignant exploration of the chasm between youthful idealism and the humbler reality of one's roots, eventually culminating in Sinan's realization of the profound similarities he shares with his father.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "pqj29mPf4fI"
+    "trailerYoutubeId": "pqj29mPf4fI",
+    "backdrop": "",
+    "plotTr": "Nuri Bilge Ceylan'ın yönettiği Ahlat Ağacı, üniversiteden yeni mezun olan ve yazar olma hayalleri kuran Sinan'ın (Doğu Demirkol), doğduğu köy olan Çanakkale'nin Çan ilçesine dönmesiyle başlayan süreci anlatır. İlk kitabını bastırmak için gereken finansmanı bulmaya çalışan Sinan, bir yandan taşranın boğucu atmosferiyle baş etmeye çalışırken diğer yandan babası İdris'in (Murat Cemcir) kumar bağımlılığı yüzünden biriken borçlarıyla yüzleşir. Film, Sinan'ın geçmişte tanıdığı insanlarla, dini otoritelerle ve ailesiyle girdiği uzun diyaloglar üzerinden; hayal kırıklıklarını, kuşak çatışmalarını ve bir oğlun kaçınılmaz bir şekilde babasının kaderine benzemesini derinlikli bir şekilde işler."
   },
   {
     "imdbId": "tt14533970",
@@ -81552,13 +81574,13 @@
     "imdbRating": 8.5,
     "tmdbRating": 8.5,
     "releaseDate": "2023-06-16",
-    "plot": "Following the suspicious death of the Bongomian king, his disregarded prince assumes the throne, initiating an intricate tale.",
+    "plot": "Written by and starring Giray Altınok, The Prince (Prens) is an absurdist comedy set in the fictional medieval kingdom of Bongomia. The story begins following the sudden and suspicious death of King Thun, which leaves the throne to his disregarded and nameless middle son, known simply as \"the Prince\". Having grown up isolated and ignored by his family, the new, foul-mouthed king finds himself at the center of intricate palace intrigues involving his stepmother Sion, his ambitious brother Thenio, and his treacherous uncle Kalesh. While lacking any formal leadership training, the Prince—who adopts the persona of the \"Wild Butterfly\"—must use his manipulative wit and unexpected diplomatic skills to navigate political turmoil, including accidentally starting a war with the Hungarians. The series blends social satire with humor as it explores the chaotic survival of a nation that history seemingly forgot.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "RwP-qq8jqHw",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Senaryosunu Giray Altınok ve Kerem Özdoğan’ın kaleme aldığı, başrolünde ise yine Giray Altınok’un yer aldığı Prens, kurgusal bir Orta Çağ krallığı olan Bongomya'da geçen absürt bir komedi hikayesidir. Kimsenin umursamadığı bir tarihte ve coğrafyada yer alan Bongomya’nın Kralı Thun, şüpheli bir şekilde hayatını kaybedince taht, ailenin ciddiye almadığı ve bir isim bile verme zahmetine girmediği ortanca oğlu \"Prens\"e kalır. Hiçbir yönetim tecrübesi olmayan, aksi ve ağzı bozuk bu yeni kral; bir yandan üvey annesi Sion, hırslı abisi Thenio ve sinsi amcası Kalesh ile saray entrikaları içinde mücadele ederken, diğer yandan sakarlıklarıyla yanlışlıkla Macarlar ile bir savaşa sürüklenir. Kendine \"Yaban Kelebeği\" (Wild Butterfly) lakabını takan Prens, manipülatif zekası ve diplomatik kurnazlıklarıyla Bongomya’yı ayakta tutmaya çalışırken izleyiciyi kahkaha dolu bir tarihsel hiciv yolculuğuna çıkarır."
   },
   {
     "imdbId": "tt20603316",
@@ -81625,13 +81647,13 @@
     "imdbRating": 7.2,
     "tmdbRating": 7.2,
     "releaseDate": "2021-03-31",
-    "plot": "Dogu is a young man who is not successful in anything. The dream of Dogu, which is not supported by anyone, is to be a comedian. He strives to make his dream come true.",
+    "plot": "Created by and starring stand-up comedian Doğu Demirkol, this 2021 Turkish absurdist comedy-drama is loosely inspired by the creator's own life journey. The series follows Doğu—a young man who has struggled to find success in traditional paths, including failing to graduate from his computer engineering department for seven years. Despite facing intense pressure from his family to secure a \"stable\" job and start a family, Doğu remains stubbornly committed to his ultimate dream of becoming a professional comedian. Caught between a sister who constantly overshadows his achievements and parents who doubt his talent, he navigates a world of societal expectations and personal failures. With its sharp observational humor and self-aware narrative, the show portrays the relentless and often hilarious pursuit of ambition against all odds.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "H__JBBakBCU",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Ünlü stand-up sanatçısı Doğu Demirkol'un kendi hayatından esinlenerek hazırladığı bu absürt komedi-drama dizisi, hayatta hemen hemen hiçbir şeyi başaramamış bir gencin trajikomik hikayesini anlatır. 7 yıldır bitiremediği bilgisayar mühendisliği bölümüyle boğuşan Doğu, ailesinin ve çevresinin \"sigortalı bir işe gir, evlen\" baskılarına rağmen tek hayali olan komedyenliğin peşinden gider. Başarılarıyla kendisini ezen kız kardeşi, komedyen olabileceğine ihtimal vermeyen ailesi ve karamsar arkadaş çevresi arasında sıkışıp kalan Doğu, zekice gözlemleri ve kendine has mizahıyla hayallerini gerçekleştirmek için dur durak bilmeyen bir mücadele verir. Dizi, modern insanın başarı sancılarını ve bir hayalin peşinden gitmenin absürt zorluklarını samimi bir dille işler."
   },
   {
     "imdbId": "tt29567915",
@@ -81665,11 +81687,13 @@
     "imdbRating": 7.3,
     "tmdbRating": 7.3,
     "releaseDate": "2025-11-07",
-    "plot": "Nuremberg chronicles the eponymous trials held by the Allied Forces against the defeated Nazi regime. The film will center on American psychiatrist Douglas Kelley, who is tasked with determining whether Nazi prisoners are fit to stand trial for their war crimes and finds himself in a complex battle of wits with Hermann Göring, Hitler's right-hand man.",
+    "plot": "Directed by James Vanderbilt and based on the book \"The Nazi and the Psychiatrist\" by Jack El-Hai, this 2025 historical drama explores the intense psychological confrontations during the post-WWII Nuremberg Trials. The story follows Douglas Kelley (Rami Malek), a young American psychiatrist tasked with evaluating the sanity of high-ranking Nazi prisoners to ensure they are fit for trial. Kelley becomes locked in a dramatic psychological duel with Hermann Göring (Russell Crowe), Hitler's manipulative second-in-command, as he attempts to unravel the mindset behind the atrocities of the Holocaust. As the trial proceeds under Chief Prosecutor Robert H. Jackson (Michael Shannon), the film delves deep into themes of justice, morality, and the complex anatomy of evil.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "YWlCCVnZ4bo"
+    "trailerYoutubeId": "YWlCCVnZ4bo",
+    "backdrop": "",
+    "plotTr": "Jack El-Hai'nin \"Nazi ve Psikiyatrist\" adlı kitabından uyarlanan ve yönetmenliğini James Vanderbilt'in üstlendiği bu tarihi dram, İkinci Dünya Savaşı sonrası Nazi savaş suçlularının yargılandığı meşhur Nürnberg Mahkemeleri'nin perde arkasını konu alır. Genç Amerikalı psikiyatrist Douglas Kelley (Rami Malek), yargılanmayı bekleyen üst düzey Nazi mahkumlarının zihinsel durumlarını değerlendirmekle görevlendirilir. Kelley, özellikle Hitler'in sağ kolu Hermann Göring (Russell Crowe) ile girdiği yoğun psikolojik mücadelede, kötülüğün doğasını anlamaya çalışırken adaletin sınırları ve insan ruhunun karanlık yüzüyle yüzleşmek zorunda kalır. Film, tarihin en önemli davalarından birini, intikam yerine hukukun üstünlüğünü odağa alarak nesnel bir bakış açısıyla beyazperdeye taşır."
   },
   {
     "imdbId": "tt1078940",
@@ -81702,11 +81726,13 @@
     "imdbRating": 5.6,
     "tmdbRating": 5.6,
     "releaseDate": "2009-10-09",
-    "plot": "Dave and Ronnie, Jason and Cynthia, and Joey and Lucy are close. The group used to include Shane and Jennifer, but they divorced and she's gone. Jason and Cynthia announce that their marriage is in trouble, and they beg their friends (and Shane's young girlfriend) to join them on a couples' retreat, at the package rate, on a tropical island. The others reluctantly agree, planning to play while Jason and Cynthia work on their marriage with an island psychologist. To everyone's surprise, the package is inflexible: each couple must participate in the couples' exercises. Soon fault lines appear in all four relationships. What's in store for each couple?",
+    "plot": "Directed by Peter Billingsley and written by Jon Favreau and Vince Vaughn, Couples Retreat follows four Midwest couples who embark on a journey to a luxury tropical island resort called Eden. While one couple, Cynthia and Jason, is desperately there to work on their failing marriage, the other three couples mistakenly believe they can simply enjoy the sun, sea, and spa services without participating in the resort's rigorous program. They soon discover that participation in the \"mandatory therapy\" sessions conducted by the resort’s eccentric owner, Marcel (Jean Reno), is strictly required to remain on the island. What starts as a cut-rate vacation quickly turns into a series of comedic trials, including feeding lemon sharks and unconventional yoga, forcing each couple to examine their own relationship issues and inner tensions. As the island paradise tests their patience and loyalty, the friends must decide if their relationships are worth fighting for.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "X4j_NTFos9c"
+    "trailerYoutubeId": "X4j_NTFos9c",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Peter Billingsley'in üstlendiği bu komedi filmi, evliliklerini kurtarmaya çalışan bir çiftin iknasıyla, tropik bir adadaki lüks Eden Resort'a grup indirimiyle giden dört arkadaş çiftin hikayesini anlatır. Başta her şeyin sadece güneşin ve eğlencenin tadını çıkarmak olduğunu düşünen diğer üç çift, adaya vardıklarında acı bir sürprizle karşılaşırlar: Tatil paketinin bir parçası olarak sunulan sıra dışı ve zorunlu ilişki terapisine katılmak mecburidir. Başlangıçta bu seanslara sadece tatilin diğer imkanlarından yararlanmak için katlanan çiftler, zamanla kendi ilişkilerindeki derin çatlaklarla ve gizli kalmış sorunlarla yüzleşmek zorunda kalırlar. Fransız Polinezyası'ndaki Bora Bora adasında çekilen film; köpekbalıklarıyla yüzme, tuhaf yoga seansları ve zorlayıcı grup egzersizleri eşliğinde, arkadaşlıkların ve evliliklerin dayanıklılığının test edildiği eğlenceli bir macera sunar."
   },
   {
     "imdbId": "tt0492389",
@@ -81739,11 +81765,13 @@
     "imdbRating": 3.9,
     "tmdbRating": 3.9,
     "releaseDate": "2010-04-30",
-    "plot": "Hoping to make enough money through an overseas employer to live comfortably, Real Estate Developer Dan Sanders manages to convince his son, Tyler, and wife, Tammy, to re-locate in a remote corner of Oregon. Tyler does seem content after he meets with lovely Amber, but Tammy is concerned about her husband when he near-hysterically claims that local creatures, including beavers, ravens, bears, fox, etc. have joined forces to sabotage his project.",
+    "plot": "Directed by Roger Kumble, this 2010 live-action family comedy follows the story of Dan Sanders (Brendan Fraser), an ambitious real estate developer tasked with turning a pristine Oregon forest into a major residential subdivision. To advance his career, Dan relocates his urban family from Chicago to the wilderness, thinking his biggest challenge will be their adjustment to country life. However, when the local forest creatures discover that his latest project threatens their habitat, they launch an all-out battle against him. Led by an incredibly clever raccoon, the animals utilize specialized tactics and \"Rube Goldberg\" gadgetry to sabotage the construction and torment Dan in increasingly slapstick ways. As his wife (Brooke Shields) and son start to doubt his sanity because no one else witnesses these attacks, Dan must face the environmental consequences of his work and eventually find a way to protect the very nature he was sent to destroy.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "FQAx4_So3UE"
+    "trailerYoutubeId": "FQAx4_So3UE",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Roger Kumble'ın üstlendiği 2010 yapımı bu aile komedisi, hırslı bir emlak geliştiricisi olan Dan Sanders'ın (Brendan Fraser), yeni bir konut projesi için Oregon'daki el değmemiş bir ormanlık alanı yerleşim yerine dönüştürmeye çalışmasını konu alır. Dan, patronunun talebiyle ailesini Chicago'dan bu uzak bölgeye taşır; ancak doğayı korumaya kararlı olan yerel orman hayvanları, yaşam alanlarının yok edilmesine karşı zekice bir intikam planı başlatır. Son derece akıllı bir rakunun liderliğindeki hayvanlar; kargalar, ayılar ve kunduzlarla iş birliği yaparak Dan'i çeşitli fiziksel şakalar ve sabote eylemleriyle bezdirirler. Dan'in karısı (Brooke Shields) ve oğlu, kimsenin göremediği bu saldırılar yüzünden onun akıl sağlığını yitirdiğini düşünürken; Dan, doğanın intikamıyla başa çıkmak ve kendi şirketiyle doğa arasında zorlu bir seçim yapmak zorunda kalır."
   },
   {
     "imdbId": "tt2869728",
@@ -81778,11 +81806,13 @@
     "imdbRating": 5.9,
     "tmdbRating": 5.9,
     "releaseDate": "2016-01-15",
-    "plot": "The RIDE ALONG 2 sequel picks up about a year after our heroes' last adventure. Plans for a quick trip to Miami go bad. With the wedding upcoming, James reluctantly takes Ben with him to Miami to follow up on a lead connected to a drug ring case he's been trying to crack. In Miami, they meet Maya, a no-BS homicide detective who lets them know Miami is her turf. They also encounter AJ, a shady cocky computer hacker who reveals evidence that implicates a well-respected local businessman, the wealthy Antonio Pope. Pope harbors a vicious streak and rules South Florida's drug trade. If Ben and James can convince the authorities that Pope is a brutal crime boss they'll stop his spree. If they fail, well there may not be a wedding after all.",
+    "plot": "Directed by Tim Story, Ride Along 2 is a 2016 action comedy that reunites the mismatched brothers-in-law for a new mission. Set about a year after their first adventure, rookie cop Ben Barber (Kevin Hart) is preparing for his upcoming wedding to Angela when he joins veteran detective James Payton (Ice Cube) on a lead in Miami. The duo aims to take down a powerful drug lord, Antonio Pope (Benjamin Bratt), who is supplying dealers in Atlanta. In Miami, they team up with a tough local homicide detective, Maya Cruz (Olivia Munn), and a cocky computer hacker named AJ (Ken Jeong) who holds evidence against Pope. As the investigation intensifies, Ben’s over-enthusiasm often complicates the operation, forcing James to balance his desire to crack the case with the need to keep his soon-to-be brother-in-law safe. The film blends high-speed action with slapstick comedy as the team navigates the vibrant streets of Miami to bring Pope to justice before Ben’s big day.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Eh0w35EiG_I"
+    "trailerYoutubeId": "Eh0w35EiG_I",
+    "backdrop": "",
+    "plotTr": "2016 yapımı Ride Along 2, ilk maceradan yaklaşık bir yıl sonrasını konu alan bir aksiyon-komedi devam filmidir. Hikaye, düğün günü hızla yaklaşan çaylak polis Ben Barber'ın (Kevin Hart), müstakbel kayınbiraderi sert dedektif James Payton (Ice Cube) ile birlikte büyük bir davayı çözmek için Miami'ye gitmesini anlatır. Atlanta'daki uyuşturucu satıcılarını besleyen büyük bir ağın izini süren ikili, Miami'de sert bir dedektif olan Maya Cruz (Olivia Munn) ve kilit bilgilere sahip bilgisayar korsanı AJ (Ken Jeong) ile iş birliği yapar. Ekip, saygın bir iş adamı gibi görünen ancak aslında Güney Florida'nın uyuşturucu ticaretini acımasızca yöneten Antonio Pope'u (Benjamin Bratt) devirmek için tehlikeli ve komik olaylarla dolu bir mücadeleye girişir. Ben, bir yandan James'e iyi bir polis ve aile üyesi olduğunu kanıtlamaya çalışırken, diğer yandan kendi düğününü tehlikeye atmadan bu operasyonu tamamlamak zorundadır."
   },
   {
     "imdbId": "tt7638348",
@@ -81821,11 +81851,13 @@
     "imdbRating": 6.8,
     "tmdbRating": 6.8,
     "releaseDate": "2021-03-05",
-    "plot": "Trapped in a time loop that constantly repeats the day of his murder, a former special forces agent must unlock the mystery behind his untimely demise.",
+    "plot": "Directed by Joe Carnahan, Boss Level follows the high-octane journey of Roy Pulver (Frank Grillo), a retired special forces officer who is trapped in a never-ending time loop that repeats the day of his murder. Every morning, Roy wakes up to assassins trying to kill him, and despite his best efforts, every day ends with his death at exactly 12:47 PM. To break the cycle and unlock the mystery behind his demise, Roy must uncover clues about a secret government project involving his ex-wife Jemma Wells (Naomi Watts) and track down the powerful Colonel Clive Ventor (Mel Gibson), who leads the program. Blending elements of arcade games, martial arts, and non-stop action, Roy evolves his tactics in each repeated scenario to save his family and finally live to see tomorrow.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "2iwJAq8brq0"
+    "trailerYoutubeId": "2iwJAq8brq0",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Joe Carnahan'ın üstlendiği Boss Level (Patron Seviyesi), emekli bir özel kuvvetler subayı olan Roy Pulver'ın (Frank Grillo), öldüğü günün sürekli tekrarlandığı sonsuz bir zaman döngüsüne hapsolmasını konu alır. Roy, her sabah yatağında bir suikastçının saldırısıyla uyanmakta ve günü her seferinde saat 12:47'de ölümüyle sonuçlanmaktadır. Bu ölümcül döngüden kurtulmak için Roy, eski eşi Jemma Wells'in (Naomi Watts) üzerinde çalıştığı gizli bir hükümet projesinin arkasındaki sırları çözmek ve bu programın başındaki güçlü Albay Clive Ventor'ı (Mel Gibson) durdurmak zorundadır. Atari oyunlarına ve dövüş sanatlarına pek çok gönderme barındıran film, Roy'un her seferinde biraz daha ileri giderek hem ailesini kurtarmaya hem de yarına ulaşmaya çalışırken verdiği dur durak bilmez aksiyon dolu mücadeleyi anlatır."
   },
   {
     "imdbId": "tt0184543",
@@ -81858,11 +81890,13 @@
     "imdbRating": 7.4,
     "tmdbRating": 7.4,
     "releaseDate": "1964-04-12",
-    "plot": "Along with rapid industrialization and growth of capitalism in Turkey during 1950s and 1960s, another fact emerged: that was migration from small towns to big cities, particularly to Istanbul. In this story, the family is composed of six people; parents, three sons and a daughter. After arriving at Istanbul with a dream of 'conquering' the city and possibility of reaching a high standard of living, they experience a tragical collapse which end with death of the daughter.",
+    "plot": "Directed by Halit Refiğ and based on Orhan Kemal's 1962 novel, this seminal Turkish drama explores the harsh realities of rural-to-urban migration during the 1960s. The story follows the Bakırcıoğlu family as they arrive at Istanbul's Haydarpaşa terminal from Maraş with high hopes of \"conquering\" the metropolis and achieving a higher standard of living. While the patriarch, Tahir Agha, intends to establish a successful repair shop with his sons, the family soon faces a series of unfortunate events, including being defrauded and struggling against the city's corrupt social structure. Marking the acting debut of legendary star Cüneyt Arkın, Birds of Exile portrays a family's tragic collapse and serves as a powerful critique of the rapid industrialization and moral decay of its era.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "BSOnv6NLmeg"
+    "trailerYoutubeId": "BSOnv6NLmeg",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Halit Refiğ'in üstlendiği ve Orhan Kemal'in aynı adlı romanından uyarlanan bu kült yapım, 1960'lı yıllarda Türkiye'deki iç göç olgusunu çarpıcı bir dille ele alır. Hikaye, daha iyi bir yaşam kurma hayaliyle Kahramanmaraş'tan İstanbul'a göç eden Bakırcıoğlu ailesinin Haydarpaşa Garı'na ayak basmasıyla başlar. Aile reisi Tahir Ağa, oğullarıyla birlikte bir tamirci dükkanı açarak şehri adeta \"fethetmeyi\" planlar; ancak büyükşehrin acımasız ekonomik şartları, yozlaşmış toplumsal yapısı ve karşılaştıkları dolandırıcılıklar aileyi trajik bir çöküşe sürükler. Yeşilçam'ın efsane jönü Cüneyt Arkın'ın ilk sinema deneyimi olan bu film, bir ailenin dağılışını anlatırken aynı zamanda dönemin toplumsal bozulmasını ve bireylerin hayalleriyle gerçekler arasındaki sert çatışmayı gözler önüne serer."
   },
   {
     "imdbId": "tt0404441",
@@ -81893,11 +81927,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1964",
-    "plot": "Unlike her mother Hulya freewhells with her rich and spoiled friends. But Sofor Nebahat is poor and proud.",
+    "plot": "Directed by Süreyya Duru, this 1964 drama centers on Nebahat (Sezer Sezin), a divorced woman who earns a living as a female cab driver to support her daughter, Hülya (Filiz Akın). While Nebahat is portrayed as poor and proud, her daughter Hülya feels ashamed of her mother's occupation and seeks to escape their social standing by socializing with rich, spoiled friends and dreaming of a wealthy marriage. A local young man named Murat (Cüneyt Arkın) is deeply in love with Hülya, but she rejects his affection because his father is a mere turner, preferring the allure of high society. As Nebahat attempts to open a restaurant with financial backing from a businessman named Cengiz, their lives become complicated by personal entanglements and Hülya's reckless pursuit of wealth, eventually leading to unforeseen consequences for the family.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "g2bxV1buqVI"
+    "trailerYoutubeId": "g2bxV1buqVI",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Süreyya Duru'nun üstlendiği bu dram filminde, yıllar önce eşinden ayrılmış olan Nebahat (Sezer Sezin), kızı Hülya (Filiz Akın) ile birlikte yaşamaktadır ve geçimini şoförlük yaparak sağlamaya çalışmaktadır. Nebahat fakir ama gururlu bir kadındır; ancak kızı Hülya, annesinin şoförlük yapmasından utanmakta ve zengin arkadaşlarıyla vakit geçirerek yoksulluktan kurtulmanın, zengin bir koca bulmanın hayalini kurmaktadır. Mahallelerinde yaşayan Murat (Cüneyt Arkın) Hülya'ya aşıktır, fakat Hülya, Murat'ın babası tornacı olduğu için onun aşkına karşılık vermez. Nebahat, bir lokanta açma çabasına girdiğinde mekan sahibi Cengiz'den maddi destek alır ve bu durum aralarında bir yakınlaşma başlatır; ancak zamanla yaşanan olaylar ve Hülya'nın zenginlik hırsıyla attığı yanlış adımlar, anne ve kızın hayatını kökten değiştirecek üzücü gelişmelere yol açar."
   },
   {
     "imdbId": "tt0289997",
@@ -81929,13 +81965,13 @@
     "imdbRating": 5.9,
     "tmdbRating": 5.9,
     "releaseDate": "1967-08-01",
-    "plot": "Ali Bey turns back from Mora campaign and then he sees his wife and his men is killed. He takes the road to revenge from Vlad the Impaler.",
+    "plot": "Directed by Süreyya Duru and Remzi Jöntürk, this 1967 historical adventure follows the legendary Ottoman raider Malkoçoğlu Ali Bey (Cüneyt Arkın) on a mission of vengeance and a search for his lost son. While Ali Bey was away on the Mora campaign, his nemesis Vlad the Impaler (known as the Red Scorpion) attacked his village, burned his home, murdered his wife, and kidnapped his only son, Polat. Upon returning and discovering the massacre, a grief-stricken Malkoçoğlu sets out with his loyal companion Ejder (Yılmaz Köksal) to exact his revenge. To track down his enemy, he rescues a woman pursued by the Red Scorpion from a slave market and wages a relentless war against kings and their forces to reclaim his son, who is unknowingly being manipulated by the enemy.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "uWTcma5gE0M",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Yönetmenliğini Süreyya Duru ve Remzi Jöntürk'ün üstlendiği 1967 yapımı bu tarihi macera filmi, efsanevi akıncı Malkoçoğlu Ali Bey'in (Cüneyt Arkın) intikam ve kayıp oğlunu bulma mücadelesini anlatır. Malkoçoğlu Mora seferindeyken, ezeli düşmanı Kazıklı Voyvoda (Kızıl Akrep), Ali Bey'in köyüne saldırarak evini yakmış, karısını ve adamlarını öldürmüş, tek oğlu Polat'ı ise kaçırmıştır. Sefer dönüşü bu acı tabloyla karşılaşan Malkoçoğlu, sadık dostu Ejder (Yılmaz Köksal) ile birlikte intikam yemini ederek yola çıkar. Yolculuğu sırasında, hem Kızıl Akrep'e ulaşmak için stratejik bir koz olan bir kadını esir pazarından kaçırır hem de babasından habersiz bir şekilde düşmanı tarafından uyuşturularak yetiştirilen oğlu Polat'ı kurtarmak için krallara ve ordulara karşı amansız bir savaşa girişir."
   },
   {
     "imdbId": "tt0345617",
@@ -81969,13 +82005,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "1968-08-01",
-    "plot": "Malkocoglu acts to stop the cruelty and torture of the Inquisition and Black Pirate.",
+    "plot": "Directed by Süreyya Duru and starring the legendary Cüneyt Arkın as the iconic Ottoman raider Malkoçoğlu, this 1968 historical adventure depicts the empire's struggle to maintain dominance over the Mediterranean seas. A ruthless pirate leader known as the \"Black Pirate\" (Kara Korsan) spreads terror by attacking Turkish villages, massacring civilians, and looting Ottoman merchant ships. Assigned by the Sultan to restore security and end the pirates' tyranny, Malkoçoğlu Ali Bey embarks on a perilous mission with his loyal men. The film portrays Malkoçoğlu’s daring infiltration into the pirate stronghold in disguise, his efforts to rescue the captive Princess Elena, and the intense sword-fighting sequences as he dismantles the pirate gang collaborating with Byzantine forces.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "Z4zzkygFTgc",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Süreyya Duru'nun yönettiği ve Cüneyt Arkın'ın efsanevi akıncı Malkoçoğlu'nu canlandırdığı bu tarihi aksiyon klasiği, Osmanlı İmparatorluğu'nun denizlerdeki hakimiyetini koruma mücadelesini konu alır. Türk köylerine saldıran, halkı katleden ve Osmanlı gemilerini yağmalayan acımasız korsanların lideri Kara Korsan, bölgede büyük bir korku salmaktadır. Akdeniz'in güvenliğini sağlamak ve korsanların zulmüne son vermekle görevlendirilen Malkoçoğlu Ali Bey, sadık adamlarıyla birlikte tehlikeli bir intikam yolculuğuna çıkar. Film, Malkoçoğlu'nun kılık değiştirerek korsanların arasına sızmasını, esir düşen Prenses Elena'yı kurtarma çabalarını ve Bizanslılarla iş birliği yapan korsan çetesini çökertmek için verdiği amansız kılıç dövüşlerini epik bir dille anlatır."
   },
   {
     "imdbId": "tt0392394",
@@ -82010,11 +82046,13 @@
     "imdbRating": 5.8,
     "tmdbRating": 5.8,
     "releaseDate": "1969",
-    "plot": "Byzantine Prince kidnaps a governor and plans to marry Serbian Princess to create a rift within Ottoman Empire. Malkocoglu is sent to save the governor and prevent the marriage.",
+    "plot": "Directed by Süreyya Duru and Remzi Jöntürk, this 1969 historical adventure features the legendary Ottoman raider Malkoçoğlu Ali Bey (Cüneyt Arkın) in a mission to thwart a dangerous alliance against the empire. The ruthless Byzantine Prince Nikola plans to marry the Serbian Princess Beatris, the daughter of King Philip, to unite Balkan lordships and launch a major war against the Ottomans. As part of his strategy, Nikola kidnaps several Ottoman governors and the master artillery commander Urban. Malkoçoğlu is dispatched by the Sultan to rescue the captives and prevent this political marriage that would destabilize the region. In a daring move, Malkoçoğlu disguises himself as Prince Nikola to infiltrate King Philip's palace, leading to a series of thrilling battles and maneuvers to protect the empire and save the master gunsmith.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "bk_K2RSSkJQ"
+    "trailerYoutubeId": "bk_K2RSSkJQ",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Süreyya Duru ve Remzi Jöntürk'ün üstlendiği bu tarihi aksiyon klasiği, Osmanlı İmparatorluğu'na karşı kurulan kirli bir ittifakı ve bu ittifakı bozmakla görevlendirilen efsanevi akıncı Malkoçoğlu Ali Bey'in (Cüneyt Arkın) mücadelesini konu alır. Bizans şövalyesi Prens Nikola, Osmanlı uç beylerini ve meşhur Topçu Ustası Urban'ı esir alarak stratejik bir güç elde eder. Nikola'nın asıl amacı, Sırp Kralı Philip'in kızı Prenses Beatris ile evlenerek Balkan beylikleriyle olan birliğini güçlendirmek ve Osmanlı'ya karşı büyük bir savaş başlatmaktır. Bu tehlikeli planı öğrenen Osmanlı Sultanı, Topçu Ustası'nı kurtarması ve Sırp-Bizans ittifakını engellemesi için Malkoçoğlu'nu görevlendirir. Malkoçoğlu, zekice bir hamleyle Nikola'nın yerine geçerek Kral Philip'in sarayına sızar ve hem Urban'ı kurtarmak hem de devleti korumak için aksiyon dolu, tehlikeli bir maceraya atılır."
   },
   {
     "imdbId": "tt0182881",
@@ -82028,7 +82066,7 @@
       "Sinema Klasikleri"
     ],
     "poster": "https://m.media-amazon.com/images/M/MV5BYzM0NTUzZjYtNmUxYS00MjdhLWE3ZmQtZTczNmRlN2I0OTBlXkEyXkFqcGc@._V1_.jpg",
-    "overview": "Bu yapım \"Remzi A. Jöntürk,Hasan Sasanpour\" tarafından yönetilmiş 1970 yapımı bir History, Action, Adventure eseridir. IMDb puanı 5.9 olarak kaydedilmiştir.",
+    "overview": "Bu yapım \"Remzi A. Jöntürk, Hasan Sasanpour\" tarafından yönetilmiş 1970 yapımı bir History, Action, Adventure eseridir. IMDb puanı 5.9 olarak kaydedilmiştir.",
     "genres": [
       "History",
       "Action",
@@ -82049,11 +82087,13 @@
     "imdbRating": 5.9,
     "tmdbRating": 5.9,
     "releaseDate": "1970",
-    "plot": "While Beyazit was sitting on the throne, his brother Cem Sultan, who opposed him, was defeated and had to flee. Taking orders from Beyazit, Malkoçoglu goes after Cem.",
+    "plot": "Directed by Remzi Jöntürk and starring the legendary Cüneyt Arkın, this 1970 historical action feature follows the power struggles within the Ottoman Empire and the intersecting fates of a long-lost father and son. Polat (Cüneyt Arkın), a courageous young peasant, flees his village and joins the raiders (akıncı) after killing a wealthy landlord who tried to take away his lover. He is accepted into the unit led by the legendary Malkoçoğlu Ali Bey (also played by Arkın), who has recently escaped years of torture in a dungeon and is unknown to his son. Polat is assigned to protect Prince Cem Sultan (Cihangir Gaffari), the son of Fatih Sultan Mehmet, who is fleeing from his brother Bayezid after a failed attempt at the throne. The film portrays their perilous journey to prevent the Prince from falling into the hands of ruthless enemies like Hamolka and the Venetians, blending thrilling combat with themes of class struggle and historical loyalty.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "NWrvUXpIZGI"
+    "trailerYoutubeId": "NWrvUXpIZGI",
+    "backdrop": "",
+    "plotTr": "Remzi Jöntürk'ün yönettiği ve başrolünde Cüneyt Arkın'ın yer aldığı bu tarihi aksiyon klasiği, Osmanlı İmparatorluğu'ndaki taht kavgalarını ve bir babayla oğulun bilmeden kesişen yollarını konu alır. Köylü bir genç olan Polat (Cüneyt Arkın), sevdiği kızı elinden almaya çalışan ve annesine hakaret eden Sarı Cafer'i öldürdükten sonra kaçarak akıncılara katılır. Akıncı birliğinin başında, yıllarca işkence gördüğü zindanlardan yeni kurtulmuş ve ailesi tarafından ölü bilinen babası Malkoçoğlu Ali Bey (Cüneyt Arkın) bulunmaktadır. Babası olduğunu bilmediği Malkoçoğlu’nun kefil olmasıyla akıncı olan Polat, Fatih Sultan Mehmet’in oğlu Şehzade Cem Sultan’ı (Cihangir Gaffari) korumakla görevlendirilir. Film, bir yandan Cem Sultan’ı ele geçirmeye çalışan Hamolka ve Şeytan Omerro gibi düşmanlara karşı verilen mücadeleyi anlatırken, diğer yandan dönemin sınıf farklılıklarına ve onur kavramına vurgu yapan epik bir hikaye sunar."
   },
   {
     "imdbId": "tt0282140",
@@ -82086,11 +82126,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "1973-11",
-    "plot": "After his family is killed in front of his eyes, little Seyit Battal grows up to be the nightmare of Byzantine's Black Knighthood.",
+    "plot": "Directed by Natuk Baytan and serving as the third installment in the popular series, the film follows the epic journey of the legendary hero Seyyit Battal as he faces off against the Byzantine Empire. When his family is brutally killed before his eyes by the Black Knighthood, young Seyyit grows up with a singular mission: to become the ultimate nightmare for his enemies and exact his revenge. As the Byzantines launch a fresh campaign to drive the Turks out of Anatolia, Seyyit Battal embarks on a dangerous quest to rescue his father, Battal Gazi, from their clutches. Blending historical warfare with high-stakes adventure, the story showcases a hero born from tragedy who wields his sword for justice and the survival of his people.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "hnjo7XWLX7M"
+    "trailerYoutubeId": "hnjo7XWLX7M",
+    "backdrop": "",
+    "plotTr": "Natuk Baytan tarafından yönetilen ve Battal Gazi serisinin üçüncü filmi olan bu yapım, efsanevi kahraman Seyyit Battal'ın Bizanslılara karşı verdiği destansı mücadeleyi konu alır. Bizanslılar, Türkleri Anadolu'dan atmak için İslamiyet'e karşı savaş açan acımasız Kara Şövalye ve adamlarını görevlendirir. Ailesinin gözleri önünde katledilmesine tanık olan küçük Seyyit Battal, intikam hırsıyla büyüyerek Kara Şövalyelerin en korkulu rüyası haline gelir. Film, babası Battal Gazi'yi Bizanslıların elinden kurtarmaya çalışan Seyyit Battal'ın, adalet ve intikam uğruna kılıç kuşandığı aksiyon dolu serüvenini anlatır."
   },
   {
     "imdbId": "tt0182753",
@@ -82123,11 +82165,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "1975",
-    "plot": "A playboy helps his ex wife to save her grandson.",
+    "plot": "Directed by Natuk Baytan, this 1975 Turkish feature is a classic blend of action and comedy starring icons Cüneyt Arkın and Filiz Akın. The story follows Nermin, a successful businesswoman who has never quite gotten over her ex-husband, Murat, a powerful and charismatic playboy of the Istanbul underworld. When her grandson is kidnapped by a rival gang led by Turgut Özatay's characters, Nermin is forced to swallow her pride and seek help from the only man capable of handling such dangerous criminals: her former husband. Murat embarks on a mission to rescue the child, using his strength and wit to dismantle the gang while simultaneously attempting to win back Nermin’s affection. The film is celebrated for its entertaining fight sequences and humorous dialogue, typical of the Natuk Baytan-Cüneyt Arkın collaborations.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "r1o-f7Zvq9Y"
+    "trailerYoutubeId": "r1o-f7Zvq9Y",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Natuk Baytan'ın üstlendiği 1975 yapımı bu aksiyon ve komedi filmi, yıllar önce ayrılmış bir çiftin torunlarını kurtarmak için yeniden bir araya gelmesini konu alır. Zengin bir iş kadını olan Nermin (Filiz Akın), çapkınlıkları nedeniyle 15 yıl önce boşandığı eski kocası Murat'ı (Cüneyt Arkın) hala unutamamıştır. Nermin'in sorumsuz çocukları ve kumarbaz damadı aile işlerini zora sokarken, torunu tehlikeli bir çete tarafından kaçırılır. Çaresiz kalan Nermin, İstanbul yeraltı dünyasının güçlü ve saygın bir ismi olan \"Murat\"tan yardım ister. Murat, hem torununu kurtarmak hem de hala sevdiği kadının kalbini yeniden kazanmak için amansız ve bir o kadar da eğlenceli bir maceraya atılır."
   },
   {
     "imdbId": "tt0179274",
@@ -82161,11 +82205,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1979-02-01",
-    "plot": "Khalil is a teenage boy, son of a poor porter, and sees him dying when serving a man without compassion. Khalil keeps on with father's work, to pay for his younger brother and their old mother food and shelter in a slum. Then, the horse that pulled the chariot dies, and Khalil goes on, taking the animal's place. A rich man tries to kill another, and pays Khalil to pick up the revolver, and take the blame - going to prison instead of him. Khalil accepts, and takes the money to his mother. In prison, Khalil grows up as a rowdy man. Later, fate will bring the two brothers together, but in opposite sides of the law: Khalil is a paid assassin, and his brother is a public prosecutor. When the Mafia pays Khalil to kill his own brother, he refuses - and the Mafia retaliates by killing his wife. Khalil vows to revenge her.",
+    "plot": "Directed by Melih Gülgen, this 1979 action-drama tells the poignant story of self-sacrifice and the eventual confrontation between two brothers. Halil (Cüneyt Arkın), the son of a poor porter, is forced to drop out of school to support his mother and younger brother, Yalçın, following their father's death. In a desperate attempt to secure his family's future, Halil agrees to take the blame for a murder committed by his boss in exchange for lifelong financial support for his relatives. Years later, he emerges from prison as a notorious figure in the criminal underworld, only to find that his brother Yalçın has grown up to become a prosecutor. This Turkish-Italian co-production follows Halil as he embarks on a dangerous journey to Italy to protect his brother and exact revenge on his enemies, leading to a dramatic and tragic conclusion.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "-X4Mqp5yeOA"
+    "trailerYoutubeId": "-X4Mqp5yeOA",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Melih Gülgen'in üstlendiği bu macera ve dram filmi, ailesi için kendini feda eden bir adamın trajik yaşam öyküsünü ve yıllar sonra kardeşiyle karşı karşıya gelişini konu alır. Fakir bir hamalın oğlu olan Halil (Cüneyt Arkın), babasının ölümünün ardından annesi ve kardeşi Yalçın'a bakabilmek için okulu bırakıp çalışmaya başlar. Çalıştığı kumarhanenin sahibi bir cinayet işlediğinde, Halil ailesine ömür boyu bakılması sözü karşılığında suçu üstlenerek hapse girer. Yıllar sonra cezaevinden ünlü bir kabadayı olarak çıkan Halil, kaderin bir cilvesi sonucu kendisinden habersiz büyüyüp savcı olan kardeşi Yalçın ile karşı karşıya gelir. Türk-İtalyan ortak yapımı olan film, Halil'in kardeşini korumak için girdiği tehlikeli mücadeleyi ve İtalya'ya kadar uzanan intikam yolculuğunu anlatır."
   },
   {
     "imdbId": "tt4584858",
@@ -82198,11 +82244,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "1979-03-01",
-    "plot": "Police officer Ahmet's fight with the mafia, Sungur.",
+    "plot": "Directed by and starring Cüneyt Arkın, this 1979 crime-adventure film tells the gripping story of police officer Ahmet and his relentless struggle against a powerful crime lord named Sungur. Sungur has established a dominant monopoly over Istanbul's illegal markets, controlling everything from narcotics and smuggling to gambling and organized hits. Fearing that Ahmet’s integrity will compromise his empire, Sungur orchestrates a sinister setup that leads to Ahmet being dismissed from the force and causes his mother to suffer a mental breakdown. Instead of deterring him, these tragedies fuel Ahmet's determination to seek justice outside the formal boundaries of the law. Often noted for its similarities to the 1971 classic Dirty Harry, the film showcases a lone hero’s defiance against a corrupt system as he attempts to dismantle the criminal network and restore true justice.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Mby2QGJkZ4Q"
+    "trailerYoutubeId": "Mby2QGJkZ4Q",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini ve başrolünü Cüneyt Arkın'ın üstlendiği 1979 yapımı bu polisiye/macera filmi, dürüst bir polis memuru olan Ahmet'in, İstanbul'u pençesine alan suç baronu Sungur ile olan amansız mücadelesini konu alır. Sungur; uyuşturucu, kumar ve kaçakçılık gibi yasa dışı tüm sektörleri kontrol eden, şehirdeki cinayetlerin arkasındaki karanlık isimdir. İşlerinin bozulmasından korkan Sungur, Ahmet’i saf dışı bırakmak için ona hain bir tuzak kurar; bu oyunun sonunda Ahmet mesleğinden ihraç edilir ve annesi akıl sağlığını yitirir. Ancak bu ağır kayıplar Ahmet’i yıldırmaz; aksine adalet arayışını kişisel bir savaşa dönüştürür. Clint Eastwood’un Dirty Harry filminden etkiler taşıyan yapım, Ahmet’in yozlaşmış bir düzene karşı tek başına verdiği onurlu direnişi ve kanunun gücünü yeniden tesis etme çabasını anlatır."
   },
   {
     "imdbId": "tt0182752",
@@ -82234,11 +82282,13 @@
     "imdbRating": 6.5,
     "tmdbRating": 6.5,
     "releaseDate": "1979-03-01",
-    "plot": "A poor man alone in the big city with his two sons is forced to make money the illegal way, when one of his kids becomes sick. He becomes a hit man for the mob. Years later, he has jumped ranks and become a mob boss himself, but can't control his older son, who believes his father has always loved his brother more, and tries to earn his approval by becoming part of the mob himself.",
+    "plot": "Directed by and starring the legendary Cüneyt Arkın, this 1979 drama-adventure feature tells the tragic story of a man who enters the criminal underworld to secure the happiness and education of his children. Forced to leave his village and move to Istanbul with his two sons due to the oppressive feudal system, Kartal faces extreme poverty in the big city. In a moment of desperation sparked by one of his children falling ill, he accepts a mob hit to make quick money, eventually rising through the ranks to become a powerful crime boss himself. Despite his wealth and influence, his dark career creates a profound rift within his family, leading to a violent confrontation between his headstrong older son and the criminal associates who threaten their lives. Ultimately, a heartbroken Kartal must wage a one-man war against his corrupt enemies to seek final justice for his shattered family.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "0uaWVSZbtVM"
+    "trailerYoutubeId": "0uaWVSZbtVM",
+    "backdrop": "",
+    "plotTr": "Cüneyt Arkın'ın hem yönettiği hem de başrolünü üstlendiği bu dram ve macera filmi, çocuklarının geleceği için suç dünyasına girmek zorunda kalan bir babanın trajik hikayesini anlatır. Köydeki ağalık düzeni ve topraklarına el konulması nedeniyle iki oğluyla birlikte İstanbul’a göç eden Kartal (Cüneyt Arkın), büyük şehirde uzun süre yoksullukla mücadele eder. Çocuklarından biri hastalandığında masrafları karşılayabilmek için çaresizlik içinde bir infaz teklifini kabul eder ve mafya dünyasına tetikçi olarak adım atar. Yıllar içinde suç dünyasında yükselerek holding yöneticiliğine kadar gelse de, bu karanlık yaşam ailesini derinden sarsar; dürüst kalan oğlu ile babasının kirli işlerini öğrenen diğer oğlu arasında büyük çatışmalar yaşanır. Sonunda evlat acısı ve ihanetlerle sarsılan \"Baba Kartal\", kendisine bu hayatı dayatanlardan intikam almak için amansız bir savaşa girişir."
   },
   {
     "imdbId": "tt0183353",
@@ -82270,11 +82320,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1979-03",
-    "plot": "When Kiliç was a child, his father went bankrupt. Other landlords confiscate his father's estate. He also comes to Istanbul at a young age. He gains a considerable place with his arrogance. For years, he tries to prevent the oppre...",
+    "plot": "Directed by Natuk Baytan and starring the legendary Cüneyt Arkın, this 1979 action-crime feature follows the story of Kılıç Bey, whose family estate was seized by landlords after his father's bankruptcy when he was a child. After moving to Istanbul at a young age, he rises to power and becomes a respected businessman who acts as a vigilante for the common man, protecting workers and the poor from the oppression of predatory tycoons. Often compared to \"The Godfather,\" the narrative showcases Kılıç Bey using his influence and intimidation to punish corruption, even refusing to join major crime rings in their illegal ventures. As a result, he becomes the target of various assassination attempts, most notably by a hitman named Bingöllü Cemal (Bilal İnci), leading to an intense underworld conflict where Kılıç must defend his empire and his honor.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "dZB0hBL08d0"
+    "trailerYoutubeId": "dZB0hBL08d0",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Natuk Baytan'ın üstlendiği ve başrolünde Cüneyt Arkın'ın yer aldığı 1978/1979 yapımı bu film, çocuk yaşta babası iflas eden ve toprakları ellerinden alınan Kılıç Bey'in İstanbul'daki yükselişini ve adalet mücadelesini konu alır. Genç yaşta geldiği İstanbul'da nüfuz sahibi olan Kılıç Bey, zenginlerin işçiler ve halk üzerindeki baskısını önlemek için kendi kanunlarını uygulayan dürüst bir iş adamına dönüşür. \"Türk Baba\" (The Turkish Godfather) olarak da nitelendirilen yapımda Kılıç Bey, haksız yere işten çıkarılanları geri yerleştirip zenginlerin haksız kazançlarını fakirlere dağıtırken, kendisine suikast düzenlemesi için tutulan kiralık katil Bingöllü Cemal (Bilal İnci) ve onu mahvetmek isteyen diğer güç odaklarına karşı amansız bir savaş verir. Film, karakterin halkı korumak adına verdiği bu yalnız savaşı ve finaldeki sarsıcı direnç sahneleriyle Yeşilçam'ın önemli macera-suç yapımları arasında yer alır."
   },
   {
     "imdbId": "tt0183955",
@@ -82307,11 +82359,13 @@
     "imdbRating": 4,
     "tmdbRating": 4,
     "releaseDate": "1979",
-    "plot": "",
+    "plot": "Directed by Cüneyt Arkın and written by Safa Önal, this 1979 feature follows the story of three expert thieves caught in a web of betrayal following a major heist. Seeking to regain his former influence, an aging mafia boss named \"Great\" Alexander (Ali Şen) brings together three notorious criminals: \"Atmaca\" Ahmet (Cüneyt Arkın), \"Altınparmak\" Bilal (Süleyman Turan), and \"Jet\" Jale (Meral Orhonsay). While the trio successfully executes the robbery of 40 million liras, Alexander betrays them by reporting the heist to the police to avoid paying their shares. In response, Ahmet and Bilal team up to exact their revenge on the mob boss and reclaim their loot. Blending elements of action, comedy, and crime, the film stands as a classic Turkish \"heist-and-revenge\" story from the late 1970s.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "HQeeXOER1OM"
+    "trailerYoutubeId": "HQeeXOER1OM",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Cüneyt Arkın'ın, senaristliğini ise Safa Önal'ın üstlendiği 1979 yapımı bu film, bir soygundan elde edilen parayı paylaşamayan üç usta hırsızın ve onlara ihanet eden bir mafya babasının hikayesini anlatır. Eski gücünü geri kazanmak isteyen mafya babası Büyük İskender (Ali Şen); Atmaca Ahmet (Cüneyt Arkın), Altınparmak Bilal (Süleyman Turan) ve Jet Jale (Meral Orhonsay) isimli üç ünlü hırsızı bir araya getirerek büyük bir soygun planlar. Ekip, Bayat Hayati’nin 40 milyon lirasını başarıyla çalar ancak İskender, hırsızların payını vermemek için onları polise ihbar eder. Bu ihanetin ardından Ahmet ve Bilal güçlerini birleştirerek İskender’den intikam almak ve parayı geri almak için tehlikeli bir mücadeleye girişirler. Aksiyon, komedi ve suç ögelerini harmanlayan yapım, Yeşilçam'ın hırsızlık ve intikam temalı klasiklerinden biridir."
   },
   {
     "imdbId": "tt0263624",
@@ -82343,13 +82397,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "1979-08-01",
-    "plot": "The life of Ahmet, who is approaching death step by step, becomes completely different when he meets doctor Zeynep while investigating a murder.",
+    "plot": "Written and directed by Cüneyt Arkın, this dramatic feature tells the poignant story of a man facing his own mortality while conducting a murder investigation. Ahmet (Cüneyt Arkın), an insurance investigator, is dispatched to the coastal town of Çeşme to look into the suspicious death of a wealthy businessman. During his assignment, Ahmet discovers he is suffering from a terminal heart condition, with his doctor warning him that he has only one month left to live. His life takes a profound turn when he meets Zeynep (Türkan Şoray), a beloved local physician whose love and compassion help him find peace in his final days. The film weaves a narrative that balances the tension of a crime mystery with a deep, emotional exploration of conscience, fragility, and the weight of a looming death.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "t4TnRS3Bq8A",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Cüneyt Arkın'ın yazıp yönettiği bu dramatik yapım, ölümle yüzleşen bir adamın hüzünlü hikayesini ve bir cinayet soruşturmasını konu alır. Sigorta müfettişi Ahmet (Cüneyt Arkın), sanayici İskender Bey'in şüpheli ölümünü araştırmak için Çeşme'ye gönderilir. Ahmet, bu görev sırasında ağır bir kalp hastası olduğunu ve doktoruna göre bir mucize olmazsa yalnızca bir ay ömrü kaldığını öğrenir. Çeşme'de halkın çok sevdiği fedakar doktor Zeynep (Türkan Şoray) ile tanışan Ahmet'in hayata bakışı tamamen değişir ve aralarında duygusal bir bağ gelişir. Film, bir yandan \"kaza mı cinayet mi?\" sorusunun izini sürerken, diğer yandan kaçınılmaz sona doğru yaklaşan iki insanın imkansız ve dokunaklı aşkını anlatır."
   },
   {
     "imdbId": "tt1874388",
@@ -82383,11 +82437,13 @@
     "imdbRating": 5.8,
     "tmdbRating": 5.8,
     "releaseDate": "1979",
-    "plot": "Two master thieves try to outdo each other to be the sole owner of the loot.",
+    "plot": "Directed by Natuk Baytan, this 1979 action-comedy follows the misadventures of two expert swindlers, Tayfun (Cüneyt Arkın) and \"Boğa\" Kamil (Erol Taş). The duo successfully pulls off a major heist by tricking a ruthless mafia boss named Abbas and stealing his valuable goods. Tayfun hides the millions as his \"retirement fund\" and refuses to reveal the location even to his partner. The plot takes a chaotic turn when Tayfun suffers from amnesia following an accident, leading both his partner and the vengeful mobsters to attempt increasingly absurd methods to help him regain his memory. Known as one of the most interesting Turkish films of its era, it showcases a rare comedic side of Erol Taş alongside Cüneyt Arkın in a fast-paced tale of crime and betrayal.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "3Ed_98rSe20"
+    "trailerYoutubeId": "3Ed_98rSe20",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Natuk Baytan'ın üstlendiği 1979 yapımı bu aksiyon-komedi, iki usta dolandırıcı olan Tayfun (Cüneyt Arkın) ve Boğa Kamil'in (Erol Taş) maceralarını anlatır. İkili, tehlikeli bir mafya babası olan Abbas'ın mallarını kurnaz bir oyunla ele geçirip yüksek fiyata satarak büyük bir vurgun yaparlar. Tayfun, parayı kendi emekliliği için gizli bir yere saklar ve ortağının tüm ısrarlarına rağmen yerini söylemez. Ancak Tayfun'un bir kaza sonucu hafızasını kaybetmesi işleri karıştırır; paranın yerini öğrenmek isteyen mafya üyeleri ve ortağı Kamil, onu iyileştirmek için trajikomik yöntemlere başvururlar. Film, Yeşilçam'ın klasik aksiyon estetiğini Erol Taş'ın nadir görülen başarılı komedi performansıyla harmanlayan absürt bir soygun hikayesidir."
   },
   {
     "imdbId": "tt5547042",
@@ -82421,11 +82477,13 @@
     "imdbRating": 5.3,
     "tmdbRating": 5.3,
     "releaseDate": "1979-12",
-    "plot": "Fikret, who wants to get away from his tiring business life, goes to Sile with his yacht for vacation. Here, Fikret's path crosses with Bahar.",
+    "plot": "Directed by Orhan Aksoy, this romantic comedy tells the story of two lovers who find each other through a series of humorous coincidences. Fikret (Cüneyt Arkın) is a womanizing manager engaged to Serap, the daughter of his company's owner, primarily for financial reasons. While vacationing on his yacht in Şile to escape his tiring business life, he accidentally crosses paths with Bahar (Gülşen Bubikoğlu), a model who is there for a photo shoot. A romantic spark quickly ignites between them, but the unexpected arrival of his jealous fiancée Serap turns everything upside down. The plot thickens with a series of misunderstandings, including mixed-up phone lines and Fikret disguising his voice to win Bahar's heart back as a secret admirer. Ultimately, Fikret must prove the sincerity of his love to Bahar while navigating the comedic chaos of his complicated personal life.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "q6D-55PRgwg"
+    "trailerYoutubeId": "q6D-55PRgwg",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Orhan Aksoy'un üstlendiği bu romantik komedi, çapkın bir iş adamı ile güzel bir mankenin tesadüflerle dolu aşk hikayesini anlatır. Şirket müdürü olan Fikret (Cüneyt Arkın), aslında patronunun kızı Serap ile nişanlıdır ancak bu evliliğe sadece para için razı olmuştur. İş stresinden uzaklaşmak için yatıyla Şile'ye giden Fikret, burada fotoğraf çekimi için gelen manken Bahar (Gülşen Bubikoğlu) ile bir deniz kazası sonucu tanışır. İkili arasında hızla bir aşk başlasa da kıskanç nişanlısı Serap'ın baskın yapması ve İstanbul'daki telefon hatlarının karışması gibi bir dizi komik olay işleri içinden çıkılmaz bir hale getirir. Fikret, bir yandan gerçek aşkı Bahar'ı kaybetmemek için uğraşırken diğer yandan sesini değiştirerek kendini farklı biri gibi tanıtıp Bahar'ın gönlünü yeniden kazanmaya ve Serap'tan tamamen kurtulmaya çalışır."
   },
   {
     "imdbId": "tt0183590",
@@ -82455,11 +82513,13 @@
     "imdbRating": 7.2,
     "tmdbRating": 7.2,
     "releaseDate": "1981",
-    "plot": "Kemal a simple teacher arrives in a remote village to start a new school and teach the young ones, when he gets there he faces a strong opposition to his idea by the village master. Kemal with the help of few villagers tries to fight back the ignorance and oppression to give a hope for the poor people of the village.",
+    "plot": "Directed by Remzi Jöntürk, this social drama was produced to commemorate the 100th anniversary of Mustafa Kemal Atatürk's birth and depicts the educational mobilization in the early years of the Turkish Republic. Kemal (Cüneyt Arkın), an idealistic teacher, arrives in the remote village of Karalar with the mission of fighting ignorance and establishing a new school. However, his progressive ideas face fierce opposition from the oppressive village master and reactionary groups who exploit the villagers' lack of education. Despite being targeted by malicious slanders and violent attacks, Kemal continues his selfless struggle for women's rights and children's education. The film portrays this noble battle against the darkness of ignorance through a tragic narrative of sacrifice and subsequent vengeance.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "afm9b4xRuN8"
+    "trailerYoutubeId": "afm9b4xRuN8",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Remzi Jöntürk'ün üstlendiği bu toplumsal dram, Mustafa Kemal Atatürk'ün doğumunun 100. yılı anısına çekilmiş olup, Cumhuriyet'in ilk yıllarındaki eğitim seferberliğini konu alır. İdealist bir öğretmen olan Kemal (Cüneyt Arkın), cehaletle savaşmak ve bir okul inşa etmek amacıyla ücra bir dağ köyü olan Karalar'a gelir. Ancak Kemal'in aydınlanmacı fikirleri, köylüleri sömüren ağalar ve dini kullanarak halkı manipüle eden gerici gruplar tarafından sert bir dirençle karşılanır. Özellikle kadın hakları ve çocukların eğitimi için özveriyle mücadele eden Kemal Öğretmen, kendisine atılan iftiralar ve uğradığı saldırılar karşısında geri adım atmaz. Film, cehaletin karanlığına karşı verilen bu onurlu mücadeleyi, trajik bir son ve sonrasında gelen intikam hikayesiyle harmanlayarak anlatır."
   },
   {
     "imdbId": "tt0182060",
@@ -82492,11 +82552,13 @@
     "imdbRating": 4.3,
     "tmdbRating": 4.3,
     "releaseDate": "1982-11-01",
-    "plot": "Two space cadets crash-land on a desert planet, where an evil wizard seeks the ultimate power to take over the world.",
+    "plot": "Directed by Çetin İnanç and written by Cüneyt Arkın, this cult classic—often dubbed \"Turkish Star Wars\"—is set thousands of years in the future following the partial destruction of Earth by nuclear war. During a fierce space battle, two Turkish pilots, Murat and Ali, crash-land on a mysterious desert planet after being drawn in by a strange force. They soon discover that the planet is ruled by an evil 1,000-year-old wizard who seeks to conquer Earth by using human brain cells to bypass the planet's protective shield. The heroes must fight through waves of skeletal horsemen, robots, and plush monsters to protect the defenseless local inhabitants. Murat eventually fulfills his destiny by obtaining a magical sword and brain-shaped artifacts to defeat the Wizard in hand-to-hand combat. Despite its low-budget aesthetic and unauthorized use of Hollywood footage, the film has gained international fame as a unique piece of \"trash cinema\" and B-movie history.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "wLd-BN1dscs"
+    "trailerYoutubeId": "wLd-BN1dscs",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Çetin İnanç'ın üstlendiği ve senaryosunu Cüneyt Arkın'ın kaleme aldığı bu kült film, uzak bir gelecekte dünyayı korumak için verilen fantastik bir mücadeleyi anlatır. Bir uzay savaşı sırasında Murat (Cüneyt Arkın) ve Ali (Aytekin Akkaya) isimli iki cesur Türk pilotu, bilinmeyen bir güç tarafından çekilerek çöl kaplı gizemli bir gezegene düşerler. Bu gezegende, aslında 1000 yaşında bir Dünyalı olan ancak beyni ele geçirerek tüm evreni yönetmeyi hedefleyen zalim bir büyücü (\"Sihirbaz\") ile karşılaşırlar. Büyücü, Dünya'yı koruyan enerjiyi aşmak için bir insan beynine ihtiyaç duymaktadır. Murat ve Ali, hem yerel halkı bu tiranın zulmünden kurtarmak hem de Dünya'nın yok olmasını engellemek için efsanevi bir kılıcı ele geçirerek devasa canavarlar, iskelet atlılar ve robotlara karşı amansız bir savaşa girişirler. \"Turkish Star Wars\" olarak da bilinen yapım, Star Wars gibi Hollywood filmlerinden izinsiz kullanılan görüntüleri ve absürt aksiyon sahneleriyle dünya çapında bir kült haline gelmiştir."
   },
   {
     "imdbId": "tt0183046",
@@ -82529,13 +82591,13 @@
     "imdbRating": 4.4,
     "tmdbRating": 4.4,
     "releaseDate": "1983",
-    "plot": "",
+    "plot": "Directed by Çetin İnanç and starring the legendary Cüneyt Arkın, this 1983 feature is an action-comedy that centers on a man's quest for justice and revenge. The plot follows a protagonist who stands up against a corrupt and wealthy businessman involved in various illegal schemes. Arkın's character utilizes his formidable physical skills and sharp wit to protect his honor and save innocent people from the antagonist's oppressive grip. Characterized by the unique action aesthetics of the Yeşilçam era, the film blends heroic storytelling with touches of humor, providing an entertaining narrative that also reflects on the social injustices of its time.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "igTyJHc6SFo",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Yönetmenliğini Çetin İnanç'ın üstlendiği ve başrolünde Cüneyt Arkın'ın yer aldığı bu aksiyon-komedi türündeki yapım, haksızlığa uğrayan bir adamın intikam ve adalet arayışını konu alır. Hikaye, zengin ve zalim bir iş adamının çevresinde dönen kirli oyunları ve bu düzene başkaldıran ana karakterin maceralarını işler. Cüneyt Arkın'ın canlandırdığı karakter, hem kendi onurunu korumak hem de masum insanları bu baskıcı güçten kurtarmak için fiziksel becerilerini ve zekasını kullanır. Yeşilçam'ın o dönemdeki kendine has aksiyon estetiğiyle bezeli olan film, yer yer mizahi unsurlarla hafifletilmiş bir kahramanlık öyküsü sunarken, dönemin toplumsal adaletsizliklerine de göndermelerde bulunur."
   },
   {
     "imdbId": "tt0183962",
@@ -82566,11 +82628,13 @@
     "imdbRating": 4.9,
     "tmdbRating": 4.9,
     "releaseDate": "1986",
-    "plot": "",
+    "plot": "Directed by Orhan Elmas and produced by Türker İnanoğlu, the film follows the tragic story of Chief Inspector Tahsin (Cüneyt Arkın), an honest and dedicated lawman nearing retirement, whose life is turned upside down by a ruthless act of vengeance targeting his family. Despite his modest income, Tahsin lives a peaceful and happy life with his wife and his beloved daughter, Gamze (Şehnaz Dilan). However, Tahir, a powerful drug lord whom Tahsin had successfully sent to prison years ago, gets released and orchestrates a sinister plot to destroy the policeman's life. Tahir's smooth-talking henchman, Naci (Nuri Alço), pretends to be a wealthy gentleman to win Gamze's heart, only to lure her into a trap and forcefully turn her into a severe drug addict. Upon discovering his missing daughter in a devastating state of overdose, a heartbroken Tahsin launches the most brutal and personal crusade of his career to rescue his daughter and completely dismantle the merciless syndicate infecting society.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Yfi4VHcjycA"
+    "trailerYoutubeId": "Yfi4VHcjycA",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Orhan Elmas'ın, yapımcılığını ise Türker İnanoğlu'nun üstlendiği film, dürüstlüğüyle tanınan ve emekliliğine çok az kalmış olan Başkomiser Tahsin'in (Cüneyt Arkın) ailesi üzerinden sınandığı trajik bir intikam ve uyuşturucu mücadelesini konu alır. Tahsin, kısıtlı gelirine rağmen eşi ve kızı Gamze (Şehnaz Dilan) ile birlikte huzurlu bir hayat sürmektedir. Ancak Tahsin'in geçmişte hapse attırdığı uyuşturucu baronu Tahir, cezaevinden çıkınca ondan intikam almak için acımasız bir plan yapar. Tahir'in sağ kolu Naci (Nuri Alço), zengin ve kibar bir adam rolüyle genç Gamze'nin güvenini kazanıp onu kendisine aşık eder ve kurduğu tuzakla genç kızı uyuşturucu müptelası haline getirir. Kızının eve dönmemesiyle yıkılan ve onu uyuşturucu krizine girmiş halde bulan Tahsin, hem kendi evladını bu bataktan kurtarmak hem de toplumun kanını emen bu zehir şebekesini tamamen çökertmek için meslek hayatının en amansız ve kişisel operasyonunu başlatır."
   },
   {
     "imdbId": "tt0183903",
@@ -82599,13 +82663,13 @@
     "imdbRating": 5.2,
     "tmdbRating": 5.2,
     "releaseDate": "1986",
-    "plot": "",
+    "plot": "Written and directed by Aykut Düz, the film revolves around a man (Cüneyt Arkın) who tragically loses his memory and the dangerous schemes that unfold around him. While the protagonist struggles to remember anything about his past identity, he is unknowingly in possession of highly valuable jewels capable of shifting the balance of power in the criminal underworld. As word of this hidden fortune spreads, a desperate group of greedy thieves, notorious swindlers, and dangerous gang members initiate a ruthless hunt to trick the man and seize the precious stones. Bringing together iconic Turkish actors such as Cüneyt Arkın, Bülent Kayabaş, and Yadigar Ejder, this classic feature blends non-stop action with comedic elements, delivering a fast-paced adventure filled with absurd coincidences, chaotic chases, and underworld scams.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "7PdRx8xm2zk",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Aykut Düz'ün senaryosunu kaleme aldığı ve yönetmenliğini üstlendiği film, yaşadığı trajik ve sıra dışı olaylar silsilesi sonucunda hafızasını kaybeden bir adamın (Cüneyt Arkın) ve onun etrafında dönen tehlikeli oyunları konu alır. Hafızasını yitiren bu adam, geçmişine dair hiçbir şey hatırlamazken, aslında yeraltı dünyasını ve dolandırıcıları birbirine düşürecek kadar değerli mücevherlere sahiptir. Ana karakterin elindeki bu servetten haberdar olan açgözlü hırsızlar, üçkağıtçılar ve tehlikeli suç örgütleri, mücevherleri ele geçirebilmek için amansız bir av başlatırlar. Cüneyt Arkın, Bülent Kayabaş ve Yadigar Ejder gibi Yeşilçam'ın usta isimlerini bir araya getiren bu yapım; absürt tesadüfler, hareketli kovalamacalar ve dolandırıcılık hikayeleriyle örülü, aksiyon ile komedi ögelerini harmanlayan eğlenceli bir macera sunar."
   },
   {
     "imdbId": "tt0182755",
@@ -82639,11 +82703,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1986",
-    "plot": "",
+    "plot": "Directed by and starring Cüneyt Arkın, the film follows the tragic revenge story of an honest laborer wrongfully imprisoned and his eventual confrontation with his fractured family years later. Murat (Cüneyt Arkın), a brave factory worker standing up for labor rights, is framed for a murder he did not commit and sent to prison. Over the grueling years behind bars, he hardens into a powerful underworld figure and, upon his release, sets out to exact ruthless vengeance on those who set him up. However, during his absence, his family has completely fallen apart; his wife was driven to a dark path, and his son grew up to become a police commissar, completely unaware of his father's true identity. As Murat wages war against the criminals to seek justice, he finds himself caught in a devastating emotional conflict when his own son is assigned to track him down and arrest him.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "9cjsu84YS6A"
+    "trailerYoutubeId": "9cjsu84YS6A",
+    "backdrop": "",
+    "plotTr": "Cüneyt Arkın'ın yönettigi ve başrolünü üstlendiği film, haksız yere hapse düşen dürüst bir işçinin trajik intikam öyküsünü ve yıllar sonra dağılan ailesiyle karşı karşıya gelişini konu alır. Fabrikada çalışan gözü pek işçi Murat (Cüneyt Arkın), işçi haklarını savunduğu sırada işlenen bir cinayetin haksız yere üzerine yıkılmasıyla hapse atılır. Murat cezaevinde geçirdiği zorlu yılların ardından acımasız bir kabadayıya dönüşerek dışarı çıkar ve kendisine bu tuzağı kuranlardan tek tek intikam almaya başlar. Ancak o içerideyken ailesi darmadağın olmuştur; karısı kötü yola düşmüş, oğlu ise babasının gerçek kimliğinden habersiz bir polis komiseri olarak yetişmiştir. Murat bir yandan yeraltı dünyasında adalet arayıp suçlularla savaşırken, diğer yandan öz oğlunun kendisini yakalamaya çalışmasıyla derin bir vicdani ve dramatik çatışmanın ortasında kalır."
   },
   {
     "imdbId": "tt0183801",
@@ -82675,11 +82741,13 @@
     "imdbRating": 4,
     "tmdbRating": 4,
     "releaseDate": "1987",
-    "plot": "The story of two heroes fighting against Japanese gangs. Tono Ken kidnaps the daughter of gun smuggler Timuçin Ken. Then Timuçin applied to his brother Aytekin Ken to save his daughter. Aytekin Ken, along with a former samurai, Kaan Ken, sets out to rescue her. They save the girl as soon as possible. However, Tono Ken is determined to take revenge.",
+    "plot": "Written, directed by, and starring the legendary Cüneyt Arkın, the film revolves around an unusual international action story centered on underworld networks and vengeance. The plot unravels in the dangerous world of Japanese gangs and arms smuggling. When the daughter of an arms smuggler, Timuçin Ken, is kidnapped by his ruthless rival Tono Ken due to a past mistake, Timuçin reaches out to his brother, Aytekin Ken, for a desperate rescue mission. Aytekin teams up with Kaan Ken (Cüneyt Arkın), a skilled former samurai, to retrieve the young woman from enemy lines. Although they successfully save the girl, the conflict is far from over, as Tono Ken swears absolute revenge, sparking an all-out, non-stop gang war. Blending Turkish action cinema with classic martial arts and Eastern tropes, this unique feature showcases a thrilling battle for honor and survival.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "dDCh910gud4"
+    "trailerYoutubeId": "dDCh910gud4",
+    "backdrop": "",
+    "plotTr": "Senaristliğini, yönetmenliğini ve başrolünü Cüneyt Arkın'ın üstlendiği film, uluslararası yasa dışı ağlar ve intikam üzerine kurulu sıra dışı bir macera öyküsünü konu alır. Hikaye, Japon mafyası ve silah kaçakçılığı çetelerinin karanlık dünyasında şekillenir. Silah kaçakçısı Timuçin Ken’in, yaptığı bir hata nedeniyle düşmanı Tono Ken tarafından kızı kaçırılır. Çaresiz kalan Timuçin, kızını kurtarması için kardeşi Aytekin Ken'den yardım ister. Aytekin Ken ise yanına eski bir samuray olan Kaan Ken'i (Cüneyt Arkın) alarak tehlikeli bir kurtarma operasyonuna girişir. Güçlerini birleştiren ikili, kızı düşman elinden kurtarmayı başarsa da intikam yemini eden Tono Ken ve çetesiyle aralarında dur durak bilmeyen, çatışma dolu amansız bir yeraltı savaşı başlar. Yeşilçam'ın dövüş sanatları ve Uzak Doğu motifleriyle harmanlanan bu aksiyon yapımı, sadakat ve adalet arayışını işler."
   },
   {
     "imdbId": "tt5547276",
@@ -82690,7 +82758,7 @@
     "myRating": 3,
     "watchDate": "2026-07-11",
     "listName": [],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNTE1NTk3NzEtMTFlYi00YzYxLWIxZjMtYjBmOTI5ZGI0ODc4XkEyXkFqcGdeQXVyNjI1MjgyNzU@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOGE5MjdmMTMtZmFkNi00NDdlLWEyZDEtNGVjYTUyNmRkZjU1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "Bu yapım \"Cüneyt Arkin\" tarafından yönetilmiş 1987 yapımı bir Adventure eseridir. IMDb puanı 3.8 olarak kaydedilmiştir.",
     "genres": [
       "Adventure"
@@ -82709,13 +82777,13 @@
     "imdbRating": 3.8,
     "tmdbRating": 3.8,
     "releaseDate": "1987",
-    "plot": "",
+    "plot": "Written, directed by, and starring Cüneyt Arkın, the film follows the gripping story of a notorious former rogue who finds himself fighting for justice while living in forced exile. After spending long years in prison, Kemal (Cüneyt Arkın) is finally released, only to immediately commit a fatal act of self-defense when he kills a man harassing his wife on his way home. Re-arrested before he can even reunite with his family, Kemal serves another nine years, during which his fearsome reputation as a legendary \"kabadayı\" (tough guy) grows immensely within the prison walls. For the final two years of his sentence, he is exiled to a remote village, where he instantly clashes with the tyrannical village landlord and his ruthless henchmen. Despite the heavy restrictions of his banishment, Kemal refuses to back down, waging a lone, heroic battle against this corrupt local power to protect the oppressed villagers.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "2I4HfL4ckTg",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Senaristliğini, yönetmenliğini ve başrolünü Cüneyt Arkın'ın üstlendiği film, haksızlıklar ve şanssızlıklarla dolu bir hayat yaşayan eski bir kabadayının sürgünde verdiği adalet mücadelesini konu alır. Uzun yıllar cezaevinde yattıktan sonra nihayet tahliye olan Kemal (Cüneyt Arkın), evine döndüğü sırada eşine sarkıntılık eden bir adamı öldürerek meşru müdafaada bulunur. Ailesine kavuşamadan yeniden hapse giren Kemal, içeride geçirdiği dokuz yıl boyunca yeraltı dünyasında büyük bir kabadayılık namı kazanır. Mahkûmiyetinin son iki yılını geçirmek üzere ücra bir köye sürgüne gönderildiğinde ise buradaki zalim köy ağası ve onun acımasız kabadayılarıyla karşı karşıya gelir. Kemal, sürgün hayatının getirdiği kısıtlamalara rağmen köy halkını ezen bu despot güce karşı boyun eğmeyerek tek başına büyük bir onur ve adalet savaşı başlatır."
   },
   {
     "imdbId": "tt5547292",
@@ -82747,13 +82815,13 @@
     "imdbRating": 5,
     "tmdbRating": 5,
     "releaseDate": "1987",
-    "plot": "A Turkish remake of Thunderbolt and Lightfoot (1974).",
+    "plot": "Directed and written by Aykut Düz, the film follows the chaotic adventures of four thieves who team up for a bank heist but quickly fall into a dispute over how to split the stolen loot. To evade the police hot on their trail, they cleverly hide the money behind a large roadside billboard. However, before they can make an agreement, one of the partners, Erol (Erol Taş), is captured and sent to prison. Years later, upon his release, Erol goes looking for his old partner, nicknamed \"Mozart,\" who was responsible for hiding the cash. Although their reunion begins with fights over past grudges, they eventually settle their differences and choose to cooperate. Reunited with the other two members of the gang, the four mismatched partners set out to retrieve their long-lost loot while simultaneously plotting a brand-new, even bigger heist. Starring icons Cüneyt Arkın and Erol Taş, this classic Turkish feature is an action-comedy inspired by Clint Eastwood’s Thunderbolt and Lightfoot (1974), delivering a lighthearted yet thrilling tale of friendship and crime.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "XY14Tb-KyLw",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Yönetmenliğini ve senaristliğini Aykut Düz’ün üstlendiği film, bir banka soygunu için bir araya gelen ancak soygun sonrasında çaldıkları paranın paylaşımı yüzünden anlaşmazlığa düşen dört kafadar hırsızın maceralarını konu alır. Soyguncular, peşlerindeki polislerden kurtulmak adına ganimeti yol kenarındaki büyük bir reklam panosunun arkasına gizlerler. Ancak daha parayı aralarında bölüşemeden ortaklardan Erol (Erol Taş) yakalanarak hapse atılır. Yıllar sonra hapisten çıkan Erol, parayı saklayan ve \"Mozart\" lakabıyla tanınan eski ortağının peşine düşer. Aralarındaki eski hesaplaşmalar ve kavgalar yerini mecburi bir iş birliğine bırakınca, diğer iki ortağı da yanlarına alarak hem eski ganimetin izini sürmeye hem de yeni ve daha büyük bir soygun planı yapmaya karar verirler. Başrollerini Cüneyt Arkın ve Erol Taş'ın paylaştığı bu eğlenceli Yeşilçam klasiği, Clint Eastwood’un ünlü Thunderbolt and Lightfoot (Son Darbe) filminden esinlenen, aksiyon ve komedi ögelerini harmanlayan bir dostluk ve soygun hikayesidir."
   },
   {
     "imdbId": "tt0182738",
@@ -82783,11 +82851,13 @@
     "imdbRating": 4.6,
     "tmdbRating": 4.6,
     "releaseDate": "1987",
-    "plot": "Cuneyt Arkin is a legendary actor in Turkish movie sector.Though he is 70 now ( 2006) he is in a great film ''Dunyayi Kurtaran Adamin Oglu ''. In this movie '' Asilacak Adam '' (A man to be hung) ,he acts the man the honest man with full of life reality opposing badness in real life.He has got his own justice and move against all bad things in a big city.He gives so called '' life lessons''.His acting is incredible.There are many action scenes and the film is really a dramatic one.You can both find action and emotions even teardrops in this movie.Though the budget is limited,movie gives the feeling that it is planning to reflect",
+    "plot": "Written, directed by, and starring Cüneyt Arkın, the film revolves around a perilous and dramatic journey shared between a lawman and a condemned man entangled in a blood feud. After committing a murder, Kartal (Cüneyt Arkın) becomes the primary target of his victim's three vengeful brothers. To survive this ongoing blood feud, he flees from the law and hides in a remote village. A determined law enforcement officer named Murat manages to locate and capture Kartal, defying the local villagers and the village chief who try to intimidate him into leaving. From that moment on, the lawman and the captive embark on a grueling, action-packed road trip, constantly fighting off the deadly ambushers seeking street justice while trying to reach the courthouse. Seamlessly blending elements of Turkish drama with classic Western tropes, this feature delivers a gritty story about justice, vengeance, and the shifting dynamic between two men on opposite sides of the law.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "1_pdTKTOEsk"
+    "trailerYoutubeId": "1_pdTKTOEsk",
+    "backdrop": "",
+    "plotTr": "Senaristliğini, yönetmenliğini ve başrolünü Cüneyt Arkın'ın üstlendiği film, bir kanun adamı ile kan davalı bir idam mahkûmu arasında geçen tehlikeli ve dramatik yolculuğu konu alır. Bir cinayet işledikten sonra öldürdüğü adamın üç kardeşinin hedefi haline gelen ve yıllardır süren bir kan davasının ortasında kalan Kartal (Cüneyt Arkın), adaletten kaçarak bir köyde saklanmaktadır. Murat adındaki kararlı bir kanun adamı, köy halkının ve muhtarın tüm engellemelerine, tehditlerine rağmen Kartal'ı yakalamayı başarır. Bu noktadan sonra ikili, hem onları engellemek isteyen kan davalılarından kaçmak hem de adalete ulaşmak için yollarda geçen, çatışmalarla dolu uzun ve zorlu bir hayatta kalma mücadelesine girişir. Yeşilçam'ın western ve macera ögelerini barındıran bu dramatik yapımı, adalet kavramını, intikamı ve iki zıt karakterin yol boyunca birbirini tanıma sürecini işler."
   },
   {
     "imdbId": "tt5547336",
@@ -82817,13 +82887,13 @@
     "imdbRating": 6,
     "tmdbRating": 6,
     "releaseDate": "1987",
-    "plot": "",
+    "plot": "Written, directed by, and starring the legendary icon of Turkish cinema, Cüneyt Arkın, the film revolves around a man's relentless struggle to seize a critical ledger containing all the dark secrets, connections, and illegal operations of a powerful mafia syndicate. As the protagonist goes after this classified notebook that has the potential to expose the entire underworld, he plunges into a ruthless war against brutal gang leaders and their deadly henchmen. Risking his life to restore justice and completely dismantle the criminal organization, Arkın's character embarks on a non-stop path of action and vengeance. Filled with intense martial arts sequences, drama, and classic Yeşilçam tropes, this action-packed feature showcases a lone hero defying all odds as he wages a one-man war against the invincible forces of the criminal underworld.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "wNxXlvek1l0",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Senaristliğini, yönetmenliğini ve başrolünü Türk sinemasının efsane jönü Cüneyt Arkın'ın üstlendiği film, tehlikeli bir mafya şebekesinin tüm gizli suçlarını, bağlantılarını ve yasa dışı faaliyetlerini içeren büyülü/kritik bir defteri ele geçirmeye çalışan bir adamın maceralarını konu alır. Yeraltı dünyasının karanlık işlerini ortaya dökebilecek bu gizli ajandanın peşine düşen ana karakter, acımasız çete liderleri ve onların tetikçileriyle amansız bir savaşa girişir. Cüneyt Arkın'ın canlandırdığı karakter, adaleti sağlamak ve suç örgütünü tamamen çökertmek için hayatını ortaya koyarak dur durak bilmeyen bir aksiyonun içine atılır. Dönemin Yeşilçam dinamiklerine uygun olarak bolca dövüş sahnesi, intikam ve dram ögeleri barındıran bu klasik yapımda, kahramanımız karşısına çıkan sayısız engeli tek tek aşarak yeraltı dünyasına karşı tek başına büyük bir direniş gösterir."
   },
   {
     "imdbId": "tt0183368",
@@ -82856,13 +82926,13 @@
     "imdbRating": 7,
     "tmdbRating": 7,
     "releaseDate": "1986-08-01",
-    "plot": "Story about Turkish legend named \"Köroglu\".When Bolu's ruler decides to make his father blind, he gets name \"Köroglu\".It means son of a blind man.And after Bolu's ruler kills his father he decides to take his father's revenge.",
+    "plot": "The regional ruler, the Bey of Bolu, orders his expert stableman Koca Yusuf to find and train a flawless, peerless horse to be presented as a gift to the Sultan. However, the proud ruler considers the weak and scrawny foal chosen by Yusuf as a personal insult, and in a fit of rage, he sentences the old stableman to be blinded with hot irons. Swearing to avenge his father's cruelty, Yusuf's son Ruşen Ali adopts the moniker Köroğlu (Son of the Blind Man) and secretly trains the foal, which grows into the legendary, powerful steed Kırat. Making the rugged Çamlıbel Mountains his stronghold, Köroğlu gathers a band of brave rebels to launch a fierce resistance against the tyrannical Bey of Bolu. Directed by Atıf Yılmaz and starring Cüneyt Arkın and Fatma Girik, this epic cinematic adaptation of the famous Turkish folk legend seamlessly weaves together a tale of rebellion, justice, and his forbidden love for the Bey's sister, Hüsnübala.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "XkAClJrxUeM",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Bolu Beyi, padişaha hediye etmek amacıyla kendisi için eşsiz bir at bulup yetiştirmesi adına Seyis Koca Yusuf'u görevlendirir. Ancak Yusuf'un uzun uğraşlar sonucu seçip getirdiği zayıf tayı bir hakaret olarak gören gururlu Bolu Beyi, öfkesine yenik düşerek yaşlı seyisin gözlerine mil çektirip onu kör eder. Babasının intikamını almaya yemin eden Ruşen Ali, o andan itibaren \"Körün Oğlu\" yani Köroğlu olarak anılmaya başlar ve babasıyla birlikte büyülü bir güç kazanan o tayı (Kırat) gizlice eğitir. Zamanla Çamlıbel Dağları'nı mesken tutarak etrafına topladığı yiğitlerle güçlü bir direniş başlatan Köroğlu, halkı ezen zalim Bolu Beyi'ne karşı adalet savaşı açar ve bu esnada beyin kız kardeşi Hüsnübala'ya aşık olur. Atıf Yılmaz'ın yönettiği ve başrollerini Cüneyt Arkın ile Fatma Girik'in paylaştığı bu destansı yapım, zulme başkaldıran bir kahramanın intikam ve özgürlük mücadelesini anlatır."
   },
   {
     "imdbId": "tt26757462",
@@ -82900,13 +82970,13 @@
     "imdbRating": 4.5,
     "tmdbRating": 4.5,
     "releaseDate": "2024-10-08",
-    "plot": "Hellboy and a rookie B.P.R.D. agent in the 1950s are sent to the Appalachians, where they discover a remote community dominated by witches and led by the sinister local demon, the Crooked Man.",
+    "plot": "Set in the 1950s, the story follows the Paranormal Research and Defense (B.P.R.D.) agent Hellboy and rookie agent Bobbie Jo Song, who find themselves stranded in the rural Appalachian Mountains after a mishap while transporting a supernatural creature. In this isolated region, they uncover a small community haunted by witches and ruled by a sinister local demon known as the Crooked Man. This demonic figure is actually Jeremiah Witkins, an 18th-century war profiteer who was hanged for his crimes but sent back from Hell to harvest human souls for the devil. As Hellboy teams up with local residents to fight the dark witchcraft and protect the community, he is forced to confront the Crooked Man’s unsettling connection to his own past, along with terrifying visions regarding his predestined role in bringing about the apocalypse.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "nk6vellYsfA",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "1950'li yıllarda geçen hikayede, Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) ajanı Hellboy ve çaylak ortak Bobbie Jo Song, taşıdıkları doğaüstü bir yaratığı merkezlerine götürürken geçirdikleri kaza sonucu Appalachian Dağları'nın kırsalında mahsur kalırlar. İkili, bu izole bölgede cadıların musallat olduğu ve \"Crooked Man\" (Eğri Adam) olarak bilinen yerel bir şeytanın terör estirdiği küçük bir topluluğu keşfeder. Bu şeytan, aslında 18. yüzyılda işlediği günahlar yüzünden asılan ancak ruhları toplamak için cehennemden geri gönderilen Jeremiah Witkins adında bir savaş vurguncusudur. Hellboy, bölge halkını bu lanetten kurtarmak ve insan ruhlarını şeytandan korumak için karanlık büyülerle savaşırken, aynı zamanda Crooked Man'in kendi geçmişiyle olan rahatsız edici bağıyla ve kıyameti getirme kaderine dair korkunç vizyonlarla yüzleşmek zorunda kalır."
   },
   {
     "imdbId": "tt0167190",
@@ -82943,13 +83013,13 @@
     "imdbRating": 6.9,
     "tmdbRating": 6.9,
     "releaseDate": "2004-04-02",
-    "plot": "At the end of World War II, Nazi officers Karl Ruprecht Kroenen and Ilsa Haupstein start an experiment to raise the forces of Hell trough Russian dark mystic Rasputin on a Scottish island, but it's interrupted by an allied commando guided by professor Trevor \"Broom\" Bruttenholm. He prevents killing the human-demonic half-blood, which was accidentally created and raises this \"Hellboy\", while rising to head of a secret C.I.A.-linked U.S. agency Bureau of Paranormal Research, which secretly studies and uses the occult, including supernatural freaks. As \"father\" Broom is aging, he hand-picks brilliant, sensitive Agent John Myers as new minder-companion, as regular \"warrior\" Agent Clay can't empathize and lacks flexibility mental. Hellboy is quite a handful, regularly spotted by worried civilians on unauthorized excursions, especially to pyro-telekinetic freak friend in a mental asylum. Johnny, Hellboy, and Clay team up on missions against paranormal threats with aquatic-bionic freak Abe Sapien. Their task proves to be daunting, as monster Sammael multiplies every time it \"dies\", while Rasputin and the Nazis reemerge, armed for revenge.",
+    "plot": "During the final days of World War II, the Nazis attempt to turn the tide of the war by utilizing the mystic Grigori Rasputin to open a portal to hell and awaken the ancient deities known as the Ogdru Jahad. Although Allied soldiers sabotage the ritual, an infant demon inadvertently crosses over into our world and is adopted by occult expert Professor Trevor Bruttenholm, who names him \"Hellboy.\" Decades later, Hellboy grows up to become a secret agent for the Bureau for Paranormal Research and Defense (B.P.R.D.), working alongside his pyrokinetic love interest Liz Sherman and the amphibious humanoid Abe Sapien to protect humanity from supernatural threats. However, Rasputin and his loyal minions (Kroenen and Ilsa) resurrect in the modern day, seeking to manipulate Hellboy into embracing his true, dark destiny as the harbinger of the apocalypse. Caught in Rasputin's trap, Hellboy must fight against his own demonic nature, ultimately shedding his horns and choosing his adoptive human identity over his predestined role as the world's destroyer.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "qc4-3QmiFak",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "İkinci Dünya Savaşı'nın sonlarında Naziler, gidişatı değiştirmek amacıyla mistik kaos büyücüsü Grigori Rasputin liderliğinde cehennem kapısını açarak kadim kötülük Ogdru Jahad'ı uyandırmaya çalışır. Ritüel müttefik askerler tarafından sabote edilse de cehennem kapısından dünyaya bebek bir iblis geçiş yapar; müttefiklerin mistik uzmanı Profesör Trevor Bruttenholm bu bebeği evlat edinir ve ona \"Hellboy\" adını verir. Yıllar sonra Hellboy, Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) çatısı altında, pirokinetik sevgilisi Liz Sherman ve amfibi dostu Abe Sapien ile birlikte gizli tehditlere karşı dünyayı koruyan bir ajana dönüşür. Ancak günümüzde ölümsüz Rasputin ve sadık hizmetkarları (Kroenen ve Ilsa) küllerinden doğarak geri döner; Hellboy'u gerçek kaderi olan kıyameti başlatma rolünü üstlenmeye ve cehennemin kapılarını sonuna kadar açmaya zorlarlar. Hellboy, kökenindeki karanlık canavarla yüzleşmek ve insanlığı kurtarmak için kendi boynuzlarını kırarak büyük bir irade savaşı vermek zorunda kalır."
   },
   {
     "imdbId": "tt0411477",
@@ -82985,12 +83055,12 @@
     "imdbRating": 7,
     "tmdbRating": 7,
     "releaseDate": "2008-07-11",
-    "plot": "After saving the world from the evil Russian mystic, Grigory Rasputin, in Hellboy (2004), the red-skinned gun-toting demon and humankind's strange protector, Hellboy, now struggle to accept that the operations of the Bureau for Paranormal Research and Defence must remain secret. As if that weren't enough, the powerful Elven-prince, Nuada, is bent on retrieving the fragments of a crown that commands the indestructible Golden Army: an omnipotent legion of clockwork warriors that can destroy all humans. Now, before this new menace, all hope rests on Hellboy and Liz's old brothers-in-arms, as well as the ectoplasmic being, Johann Krauss. However, the Earth's supernatural defenders seem to be no match for Nuada's unstoppable forces. Did Hellboy and the rest bite off more than they could chew?",
+    "plot": "Centuries ago, a fragile truce between humanity and the mythical world was sealed by splitting a magical crown into three pieces, which controls the Golden Army—an unstoppable, devastating mechanical force. In the present day, the rebellious Elf Prince Nuada, resentful of humanity's destruction of the Earth, kills his father to reclaim the crown pieces, aiming to awaken the army and wipe out mankind. To prevent this apocalypse, Hellboy and his team at the Bureau for Paranormal Research and Defense (B.P.R.D.)—including his girlfriend Liz Sherman, the amphibious Abe Sapien, and their new ectoplasmic leader Johann Krauss—must venture into a hidden Troll Market and other supernatural realms. As the battle intensifies, Hellboy faces a profound emotional dilemma, caught between saving a human society that rejects him as a monster and destroying his own magical kind.",
     "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "Yjivaeh5YOk",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Yüzyıllar önce fantastik yaratıklar ve insanoğlu arasında yapılan kadim barış anlaşması, dünyayı yok edebilecek güçteki mekanik Altın Ordu'yu kontrol eden büyülü bir tacın üç parçaya bölünmesiyle mühürlenmiştir. Günümüzde, insanlığın doğayı katlettiğini düşünen isyankar Elf Prensi Nuada, babasını öldürüp tacın parçalarını toplayarak bu ölümcül orduyu yeniden uyandırmayı ve insan soyunu yeryüzünden silmeyi hedefler. Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) ajanı Hellboy; sevgilisi Liz Sherman, sadık dostu Abe Sapien ve yeni ektoplazmik lider Johann Krauss ile birlikte Nuada'yı durdurmak için gizli Trol Pazarı'na ve mistik dünyalara doğru tehlikeli bir yolculuğa çıkar. Bu süreçte Hellboy, kendisini bir canavar olarak görüp dışlayan insanlığı kurtarmak ile kendi fantastik soyuna karşı savaşmak arasında büyük bir vicdani ve duygusal çıkmaza sürüklenir."
   }
 ]
