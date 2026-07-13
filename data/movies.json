@@ -69639,7 +69639,10 @@
     "plot": "Hellboy is a supernatural being who is the son of a fallen angel. He came to our world in 1944 as a result of a mystical ritual. The Occultists of the Third Reich had long tried to gain an advantage in the war, hoping to attract the ideal soldier to the ranks of the fascist army. Hellboy was exactly the one they needed, but they never managed to make their plans a reality. The demon from hell fell into the hands of Americans and began to serve them, protecting the world from mysterious threats. This time he is sent to England to meet face to face with Merlin's wife. Just a battle with the Blood Queen will lead to the end of the world, which the monster tried to avoid all his life.",
     "country": "United States, United Kingdom, Bulgaria, Canada, Portugal, France",
     "omdbType": "movie",
-    "boxOffice": "$21,903,748"
+    "boxOffice": "$21,903,748",
+    "franchiseId": "hellboy",
+    "franchiseName": "Hellboy",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt8080302",
@@ -78942,7 +78945,7 @@
     "boxOffice": "$92,373,751",
     "franchiseId": "adalet",
     "franchiseName": "Adalet",
-    "franchiseOrder": 2
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt14781036",
@@ -81389,7 +81392,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "tIHyWhi61mA",
     "backdrop": "",
-    "plotTr": "Yönetmenliğini Antoine Fuqua’nın üstlendiği The Equalizer 2 (2018), emekli CIA ajanı Robert McCall’un (Denzel Washington) sömürülen ve ezilenler için tavizsiz bir adalet savunucusu olarak sürdürdüğü gizli hayatını konu alır. Boston'da mütevazı bir Lyft şoförü olarak yaşamını sürdüren McCall, bir yandan yardıma muhtaç insanlara anonim olarak yardım ederken bir yandan da geçmişin izleriyle boğuşmaktadır. Ancak en yakın arkadaşı ve eski meslektaşı Susan Plummer'ın (Melissa Leo) bir suikast sonucu öldürülmesi, McCall için meseleyi tamamen kişisel bir savaşa dönüştürür. Arkadaşının intikamını almak için harekete geçen McCall, kendisi gibi yüksek eğitimli suikastçılardan oluşan tehlikeli bir şebekeyle karşı karşıya gelir ve adaleti sağlamak için bildiği en iyi yöntemlere başvurmak zorunda kalır."
+    "plotTr": "Yönetmenliğini Antoine Fuqua’nın üstlendiği The Equalizer 2 (2018), emekli CIA ajanı Robert McCall’un (Denzel Washington) sömürülen ve ezilenler için tavizsiz bir adalet savunucusu olarak sürdürdüğü gizli hayatını konu alır. Boston'da mütevazı bir Lyft şoförü olarak yaşamını sürdüren McCall, bir yandan yardıma muhtaç insanlara anonim olarak yardım ederken bir yandan da geçmişin izleriyle boğuşmaktadır. Ancak en yakın arkadaşı ve eski meslektaşı Susan Plummer'ın (Melissa Leo) bir suikast sonucu öldürülmesi, McCall için meseleyi tamamen kişisel bir savaşa dönüştürür. Arkadaşının intikamını almak için harekete geçen McCall, kendisi gibi yüksek eğitimli suikastçılardan oluşan tehlikeli bir şebekeyle karşı karşıya gelir ve adaleti sağlamak için bildiği en iyi yöntemlere başvurmak zorunda kalır.",
+    "franchiseId": "adalet",
+    "franchiseName": "Adalet",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt22855966",
@@ -81581,283 +81587,6 @@
     "trailerYoutubeId": "RwP-qq8jqHw",
     "backdrop": "",
     "plotTr": "Senaryosunu Giray Altınok ve Kerem Özdoğan’ın kaleme aldığı, başrolünde ise yine Giray Altınok’un yer aldığı Prens, kurgusal bir Orta Çağ krallığı olan Bongomya'da geçen absürt bir komedi hikayesidir. Kimsenin umursamadığı bir tarihte ve coğrafyada yer alan Bongomya’nın Kralı Thun, şüpheli bir şekilde hayatını kaybedince taht, ailenin ciddiye almadığı ve bir isim bile verme zahmetine girmediği ortanca oğlu \"Prens\"e kalır. Hiçbir yönetim tecrübesi olmayan, aksi ve ağzı bozuk bu yeni kral; bir yandan üvey annesi Sion, hırslı abisi Thenio ve sinsi amcası Kalesh ile saray entrikaları içinde mücadele ederken, diğer yandan sakarlıklarıyla yanlışlıkla Macarlar ile bir savaşa sürüklenir. Kendine \"Yaban Kelebeği\" (Wild Butterfly) lakabını takan Prens, manipülatif zekası ve diplomatik kurnazlıklarıyla Bongomya’yı ayakta tutmaya çalışırken izleyiciyi kahkaha dolu bir tarihsel hiciv yolculuğuna çıkarır."
-  },
-  {
-    "imdbId": "tt20603316",
-    "title": "Var Bunlar",
-    "originalTitle": "Var Bunlar",
-    "year": 2022,
-    "type": "TV Series",
-    "myRating": 7,
-    "watchDate": "2026-07-12",
-    "listName": [
-      "Komedi Günlükleri"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYTQ1NThiMzMtNDRkMS00YmNkLTk0ZGEtOWJhZmU3NWQzNDhjXkEyXkFqcGc@._V1_SX300.jpg",
-    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2022 yapımı bir Comedy eseridir. IMDb puanı 8.1 olarak kaydedilmiştir.",
-    "genres": [
-      "Comedy"
-    ],
-    "runtime": 20,
-    "cast": [
-      "Giray Altinok",
-      "Kerem Özdogan",
-      "Cansu Diktas"
-    ],
-    "director": "Arif Gokdeniz Uslu",
-    "writers": [],
-    "imdbRating": 8.1,
-    "tmdbRating": 8.1,
-    "releaseDate": "2022",
-    "plot": "The fun adventures of two close friends who are dragged into the inextricable monotony of daily life.",
-    "country": "Türkiye",
-    "omdbType": "",
-    "boxOffice": "",
-    "trailerYoutubeId": "JEHGbK8IuaA",
-    "backdrop": "",
-    "plotTr": ""
-  },
-  {
-    "imdbId": "tt14183052",
-    "title": "Dogu",
-    "originalTitle": "Dogu",
-    "year": 2021,
-    "type": "TV Series",
-    "myRating": 7,
-    "watchDate": "2026-07-12",
-    "listName": [
-      "Komedi Günlükleri"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZWM3ZDQyZWMtNGQxMy00YzRiLWFjMDgtMWJjOTgwNmQ0M2Y3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2021 yapımı bir Comedy eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
-    "genres": [
-      "Comedy"
-    ],
-    "runtime": 30,
-    "cast": [
-      "Dogu Demirkol",
-      "Evliya Aykan",
-      "Banu Fotocan"
-    ],
-    "director": "Emrah Agus, Dogu Demirkol, İlay Alpgiray, Cem Terbiyeli",
-    "writers": [
-      "Dogu Demirkol",
-      "Murat Ozsoy"
-    ],
-    "imdbRating": 7.2,
-    "tmdbRating": 7.2,
-    "releaseDate": "2021-03-31",
-    "plot": "Created by and starring stand-up comedian Doğu Demirkol, this 2021 Turkish absurdist comedy-drama is loosely inspired by the creator's own life journey. The series follows Doğu—a young man who has struggled to find success in traditional paths, including failing to graduate from his computer engineering department for seven years. Despite facing intense pressure from his family to secure a \"stable\" job and start a family, Doğu remains stubbornly committed to his ultimate dream of becoming a professional comedian. Caught between a sister who constantly overshadows his achievements and parents who doubt his talent, he navigates a world of societal expectations and personal failures. With its sharp observational humor and self-aware narrative, the show portrays the relentless and often hilarious pursuit of ambition against all odds.",
-    "country": "Türkiye",
-    "omdbType": "",
-    "boxOffice": "",
-    "trailerYoutubeId": "H__JBBakBCU",
-    "backdrop": "",
-    "plotTr": "Ünlü stand-up sanatçısı Doğu Demirkol'un kendi hayatından esinlenerek hazırladığı bu absürt komedi-drama dizisi, hayatta hemen hemen hiçbir şeyi başaramamış bir gencin trajikomik hikayesini anlatır. 7 yıldır bitiremediği bilgisayar mühendisliği bölümüyle boğuşan Doğu, ailesinin ve çevresinin \"sigortalı bir işe gir, evlen\" baskılarına rağmen tek hayali olan komedyenliğin peşinden gider. Başarılarıyla kendisini ezen kız kardeşi, komedyen olabileceğine ihtimal vermeyen ailesi ve karamsar arkadaş çevresi arasında sıkışıp kalan Doğu, zekice gözlemleri ve kendine has mizahıyla hayallerini gerçekleştirmek için dur durak bilmeyen bir mücadele verir. Dizi, modern insanın başarı sancılarını ve bir hayalin peşinden gitmenin absürt zorluklarını samimi bir dille işler."
-  },
-  {
-    "imdbId": "tt29567915",
-    "title": "Nuremberg",
-    "originalTitle": "Nuremberg",
-    "year": 2025,
-    "type": "Movie",
-    "myRating": 7,
-    "watchDate": "2026-07-12",
-    "listName": [],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMWUzODNkYWUtMmMzOC00NzZjLTlkMTctOTkwM2I2ZWI1MTlmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
-    "overview": "Bu yapım \"James Vanderbilt\" tarafından yönetilmiş 2025 yapımı bir Drama, History, Thriller, Biography, War eseridir. IMDb puanı 7.3 olarak kaydedilmiştir.",
-    "genres": [
-      "Drama",
-      "History",
-      "Thriller",
-      "Biography",
-      "War"
-    ],
-    "runtime": 148,
-    "cast": [
-      "Rami Malek",
-      "Russell Crowe",
-      "Michael Shannon"
-    ],
-    "director": "James Vanderbilt",
-    "writers": [
-      "James Vanderbilt",
-      "Jack El-Hai"
-    ],
-    "imdbRating": 7.3,
-    "tmdbRating": 7.3,
-    "releaseDate": "2025-11-07",
-    "plot": "Directed by James Vanderbilt and based on the book \"The Nazi and the Psychiatrist\" by Jack El-Hai, this 2025 historical drama explores the intense psychological confrontations during the post-WWII Nuremberg Trials. The story follows Douglas Kelley (Rami Malek), a young American psychiatrist tasked with evaluating the sanity of high-ranking Nazi prisoners to ensure they are fit for trial. Kelley becomes locked in a dramatic psychological duel with Hermann Göring (Russell Crowe), Hitler's manipulative second-in-command, as he attempts to unravel the mindset behind the atrocities of the Holocaust. As the trial proceeds under Chief Prosecutor Robert H. Jackson (Michael Shannon), the film delves deep into themes of justice, morality, and the complex anatomy of evil.",
-    "country": "United States",
-    "omdbType": "",
-    "boxOffice": "",
-    "trailerYoutubeId": "YWlCCVnZ4bo",
-    "backdrop": "",
-    "plotTr": "Jack El-Hai'nin \"Nazi ve Psikiyatrist\" adlı kitabından uyarlanan ve yönetmenliğini James Vanderbilt'in üstlendiği bu tarihi dram, İkinci Dünya Savaşı sonrası Nazi savaş suçlularının yargılandığı meşhur Nürnberg Mahkemeleri'nin perde arkasını konu alır. Genç Amerikalı psikiyatrist Douglas Kelley (Rami Malek), yargılanmayı bekleyen üst düzey Nazi mahkumlarının zihinsel durumlarını değerlendirmekle görevlendirilir. Kelley, özellikle Hitler'in sağ kolu Hermann Göring (Russell Crowe) ile girdiği yoğun psikolojik mücadelede, kötülüğün doğasını anlamaya çalışırken adaletin sınırları ve insan ruhunun karanlık yüzüyle yüzleşmek zorunda kalır. Film, tarihin en önemli davalarından birini, intikam yerine hukukun üstünlüğünü odağa alarak nesnel bir bakış açısıyla beyazperdeye taşır."
-  },
-  {
-    "imdbId": "tt1078940",
-    "title": "Couples Retreat",
-    "originalTitle": "Couples Retreat",
-    "year": 2009,
-    "type": "Movie",
-    "myRating": 4,
-    "watchDate": "2026-07-12",
-    "listName": [
-      "Komedi Günlükleri"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTQxMjI1Nzc0M15BMl5BanBnXkFtZTcwMTc0Mzg2Mg@@._V1_SX300.jpg",
-    "overview": "Bu yapım \"Peter Billingsley\" tarafından yönetilmiş 2009 yapımı bir Comedy eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
-    "genres": [
-      "Comedy"
-    ],
-    "runtime": 113,
-    "cast": [
-      "Vince Vaughn",
-      "Malin Akerman",
-      "Jon Favreau"
-    ],
-    "director": "Peter Billingsley",
-    "writers": [
-      "Jon Favreau",
-      "Vince Vaughn",
-      "Dana Fox"
-    ],
-    "imdbRating": 5.6,
-    "tmdbRating": 5.6,
-    "releaseDate": "2009-10-09",
-    "plot": "Directed by Peter Billingsley and written by Jon Favreau and Vince Vaughn, Couples Retreat follows four Midwest couples who embark on a journey to a luxury tropical island resort called Eden. While one couple, Cynthia and Jason, is desperately there to work on their failing marriage, the other three couples mistakenly believe they can simply enjoy the sun, sea, and spa services without participating in the resort's rigorous program. They soon discover that participation in the \"mandatory therapy\" sessions conducted by the resort’s eccentric owner, Marcel (Jean Reno), is strictly required to remain on the island. What starts as a cut-rate vacation quickly turns into a series of comedic trials, including feeding lemon sharks and unconventional yoga, forcing each couple to examine their own relationship issues and inner tensions. As the island paradise tests their patience and loyalty, the friends must decide if their relationships are worth fighting for.",
-    "country": "United States",
-    "omdbType": "",
-    "boxOffice": "",
-    "trailerYoutubeId": "X4j_NTFos9c",
-    "backdrop": "",
-    "plotTr": "Yönetmenliğini Peter Billingsley'in üstlendiği bu komedi filmi, evliliklerini kurtarmaya çalışan bir çiftin iknasıyla, tropik bir adadaki lüks Eden Resort'a grup indirimiyle giden dört arkadaş çiftin hikayesini anlatır. Başta her şeyin sadece güneşin ve eğlencenin tadını çıkarmak olduğunu düşünen diğer üç çift, adaya vardıklarında acı bir sürprizle karşılaşırlar: Tatil paketinin bir parçası olarak sunulan sıra dışı ve zorunlu ilişki terapisine katılmak mecburidir. Başlangıçta bu seanslara sadece tatilin diğer imkanlarından yararlanmak için katlanan çiftler, zamanla kendi ilişkilerindeki derin çatlaklarla ve gizli kalmış sorunlarla yüzleşmek zorunda kalırlar. Fransız Polinezyası'ndaki Bora Bora adasında çekilen film; köpekbalıklarıyla yüzme, tuhaf yoga seansları ve zorlayıcı grup egzersizleri eşliğinde, arkadaşlıkların ve evliliklerin dayanıklılığının test edildiği eğlenceli bir macera sunar."
-  },
-  {
-    "imdbId": "tt0492389",
-    "title": "Furry Vengeance",
-    "originalTitle": "Furry Vengeance",
-    "year": 2010,
-    "type": "Movie",
-    "myRating": 3,
-    "watchDate": "2026-07-12",
-    "listName": [
-      "Komedi Günlükleri"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjM5Mzg5NjA0Nl5BMl5BanBnXkFtZTcwMjg3MDEyMw@@._V1_SX300.jpg",
-    "overview": "Bu yapım \"Roger Kumble\" tarafından yönetilmiş 2010 yapımı bir Comedy, Family eseridir. IMDb puanı 3.9 olarak kaydedilmiştir.",
-    "genres": [
-      "Comedy",
-      "Family"
-    ],
-    "runtime": 92,
-    "cast": [
-      "Brendan Fraser",
-      "Brooke Shields",
-      "Ricky Garcia"
-    ],
-    "director": "Roger Kumble",
-    "writers": [
-      "Michael Carnes",
-      "Josh Gilbert"
-    ],
-    "imdbRating": 3.9,
-    "tmdbRating": 3.9,
-    "releaseDate": "2010-04-30",
-    "plot": "Directed by Roger Kumble, this 2010 live-action family comedy follows the story of Dan Sanders (Brendan Fraser), an ambitious real estate developer tasked with turning a pristine Oregon forest into a major residential subdivision. To advance his career, Dan relocates his urban family from Chicago to the wilderness, thinking his biggest challenge will be their adjustment to country life. However, when the local forest creatures discover that his latest project threatens their habitat, they launch an all-out battle against him. Led by an incredibly clever raccoon, the animals utilize specialized tactics and \"Rube Goldberg\" gadgetry to sabotage the construction and torment Dan in increasingly slapstick ways. As his wife (Brooke Shields) and son start to doubt his sanity because no one else witnesses these attacks, Dan must face the environmental consequences of his work and eventually find a way to protect the very nature he was sent to destroy.",
-    "country": "United States",
-    "omdbType": "",
-    "boxOffice": "",
-    "trailerYoutubeId": "FQAx4_So3UE",
-    "backdrop": "",
-    "plotTr": "Yönetmenliğini Roger Kumble'ın üstlendiği 2010 yapımı bu aile komedisi, hırslı bir emlak geliştiricisi olan Dan Sanders'ın (Brendan Fraser), yeni bir konut projesi için Oregon'daki el değmemiş bir ormanlık alanı yerleşim yerine dönüştürmeye çalışmasını konu alır. Dan, patronunun talebiyle ailesini Chicago'dan bu uzak bölgeye taşır; ancak doğayı korumaya kararlı olan yerel orman hayvanları, yaşam alanlarının yok edilmesine karşı zekice bir intikam planı başlatır. Son derece akıllı bir rakunun liderliğindeki hayvanlar; kargalar, ayılar ve kunduzlarla iş birliği yaparak Dan'i çeşitli fiziksel şakalar ve sabote eylemleriyle bezdirirler. Dan'in karısı (Brooke Shields) ve oğlu, kimsenin göremediği bu saldırılar yüzünden onun akıl sağlığını yitirdiğini düşünürken; Dan, doğanın intikamıyla başa çıkmak ve kendi şirketiyle doğa arasında zorlu bir seçim yapmak zorunda kalır."
-  },
-  {
-    "imdbId": "tt2869728",
-    "title": "Ride Along 2",
-    "originalTitle": "Ride Along 2",
-    "year": 2016,
-    "type": "Movie",
-    "myRating": 4,
-    "watchDate": "2026-07-12",
-    "listName": [
-      "Komedi Günlükleri"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMTU4ODAzMzcxOV5BMl5BanBnXkFtZTgwODkxMDI1NjE@._V1_SX300.jpg",
-    "overview": "Bu yapım \"Tim Story\" tarafından yönetilmiş 2016 yapımı bir Comedy, Action, Crime eseridir. IMDb puanı 5.9 olarak kaydedilmiştir.",
-    "genres": [
-      "Comedy",
-      "Action",
-      "Crime"
-    ],
-    "runtime": 102,
-    "cast": [
-      "Ice Cube",
-      "Kevin Hart",
-      "Tika Sumpter"
-    ],
-    "director": "Tim Story",
-    "writers": [
-      "Greg Coolidge",
-      "Phil Hay",
-      "Matt Manfredi"
-    ],
-    "imdbRating": 5.9,
-    "tmdbRating": 5.9,
-    "releaseDate": "2016-01-15",
-    "plot": "Directed by Tim Story, Ride Along 2 is a 2016 action comedy that reunites the mismatched brothers-in-law for a new mission. Set about a year after their first adventure, rookie cop Ben Barber (Kevin Hart) is preparing for his upcoming wedding to Angela when he joins veteran detective James Payton (Ice Cube) on a lead in Miami. The duo aims to take down a powerful drug lord, Antonio Pope (Benjamin Bratt), who is supplying dealers in Atlanta. In Miami, they team up with a tough local homicide detective, Maya Cruz (Olivia Munn), and a cocky computer hacker named AJ (Ken Jeong) who holds evidence against Pope. As the investigation intensifies, Ben’s over-enthusiasm often complicates the operation, forcing James to balance his desire to crack the case with the need to keep his soon-to-be brother-in-law safe. The film blends high-speed action with slapstick comedy as the team navigates the vibrant streets of Miami to bring Pope to justice before Ben’s big day.",
-    "country": "United States",
-    "omdbType": "",
-    "boxOffice": "",
-    "trailerYoutubeId": "Eh0w35EiG_I",
-    "backdrop": "",
-    "plotTr": "2016 yapımı Ride Along 2, ilk maceradan yaklaşık bir yıl sonrasını konu alan bir aksiyon-komedi devam filmidir. Hikaye, düğün günü hızla yaklaşan çaylak polis Ben Barber'ın (Kevin Hart), müstakbel kayınbiraderi sert dedektif James Payton (Ice Cube) ile birlikte büyük bir davayı çözmek için Miami'ye gitmesini anlatır. Atlanta'daki uyuşturucu satıcılarını besleyen büyük bir ağın izini süren ikili, Miami'de sert bir dedektif olan Maya Cruz (Olivia Munn) ve kilit bilgilere sahip bilgisayar korsanı AJ (Ken Jeong) ile iş birliği yapar. Ekip, saygın bir iş adamı gibi görünen ancak aslında Güney Florida'nın uyuşturucu ticaretini acımasızca yöneten Antonio Pope'u (Benjamin Bratt) devirmek için tehlikeli ve komik olaylarla dolu bir mücadeleye girişir. Ben, bir yandan James'e iyi bir polis ve aile üyesi olduğunu kanıtlamaya çalışırken, diğer yandan kendi düğününü tehlikeye atmadan bu operasyonu tamamlamak zorundadır."
-  },
-  {
-    "imdbId": "tt7638348",
-    "title": "Boss Level",
-    "originalTitle": "Boss Level",
-    "year": 2020,
-    "type": "Movie",
-    "myRating": 6,
-    "watchDate": "2026-07-12",
-    "listName": [
-      "Bilim Kurgu",
-      "Komedi Günlükleri"
-    ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BNThlODU1ZjAtMWZkOS00NDc4LWE5ZjYtZTk1NzYwZTdjMmJhXkEyXkFqcGc@._V1_SX300.jpg",
-    "overview": "Bu yapım \"Joe Carnahan\" tarafından yönetilmiş 2020 yapımı bir Thriller, Action, Adventure, Comedy, Mystery, Sci-Fi eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
-    "genres": [
-      "Thriller",
-      "Action",
-      "Adventure",
-      "Comedy",
-      "Mystery",
-      "Sci-Fi"
-    ],
-    "runtime": 100,
-    "cast": [
-      "Frank Grillo",
-      "Mel Gibson",
-      "Naomi Watts"
-    ],
-    "director": "Joe Carnahan",
-    "writers": [
-      "Chris Borey",
-      "Eddie Borey",
-      "Joe Carnahan"
-    ],
-    "imdbRating": 6.8,
-    "tmdbRating": 6.8,
-    "releaseDate": "2021-03-05",
-    "plot": "Directed by Joe Carnahan, Boss Level follows the high-octane journey of Roy Pulver (Frank Grillo), a retired special forces officer who is trapped in a never-ending time loop that repeats the day of his murder. Every morning, Roy wakes up to assassins trying to kill him, and despite his best efforts, every day ends with his death at exactly 12:47 PM. To break the cycle and unlock the mystery behind his demise, Roy must uncover clues about a secret government project involving his ex-wife Jemma Wells (Naomi Watts) and track down the powerful Colonel Clive Ventor (Mel Gibson), who leads the program. Blending elements of arcade games, martial arts, and non-stop action, Roy evolves his tactics in each repeated scenario to save his family and finally live to see tomorrow.",
-    "country": "United States",
-    "omdbType": "",
-    "boxOffice": "",
-    "trailerYoutubeId": "2iwJAq8brq0",
-    "backdrop": "",
-    "plotTr": "Yönetmenliğini Joe Carnahan'ın üstlendiği Boss Level (Patron Seviyesi), emekli bir özel kuvvetler subayı olan Roy Pulver'ın (Frank Grillo), öldüğü günün sürekli tekrarlandığı sonsuz bir zaman döngüsüne hapsolmasını konu alır. Roy, her sabah yatağında bir suikastçının saldırısıyla uyanmakta ve günü her seferinde saat 12:47'de ölümüyle sonuçlanmaktadır. Bu ölümcül döngüden kurtulmak için Roy, eski eşi Jemma Wells'in (Naomi Watts) üzerinde çalıştığı gizli bir hükümet projesinin arkasındaki sırları çözmek ve bu programın başındaki güçlü Albay Clive Ventor'ı (Mel Gibson) durdurmak zorundadır. Atari oyunlarına ve dövüş sanatlarına pek çok gönderme barındıran film, Roy'un her seferinde biraz daha ileri giderek hem ailesini kurtarmaya hem de yarına ulaşmaya çalışırken verdiği dur durak bilmez aksiyon dolu mücadeleyi anlatır."
   },
   {
     "imdbId": "tt0184543",
@@ -82106,7 +81835,7 @@
     "listName": [
       "Sinema Klasikleri"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BOTQ4MDQ5NDktMWRmNy00ZjliLWI4YTktODI0NGY3MGQxODNiXkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2M4NjA0Y2MtODBmZS00NWRkLWFjNGQtN2EwN2U3MzVmYjMwXkEyXkFqcGc@._V1_.jpg",
     "overview": "Bu yapım \"Natuk Baytan\" tarafından yönetilmiş 1973 yapımı bir Action, Adventure eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
     "genres": [
       "Action",
@@ -82131,7 +81860,7 @@
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "hnjo7XWLX7M",
-    "backdrop": "",
+    "backdrop": "https://m.media-amazon.com/images/M/MV5BN2M4NjA0Y2MtODBmZS00NWRkLWFjNGQtN2EwN2U3MzVmYjMwXkEyXkFqcGc@._V1_.jpg",
     "plotTr": "Natuk Baytan tarafından yönetilen ve Battal Gazi serisinin üçüncü filmi olan bu yapım, efsanevi kahraman Seyyit Battal'ın Bizanslılara karşı verdiği destansı mücadeleyi konu alır. Bizanslılar, Türkleri Anadolu'dan atmak için İslamiyet'e karşı savaş açan acımasız Kara Şövalye ve adamlarını görevlendirir. Ailesinin gözleri önünde katledilmesine tanık olan küçük Seyyit Battal, intikam hırsıyla büyüyerek Kara Şövalyelerin en korkulu rüyası haline gelir. Film, babası Battal Gazi'yi Bizanslıların elinden kurtarmaya çalışan Seyyit Battal'ın, adalet ve intikam uğruna kılıç kuşandığı aksiyon dolu serüvenini anlatır."
   },
   {
@@ -82976,7 +82705,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "nk6vellYsfA",
     "backdrop": "",
-    "plotTr": "1950'li yıllarda geçen hikayede, Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) ajanı Hellboy ve çaylak ortak Bobbie Jo Song, taşıdıkları doğaüstü bir yaratığı merkezlerine götürürken geçirdikleri kaza sonucu Appalachian Dağları'nın kırsalında mahsur kalırlar. İkili, bu izole bölgede cadıların musallat olduğu ve \"Crooked Man\" (Eğri Adam) olarak bilinen yerel bir şeytanın terör estirdiği küçük bir topluluğu keşfeder. Bu şeytan, aslında 18. yüzyılda işlediği günahlar yüzünden asılan ancak ruhları toplamak için cehennemden geri gönderilen Jeremiah Witkins adında bir savaş vurguncusudur. Hellboy, bölge halkını bu lanetten kurtarmak ve insan ruhlarını şeytandan korumak için karanlık büyülerle savaşırken, aynı zamanda Crooked Man'in kendi geçmişiyle olan rahatsız edici bağıyla ve kıyameti getirme kaderine dair korkunç vizyonlarla yüzleşmek zorunda kalır."
+    "plotTr": "1950'li yıllarda geçen hikayede, Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) ajanı Hellboy ve çaylak ortak Bobbie Jo Song, taşıdıkları doğaüstü bir yaratığı merkezlerine götürürken geçirdikleri kaza sonucu Appalachian Dağları'nın kırsalında mahsur kalırlar. İkili, bu izole bölgede cadıların musallat olduğu ve \"Crooked Man\" (Eğri Adam) olarak bilinen yerel bir şeytanın terör estirdiği küçük bir topluluğu keşfeder. Bu şeytan, aslında 18. yüzyılda işlediği günahlar yüzünden asılan ancak ruhları toplamak için cehennemden geri gönderilen Jeremiah Witkins adında bir savaş vurguncusudur. Hellboy, bölge halkını bu lanetten kurtarmak ve insan ruhlarını şeytandan korumak için karanlık büyülerle savaşırken, aynı zamanda Crooked Man'in kendi geçmişiyle olan rahatsız edici bağıyla ve kıyameti getirme kaderine dair korkunç vizyonlarla yüzleşmek zorunda kalır.",
+    "franchiseId": "hellboy",
+    "franchiseName": "Hellboy",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt0167190",
@@ -83019,7 +82751,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "qc4-3QmiFak",
     "backdrop": "",
-    "plotTr": "İkinci Dünya Savaşı'nın sonlarında Naziler, gidişatı değiştirmek amacıyla mistik kaos büyücüsü Grigori Rasputin liderliğinde cehennem kapısını açarak kadim kötülük Ogdru Jahad'ı uyandırmaya çalışır. Ritüel müttefik askerler tarafından sabote edilse de cehennem kapısından dünyaya bebek bir iblis geçiş yapar; müttefiklerin mistik uzmanı Profesör Trevor Bruttenholm bu bebeği evlat edinir ve ona \"Hellboy\" adını verir. Yıllar sonra Hellboy, Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) çatısı altında, pirokinetik sevgilisi Liz Sherman ve amfibi dostu Abe Sapien ile birlikte gizli tehditlere karşı dünyayı koruyan bir ajana dönüşür. Ancak günümüzde ölümsüz Rasputin ve sadık hizmetkarları (Kroenen ve Ilsa) küllerinden doğarak geri döner; Hellboy'u gerçek kaderi olan kıyameti başlatma rolünü üstlenmeye ve cehennemin kapılarını sonuna kadar açmaya zorlarlar. Hellboy, kökenindeki karanlık canavarla yüzleşmek ve insanlığı kurtarmak için kendi boynuzlarını kırarak büyük bir irade savaşı vermek zorunda kalır."
+    "plotTr": "İkinci Dünya Savaşı'nın sonlarında Naziler, gidişatı değiştirmek amacıyla mistik kaos büyücüsü Grigori Rasputin liderliğinde cehennem kapısını açarak kadim kötülük Ogdru Jahad'ı uyandırmaya çalışır. Ritüel müttefik askerler tarafından sabote edilse de cehennem kapısından dünyaya bebek bir iblis geçiş yapar; müttefiklerin mistik uzmanı Profesör Trevor Bruttenholm bu bebeği evlat edinir ve ona \"Hellboy\" adını verir. Yıllar sonra Hellboy, Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) çatısı altında, pirokinetik sevgilisi Liz Sherman ve amfibi dostu Abe Sapien ile birlikte gizli tehditlere karşı dünyayı koruyan bir ajana dönüşür. Ancak günümüzde ölümsüz Rasputin ve sadık hizmetkarları (Kroenen ve Ilsa) küllerinden doğarak geri döner; Hellboy'u gerçek kaderi olan kıyameti başlatma rolünü üstlenmeye ve cehennemin kapılarını sonuna kadar açmaya zorlarlar. Hellboy, kökenindeki karanlık canavarla yüzleşmek ve insanlığı kurtarmak için kendi boynuzlarını kırarak büyük bir irade savaşı vermek zorunda kalır.",
+    "franchiseId": "hellboy",
+    "franchiseName": "Hellboy",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0411477",
@@ -83061,6 +82796,251 @@
     "boxOffice": "",
     "trailerYoutubeId": "Yjivaeh5YOk",
     "backdrop": "",
-    "plotTr": "Yüzyıllar önce fantastik yaratıklar ve insanoğlu arasında yapılan kadim barış anlaşması, dünyayı yok edebilecek güçteki mekanik Altın Ordu'yu kontrol eden büyülü bir tacın üç parçaya bölünmesiyle mühürlenmiştir. Günümüzde, insanlığın doğayı katlettiğini düşünen isyankar Elf Prensi Nuada, babasını öldürüp tacın parçalarını toplayarak bu ölümcül orduyu yeniden uyandırmayı ve insan soyunu yeryüzünden silmeyi hedefler. Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) ajanı Hellboy; sevgilisi Liz Sherman, sadık dostu Abe Sapien ve yeni ektoplazmik lider Johann Krauss ile birlikte Nuada'yı durdurmak için gizli Trol Pazarı'na ve mistik dünyalara doğru tehlikeli bir yolculuğa çıkar. Bu süreçte Hellboy, kendisini bir canavar olarak görüp dışlayan insanlığı kurtarmak ile kendi fantastik soyuna karşı savaşmak arasında büyük bir vicdani ve duygusal çıkmaza sürüklenir."
+    "plotTr": "Yüzyıllar önce fantastik yaratıklar ve insanoğlu arasında yapılan kadim barış anlaşması, dünyayı yok edebilecek güçteki mekanik Altın Ordu'yu kontrol eden büyülü bir tacın üç parçaya bölünmesiyle mühürlenmiştir. Günümüzde, insanlığın doğayı katlettiğini düşünen isyankar Elf Prensi Nuada, babasını öldürüp tacın parçalarını toplayarak bu ölümcül orduyu yeniden uyandırmayı ve insan soyunu yeryüzünden silmeyi hedefler. Paranormal Araştırma ve Savunma Bürosu (B.P.R.D.) ajanı Hellboy; sevgilisi Liz Sherman, sadık dostu Abe Sapien ve yeni ektoplazmik lider Johann Krauss ile birlikte Nuada'yı durdurmak için gizli Trol Pazarı'na ve mistik dünyalara doğru tehlikeli bir yolculuğa çıkar. Bu süreçte Hellboy, kendisini bir canavar olarak görüp dışlayan insanlığı kurtarmak ile kendi fantastik soyuna karşı savaşmak arasında büyük bir vicdani ve duygusal çıkmaza sürüklenir.",
+    "franchiseId": "hellboy",
+    "franchiseName": "Hellboy",
+    "franchiseOrder": 3
+  },
+  {
+    "imdbId": "tt14183052",
+    "title": "Dogu",
+    "originalTitle": "Dogu",
+    "year": 2021,
+    "type": "TV Series",
+    "myRating": 7,
+    "watchDate": "2026-07-12",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWM3ZDQyZWMtNGQxMy00YzRiLWFjMDgtMWJjOTgwNmQ0M2Y3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "overview": "Bu yapım \"Bilinmeyen Yönetmen\" tarafından yönetilmiş 2021 yapımı bir Comedy eseridir. IMDb puanı 7.2 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 30,
+    "cast": [
+      "Dogu Demirkol",
+      "Evliya Aykan",
+      "Banu Fotocan"
+    ],
+    "director": "Emrah Agus, Dogu Demirkol, İlay Alpgiray, Cem Terbiyeli",
+    "writers": [
+      "Dogu Demirkol",
+      "Murat Ozsoy"
+    ],
+    "imdbRating": 7.2,
+    "tmdbRating": 7.2,
+    "releaseDate": "2021-03-31",
+    "plot": "Created by and starring stand-up comedian Doğu Demirkol, this 2021 Turkish absurdist comedy-drama is loosely inspired by the creator's own life journey. The series follows Doğu—a young man who has struggled to find success in traditional paths, including failing to graduate from his computer engineering department for seven years. Despite facing intense pressure from his family to secure a \"stable\" job and start a family, Doğu remains stubbornly committed to his ultimate dream of becoming a professional comedian. Caught between a sister who constantly overshadows his achievements and parents who doubt his talent, he navigates a world of societal expectations and personal failures. With its sharp observational humor and self-aware narrative, the show portrays the relentless and often hilarious pursuit of ambition against all odds.",
+    "country": "Türkiye",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "H__JBBakBCU",
+    "backdrop": "",
+    "plotTr": "Ünlü stand-up sanatçısı Doğu Demirkol'un kendi hayatından esinlenerek hazırladığı bu absürt komedi-drama dizisi, hayatta hemen hemen hiçbir şeyi başaramamış bir gencin trajikomik hikayesini anlatır. 7 yıldır bitiremediği bilgisayar mühendisliği bölümüyle boğuşan Doğu, ailesinin ve çevresinin \"sigortalı bir işe gir, evlen\" baskılarına rağmen tek hayali olan komedyenliğin peşinden gider. Başarılarıyla kendisini ezen kız kardeşi, komedyen olabileceğine ihtimal vermeyen ailesi ve karamsar arkadaş çevresi arasında sıkışıp kalan Doğu, zekice gözlemleri ve kendine has mizahıyla hayallerini gerçekleştirmek için dur durak bilmeyen bir mücadele verir. Dizi, modern insanın başarı sancılarını ve bir hayalin peşinden gitmenin absürt zorluklarını samimi bir dille işler."
+  },
+  {
+    "imdbId": "tt29567915",
+    "title": "Nuremberg",
+    "originalTitle": "Nuremberg",
+    "year": 2025,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2026-07-12",
+    "listName": [],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWUzODNkYWUtMmMzOC00NzZjLTlkMTctOTkwM2I2ZWI1MTlmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+    "overview": "Bu yapım \"James Vanderbilt\" tarafından yönetilmiş 2025 yapımı bir Drama, History, Thriller, Biography, War eseridir. IMDb puanı 7.3 olarak kaydedilmiştir.",
+    "genres": [
+      "Drama",
+      "History",
+      "Thriller",
+      "Biography",
+      "War"
+    ],
+    "runtime": 148,
+    "cast": [
+      "Rami Malek",
+      "Russell Crowe",
+      "Michael Shannon"
+    ],
+    "director": "James Vanderbilt",
+    "writers": [
+      "James Vanderbilt",
+      "Jack El-Hai"
+    ],
+    "imdbRating": 7.3,
+    "tmdbRating": 7.3,
+    "releaseDate": "2025-11-07",
+    "plot": "Directed by James Vanderbilt and based on the book \"The Nazi and the Psychiatrist\" by Jack El-Hai, this 2025 historical drama explores the intense psychological confrontations during the post-WWII Nuremberg Trials. The story follows Douglas Kelley (Rami Malek), a young American psychiatrist tasked with evaluating the sanity of high-ranking Nazi prisoners to ensure they are fit for trial. Kelley becomes locked in a dramatic psychological duel with Hermann Göring (Russell Crowe), Hitler's manipulative second-in-command, as he attempts to unravel the mindset behind the atrocities of the Holocaust. As the trial proceeds under Chief Prosecutor Robert H. Jackson (Michael Shannon), the film delves deep into themes of justice, morality, and the complex anatomy of evil.",
+    "country": "United States",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "YWlCCVnZ4bo",
+    "backdrop": "",
+    "plotTr": "Jack El-Hai'nin \"Nazi ve Psikiyatrist\" adlı kitabından uyarlanan ve yönetmenliğini James Vanderbilt'in üstlendiği bu tarihi dram, İkinci Dünya Savaşı sonrası Nazi savaş suçlularının yargılandığı meşhur Nürnberg Mahkemeleri'nin perde arkasını konu alır. Genç Amerikalı psikiyatrist Douglas Kelley (Rami Malek), yargılanmayı bekleyen üst düzey Nazi mahkumlarının zihinsel durumlarını değerlendirmekle görevlendirilir. Kelley, özellikle Hitler'in sağ kolu Hermann Göring (Russell Crowe) ile girdiği yoğun psikolojik mücadelede, kötülüğün doğasını anlamaya çalışırken adaletin sınırları ve insan ruhunun karanlık yüzüyle yüzleşmek zorunda kalır. Film, tarihin en önemli davalarından birini, intikam yerine hukukun üstünlüğünü odağa alarak nesnel bir bakış açısıyla beyazperdeye taşır."
+  },
+  {
+    "imdbId": "tt1078940",
+    "title": "Couples Retreat",
+    "originalTitle": "Couples Retreat",
+    "year": 2009,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-12",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQxMjI1Nzc0M15BMl5BanBnXkFtZTcwMTc0Mzg2Mg@@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Peter Billingsley\" tarafından yönetilmiş 2009 yapımı bir Comedy eseridir. IMDb puanı 5.6 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy"
+    ],
+    "runtime": 113,
+    "cast": [
+      "Vince Vaughn",
+      "Malin Akerman",
+      "Jon Favreau"
+    ],
+    "director": "Peter Billingsley",
+    "writers": [
+      "Jon Favreau",
+      "Vince Vaughn",
+      "Dana Fox"
+    ],
+    "imdbRating": 5.6,
+    "tmdbRating": 5.6,
+    "releaseDate": "2009-10-09",
+    "plot": "Directed by Peter Billingsley and written by Jon Favreau and Vince Vaughn, Couples Retreat follows four Midwest couples who embark on a journey to a luxury tropical island resort called Eden. While one couple, Cynthia and Jason, is desperately there to work on their failing marriage, the other three couples mistakenly believe they can simply enjoy the sun, sea, and spa services without participating in the resort's rigorous program. They soon discover that participation in the \"mandatory therapy\" sessions conducted by the resort’s eccentric owner, Marcel (Jean Reno), is strictly required to remain on the island. What starts as a cut-rate vacation quickly turns into a series of comedic trials, including feeding lemon sharks and unconventional yoga, forcing each couple to examine their own relationship issues and inner tensions. As the island paradise tests their patience and loyalty, the friends must decide if their relationships are worth fighting for.",
+    "country": "United States",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "X4j_NTFos9c",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Peter Billingsley'in üstlendiği bu komedi filmi, evliliklerini kurtarmaya çalışan bir çiftin iknasıyla, tropik bir adadaki lüks Eden Resort'a grup indirimiyle giden dört arkadaş çiftin hikayesini anlatır. Başta her şeyin sadece güneşin ve eğlencenin tadını çıkarmak olduğunu düşünen diğer üç çift, adaya vardıklarında acı bir sürprizle karşılaşırlar: Tatil paketinin bir parçası olarak sunulan sıra dışı ve zorunlu ilişki terapisine katılmak mecburidir. Başlangıçta bu seanslara sadece tatilin diğer imkanlarından yararlanmak için katlanan çiftler, zamanla kendi ilişkilerindeki derin çatlaklarla ve gizli kalmış sorunlarla yüzleşmek zorunda kalırlar. Fransız Polinezyası'ndaki Bora Bora adasında çekilen film; köpekbalıklarıyla yüzme, tuhaf yoga seansları ve zorlayıcı grup egzersizleri eşliğinde, arkadaşlıkların ve evliliklerin dayanıklılığının test edildiği eğlenceli bir macera sunar."
+  },
+  {
+    "imdbId": "tt0492389",
+    "title": "Furry Vengeance",
+    "originalTitle": "Furry Vengeance",
+    "year": 2010,
+    "type": "Movie",
+    "myRating": 3,
+    "watchDate": "2026-07-12",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjM5Mzg5NjA0Nl5BMl5BanBnXkFtZTcwMjg3MDEyMw@@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Roger Kumble\" tarafından yönetilmiş 2010 yapımı bir Comedy, Family eseridir. IMDb puanı 3.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Family"
+    ],
+    "runtime": 92,
+    "cast": [
+      "Brendan Fraser",
+      "Brooke Shields",
+      "Ricky Garcia"
+    ],
+    "director": "Roger Kumble",
+    "writers": [
+      "Michael Carnes",
+      "Josh Gilbert"
+    ],
+    "imdbRating": 3.9,
+    "tmdbRating": 3.9,
+    "releaseDate": "2010-04-30",
+    "plot": "Directed by Roger Kumble, this 2010 live-action family comedy follows the story of Dan Sanders (Brendan Fraser), an ambitious real estate developer tasked with turning a pristine Oregon forest into a major residential subdivision. To advance his career, Dan relocates his urban family from Chicago to the wilderness, thinking his biggest challenge will be their adjustment to country life. However, when the local forest creatures discover that his latest project threatens their habitat, they launch an all-out battle against him. Led by an incredibly clever raccoon, the animals utilize specialized tactics and \"Rube Goldberg\" gadgetry to sabotage the construction and torment Dan in increasingly slapstick ways. As his wife (Brooke Shields) and son start to doubt his sanity because no one else witnesses these attacks, Dan must face the environmental consequences of his work and eventually find a way to protect the very nature he was sent to destroy.",
+    "country": "United States",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "FQAx4_So3UE",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Roger Kumble'ın üstlendiği 2010 yapımı bu aile komedisi, hırslı bir emlak geliştiricisi olan Dan Sanders'ın (Brendan Fraser), yeni bir konut projesi için Oregon'daki el değmemiş bir ormanlık alanı yerleşim yerine dönüştürmeye çalışmasını konu alır. Dan, patronunun talebiyle ailesini Chicago'dan bu uzak bölgeye taşır; ancak doğayı korumaya kararlı olan yerel orman hayvanları, yaşam alanlarının yok edilmesine karşı zekice bir intikam planı başlatır. Son derece akıllı bir rakunun liderliğindeki hayvanlar; kargalar, ayılar ve kunduzlarla iş birliği yaparak Dan'i çeşitli fiziksel şakalar ve sabote eylemleriyle bezdirirler. Dan'in karısı (Brooke Shields) ve oğlu, kimsenin göremediği bu saldırılar yüzünden onun akıl sağlığını yitirdiğini düşünürken; Dan, doğanın intikamıyla başa çıkmak ve kendi şirketiyle doğa arasında zorlu bir seçim yapmak zorunda kalır."
+  },
+  {
+    "imdbId": "tt2869728",
+    "title": "Ride Along 2",
+    "originalTitle": "Ride Along 2",
+    "year": 2016,
+    "type": "Movie",
+    "myRating": 4,
+    "watchDate": "2026-07-12",
+    "listName": [
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTU4ODAzMzcxOV5BMl5BanBnXkFtZTgwODkxMDI1NjE@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Tim Story\" tarafından yönetilmiş 2016 yapımı bir Comedy, Action, Crime eseridir. IMDb puanı 5.9 olarak kaydedilmiştir.",
+    "genres": [
+      "Comedy",
+      "Action",
+      "Crime"
+    ],
+    "runtime": 102,
+    "cast": [
+      "Ice Cube",
+      "Kevin Hart",
+      "Tika Sumpter"
+    ],
+    "director": "Tim Story",
+    "writers": [
+      "Greg Coolidge",
+      "Phil Hay",
+      "Matt Manfredi"
+    ],
+    "imdbRating": 5.9,
+    "tmdbRating": 5.9,
+    "releaseDate": "2016-01-15",
+    "plot": "Directed by Tim Story, Ride Along 2 is a 2016 action comedy that reunites the mismatched brothers-in-law for a new mission. Set about a year after their first adventure, rookie cop Ben Barber (Kevin Hart) is preparing for his upcoming wedding to Angela when he joins veteran detective James Payton (Ice Cube) on a lead in Miami. The duo aims to take down a powerful drug lord, Antonio Pope (Benjamin Bratt), who is supplying dealers in Atlanta. In Miami, they team up with a tough local homicide detective, Maya Cruz (Olivia Munn), and a cocky computer hacker named AJ (Ken Jeong) who holds evidence against Pope. As the investigation intensifies, Ben’s over-enthusiasm often complicates the operation, forcing James to balance his desire to crack the case with the need to keep his soon-to-be brother-in-law safe. The film blends high-speed action with slapstick comedy as the team navigates the vibrant streets of Miami to bring Pope to justice before Ben’s big day.",
+    "country": "United States",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "Eh0w35EiG_I",
+    "backdrop": "",
+    "plotTr": "2016 yapımı Ride Along 2, ilk maceradan yaklaşık bir yıl sonrasını konu alan bir aksiyon-komedi devam filmidir. Hikaye, düğün günü hızla yaklaşan çaylak polis Ben Barber'ın (Kevin Hart), müstakbel kayınbiraderi sert dedektif James Payton (Ice Cube) ile birlikte büyük bir davayı çözmek için Miami'ye gitmesini anlatır. Atlanta'daki uyuşturucu satıcılarını besleyen büyük bir ağın izini süren ikili, Miami'de sert bir dedektif olan Maya Cruz (Olivia Munn) ve kilit bilgilere sahip bilgisayar korsanı AJ (Ken Jeong) ile iş birliği yapar. Ekip, saygın bir iş adamı gibi görünen ancak aslında Güney Florida'nın uyuşturucu ticaretini acımasızca yöneten Antonio Pope'u (Benjamin Bratt) devirmek için tehlikeli ve komik olaylarla dolu bir mücadeleye girişir. Ben, bir yandan James'e iyi bir polis ve aile üyesi olduğunu kanıtlamaya çalışırken, diğer yandan kendi düğününü tehlikeye atmadan bu operasyonu tamamlamak zorundadır."
+  },
+  {
+    "imdbId": "tt7638348",
+    "title": "Boss Level",
+    "originalTitle": "Boss Level",
+    "year": 2020,
+    "type": "Movie",
+    "myRating": 6,
+    "watchDate": "2026-07-12",
+    "listName": [
+      "Bilim Kurgu",
+      "Komedi Günlükleri"
+    ],
+    "poster": "https://m.media-amazon.com/images/M/MV5BNThlODU1ZjAtMWZkOS00NDc4LWE5ZjYtZTk1NzYwZTdjMmJhXkEyXkFqcGc@._V1_SX300.jpg",
+    "overview": "Bu yapım \"Joe Carnahan\" tarafından yönetilmiş 2020 yapımı bir Thriller, Action, Adventure, Comedy, Mystery, Sci-Fi eseridir. IMDb puanı 6.8 olarak kaydedilmiştir.",
+    "genres": [
+      "Thriller",
+      "Action",
+      "Adventure",
+      "Comedy",
+      "Mystery",
+      "Sci-Fi"
+    ],
+    "runtime": 100,
+    "cast": [
+      "Frank Grillo",
+      "Mel Gibson",
+      "Naomi Watts"
+    ],
+    "director": "Joe Carnahan",
+    "writers": [
+      "Chris Borey",
+      "Eddie Borey",
+      "Joe Carnahan"
+    ],
+    "imdbRating": 6.8,
+    "tmdbRating": 6.8,
+    "releaseDate": "2021-03-05",
+    "plot": "Directed by Joe Carnahan, Boss Level follows the high-octane journey of Roy Pulver (Frank Grillo), a retired special forces officer who is trapped in a never-ending time loop that repeats the day of his murder. Every morning, Roy wakes up to assassins trying to kill him, and despite his best efforts, every day ends with his death at exactly 12:47 PM. To break the cycle and unlock the mystery behind his demise, Roy must uncover clues about a secret government project involving his ex-wife Jemma Wells (Naomi Watts) and track down the powerful Colonel Clive Ventor (Mel Gibson), who leads the program. Blending elements of arcade games, martial arts, and non-stop action, Roy evolves his tactics in each repeated scenario to save his family and finally live to see tomorrow.",
+    "country": "United States",
+    "omdbType": "",
+    "boxOffice": "",
+    "trailerYoutubeId": "2iwJAq8brq0",
+    "backdrop": "",
+    "plotTr": "Yönetmenliğini Joe Carnahan'ın üstlendiği Boss Level (Patron Seviyesi), emekli bir özel kuvvetler subayı olan Roy Pulver'ın (Frank Grillo), öldüğü günün sürekli tekrarlandığı sonsuz bir zaman döngüsüne hapsolmasını konu alır. Roy, her sabah yatağında bir suikastçının saldırısıyla uyanmakta ve günü her seferinde saat 12:47'de ölümüyle sonuçlanmaktadır. Bu ölümcül döngüden kurtulmak için Roy, eski eşi Jemma Wells'in (Naomi Watts) üzerinde çalıştığı gizli bir hükümet projesinin arkasındaki sırları çözmek ve bu programın başındaki güçlü Albay Clive Ventor'ı (Mel Gibson) durdurmak zorundadır. Atari oyunlarına ve dövüş sanatlarına pek çok gönderme barındıran film, Roy'un her seferinde biraz daha ileri giderek hem ailesini kurtarmaya hem de yarına ulaşmaya çalışırken verdiği dur durak bilmez aksiyon dolu mücadeleyi anlatır."
   }
 ]
