@@ -16,7 +16,7 @@ import {
   Library,
 } from 'lucide-react';
 
-const PAGE_SIZE = 25;
+const PAGE_SIZE = 30;
 
 type TabType = 'all' | 'movie' | 'tv' | 'other';
 
@@ -579,13 +579,13 @@ export default function MoviesPage() {
             type="button"
             onClick={() => setShowFilters((previous) => !previous)}
             className={`flex items-center gap-1.5 px-4 py-2.5 rounded-xl border text-sm font-semibold transition-all duration-300 ${showFilters ||
-                selectedGenre ||
-                selectedYear ||
-                minMyRating ||
-                minImdbRating ||
-                sortBy !== DEFAULT_SORT
-                ? 'bg-brand-primary/10 border-brand-primary/30 text-brand-primary'
-                : 'bg-zinc-900 border-white/5 text-zinc-400 hover:text-white'
+              selectedGenre ||
+              selectedYear ||
+              minMyRating ||
+              minImdbRating ||
+              sortBy !== DEFAULT_SORT
+              ? 'bg-brand-primary/10 border-brand-primary/30 text-brand-primary'
+              : 'bg-zinc-900 border-white/5 text-zinc-400 hover:text-white'
               }`}
           >
             <SlidersHorizontal className="w-4 h-4" />
@@ -597,8 +597,8 @@ export default function MoviesPage() {
               type="button"
               onClick={() => setViewMode('grid')}
               className={`p-2 rounded-lg transition-all ${viewMode === 'grid'
-                  ? 'bg-zinc-800 text-brand-primary shadow'
-                  : 'text-zinc-500 hover:text-zinc-300'
+                ? 'bg-zinc-800 text-brand-primary shadow'
+                : 'text-zinc-500 hover:text-zinc-300'
                 }`}
               aria-label="Izgara görünümü"
               title="Izgara görünümü"
@@ -610,8 +610,8 @@ export default function MoviesPage() {
               type="button"
               onClick={() => setViewMode('list')}
               className={`p-2 rounded-lg transition-all ${viewMode === 'list'
-                  ? 'bg-zinc-800 text-brand-primary shadow'
-                  : 'text-zinc-500 hover:text-zinc-300'
+                ? 'bg-zinc-800 text-brand-primary shadow'
+                : 'text-zinc-500 hover:text-zinc-300'
                 }`}
               aria-label="Liste görünümü"
               title="Liste görünümü"
@@ -635,8 +635,8 @@ export default function MoviesPage() {
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
               className={`relative flex items-center justify-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 ${active
-                  ? 'bg-brand-primary border border-brand-primary text-white shadow-[0_4px_15px_rgba(239,68,68,0.35)]'
-                  : 'bg-zinc-950/60 border border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-900'
+                ? 'bg-brand-primary border border-brand-primary text-white shadow-[0_4px_15px_rgba(239,68,68,0.35)]'
+                : 'bg-zinc-950/60 border border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-900'
                 }`}
             >
               {tab.icon}
@@ -644,8 +644,8 @@ export default function MoviesPage() {
 
               <span
                 className={`text-[10px] font-black px-1.5 py-0.5 rounded-md leading-none ${active
-                    ? 'bg-white/20 text-white'
-                    : 'bg-zinc-800 text-zinc-400'
+                  ? 'bg-white/20 text-white'
+                  : 'bg-zinc-800 text-zinc-400'
                   }`}
               >
                 {tabCounts[tab.key] ?? 0}

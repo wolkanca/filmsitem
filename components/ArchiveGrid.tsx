@@ -16,7 +16,7 @@ import {
 import { Movie } from '@/types';
 import MovieCard from '@/components/MovieCard';
 
-const PAGE_SIZE = 25;
+const PAGE_SIZE = 30;
 
 type SortOption =
   | 'year-desc'

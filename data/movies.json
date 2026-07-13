@@ -27222,12 +27222,15 @@
     "imdbRating": 7.3,
     "tmdbRating": 7.3,
     "releaseDate": "2006-06-09",
-    "trailerYoutubeId": "aGFJBGz5BmE",
+    "trailerYoutubeId": "SbXIj2T-_uk",
     "plot": "While traveling to California for the dispute of the final race of the Piston Cup against The King and Chick Hicks, the famous Lightning McQueen accidentally damages the road of the small town Radiator Springs and is sentenced to repair it. Lightning McQueen has to work hard and finds friendship and love in the simple locals, changing its values during his stay in the small town and becoming a true winner.",
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$244,082,982",
-    "plotTr": "Piston Kupası'nın The King ve Chick Hicks'e karşı son yarışı için California'ya giderken, ünlü Şimşek McQueen yanlışlıkla küçük Radiator Springs kasabasının yoluna zarar verir ve onu tamir etmeye mahkum edilir. Şimşek McQueen çok çalışmak zorunda kalır ve kasabada kaldığı süre boyunca basit yerel halk arasında arkadaşlık ve aşk bulur, değerlerini değiştirir ve gerçek bir kazanan olur."
+    "plotTr": "Piston Kupası'nın The King ve Chick Hicks'e karşı son yarışı için California'ya giderken, ünlü Şimşek McQueen yanlışlıkla küçük Radiator Springs kasabasının yoluna zarar verir ve onu tamir etmeye mahkum edilir. Şimşek McQueen çok çalışmak zorunda kalır ve kasabada kaldığı süre boyunca basit yerel halk arasında arkadaşlık ve aşk bulur, değerlerini değiştirir ve gerçek bir kazanan olur.",
+    "franchiseId": "cars",
+    "franchiseName": "Cars",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0348150",
@@ -37220,7 +37223,10 @@
     "country": "United States, Japan, India, United Kingdom, Australia",
     "omdbType": "movie",
     "boxOffice": "$191,452,396",
-    "plotTr": "Ünlü yarış arabası Şimşek McQueen ve ekibi, Dünya Grand Prix yarışına katılmaya davet edilir. Orada, McQueen'in en iyi arkadaşı Mater kendini uluslararası casusluğun içinde bulur ve iki profesyonel İngiliz casusla birlikte, gizemli bir beyin ve onun suç çetesi tarafından yönetilen, turnuvadaki tüm rakiplerin hayatlarını tehdit eden gizli bir planı ortaya çıkarmaya çalışır."
+    "plotTr": "Ünlü yarış arabası Şimşek McQueen ve ekibi, Dünya Grand Prix yarışına katılmaya davet edilir. Orada, McQueen'in en iyi arkadaşı Mater kendini uluslararası casusluğun içinde bulur ve iki profesyonel İngiliz casusla birlikte, gizemli bir beyin ve onun suç çetesi tarafından yönetilen, turnuvadaki tüm rakiplerin hayatlarını tehdit eden gizli bir planı ortaya çıkarmaya çalışır.",
+    "franchiseId": "cars",
+    "franchiseName": "Cars",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt1399103",
@@ -61886,7 +61892,7 @@
     "country": "Italy, Germany, France, Switzerland",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "IqFevMa_e8Q",
+    "trailerYoutubeId": "eNEtyax1wH8",
     "backdrop": "",
     "plotTr": "Küçük bir İtalyan köyü olan Inviolata, adeta feodalizmin hüküm sürdüğü eski bir çağda takılıp kalmıştır. Köydeki 50 kadar işçi, \"Tütün Kraliçesi\" olarak bilinen acımasız Markiz Alfonsina de Luna tarafından, mahsul paylaşımının yasaklandığından habersiz bir şekilde köle gibi çalıştırılmaktadır. Hikayenin merkezinde, o kadar iyi niyetli ve saf bir gençtir ki çevresi tarafından aptal yerine konan Lazzaro yer alır. Lazzaro, Markiz'in hayalperest oğlu Tancredi ile beklenmedik bir dostluk kurar ve onun kendi kaçırılma olayını tezgahlamasına yardım eder. Olayların gidişatı, polisin köydeki sömürüyü fark edip köylüleri şehre tahliye etmesiyle dramatik bir şekilde değişir. Yıllar sonra, hiç yaşlanmamış ve masumiyetini korumuş olan Lazzaro, Tancredi'yi bulmak için modern dünyanın \"kirli\" ve yabancı şehir hayatına doğru zamana meydan okuyan gizemli bir yolculuğa çıkar."
   },
