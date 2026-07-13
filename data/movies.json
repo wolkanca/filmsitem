@@ -22747,7 +22747,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$75,782,105",
-    "plotTr": "Chicago'nun güney yakasındaki bir berber dükkanının bir gününü anlatır. Ölen babasından zor durumdaki işi miras alan Calvin, dükkanı sadece bir yük ve zaman kaybı olarak görür. Dükkanı yerel bir tefeciye sattıktan sonra, Calvin yavaş yavaş babasının vizyonunu ve mirasını görmeye başlar ve onu satmış olma düşüncesiyle mücadele eder. Berber dükkanı, hikayelerini, şakalarını, denemelerini ve sıkıntılarını paylaşan karakterlerle doludur. Dükkanda, güçlü görüşlere sahip ve müşterisi olmayan yaşlı bir berber olan Eddie'yi buluruz. Jimmy, üstünlük kompleksi olan, yüksek eğitimli bir berberdir ve sadece saç kesmek isteyen yeni, beyaz berber Isaac'e tahammül edemez. Ricky, iki sabıkası olan eski bir mahkumdur ve umutsuzca doğru yolda kalmaya çalışmaktadır. Terri, aldatan erkek arkadaşını terk edemeyen sert mizaçlı bir kadındır. Ve son olarak, Terri'ye delicesine aşık olan ama karşılık bulamayan berber Dinka vardır."
+    "plotTr": "Chicago'nun güney yakasındaki bir berber dükkanının bir gününü anlatır. Ölen babasından zor durumdaki işi miras alan Calvin, dükkanı sadece bir yük ve zaman kaybı olarak görür. Dükkanı yerel bir tefeciye sattıktan sonra, Calvin yavaş yavaş babasının vizyonunu ve mirasını görmeye başlar ve onu satmış olma düşüncesiyle mücadele eder. Berber dükkanı, hikayelerini, şakalarını, denemelerini ve sıkıntılarını paylaşan karakterlerle doludur. Dükkanda, güçlü görüşlere sahip ve müşterisi olmayan yaşlı bir berber olan Eddie'yi buluruz. Jimmy, üstünlük kompleksi olan, yüksek eğitimli bir berberdir ve sadece saç kesmek isteyen yeni, beyaz berber Isaac'e tahammül edemez. Ricky, iki sabıkası olan eski bir mahkumdur ve umutsuzca doğru yolda kalmaya çalışmaktadır. Terri, aldatan erkek arkadaşını terk edemeyen sert mizaçlı bir kadındır. Ve son olarak, Terri'ye delicesine aşık olan ama karşılık bulamayan berber Dinka vardır.",
+    "franchiseId": "barbershop",
+    "franchiseName": "Barbershop",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0274812",
@@ -24413,7 +24416,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$65,111,277",
-    "plotTr": "Calvin'in Berber Dükkanı'ndaki berberlerin devam eden maceraları. Yan komşudaki güzellik salonunda stilist olan Gina, şimdi onun işine karışmaya çalışıyor. Calvin, bu kez küçük esnaf dükkanlarını markalı zincirlerle değiştirmek isteyen şehir planlamacılarına karşı babasının dükkanını ve geleneklerini yaşatmak için mücadele ediyor. Dünya değişir, ama bazı şeyler asla modası geçmez; güncel olaylardan siyasete, ilişkilerden aşka kadar, berber dükkanında hala istediğiniz her şeyi söyleyebilirsiniz."
+    "plotTr": "Calvin'in Berber Dükkanı'ndaki berberlerin devam eden maceraları. Yan komşudaki güzellik salonunda stilist olan Gina, şimdi onun işine karışmaya çalışıyor. Calvin, bu kez küçük esnaf dükkanlarını markalı zincirlerle değiştirmek isteyen şehir planlamacılarına karşı babasının dükkanını ve geleneklerini yaşatmak için mücadele ediyor. Dünya değişir, ama bazı şeyler asla modası geçmez; güncel olaylardan siyasete, ilişkilerden aşka kadar, berber dükkanında hala istediğiniz her şeyi söyleyebilirsiniz.",
+    "franchiseId": "barbershop",
+    "franchiseName": "Barbershop",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0421291",
@@ -54597,7 +54603,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$54,058,961",
-    "plotTr": "Calvin'in Berber Dükkanı'ndaki son randevumuzun üzerinden 10 yıldan fazla zaman geçti. Calvin ve uzun süredir birlikte çalıştığı ekibi hala oradadır, ancak dükkan bazı büyük değişiklikler geçirdi. En dikkat çekici olanı, bir zamanlar erkek egemen olan sığınağımız artık karma hale geldi. Kadınlar dükkana kendi renklerini, dramalarını ve dedikodularını getirerek erkekleri her fırsatta zorluyor. Dükkan içindeki güzel zamanlara ve dostluğa rağmen, çevredeki topluluk kötüye gitti ve Calvin ile ekibimizi sadece dükkanı değil, mahallelerini de kurtarmak için bir araya gelmeye zorladı."
+    "plotTr": "Calvin'in Berber Dükkanı'ndaki son randevumuzun üzerinden 10 yıldan fazla zaman geçti. Calvin ve uzun süredir birlikte çalıştığı ekibi hala oradadır, ancak dükkan bazı büyük değişiklikler geçirdi. En dikkat çekici olanı, bir zamanlar erkek egemen olan sığınağımız artık karma hale geldi. Kadınlar dükkana kendi renklerini, dramalarını ve dedikodularını getirerek erkekleri her fırsatta zorluyor. Dükkan içindeki güzel zamanlara ve dostluğa rağmen, çevredeki topluluk kötüye gitti ve Calvin ile ekibimizi sadece dükkanı değil, mahallelerini de kurtarmak için bir araya gelmeye zorladı.",
+    "franchiseId": "barbershop",
+    "franchiseName": "Barbershop",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt3040964",
