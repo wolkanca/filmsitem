@@ -40324,7 +40324,10 @@
     "country": "United States, United Kingdom, Canada",
     "omdbType": "movie",
     "boxOffice": "$48, 086, 903",
-    "plotTr": "Suç yazarı Ellison Oswalt, ailesini daha önce korkunç bir suçun işlendiği bir eve taşır, ancak ailesi bunu bilmemektedir. Bu suç hakkında bir kitap yazma umuduyla araştırmaya başlar. Oswalt, araştırmasına yardımcı olmak için evde bulduğu video görüntülerini inceler, ancak kısa süre sonra beklediğinden çok daha fazlasını keşfeder."
+    "plotTr": "Suç yazarı Ellison Oswalt, ailesini daha önce korkunç bir suçun işlendiği bir eve taşır, ancak ailesi bunu bilmemektedir. Bu suç hakkında bir kitap yazma umuduyla araştırmaya başlar. Oswalt, araştırmasına yardımcı olmak için evde bulduğu video görüntülerini inceler, ancak kısa süre sonra beklediğinden çok daha fazlasını keşfeder.",
+	"franchiseId": "sinister",
+    "franchiseName": "Sinister",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1024648",
@@ -46799,7 +46802,8 @@
     "plot": "Benjamin (TOM SCHILLING) is invisible, a nobody. This changes abruptly when he meets charismatic Max (ELYAS M’BAREK). Even though they couldn’t seem more different from the outside, they share the same interest: hacking. Together with Max’s friends, the impulsive Stephan (WOTAN WILKE MÖHRING) and paranoid Paul (ANTOINE MONOT), they form the subversive Hacker collective CLAY (CLOWNS LAUGHING @ YOU). CLAY provokes with fun campaigns and speaks for a whole generation. For the first time in his life, Benjamin is part of something and even the attractive Marie (HANNAH HERZSPRUNG) begins noticing him. But fun turns into deadly danger when CLAY appears on the BKA’s (Bundeskriminalamt, Federal Criminal Police Office) as well as Europol’s most wanted list. Hunted by Cybercrime investigator Hanne Lindberg (TRINE DYRHOLM), Benjamin is no longer a nobody, but instead one of the most wanted hackers in the world.",
     "country": "Germany",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+	"plotTr": "Benjamin (TOM SCHILLING) görünmez, önemsiz biridir. Karizmatik Max (ELYAS M’BAREK) ile tanıştığında bu durum birdenbire değişir. Dışarıdan bakıldığında birbirlerinden daha farklı olamazlar gibi görünseler de, aynı ilgi alanını paylaşıyorlar: hackleme. Max’in arkadaşları, dürtüsel Stephan (WOTAN WILKE MÖHRING) ve paranoyak Paul (ANTOINE MONOT) ile birlikte, yıkıcı hacker kolektifi CLAY’i (CLOWNS LAUGHING @ YOU) kurarlar. CLAY, eğlenceli kampanyalarla provokasyon yapar ve bütün bir neslin sesi olur. Benjamin hayatında ilk kez bir grubun parçası olur ve çekici Marie (HANNAH HERZSPRUNG) bile onu fark etmeye başlar. Ancak CLAY, BKA’nın (Bundeskriminalamt, Federal Kriminal Polis Teşkilatı) ve Europol’ün en çok arananlar listesine girdiğinde eğlence ölümcül bir tehlikeye dönüşür. Siber suçlar müfettişi Hanne Lindberg (TRINE DYRHOLM) tarafından takip edilen Benjamin, artık önemsiz biri değil, dünyanın en çok aranan hackerlarından biridir."
   },
   {
     "imdbId": "tt4240654",
@@ -46832,7 +46836,11 @@
     "plot": "Öznur is a young and beautiful woman. She has had a platonic love since childhood to Kudret, who is her cousin. Kudret, however, is married to a woman named Nisa and is very happy. Jealous, Öznur uses terrible black magic to change this so that she and Kudret will be together. However, she is not prepared for the evil that this spell unleashes.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "Öznur genç ve güzel bir kadındır. Çocukluğundan beri kuzeni Kudret’e platonik bir aşk beslemektedir. Ancak Kudret, Nisa adında bir kadınla evlidir ve çok mutludur. Kıskançlık içindeki Öznur, Kudret’le birlikte olabilmek için durumu değiştirmek amacıyla korkunç bir kara büyü yapar. Ancak bu büyünün ortaya çıkaracağı kötülüğe hazırlıklı değildir.",
+	"plotTr": "",
+	"franchiseId": "siccin",
+    "franchiseName": "Siccin",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0455944",
@@ -49580,7 +49588,10 @@
     "country": "United States, China, Japan, Canada, United Arab Emirates",
     "omdbType": "movie",
     "boxOffice": "$353, 007, 020",
-    "plotTr": "Dominic ve ekibi, suçlu paralı asker hayatını geride bıraktıklarını düşünmüşlerdi. Uluslararası terörist Owen Shaw’ı yenmiş ve yollarına ayrılmışlardı. Ancak şimdi, Shaw’ın kardeşi Deckard Shaw, intikam almak için ekibi tek tek öldürmektedir. Daha da kötüsü, Jakarde adında Somalili bir terörist ve “Bay Hiçkimse” adında gölgeli bir hükümet yetkilisi, herhangi bir teknolojik cihazı silaha dönüştürebilen “Tanrı’nın Gözü” adlı bir bilgisayar terör programını çalmak için yarışmaktadır. Torretto, terörist ve Amerika Birleşik Devletleri hükümeti arasındaki bir güç mücadelesinin ortasında kalmışken, Shaw’ı durdurmak ve Tanrı’nın Gözü programını geri almak için ekibiyle yeniden bir araya gelmelidir."
+    "plotTr": "Dominic ve ekibi, suçlu paralı asker hayatını geride bıraktıklarını düşünmüşlerdi. Uluslararası terörist Owen Shaw’ı yenmiş ve yollarına ayrılmışlardı. Ancak şimdi, Shaw’ın kardeşi Deckard Shaw, intikam almak için ekibi tek tek öldürmektedir. Daha da kötüsü, Jakarde adında Somalili bir terörist ve “Bay Hiçkimse” adında gölgeli bir hükümet yetkilisi, herhangi bir teknolojik cihazı silaha dönüştürebilen “Tanrı’nın Gözü” adlı bir bilgisayar terör programını çalmak için yarışmaktadır. Torretto, terörist ve Amerika Birleşik Devletleri hükümeti arasındaki bir güç mücadelesinin ortasında kalmışken, Shaw’ı durdurmak ve Tanrı’nın Gözü programını geri almak için ekibiyle yeniden bir araya gelmelidir.",
+	"franchiseId": "hizli-ve-ofkeli",
+    "franchiseName": "Hızlı ve Öfkeli",
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt11650374",
@@ -50987,7 +50998,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Bir kadın, cinlerin dolabı üzerine devirmesi sonucu küçük çocuğunun ezilerek öldüğünü öğrenir. Bunun bir tesadüf ya da ölüm kalım meselesi olmadığını, aksine ailelerini avlamak için kötü niyetli bir kara büyünün yapıldığını fark eder."
+    "plotTr": "Bir kadın, cinlerin dolabı üzerine devirmesi sonucu küçük çocuğunun ezilerek öldüğünü öğrenir. Bunun bir tesadüf ya da ölüm kalım meselesi olmadığını, aksine ailelerini avlamak için kötü niyetli bir kara büyünün yapıldığını fark eder.",
+	"franchiseId": "siccin",
+    "franchiseName": "Siccin",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0478970",
@@ -51439,7 +51453,10 @@
     "country": "United Kingdom, Canada, United States",
     "omdbType": "movie",
     "boxOffice": "$27, 740, 955",
-    "plotTr": "Ellison Oswait’in yaşadığı bir mısır tarlasının yakınındaki bir çiftlik evinde, Dylan adında bir çocuk kabuslar görür ve Milo adında bir çocuğun liderliğindeki hayalet çocuklar tarafından ziyaret edilir. Dylan, tacizci kocasını yeni terk etmiş annesi Courtney Collins ve kardeşi Zach ile yaşar ve hayaletler tarafından bodrum katına giderek katledilen ailelerin Super 8 ev filmlerini izlemeye zorlanır. Eski Yardımcı Şerif So &amp; So, Bughuul’un suç dalgasını araştırır ve diğer aileleri korumak için ölen ailelerin yaşadığı evleri yakar. Çiftlik evine gider ve orada Courtney ile oğullarını bulur. Kendisinin özel dedektif olduğunu söyler ve çocukları yanında tutmak isteyen eski kocasının blöfüne karşı Courtney’i korur. Ardından Courtney ile bir aşk ilişkisine başlar. Bu arada Dylan, hayaletlere bir daha video izlemeyeceğini söyler ama hayaletlerin gerçek seçimi olan Zach onun yerini alır. Babaları çocukların velayetini almak için mahkeme kararı çıkarmayı başardığında, Courtney çocuklarla birlikte gitmek zorunda kalır. Collins ailesine ne olacak?"
+    "plotTr": "Ellison Oswait’in yaşadığı bir mısır tarlasının yakınındaki bir çiftlik evinde, Dylan adında bir çocuk kabuslar görür ve Milo adında bir çocuğun liderliğindeki hayalet çocuklar tarafından ziyaret edilir. Dylan, tacizci kocasını yeni terk etmiş annesi Courtney Collins ve kardeşi Zach ile yaşar ve hayaletler tarafından bodrum katına giderek katledilen ailelerin Super 8 ev filmlerini izlemeye zorlanır. Eski Yardımcı Şerif So &amp; So, Bughuul’un suç dalgasını araştırır ve diğer aileleri korumak için ölen ailelerin yaşadığı evleri yakar. Çiftlik evine gider ve orada Courtney ile oğullarını bulur. Kendisinin özel dedektif olduğunu söyler ve çocukları yanında tutmak isteyen eski kocasının blöfüne karşı Courtney’i korur. Ardından Courtney ile bir aşk ilişkisine başlar. Bu arada Dylan, hayaletlere bir daha video izlemeyeceğini söyler ama hayaletlerin gerçek seçimi olan Zach onun yerini alır. Babaları çocukların velayetini almak için mahkeme kararı çıkarmayı başardığında, Courtney çocuklarla birlikte gitmek zorunda kalır. Collins ailesine ne olacak?",
+	"franchiseId": "sinister",
+    "franchiseName": "Sinister",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt2679042",
@@ -56375,7 +56392,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Sedat ve Kahder kardeşler, çocukluk arkadaşları Orhan ile mutlu bir hayat sürerler. Üçlünün akrabalığı, Orhan ve Kahder’in kutsal bir evlilikle birleşmesiyle daha da güçlenir. Ancak, kardeşler kaderin cilvesi bir kazaya karıştığında, Orhan’ın akıl sağlığını kurtarmak için şeytanla bir anlaşma yapma konusundaki çaresiz girişimiyle inancı sınanır, hepsi aşk adına."
+    "plotTr": "Sedat ve Kahder kardeşler, çocukluk arkadaşları Orhan ile mutlu bir hayat sürerler. Üçlünün akrabalığı, Orhan ve Kahder’in kutsal bir evlilikle birleşmesiyle daha da güçlenir. Ancak, kardeşler kaderin cilvesi bir kazaya karıştığında, Orhan’ın akıl sağlığını kurtarmak için şeytanla bir anlaşma yapma konusundaki çaresiz girişimiyle inancı sınanır, hepsi aşk adına.",
+	"franchiseId": "siccin",
+    "franchiseName": "Siccin",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt4572820",
@@ -59067,7 +59087,10 @@
     "country": "United States, China, Japan, Mexico",
     "omdbType": "movie",
     "boxOffice": "$226, 008, 385",
-    "plotTr": "Dominic Toretto (Vin Diesel) ve Letty Ortiz (Michelle Rodriguez) balayındayken, Brian (Paul Walker) ve Mia (Jordana Brewster) oyundan çekilmişken ve ekibin geri kalanı aklanmışken, dünyayı dolaşan ekip normal bir hayatın izini bulmuştur. Ancak gizemli bir kadın Dom’u kaçamayacağı bir suç dünyasına sürüklediğinde ve en yakınındakilerin ihanetiyle karşılaştığında, daha önce hiç olmadığı kadar onları sınayacak zorluklarla yüzleşecekler. Küba kıyılarından New York City sokaklarına, Arktik Barents Denizi’nin buzlu ovalarına kadar, seçkin ekip, bir anarşistin dünya sahnesinde kaos yaratmasını durdurmak ve onları bir aile yapan adamı eve geri getirmek için dünyayı dolaşacaktır."
+    "plotTr": "Dominic Toretto (Vin Diesel) ve Letty Ortiz (Michelle Rodriguez) balayındayken, Brian (Paul Walker) ve Mia (Jordana Brewster) oyundan çekilmişken ve ekibin geri kalanı aklanmışken, dünyayı dolaşan ekip normal bir hayatın izini bulmuştur. Ancak gizemli bir kadın Dom’u kaçamayacağı bir suç dünyasına sürüklediğinde ve en yakınındakilerin ihanetiyle karşılaştığında, daha önce hiç olmadığı kadar onları sınayacak zorluklarla yüzleşecekler. Küba kıyılarından New York City sokaklarına, Arktik Barents Denizi’nin buzlu ovalarına kadar, seçkin ekip, bir anarşistin dünya sahnesinde kaos yaratmasını durdurmak ve onları bir aile yapan adamı eve geri getirmek için dünyayı dolaşacaktır.",
+	"franchiseId": "hizli-ve-ofkeli",
+    "franchiseName": "Hızlı ve Öfkeli",
+    "franchiseOrder": 6
   },
   {
     "imdbId": "tt6468322",
@@ -66438,7 +66461,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Maddi sıkıntılar nedeniyle Yılmaz ailesi, büyükanneleri Saadet’in evine taşınır. Ancak Saadet bilindiği gibi yalnız yaşamamaktadır. Merhum kocasının mezarı olan Saadet’in eski evi, başka bir boyuttan gelen varlıklara ev sahipliği yapmaktadır. Ve bu varlıklar evde kimseyi istemez, sadece Saadet’i."
+    "plotTr": "Maddi sıkıntılar nedeniyle Yılmaz ailesi, büyükanneleri Saadet’in evine taşınır. Ancak Saadet bilindiği gibi yalnız yaşamamaktadır. Merhum kocasının mezarı olan Saadet’in eski evi, başka bir boyuttan gelen varlıklara ev sahipliği yapmaktadır. Ve bu varlıklar evde kimseyi istemez, sadece Saadet’i.",
+	"franchiseId": "siccin",
+    "franchiseName": "Siccin",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt1396484",
@@ -70289,7 +70315,7 @@
     "boxOffice": "$173, 956, 935",
     "franchiseId": "hizli-ve-ofkeli",
     "franchiseName": "Hızlı ve Öfkeli",
-    "franchiseOrder": 5
+    "franchiseOrder": 7
   },
   {
     "imdbId": "tt3009772",
