@@ -20719,7 +20719,7 @@
     "omdbType": "movie",
     "boxOffice": "$187,705,427",
     "plotTr": "Maximus, halk tarafından ve yaşlı İmparator Marcus Aurelius tarafından sevilen güçlü bir Roma generalidir. Ölümünden önce İmparator, kendi oğlu Commodus yerine Maximus'u varisi olarak seçer ve bir güç mücadelesi Maximus ile ailesinin ölüme mahkum edilmesine neden olur. Güçlü general yakalanır ve ölene kadar Gladyatör oyunlarına atılır. Onu şimdi besleyen tek arzu, intikamını hissedecek adamın gözlerinin içine bakabilmek için zirveye çıkma şansıdır.",
-	"franchiseId": "gladiator",
+    "franchiseId": "gladiator",
     "franchiseName": "Gladiator",
     "franchiseOrder": 1
   },
@@ -75811,7 +75811,10 @@
     "plot": "In the early years of the 20th century, the Kingsman agency is formed to stand against a cabal plotting a war to wipe out millions of people.",
     "country": "United Kingdom, United States",
     "omdbType": "movie",
-    "boxOffice": "$37,176,373"
+    "boxOffice": "$37,176,373",
+    "franchiseId": "kingsman",
+    "franchiseName": "Kingsman",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt11286314",
@@ -80236,8 +80239,8 @@
     "country": "United Kingdom, United States",
     "omdbType": "movie",
     "boxOffice": "$172,438,016",
-	"plotTr": "Roma, M.S. 209 civarı. “Gladiator” (2000) filminde İmparator Marcus Aurelius ve Maximus Decimus Meridius’un ölümünden on altı yıl sonra, Roma İmparatorluğu artık zalim imparatorlar Caracalla ve Geta tarafından yönetilmektedir. Gerilim tırmanırken, esir alınmış bir Numidyalı lider gladyatör olarak şehre gelir ve sadakatleri sınamaya başlar. Kim olduğu kimse tarafından bilinmemektedir, ancak Cumhuriyeti tehdit eden sinsi entrikalar karşısında, bu mütevazı savunucu Roma’yı eski ihtişamına kavuşturabilecek mi?",
-	"franchiseId": "gladiator",
+    "plotTr": "Roma, M.S. 209 civarı. “Gladiator” (2000) filminde İmparator Marcus Aurelius ve Maximus Decimus Meridius’un ölümünden on altı yıl sonra, Roma İmparatorluğu artık zalim imparatorlar Caracalla ve Geta tarafından yönetilmektedir. Gerilim tırmanırken, esir alınmış bir Numidyalı lider gladyatör olarak şehre gelir ve sadakatleri sınamaya başlar. Kim olduğu kimse tarafından bilinmemektedir, ancak Cumhuriyeti tehdit eden sinsi entrikalar karşısında, bu mütevazı savunucu Roma’yı eski ihtişamına kavuşturabilecek mi?",
+    "franchiseId": "gladiator",
     "franchiseName": "Gladiator",
     "franchiseOrder": 2
   },
