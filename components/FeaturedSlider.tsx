@@ -87,7 +87,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
               <div className="flex h-full w-full items-center justify-center">🎬</div>
             )}
           </div>
-          <div className="flex-grow space-y-4 text-center md:text-left flex flex-col justify-between h-full">
+          <div className="flex-grow space-y-4 text-center md:text-left flex flex-col justify-between h-full max-h-[300px]">
             <div className="space-y-1">
               <span className="text-[10px] bg-brand-primary/10 text-brand-primary border border-brand-primary/20 px-2 py-0.5 rounded-md font-semibold">
                 GÜNÜN ÖNERİSİ {currentIndex + 1}/{movies.length}
@@ -127,7 +127,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
 
         {/* Right side: Trailer Player */}
         {currentMovie.trailerYoutubeId && (
-          <div className="lg:col-span-5 w-full flex flex-col justify-center">
+          <div className="lg:col-span-5 w-full flex flex-col pt-4 my-2">
             <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/5 shadow-lg bg-black">
               <iframe
                 src={`https://www.youtube.com/embed/${currentMovie.trailerYoutubeId}?autoplay=0&rel=0`}
@@ -165,7 +165,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-brand-primary w-6' : 'bg-zinc-700 hover:bg-zinc-500'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentIndex ? 'bg-brand-primary w-8' : 'bg-zinc-700 hover:bg-zinc-500'
               }`}
             aria-label={`Go to slide ${index + 1}`}
           />
