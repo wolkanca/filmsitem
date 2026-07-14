@@ -35215,7 +35215,8 @@
     "plot": "Veteran homicide cop Ferman (Sener Sen) and his hot-headed partner Ydris (Cem Yilmaz) team up with rookie cop and anthropology major Hasan (Okan Yalabik) to investigate the murder of a young woman. The suspects include her conservative family, who might have killed her for honor, her drug-dealing boyfriend and aged billionaire Battal (Çetin Tekindor) who had taken the victim as his second wife.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Deneyimli cinayet masası polisi Ferman (Sener Sen) ve ateşli ortağı Ydris (Cem Yılmaz), genç bir kadının cinayetini soruşturmak üzere antropoloji bölümü mezunu çaylak polis Hasan (Okan Yalabık) ile güçlerini birleştirir. Şüpheliler arasında, onu namus cinayeti nedeniyle öldürmüş olabilecek muhafazakar ailesi, uyuşturucu satıcısı erkek arkadaşı ve kurbanı ikinci eşi olarak evine alan yaşlı milyarder Battal (Çetin Tekindor) yer alıyor."
   },
   {
     "imdbId": "tt1243957",
@@ -67452,7 +67453,8 @@
     "plot": "After 8 years, Arif's old friend 216 from planet GORA pays a visit to Earth.Together they go on a quest where they'll be visiting 60's.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "8 yıl sonra, Arif’in GORA gezegeninden eski dostu 216, Dünya’ya bir ziyaret gerçekleştirir. İkili birlikte, 60’lı yıllara yolculuk yapacakları bir maceraya atılırlar."
   },
   {
     "imdbId": "tt7748244",
@@ -71984,7 +71986,11 @@
     "plot": "A mysterious place, an indescribable prison, a deep hole. An unknown number of levels. Two inmates living on each level. A descending platform containing food for all of them. An inhuman fight for survival, but also an opportunity for solidarity.",
     "country": "Spain",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "Gizemli bir yer, tarif edilemez bir hapishane, derin bir çukur. Kaç kat olduğu bilinmeyen bir yapı. Her katta yaşayan iki mahkum. Hepsine yetecek kadar yiyecek taşıyan, aşağıya inen bir platform. Hayatta kalmak için insanlık dışı bir mücadele, ama aynı zamanda dayanışma için bir fırsat.",
+    "plotTr": "",
+    "franchiseId": "the-platfrom",
+    "franchiseName": "The Platfrom",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt8456098",
@@ -72021,6 +72027,7 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
+    "plotTr": "Uzun süredir İstanbul’da bir feribotta mürettebat olarak çalışan Metin Arıcı, aynı araçta 6 yıldır yaşıyor. Bir gün, feribot personelinin çalışma koşullarını değerlendirmek üzere bir muhabir onları ziyaret eder. Metin’in arkadaşlarının ona taktığı isimle Ayzek, hiç aklına gelmemiş bir şeyden duyduğu korku yüzünden kendini karmaşık bir durumda bulur. Ardından iş hayatındaki her şey gerginleşir ve Ayzek’in yüzündeki gülümseme kaybolur. Bu olayların ne zaman sona ereceğini bilmez, ancak bu süreçte kendisiyle ilgili gerçeği keşfeder...",
     "franchiseId": "karakomik-filmler",
     "franchiseName": "KaraKomik Filmler",
     "franchiseOrder": 1
@@ -72221,7 +72228,8 @@
     "plot": "A group of siblings that share nothing but a father come together after the patriarch's death to compete for his fortune. He left a save for his children, but took the password to the grave with him.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Bir babadan başka hiçbir ortak noktası olmayan bir grup kardeş, ailenin reisinin ölümünün ardından bir araya gelerek onun mirası için rekabet etmeye başlar. Baba, çocukları için bir kasa bırakmış, ancak şifreyi mezara götürmüştür."
   },
   {
     "imdbId": "tt6673612",
@@ -72381,6 +72389,7 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
+    "plotTr": "Karakomik Filmler’in devam filminin ikinci bölümü olan Emanet, şöhret hayali kuran amatör bir dansçıyı konu alıyor. Bu hayali gerçekleştirmek için televizyondaki bir yetenek yarışmasında yeteneklerini sergilemeye çalışıyor.",
     "franchiseId": "karakomik-filmler",
     "franchiseName": "KaraKomik Filmler",
     "franchiseOrder": 4
@@ -76011,10 +76020,11 @@
     "tmdbRating": 6.6,
     "releaseDate": "2021-12-31",
     "trailerYoutubeId": "iJAOtXfNFL4",
-    "plot": "Famous comedian Cem Yilmaz tells stories about social media, Turkish holidays abroad and his own childhood in this satirical and candid stand-up show",
+    "plot": "Famous comedian Cem Yilmaz tells stories about social media, Turkish holidays abroad and his own childhood in this satirical and candid stand-up show.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Ünlü komedyen Cem Yılmaz, bu hiciv dolu ve samimi stand-up gösterisinde sosyal medya, yurtdışındaki Türk bayramları ve kendi çocukluğu hakkında hikayeler anlatıyor."
   },
   {
     "imdbId": "tt15399512",
@@ -76714,7 +76724,8 @@
     "plot": "Depiction of the life of Ersan Kuneri. An ex-pornographic actor turned filmmaker in 1980s Türkiye.",
     "country": "Türkiye",
     "omdbType": "series",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Ersan Kuneri’nin hayatının anlatımı. 1980’lerin Türkiye’sinde porno oyuncusuyken sinemacıya dönüşen bir kişi."
   },
   {
     "imdbId": "tt1745960",
@@ -79027,7 +79038,8 @@
     "plot": "Ayzek, who has been a waiter on ferries for years, becomes unemployed due to the pandemic and eventually finds a job at a hotel on the night shift. However, who knows what will happen to Ayzek on his first night.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Yıllardır feribotlarda garsonluk yapan Ayzek, salgın nedeniyle işsiz kalır ve sonunda bir otelde gece vardiyasında iş bulur. Ancak, Ayzek’in ilk gecesinde başına ne geleceğini kim bilebilir?"
   },
   {
     "imdbId": "tt11858890",
@@ -80085,7 +80097,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "backdrop": "",
-    "plotTr": "Dikey hücrelerden oluşan acımasız bir hapishane sisteminde, gizemli bir lider kendi katı kanunlarını dayatmaktadır. Sisteme göre her mahkûm, girişte seçtiği tek bir yemeği yeme hakkına sahiptir; böylece yiyeceklerin tüm katlara adil bir şekilde ulaşması hedeflenir. Ancak bu düzene uymayanlar ağır şekilde cezalandırılır. Perempuán adında yeni gelen bir kadın, bu şaibeli ve baskıcı yiyecek dağıtım yöntemine karşı hayatta kalma mücadelesi verirken, dayanışmanın ve insan doğasının sınırlarıyla yüzleşir. Film, adaletsizlik, sosyal hiyerarşi ve sisteme direniş temalarını işleyen karanlık bir yolculuk sunar."
+    "plotTr": "Dikey hücrelerden oluşan acımasız bir hapishane sisteminde, gizemli bir lider kendi katı kanunlarını dayatmaktadır. Sisteme göre her mahkûm, girişte seçtiği tek bir yemeği yeme hakkına sahiptir; böylece yiyeceklerin tüm katlara adil bir şekilde ulaşması hedeflenir. Ancak bu düzene uymayanlar ağır şekilde cezalandırılır. Perempuán adında yeni gelen bir kadın, bu şaibeli ve baskıcı yiyecek dağıtım yöntemine karşı hayatta kalma mücadelesi verirken, dayanışmanın ve insan doğasının sınırlarıyla yüzleşir. Film, adaletsizlik, sosyal hiyerarşi ve sisteme direniş temalarını işleyen karanlık bir yolculuk sunar.",
+    "franchiseId": "the-platfrom",
+    "franchiseName": "The Platfrom",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt14948432",
