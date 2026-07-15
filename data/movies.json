@@ -21444,7 +21444,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Film, 1974 yılında Güneydoğu Anadolu’da küçük bir köye televizyonun gelişini konu alır. Trajikomik bir dil kullanarak, köyün delisi Emin ile köyün belediye başkanı Nazmi’nin çabalarını anlatır. Emin ve Nazmi, köylerinde televizyon yayınını başlatmaya çalışır ve bu süreçte çeşitli zorluklarla karşılaşırlar."
+    "plotTr": "Film, 1974 yılında Güneydoğu Anadolu’da küçük bir köye televizyonun gelişini konu alır. Trajikomik bir dil kullanarak, köyün delisi Emin ile köyün belediye başkanı Nazmi’nin çabalarını anlatır. Emin ve Nazmi, köylerinde televizyon yayınını başlatmaya çalışır ve bu süreçte çeşitli zorluklarla karşılaşırlar.",
+    "franchiseId": "vizontele",
+    "franchiseName": "Vizontele",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0212985",
@@ -23276,7 +23279,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "backdrop": "",
-    "plotTr": "Hikâye, 1980 yılının yaz aylarında, Güneydoğu Anadolu’da her şeyin ve herkesin uzağında küçük bir kasabada geçer. Tüm ülke siyasi bir kaosun ve şiddetin içindeyken, bu “anarşik” atmosfer kasabaya kendine özgü bir biçimde yansır. Kasabaya, kütüphanesi olmamasına rağmen kütüphaneci olarak atanan Güner Sernikli, eşi Aysel ve tekerlekli sandalyedeki kızı Tuba gelir. Sernikli ailesi kasaba halkı tarafından sıcak bir şekilde karşılanır; özellikle Deli Emin, Tuba’dan çok etkilenir. Film, kasaba halkının televizyonla (vizontele) imtihanını sürdürürken, 1980 askeri darbesinin bu ücra kasabadaki etkilerini mizahi ve dramatik bir dille anlatır."
+    "plotTr": "Hikâye, 1980 yılının yaz aylarında, Güneydoğu Anadolu’da her şeyin ve herkesin uzağında küçük bir kasabada geçer. Tüm ülke siyasi bir kaosun ve şiddetin içindeyken, bu “anarşik” atmosfer kasabaya kendine özgü bir biçimde yansır. Kasabaya, kütüphanesi olmamasına rağmen kütüphaneci olarak atanan Güner Sernikli, eşi Aysel ve tekerlekli sandalyedeki kızı Tuba gelir. Sernikli ailesi kasaba halkı tarafından sıcak bir şekilde karşılanır; özellikle Deli Emin, Tuba’dan çok etkilenir. Film, kasaba halkının televizyonla (vizontele) imtihanını sürdürürken, 1980 askeri darbesinin bu ücra kasabadaki etkilerini mizahi ve dramatik bir dille anlatır.",
+    "franchiseId": "vizontele",
+    "franchiseName": "Vizontele",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0352791",
