@@ -518,9 +518,14 @@ export default function MovieDetailClient({
                     <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Senaristler</h3>
                     <div className="flex flex-wrap gap-1.5">
                       {Array.from(new Set(movie.writers)).map((w, idx) => (
-                        <span key={`${w}-${idx}`} className="bg-zinc-900 border border-white/5 text-zinc-300 px-2.5 py-1 rounded-lg text-xs font-medium">
+                        <Link
+                          key={`${w}-${idx}`}
+                          href={`/writer/${encodeURIComponent(w)}`}
+                          className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-rose/40 hover:bg-brand-rose/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
+                        >
+                          <Pencil className="w-3.5 h-3.5 text-brand-rose" />
                           {w}
-                        </span>
+                        </Link>
                       ))}
                     </div>
                   </div>

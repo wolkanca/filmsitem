@@ -1,7 +1,7 @@
 import { getMovies } from '@/lib/db';
 import ArchiveGrid from '@/components/ArchiveGrid';
 import Link from 'next/link';
-import { ArrowLeft, Film, Clock, Star, User } from 'lucide-react';
+import { ArrowLeft, Film, Clock, Star, User, Pencil } from 'lucide-react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
   return {
-    title: `${decodedName} Filmleri`,
+    title: `${decodedName} Senaryosunu Yazdığı Filmler`,
     description: `Kütüphanemdeki senarist ${decodedName} tarafından yazılmış filmler, incelemelerim ve kişisel puanlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
   };
 }
@@ -41,6 +41,17 @@ export default async function WriterPage({ params }: Props) {
   if (filteredMovies.length === 0) {
     notFound();
   }
+
+  // Check other roles and count
+  const actorMoviesCount = movies.filter((m) => {
+    if (!m.cast) return false;
+    return m.cast.some((c) => c.toLowerCase() === decodedName.toLowerCase());
+  }).length;
+
+  const directorMoviesCount = movies.filter((m) => {
+    if (!m.director) return false;
+    return m.director.split(',').map((d) => d.trim().toLowerCase()).includes(decodedName.toLowerCase());
+  }).length;
 
   // Calculate statistics
   const totalCount = filteredMovies.length;
@@ -75,6 +86,29 @@ export default async function WriterPage({ params }: Props) {
             <p className="text-zinc-500 text-sm mt-1">
               Bu senaristin yazdığı toplam {totalCount} yapım izlediniz.
             </p>
+            {(actorMoviesCount > 0 || directorMoviesCount > 0) && (
+              <div className="flex flex-wrap gap-2 mt-4">
+                <span className="text-xs font-semibold text-zinc-500 self-center mr-1">Diğer Sayfaları:</span>
+                {actorMoviesCount > 0 && (
+                  <Link
+                    href={`/actor/${encodeURIComponent(decodedName)}`}
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                  >
+                    <User className="w-3.5 h-3.5" />
+                    Oyuncu ({actorMoviesCount})
+                  </Link>
+                )}
+                {directorMoviesCount > 0 && (
+                  <Link
+                    href={`/director/${encodeURIComponent(decodedName)}`}
+                    className="flex items-center gap-1.5 bg-brand-primary/10 border border-brand-primary/20 hover:border-brand-primary/40 hover:bg-brand-primary/20 text-brand-primary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                  >
+                    <Film className="w-3.5 h-3.5" />
+                    Yönetmen ({directorMoviesCount})
+                  </Link>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Key Stats Cards */}
