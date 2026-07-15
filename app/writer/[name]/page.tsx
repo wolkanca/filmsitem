@@ -98,7 +98,7 @@ export default async function WriterPage({ params }: Props) {
                 {actorMoviesCount > 0 && (
                   <Link
                     href={`/actor/${encodeURIComponent(decodedName)}`}
-                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 text-zinc-400 hover:text-white border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
                   >
                     <User className="w-3.5 h-3.5" />
                     Oyuncu ({actorMoviesCount})
@@ -107,7 +107,7 @@ export default async function WriterPage({ params }: Props) {
                 {directorMoviesCount > 0 && (
                   <Link
                     href={`/director/${encodeURIComponent(decodedName)}`}
-                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 text-zinc-400 hover:text-white border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
                   >
                     <Film className="w-3.5 h-3.5" />
                     Yönetmen ({directorMoviesCount})
@@ -116,7 +116,7 @@ export default async function WriterPage({ params }: Props) {
                 {writerMoviesCount > 0 && (
                   <Link
                     href={`/writer/${encodeURIComponent(decodedName)}`}
-                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 text-white/80 hover:text-white border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
                   >
                     <Pencil className="w-3.5 h-3.5" />
                     Senarist ({writerMoviesCount})
