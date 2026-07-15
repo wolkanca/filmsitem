@@ -40325,7 +40325,7 @@
     "omdbType": "movie",
     "boxOffice": "$48, 086, 903",
     "plotTr": "Suç yazarı Ellison Oswalt, ailesini daha önce korkunç bir suçun işlendiği bir eve taşır, ancak ailesi bunu bilmemektedir. Bu suç hakkında bir kitap yazma umuduyla araştırmaya başlar. Oswalt, araştırmasına yardımcı olmak için evde bulduğu video görüntülerini inceler, ancak kısa süre sonra beklediğinden çok daha fazlasını keşfeder.",
-	"franchiseId": "sinister",
+    "franchiseId": "sinister",
     "franchiseName": "Sinister",
     "franchiseOrder": 1
   },
@@ -46803,7 +46803,7 @@
     "country": "Germany",
     "omdbType": "movie",
     "boxOffice": "",
-	"plotTr": "Benjamin (TOM SCHILLING) görünmez, önemsiz biridir. Karizmatik Max (ELYAS M’BAREK) ile tanıştığında bu durum birdenbire değişir. Dışarıdan bakıldığında birbirlerinden daha farklı olamazlar gibi görünseler de, aynı ilgi alanını paylaşıyorlar: hackleme. Max’in arkadaşları, dürtüsel Stephan (WOTAN WILKE MÖHRING) ve paranoyak Paul (ANTOINE MONOT) ile birlikte, yıkıcı hacker kolektifi CLAY’i (CLOWNS LAUGHING @ YOU) kurarlar. CLAY, eğlenceli kampanyalarla provokasyon yapar ve bütün bir neslin sesi olur. Benjamin hayatında ilk kez bir grubun parçası olur ve çekici Marie (HANNAH HERZSPRUNG) bile onu fark etmeye başlar. Ancak CLAY, BKA’nın (Bundeskriminalamt, Federal Kriminal Polis Teşkilatı) ve Europol’ün en çok arananlar listesine girdiğinde eğlence ölümcül bir tehlikeye dönüşür. Siber suçlar müfettişi Hanne Lindberg (TRINE DYRHOLM) tarafından takip edilen Benjamin, artık önemsiz biri değil, dünyanın en çok aranan hackerlarından biridir."
+    "plotTr": "Benjamin (TOM SCHILLING) görünmez, önemsiz biridir. Karizmatik Max (ELYAS M’BAREK) ile tanıştığında bu durum birdenbire değişir. Dışarıdan bakıldığında birbirlerinden daha farklı olamazlar gibi görünseler de, aynı ilgi alanını paylaşıyorlar: hackleme. Max’in arkadaşları, dürtüsel Stephan (WOTAN WILKE MÖHRING) ve paranoyak Paul (ANTOINE MONOT) ile birlikte, yıkıcı hacker kolektifi CLAY’i (CLOWNS LAUGHING @ YOU) kurarlar. CLAY, eğlenceli kampanyalarla provokasyon yapar ve bütün bir neslin sesi olur. Benjamin hayatında ilk kez bir grubun parçası olur ve çekici Marie (HANNAH HERZSPRUNG) bile onu fark etmeye başlar. Ancak CLAY, BKA’nın (Bundeskriminalamt, Federal Kriminal Polis Teşkilatı) ve Europol’ün en çok arananlar listesine girdiğinde eğlence ölümcül bir tehlikeye dönüşür. Siber suçlar müfettişi Hanne Lindberg (TRINE DYRHOLM) tarafından takip edilen Benjamin, artık önemsiz biri değil, dünyanın en çok aranan hackerlarından biridir."
   },
   {
     "imdbId": "tt4240654",
@@ -46837,8 +46837,8 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "boxOffice": "Öznur genç ve güzel bir kadındır. Çocukluğundan beri kuzeni Kudret’e platonik bir aşk beslemektedir. Ancak Kudret, Nisa adında bir kadınla evlidir ve çok mutludur. Kıskançlık içindeki Öznur, Kudret’le birlikte olabilmek için durumu değiştirmek amacıyla korkunç bir kara büyü yapar. Ancak bu büyünün ortaya çıkaracağı kötülüğe hazırlıklı değildir.",
-	"plotTr": "",
-	"franchiseId": "siccin",
+    "plotTr": "",
+    "franchiseId": "siccin",
     "franchiseName": "Siccin",
     "franchiseOrder": 1
   },
@@ -46991,7 +46991,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$84, 284, 252",
-    "plotTr": "John Form, hamile karısı Mia için mükemmel bir hediye bulmuştur - saf beyaz bir gelinlik giymiş güzel, nadir bir antika bebek. Ancak Mia’nın Annabelle’e olan sevinci uzun sürmez. Korkunç bir gecede, evleri satanist bir kültün üyeleri tarafından basılır ve çift şiddetli bir şekilde saldırıya uğrar. Geride bıraktıkları tek şey dökülen kan ve terör değildir. Kült üyeleri öyle kötü niyetli bir varlık çağırmışlardır ki, yaptıkları hiçbir şey lanetlilerin uğursuz aracısı olan... Annabelle ile kıyaslanamaz."
+    "plotTr": "John Form, hamile karısı Mia için mükemmel bir hediye bulmuştur - saf beyaz bir gelinlik giymiş güzel, nadir bir antika bebek. Ancak Mia’nın Annabelle’e olan sevinci uzun sürmez. Korkunç bir gecede, evleri satanist bir kültün üyeleri tarafından basılır ve çift şiddetli bir şekilde saldırıya uğrar. Geride bıraktıkları tek şey dökülen kan ve terör değildir. Kült üyeleri öyle kötü niyetli bir varlık çağırmışlardır ki, yaptıkları hiçbir şey lanetlilerin uğursuz aracısı olan... Annabelle ile kıyaslanamaz.",
+    "franchiseId": "annabelle",
+    "franchiseName": "Annabelle",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt3107288",
@@ -49589,7 +49592,7 @@
     "omdbType": "movie",
     "boxOffice": "$353, 007, 020",
     "plotTr": "Dominic ve ekibi, suçlu paralı asker hayatını geride bıraktıklarını düşünmüşlerdi. Uluslararası terörist Owen Shaw’ı yenmiş ve yollarına ayrılmışlardı. Ancak şimdi, Shaw’ın kardeşi Deckard Shaw, intikam almak için ekibi tek tek öldürmektedir. Daha da kötüsü, Jakarde adında Somalili bir terörist ve “Bay Hiçkimse” adında gölgeli bir hükümet yetkilisi, herhangi bir teknolojik cihazı silaha dönüştürebilen “Tanrı’nın Gözü” adlı bir bilgisayar terör programını çalmak için yarışmaktadır. Torretto, terörist ve Amerika Birleşik Devletleri hükümeti arasındaki bir güç mücadelesinin ortasında kalmışken, Shaw’ı durdurmak ve Tanrı’nın Gözü programını geri almak için ekibiyle yeniden bir araya gelmelidir.",
-	"franchiseId": "hizli-ve-ofkeli",
+    "franchiseId": "hizli-ve-ofkeli",
     "franchiseName": "Hızlı ve Öfkeli",
     "franchiseOrder": 5
   },
@@ -50999,7 +51002,7 @@
     "omdbType": "movie",
     "boxOffice": "",
     "plotTr": "Bir kadın, cinlerin dolabı üzerine devirmesi sonucu küçük çocuğunun ezilerek öldüğünü öğrenir. Bunun bir tesadüf ya da ölüm kalım meselesi olmadığını, aksine ailelerini avlamak için kötü niyetli bir kara büyünün yapıldığını fark eder.",
-	"franchiseId": "siccin",
+    "franchiseId": "siccin",
     "franchiseName": "Siccin",
     "franchiseOrder": 2
   },
@@ -51454,7 +51457,7 @@
     "omdbType": "movie",
     "boxOffice": "$27, 740, 955",
     "plotTr": "Ellison Oswait’in yaşadığı bir mısır tarlasının yakınındaki bir çiftlik evinde, Dylan adında bir çocuk kabuslar görür ve Milo adında bir çocuğun liderliğindeki hayalet çocuklar tarafından ziyaret edilir. Dylan, tacizci kocasını yeni terk etmiş annesi Courtney Collins ve kardeşi Zach ile yaşar ve hayaletler tarafından bodrum katına giderek katledilen ailelerin Super 8 ev filmlerini izlemeye zorlanır. Eski Yardımcı Şerif So &amp; So, Bughuul’un suç dalgasını araştırır ve diğer aileleri korumak için ölen ailelerin yaşadığı evleri yakar. Çiftlik evine gider ve orada Courtney ile oğullarını bulur. Kendisinin özel dedektif olduğunu söyler ve çocukları yanında tutmak isteyen eski kocasının blöfüne karşı Courtney’i korur. Ardından Courtney ile bir aşk ilişkisine başlar. Bu arada Dylan, hayaletlere bir daha video izlemeyeceğini söyler ama hayaletlerin gerçek seçimi olan Zach onun yerini alır. Babaları çocukların velayetini almak için mahkeme kararı çıkarmayı başardığında, Courtney çocuklarla birlikte gitmek zorunda kalır. Collins ailesine ne olacak?",
-	"franchiseId": "sinister",
+    "franchiseId": "sinister",
     "franchiseName": "Sinister",
     "franchiseOrder": 2
   },
@@ -56393,7 +56396,7 @@
     "omdbType": "movie",
     "boxOffice": "",
     "plotTr": "Sedat ve Kahder kardeşler, çocukluk arkadaşları Orhan ile mutlu bir hayat sürerler. Üçlünün akrabalığı, Orhan ve Kahder’in kutsal bir evlilikle birleşmesiyle daha da güçlenir. Ancak, kardeşler kaderin cilvesi bir kazaya karıştığında, Orhan’ın akıl sağlığını kurtarmak için şeytanla bir anlaşma yapma konusundaki çaresiz girişimiyle inancı sınanır, hepsi aşk adına.",
-	"franchiseId": "siccin",
+    "franchiseId": "siccin",
     "franchiseName": "Siccin",
     "franchiseOrder": 3
   },
@@ -59088,7 +59091,7 @@
     "omdbType": "movie",
     "boxOffice": "$226, 008, 385",
     "plotTr": "Dominic Toretto (Vin Diesel) ve Letty Ortiz (Michelle Rodriguez) balayındayken, Brian (Paul Walker) ve Mia (Jordana Brewster) oyundan çekilmişken ve ekibin geri kalanı aklanmışken, dünyayı dolaşan ekip normal bir hayatın izini bulmuştur. Ancak gizemli bir kadın Dom’u kaçamayacağı bir suç dünyasına sürüklediğinde ve en yakınındakilerin ihanetiyle karşılaştığında, daha önce hiç olmadığı kadar onları sınayacak zorluklarla yüzleşecekler. Küba kıyılarından New York City sokaklarına, Arktik Barents Denizi’nin buzlu ovalarına kadar, seçkin ekip, bir anarşistin dünya sahnesinde kaos yaratmasını durdurmak ve onları bir aile yapan adamı eve geri getirmek için dünyayı dolaşacaktır.",
-	"franchiseId": "hizli-ve-ofkeli",
+    "franchiseId": "hizli-ve-ofkeli",
     "franchiseName": "Hızlı ve Öfkeli",
     "franchiseOrder": 6
   },
@@ -66427,7 +66430,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$102, 092, 201",
-    "plotTr": "Bebek üreticisi Samuel Mullins, karısı Esther ve kızları Bee ile mutlu bir aile babasıdır - ta ki Bee bir araba kazasında ölene kadar. On iki yıl sonra Samuel ve Esther, evlerine bir rahibe ve altı yetim kızı kabul ederler. Kızlara sadece kilitli bir oda (Bee’ye ait olan) ve Esther’in odasının yasak olacağını söyler. Sakat kız Janice, gece gizlice Bee’nin odasına girer ve dolaba kilitlenmiş bir bebek bulur. Odada oynadıktan sonra kötü bir güç tarafından rahatsız edilir. Janice, Bee’nin odasında neyi serbest bırakmıştır?"
+    "plotTr": "Bebek üreticisi Samuel Mullins, karısı Esther ve kızları Bee ile mutlu bir aile babasıdır - ta ki Bee bir araba kazasında ölene kadar. On iki yıl sonra Samuel ve Esther, evlerine bir rahibe ve altı yetim kızı kabul ederler. Kızlara sadece kilitli bir oda (Bee’ye ait olan) ve Esther’in odasının yasak olacağını söyler. Sakat kız Janice, gece gizlice Bee’nin odasına girer ve dolaba kilitlenmiş bir bebek bulur. Odada oynadıktan sonra kötü bir güç tarafından rahatsız edilir. Janice, Bee’nin odasında neyi serbest bırakmıştır?",
+    "franchiseId": "annabelle",
+    "franchiseName": "Annabelle",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt7251666",
@@ -66462,7 +66468,7 @@
     "omdbType": "movie",
     "boxOffice": "",
     "plotTr": "Maddi sıkıntılar nedeniyle Yılmaz ailesi, büyükanneleri Saadet’in evine taşınır. Ancak Saadet bilindiği gibi yalnız yaşamamaktadır. Merhum kocasının mezarı olan Saadet’in eski evi, başka bir boyuttan gelen varlıklara ev sahipliği yapmaktadır. Ve bu varlıklar evde kimseyi istemez, sadece Saadet’i.",
-	"franchiseId": "siccin",
+    "franchiseId": "siccin",
     "franchiseName": "Siccin",
     "franchiseOrder": 4
   },
@@ -70105,7 +70111,11 @@
     "plot": "Determined to keep Annabelle from wreaking more havoc, demonologists Ed and Lorraine Warren bring the possessed doll to the locked artifacts room in their home, placing her “safely” behind sacred glass and enlisting a priest’s holy blessing. But an unholy night of horror awaits as Annabelle awakens the evil spirits in the room, who all set their sights on a new target--the Warrens’ ten-year-old daughter, Judy, and her friends.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": "$74, 152, 591"
+    "boxOffice": "$74, 152, 591",
+    "plotTr": "Annabelle’in daha fazla tahribat yaratmasını engellemeye kararlı olan şeytanbilimciler Ed ve Lorraine Warren, ele geçirilmiş bebeği evlerindeki kilitli eser odasına götürürler; onu kutsal camın arkasına “güvenli” bir şekilde yerleştirir ve bir rahibin kutsal duasını alırlar. Ancak Annabelle, odadaki kötü ruhları uyandırınca, hepsi de yeni bir hedefe, yani Warren çiftinin on yaşındaki kızı Judy ve arkadaşlarına yönelir ve korkunç, kutsal olmayan bir gece başlar.",
+    "franchiseId": "annabelle",
+    "franchiseName": "Annabelle",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt6320628",
