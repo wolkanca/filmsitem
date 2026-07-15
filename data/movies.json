@@ -34123,7 +34123,10 @@
     "country": "United Kingdom, United States",
     "omdbType": "movie",
     "boxOffice": "$48, 071, 303",
-    "plotTr": "Dave Lizewski, birkaç arkadaşı olan ve babasıyla yalnız yaşayan, fark edilmeyen bir lise öğrencisi ve çizgi roman hayranıdır. Hayatı çok zor değildir ve kişisel sıkıntıları da o kadar bunaltıcı değildir; ancak bir gün, hiçbir gücü veya eğitimi olmamasına rağmen bir süper kahraman olmaya basit bir karar verir."
+    "plotTr": "Dave Lizewski, birkaç arkadaşı olan ve babasıyla yalnız yaşayan, fark edilmeyen bir lise öğrencisi ve çizgi roman hayranıdır. Hayatı çok zor değildir ve kişisel sıkıntıları da o kadar bunaltıcı değildir; ancak bir gün, hiçbir gücü veya eğitimi olmamasına rağmen bir süper kahraman olmaya basit bir karar verir.",
+	"franchiseId": "kick-ass",
+    "franchiseName": "Kick-Ass",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1321509",
@@ -35729,7 +35732,8 @@
     "country": "United States, Germany",
     "omdbType": "movie",
     "boxOffice": "$29, 121, 498",
-    "plotTr": "Arthur Bishop (Jason Statham), hedefleri kusursuzca ortadan kaldırmak için katı bir kurala ve eşsiz bir yeteneğe sahip seçkin bir suikastçı olan bir ’mekanik’tir. Bu, profesyonel mükemmellik ve tam bir kopukluk gerektiren bir iştir ve Bishop bu işte en iyisidir. Ancak akıl hocası ve yakın arkadaşı Harry (Donald Sutherland) öldürüldüğünde, Bishop’ın kopukluğu kalmaz. Bir sonraki görevi kendi kendine koyduğu bir görevdir – sorumluların ölmesini istemektedir. Harry’nin oğlu Steve (Ben Foster) aynı intikamcı hedefle ve Bishop’ın mesleğini öğrenme kararlılığıyla ona yaklaştığında görevi karmaşıklaşır. Bishop her zaman yalnız hareket etmiştir ancak Harry’nin oğluna sırt çeviremez. Metodik bir kiralık katil, dürtüsel bir öğrenciyi kendi dünyasının derinliklerine çeker ve ölümcül bir ortaklık doğar. Ancak nihai hedeflerinin peşindeyken, aldatmacalar su yüzüne çıkma tehdidi oluşturur ve sorunları çözmek için tutulanlar, kendileri sorun haline gelir."
+    "plotTr": "Arthur Bishop (Jason Statham), hedefleri kusursuzca ortadan kaldırmak için katı bir kurala ve eşsiz bir yeteneğe sahip seçkin bir suikastçı olan bir ’mekanik’tir. Bu, profesyonel mükemmellik ve tam bir kopukluk gerektiren bir iştir ve Bishop bu işte en iyisidir. Ancak akıl hocası ve yakın arkadaşı Harry (Donald Sutherland) öldürüldüğünde, Bishop’ın kopukluğu kalmaz. Bir sonraki görevi kendi kendine koyduğu bir görevdir – sorumluların ölmesini istemektedir. Harry’nin oğlu Steve (Ben Foster) aynı intikamcı hedefle ve Bishop’ın mesleğini öğrenme kararlılığıyla ona yaklaştığında görevi karmaşıklaşır. Bishop her zaman yalnız hareket etmiştir ancak Harry’nin oğluna sırt çeviremez. Metodik bir kiralık katil, dürtüsel bir öğrenciyi kendi dünyasının derinliklerine çeker ve ölümcül bir ortaklık doğar. Ancak nihai hedeflerinin peşindeyken, aldatmacalar su yüzüne çıkma tehdidi oluşturur ve sorunları çözmek için tutulanlar, kendileri sorun haline gelir.",
+	
   },
   {
     "imdbId": "tt3559124",
@@ -43904,7 +43908,10 @@
     "country": "United Kingdom, Japan, United States",
     "omdbType": "movie",
     "boxOffice": "$28, 795, 985",
-    "plotTr": "Kick-Ass’in çılgın cesareti, badass Albay Stars and Stripes liderliğindeki yeni bir kendi kendine yapılmış maskeli haçlı dalgasına ilham verdikten sonra, kahramanımız onlarla devriyeye katılır. Bu amatör süper kahramanlar, The Mother F%&*^r olarak yeniden doğan Red Mist tarafından avlandığında, sadece bıçak kullanan Hit Girl onların yok edilmesini engelleyebilir. Genç suikastçı Hit Girl ve genç kanunsuz Kick-Ass’i en son gördüğümüzde, normal gençler Mindy ve Dave olarak yaşamaya çalışıyorlardı. Mezuniyet yaklaşırken ve ne yapacaklarından emin olamayan Dave, Mindy ile dünyanın ilk süper kahraman ekibini kurmaya karar verir. Ne yazık ki, Mindy Hit Girl olarak gizlice dışarı çıktığı için yakalandığında, emekli olmak zorunda kalır ve onu lise zorbalarının korkunç dünyasında tek başına yolunu bulmaya bırakır. Başvuracak kimsesi kalmayan Dave, yeniden doğmuş eski bir mafya babası olan Albay Stars and Stripes tarafından yönetilen Justice Forever ile güçlerini birleştirir. Tam da sokaklarda gerçek bir fark yaratmaya başladıklarında, dünyanın ilk süper kötüsü The Mother F%&*^r, kendi kötü ligini toplar ve Kick-Ass ile Hit Girl’e babasına yaptıklarının bedelini ödetmek için bir plan yapar. Planında tek bir sorun vardır: Justice Forever’ın bir üyesiyle uğraşırsanız, hepsiyle uğraşırsınız."
+    "plotTr": "Kick-Ass’in çılgın cesareti, badass Albay Stars and Stripes liderliğindeki yeni bir kendi kendine yapılmış maskeli haçlı dalgasına ilham verdikten sonra, kahramanımız onlarla devriyeye katılır. Bu amatör süper kahramanlar, The Mother F%&*^r olarak yeniden doğan Red Mist tarafından avlandığında, sadece bıçak kullanan Hit Girl onların yok edilmesini engelleyebilir. Genç suikastçı Hit Girl ve genç kanunsuz Kick-Ass’i en son gördüğümüzde, normal gençler Mindy ve Dave olarak yaşamaya çalışıyorlardı. Mezuniyet yaklaşırken ve ne yapacaklarından emin olamayan Dave, Mindy ile dünyanın ilk süper kahraman ekibini kurmaya karar verir. Ne yazık ki, Mindy Hit Girl olarak gizlice dışarı çıktığı için yakalandığında, emekli olmak zorunda kalır ve onu lise zorbalarının korkunç dünyasında tek başına yolunu bulmaya bırakır. Başvuracak kimsesi kalmayan Dave, yeniden doğmuş eski bir mafya babası olan Albay Stars and Stripes tarafından yönetilen Justice Forever ile güçlerini birleştirir. Tam da sokaklarda gerçek bir fark yaratmaya başladıklarında, dünyanın ilk süper kötüsü The Mother F%&*^r, kendi kötü ligini toplar ve Kick-Ass ile Hit Girl’e babasına yaptıklarının bedelini ödetmek için bir plan yapar. Planında tek bir sorun vardır: Justice Forever’ın bir üyesiyle uğraşırsanız, hepsiyle uğraşırsınız.",
+	"franchiseId": "kick-ass",
+    "franchiseName": "Kick-Ass",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt2334873",
