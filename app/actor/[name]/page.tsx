@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
   return {
-    title: `${decodedName} Oyuncu Olarak Rol Aldığı Filmler`,
+    title: `${decodedName} Rol Aldığı Filmler`,
     description: `Kütüphanemdeki oyuncu ${decodedName} tarafından rol alınmış filmler, incelemelerim ve kişisel puanlarım.`,
   };
 }
@@ -41,6 +41,12 @@ export default async function ActorPage({ params }: Props) {
   if (filteredMovies.length === 0) {
     notFound();
   }
+
+  // Check other roles and count
+  const actorMoviesCount = movies.filter((m) => {
+    if (!m.cast) return false;
+    return m.cast.some((c) => c.toLowerCase() === decodedName.toLowerCase());
+  }).length;
 
   // Check other roles and count
   const directorMoviesCount = movies.filter((m) => {
@@ -88,11 +94,19 @@ export default async function ActorPage({ params }: Props) {
             </p>
             {(directorMoviesCount > 0 || writerMoviesCount > 0) && (
               <div className="flex flex-wrap gap-2 mt-4">
-                <span className="text-xs font-semibold text-zinc-500 self-center mr-1">Diğer Sayfaları:</span>
+                {actorMoviesCount > 0 && (
+                  <Link
+                    href={`/actor/${encodeURIComponent(decodedName)}`}
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                  >
+                    <User className="w-3.5 h-3.5" />
+                    Oyuncu ({actorMoviesCount})
+                  </Link>
+                )}
                 {directorMoviesCount > 0 && (
                   <Link
                     href={`/director/${encodeURIComponent(decodedName)}`}
-                    className="flex items-center gap-1.5 bg-brand-primary/10 border border-brand-primary/20 hover:border-brand-primary/40 hover:bg-brand-primary/20 text-brand-primary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
                   >
                     <Film className="w-3.5 h-3.5" />
                     Yönetmen ({directorMoviesCount})
@@ -101,7 +115,7 @@ export default async function ActorPage({ params }: Props) {
                 {writerMoviesCount > 0 && (
                   <Link
                     href={`/writer/${encodeURIComponent(decodedName)}`}
-                    className="flex items-center gap-1.5 bg-brand-rose/10 border border-brand-rose/20 hover:border-brand-rose/40 hover:bg-brand-rose/20 text-brand-rose px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
                   >
                     <Pencil className="w-3.5 h-3.5" />
                     Senarist ({writerMoviesCount})

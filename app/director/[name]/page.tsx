@@ -50,6 +50,12 @@ export default async function DirectorPage({ params }: Props) {
     return m.cast.some((c) => c.toLowerCase() === decodedName.toLowerCase());
   }).length;
 
+  // Check other roles and count
+  const directorMoviesCount = movies.filter((m) => {
+    if (!m.director) return false;
+    return m.director.split(',').map((d) => d.trim().toLowerCase()).includes(decodedName.toLowerCase());
+  }).length;
+
   const writerMoviesCount = movies.filter((m) => {
     if (!m.writers) return false;
     return m.writers.some((w) => w.toLowerCase() === decodedName.toLowerCase());
@@ -88,9 +94,8 @@ export default async function DirectorPage({ params }: Props) {
             <p className="text-zinc-500 text-sm mt-1">
               Bu yönetmene ait toplam {totalCount} yapım izlediniz.
             </p>
-            {(actorMoviesCount > 0 || writerMoviesCount > 0) && (
+            {(directorMoviesCount > 0 || writerMoviesCount > 0) && (
               <div className="flex flex-wrap gap-2 mt-4">
-                <span className="text-xs font-semibold text-zinc-500 self-center mr-1">Diğer Sayfaları:</span>
                 {actorMoviesCount > 0 && (
                   <Link
                     href={`/actor/${encodeURIComponent(decodedName)}`}
@@ -100,10 +105,19 @@ export default async function DirectorPage({ params }: Props) {
                     Oyuncu ({actorMoviesCount})
                   </Link>
                 )}
+                {directorMoviesCount > 0 && (
+                  <Link
+                    href={`/director/${encodeURIComponent(decodedName)}`}
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                  >
+                    <Film className="w-3.5 h-3.5" />
+                    Yönetmen ({directorMoviesCount})
+                  </Link>
+                )}
                 {writerMoviesCount > 0 && (
                   <Link
                     href={`/writer/${encodeURIComponent(decodedName)}`}
-                    className="flex items-center gap-1.5 bg-brand-rose/10 border border-brand-rose/20 hover:border-brand-rose/40 hover:bg-brand-rose/20 text-brand-rose px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
+                    className="flex items-center gap-1.5 bg-brand-secondary/10 border border-brand-secondary/20 hover:border-brand-secondary/40 hover:bg-brand-secondary/20 text-brand-secondary px-2.5 py-1 rounded-lg text-xs font-bold transition-all"
                   >
                     <Pencil className="w-3.5 h-3.5" />
                     Senarist ({writerMoviesCount})
