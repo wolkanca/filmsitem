@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, Film, Clock, Star } from 'lucide-react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { normalizeSearchString } from '@/lib/utils';
 
 export const revalidate = 604800; // 7 gün (saniye)
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const decodedName = decodeURIComponent(resolvedParams.name);
   const movies = await getMovies();
   const exists = movies.some((m) =>
-    m.genres.some((g) => g.toLowerCase() === decodedName.toLowerCase())
+    m.genres.some((g) => normalizeSearchString(g) === normalizeSearchString(decodedName))
   );
   if (!exists) {
     notFound();
@@ -33,7 +34,7 @@ export default async function GenrePage({ params }: Props) {
 
   const movies = await getMovies();
   const filteredMovies = movies.filter((m) =>
-    m.genres.some((g) => g.toLowerCase() === decodedName.toLowerCase())
+    m.genres.some((g) => normalizeSearchString(g) === normalizeSearchString(decodedName))
   );
 
   if (filteredMovies.length === 0) {

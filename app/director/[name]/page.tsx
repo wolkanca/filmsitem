@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ArrowLeft, Film, Clock, Star, User, Pencil } from 'lucide-react';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import { normalizeSearchString } from '@/lib/utils';
 
 export const revalidate = 604800; // 7 gün (saniye)
 
@@ -17,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const movies = await getMovies();
   const exists = movies.some((m) => {
     if (!m.director) return false;
-    const directors = m.director.split(',').map((d) => d.trim().toLowerCase());
-    return directors.includes(decodedName.toLowerCase());
+    const directors = m.director.split(',').map((d) => d.trim());
+    return directors.some((d) => normalizeSearchString(d) === normalizeSearchString(decodedName));
   });
   if (!exists) {
     notFound();
@@ -36,8 +37,8 @@ export default async function DirectorPage({ params }: Props) {
   const movies = await getMovies();
   const filteredMovies = movies.filter((m) => {
     if (!m.director) return false;
-    const directors = m.director.split(',').map((d) => d.trim().toLowerCase());
-    return directors.includes(decodedName.toLowerCase());
+    const directors = m.director.split(',').map((d) => d.trim());
+    return directors.some((d) => normalizeSearchString(d) === normalizeSearchString(decodedName));
   });
 
   if (filteredMovies.length === 0) {
@@ -47,18 +48,18 @@ export default async function DirectorPage({ params }: Props) {
   // Check other roles and count
   const actorMoviesCount = movies.filter((m) => {
     if (!m.cast) return false;
-    return m.cast.some((c) => c.toLowerCase() === decodedName.toLowerCase());
+    return m.cast.some((c) => normalizeSearchString(c) === normalizeSearchString(decodedName));
   }).length;
 
   // Check other roles and count
   const directorMoviesCount = movies.filter((m) => {
     if (!m.director) return false;
-    return m.director.split(',').map((d) => d.trim().toLowerCase()).includes(decodedName.toLowerCase());
+    return m.director.split(',').map((d) => d.trim()).some((d) => normalizeSearchString(d) === normalizeSearchString(decodedName));
   }).length;
 
   const writerMoviesCount = movies.filter((m) => {
     if (!m.writers) return false;
-    return m.writers.some((w) => w.toLowerCase() === decodedName.toLowerCase());
+    return m.writers.some((w) => normalizeSearchString(w) === normalizeSearchString(decodedName));
   }).length;
 
   // Calculate statistics

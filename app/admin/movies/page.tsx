@@ -7,6 +7,7 @@ import {
   ArrowLeft, Search, Pencil, Check, X, Loader2, Film, Image as ImageIcon, Video
 } from 'lucide-react';
 import { Movie } from '@/types';
+import { normalizeSearchString } from '@/lib/utils';
 
 export default function AdminMoviesPage() {
   const router = useRouter();
@@ -163,12 +164,12 @@ export default function AdminMoviesPage() {
 
     // Apply text search on top
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
+      const q = normalizeSearchString(searchQuery);
       list = list.filter(
         (m) =>
-          m.title.toLowerCase().includes(q) ||
-          m.imdbId.toLowerCase().includes(q) ||
-          (m.originalTitle && m.originalTitle.toLowerCase().includes(q))
+          normalizeSearchString(m.title).includes(q) ||
+          normalizeSearchString(m.imdbId).includes(q) ||
+          (m.originalTitle && normalizeSearchString(m.originalTitle).includes(q))
       );
     }
 

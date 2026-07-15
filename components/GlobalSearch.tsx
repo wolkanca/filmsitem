@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Search, X, Film, Tv, User, Tag, List, Star, Loader2, Sparkles } from 'lucide-react';
 import { Movie } from '@/types';
-import { slugify, getRatingColor } from '@/lib/utils';
+import { slugify, getRatingColor, normalizeSearchString } from '@/lib/utils';
 import Image from 'next/image';
 
 interface SearchItem {
@@ -106,23 +106,23 @@ export default function GlobalSearch() {
   const searchResults = useMemo(() => {
     if (!query.trim() || movies.length === 0) return null;
 
-    const term = query.toLowerCase().trim();
+    const term = normalizeSearchString(query).trim();
 
     // 1. Movies & TV Series (including IMDb ID search, e.g. tt29730305)
     const matchedMovies = movies.filter(
       (m) =>
-        m.title.toLowerCase().includes(term) ||
-        m.originalTitle.toLowerCase().includes(term) ||
-        (m.overview && m.overview.toLowerCase().includes(term)) ||
+        normalizeSearchString(m.title).includes(term) ||
+        normalizeSearchString(m.originalTitle).includes(term) ||
+        (m.overview && normalizeSearchString(m.overview).includes(term)) ||
         m.year.toString().includes(term) ||
-        m.imdbId.toLowerCase().includes(term)
+        normalizeSearchString(m.imdbId).includes(term)
     );
 
     // 2. Actors (cast)
     const actorMatches = new Map<string, number>();
     movies.forEach((m) => {
       (m.cast || []).forEach((actor) => {
-        if (actor.toLowerCase().includes(term)) {
+        if (normalizeSearchString(actor).includes(term)) {
           actorMatches.set(actor, (actorMatches.get(actor) || 0) + 1);
         }
       });
@@ -140,7 +140,7 @@ export default function GlobalSearch() {
           .map((d) => d.trim())
           .filter(Boolean)
           .forEach((dir) => {
-            if (dir.toLowerCase().includes(term)) {
+            if (normalizeSearchString(dir).includes(term)) {
               directorMatches.set(dir, (directorMatches.get(dir) || 0) + 1);
             }
           });
@@ -154,7 +154,7 @@ export default function GlobalSearch() {
     const writerMatches = new Map<string, number>();
     movies.forEach((m) => {
       (m.writers || []).forEach((writer) => {
-        if (writer.toLowerCase().includes(term)) {
+        if (normalizeSearchString(writer).includes(term)) {
           writerMatches.set(writer, (writerMatches.get(writer) || 0) + 1);
         }
       });
@@ -167,7 +167,7 @@ export default function GlobalSearch() {
     const genreMatches = new Map<string, number>();
     movies.forEach((m) => {
       (m.genres || []).forEach((g) => {
-        if (g.toLowerCase().includes(term)) {
+        if (normalizeSearchString(g).includes(term)) {
           genreMatches.set(g, (genreMatches.get(g) || 0) + 1);
         }
       });
@@ -180,7 +180,7 @@ export default function GlobalSearch() {
     const listMatches = new Map<string, number>();
     movies.forEach((m) => {
       (m.listName || []).forEach((ln) => {
-        if (ln.toLowerCase().includes(term)) {
+        if (normalizeSearchString(ln).includes(term)) {
           listMatches.set(ln, (listMatches.get(ln) || 0) + 1);
         }
       });

@@ -9,6 +9,7 @@ import {
   Youtube
 } from 'lucide-react';
 import { Movie } from '@/types';
+import { normalizeSearchString } from '@/lib/utils';
 
 interface YtSearchResult {
   videoId: string;
@@ -377,10 +378,10 @@ export default function CheckTrailersPage() {
   // Filter broken movies list
   const filteredBroken = brokenMovies.filter(item => {
     // Text search
-    const query = searchQuery.toLowerCase().trim();
+    const query = normalizeSearchString(searchQuery).trim();
     if (query) {
-      const titleMatch = item.movie.title.toLowerCase().includes(query);
-      const idMatch = item.movie.imdbId.toLowerCase().includes(query);
+      const titleMatch = normalizeSearchString(item.movie.title).includes(query);
+      const idMatch = normalizeSearchString(item.movie.imdbId).includes(query);
       if (!titleMatch && !idMatch) return false;
     }
 

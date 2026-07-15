@@ -42,3 +42,23 @@ export function getRatingColor(rating: number): string {
   if (rating >= 4) return 'text-orange-400';
   return 'text-rose-500';
 }
+
+export function normalizeSearchString(text: string): string {
+  if (!text) return '';
+  const map: Record<string, string> = {
+    'Ç': 'c', 'ç': 'c',
+    'Ğ': 'g', 'ğ': 'g',
+    'I': 'i', 'ı': 'i',
+    'İ': 'i', 'i': 'i',
+    'Ö': 'o', 'ö': 'o',
+    'Ş': 's', 'ş': 's',
+    'Ü': 'u', 'ü': 'u'
+  };
+  
+  return text
+    .toString()
+    .split('')
+    .map(c => map[c] || c.toLowerCase())
+    .join('');
+}
+
