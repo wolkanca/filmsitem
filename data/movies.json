@@ -60792,45 +60792,6 @@
     "plotTr": "Yahudi kökenli Amerikalı rekortmen bir atlet ve spor yayıncılığının öncüsü olan Marty Glickman’ın ilham verici ve çarpıcı yaşam öyküsü anlatılmaktadır. Glickmanthefilm.com Syracuse Üniversitesi’nde dünya çapında bir kısa mesafe koşucusu ve Amerikan futbolu oyuncusu olarak parlayan Glickman, ABD bayrak yarışı takımının bir parçası olarak Adolf Hitler’in ev sahipliğindeki 1936 Berlin Olimpiyatları’na katılır IMDb, Glickmanthefilm.com. Ancak yarış günü, Nazi rejimini memnun etmek amacıyla maruz kaldığı antisemitizm ve ırkçılık nedeniyle son anda takımdan çıkarılır Glickmanthefilm.com. Yaşadığı bu büyük haksızlığa rağmen pes etmeyen Glickman, spor spikerliğine yönelerek 50 yılı aşkın kariyerinde New York Knicks, Giants ve Jets takımlarının ikonik sesi haline gelir IMDb, Glickmanthefilm.com. Basketbol anlatımlarında günümüzde bile kullanılan “swish!” gibi klasikleşmiş terimleri icat ederek radyo ve televizyon yayıncılığında bir devrim yaratır Glickmanthefilm.com. Yapımcılığını Martin Scorsese’nin üstlendiği HBO belgeseli, önyargılara ve ayrımcılığa karşı duran bir adamın başarısını, onun yetiştirdiği ünlü spor spikerlerinin ve arşiv görüntülerinin tanıklığında sunar."
   },
   {
-    "imdbId": "tt2404311",
-    "title": "The Family",
-    "originalTitle": "The Family",
-    "year": 2013,
-    "type": "Movie",
-    "myRating": 6,
-    "watchDate": "2026-07-09",
-    "listName": [
-      "Komedi Günlükleri"
-    ],
-    "poster": "/images/movies/tt2404311-poster.webp",
-    "overview": "Bu yapım “Luc Besson” tarafından yönetilmiş 2013 yapımı bir Comedy, Crime, Thriller eseridir. IMDb puanı 6.3 olarak kaydedilmiştir.",
-    "genres": [
-      "Comedy",
-      "Crime",
-      "Thriller"
-    ],
-    "runtime": 111,
-    "cast": [
-      "Robert De Niro",
-      "Michelle Pfeiffer",
-      "Dianna Agron"
-    ],
-    "director": "Luc Besson",
-    "writers": [
-      "Luc Besson",
-      "Michael Caleo",
-      "Tonino Benacquista"
-    ],
-    "imdbRating": 6.3,
-    "tmdbRating": 6.3,
-    "releaseDate": "2013-09-13",
-    "plot": "Giovanni Manzoni, a notorious American Mafia boss, snitches on the mob and is placed into the Witness Protection Program along with his family En.wikipedia.org, Prime Video. Under the strict supervision of FBI Agent Stansfield, the family is relocated to a sleepy, quiet town in Normandy, France, adopting the new last name “Blake” Beyazperde.com, MovieInsider. Despite the agent’s best efforts to keep them low-profile, the family members find it impossible to adapt to a normal civilian lifestyle MUBI, MovieInsider. His wife Maggie blows up a grocery store after being insulted, their teenagers assert dominance at school through violent means, and Fred settles neighborhood disputes using classic mob coercion Beyazperde.com, IMDb. Inevitably, their inability to blend in blows their cover and alerts their former mafia cronies who are eager for blood Prime Video, MovieInsider. Chaos quickly ensues as hitmen descend upon the unsuspecting French village for a deadly and explosive showdown MovieInsider.",
-    "country": "United States, France",
-    "omdbType": "",
-    "trailerYoutubeId": "-SwDU04Oeak",
-    "plotTr": "Kötü şöhretli bir Amerikan mafya lideri olan Giovanni Manzoni, kendi şebekesine ihanet edip polisle iş birliği yapınca ailesiyle birlikte Tanık Koruma Programı’na alınır En.wikipedia.org, Prime Video. Kendilerini denetleyen FBI ajanı Stansfield liderliğinde Fransa’nın Normandy bölgesindeki sakin bir kasabaya yerleştirilen aile, burada “Black” soyadını alarak yeni bir hayata başlamaya çalışır Beyazperde.com, MovieInsider. Ancak sıradan bir aile gibi davranmak onlar için neredeyse imkansızdır; anne Maggie kasaba merkezinde sorun çıkaran bir dükkanı havaya uçururken, çocuklar okulda gizlice terör estirir, baba Fred ise yerel sorunları eski usul mafya yöntemleriyle çözmeye devam eder Beyazperde.com, IMDb. Eski alışkanlıklarından vazgeçemeyen ailenin bu dikkatsiz ve şiddet dolu davranışları sonunda kimliklerinin açık edilmesine yol açar Prime Video. İntikam yemini eden eski mafya ortaklarının kasabanın yerini tespit etmesiyle, bu sakin Fransız köyü bir anda silahların konuştuğu amansız bir savaş alanına dönüşür . "
-  },
-  {
     "imdbId": "tt0979432",
     "title": "Boardwalk Empire",
     "originalTitle": "Boardwalk Empire",
@@ -70967,7 +70928,7 @@
     "myRating": 0,
     "watchDate": "2019-12-23",
     "listName": [],
-    "poster": "/images/movies/parent_thefamily-poster.webp",
+    "poster": "/images/movies/tt2404311-poster.webp",
     "overview": "Bu dizi “The Family” başlığı altındaki bölümleri içerir.",
     "genres": [
       "Documentary",
