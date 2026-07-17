@@ -13983,7 +13983,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$74,664,632",
-    "plotTr": "Adam ve Barbara normal bir çifttir... ki ölmüşlerdir. Evlerini dekore etmek ve kendilerine ait kılmak için değerli zamanlarını harcamışlardır, ancak ne yazık ki bir aile taşınır ve hiç de sessiz değildirler. Adam ve Barbara onları korkutarak evden çıkarmaya çalışır, ancak sonunda para düşkünü ailenin ana cazibe merkezi haline gelirler. Yardım etmesi için Beetlejuice’u çağırırlar, ancak Beetlejuice’un aklında sadece yardım etmekten fazlası vardır."
+    "plotTr": "Adam ve Barbara normal bir çifttir... ki ölmüşlerdir. Evlerini dekore etmek ve kendilerine ait kılmak için değerli zamanlarını harcamışlardır, ancak ne yazık ki bir aile taşınır ve hiç de sessiz değildirler. Adam ve Barbara onları korkutarak evden çıkarmaya çalışır, ancak sonunda para düşkünü ailenin ana cazibe merkezi haline gelirler. Yardım etmesi için Beetlejuice’u çağırırlar, ancak Beetlejuice’un aklında sadece yardım etmekten fazlası vardır.",
+    "franchiseId": "beetlejuice",
+    "franchiseName": "Beetlejuice",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0095016",
@@ -85098,7 +85101,10 @@
     "plot": "After an unexpected family tragedy, three generations of the Deetz family return home to Winter River. Still haunted by Beetlejuice, Lydia’s life is turned upside down when her rebellious teenage daughter, Astrid, discovers the mysterious model of the town in the attic and the portal to the Afterlife is accidentally opened. With trouble brewing in both realms, it’s only a matter of time until someone says Beetlejuice’s name three times and the mischievous demon returns to unleash his very own brand of mayhem.",
     "country": "France, United States",
     "omdbType": "movie",
-    "boxOffice": "$294,100,435"
+    "boxOffice": "$294,100,435",
+    "franchiseId": "beetlejuice",
+    "franchiseName": "Beetlejuice",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt33504617",
