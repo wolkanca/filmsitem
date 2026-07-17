@@ -42,11 +42,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       .trimEnd() + '...';
 
   return {
-    title: `${movie.title} (${movie.year})`,
+    title: `${movie.originalTitle ? movie.originalTitle + ' | ' : ''}${movie.title} (${movie.year})`,
     description: metaDescription,
 
     openGraph: {
-      title: `${movie.title} (${movie.year}) - İzlediklerim`,
+      title: `${movie.originalTitle ? movie.originalTitle + ' | ' : ''}${movie.title} (${movie.year})`,
       description: metaDescription,
       images: movie.poster ? [{ url: movie.poster }] : [],
       type: 'video.movie',
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     twitter: {
       card: 'summary_large_image',
-      title: `${movie.title} (${movie.year})`,
+      title: `${movie.originalTitle ? movie.originalTitle + ' | ' : ''}${movie.title} (${movie.year})`,
       description: metaDescription,
       images: movie.poster ? [movie.poster] : [],
     },
