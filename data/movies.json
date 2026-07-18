@@ -26808,7 +26808,11 @@
     "country": "United States / Canada",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "8sD6zgMkE2I"
+    "trailerYoutubeId": "8sD6zgMkE2I",
+    "plotTr": "Philadelphia’da, Billy Batson, kayıp annesini inatla aramasıyla Çocuk Hizmetleri ve yetkililer için baş belası haline gelen terk edilmiş bir çocuktur. Ancak, son kalacağı koruyucu ailede Billy, Freddy adında yeni bir arkadaş edinir ve Büyücü Shazam tarafından yeni şampiyonu olarak seçildiğini öğrenir. Artık büyücünün adını söyleyerek anında yetişkin bir süper kahramana dönüşme yeteneğine sahip olan Billy, Freddy ile birlikte yeni güçlerini keyifle keşfeder. Ancak Billy, çok geçmeden ölümcül bir düşmanı olduğunu öğrenir: Daha önce büyücü tarafından reddedilen ve bunun yerine Yedi Ölümcül Günah’ın gücünü benimsemiş olan Dr. Thaddeus Sivana. Artık kendi gücü için bu çılgın bilim adamı tarafından da takip edilen Billy, Sivana’nın asla anlayamayacağı özel bir büyünün gücünü gerçek ailesiyle birlikte öğrenirken, görevinin getirdiği sorumluluklarla yüzleşmek zorundadır.",
+    "franchiseId": "shazam",
+    "franchiseName": "Shazam",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt12610390",
@@ -26929,7 +26933,11 @@
     "country": "United States / Canada",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "rzgnvpGfJdg"
+    "trailerYoutubeId": "rzgnvpGfJdg",
+    "plotTr": "Tanrıların güçleriyle donatılmış Billy Batson ve diğer koruyucu aile çocukları, ergenlik dönemini yetişkin süper kahraman kimlikleriyle nasıl bir arada yürüteceklerini hâlâ öğrenmeye çalışıyorlar. Uzun zaman önce kendilerinden çalınan sihri aramak üzere intikam peşindeki üç eski tanrı Dünya’ya geldiğinde, Shazam ve müttefikleri süper güçleri, hayatları ve dünyanın kaderi için verilecek bir savaşın ortasında kalırlar.",
+    "franchiseId": "shazam",
+    "franchiseName": "Shazam",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt7657566",
@@ -71497,7 +71505,7 @@
     "plot": "Cumali Ceber goes to a vacation with his children.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "plotTr": "Cumali Ceber, çocuklarıyla tatile çıkar.",
+    "plotTr": "Cumali Ceber, sosyal medya fenomeni Halil Söyletmez'in yarattığı komedi serisidir. İlk film olan Cumali Ceber: Allah Seni Alsın'ın ana konusu: Emekliliğine bir gün kala patronuyla kavga edip işsiz kalan Cumali'nin, oğullarının kumar borcu olduğunu öğrenmesiyle başlayan komik maceralarını anlatır.",
     "boxOffice": ""
   },
   {
