@@ -20262,7 +20262,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "inIgxC6Yh34",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "İki müzisyen bir cinayete tanık olur ve bu olay yüzünden bir grup sokak serserisi ve mafya ile başları belaya girer.",
+    "franchiseId": "calgi-cengi",
+    "franchiseName": "Çalgı Çengi",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt7944260",
@@ -63881,7 +63884,10 @@
     "country": "Türkiye",
     "omdbType": "movie",
     "plotTr": "Gürkan ve Salih, ilk filmde yanlışlıkla karıştıkları mafyadan kurtulmaya çalışırlar. Ancak bu sefer daha da komik durumlarla başa çıkmak zorundadırlar.",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "calgi-cengi",
+    "franchiseName": "Çalgı Çengi",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt5458566",
