@@ -32946,7 +32946,10 @@
     "country": "United States",
     "omdbType": "series",
     "plotTr": "Zeki, yakışıklı ve harika bir mizah anlayışı var. O, herkesin favori seri katili Dexter Morgan. Miami’de bir adli tıp uzmanı olarak gündüzleri suçları çözüyor, geceleri ise işliyor. Ancak Dexter, hem kurtarıcısı hem de ömür boyu yükü olan katı bir onur koduyla yaşıyor. Ölümcül dürtüsü ile gerçek mutluluk arayışı arasında kalan Dexter, dünya ve kendisiyle derin bir çatışma içinde olan bir adam. Altın Küre ödüllü Michael C. Hall, SHOWTIME’ın hit orijinal dizisinde başrolde.",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "dexter",
+    "franchiseName": "Dexter",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0407887",
@@ -65458,7 +65461,10 @@
     "country": "United States",
     "omdbType": "series",
     "plotTr": "Dexter: New Blood finalinde kendi oğlu Harrison (Jack Alcott) tarafından göğsünden vurulan Dexter Morgan (Michael C. Hall), mucizevi bir şekilde hayatta kalır ve komadan uyanır. Kendisine geldikten sonra, oğluna yaşattığı travmanın ağırlığıyla yüzleşen Dexter, onu bulmak ve her şeyi düzeltmek amacıyla New York şehrine doğru yola çıkar. Ancak geçmişin gölgeleri peşini bırakmaz; Miami Metro’dan eski dostu Kaptan Angel Batista (David Zayas), şüpheler ve sorularla New York’a kadar onun izini sürer. New York’ta Harrison’ı arayan Dexter, bu kez çok daha büyük ve tehlikeli bir yeraltı dünyasına çekilir. Şehirdeki bir malikanede seri katillere karşı takıntısı olan milyarder girişimci Leon Prater (Peter Dinklage) ve gizemli karakter Charley (Uma Thurman) ile yolları kesişen Dexter, kendi karanlık yolcusunu evcilleştirmeye çalışırken adaletin ve hayatta kalmanın en vahşi sınırlarını zorlar.",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "dexter",
+    "franchiseName": "Dexter",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt33560536",
@@ -80087,7 +80093,10 @@
     "country": "South Korea",
     "omdbType": "series",
     "plotTr": "Dizi, derin maddi sıkıntılar ve borç batağı içinde olan 456 oyuncunun, 45,6 milyar Won (yaklaşık 38 milyon dolar) tutarındaki büyük ödülü kazanmak için hayatlarını riske attığı gizli bir yarışmayı konu alır. Katılımcılar, ilk bakışta masum görünen “Yeşil Işık, Kırmızı Işık” gibi geleneksel Kore çocuk oyunlarını oynamak üzere izole bir adaya götürülürler. Ancak kısa sürede bu oyunların ölümcül birer tuzağa dönüştüğü ve elenenlerin anında infaz edildiği ortaya çıkar. Başkahraman Seong Gi-hun liderliğindeki bir grup oyuncu, hayatta kalabilmek için hem fiziksel hem de psikolojik bir savaş verirken insan doğasının en karanlık ve bencil yönleriyle yüzleşmek zorunda kalır.",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "squid-game",
+    "franchiseName": "Squid Game",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt9115530",
@@ -80441,7 +80450,11 @@
     "plot": "Ten years after faking his death in Miami and moving to Upstate New York under an assumed name, Dexter gets an unexpected visit from the son he abandoned.",
     "country": "United States",
     "omdbType": "series",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Miami’de ölümünü sahte bir şekilde düzenledikten ve sahte bir isimle New York’un kuzeyine taşındıktan on yıl sonra, Dexter terk ettiği oğlundan beklenmedik bir ziyaret alır.",
+    "franchiseId": "dexter",
+    "franchiseName": "Dexter",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt1961675",
@@ -82735,7 +82748,10 @@
     "country": "United States",
     "omdbType": "movie",
     "plotTr": "Bu parodi video, orijinal dizideki ölümcül çocuk oyunlarını, kırmızı tulumlu gardiyanları ve gerilimli atmosferi absürt bir mizahla ele almaktadır. Gerçek 2. sezon çıkmadan önce yayınlanan yapım, karakterlerin motivasyonlarını çarpıtarak ve hayran teorileriyle dalga geçerek izleyicilere tamamen eğlence odaklı, gerçek dışı ve komik bir alternatif senaryo sunar.",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "squid-game",
+    "franchiseName": "Squid Game",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt21439528",
@@ -85440,7 +85456,11 @@
     "plot": "A young Dexter Morgan transitions into an avenging serial killer.",
     "country": "United States",
     "omdbType": "series",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Genç Dexter Morgan, intikam peşinde koşan bir seri katile dönüşür.",
+    "franchiseId": "dexter",
+    "franchiseName": "Dexter",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt34678524",
