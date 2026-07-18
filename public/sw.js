@@ -1,3 +1,8 @@
+// Lokal ortamda (localhost / 127.0.0.1) caching tamamen devre dışı
+const IS_LOCAL =
+    self.location.hostname === 'localhost' ||
+    self.location.hostname === '127.0.0.1';
+
 const STATIC_CACHE = 'filmsitem-static-v1';
 const MAX_CACHE_ITEMS = 1000;
 
@@ -40,6 +45,9 @@ self.addEventListener('fetch', (event) => {
     const request = event.request;
 
     if (request.method !== 'GET') return;
+
+    // Lokalde caching yapma, tarayıcı ağ isteğine izin ver
+    if (IS_LOCAL) return;
 
     const url = new URL(request.url);
 
