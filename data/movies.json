@@ -17764,8 +17764,8 @@
     "omdbType": "movie",
     "boxOffice": "$229,947,062",
     "plotTr": "Andy adında küçük bir çocuk, odasında oyuncaklarıyla, özellikle de “Woody” adındaki bebeğiyle oynamayı çok sever. Ama Andy yanlarında olmadığında oyuncaklar ne yapar? Canlanırlar. Woody, (bir oyuncak olarak) hayatının iyi olduğuna inanır. Ancak, Andy’nin ailesinin taşınması konusunda endişelenmeli ve Woody’nin bilmediği şey Andy’nin doğum günü partisidir. Woody, Andy’nin annesinin ona bir oyuncak olduğuna inanmayan ve hızla Andy’nin yeni favori oyuncağı haline gelen Buzz Lightyear adında bir aksiyon figürü verdiğini fark etmez. Kıskançlıkla dolup taşan Woody, Buzz’dan kurtulmaya çalışır. Sonra, hem Woody hem de Buzz kaybolur. Andy onlarsız taşınmadan önce ona geri dönmenin bir yolunu bulmaları gerekir, ancak acımasız bir oyuncak katili olan Sid Phillips’in yanından geçmek zorunda kalacaklardır.",
-    "franchiseId": "oyuncak-hikâyesi",
-    "franchiseName": "Oyuncak Hikâyesi",
+    "franchiseId": "toy-story",
+    "franchiseName": "Toy Story",
     "franchiseOrder": 1
   },
   {
@@ -22712,8 +22712,8 @@
     "omdbType": "movie",
     "boxOffice": "$245,852,179",
     "plotTr": "Andy yaz kampındayken Woody, açgözlü bir koleksiyoncu ve “Al’s Toy Barn“ın sahibi Al McWiggin tarafından kaçırılır! Bu topyekün kurtarma görevinde Buzz ve arkadaşları Bay Patates Kafa, Slinky Köpek, Rex ve Hamm, Woody’yi bir müze parçası olmaktan kurtarmak için harekete geçer. Onu Japonya’da sonsuza dek satılmadan ve bir daha asla göremeyecekleri bir duruma düşmeden önce kurtarmanın bir yolunu bulmalılar!",
-    "franchiseId": "oyuncak-hikâyesi",
-    "franchiseName": "Oyuncak Hikâyesi",
+    "franchiseId": "toy-story",
+    "franchiseName": "Toy Story",
     "franchiseOrder": 2
   },
   {
@@ -31433,8 +31433,8 @@
     "omdbType": "movie",
     "boxOffice": "$194,820,396",
     "plotTr": "Afrika Ana’nın geniş topraklarında özgürce dolaşmayı arzulayan, ünlü Central Park Hayvanat Bahçesi’nin sıkılmış ve morali bozuk zebrası Marty, onuncu doğum günü kutlamasının gecesinde hapishanesinden kaçar. Ancak, Marty’nin arkadaşları - memnun aslan Alex; ürkek zürafa Melman ve kararlı su aygırı Gloria - tarafından yapılan başarısız bir kurtarma girişiminin ardından, arkadaşlar kendilerini sandıklara konmuş ve uzak bir vahşi yaşam koruma alanına gönderilmiş bulurlar, sadece egzotik Madagaskar’ın kumlu kıyılarına düşmek için. Sonunda, Marty’nin hayali gerçek olacaktır; yine de, gerçekten vahşi bir hayvan olmak ne anlama gelir?",
-    "franchiseId": "madagaskar",
-    "franchiseName": "Madagaskar",
+    "franchiseId": "madagascar",
+    "franchiseName": "Madagascar",
     "franchiseOrder": 1
   },
   {
@@ -33188,7 +33188,10 @@
     "country": "United States, United Kingdom, Czech Republic, Germany, Bahamas, Italy",
     "omdbType": "movie",
     "boxOffice": "$167,445,960",
-    "plotTr": "James Bond (Daniel Craig) 00 olarak ilk görevine çıkar. Le Chiffre (Mads Mikkelsen), dünya teröristlerinin bankacısıdır. Terörist pazarında güvende kalmak için parasını geri kazanması gereken Karadağ’da bir poker oyununa katılır. MI6’nın sadece “M” (Dame Judi Dench) olarak bilinen patronu, Bond’u Vesper Lynd (Eva Green) ile birlikte bu oyuna katılmaya ve Le Chiffre’nin kazanmasını engellemeye gönderir. Bond, Felix Leiter (Jeffrey Wright), Rene Mathis (Giancarlo Giannini) ve Vesper’ın ortağı gibi davranmasıyla, zaten tehlikeli olan kariyerindeki en önemli poker oyununa girer. Ama Bond, Le Chiffre’yi yenerse, o ve Vesper Lynd güvende kalabilecekler mi?"
+    "plotTr": "James Bond (Daniel Craig) 00 olarak ilk görevine çıkar. Le Chiffre (Mads Mikkelsen), dünya teröristlerinin bankacısıdır. Terörist pazarında güvende kalmak için parasını geri kazanması gereken Karadağ’da bir poker oyununa katılır. MI6’nın sadece “M” (Dame Judi Dench) olarak bilinen patronu, Bond’u Vesper Lynd (Eva Green) ile birlikte bu oyuna katılmaya ve Le Chiffre’nin kazanmasını engellemeye gönderir. Bond, Felix Leiter (Jeffrey Wright), Rene Mathis (Giancarlo Giannini) ve Vesper’ın ortağı gibi davranmasıyla, zaten tehlikeli olan kariyerindeki en önemli poker oyununa girer. Ama Bond, Le Chiffre’yi yenerse, o ve Vesper Lynd güvende kalabilecekler mi?",
+    "franchiseId": "james-bond",
+    "franchiseName": "James Bond",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0366548",
@@ -36509,8 +36512,8 @@
     "omdbType": "movie",
     "boxOffice": "$180,010,950",
     "plotTr": "2005 yapımı “Madagascar” filminin devamı olan bu yapımda, New York Hayvanat Bahçesi hayvanları Aslan Alex, Zebra Marty, Zürafa Melman ve Su Aygırı Gloria, hala Madagaskar’da mahsur kalmışken adadan ayrılmaya başlarlar. Aniden kendilerini Afrika’nın vahşi doğasında bulurlar ve Alex, ailesinin geri kalanıyla tanışır, ancak Central Park Hayvanat Bahçesi’nde geçirdiği uzun zamanın ardından onlarla iletişim kurmakta zorlanır.",
-    "franchiseId": "madagaskar",
-    "franchiseName": "Madagaskar",
+    "franchiseId": "madagascar",
+    "franchiseName": "Madagascar",
     "franchiseOrder": 2
   },
   {
@@ -36588,7 +36591,10 @@
     "country": "United Kingdom, United States, Italy",
     "omdbType": "movie",
     "boxOffice": "$168,368,427",
-    "plotTr": "İntikamda teselli var mıdır? James Bond (Daniel Craig) ve M (Dame Judi Dench), milyarlarca dolar kazanan karanlık bir uluslararası güç ve yolsuzluk ağının izini sürer. Bond, M’ye yönelik suikast girişiminin faillerini takip ederken, tüm yollar dünyaca ünlü yeşil teknoloji geliştiricisi Dominic Greene’e (Mathieu Amalric) çıkar. Greene, kötü niyetli bir adamdır ve Bolivya’da çorak bir bölgeyi, orada güçlü bir adamın darbe yapmasına yardım etme karşılığında ele geçirmeyi amaçlamaktadır. C.I.A. bu duruma göz yumar ve sadece Bond, emekli bir casus ve gizemli bir güzelin yardımıyla Greene’in yoluna çıkar. M, Bond’a güvenip güvenemeyeceğini veya intikamın onu ele geçirip geçirmediğini merak eder. Bond’a yakın olan biri hikayeyi anlatmak için yaşayabilir mi?"
+    "plotTr": "İntikamda teselli var mıdır? James Bond (Daniel Craig) ve M (Dame Judi Dench), milyarlarca dolar kazanan karanlık bir uluslararası güç ve yolsuzluk ağının izini sürer. Bond, M’ye yönelik suikast girişiminin faillerini takip ederken, tüm yollar dünyaca ünlü yeşil teknoloji geliştiricisi Dominic Greene’e (Mathieu Amalric) çıkar. Greene, kötü niyetli bir adamdır ve Bolivya’da çorak bir bölgeyi, orada güçlü bir adamın darbe yapmasına yardım etme karşılığında ele geçirmeyi amaçlamaktadır. C.I.A. bu duruma göz yumar ve sadece Bond, emekli bir casus ve gizemli bir güzelin yardımıyla Greene’in yoluna çıkar. M, Bond’a güvenip güvenemeyeceğini veya intikamın onu ele geçirip geçirmediğini merak eder. Bond’a yakın olan biri hikayeyi anlatmak için yaşayabilir mi?",
+    "franchiseId": "james-bond",
+    "franchiseName": "James Bond",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0397892",
@@ -36708,12 +36714,16 @@
     "imdbRating": 7.5,
     "tmdbRating": 7.5,
     "releaseDate": "2008-11-29",
-    "plot": "A rookery of penguins with attitude -- leader Skipper, brainy Kowalski, loony Rico and young Private -- in Central Park Zoo embarks on what it sees as a series of strike-force missions until confronting an unwelcome challenge to its dominance from a new zoo resident: Julien, King of the Lemurs, in a sequel to the hit animated movies.",
+    "plot": "A rookery of penguins with attitude leader Skipper, brainy Kowalski, loony Rico and young Private in Central Park Zoo embarks on what it sees as a series of strike-force missions until confronting an unwelcome challenge to its dominance from a new zoo resident: Julien, King of the Lemurs, in a sequel to the hit animated movies.",
     "country": "United States",
     "omdbType": "",
     "trailerYoutubeId": "np4JwN73hTU",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BM2JjZTNhMWYtN2M3ZC00MThkLWFlODAtNTdiM2I1N2U0N2MwXkEyXkFqcGc@._V1_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Central Park Hayvanat Bahçesi’ndeki kendine özgü karakterlere sahip penguen sürüsü — lider Skipper, zeki Kowalski, çılgın Rico ve genç Private, hit animasyon filmlerinin devam filminde, bir dizi özel görev olarak gördükleri maceralara atılır; ta ki hayvanat bahçesinin yeni sakini olan Lemurların Kralı Julien’den, hakimiyetlerine yönelik istenmeyen bir meydan okumayla karşı karşıya kalana kadar.",
+    "franchiseId": "madagascar",
+    "franchiseName": "Madagascar",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt1286126",
@@ -38146,7 +38156,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production centers on the melancholic and popular Black Sea folk song “Divane Aşık Gibi“. In this inaugural installment of the project, 45 young volunteer artists from all over Turkey perform different segments of the song from their own local natural or urban settings. By blending these diverse performances into a seamless musical journey, the video aims to raise awareness about environmental issues such as climate change and pollution, delivering a powerful message of solidarity for the preservation of nature.",
     "plotTr": "Yapım, Karadeniz yöresine ait hüzünlü ve sevilen “Divane Aşık Gibi” türküsünü temel alır. Projenin bu ilk ayağında, Türkiye’nin dört bir yanından bir araya gelen 45 gönüllü genç sanatçı, türkünün her bir dizesini veya müzikal bölümünü kendi bulundukları doğal ya da kentsel mekanlarda seslendirir. Müzisyenlerin içten yorumlarının ardışık bir kurguyla birleştiği bu çalışma, “Doğadan çaldığın yeter, Doğa İçin Çal!” şiarıyla, insanlığı çevre sorunlarına karşı duyarlı olmaya ve doğayı korumaya davet eder.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0469318",
@@ -39720,7 +39733,10 @@
     "omdbError": "Error getting data.",
     "plot": "Yapım, Aşık Veysel’in insanın doğumundan ölümüne kadar süren yaşam mücadelesini “iki kapılı bir han” metaforuyla anlatan ünlü “Uzun İnce Bir Yoldayım” türküsünü temel alır. Projenin bu ikinci ayağında, müziğin birleştirici gücü kullanılarak doğayı koruma bilinci aşılanması hedeflenir. Klibin sonunda eserin sözlerinin Aşık Veysel’in kendi sesinden duyulması, izleyiciler üzerinde derin bir hüzün ve farkındalık yaratan en etkileyici sahnelerden biri olarak kabul edilir.",
     "plotTr": "\nDoga Icin Cal 2 - Uzun Ince Bir Yoldayim\n\ntt11629472 · 2010",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt1228705",
@@ -39969,8 +39985,8 @@
     "omdbType": "movie",
     "boxOffice": "$415,004,880",
     "plotTr": "Woody, Buzz ve tüm çete geri döndü. Sahipleri Andy üniversiteye gitmeye hazırlanırken, sadık oyuncakları kendilerini, yapışkan küçük parmaklı vahşi çocukların iyi oynamadığı bir kreşte bulurlar. Bu yüzden, büyük kaçışlarını planlamak için Barbie’nin muadili Ken, Bay Pricklepants adında bir tiyatrocu kirpi ve Lots-o’-Huggin’ Bear adında pembe, çilek kokulu bir oyuncak ayıyla birleşerek hepsi birimiz, birimiz hepimiz için derler.",
-    "franchiseId": "oyuncak-hikâyesi",
-    "franchiseName": "Oyuncak Hikâyesi",
+    "franchiseId": "toy-story",
+    "franchiseName": "Toy Story",
     "franchiseOrder": 3
   },
   {
@@ -42246,7 +42262,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production features a medley of three iconic Turkish folk songs: “Gesi Bağları“, “Çemberimde Gül Oya“, and “Çayeli’nden Öteye“. Unlike previous installments that focused on a single track, this third project brings together over 100 volunteer musicians and singers from various parts of Turkey and the world. Notable contributors include Hayko Cepkin, Fuat Saka, and Levent Üzümcü, each performing from unique natural or historical settings. By utilizing music as a universal language, the project aims to raise awareness for environmental protection and support organizations dedicated to preserving nature and natural habitats.",
     "plotTr": "Yapım, ilk iki videodan farklı olarak tek bir eser yerine üç ikonik türkünün (“Gesi Bağları“, “Çemberimde Gül Oya” ve “Çayeli’nden Öteye“) birleştiği bir potpuri sunar. 100’den fazla müzisyen ve şarkıcının gönüllü olarak yer aldığı klipte; Hayko Cepkin, Fuat Saka ve Levent Üzümcü gibi tanınmış isimler, bu türküleri kendi bulundukları doğal veya tarihi mekanlarda yorumlamaktadır. Müziğin evrensel dilini kullanan eser, doğayı korumaya yönelik faaliyetlere dikkat çekmeyi ve izleyicilerde çevre bilinci oluşturmayı hedefler.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0800369",
@@ -44716,7 +44735,10 @@
     "omdbError": "Error getting data.",
     "plot": "This fourth installment of the project is an instrumental medley featuring three of Turkish cinema’s most iconic film scores: “Selvi Boylum Al Yazmalım“, “Çiçek Abbas“, and “Devlerin Aşkı“. Directed by Fırat Çavaş, the music video aims to raise global awareness about environmental crises, including climate change, melting glaciers, and agricultural pollution. By featuring dozens of volunteer musicians performing these legendary Cahit Berkay compositions from various natural settings worldwide, the project delivers a powerful artistic message about the urgent need to protect our planet and preserve its ecological balance for future generations.",
     "plotTr": "Projenin bu dördüncü halkası, Yeşilçam’ın ikonikleşmiş üç film müziği olan “Selvi Boylum Al Yazmalım“, “Çiçek Abbas” ve “Devlerin Aşkı” üzerine kuruludur. Tamamen enstrümantal bir yapıda hazırlanan video, müziğin evrensel gücünü kullanarak doğadaki tehlike sinyallerine, küresel ısınmaya, eriyen buzullara ve denetimsiz tarım gibi ekolojik tehditlere karşı farkındalık yaratmayı hedefler. 40’a yakın gönüllü müzisyenin Türkiye’nin ve dünyanın farklı yerlerinden kendi enstrümanlarıyla eşlik ettiği bu yapım, doğayı yok sayarak inşa edilen bir geleceğin risklerini hatırlatan sanatsal bir çağrıdır.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt1759761",
@@ -44956,9 +44978,9 @@
     "omdbType": "movie",
     "boxOffice": "$216,391,482",
     "plotTr": "Alex, Marty, Gloria ve Melman hala Büyük Elma’ya ve sevgili Central Park hayvanat bahçelerine geri dönmeye çalışıyorlar, ancak önce penguenleri bulmaları gerekiyor. Monte Carlo’ya gittiklerinde, bir partiye izinsiz girmeleri üzerine Hayvan Kontrolü’nün dikkatini çekerler ve penguenler, Kral Julian ve ekibi ile maymunlar da onlara katılır. Bir aslan, zebra, su aygırı, zürafa, dört penguen, iki maymun, üç lemur Avrupa’da dikkat çekmeden nasıl seyahat edip New York’a geri dönebilir? Bir seyyar sirke katılırlar. New York’a geri dönme girişimleri, Alex’i koleksiyonuna katmak isteyen Hayvan Kontrolü Kaptanı tarafından sürekli engellenir. New York’a geri döndüklerinde Marty, Alex, Gloria ve Melman, seyyar sirkin bir parçası olmak istediklerini fark ederler.",
-    "franchiseId": "madagaskar",
-    "franchiseName": "Madagaskar",
-    "franchiseOrder": 3
+    "franchiseId": "madagascar",
+    "franchiseName": "Madagascar",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt2203380",
@@ -47348,7 +47370,10 @@
     "country": "United Kingdom, United States, Türkiye, China",
     "omdbType": "movie",
     "boxOffice": "$304,360,277",
-    "plotTr": "James Bond’un (Daniel Craig) son görevi feci şekilde ters gidip dünya çapındaki ajanlar ifşa olunca, MI6 saldırıya uğrar ve M’i (Dame Judi Dench) ajansı başka bir yere taşımaya zorlar. Bu olaylar, M’in otoritesinin ve konumunun, İstihbarat ve Güvenlik Komitesi’nin yeni Başkanı Gareth Mallory (Ralph Fiennes) tarafından sorgulanmasına neden olur. MI6 hem içeriden hem dışarıdan tehlikeye girince, M güvenebileceği tek bir müttefikle kalır: Bond. 007, yalnızca saha ajanı Miss Eve Moneypenny’nin (Naomie Harris) yardımıyla gölgelere çekilir ve ölümcül ve gizli motivasyonları henüz ortaya çıkmamış olan gizemli Tiago Rodriguez, diğer adıyla Raoul Silva’nın (Javier Bardem) izini sürer."
+    "plotTr": "James Bond’un (Daniel Craig) son görevi feci şekilde ters gidip dünya çapındaki ajanlar ifşa olunca, MI6 saldırıya uğrar ve M’i (Dame Judi Dench) ajansı başka bir yere taşımaya zorlar. Bu olaylar, M’in otoritesinin ve konumunun, İstihbarat ve Güvenlik Komitesi’nin yeni Başkanı Gareth Mallory (Ralph Fiennes) tarafından sorgulanmasına neden olur. MI6 hem içeriden hem dışarıdan tehlikeye girince, M güvenebileceği tek bir müttefikle kalır: Bond. 007, yalnızca saha ajanı Miss Eve Moneypenny’nin (Naomie Harris) yardımıyla gölgelere çekilir ve ölümcül ve gizli motivasyonları henüz ortaya çıkmamış olan gizemli Tiago Rodriguez, diğer adıyla Raoul Silva’nın (Javier Bardem) izini sürer.",
+    "franchiseId": "james-bond",
+    "franchiseName": "James Bond",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt2522324",
@@ -48629,7 +48654,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production is based on the famous Turkish folk song “Bitlis’te Beş Minare“, a traditional melody from the Bitlis region that tells a story of a father and son during the Russian occupation. The production of this fifth installment took 7 months and features 47 volunteer musicians performing from various provinces across Turkey and multiple locations around the world. The project is supported by prominent figures such as rock icon Şebnem Ferah, jazz artist Karsu Dönmez, folk musician İsmail Altunsaray, and Gülçin Ergül. By tracking each artist as they perform with their voice or instrument across diverse natural and historical landscapes, this collective piece utilizes the power of music to foster a strong environmental and nature protection awareness.",
     "plotTr": "Yapım, Bitlis yöresine ait olan ve Rus işgali dönemindeki bir baba-oğul hikayesini anlatan ünlü “Bitlis’te Beş Minare” halk türküsünü temel alır. Yapım aşaması 7 ay süren ve Türkiye’nin birçok farklı ilinin yanı sıra dünyanın dört bir yanından çekimler barındıran klipte tam 47 gönüllü müzisyen görev almıştır. Projeye usta rock sanatçısı Şebnem Ferah, caz sanatçısı Karsu Dönmez, Türk halk müziği sanatçısı İsmail Altunsaray ve Gülçin Ergül gibi çok sayıda değerli isim sesleri ve enstrümanlarıyla destek vermiştir. Sanatçıların doğal ve tarihi mekanlarda icra ettiği bu ortak ezgi, kültürel mirasa sahip çıkarken toplumsal bir doğa ve çevre bilinci oluşturmayı amaçlar.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt1300854",
@@ -53048,7 +53076,10 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMTEyMDg4MDU4MjdeQTJeQWpwZ15BbWU4MDQyOTc3MjIx._V1_SX300.jpg",
     "trailerYoutubeId": "xKuGFYWCjQY",
-    "boxOffice": "$83,850,911"
+    "boxOffice": "$83,850,911",
+    "franchiseId": "madagascar",
+    "franchiseName": "Madagascar",
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt3982774",
@@ -54981,7 +55012,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production merges two energetic and well-known Turkish folk songs from the Aegean region: “Çökertme” from Muğla and the upbeat “Ateş Attım Samana (Gımıldan)“. For this sixth installment of the project, the production crew traveled through 16 countries and 31 cities, covering a total of 17,000 kilometers to capture breathtaking landscapes. The music video features dozens of volunteer artists, including famous actor Ahmet Kural, Akın Eldes, Alen Konakoğlu, and international musician Brenna MacCrimmon. By tracking each artist as they perform with their voice or instrument across diverse global natural settings, this lively piece utilizes musical harmony to raise a powerful global environmental and climate change awareness.",
     "plotTr": "Yapım, Muğla yöresine ait ünlü “Çökertme” türküsü ile Denizli/Uşak yöresinin hareketli ezgisi “Ateş Attım Samana (Gımıldan)” parçalarını temel alır. Proje ekibi bu klibin çekimleri için 16 ülke ve 31 şehir gezerek toplamda 17.000 kilometre yol katetmiş, dünyanın dört bir yanından müzisyenleri bir araya getirmiştir. Yapımda ünlü oyuncu Ahmet Kural, Akın Eldes, Alen Konakoğlu ve yabancı müzisyen Brenna MacCrimmon gibi onlarca gönüllü sanatçı yer almaktadır. Her bir müzisyenin dünyanın farklı coğrafyalarındaki doğal güzellikler içinde enstrümanı veya sesiyle eşlik ettiği bu neşeli çalışma, izleyicilere müzikal bir şölen sunarken aynı zamanda güçlü bir doğa ve çevre koruma bilinci aşılamayı hedefler.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 6
   },
   {
     "imdbId": "tt2404425",
@@ -57768,7 +57802,10 @@
     "country": "United Kingdom, United States, Morocco, Italy, Austria, Canada, Mexico",
     "omdbType": "movie",
     "boxOffice": "$200,074,609",
-    "plotTr": "Geçmişten gelen şifreli bir mesaj, James Bond’u (Daniel Craig) Mexico City’ye ve sonunda Roma’ya, kötü şöhretli bir suçlunun güzel ve yasaklı dul eşi Lucia Sciarra (Monica Belluci) ile tanıştığı bir göreve gönderir. Bond gizli bir toplantıya sızar ve S.P.E.C.T.R.E. olarak bilinen uğursuz örgütün varlığını ortaya çıkarır. Bu sırada, Londra’da Ulusal Güvenlik Merkezi’nin yeni başkanı Max Denbigh (Andrew Scott), Bond’un eylemlerini sorgular ve M (Ralph Fiennes) liderliğindeki MI6’nın önemini sorgular. Bond, S.P.E.C.T.R.E. ağını çözmenin anahtarını elinde tutabilecek eski düşmanı Mr. White’ın (Jesper Christensen) kızı Dr. Madeleine Swann’ı (Léa Seydoux) bulmasına yardım etmeleri için Miss Eve Moneypenny (Naomie Harris) ve Q’yu (Ben Whishaw) gizlice görevlendirir. Suikastçının kızı olarak, Bond’u çoğu kişinin anlayamayacağı bir şekilde anlar. Bond, S.P.E.C.T.R.E.’nin kalbine doğru ilerlerken, kendisi ile aradığı düşman arasında tüyler ürpertici bir bağlantı olduğunu öğrenir."
+    "plotTr": "Geçmişten gelen şifreli bir mesaj, James Bond’u (Daniel Craig) Mexico City’ye ve sonunda Roma’ya, kötü şöhretli bir suçlunun güzel ve yasaklı dul eşi Lucia Sciarra (Monica Belluci) ile tanıştığı bir göreve gönderir. Bond gizli bir toplantıya sızar ve S.P.E.C.T.R.E. olarak bilinen uğursuz örgütün varlığını ortaya çıkarır. Bu sırada, Londra’da Ulusal Güvenlik Merkezi’nin yeni başkanı Max Denbigh (Andrew Scott), Bond’un eylemlerini sorgular ve M (Ralph Fiennes) liderliğindeki MI6’nın önemini sorgular. Bond, S.P.E.C.T.R.E. ağını çözmenin anahtarını elinde tutabilecek eski düşmanı Mr. White’ın (Jesper Christensen) kızı Dr. Madeleine Swann’ı (Léa Seydoux) bulmasına yardım etmeleri için Miss Eve Moneypenny (Naomie Harris) ve Q’yu (Ben Whishaw) gizlice görevlendirir. Suikastçının kızı olarak, Bond’u çoğu kişinin anlayamayacağı bir şekilde anlar. Bond, S.P.E.C.T.R.E.’nin kalbine doğru ilerlerken, kendisi ile aradığı düşman arasında tüyler ürpertici bir bağlantı olduğunu öğrenir.",
+    "franchiseId": "james-bond",
+    "franchiseName": "James Bond",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt4151192",
@@ -59940,7 +59977,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production is centered around “Havada Bulut Yok (Yemen Türküsü)“, a historical and deeply moving Turkish lament written for the soldiers who lost their lives in Yemen. For this seventh installment of the project, the production crew traveled through 18 countries and 33 cities, covering over 20,000 kilometers to record footage. The music video features 38 volunteer musicians from Turkey and around the world performing together. By tracking each artist as they perform with their voice or instrument across diverse global landscapes and historical locations, the piece uses the universal language of music to emphasize the urgent need for environmental protection and the conservation of our shared natural heritage.",
     "plotTr": "Yapım, Yemen’de hayatını kaybeden Osmanlı askerleri için yakılmış tarihi bir ağıt olan Muş/Huş yöresine ait “Havada Bulut Yok (Yemen Türküsü)” eserini temel alır. Proje ekibi bu çalışma için 18 ülke ve 33 şehir gezerek toplamda 20.000 kilometreden fazla yol katetmiştir. Yapımda Türkiye’den ve dünyadan 38 gönüllü müzisyen yer almaktadır. Her bir sanatçının dünyanın farklı coğrafyalarındaki tarihi ve doğal mekanlarda kendi enstrümanı ya da sesiyle eşlik ettiği bu hüzünlü parça, doğanın ve ortak insanlık mirasının korunması gerektiğine vurgu yapar. Ayrıca klibin çeşitli sahnelerinde martılar, kediler ve köpekler gibi sokak hayvanlarına da yer verilerek doğadaki tüm canlıların yaşam hakkına dikkat çekilmiştir.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 7
   },
   {
     "imdbId": "tt3628584",
@@ -70970,7 +71010,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production centers around the energetic and iconic Black Sea folk song “Hayde“, heavily associated with the late artist Kazım Koyuncu. For this particular installment, the production crew traveled through 18 countries, covering over 20,000 kilometers to capture stunning natural landscapes from across the globe. The music video features 39 volunteer musicians from Turkey and worldwide, highlighted by legendary comedian Cem Yılmaz, master singer Levent Yüksel, maNga’s frontman Ferman Akgül, actor Ümit Erdim, and creators Uras Benlioğlu and Cem Korkmaz. By spreading a rhythmic Black Sea melody across international borders, this collective piece emphasizes the universality of nature to foster a global environmental protection and conservation awareness.",
     "plotTr": "Yapım, Karadeniz kültürünün en coşkulu ve ikonik şarkılarından biri olan Kazım Koyuncu ile özdeşleşmiş “Hayde” parçasını temel alır. Projenin bu bölümü için yapım ekibi tam 18 ülke gezerek 20.000 kilometreden fazla yol katetmiş ve dünyanın dört bir yanındaki doğal güzellikleri kaydetmiştir. Klipte; sinema dünyasından ünlü komedyen Cem Yılmaz, usta sanatçı Levent Yüksel, maNga grubunun solisti Ferman Akgül, oyuncu Ümit Erdim, içerik üreticileri Uras Benlioğlu ile Cem Korkmaz da dahil olmak üzere Türkiye’den ve dünyadan 39 gönüllü müzisyen yer alır. Farklı coğrafyalardan yükselen bu ortak Karadeniz ezgisi, doğanın evrenselliğini vurgulayarak insanlığa küresel bir çevre koruma ve yeşil alan bilinci aşılamayı hedefler.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 8
   },
   {
     "imdbId": "tt1972591",
@@ -72255,7 +72298,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production centers around the traditional folk song “Hey Onbeşli“, a historical lament from the Tokat region written for the very young soldiers who went to fight in the Gallipoli Campaign during World War I. Contrary to its contemporary misuse as an upbeat dance song in popular culture, this version strictly honors the song’s original, melancholic and slow lament tone. The music video gathers more than 40 volunteer musicians and celebrities, including legendary master Erkan Oğur, Mazlum Çimen, actress Tuvana Türkay, singer Güliz Ayla, Eser Eyüboğlu, voice actor Yekta Kopan, and young actor Berat Efe Parlar. With each artist performing their part via their voice or instrument from various natural and historical settings across Turkey, this collective elegy delivers a powerful message of solidarity for the preservation of nature and cultural heritage.",
     "plotTr": "Yapım, Çanakkale Savaşı döneminde vatan savunmasına giden gencecik insanlar için yakılmış tarihi bir Tokat ağıtı olan “Hey Onbeşli” türküsünü temel alır. Eserin günümüzde popüler kültürde bir oyun havası gibi algılanmasının aksine, projenin bu versiyonunda türkünün orijinal hüzünlü ve sakin ağıt tonu korunmuştur. Klipte; usta sanatçı Erkan Oğur, Mazlum Çimen, oyuncu Tuvana Türkay, şarkıcı Güliz Ayla, Eser Eyüboğlu, seslendirme sanatçısı Yekta Kopan ve çocuk oyuncu Berat Efe Parlar gibi 40’tan fazla gönüllü müzisyen ve ünlü isim yer alır. Her bir sanatçının Türkiye’nin farklı doğal ve tarihi bölgelerinde kendi enstrümanı veya sesiyle eşlik ettiği bu kolektif ağıt, doğanın ve kültürel mirasın korunması adına güçlü bir birliktelik mesajı sunar.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 9
   },
   {
     "imdbId": "tt2527336",
@@ -74042,7 +74088,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production merges two deeply rooted Turkish folk songs: the melancholic “İki Keklik” from the Balıkesir region and the upbeat “Dere Geliyor Dere” from Thrace/Lüleburgaz. The music video features dozens of volunteer musicians and vocalists from Turkey and around the world, including notable figures like Hayko Cepkin, Mert Fırat, Sena Şener, Gülçin Ergül, Ece Mumay, Chaby Han, Alaa Wardi, and rap artist Ayben. Each artist performs their part using their voice or instrument from various locations representing nature. By blending cultural diversity into musical harmony, the piece aims to foster a collective environmental and nature protection awareness among audiences.",
     "plotTr": "Yapım, Balıkesir yöresine ait hüzünlü “İki Keklik” türküsü ile Trakya/Lüleburgaz yöresinin hareketli ezgisi **“Dere Geliyor Dere“**yi bir araya getirir. Klipte, aralarında Hayko Cepkin, Mert Fırat, Sena Şener, Gülçin Ergül, Ece Mumay, Chaby Han, Alaa Wardi ve rap sanatçısı Ayben gibi Türkiye’den ve dünyadan tanınmış onlarca gönüllü müzisyen ile vokalist yer almaktadır. Her bir sanatçı, kendi yaşadığı veya doğayı temsil eden farklı bir mekandan şarkıya enstrümanı ya da sesiyle eşlik eder. Eser, kültürel çeşitliliği müzikal bir uyumla birleştirerek insanlara toplumsal bir doğa, yeşil alan ve çevre koruma bilinci aşılamayı amaçlar.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 10
   },
   {
     "imdbId": "tt9227182",
@@ -76800,7 +76849,10 @@
     "omdbError": "Error getting data.",
     "plot": "The production is based on the famous Turkish folk song “Çarşamba’yı Sel Aldı“, originating from the Çarşamba district of Samsun. The music video features 33 volunteer artists and musicians, including prominent figures like Levent Yüksel, Sevcan Orhan, Eser Eyüboğlu, Rüştü Onur Atilla, and YouTuber Alper Rende. Each musician performs a segment of the song with their voice or instrument from their own unique natural or historical location. By blending diverse instruments and regional backgrounds into a unified harmony, this project aims to raise global environmental and nature awareness through the power of music.",
     "plotTr": "Yapım, Samsun’un Çarşamba yöresine ait olan ünlü “Çarşamba’yı Sel Aldı” halk türküsünü temel alır. Klipte, aralarında Levent Yüksel, Sevcan Orhan, Eser Eyüboğlu, Rüştü Onur Atilla ve YouTuber Alper Rende gibi tanınmış isimlerin de bulunduğu 33 gönüllü sanatçı yer almaktadır. Her bir müzisyen, kendi bulunduğu doğal veya tarihi mekandan şarkının bir bölümünü enstrümanıyla ya da sesiyle seslendirir. Farklı yörelerin ve enstrümanların bir araya getirilmesiyle oluşturulan bu ortak ezgi, müzik aracılığıyla toplumsal bir doğa ve çevre bilinci oluşturmayı amaçlamaktadır.",
-    "omdbType": ""
+    "omdbType": "",
+    "franchiseId": "doga-icin-cal",
+    "franchiseName": "Doga Icin Cal",
+    "franchiseOrder": 11
   },
   {
     "imdbId": "tt8106534",
@@ -80210,7 +80262,10 @@
     "plot": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
     "country": "United Kingdom, United States",
     "omdbType": "movie",
-    "boxOffice": "$160,891,007"
+    "boxOffice": "$160,891,007",
+    "franchiseId": "james-bond",
+    "franchiseName": "James Bond",
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt4244994",
