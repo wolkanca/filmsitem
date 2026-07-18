@@ -58,7 +58,7 @@ export default function AdminPage() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-    if (username === 'wolkanca' && password === 'wolkanca1!') {
+    if (username === 'wolkanca' && password === 'wolkanca') {
       document.cookie = 'is_admin=true; path=/; max-age=604800; SameSite=Lax';
       setIsLoggedIn(true);
       setUsername('');
