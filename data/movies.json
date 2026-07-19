@@ -40588,7 +40588,10 @@
     "country": "United States",
     "omdbType": "movie",
     "plotTr": "Kış Festivali yaklaşmaktadır ve Po’dan tüm Kung Fu Ustaları için büyük, özel bir resmi ziyafete ev sahipliği yapması istenir. Ancak bu etkinlik, babasının restoranının kendi partisiyle aynı geceye denk gelir ve oğlu Po’nun yokluğuna üzülen Bay Ping, Po’nun isteği üzerine ustalar için yemek pişirmek üzere partiyi iptal etmez. Babasının çelişen sorumlulukları hakkındaki dayattığı suçluluk duygusuyla yüklenen Po, tüm hazırlıkları moral bozucu bir mücadele olarak bulur. Ancak çözüm, hiç beklemediği bir yerden gelir, zira panda o büyük gecede kime daha çok ihtiyacı olduğunu seçmek zorundadır.",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "kung-fu-panda",
+    "franchiseName": "Kung Fu Panda",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt1668191",
@@ -44051,7 +44054,10 @@
     "omdbType": "movie",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNWYyNTdmNmUtY2Q5Yy00ZmUwLWJkZTYtNDIzZjE4OTA2Y2MyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "plotTr": "Po, Kaplan ve Peygamberdevesi ile birlikte Kahramanlar Salonu’na girerek yeni sergileri, özellikle de Ustalar Gürleyen Gergedan, Fırtınalı Öküz ve Timsah’ınkileri görmek ister. Oradayken Po, bu üçlünün nasıl küçük çaplı sokak dövüşçüleri olarak başladığını, ta ki kötücül Wu Kardeşler Çin’i fethetme planlarıyla kaçana kadar olan hikayeyi anlatır. Bu tehdide karşı, Usta Oogway bencil üçlüyü kız kardeşleri durdurma görevinde kendisine eşlik etmeye ikna eder. Takip eden zorluklarda, bu ustalar duydukları büyük zenginlik vaatlerinin solduğunu ve uğruna savaşmaya çok daha değerli şeyler olduğunu öğrenirler.",
-    "boxOffice": ""
+    "boxOffice": "",
+    "franchiseId": "kung-fu-panda",
+    "franchiseName": "Kung Fu Panda",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt1229238",
@@ -59495,7 +59501,7 @@
     "plotTr": "Po’nun uzun süredir kayıp olan panda babası aniden ortaya çıktığında, yeniden bir araya gelen ikili, bir sürü komik yeni panda karakteriyle tanışmak için gizli bir panda cennetine gider. Ancak doğaüstü kötü adam Kai, Çin’i kasıp kavurup tüm kung fu ustalarını yenmeye başladığında, Po imkansızı başarmak zorundadır: eğlenceyi seven, sakar kardeşleriyle dolu bir köyü nihai Kung Fu Pandaları ekibi olmaları için eğitmek.",
     "franchiseId": "kung-fu-panda",
     "franchiseName": "Kung Fu Panda",
-    "franchiseOrder": 3
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt5229228",
