@@ -2834,7 +2834,8 @@
     "omdbType": "",
     "trailerYoutubeId": "pYxzDSXskU4",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BYTRkMWJiZDgtOTAyOS00YjcyLWI5YjktNDhlMGExMTRjYWY4XkEyXkFqcGc@._V1_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "ABD’nin güneybatısındaki çöl, Road Runner’ın doğal yaşam alanıdır. Bu enerjik çizgi film karakteri, çöl yollarında o kadar hızlı koşar ki ardında bir alev izi bırakır ya da asfaltın dalgalanmasına, bükülmesine ya da halı gibi kıvrılmasına neden olur. Bu hızlı kuş, Wile E. adında aç bir çakal tarafından durmaksızın kovalanır; Wile E., kendini bir dahi olarak görse de, ACME Corporation’ın sonsuz sayıda alet, silah ve diğer donanımlarına rağmen Road Runner’ı yakalamayı defalarca başaramaz. Bu televizyon dizisinin bölümleri üç sinema çizgi filmi içerir: biri Road Runner ve Wile E. Coyote’yi, biri Tweety Bird ve Sylvester Cat’i, diğeri ise Warner Brothers’ın klasik çizgi filmlerinden diğer karakterleri konu alır."
   },
   {
     "imdbId": "tt0392393",
@@ -3269,7 +3270,11 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNGFmM2Y2NzktZDE0Yy00OWUwLWJhYjgtNGMzMTY5YjY5MWJhXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "lct2aodaLms",
-    "boxOffice": ""
+    "boxOffice": "Dizi, kendisini rahatsız edenleri zekice numaralarla alt eden pembe bir panteri konu alıyor.",
+    "plotTr": "Fakir bir bakkal, popüler bir kaleci olur.",
+    "franchiseId": "pink-panther",
+    "franchiseName": "Pink Panther",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0063939",
@@ -3309,7 +3314,11 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BOGFkZjA0ZjItOGQ3Yi00NjYwLWJlNTctNzI3ODZiNWExZmQ1XkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "QW5nC75BPcQ",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Pembe Panter, pembe tüyleri ve bir İngiliz aristokratının tavırlarına sahip, kahraman ve ahlaklı bir çizgi film kedisidir. Yalnızca varlığını bozmaya çalışan kaba veya saldırgan insanlara ya da baş belası aletlere, kemirgenlere veya böceklere karşı telaşlanır ya da sinirlenir. Çizgi filmlerinin çoğunda, zor bir duruma düşer ve stoik bir tavırla bu durumdan en iyi şekilde çıkmaya çalışır. Bu dizinin bölümleri üç çizgi filmden oluşur; ikisinde Pembe Panter yer alırken, birinde ise filmlerde Peter Sellers tarafından canlandırılan, kazalara yatkın ve sakar Fransız dedektif Müfettiş Clouseau’nun çizgi film versiyonu olan Müfettiş yer alır. Müfettiş’e genellikle İspanyol bir jandarma olan Çavuş Deux-Deux yardım eder ve ikisi birlikte, her zaman sabırlı Surete Komiseri’nin emirleri doğrultusunda, dünyanın çeşitli yerlerinde her türden ve boyuttan kötü adamlarla hatalarla dolu bir mücadele verirler.",
+    "franchiseId": "pink-panther",
+    "franchiseName": "Pink Panther",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0063950",
@@ -3352,7 +3361,10 @@
     "trailerYoutubeId": "P7idsl0lUjM",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BZWY2YWM1NzItMTM4OC00OWExLTkxZGItNzNmYzI4MmFiYjVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "boxOffice": "",
-    "plotTr": "Scooby-Doo adlı bir Danua cinsi köpeğin, Kaliforniyalı dört lise öğrencisiyle (Fred, Daphne, Velma ve Shaggy) birlikte tuhaf gizemleri çözmek için çıktıkları birçok maceraya eşlik ettiği popüler animasyon dizisi. Her gizem güncel ve sıra dışıdır; bu maceralarda grup, birisinin dünyada büyük bir felakete yol açmasını engellemeye çalışır. Çete, her zamanki gençlik etkinliklerine giderken ya da dönerken Mystery Machine ile yol alırken, minibüslerinin motorunda sorun çıkar ya da çeşitli nedenlerle arıza yapar. (İstemeden) vardıkları yerde bir canavar sorunu olduğu ortaya çıkar ve çete, olayı araştırmak için gönüllü olur. Sonunda, hayalet ya da canavarın bir kötü adam olduğuna çeteyi ikna edecek kadar ipucu bulunur. Her seferinde hayalet ya da canavar yakalanır ve görünüşte suçsuz bir otorite figürü ya da bir suç ya da dolandırıcılığı örtbas etmek için kılık değiştiren zararsız bir yerel kişi olduğu ortaya çıkar. “Siz burnunu sokan çocuklar olmasaydınız, bu işten paçayı sıyırabilirdim!” diye haykırdıktan sonra, kötü adam hapse götürülür ve grubun varış noktasına doğru yoluna devam etmesine izin verilir."
+    "plotTr": "Scooby-Doo adlı bir Danua cinsi köpeğin, Kaliforniyalı dört lise öğrencisiyle (Fred, Daphne, Velma ve Shaggy) birlikte tuhaf gizemleri çözmek için çıktıkları birçok maceraya eşlik ettiği popüler animasyon dizisi. Her gizem güncel ve sıra dışıdır; bu maceralarda grup, birisinin dünyada büyük bir felakete yol açmasını engellemeye çalışır. Çete, her zamanki gençlik etkinliklerine giderken ya da dönerken Mystery Machine ile yol alırken, minibüslerinin motorunda sorun çıkar ya da çeşitli nedenlerle arıza yapar. (İstemeden) vardıkları yerde bir canavar sorunu olduğu ortaya çıkar ve çete, olayı araştırmak için gönüllü olur. Sonunda, hayalet ya da canavarın bir kötü adam olduğuna çeteyi ikna edecek kadar ipucu bulunur. Her seferinde hayalet ya da canavar yakalanır ve görünüşte suçsuz bir otorite figürü ya da bir suç ya da dolandırıcılığı örtbas etmek için kılık değiştiren zararsız bir yerel kişi olduğu ortaya çıkar. “Siz burnunu sokan çocuklar olmasaydınız, bu işten paçayı sıyırabilirdim!” diye haykırdıktan sonra, kötü adam hapse götürülür ve grubun varış noktasına doğru yoluna devam etmesine izin verilir.",
+    "franchiseId": "scoob",
+    "franchiseName": "Scoob",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0065234",
@@ -4882,7 +4894,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BY2M1Mzc5NGItZmM0Yi00NDUzLWExYzUtMDlmZmFiM2Q0NDZmXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "g6YEZdnv1bc",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Hanna-Barbera tarafından yaratılan ve Oscar ödüllü kedi-fare ikilisi Tom &amp; Jerry, bir saatlik yeni maceralarla televizyona geri döndü. Bu dizide, yıllarca süren rekabetin ardından T&amp;J en iyi arkadaşlar haline gelmiştir (ayrıca Jerry, animatörlerin hareketlerini “parçalara ayırabilmeleri” için kırmızı bir papyon takmaktadır). Bölümlerde ikili, dünyayı dolaşarak spor müsabakalarına katılır, iş başında başlarına gelen talihsizliklere göğüs gerer, alçak kötü adamlarla çatışır, gizemleri çözer ve başkalarına yardım eder. İlk sezonda, üç adet 7 dakikalık “New Tom &amp; Jerry bölümü, 40-foot mor bir maymun olan Grape Ape (seslendiren: Bob Holt) ve onun hızlı konuşan beagle arkadaşı, Beegle Beagle (seslendiren: Marty Ingels) ya da G.A.’nın ona sevgiyle hitap ettiği adıyla “Beegley Beagley” gibi tuhaf bir lakaba sahip bir karnaval dolandırıcısını konu alan iki adet 10-minute bölümle dönüşümlü olarak yayınlandı. İkinci sezon, Lt. Mumbly (seslendiren: merhum Don Messick; karakter, Wacky Races [CBS, 1968-70] ve Dastardly And Muttley In Their Flying Machines [CBS, 1969-71] dizilerindeki Muttley karakterinden esinlenerek yaratılmış) ve onun beceriksiz yardımcısı Shnooker’ı (seslendiren: John Stephenson) konu alan yeni bir Hanna-Barbera komedi/gizem dizisi olan The Mumbly Cartoon Show’un 16 adet 6 dakikalık bölümüyle başladı."
   },
   {
     "imdbId": "tt0073486",
@@ -5122,7 +5135,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BZmY1MTcyYTMtZjEyZi00ZjI2LWE2NjctODkxYzQzM2Q5ZjRlXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "_h2eL7oar6k",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Heidi (1974), Johanna Spyri’nin (1880) İsviçre romanı *Heidi’nin Dolaşma ve Öğrenme Yılları*’ndan uyarlanan, Zuiyo Eizo (şimdiki adıyla Nippon Animation) tarafından üretilen bir Japon anime dizisidir. Yönetmenliğini Isao Takahata üstlenmiştir. “Heidi in the Mountains” (diğer adıyla “The Story of Heidi”) adlı uzun metrajlı film, Zuiyo tarafından diziden derlenerek (o dönemde, TV dizisinin animasyon ekibinin çoğunu istihdam eden Nippon Animation’dan ayrı bir kuruluş haline gelmişti) 1979’da dağıtılmıştır. Heidi ve büyükbaba hariç tüm seslendirme kadrosu değiştirildi. Bu film aynı zamanda, ABD’de İngilizce olarak ticari olarak piyasaya sürülen (1980’lerde ev videosu formatında) tek Heidi anime uyarlamasıdır. Isao Takahata, bu eserle ilgili olarak “Ne Hayao Miyazaki ne de ben, herhangi bir kısaltılmış versiyonla tamamen ilgiliyiz” demiştir."
   },
   {
     "imdbId": "tt0252496",
@@ -6989,7 +7003,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMGJjOTJjN2QtNDY1ZC00ODViLWExOWMtMDhlNGY3ZmZkNGVjXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "kF6YGQpRffQ",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Hikâye, bir fareyi kovalayan bir kediyle ilgili..."
   },
   {
     "imdbId": "tt0253991",
@@ -7391,7 +7406,8 @@
     "omdbType": "",
     "trailerYoutubeId": "gQMwc-lALC0",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNTA3MTExZTQtYWQwOS00M2ZjLTg2NTAtN2FiZDU1ZDdlOGJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Şirinler adında sihirli mavi, cüce benzeri yaratıkların başrolde olduğu klasik Cumartesi sabahı çizgi dizi. Kişiliklerinden dolayı isimlendirilmiş olan Şirinler, büyülü bir ormandaki mantar evlerden oluşan bir köyde yaşarlar. Bu sevimli yaratıklar, Şirin Baba’nın önderliğinde kaygısız bir hayat sürerler... ancak varlıklarını tehdit eden tek bir büyük tehlike vardır: Ormandaki taştan yapılmış bir evde yaşayan, kötü kalpli ama beceriksiz bir büyücü olan Gargamel ve onun kedisi, aynı derecede kötü kalpli Azrael. Tipik hikayeler, Şirinler’in Gargamel’e karşı verdikleri mücadeleyi konu alır. Gargamel, büyücüler cemaati içinde saygınlık kazanmak amacıyla bu mavi yaratıklara çeşitli şeyler yapmak ister; örneğin onları yemek, köle yapmak ve sihirli sırlarını ele geçirmek gibi. Şirinler, birden fazla kez Gargamel’i ters tepen planlarından ya da ondan daha kötü büyücülerden kurtarmak zorunda kalmıştır."
   },
   {
     "imdbId": "tt0254001",
@@ -8088,7 +8104,8 @@
     "omdbType": "",
     "trailerYoutubeId": "Jr1Z3oLfXYI",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BY2MyYWRlMWQtN2M0My00Nzc1LWFiOTAtM2U0M2I3YTNjZDFiXkEyXkFqcGc@._V1_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Sakar Müfettiş Gadget, üzerinde taşıdığı çeşitli aletlerin yardımıyla M.A.D.’nin güçlerine karşı mücadele eder: açılır-kapanır patenler, uzatılabilir kollar, helikopter şapka vb. Elindeki bu silah cephaneliğine rağmen (ki bu aletler düzgün çalışacağı kadar arıza yapma olasılığı da yüksektir), Gadget, M.A.D.’nin arkasındaki beyin olan Dr. Claw’ı bir türlü yakalayamıyor gibi görünüyor. Aslında, Gadget’ın elde ettiği başarıların çoğu, yeğeni Penny ve köpeği sayesinde oluyor; ancak Gadget, bu ikilinin davada gizli görevde çalıştığını bir türlü fark edemiyor."
   },
   {
     "imdbId": "tt0084996",
@@ -8283,7 +8300,8 @@
     "omdbType": "",
     "trailerYoutubeId": "9-pf-w95iPo",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BOTU2MjBjYTUtYzY1ZC00OGM4LTgwNjQtYmE4NTYzYTMxNjAxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "“Gölgesinden daha hızlı ateş eden adam” olarak tanımlanan Amerikalı bir kovboyu konu alan, Avrupa çizgi romanından uyarlanan bir animasyon dizisi. Lucky Luke, atı Double Six ile birlikte Eski Batı’yı dolaşarak haksızlıkları düzeltir ve kötülük yapanları (genellikle ezeli düşmanları Dalton Kardeşler’i) adalete teslim eder."
   },
   {
     "imdbId": "tt0494823",
@@ -13246,7 +13264,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNzQ0ZjU4NDQtYmUxNi00OGExLThhZGMtMWY3ZmZmZGVhMjQ5XkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "EwuRCyvHwfI",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Hank Ketcham’ın klasik çizgi romanından uyarlanan animasyon dizisi. Amerika’nın en tanınmış küçük baş belası Dennis the Menace, köpeği Ruff ve arkadaşları Joey ile Margaret’le birlikte sayısız macera ve baş belasına bulaşır. Bu maceraların çoğunda, Dennis’in talihsiz komşusu Bay Wilson’a eziyet etmenin bir yolunu bulur."
   },
   {
     "imdbId": "tt5601646",
@@ -13664,7 +13683,7 @@
     "country": "United States",
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BZmRjNWJiYzUtNzY2Yi00YzgwLWFhYTQtYWU2NzkyM2M5YTEyXkEyXkFqcGc@._V1_SX300.jpg",
-    "trailerYoutubeId": "XD50huu0M24",
+    "trailerYoutubeId": "R0WmemS3cO0",
     "boxOffice": "",
     "plotTr": "Vakvak Şehri’nin (Duckburg) en zengin ve en cimri ördeği olan Scrooge McDuck (Vakvak Amca), yeğeni Donald Duck’ın donanmaya katılmasıyla birlikte üç hiperaktif büyük yeğeni Huey, Dewey ve Louie’nin (Vakvak, Çakvak ve Takvak) bakımını üstlenir; bu huysuz yaşlı milyarder ve meraklı yeğenleri, servet avcısı hainlerin, sihirbaz cadıların ve Beagle Erkekleri gibi azılı hırsızların hazine çalma planlarını boşa çıkarmak için dünyanın dört bir yanından uzayın derinliklerine kadar uzanan, tehlikeli ve komik maceralara atılırlar."
   },
@@ -13873,7 +13892,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNmMyNDFlYjctMzAxOC00NTIxLTlhMWItMGRkZDI4MGFjZDM2XkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "uXaPLtrvgKk",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Bu dizi, garip bir sıvı tarafından insansı varlıklara dönüşen ve aynı madde yüzünden insansı bir fareye, Splinter’a dönüşen insan dövüş sanatları ustası Hamato Yoshi tarafından ninja olarak eğitilen dört kaplumbağanın maceralarını anlatıyor. Cesur muhabir April O’Neil ile birlikte, Shredder ve Krang gibi dünyayı tehdit eden güçlere karşı savaşıyorlar."
   },
   {
     "imdbId": "tt5887944",
@@ -15143,7 +15163,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMmE5OTc2MTAtZTdhZi00ODQ5LThhOGMtMjVlMWQyODI2ZWRlXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "tR8Zw97rrX8",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "1940’lar ve 1950’lerden kalma klasik Tom &amp; Jerry çizgi filmlerinin güncellenmiş bir versiyonu. Bu çizgi filmlerdeki “çocuklar”, ebeveynlerine kıyasla çok daha az şiddet eğilimli olsa da, yine de birbirlerine ve çevrelerindeki herkese bolca baş belası olmanın yollarını buluyorlar. Dizide ayrıca Droopy ve Spike gibi diğer Tex Avery karakterleri ile onların çocukları da yer alıyor."
   },
   {
     "imdbId": "tt0099685",
@@ -15773,7 +15794,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BM2M3MTA1NzUtODQzYy00MmUwLWFjMzYtZmI1ZjFjZTVhM2IwXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "E5OkzeYyW0k",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "St. Canard şehrinde halk, en tuhaf suçluların baş belası haline gelmiştir; ancak bir koruyucuları da vardır: Darkwing Duck (Jim Cummings). Bu sakar ve bencil süper kahraman, aptal pilot yardımcısı Launchpad McQuack (Terence McGovern) ve yaramaz evlatlık kızı Gosalyn Waddlemeyer’in (Christine Cavanaugh) yardımıyla bu güzel şehirde kötülükle mücadele ediyor."
   },
   {
     "imdbId": "tt0103562",
@@ -15810,7 +15832,8 @@
     "omdbType": "",
     "trailerYoutubeId": "4d0Ld53Fp0Y",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BYTVjNzQ3M2ItMmMwMy00MTRiLTg3NTgtY2M2NzQxMWFjNTkwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Looney Tunes’un yıldızı Tazmanya Şeytanı’nın, Tazmanya adasındaki geniş ailesi, arkadaşları ve düşmanlarıyla birlikte yaşadığı günlük hiciv dolu maceraları."
   },
   {
     "imdbId": "tt0179552",
@@ -16553,7 +16576,11 @@
     "omdbType": "",
     "trailerYoutubeId": "jBzdo_MfFjo",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BYWI3ZjA2NTAtMzA4OC00NmEyLWE1NTUtMTk0ZGYzNGJiMDQ5XkEyXkFqcGc@._V1_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Çizgi film, gerçek bir pembe panterin maceralarını konu alırken, ara sıra Müfettiş Clouseau’nun başrolde olduğu çizgi film bölümleri de yer alıyor.",
+    "franchiseId": "pink-panther",
+    "franchiseName": "Pink Panther",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0106260",
@@ -17571,7 +17598,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BN2UxODJmMTUtODNmZi00MWJmLTg2NTAtYTk5MDEzZjhiYzViXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "A3uclMnE2WA",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Sylvester Kedi, Tweety Kuş ve Hector Bulldog, gizemleri çözmeye meraklı, temkinli bir hanımefendi olan Granny’nin evcil hayvanlarıdır. Granny, dünyanın dört bir yanındaki kaybolan nesneleri ve tuhaf olayları araştıran, Jessica Fletcher benzeri bir gezgin dedektiftir; Sylvester ise sürekli Tweety’yi yakalayıp yemeye çalışır ve Granny tarafından Tweety’nin koruyucusu olarak atanan, her zaman görevine sadık Hector tarafından engellenir."
   },
   {
     "imdbId": "tt0114369",
@@ -19942,7 +19970,8 @@
     "plot": "Based on a true story set in 1948, customs officer Mehdi is faced with the duty of formally setting up the border between Türkiye and Syria, dividing his hometown. He is unaware of the pain that will eminently unfold, as families, languages, cultures and lovers are both ripped apart and clash head on in a village once united.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "1948 yılında geçen gerçek bir hikâyeye dayanan filmde, gümrük memuru Mehdi, Türkiye ile Suriye arasındaki sınırı resmen belirleme ve böylece memleketini ikiye bölme göreviyle karşı karşıya kalır. Bir zamanlar bir bütün olan bu köyde aileler, diller, kültürler ve sevgililer birbirinden koparılırken ve kafa kafaya çarpışırken, Mehdi yakında ortaya çıkacak acının farkında değildir."
   },
   {
     "imdbId": "tt6968614",
@@ -22399,7 +22428,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMmRjYmJmN2QtMTNiMS00MGRkLTg0NWItMGMyNGE5ODE4ZjkyXkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "7n1hNg8X17Y",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Woody Woodpecker ve arkadaşlarının güncellenmiş bir versiyonu; Chilly Willy’nin yanı sıra Winnie Woodpecker, Knothead ve Splinter’ın da kendi bölümlerinde yer aldığı bir yapım."
   },
   {
     "imdbId": "tt0120915",
@@ -22835,7 +22865,8 @@
     "plot": "In a western island of Türkiye four old timers help their friend to plan a voyage to his long lost love in Cuba.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Türkiye’nin batısındaki bir adada, dört eski dost, arkadaşlarının Küba’da uzun zamandır kayıp olan sevgilisine doğru bir yolculuk planlamasına yardım eder."
   },
   {
     "imdbId": "tt0158622",
@@ -27328,7 +27359,8 @@
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "s0WSKjvRC_w"
+    "trailerYoutubeId": "s0WSKjvRC_w",
+    "plotTr": "Karanlık bir gelecekte, bir yapay zeka askeri, savaşı sona erdirmenin tek yolunun insanlığı ortadan kaldırmak olduğuna karar vermiştir."
   },
   {
     "imdbId": "tt0241527",
@@ -36664,7 +36696,8 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMTY3NGVkMmItYWNjMy00MmE0LTlkZmUtNGIxZGJmZTA1YWI0XkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "MeYVqZo9ZCg",
-    "boxOffice": "$114,053,579"
+    "boxOffice": "$114,053,579",
+    "plotTr": "Amerikalı bir beyaz çoban köpeği olan Bolt, tüm hayatını bir aksiyon dizisinin setinde geçirmiştir ve orada süper güçlere sahip olduğuna inanmaktadır. Kazara stüdyodan ayrıldığında, Mittens adında bir sokak kedisi ve Rhino adında bir hamster ile tanışır. Bolt, stüdyoya, yani evine giden yolu bulmaya çalışmaktadır. Yolculuğu sırasında, süper güçlere sahip olmadığını ve dizinin gerçek olmadığını öğrenir."
   },
   {
     "imdbId": "tt1129442",
@@ -53114,12 +53147,13 @@
     "imdbRating": 6.6,
     "tmdbRating": 6.6,
     "releaseDate": "2014-11-26",
-    "plot": "Super spy teams aren’t born - they’re hatched. Discover the secrets of the greatest and most hilarious covert birds in the global espionage biz: Skipper, Kowalski, Rico and Private. These elitists of the elite are joining forces with a chic undercover organization, The North Wind. Led by handsome Eurasian wolf Agent Classified (we could tell you his name, but then - you know). Together, they must stop the villainous Dr. Octavius Brine, from destroying the world as we know it.",
+    "plot": "Super spy teams aren’t born they’re hatched. Discover the secrets of the greatest and most hilarious covert birds in the global espionage biz: Skipper, Kowalski, Rico and Private. These elitists of the elite are joining forces with a chic undercover organization, The North Wind. Led by handsome Eurasian wolf Agent Classified (we could tell you his name, but then - you know). Together, they must stop the villainous Dr. Octavius Brine, from destroying the world as we know it.",
     "country": "United States",
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMTEyMDg4MDU4MjdeQTJeQWpwZ15BbWU4MDQyOTc3MjIx._V1_SX300.jpg",
     "trailerYoutubeId": "xKuGFYWCjQY",
     "boxOffice": "$83,850,911",
+    "plotTr": "Süper casus ekipleri doğmaz, yumurtadan çıkar. Küresel casusluk dünyasının en büyük ve en komik gizli kuşlarının sırlarını keşfedin: Skipper, Kowalski, Rico ve Private. Bu seçkinlerin de en seçkinleri, şık bir gizli örgüt olan The North Wind ile güçlerini birleştiriyor. Yakışıklı Avrasya kurdu Ajan Classified’ın liderliğinde (size adını söyleyebilirdik, ama o zaman… bilirsiniz). Birlikte, kötü kalpli Dr. Octavius Brine’in bildiğimiz dünyayı yok etmesini engellemeliler.",
     "franchiseId": "madagascar",
     "franchiseName": "Madagascar",
     "franchiseOrder": 5
@@ -65136,6 +65170,7 @@
     "country": "United States",
     "omdbType": "",
     "trailerYoutubeId": "jI0r5U3y8uU",
+    "plotTr": "Shrek ve Eşek ile tanışmasından yıllar önce, sevimli ama kurnaz Çizmeli Kedi, kendisini aranan bir kaçak yapan tüm suçlamalardan adını temize çıkarmak zorundadır. Kötü şöhretli suçlular Jack ve Jill’den sihirli fasulyeleri çalmaya çalışırken, kahraman, kendisine denk bir kadın olan Kitty Softpaws ile yolları kesişir; Kitty, Çizmeli Kedi’yi eski dostu, ancak artık düşmanı olan Humpty Dumpty’ye yönlendirir. Dostluk ve ihanetle ilgili anılar, Puss’un şüphelerini artırır, ancak sonunda yumurtanın sihirli fasulyeleri almasına yardım etmeyi kabul eder. Üçlü birlikte fasulyeleri çalmak, Dev’in kalesine ulaşmak, altın kazı ele geçirmek ve Puss’un adını temize çıkarmak için bir plan yapar.",
     "franchiseId": "cizmeli-kedi",
     "franchiseName": "Çizmeli Kedi",
     "franchiseOrder": 1,
@@ -65286,7 +65321,8 @@
     "plot": "When her former boss is killed by unknown assassins, Treasury Agent Marybeth Medina (Cynthia Addai-Robinson) is forced to contact Christian Wolff (Affleck) to solve the murder. With the help of his estranged but highly lethal brother Brax (Jon Bernthal), Chris applies his brilliant mind and less-than-legal methods to piece together the unsolved puzzle. As they get closer to the truth, the trio draw the attention of some of the most ruthless killers alive -- all intent on putting a stop to their search.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": "$65,523,366"
+    "boxOffice": "$65,523,366",
+    "plotTr": "Eski patronu kimliği belirsiz suikastçılar tarafından öldürüldüğünde, Hazine Ajanı Marybeth Medina (Cynthia Addai-Robinson), cinayeti çözmek için Christian Wolff (Affleck) ile iletişime geçmek zorunda kalır. Chris, uzun süredir görüşmediği ancak son derece ölümcül olan kardeşi Brax’ın (Jon Bernthal) yardımıyla, parlak zekâsını ve pek de yasal sayılmayacak yöntemlerini kullanarak çözülmemiş bu bulmacayı bir araya getirmeye çalışır. Gerçeğe yaklaştıkça, bu üçlü, araştırmalarını durdurmaya kararlı, hayattaki en acımasız katillerden bazılarının dikkatini üzerlerine çeker."
   },
   {
     "imdbId": "tt7181546",
@@ -65324,7 +65360,8 @@
     "plot": "A young woman remembers the time when as a little girl she witnessed her father getting killed by cult members. She is then adopted by a society of assassins and trained for many years to become a ballerina, body guard and assassin. She performs well in all these activities to the satisfaction of her superiors. Her heart however is made up to seek vengeance against the killers of her father. Despite being warned not to take up this dangerous mission she goes ahead and single handedly wages war against them.",
     "country": "United States, Hungary",
     "omdbType": "movie",
-    "boxOffice": "$58,051,327"
+    "boxOffice": "$58,051,327",
+    "plotTr": "Genç bir kadın, küçük bir kızken babasının bir tarikat üyesi tarafından öldürülmesine tanık olduğu anı hatırlar. Daha sonra bir suikastçı topluluğu tarafından evlat edinilir ve balerin, koruma görevlisi ve suikastçı olmak üzere uzun yıllar boyunca eğitilir. Tüm bu faaliyetlerde üstlerinin memnuniyetini kazanacak şekilde başarılı bir performans sergiler. Ancak kalbi, babasını öldürenlerden intikam almaya kararlıdır. Bu tehlikeli görevi üstlenmemesi konusunda uyarılmasına rağmen, o kararından vazgeçmez ve tek başına onlara karşı savaş açar."
   },
   {
     "imdbId": "tt31121295",
@@ -65478,6 +65515,7 @@
     "country": "United States, United Kingdom, Malta, India, Taiwan, Japan",
     "omdbType": "movie",
     "boxOffice": "$339,640,400",
+    "plotTr": "Jurassic World Dominion’daki olayların üzerinden beş yıl geçtikten sonra, gezegenin ekolojisinin dinozorlar için büyük ölçüde elverişsiz olduğu ortaya çıktı. Hayatta kalanlar, bir zamanlar gelişip çoğaldıkları iklime benzeyen, izole ekvatoral ortamlarda yaşıyor. Bu tropikal biyosferde karada, denizde ve havada bulunan en devasa üç canlı, DNA’larında insanlığa mucizevi, hayat kurtarıcı faydalar sağlayacak bir ilacın anahtarını barındırıyor. Gizli operasyonlar uzmanı Zora Bennett, genetik materyali ele geçirmek üzere çok gizli bir görevde yetenekli bir ekibi yönetmek üzere görevlendirilir. Zora’nın operasyonu, yağmacı su dinozorları yüzünden tekne gezisi sırasında alabora olan bir sivil aileyle kesiştiğinde, hepsi bir zamanlar Jurassic Park’a ait gizli bir araştırma tesisine ev sahipliği yapmış olan yasak bir adada mahsur kalırlar. Orada, birbirinden çok farklı türlerdeki dinozorların yaşadığı bir arazide, onlarca yıldır dünyadan gizlenmiş olan, ürkütücü ve şok edici bir keşifle karşı karşıya kalırlar.",
     "franchiseId": "jurassic-park--jurassic-world",
     "franchiseName": "Jurassic Park / Jurassic World",
     "franchiseOrder": 7
@@ -66132,7 +66170,8 @@
     "plot": "The fan favorite champions -- now joined by Johnny Cage himself -- are pitted against one another in the ultimate battle to defeat the dark rule of Shao Kahn that threatens the very existence of the Earthrealm and its defenders.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": "$77,767,462"
+    "boxOffice": "$77,767,462",
+    "plotTr": "Hayranların en sevdiği şampiyonlar artık aralarına Johnny Cage’in de katılmasıyla — Dünya Alemi’nin ve savunucularının varlığını tehdit eden Shao Kahn’ın karanlık egemenliğini yenmek için nihai mücadelede birbirleriyle karşı karşıya geliyorlar."
   },
   {
     "imdbId": "tt36042156",
@@ -72389,6 +72428,7 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$620,181,382",
+    "plotTr": "Gizlenmekte olan Jedi Ustası Luke Skywalker, isteksizce de olsa genç ve umut dolu Rey’e Güç’ün yollarını öğretmeye çalışırken, eski prenses ve şimdiki general Leia ise Direniş’ten geriye kalanları Birinci Düzen’in acımasız ve zorba pençesinden kurtarmaya çalışmaktadır.",
     "franchiseId": "yildiz-savaslari",
     "franchiseName": "Yıldız Savaşları",
     "franchiseOrder": 8
@@ -72887,6 +72927,7 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$700,426,566",
+    "plotTr": "Kaptan Amerika: İç Savaş’taki olayların ardından Prens T’Challa, ülkesinin yeni kralı olarak görev yapmak üzere, dış dünyadan izole olmuş ve teknolojik açıdan gelişmiş Afrika ülkesi Wakanda’ya geri döner. Ancak T’Challa, çok geçmeden kendi ülkesindeki bazı grupların tahtı ele geçirmek için kendisine meydan okuduğunu fark eder. İki düşman, Wakanda’yı yok etmek için komplo kurduğunda, Kara Panter olarak bilinen kahraman, Wakanda’nın bir dünya savaşına sürüklenmesini önlemek için CIA ajanı Everett K. Ross ve Wakanda özel kuvvetleri Dora Milaje’nin üyeleriyle güçlerini birleştirmek zorundadır.",
     "franchiseId": "black-panther",
     "franchiseName": "Black Panther",
     "franchiseOrder": 1
@@ -73240,6 +73281,7 @@
     "country": "United States, China",
     "omdbType": "movie",
     "boxOffice": "$417,719,760",
+    "plotTr": "Jurassic World tema parkının kapatılmasından üç yıl sonra, Owen ve Claire, adadaki bir zamanlar uykuda olan bir yanardağın aktif hale geldiğini ve adadaki tüm yaşamı yok etme tehdidi oluşturduğunu öğrenince, dinozorları kurtarmak için Isla Nublar’a geri dönerler. Bu süreçte Owen, lider raptoru Blue’yu bulmak için yola çıkar ve tüm gezegenin doğal dengesini bozabilecek bir komplo ortaya çıkarır. Yaşam, yine bir yolunu bulmuştur.",
     "franchiseId": "jurassic-park--jurassic-world",
     "franchiseName": "Jurassic Park / Jurassic World",
     "franchiseOrder": 5
@@ -75205,7 +75247,8 @@
     "plot": "The new story follows the heroic efforts of the crypto-zoological agency Monarch as its members face off against a battery of god sized monsters, including the mighty Godzilla, who collides with Mothra, Rodan, and his ultimate nemesis, the three headed King Ghidorah. When these ancient superspecies, thought to be mere myths, rise again, they all vie for supremacy, leaving humanity’s very existence hanging in the balance.",
     "country": "United States, Japan, China",
     "omdbType": "movie",
-    "boxOffice": "$110,500,138"
+    "boxOffice": "$110,500,138",
+    "plotTr": "Yeni hikâye, kriptozooloji ajansı Monarch’ın kahramanca çabalarını konu alıyor. Ajans üyeleri, Mothra, Rodan ve en büyük düşmanı olan üç başlı King Ghidorah ile çatışan muazzam Godzilla’nın da aralarında bulunduğu, tanrı boyutlarındaki bir canavar ordusuyla karşı karşıya geliyor. Sadece efsane olduğu düşünülen bu kadim süper türler yeniden ortaya çıktıklarında, hepsi üstünlük için rekabet etmeye başlıyor ve insanlığın varlığı büyük bir tehlikeye giriyor."
   },
   {
     "imdbId": "tt6292852",
@@ -76178,6 +76221,7 @@
     "country": "United States, Hungary, Spain, China",
     "omdbType": "movie",
     "boxOffice": "$62,253,077",
+    "plotTr": "Genç bir Meksikalı işçi olan Dani Ramos, REV-9 adında gelecekten gelen ve neredeyse yok edilemez bir terminatör tarafından avlanmaktadır. Ancak, o da gelecekten gelen ve yetenekleri geliştirilmiş bir insan olan Grace tarafından korunmaktadır. Durdurulamaz terminatörden kaçarken, aniden Sarah Connor yolda onlara yardım eder. Üçü de, Grace’in olası bir destek kaynağının koordinatlarını aldığı Teksas’ın Laredo kentine doğru yola çıkar ve burada ailesiyle birlikte ıssız bir yerde yaşayan bir T-800 ile karşılaşırlar. Grup, REV-9’u yok etmek için güçlerini birleştirir.",
     "franchiseId": "terminator",
     "franchiseName": "Terminatör",
     "franchiseOrder": 6
@@ -76987,6 +77031,7 @@
     "country": "United States, United Kingdom",
     "omdbType": "movie",
     "boxOffice": "$515,202,542",
+    "plotTr": "Birinci Düzen galaksiyi tahrip etmeye devam ederken, Rey Jedi eğitimini tamamlar. Ancak kötü İmparator Palpatine gizemli bir şekilde ölümden geri dönünce, tehlike aniden küllerinden yeniden doğar. Finn ve Poe Dameron ile birlikte yeni bir görevi yerine getirmeye çalışan Rey, sadece Kylo Ren ile bir kez daha yüzleşmekle kalmayacak, aynı zamanda ebeveynleri hakkındaki gerçeği ve hem kendi geleceğini hem de yaklaşan nihai hesaplaşmanın kaderini belirleyebilecek ölümcül bir sırrı da nihayet keşfedecektir.",
     "franchiseId": "yildiz-savaslari",
     "franchiseName": "Yıldız Savaşları",
     "franchiseOrder": 9
@@ -78339,7 +78384,11 @@
     "plot": "Scooby-Doo is the hero of his own story in “SCOOB!, ” the first full-length animated Scooby-Doo adventure, which reveals how he and his best friend Shaggy became two of the world’s most beloved crime busters. The story takes us back to where it all began when a young Scooby and Shaggy first meet and team up with Velma, Daphne, and Fred to launch Mystery Incorporated.",
     "country": "United States, Canada",
     "omdbType": "movie",
-    "boxOffice": "$2,188,425"
+    "boxOffice": "$2,188,425",
+    "plotTr": "Scooby-Doo, ilk uzun metrajlı Scooby-Doo animasyon macerası olan “SCOOB!”da kendi hikâyesinin kahramanıdır. Film, onun ve en yakın arkadaşı Shaggy’nin nasıl dünyanın en sevilen suç avcılarından ikisi haline geldiklerini ortaya koyuyor. Hikâye, genç Scooby ve Shaggy’nin ilk kez tanıştıkları ve Velma, Daphne ve Fred ile bir araya gelerek Mystery Incorporated’ı kurdukları, her şeyin başladığı yere bizi geri götürüyor.",
+    "franchiseId": "scoob",
+    "franchiseName": "Scoob",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt8242084",
@@ -78931,7 +78980,8 @@
     "plot": "Pushing thirty, and defined by a hideous crime involving her bosom friend, Nina, emotionally scarred medical school dropout, Cassie, knows firsthand that some wounds never heal. Leading an uneventful existence, still living with her parents, waiting tables at a cheap coffee shop to earn a living, Cassie has found the perfect way to deal with the painful past. Dressed to kill, at night, Cassie frequents the local bars and nightclubs, pretending to be dead-drunk, utterly helpless and vulnerable. And, every week, lethally beautiful Cassie is on the prowl for all sorts of nocturnal predators and other wolves in sheep’s clothing, who are unaware that, sometimes, the hunter can become the prey. Then, Ryan, a kindly and caring old classmate who is the bee’s knees, enters the picture, and just like that, Cassie wants out. However, everybody knows that breaking bad habits is easier said than done. Could Ryan be the one?",
     "country": "United Kingdom, United States",
     "omdbType": "movie",
-    "boxOffice": "$6,460,965"
+    "boxOffice": "$6,460,965",
+    "plotTr": "Otuz yaşına yaklaşan ve en yakın arkadaşı Nina’nın karıştığı iğrenç bir suçla damgalanmış, duygusal olarak yaralanmış tıp fakültesi terk Cassie, bazı yaraların asla iyileşmediğini ilk elden bilir. Sakin bir hayat süren, hâlâ ailesiyle yaşayan ve geçimini sağlamak için ucuz bir kafede garsonluk yapan Cassie, acı dolu geçmişiyle başa çıkmanın mükemmel yolunu bulmuştur. Geceleri baştan çıkarıcı kıyafetler giyen Cassie, yerel barlara ve gece kulüplerine takılır; sarhoş, tamamen çaresiz ve savunmasızmış gibi davranır. Ve her hafta, ölümcül güzelliğe sahip Cassie, her türden gececi avcıyı ve kuzu kılığına girmiş diğer kurtları avlamak için ava çıkar; oysa bu avcılar, bazen avcının av haline gelebileceğinden habersizdir. Sonra, çok havalı, nazik ve şefkatli eski bir sınıf arkadaşı olan Ryan sahneye çıkar ve birdenbire Cassie bu hayattan çıkmak ister. Ancak herkes bilir ki, kötü alışkanlıklardan kurtulmak söylemekten daha zordur. Acaba Ryan aradığı kişi olabilir mi?"
   },
   {
     "imdbId": "tt2948372",
@@ -79372,7 +79422,8 @@
     "plot": "Deke (Denzel Washington), a burnt-out Kern County, CA deputy sheriff teams up with Baxter (Rami Malek), a crack LASD detective, to nab a serial killer. Deke’s nose for the “little things” proves eerily accurate, but his willingness to circumvent the rules embroils Baxter in a soul-shattering dilemma. Meanwhile, Deke must wrestle with a dark secret from his past.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": "$15,342,746"
+    "boxOffice": "$15,342,746",
+    "plotTr": "Kaliforniya’nın Kern İlçesi’nde görev yapan ve işinden bıkmış bir şerif yardımcısı olan Deke (Denzel Washington), bir seri katili yakalamak için Los Angeles Şerif Departmanı’nın (LASD) yetenekli dedektifi Baxter (Rami Malek) ile güçlerini birleştirir. Deke’in “küçük ayrıntıları” fark etme yeteneği ürkütücü derecede isabetli olsa da, kuralları çiğneme eğilimi Baxter’ı ruhunu paramparça eden bir ikilemin içine sürükler. Bu arada Deke, geçmişinden gelen karanlık bir sırla başa çıkmak zorundadır."
   },
   {
     "imdbId": "tt12838766",
@@ -80020,7 +80071,8 @@
     "plot": "The world is stunned when a group of time travelers arrive from the year 2051 to deliver an urgent message: Thirty years in the future, mankind is losing a global war against a deadly alien species. The only hope for survival is for soldiers and civilians from the present to be transported to the future and join the fight. Among those recruited is high school teacher and family man Dan Forester (Chris Pratt). Determined to save the world for his young daughter, Dan teams up with a brilliant scientist (Yvonne Strahovski) and his estranged father (J.K. Simmons) in a desperate quest to rewrite the fate of the planet.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "2051 yılından gelen bir grup zaman yolcusu, acil bir mesaj iletmek üzere dünyaya vardığında tüm dünya şaşkına döner: Otuz yıl sonra, insanlık ölümcül bir uzaylı türüne karşı küresel bir savaşı kaybetmektedir. Hayatta kalmanın tek umudu, günümüzden askerlerin ve sivillerin geleceğe gönderilip savaşa katılmalarıdır. Seçilenler arasında lise öğretmeni ve aile babası Dan Forester (Chris Pratt) da bulunmaktadır. Küçük kızı için dünyayı kurtarmaya kararlı olan Dan, gezegenin kaderini yeniden yazmak için çaresiz bir maceraya atılır ve bu macerada parlak bir bilim insanı (Yvonne Strahovski) ile uzun süredir görüşmediği babası (J.K. Simmons) ile güçlerini birleştirir."
   },
   {
     "imdbId": "tt6932874",
@@ -81762,7 +81814,8 @@
     "plot": "Adam Reed, age 12 and still grieving his father’s sudden death the year before, walks into his garage one night to find a wounded pilot hiding there. This mysterious pilot turns out to be the older version of himself from the future, where time travel is in its infancy. He has risked everything to come back in time on a secret mission. Together they must embark on an adventure into the past to find their father, set things right, and save the world. As the three work together, both young and grown Adam come to terms with the loss of their father and have a chance to heal the wounds that have shaped them. Adding to the challenge of the mission, the two Adams discover that they really don’t like each other much, and if they are to save the world, first they need to figure out how to get along.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "12 yaşındaki Adam Reed, bir yıl önce babasının ani ölümünün yasını hâlâ tutarken, bir gece garajına girdiğinde orada saklanan yaralı bir pilotla karşılaşır. Bu gizemli pilotun, zaman yolculuğunun henüz emekleme aşamasında olduğu gelecekten gelen, kendisinin daha yaşlı hali olduğu ortaya çıkar. Adam, gizli bir görev için zamanda geriye dönmek uğruna her şeyi riske atmıştır. İkisi birlikte, babalarını bulmak, işleri yoluna koymak ve dünyayı kurtarmak için geçmişe doğru bir maceraya atılmak zorundadır. Üçü birlikte çalışırken, hem genç hem de yetişkin Adam, babalarının kaybını kabullenir ve kendilerini şekillendiren yaraları iyileştirme fırsatı bulur. Görevin zorluğuna ek olarak, iki Adam birbirlerinden pek hoşlanmadıklarını fark eder ve dünyayı kurtarmak istiyorlarsa önce nasıl anlaşacaklarını bulmaları gerektiğini anlarlar."
   },
   {
     "imdbId": "tt0902955",
@@ -81835,7 +81888,8 @@
     "plot": "Vic and Melinda Van Allen are a couple in the small town of Little Wesley. Their loveless marriage is held together only by a precarious arrangement whereby, in order to avoid the messiness of divorce, Melinda is allowed to take any number of lovers as long as she does not desert her family. Vic becomes fascinated with the unsolved murder of one of Melinda’s former lovers, Martin McRae, and, in order to successfully drive away her current fling, takes credit for the killing. When the real murderer is apprehended, Vic’s claims are interpreted by the community as dark jokes.",
     "country": "Australia, United States, Canada",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Vic ve Melinda Van Allen, Little Wesley adlı küçük kasabada yaşayan bir çifttir. Sevgisiz evlilikleri, boşanmanın getireceği karmaşadan kaçınmak amacıyla yapılan ve Melinda’nın ailesini terk etmediği sürece istediği kadar sevgili edinmesine izin verilen, dengesiz bir anlaşma sayesinde ayakta kalmaktadır. Vic, Melinda’nın eski sevgililerinden biri olan Martin McRae’nin çözülmemiş cinayetine büyük ilgi duymaya başlar ve Melinda’nın şu anki sevgilisini uzaklaştırmak için cinayeti kendi üstüne alır. Gerçek katil yakalandığında ise Vic’in iddiaları, kasaba halkı tarafından kara mizah olarak yorumlanır."
   },
   {
     "imdbId": "tt6710474",
@@ -82139,6 +82193,7 @@
     "country": "United States, China",
     "omdbType": "movie",
     "boxOffice": "$376,851,080",
+    "plotTr": "Isla Nubla’nın yıkımından sağ kurtulduktan sonra, Owen Grady ve Claire Dearing küçük Maisie Lockwood’u yanlarına aldılar. Maisie’yi korumak için gözlerden uzak bir hayat sürüyorlar, ancak Maisie kendini bir tutsak gibi hissediyor. Maisie kaybolunca Owen ve Claire onu bulmak için yola çıkarlar ve sonunda Biosyn’in sahibi Lewis Dodgson ile karşı karşıya gelirler. Paleobotanikçi Ellie Sattler, paleontolog Alan Grant ve kaos teorisyen Ian Malcolm, Dodgson’ın entrikalarını ortaya çıkarmak için harekete geçerler.",
     "franchiseId": "jurassic-park--jurassic-world",
     "franchiseName": "Jurassic Park / Jurassic World",
     "franchiseOrder": 6
@@ -82184,6 +82239,7 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$370,549,695",
+    "plotTr": "1970’lerin ortasında, kabarık saçlar ve kloş pantolonların hüküm sürdüğü bir dönemde, Gru (Steve Carell) banliyöde büyüyor. “Vicious 6” adıyla bilinen bir süper kötüler grubunun hayranı olan Gru, bu gruba katılabilecek kadar kötü olmak için bir plan yapar. Şans eseri, sadık takipçileri Minyonlar’dan kargaşa çıkarmaya yönelik destek alır. Kevin, Stuart, Bob ve diş teli takan, herkesi memnun etmeye can atan yeni Minion Otto, Gru ile birlikte ilk sığınaklarını inşa ederken, ilk silahlarını denerken ve ilk görevlerini yerine getirirken yeteneklerini ortaya koyarlar. Vicious 6, liderleri efsanevi dövüşçü Wild Knuckles’ı (Alan Arkin) devirdiğinde, Gru en yeni üye olmak için mülakata girer. İşler (en hafif tabirle) pek iyi gitmez ve Gru onları alt edip birdenbire kötülüğün zirvesinin ölümcül düşmanı haline geldikten sonra durum daha da kötüye gider. Kaçarken Gru, rehberlik için hiç beklemediği bir kaynağa, Wild Knuckles’a başvurur ve kötü adamların bile arkadaşlarından biraz yardıma ihtiyacı olduğunu keşfeder.",
     "franchiseId": "minyonlar",
     "franchiseName": "Minyonlar",
     "franchiseOrder": 2
@@ -82311,7 +82367,8 @@
     "plot": "The curtain is pulled back on the millennia-old battle between the organizations of good luck and bad luck that secretly affects everyday lives.",
     "country": "United States, Spain",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Günlük yaşamımızı gizlice etkileyen, iyi şans ve kötü şans güçleri arasındaki bin yıllık mücadelenin perdesi aralanıyor."
   },
   {
     "imdbId": "tt13314558",
@@ -82760,6 +82817,7 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$453,829,060",
+    "plotTr": "Kral T’Challa’nın ölümünün ardından Kraliçe Ramonda, Shuri, M’Baku, Okoye ve Dora Milaje, Wakanda krallığını müdahaleci dünya güçlerinden korumak için mücadele ederler. Wakandalılar yeni bir döneme adım atmaya çalışırken, kahramanlar War Dog Nakia ve Everett Ross’un yardımıyla güçlerini birleştirmeli ve ülkeleri için yeni bir yol çizmelidir.",
     "franchiseId": "black-panther",
     "franchiseName": "Black Panther",
     "franchiseOrder": 2
@@ -83034,7 +83092,8 @@
     "plot": "Five long-time friends are invited to the Greek island home of billionaire Miles Bron. All five know Bron from way back and owe their current wealth, fame, and careers to him. The main event is a murder-weekend game with Bron to be the victim. In reality, they all have reasons to kill him. Also invited is Benoit Blanc, the world’s greatest detective.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": "$13,280,000"
+    "boxOffice": "$13,280,000",
+    "plotTr": "Beş eski dost, milyarder Miles Bron’un Yunan adasındaki evine davet edilir. Beş kişi de Bron’u çok eskiden tanır ve bugünkü servetlerini, şöhretlerini ve kariyerlerini ona borçludur. Etkinliğin ana konusu, Bron’un kurban olduğu bir “cinayet hafta sonu” oyunudur. Aslında, hepsinin onu öldürmek için birer nedeni vardır. Davetliler arasında dünyanın en büyük dedektifi Benoit Blanc da bulunmaktadır."
   },
   {
     "imdbId": "tt21268790",
@@ -83446,7 +83505,8 @@
     "plot": "A lawyer turned private investigator takes on a missing person case, propelling him on an unexpected and life-altering quest.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Avukatlıktan özel dedektifliğe geçen bir adam, bir kayıp vakasını üstlenir ve bu onu beklenmedik ve hayatını kökünden değiştiren bir maceraya sürükler."
   },
   {
     "imdbId": "tt7985704",
@@ -83523,7 +83583,8 @@
     "plot": "Brilliant but disgraced detective John Luther breaks out of prison to hunt down a sadistic serial killer who is terrorising London.",
     "country": "United Kingdom, United States",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Zeki ama itibarını yitirmiş dedektif John Luther, Londra’yı dehşete düşüren sadist bir seri katili yakalamak için hapishaneden kaçar."
   },
   {
     "imdbId": "tt10366206",
@@ -84406,7 +84467,8 @@
     "plot": "Against the backdrop of a war between humans and robots with artificial intelligence, a former soldier finds the robots’ secret weapon to end the conflict, an AI in the form of a child.",
     "country": "United States, Japan, Cambodia",
     "omdbType": "movie",
-    "boxOffice": "$40,774,679"
+    "boxOffice": "$40,774,679",
+    "plotTr": "İnsanlar ile yapay zekâya sahip robotlar arasındaki bir savaşın ortasında, eski bir asker, çatışmayı sona erdirecek robotların gizli silahını, yani çocuk görünümünde bir yapay zekâyı bulur."
   },
   {
     "imdbId": "tt5537002",
@@ -84563,7 +84625,8 @@
     "plot": "A family’s getaway to a luxurious rental home takes an ominous turn when a cyberattack knocks out their devices, and two strangers appear at their door.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Bir ailenin lüks bir kiralık eve yaptığı tatil, bir siber saldırı sonucu cihazlarının çalışmaz hale gelmesi ve kapılarına iki yabancının gelmesiyle ürkütücü bir hal alır."
   },
   {
     "imdbId": "tt9663764",
@@ -84932,7 +84995,8 @@
     "plot": "The new installment in the Monsterverse puts the mighty Kong and the fearsome Godzilla against a colossal deadly threat hidden within our world that threatens the existence of their species and our very own, as well as diving deep into the mysteries of Skull Island and beyond. Delving straight into the origins of Hollow Earth, this film will explore the ancient Titan battle that brought man and monster together forever.",
     "country": "United States, Australia",
     "omdbType": "movie",
-    "boxOffice": "$196,350,016"
+    "boxOffice": "$196,350,016",
+    "plotTr": "Monsterverse serisinin yeni filmi, kudretli Kong ve korkunç Godzilla’yı, türlerinin ve bizim kendi varlığımızı tehdit eden, dünyamızın derinliklerinde gizlenmiş devasa ve ölümcül bir tehditle karşı karşıya getirirken, Skull Adası’nın ve ötesinin gizemlerine de derinlemesine dalıyor. Hollow Earth’ün kökenlerine doğrudan inen bu film, insanları ve canavarları sonsuza dek bir araya getiren kadim Titan savaşını keşfedecek."
   },
   {
     "imdbId": "tt23137904",
@@ -84974,7 +85038,8 @@
     "plot": "Kora and surviving warriors prepare to defend Veldt, their new home, alongside its people against the Realm. The warriors face their pasts, revealing their motivations before the Realm’s forces arrive to crush the growing rebellion.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Kora ve hayatta kalan savaşçılar, yeni yuvaları olan Veldt’i ve halkını Realm’e karşı savunmaya hazırlanıyor. Savaşçılar, Realm’in güçleri büyüyen isyanı bastırmak için gelmeden önce geçmişleriyle yüzleşerek motivasyonlarını ortaya koyuyorlar."
   },
   {
     "imdbId": "tt1684562",
@@ -85055,6 +85120,7 @@
     "country": "United States, Canada",
     "omdbType": "movie",
     "boxOffice": "$171,130,165",
+    "plotTr": "Sezar’ın hükümdarlığından yıllar sonra, genç bir maymun, geçmiş hakkında kendisine öğretilen her şeyi sorgulamasına yol açacak ve hem maymunların hem de insanların geleceğini belirleyecek seçimler yapmasına neden olacak bir yolculuğa çıkar.",
     "franchiseId": "maymunlar-cehennemi--yeni-seri",
     "franchiseName": "Maymunlar Cehennemi – Yeni Seri",
     "franchiseOrder": 4
@@ -85145,6 +85211,7 @@
     "boxOffice": "$361,004,205",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BNzY0ZTlhYzgtOTgzZC00ZTg2LTk4NTEtZDllM2E2NGE5Njg2XkEyXkFqcGc@._V1_SX300.jpg",
     "trailerYoutubeId": "TB9RslkiYdE",
+    "plotTr": "Gru, Lucy, Margo, Edith ve Agnes, babasını eziyet etmeye kararlı olan yeni aile üyesi Gru Jr.’ı aralarına alırlar. Gru, Maxime Le Mal ve kız arkadaşı Valentina’da yeni bir düşmanla karşı karşıya kalır ve aile kaçmak zorunda kalır.",
     "franchiseId": "cilgin-hirsiz",
     "franchiseName": "Çılgın Hırsız",
     "franchiseOrder": 4
@@ -85186,7 +85253,8 @@
     "plot": "Inspired by the true events of a serial killer that may still be out there today.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Günümüzde hâlâ serbestçe dolaşıyor olabilecek bir seri katilin gerçek olaylarından esinlenilmiştir."
   },
   {
     "imdbId": "tt6263850",

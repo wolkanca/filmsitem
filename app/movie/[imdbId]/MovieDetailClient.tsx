@@ -469,7 +469,7 @@ export default function MovieDetailClient({
               </p>
               {(movie.plot || movie.plotTr) && (
                 <p className="mt-4 text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
-                  <strong className="text-white">Konu:</strong> {movie.plotTr || movie.plot}
+                  {movie.plotTr || movie.plot}
                 </p>
               )}
 
