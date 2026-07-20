@@ -464,12 +464,13 @@ export default function MovieDetailClient({
               className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[275px]'
                 }`}
             >
-              <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
-                {movie.overview || 'Özet eklenmemiş.'}
-              </p>
-              {(movie.plot || movie.plotTr) && (
-                <p className="mt-4 text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
+              {movie.plot || movie.plotTr ? (
+                <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
                   {movie.plotTr || movie.plot}
+                </p>
+              ) : (
+                <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
+                  {movie.overview || 'Özet eklenmemiş.'}
                 </p>
               )}
 
