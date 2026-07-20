@@ -725,7 +725,7 @@ export default function MovieDetailClient({
                 href={`https://www.imdb.com/title/${movie.imdbId}/`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-auto mt-2 flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg font-bold bg-[#f5c518]/10 hover:bg-[#f5c518]/20 text-[#f5c518] border border-[#f5c518]/30 hover:border-[#f5c518]/60 transition-all duration-200 shadow-[0_0_12px_rgba(245,197,24,0.08)] hover:shadow-[0_0_16px_rgba(245,197,24,0.2)]"
+                className="ml-auto mt-4 flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg font-bold bg-[#f5c518]/10 hover:bg-[#f5c518]/20 text-[#f5c518] border border-[#f5c518]/30 hover:border-[#f5c518]/60 transition-all duration-200 shadow-[0_0_12px_rgba(245,197,24,0.08)] hover:shadow-[0_0_16px_rgba(245,197,24,0.2)]"
               >
                 <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M14.31 9.588v.005c-.077-.048-1.575-.31-1.575-.31l-.35 2.06-.342-2.06S10.551 9.54 10.473 9.588C10.247 9.732 10.1 10.127 10.1 10.7v2.602c0 .572.145.964.37 1.108.076.048.575.1.575.1l.342-2.268.35 2.268s.498-.052.575-.1c.226-.144.37-.536.37-1.108V10.7c0-.573-.147-.968-.372-1.112zM6.792 9.35L6.35 12.23l-.44-2.88H4.2v5.3h1.2v-3.3l.527 3.3h.848l.526-3.3v3.3h1.2v-5.3H6.792zm5.36-5.85C5.664 3.5 1 8.164 1 13.652c0 5.488 4.664 9.848 11.152 9.848S23.5 19.14 23.5 13.652C23.5 8.164 18.64 3.5 12.152 3.5zm4.33 12.51a.5.5 0 01-.5.5H8.02a.5.5 0 01-.5-.5V8.64a.5.5 0 01.5-.5h7.962a.5.5 0 01.5.5v7.37zm-.45-6.01h-1.42v5.3h1.42v-5.3z" />
