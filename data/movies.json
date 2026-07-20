@@ -33746,7 +33746,10 @@
     "country": "United States, Canada, Bulgaria",
     "omdbType": "movie",
     "boxOffice": "$210,629,101",
-    "plotTr": "MÖ 480’deki Termopylae Savaşı’nda, Yunan şehir devletleri ittifakı, Termopylae dağ geçidinde işgalci Pers ordusuyla savaştı. Sayıca çok az olmalarına rağmen, Yunanlar düşmanı tarihin en ünlü son direnişlerinden birinde geri püskürttü. Pers Kralı Xerxes, 100.000’den fazla (Pers kralı Xerxes’in savaştan önce yaklaşık 170.000 kişilik ordusu vardı) adamdan oluşan bir orduyu Yunanistan’a götürdü ve 300 Spartalı, 700 Thespian ve 400 Theban ile karşılaştı. Xerxes, Kral Leonidas’ın teslim olmasını veya geri çekilmesini 10 gün bekledi, ancak başka seçeneği kalmayınca ilerledi. 3 günlük savaşın ardından tüm Yunanlar öldürüldü. Spartalıların yenilgisi beklenildiği gibi değildi, çünkü Ephialtes adında yerel bir çoban Perslere sığınarak Xerxes’e, Perslerin Yunanları kuşatmak için kullanabileceği Termopylae’deki ayrı yolun düşündükleri kadar ağır korunmadığını bildirdi."
+    "plotTr": "MÖ 480’deki Termopylae Savaşı’nda, Yunan şehir devletleri ittifakı, Termopylae dağ geçidinde işgalci Pers ordusuyla savaştı. Sayıca çok az olmalarına rağmen, Yunanlar düşmanı tarihin en ünlü son direnişlerinden birinde geri püskürttü. Pers Kralı Xerxes, 100.000’den fazla (Pers kralı Xerxes’in savaştan önce yaklaşık 170.000 kişilik ordusu vardı) adamdan oluşan bir orduyu Yunanistan’a götürdü ve 300 Spartalı, 700 Thespian ve 400 Theban ile karşılaştı. Xerxes, Kral Leonidas’ın teslim olmasını veya geri çekilmesini 10 gün bekledi, ancak başka seçeneği kalmayınca ilerledi. 3 günlük savaşın ardından tüm Yunanlar öldürüldü. Spartalıların yenilgisi beklenildiği gibi değildi, çünkü Ephialtes adında yerel bir çoban Perslere sığınarak Xerxes’e, Perslerin Yunanları kuşatmak için kullanabileceği Termopylae’deki ayrı yolun düşündükleri kadar ağır korunmadığını bildirdi.",
+    "franchiseId": "300",
+    "franchiseName": "300",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0795176",
@@ -50535,7 +50538,10 @@
     "country": "United States, Bulgaria",
     "omdbType": "movie",
     "boxOffice": "$106,580,051",
-    "plotTr": "Leonidas’ın 300’ü üzerindeki zaferinden sonra, Xerxes komutasındaki Pers Ordusu büyük Yunan şehir devletlerine doğru ilerler. Xerxes’in ordusunun yolundaki ilk şehir olan demokratik Atina, gücünü amiral Themistocles liderliğindeki donanmasına dayandırır. Themistocles, Atina’nın geleneksel rakibi olan ve gücünü üstün piyade birliklerinden alan oligarşik Sparta ile isteksiz bir ittifaka zorlanır. Ancak Xerxes, deniz ve karada sayıca hala üstündür."
+    "plotTr": "Leonidas’ın 300’ü üzerindeki zaferinden sonra, Xerxes komutasındaki Pers Ordusu büyük Yunan şehir devletlerine doğru ilerler. Xerxes’in ordusunun yolundaki ilk şehir olan demokratik Atina, gücünü amiral Themistocles liderliğindeki donanmasına dayandırır. Themistocles, Atina’nın geleneksel rakibi olan ve gücünü üstün piyade birliklerinden alan oligarşik Sparta ile isteksiz bir ittifaka zorlanır. Ancak Xerxes, deniz ve karada sayıca hala üstündür.",
+    "franchiseId": "300",
+    "franchiseName": "300",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt2395695",
