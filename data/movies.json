@@ -21056,7 +21056,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "BrcFT3NhGAM",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "Zeliha geri döndü: Her zamanki gibi çılgın ve samimi; hâlâ da başını türlü belaya sokuyor. İlk filmde aşkı arayan Zeliha, bu devam filminde bir kariyer peşinde; aşçı olmayı hayal ederek lüks bir restoranda çalışmaya başlıyor. Zeliha’nın hayalleri sonunda gerçekleşecek mi, yoksa gerçek dünya onun kalbini kırıp onu hayal kırıklığına mı uğratacak? “Deliha” ve “Görümce” filmlerinin senaristi Gupse Özay’ın kaleme aldığı, içten karakterleri ve eğlenceli hikayesiyle “Deliha 2”, izleyicileri bir kez daha kahkahalara boğacak. Film aynı zamanda Özay’ın yönetmenlik denemesi niteliğinde.",
+    "franchiseId": "deliha",
+    "franchiseName": "Deliha",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt8748256",
@@ -23196,7 +23199,10 @@
     "country": "Germany, United States",
     "omdbType": "movie",
     "boxOffice": "$125,305,545",
-    "plotTr": "Kılık değiştirme, casusluk ve dövüş sanatlarında usta olan büyüleyici suçla savaşan üçlü. Kurnaz bir deha onları bireysel gizliliği yok etme planına dahil ettiğinde, Melekler, sadık yardımcıları Bosley (Bill Murray) yardımıyla kötü adamları alt etmek için yola çıkarlar. Ancak korkunç bir sır ortaya çıktığında, bu durum Melekleri suikast hedefi haline getirir."
+    "plotTr": "Kılık değiştirme, casusluk ve dövüş sanatlarında usta olan büyüleyici suçla savaşan üçlü. Kurnaz bir deha onları bireysel gizliliği yok etme planına dahil ettiğinde, Melekler, sadık yardımcıları Bosley (Bill Murray) yardımıyla kötü adamları alt etmek için yola çıkarlar. Ancak korkunç bir sır ortaya çıktığında, bu durum Melekleri suikast hedefi haline getirir.",
+    "franchiseId": "charlies-angels",
+    "franchiseName": "Charlie’s Angels",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0275393",
@@ -24052,7 +24058,10 @@
     "country": "Germany, United States",
     "omdbType": "movie",
     "boxOffice": "$45,172,250",
-    "plotTr": "Derek Zoolander, VH1’ın üç kez yılın erkek modeli seçilmiştir, ancak ödülü Hansel kazanınca Zoolander’ın dünyası altüst olur. Arkadaşları ortadan kaybolur, babası ondan hayal kırıklığına uğrar ve artık iyi bir model olmadığını hisseder. Ancak kötü moda gurusu Mugatu, Zoolander’ı işe aldığında, hayatının tekrar yoluna girdiğini düşünür, ta ki Mugatu’nun onu Malezya Başbakanı’nı öldürmesi için beynini yıkadığını öğrenene kadar. Zoolander ve yeni arkadaşları, çok geç olmadan bu olayı nasıl engelleyebileceklerini bulabilecekler mi?"
+    "plotTr": "Derek Zoolander, VH1’ın üç kez yılın erkek modeli seçilmiştir, ancak ödülü Hansel kazanınca Zoolander’ın dünyası altüst olur. Arkadaşları ortadan kaybolur, babası ondan hayal kırıklığına uğrar ve artık iyi bir model olmadığını hisseder. Ancak kötü moda gurusu Mugatu, Zoolander’ı işe aldığında, hayatının tekrar yoluna girdiğini düşünür, ta ki Mugatu’nun onu Malezya Başbakanı’nı öldürmesi için beynini yıkadığını öğrenene kadar. Zoolander ve yeni arkadaşları, çok geç olmadan bu olayı nasıl engelleyebileceklerini bulabilecekler mi?",
+    "franchiseId": "zoolander",
+    "franchiseName": "Zoolander",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0198781",
@@ -24850,7 +24859,8 @@
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "nt59JjtWFSU"
+    "trailerYoutubeId": "nt59JjtWFSU",
+    "plotTr": "Boston’da, yozlaşmış polis Nick, ortağı Hayes ile birlikte uyuşturucu satıcılarından çaldığı altını evinin arka bahçesine saklar. Ancak ertesi sabah Nick, karısı Julia’yı sevdiği ve ona bu şekilde davranamayacağı için delilleri polise teslim edeceğini Hayes’e söyler. Nick ve Hayes, tehlikeli bir çeteye yönelik bir baskın görevine atanır ve beklenmedik bir şekilde Hayes, Nick’i öldürür. Nick bir tünele çekilir ve polis teşkilatındaki önceki deneyimlerine dayanarak, öbür dünyada Proctor tarafından, yaşayan dünyayı ölümsüzlerden koruyan “Huzur İçinde Dinlenme Departmanı”na katılmak ve eski usul ajan Roy ile birlikte çalışmak üzere görevlendirilir. Roy ve Nick, Hayes’in tünelin yönünü öbür dünyaya çevirip Dünya’ya Kıyamet’i getirmek için bir komplo kurduğunu tesadüfen keşfederler."
   },
   {
     "imdbId": "tt4532826",
@@ -25296,11 +25306,15 @@
     "imdbRating": 5,
     "tmdbRating": 5,
     "releaseDate": "2003-06-27",
-    "plot": "The Angels--Natalie, Dylan, and Alex are back again but this time they’re preparing for a strike without even warning as they go undercover to retrieve two missing silver bands. These are no ordinary rings. They contain valuable encrypted information that reveal the new identities of every person in the Federal Witness Protection Program. When witnesses start turning up dead, only the Angels, using their expertise as masters of disguise, espionage and martial arts can stop the perpetrator, a mysterious “fallen” Angel. Aided by their trusty colleague, Jimmy Bosley, the Angels’ adventure begins at a remote Mongolian outpost and ends only after Dylan is forced to face a dark secret from her past--a secret that puts the lives of her two best friends in danger.",
+    "plot": "The Angels; Natalie, Dylan, and Alex are back again but this time they’re preparing for a strike without even warning as they go undercover to retrieve two missing silver bands. These are no ordinary rings. They contain valuable encrypted information that reveal the new identities of every person in the Federal Witness Protection Program. When witnesses start turning up dead, only the Angels, using their expertise as masters of disguise, espionage and martial arts can stop the perpetrator, a mysterious “fallen” Angel. Aided by their trusty colleague, Jimmy Bosley, the Angels’ adventure begins at a remote Mongolian outpost and ends only after Dylan is forced to face a dark secret from her past--a secret that puts the lives of her two best friends in danger.",
     "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "oftSBgP7Hhk"
+    "trailerYoutubeId": "oftSBgP7Hhk",
+    "plotTr": "Melekler; Natalie, Dylan ve Alex yeniden geri döndüler, ancak bu kez kaybolan iki gümüş yüzüğü ele geçirmek için gizli göreve çıkarken, önceden hiçbir uyarıda bulunmadan bir operasyona hazırlanıyorlar. Bunlar sıradan yüzükler değil. İçlerinde, Federal Tanık Koruma Programı’ndaki her bir kişinin yeni kimliklerini ortaya çıkaran değerli şifreli bilgiler bulunuyor. Tanıklar birer birer ölü bulunmaya başladığında, kılık değiştirme, casusluk ve dövüş sanatları ustaları olarak uzmanlıklarını kullanan sadece Melekler, faili, gizemli bir “düşmüş” Melek’i durdurabilir. Güvenilir meslektaşları Jimmy Bosley’in yardımıyla Meleklerin macerası, Moğolistan’ın ücra bir karakolunda başlar ve ancak Dylan, geçmişinden gelen karanlık bir sırla yüzleşmek zorunda kaldığında sona erer; bu sır, en yakın iki arkadaşının hayatını tehlikeye atmaktadır.",
+    "franchiseId": "charlies-angels",
+    "franchiseName": "Charlie’s Angels",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0348836",
@@ -25570,7 +25584,11 @@
     "country": "United States / Italy",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "4CL4LNWHegk"
+    "trailerYoutubeId": "4CL4LNWHegk",
+    "plotTr": "Modellik dünyasından ve birbirlerinden uzun yıllar ayrı kaldıktan sonra, Derek ve Hansel Roma’da yeniden moda dünyasının içine sürüklenirler. Podyumda sahne arkasında çalışanlar tarafından aşağılanmalarının ardından Derek ve Hansel bu işi bırakmaya karar verirler… ta ki emekli mayo mankeni Valentina, son zamanlarda meydana gelen ünlü ölümleriyle ilgili sorular sorarak onları tekrar bu dünyaya çekene kadar. Kısa süre sonra Derek, kendisinden alınmış olan oğlunun da Roma’da olduğunu fark eder ve Derek Jr.’ın şişman olduğunu görünce büyük bir hayal kırıklığına uğrar. Üstelik zeki de. Yine de Derek Sr., Hansel ile birlikte görevine devam eder; bu da onları “Adem, Havva ve Steve” gibi efsanevi mankenlere ve “Seçilmiş Kişi”ye götürür. Bu kişi kimdir? Mankenler neden Seçilmiş Kişi’nin kanını içiyorlar? Derek ve Hansel’in kariyerleri yeniden başlayacak mı?",
+    "franchiseId": "zoolander",
+    "franchiseName": "Zoolander",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0252414",
@@ -26833,7 +26851,8 @@
     "country": "United States / Canada / New Zealand",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "hSILKdPBCeU"
+    "trailerYoutubeId": "hSILKdPBCeU",
+    "plotTr": "5000 yıl sonra yeniden uyanışını yaşayan Black Adam, dünyanın acımasız koruyucusu haline gelir: Superman ve Wonder Woman gibi kahramanlara karşı mücadele edecek bir “anti-kahraman”. Şimdi, 21. yüzyılda Black Adam, Justice Society of America ve bu grubun kahramanları olan Doctor Fate, Hawkman, Atom Smasher ve Cyclone ile karşı karşıya gelmek zorundadır. Dünyanın kaderi belirsizdir."
   },
   {
     "imdbId": "tt0448115",
@@ -34407,6 +34426,7 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BZDVmMjJjYWUtZTkxOS00ZGJlLTg2NGEtYWE3OGVhNmVjOTVkXkEyXkFqcGc@._V1_.jpg",
     "trailerYoutubeId": "ahYjx0rQvqQ",
+    "plotTr": "Lise öğrencisi Sam Witwicky, aslında Autobot Bumblebee olan ilk arabasını satın alır. Bumblebee, diğer Autobotlar Dünya’ya ulaşmadan önce Sam ve kız arkadaşı Mikaela Banes’i Decepticon Barricade’den korur. Autobotlar Allspark’ı aramaktadır ve Decepticonlar Katar’daki bir ABD askeri üssüne saldırınca Dünya’daki savaş kızışır. Sam ve Mikaela, Decepticon’ları durdurmaya yardım etmeleri için çok gizli bir kurum olan Sector 7 tarafından gözaltına alınır, ancak kurumun aynı zamanda Autobot’ları da yok etmeyi planladığını öğrenince, dünyayı kurtarmak için kendi planlarını yaparlar.",
     "franchiseId": "transformers",
     "franchiseName": "Transformers",
     "franchiseOrder": 1,
@@ -48090,7 +48110,8 @@
     "plot": "The name of the film, G.D.O. BlackCat comes from the names of three brothers; Gürkan (Safak Sezer), Duran (Volkan Basaran), Orhan (Serkan Sengül) - who all got lost in the big city and live in Balat district. Its script, which was written by Safak Sezer, tells us about the unnatural adventures of some people we always see but don’t really know much about. The three brothers, who all have different points of view and jobs, start to investigate the strangest things that happened. The client of one of them dies in his car by accident, the other runs away with a girl who just came back for good from Germany and the third gets himself in trouble with the mob. They struggle all for one and one for all. Amazing and tragicomical incidents reveal.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Filmin adı olan G.D.O. BlackCat, büyük şehirde kaybolmuş ve Balat semtinde yaşayan üç kardeşin isimlerinden geliyor: Gürkan (Şafak Sezer), Duran (Volkan Başaran) ve Orhan (Serkan Sengül). Senaryosu Safak Sezer tarafından yazılan film, her zaman gördüğümüz ama hakkında pek bir şey bilmediğimiz bazı insanların olağanüstü maceralarını anlatıyor. Farklı bakış açılarına ve mesleklere sahip olan üç kardeş, başlarına gelen en tuhaf olayları araştırmaya başlar. Birinin müşterisi arabasında kazara ölür, diğeri Almanya’dan kalıcı olarak dönen bir kızla kaçar ve üçüncüsü mafya ile başını belaya sokar. Hepsi “birimiz için hepimiz, hepimiz için birimiz” ilkesiyle mücadele eder. Şaşırtıcı ve trajikomik olaylar ortaya çıkar."
   },
   {
     "imdbId": "tt2702348",
@@ -51678,6 +51699,7 @@
     "omdbType": "",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BMjEwNTg1MTA5Nl5BMl5BanBnXkFtZTgwOTg2OTM4MTE@._V1_SX300.jpg",
     "trailerYoutubeId": "VEgZnEbr3BM",
+    "plotTr": "Autobotlar ile Decepticonlar arasında Chicago’yu yerle bir eden savaşın ardından, insanlık tüm uzaylı robotları bir tehdit olarak görmeye başlar. Bunun üzerine CIA ajanı Harold Attinger, tek amacı tüm bu robotları avlamak olan bir birim kurar. Ancak, Optimus Prime’ı arayan başka bir uzaylı robotun onlara yardım ettiği ortaya çıkar. “Robotik uzmanı” Cade Yeager, eski bir kamyonet satın alır ve inceledikten sonra bunun bir Transformer olduğunu düşünür. Aracı çalıştırdığında, onun Optimus Prime olduğunu keşfeder. Daha sonra, birimden adamlar Optimus’u aramak için ortaya çıkar. Optimus, Yeager ve kızı Tessa’nın kaçmasına yardım eder, ancak avcılar tarafından takip edilirler. Kaçmayı başarırlar ve Yeager, adamlardan aldığı teknolojiden, Joshua Joyce adında bir teknoloji devi ve savunma müteahhidinin olayların bir parçası olduğunu öğrenir; bu yüzden neler olup bittiğini araştırmak için yola çıkarlar.",
     "franchiseId": "transformers",
     "franchiseName": "Transformers",
     "franchiseOrder": 4,
@@ -52922,7 +52944,11 @@
     "plot": "For the first time in Türkiye a comedy actress plays a character of her own creation on screen. Deliha follows the hilarious exploits of a slightly crazy, decidedly droll and genuinely good-natured young woman in search of love. Written by Gupse Özay, who stars in the title role, the movie promises audiences laughs and adventure aplenty. Crazy Zeliha’s story begins when she goes to a fortune-teller one day with her friends. The very same day, Cemal and his gorgeous-looking brother, Cemil, open a photography studio in the neighborhood and things become to get complicated.",
     "country": "Türkiye",
     "omdbType": "movie",
-    "boxOffice": ""
+    "plotTr": "Türkiye’de ilk kez bir komedi oyuncusu, kendi yarattığı bir karakteri beyazperdede canlandırıyor. “Deliha”, aşkı arayan, biraz çılgın, son derece komik ve içtenlikle iyi kalpli bir genç kadının kahkaha dolu maceralarını anlatıyor. Başrolünü üstlenen Gupse Özay’ın senaryosunu yazdığı film, izleyicilere bolca kahkaha ve macera vaat ediyor. Çılgın Zeliha’nın hikâyesi, bir gün arkadaşlarıyla birlikte bir falcıya gitmesiyle başlar. Aynı gün, Cemal ve yakışıklı kardeşi Cemil, mahallede bir fotoğraf stüdyosu açar ve işler karmaşıklaşmaya başlar.",
+    "boxOffice": "",
+    "franchiseId": "deliha",
+    "franchiseName": "Deliha",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1951265",
@@ -54287,7 +54313,8 @@
     "plot": "Charles Ingvar Jönsson gathers three criminals to take vengeance upon the people who killed his uncle.",
     "country": "Sweden",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Charles Ingvar Jönsson, amcasını öldürenlerden intikam almak için üç suçluyu bir araya getirir."
   },
   {
     "imdbId": "tt5290566",
@@ -59842,7 +59869,8 @@
     "franchiseId": "kolpacino",
     "franchiseName": "Kolpaçino",
     "franchiseOrder": 3,
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Özgür, yanlışlıkla bir mafya liderinin parasını alır."
   },
   {
     "imdbId": "tt5465868",
@@ -65603,7 +65631,8 @@
     "omdbType": "movie",
     "trailerYoutubeId": "CicgEkI3hJE",
     "backdrop": "https://m.media-amazon.com/images/M/MV5BZWU5ZjJiZWYtMjk4OC00MTgzLThmNzAtODFkODY4YzAwMTFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Eski iş arkadaşlarından oluşan bir grup, sistemi eleştirmek amacıyla bir banka soygunu düzenler."
   },
   {
     "imdbId": "tt39314348",
@@ -74335,6 +74364,7 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "$335,104,314",
+    "plotTr": "Yüzey dünyasının kıyılarında dünyaya gelen Arthur Curry, kendisinin sadece yarı insan olduğunu, kanının diğer yarısının ise Atlantis kökenli olduğunu keşfeder; bu da onu, denizaltı krallığı Atlantis’in tahtının meşru varisi yapar. Ancak Arthur, Atlantis’in, yedi sualtı krallığını birleştirip yüzeye savaş açmayı amaçlayan kötü niyetli üvey kardeşi Orm tarafından yönetildiğini öğrenir. Nuidis Vulko ve göz kamaştırıcı Mera’nın yardımıyla Arthur, Atlantis’i ve yüzey dünyasını Orm’un kötü planından kurtarmak için gerçek kaderinin tüm potansiyelini keşfetmeli ve Aquaman olmalıdır.",
     "franchiseId": "aquaman",
     "franchiseName": "Aquaman",
     "franchiseOrder": 1
@@ -75406,6 +75436,7 @@
     "country": "United States, Czech Republic, Australia, Canada, Italy",
     "omdbType": "movie",
     "boxOffice": "$391,283,774",
+    "plotTr": "Samimi mahalle süper kahramanımız, en yakın arkadaşları Ned, MJ ve grubun geri kalanıyla birlikte Avrupa tatiline çıkmaya karar verir. Ancak Peter’ın süper kahramanlık görevlerini birkaç haftalığına bir kenara bırakma planı, kıtada büyük bir kargaşaya yol açan çeşitli element yaratıklarının saldırılarının ardındaki gizemi ortaya çıkarmak için Nick Fury’ye yardım etmeyi isteksizce kabul etmesiyle bir anda suya düşer.",
     "franchiseId": "orumcek-adam--mcu",
     "franchiseName": "Örümcek-Adam – MCU",
     "franchiseOrder": 2
@@ -76598,7 +76629,8 @@
     "plot": "Sabina Wilson (Kristen Stewart), Elena Houghlin (Naomi Scott), and Jane Kano (Ella Balinska) are working for the mysterious Charles Townsend (Robert Clotworthy), whose security and investigative agency has expanded internationally. With the world’s smartest, bravest, and most highly trained women all over the globe, there are now teams of Angels guided by multiple Bosleys taking on the toughest jobs everywhere.",
     "country": "United States, China, Germany",
     "omdbType": "movie",
-    "boxOffice": "$17,803,077"
+    "boxOffice": "$17,803,077",
+    "plotTr": "Sabina Wilson (Kristen Stewart), Elena Houghlin (Naomi Scott) ve Jane Kano (Ella Balinska), güvenlik ve istihbarat ajansı uluslararası çapta genişlemiş olan gizemli Charles Townsend (Robert Clotworthy) için çalışmaktadır. Dünyanın dört bir yanındaki en zeki, en cesur ve en iyi eğitimli kadınlardan oluşan “Melekler” ekipleri, artık her yerde en zorlu görevleri üstlenmekte ve bu ekiplere birden fazla Bosley rehberlik etmektedir."
   },
   {
     "imdbId": "tt1950186",
@@ -77799,7 +77831,8 @@
     "plot": "Based on the global blockbuster videogame franchise from Sega, SONIC THE HEDGEHOG tells the story of the world’s speediest hedgehog as he embraces his new home on Earth. In this live-action adventure comedy, Sonic and his new best friend Tom (James Marsden) team up to defend the planet from the evil genius Dr. Robotnik (Jim Carrey) and his plans for world domination. The family-friendly film also stars Tika Sumpter and Ben Schwartz as the voice of Sonic.",
     "country": "United States, Japan, Canada, United Kingdom",
     "omdbType": "movie",
-    "boxOffice": "$148,974,665"
+    "boxOffice": "$148,974,665",
+    "plotTr": "Sega’nın dünya çapında gişe rekorları kıran video oyunu serisinden uyarlanan SONIC THE HEDGEHOG, dünyanın en hızlı kirpisinin Dünya’daki yeni yuvasına alışma hikâyesini anlatıyor. Bu canlı çekim macera komedisinde Sonic ve yeni en iyi arkadaşı Tom (James Marsden), gezegeni kötü deha Dr. Robotnik’ten (Jim Carrey) ve onun dünya hakimiyeti planlarından korumak için güçlerini birleştiriyor. Aile dostu bu filmde ayrıca Tika Sumpter rol alıyor ve Sonic’in seslendirmesini Ben Schwartz yapıyor."
   },
   {
     "imdbId": "tt0983946",
@@ -78068,7 +78101,8 @@
     "plot": "Ray Garrison, an elite soldier who was killed in battle, is brought back to life by an advanced technology that gives him the ability of super human strength and fast healing. With his new abilities, he goes after the man who killed his wife, or at least, who he believes killed his wife. He soon comes to learn that not everything he learns can be trusted. The true question is: Can he even trust himself?",
     "country": "United States, Canada, South Africa, China",
     "omdbType": "movie",
-    "boxOffice": "$12,561,824"
+    "boxOffice": "$12,561,824",
+    "plotTr": "Savaşta hayatını kaybeden seçkin bir asker olan Ray Garrison, ona süper insan gücü ve hızlı iyileşme yeteneği kazandıran ileri bir teknoloji sayesinde yeniden hayata döndürülür. Yeni yetenekleriyle, karısını öldüren adamın, ya da en azından karısını öldürdüğüne inandığı adamın peşine düşer. Kısa süre sonra, öğrendiği her şeye güvenilemeyeceğini anlar. Asıl soru şudur: Kendisine bile güvenebilir mi?"
   },
   {
     "imdbId": "tt12078990",
@@ -79373,7 +79407,8 @@
     "plot": "In the year 2092, space is full of dangerous floating garbage like discarded satellites and deserted spaceships. The crew of The Victory travels through space looking for the garbage they can make money off, while also competing with junk collector ships from other countries and using the speediness of their craft to defeat their rivals.",
     "country": "South Korea",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "2092 yılında uzay, atılmış uydular ve terk edilmiş uzay gemileri gibi tehlikeli yüzen çöplerle doludur. The Victory gemisinin mürettebatı, para kazanabilecekleri çöpleri aramak için uzayda seyahat ederken, aynı zamanda diğer ülkelerden gelen hurda toplama gemileriyle rekabet eder ve gemilerinin hızını kullanarak rakiplerini alt eder."
   },
   {
     "imdbId": "tt9784798",
@@ -79602,7 +79637,8 @@
     "plot": "In a world terrorized by super-villains, one woman has developed the process to give superpowers to regular people. But when scientist Emily Stanton accidentally imbues her estranged best-friend with incredible abilities, the two women must become the first superhero team. Now, it is up to Thunder Force to battle the super-powered Miscreants and save Chicago from the clutches of The King.",
     "country": "United States",
     "omdbType": "movie",
-    "boxOffice": ""
+    "boxOffice": "",
+    "plotTr": "Süper kötüler tarafından terör estirilen bir dünyada, bir kadın sıradan insanlara süper güçler kazandıran bir yöntem geliştirmiştir. Ancak bilim insanı Emily Stanton, uzun süredir görüşmediği en yakın arkadaşına yanlışlıkla inanılmaz yetenekler kazandırınca, bu iki kadın ilk süper kahraman ekibi olmak zorunda kalır. Artık süper güçlere sahip Miscreants’la savaşmak ve Chicago’yu The King’in pençesinden kurtarmak Thunder Force’a düşmüştür."
   },
   {
     "imdbId": "tt14371060",
@@ -80105,7 +80141,8 @@
     "plot": "In the extremely popular video game, Free City, a NPC named Guy learns the true nature of his existence when he meets the girl of his dreams, a human player. This player’s interactions with Guy has massive effects on him, the game, and real world as they play it.",
     "country": "United States, Canada",
     "omdbType": "movie",
-    "boxOffice": "$121,626,598"
+    "boxOffice": "$121,626,598",
+    "plotTr": "Son derece popüler video oyunu Free City’de, Guy adındaki bir NPC, hayallerindeki kızla, yani bir insan oyuncuyla tanıştığında varlığının gerçek doğasını öğrenir. Bu oyuncunun Guy ile kurduğu etkileşimler, hem Guy üzerinde hem de oyun üzerinde ve oyunu oynadıkları gerçek dünya üzerinde muazzam etkiler yaratır."
   },
   {
     "imdbId": "tt10366460",
@@ -82186,6 +82223,7 @@
     "country": "Australia, United States",
     "omdbType": "movie",
     "boxOffice": "$343,256,830",
+    "plotTr": "Thor’un emeklilik hayatı, tanrıların yok olmasını amaçlayan ve “Tanrı Katili Gorr” olarak bilinen galaktik bir katil tarafından kesintiye uğrar. Bu tehditle mücadele etmek için Thor, Kral Valkyrie, Korg ve eski sevgilisi Jane Foster’dan yardım ister. Jane Foster, Thor’un büyük şaşkınlığına, açıklanamayan bir şekilde onun sihirli çekici Mjolnir’i “Güçlü Thor” olarak kullanır. Birlikte, Tanrı Katili’nin intikamının ardındaki gizemi ortaya çıkarmak ve çok geç olmadan onu durdurmak için zorlu bir kozmik maceraya atılırlar.",
     "franchiseId": "thor",
     "franchiseName": "Thor",
     "franchiseOrder": 4
@@ -84560,6 +84598,7 @@
     "country": "United States, United Kingdom, Canada, Australia, Iceland",
     "omdbType": "movie",
     "boxOffice": "$124,481,226",
+    "plotTr": "Aquaman’i ilk seferinde yenmeyi başaramayan Black Manta, hâlâ babasının intikamını alma arzusu ile hareket ederek, Aquaman’i bir kez ve sonsuza dek alt etmek için hiçbir engel tanımayacaktır. Bu kez Black Manta, kadim ve kötücül bir gücü serbest bırakan efsanevi Kara Üç Çatal’ın gücünü elinde bulundurarak her zamankinden daha da korkutucu bir hal almıştır. Onu yenmek için Aquaman, hapsedilmiş kardeşi ve eski Atlantis Kralı Orm’a başvurarak beklenmedik bir ittifak kuracak. İkili, krallıklarını korumak ve Aquaman’in ailesini ve dünyayı geri dönüşü olmayan bir yıkımdan kurtarmak için aralarındaki anlaşmazlıkları bir kenara bırakmak zorunda kalacak.",
     "franchiseId": "aquaman",
     "franchiseName": "Aquaman",
     "franchiseOrder": 2
