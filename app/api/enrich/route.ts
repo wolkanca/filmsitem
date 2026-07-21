@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import { revalidatePath } from 'next/cache';
+import { getMovies, saveMovies } from '@/lib/db';
 
 const state = {
   isRunning: false,
@@ -13,7 +12,6 @@ const state = {
   changes: [] as string[],
 };
 
-const DATA_FILE = path.join(process.cwd(), 'data', 'movies.json');
 const PLACEHOLDER = 'images.unsplash.com/photo-1489599849927-2ee91cede3ba';
 
 async function fetchJSON(url: string): Promise<any> {
@@ -47,12 +45,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'API anahtarı gerekli.' }, { status: 400 });
     }
 
-    if (!fs.existsSync(DATA_FILE)) {
-      return NextResponse.json({ error: 'movies.json bulunamadı.' }, { status: 404 });
-    }
-
-    const moviesContent = fs.readFileSync(DATA_FILE, 'utf8');
-    const movies = JSON.parse(moviesContent);
+    const movies = await getMovies();
 
     const toEnrich = forceUpdate
       ? movies
@@ -197,7 +190,7 @@ export async function POST(req: Request) {
         state.changes = state.changes.slice(0, 100);
 
         if (state.processed % 10 === 0 || state.processed === state.total) {
-          fs.writeFileSync(DATA_FILE, JSON.stringify(movies, null, 2), 'utf8');
+          await saveMovies(movies);
         }
 
         await new Promise((resolve) => setTimeout(resolve, 200));

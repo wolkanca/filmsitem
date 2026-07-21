@@ -1,9 +1,6 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import { revalidatePath } from 'next/cache';
-
-const DATA_FILE = path.join(process.cwd(), 'data', 'movies.json');
+import { getMovies, saveMovies } from '@/lib/db';
 
 // PATCH /api/movies/:imdbId — update poster, backdrop, trailerYoutubeId
 export async function PATCH(
@@ -68,11 +65,7 @@ export async function PATCH(
       return NextResponse.json({ error: 'Güncellenecek geçerli alan bulunamadı.' }, { status: 400 });
     }
 
-    if (!fs.existsSync(DATA_FILE)) {
-      return NextResponse.json({ error: 'movies.json bulunamadı.' }, { status: 404 });
-    }
-
-    const movies = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+    const movies = await getMovies();
     const idx = movies.findIndex((m: { imdbId: string }) => m.imdbId === imdbId);
 
     if (idx === -1) {
@@ -81,10 +74,10 @@ export async function PATCH(
 
     // Apply updates
     for (const [key, value] of Object.entries(updates)) {
-      movies[idx][key] = value;
+      (movies[idx] as any)[key] = value;
     }
 
-    fs.writeFileSync(DATA_FILE, JSON.stringify(movies, null, 2), 'utf8');
+    await saveMovies(movies);
 
     // On-demand cache revalidation
     revalidatePath(`/movie/${imdbId}`);

@@ -1,10 +1,7 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
 import { revalidatePath } from 'next/cache';
 import { Movie } from '@/types';
-
-const DATA_FILE = path.join(process.cwd(), 'data', 'movies.json');
+import { getMovies, saveMovies } from '@/lib/db';
 
 // Custom CSV Parser Line Splitter
 function parseCSVLine(line: string): string[] {
@@ -121,12 +118,7 @@ export async function POST(req: Request) {
     }
 
     // 4. Load current movies to check for duplicates
-    if (!fs.existsSync(DATA_FILE)) {
-      return NextResponse.json({ error: 'movies.json bulunamadı.' }, { status: 404 });
-    }
-
-    const moviesContent = fs.readFileSync(DATA_FILE, 'utf8');
-    const currentMovies: Movie[] = JSON.parse(moviesContent);
+    const currentMovies: Movie[] = await getMovies();
 
     // Build database of existing imdbIds
     const existingIds = new Set<string>();
@@ -332,7 +324,7 @@ export async function POST(req: Request) {
     });
 
     // 9. Save database
-    fs.writeFileSync(DATA_FILE, JSON.stringify(currentMovies, null, 2), 'utf8');
+    await saveMovies(currentMovies);
 
     // 10. Revalidate paths
     try {

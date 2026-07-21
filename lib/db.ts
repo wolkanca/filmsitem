@@ -1,20 +1,68 @@
 import fs from 'fs';
 import path from 'path';
+import { put, list } from '@vercel/blob';
 import { Movie } from '@/types';
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'movies.json');
 
-export async function getMovies(): Promise<Movie[]> {
+export async function saveMovies(movies: Movie[]): Promise<void> {
+  const jsonContent = JSON.stringify(movies, null, 2);
+
+  // 1. Save to local filesystem if accessible
   try {
-    if (!fs.existsSync(DATA_FILE)) {
-      return [];
+    const dir = path.dirname(DATA_FILE);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
     }
-    const fileContent = fs.readFileSync(DATA_FILE, 'utf8');
-    return JSON.parse(fileContent) as Movie[];
+    fs.writeFileSync(DATA_FILE, jsonContent, 'utf8');
   } catch (error) {
-    console.error('getMovies error:', error);
-    return [];
+    console.warn('saveMovies local fs write error:', error);
   }
+
+  // 2. Save to Vercel Blob store if token is available
+  if (process.env.BLOB_READ_WRITE_TOKEN) {
+    try {
+      await put('movies.json', jsonContent, {
+        access: 'public',
+        addRandomSuffix: false,
+      });
+    } catch (error) {
+      console.error('saveMovies Vercel Blob save error:', error);
+    }
+  }
+}
+
+export async function getMovies(): Promise<Movie[]> {
+  // 1. Try Vercel Blob if token is available
+  if (process.env.BLOB_READ_WRITE_TOKEN) {
+    try {
+      const { blobs } = await list({ prefix: 'movies.json' });
+      const movieBlob = blobs.find((b) => b.pathname === 'movies.json');
+      if (movieBlob) {
+        const res = await fetch(movieBlob.url, { cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (Array.isArray(data) && data.length > 0) {
+            return data as Movie[];
+          }
+        }
+      }
+    } catch (error) {
+      console.warn('getMovies Vercel Blob fetch warning (falling back to local fs):', error);
+    }
+  }
+
+  // 2. Fallback to local fs data/movies.json
+  try {
+    if (fs.existsSync(DATA_FILE)) {
+      const fileContent = fs.readFileSync(DATA_FILE, 'utf8');
+      return JSON.parse(fileContent) as Movie[];
+    }
+  } catch (error) {
+    console.error('getMovies local fs error:', error);
+  }
+
+  return [];
 }
 
 export async function getMovieById(imdbId: string): Promise<Movie | null> {
