@@ -14,7 +14,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
   return (
     <Link href={`/movie/${movie.imdbId}`} className="group block relative">
       <div className="relative aspect-[2/3] w-full overflow-hidden rounded-xl bg-zinc-900 border border-card-border transition-all duration-500 group-hover:scale-105 group-hover:border-brand-primary/40 group-hover:shadow-[0_15px_30px_-10px_rgba(239,68,68,0.3)]">
-        
+
         {/* Poster Image */}
         <PosterImage
           src={movie.poster}
@@ -30,8 +30,8 @@ export default function MovieCard({ movie }: MovieCardProps) {
 
         {/* Hover Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-          <h3 className="text-base font-bold text-white leading-tight mb-1 truncate">{movie.title}</h3>
-          
+          <h3 className="text-base font-bold text-white leading-tight mb-1 line-clamp-2">{movie.title}</h3>
+
           <div className="flex items-center justify-between text-xs text-zinc-300 mb-2">
             <span className="flex items-center gap-1">
               <Calendar className="w-3.5 h-3.5 text-zinc-400" />

@@ -497,7 +497,7 @@ export default function MovieDetailClient({
 
             <div
               ref={overviewContentRef}
-              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[215px]'
+              className={`relative overflow-hidden text-sm transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[215px]'
                 }`}
             >
               <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2">
@@ -605,97 +605,6 @@ export default function MovieDetailClient({
 
             </div>
           </div>
-
-
-          {/* Seasons & Episodes */}
-          {movie.seasons && movie.seasons.length > 0 && (
-            <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-zinc-800 pb-4">
-                <h2 className="text-xl font-extrabold text-zinc-200 flex items-center gap-2">
-                  <span>📺</span> Sezonlar & Bölümler
-                </h2>
-                <span className="text-xs font-bold text-zinc-500 bg-zinc-950/60 px-3 py-1 rounded-lg border border-white/5 w-fit">
-                  Toplam {movie.seasons.reduce((acc, s) => acc + s.episodes.length, 0)} Bölüm İzlenmiş
-                </span>
-              </div>
-
-              {/* Season Tabs */}
-              {movie.seasons.length > 1 && (
-                <div className="flex flex-wrap gap-2">
-                  {movie.seasons.map((s) => {
-                    const isActive = activeSeasonTab === s.seasonNumber;
-                    return (
-                      <button
-                        key={s.seasonNumber}
-                        onClick={() => setActiveSeasonTab(s.seasonNumber)}
-                        className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all duration-200 ${isActive
-                          ? 'bg-brand-primary border-brand-primary/30 text-white shadow-[0_4px_12px_rgba(239,68,68,0.25)]'
-                          : 'bg-zinc-950/60 border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-900/60'
-                          }`}
-                      >
-                        {s.seasonNumber}. Sezon ({s.episodes.length} Bölüm)
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-
-              {/* Episodes List */}
-              <div className="space-y-3">
-                {movie.seasons
-                  .find((s) => s.seasonNumber === activeSeasonTab)
-                  ?.episodes.map((ep) => (
-                    <div
-                      key={ep.imdbId}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 rounded-2xl bg-zinc-950/40 border border-white/5 hover:border-zinc-800 transition-all duration-300 group"
-                    >
-                      <div className="space-y-1 text-left">
-                        <div className="flex items-center gap-2">
-                          <span className="text-xs font-black text-brand-primary bg-brand-primary/10 px-2 py-0.5 rounded border border-brand-primary/20">
-                            {ep.episodeNumber}. Bölüm
-                          </span>
-                          <h4 className="text-sm font-extrabold text-zinc-200 group-hover:text-white transition-colors">
-                            {ep.title.includes(': ') ? ep.title.split(': ').slice(1).join(': ') : ep.title}
-                          </h4>
-                        </div>
-                        {ep.overview && (
-                          <p className="text-xs text-zinc-500 line-clamp-2 max-w-xl">
-                            {ep.overview}
-                          </p>
-                        )}
-                        {ep.watchDate && (
-                          <span className="text-[10px] text-zinc-500 font-bold block mt-1">
-                            İzleme Tarihi: {formatDate(ep.watchDate)}
-                          </span>
-                        )}
-                      </div>
-
-                      <div className="flex items-center gap-4 ml-auto sm:ml-0">
-                        {/* Ratings */}
-                        <div className="flex items-center gap-3">
-                          {ep.myRating > 0 && (
-                            <div className="flex items-center gap-1 bg-brand-primary/10 border border-brand-primary/20 px-2.5 py-1 rounded-xl">
-                              <Star className="w-3.5 h-3.5 text-brand-accent fill-brand-accent animate-pulse-subtle" />
-                              <span className={`text-xs font-black ${getRatingColor(ep.myRating)}`}>
-                                {ep.myRating}
-                              </span>
-                            </div>
-                          )}
-                          {ep.imdbRating > 0 && (
-                            <div className="flex items-center gap-1 bg-yellow-500/5 border border-yellow-500/10 px-2.5 py-1 rounded-xl">
-                              <span className="text-[10px] font-black text-[#f5c518]">IMDb</span>
-                              <span className="text-xs font-black text-zinc-400">
-                                {ep.imdbRating}
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-              </div>
-            </div>
-          )}
 
         </div>
 
