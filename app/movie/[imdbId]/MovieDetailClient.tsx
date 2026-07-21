@@ -478,7 +478,7 @@ export default function MovieDetailClient({
         {/* Left main: Plot and Credits */}
         <div className="lg:col-span-8 space-y-8">
           {/* Overview */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
+          <div className="glass p-6 sm:p-8 rounded-3xl min-h-[250px] border border-white/5 space-y-4">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
@@ -501,11 +501,11 @@ export default function MovieDetailClient({
                 }`}
             >
               {movie.plot || movie.plotTr ? (
-                <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
+                <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line">
                   {movie.plotTr || movie.plot}
                 </p>
               ) : (
-                <p className="text-zinc-400 text-sm leading-relaxed whitespace-pre-line">
+                <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line">
                   {movie.overview || 'Özet eklenmemiş.'}
                 </p>
               )}
@@ -527,7 +527,7 @@ export default function MovieDetailClient({
           </div>
 
           {/* Credits Box */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
+          <div className="glass p-6 sm:p-8 rounded-3xl min-h-[250px] border border-white/5 space-y-6">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">Künye ve Ekip</h2>
             </div>

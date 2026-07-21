@@ -26292,6 +26292,9 @@
     "boxOffice": "",
     "trailerYoutubeId": "dbut5whNvM0",
     "backdrop": "",
+	"franchiseId": "avatar",
+    "franchiseName": "Avatar",
+    "franchiseOrder": 2,
     "plotTr": "Jake Sully, güneş sistemi dışındaki Pandora ayında kurduğu yeni ailesiyle birlikte yaşamaktadır. Tanıdık bir tehdit daha önce başlatılan işi bitirmek için geri döndüğünde, Jake, evlerini korumak için Neytiri ve Na’vi ırkının ordusuyla birlikte çalışmak zorundadır."
   },
   {
@@ -70372,7 +70375,7 @@
     "plotTr": "Büyük bir trajedinin ardından derin bir yas tutan Jake Sully, Neytiri ve aileleri, yaşadıkları kaybın acısıyla mücadele etmektedir. Pandora’daki bu zorlu yolculukları, onları daha önce hiç karşılaşmadıkları, volkanik bölgelerde yaşayan acımasız ve agresif bir Na’vi kabilesi olan Mangkwan Klanı (Kül İnsanları) ile karşı karşıya getirir. Güçlü liderleri Varang tarafından yönetilen bu klan, yurtlarının bir yanardağ patlamasıyla yok olmasından dolayı Eywa’yı suçlamakta ve savaşın yıkıcı gücünü benimsemektedir. İnsanlardan oluşan RDA güçlerinin çok daha tehlikeli askeri teknolojilerle geri dönmesiyle birlikte, Sully ailesi hem kendi içsel acılarıyla yüzleşmek hem de gökyüzünde yelken açan yeni klanlarla ittifaklar kurarak Pandora’yı küle dönmekten kurtarmak zorundadır.",
     "franchiseId": "avatar",
     "franchiseName": "Avatar",
-    "franchiseOrder": 2,
+    "franchiseOrder": 3,
     "boxOffice": "$404,340,010",
     "plot": "The Return of the Threat: When the RDA (Resources Development Administration) returns to Pandora with a more aggressive military force, Colonel Miles Quaritch is resurrected as a “Recombinant\"-a Na’vi avatar embedded with his human memories-to lead a specialized task force dedicated to hunting down Jake Sully."
   },
