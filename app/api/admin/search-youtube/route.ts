@@ -83,7 +83,7 @@ export async function GET(req: Request) {
     }
 
     const items = itemSection.itemSectionRenderer.contents;
-    const results = [];
+    const candidates: { videoId: string; title: string; owner: string; length: string; viewCount: string; thumbnail: string }[] = [];
 
     for (const item of items) {
       if (item.videoRenderer) {
@@ -95,9 +95,24 @@ export async function GET(req: Request) {
         const viewCount = vr.viewCountText?.simpleText || '';
         const thumbnail = vr.thumbnail?.thumbnails?.[0]?.url || '';
 
-        results.push({ videoId, title, owner, length, viewCount, thumbnail });
+        candidates.push({ videoId, title, owner, length, viewCount, thumbnail });
       }
     }
+
+    // Filter to only embeddable videos via YouTube oEmbed endpoint
+    // oEmbed returns 401/403 for videos that cannot be embedded
+    const checkEmbeddable = async (videoId: string): Promise<boolean> => {
+      try {
+        const oembedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${videoId}&format=json`;
+        const res = await fetch(oembedUrl, { method: 'GET' });
+        return res.ok;
+      } catch {
+        return false;
+      }
+    };
+
+    const embeddableFlags = await Promise.all(candidates.map((c) => checkEmbeddable(c.videoId)));
+    const results = candidates.filter((_, i) => embeddableFlags[i]);
 
     return NextResponse.json({ results: results.slice(0, 10) });
   } catch (error: unknown) {

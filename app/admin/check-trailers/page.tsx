@@ -45,11 +45,11 @@ export default function CheckTrailersPage() {
   const router = useRouter();
   const [authorized, setAuthorized] = useState(false);
   const [apiKey, setApiKey] = useState('e3d09f93ae63545fe155c5bde68ca970');
-  
+
   // Movie lists
   const [allMovies, setAllMovies] = useState<Movie[]>([]);
   const [moviesLoading, setMoviesLoading] = useState(false);
-  
+
   // Scanning state
   const [checking, setChecking] = useState(false);
   const [checkedCount, setCheckedCount] = useState(0);
@@ -57,7 +57,7 @@ export default function CheckTrailersPage() {
   const [brokenMovies, setBrokenMovies] = useState<BrokenMovieState[]>([]);
   const [scanFinished, setScanFinished] = useState(false);
   const [generalError, setGeneralError] = useState('');
-  
+
   // Filters
   const [searchQuery, setSearchQuery] = useState('');
   const [filterMode, setFilterMode] = useState<'all' | 'suggested' | 'fixed'>('all');
@@ -103,7 +103,7 @@ export default function CheckTrailersPage() {
     setScanFinished(false);
     setBrokenMovies([]);
     setCheckedCount(0);
-    
+
     const withTrailers = allMovies.filter(m => m.trailerYoutubeId && m.trailerYoutubeId.trim() !== '');
     if (withTrailers.length === 0) {
       setGeneralError('Kitaplıkta fragmanı olan film bulunamadı.');
@@ -126,7 +126,7 @@ export default function CheckTrailersPage() {
       try {
         const res = await fetch(`/api/admin/check-trailer?id=${movie.trailerYoutubeId}`);
         const data = await res.json();
-        
+
         if (!checkingRef.current) return;
 
         if (!data.valid) {
@@ -146,7 +146,7 @@ export default function CheckTrailersPage() {
               showYtSearch: false,
               isSearchingYt: false,
               ytSearchError: '',
-              ytSearchQuery: `${movie.title} ${movie.year} fragman`,
+              ytSearchQuery: `${movie.originalTitle || movie.title} ${movie.year} trailer`,
               ytSearchResults: null,
             }
           ]);
@@ -169,14 +169,14 @@ export default function CheckTrailersPage() {
             showYtSearch: false,
             isSearchingYt: false,
             ytSearchError: '',
-            ytSearchQuery: `${movie.title} ${movie.year} fragman`,
+            ytSearchQuery: `${movie.originalTitle || movie.title} ${movie.year} trailer`,
             ytSearchResults: null,
           }
         ]);
       } finally {
         processed++;
         setCheckedCount(processed);
-        
+
         if (processed === withTrailers.length) {
           setChecking(false);
           checkingRef.current = false;
@@ -261,7 +261,7 @@ export default function CheckTrailersPage() {
     setBrokenMovies(prev => prev.map(item => {
       if (item.movie.imdbId !== imdbId) return item;
       const willShow = !item.showYtSearch;
-      
+
       // Auto search on first open
       if (willShow && !item.ytSearchResults && !item.isSearchingYt) {
         setTimeout(() => handleSearchYoutube(imdbId, defaultQuery), 50);
@@ -353,9 +353,9 @@ export default function CheckTrailersPage() {
   const togglePreview = (imdbId: string, specificVideoId?: string) => {
     setBrokenMovies(prev => prev.map(item => {
       if (item.movie.imdbId !== imdbId) return item;
-      
-      const nextShowPreview = specificVideoId 
-        ? true 
+
+      const nextShowPreview = specificVideoId
+        ? true
         : (item.previewVideoId && item.previewVideoId !== item.movie.trailerYoutubeId)
           ? true
           : !item.showPreview;
@@ -549,11 +549,10 @@ export default function CheckTrailersPage() {
                   <button
                     key={key}
                     onClick={() => setFilterMode(key)}
-                    className={`px-3 py-1.5 rounded-xl border text-xs font-bold transition-all cursor-pointer ${
-                      filterMode === key
-                        ? 'bg-zinc-900 border-zinc-700 text-white'
-                        : 'bg-transparent border-transparent text-zinc-500 hover:text-zinc-300'
-                    }`}
+                    className={`px-3 py-1.5 rounded-xl border text-xs font-bold transition-all cursor-pointer ${filterMode === key
+                      ? 'bg-zinc-900 border-zinc-700 text-white'
+                      : 'bg-transparent border-transparent text-zinc-500 hover:text-zinc-300'
+                      }`}
                   >
                     {label} <span className="text-[10px] ml-1 bg-zinc-900 px-1.5 py-0.5 rounded-md text-zinc-400">{count}</span>
                   </button>
@@ -591,18 +590,17 @@ export default function CheckTrailersPage() {
                     isSearchingYt, ytSearchError, ytSearchQuery, ytSearchResults
                   } = item;
 
-                  const defaultQuery = `${movie.title} ${movie.year} fragman`;
+                  const defaultQuery = `${movie.originalTitle || movie.title} ${movie.year} trailer`;
 
                   return (
                     <div
                       key={movie.imdbId}
-                      className={`p-5 rounded-2xl border transition-all ${
-                        isFixed
-                          ? isDeleted
-                            ? 'bg-zinc-950/20 border-zinc-900 opacity-60'
-                            : 'bg-emerald-950/10 border-emerald-500/20'
-                          : 'bg-zinc-950/40 border-zinc-800/80 hover:border-zinc-700/60'
-                      }`}
+                      className={`p-5 rounded-2xl border transition-all ${isFixed
+                        ? isDeleted
+                          ? 'bg-zinc-950/20 border-zinc-900 opacity-60'
+                          : 'bg-emerald-950/10 border-emerald-500/20'
+                        : 'bg-zinc-950/40 border-zinc-800/80 hover:border-zinc-700/60'
+                        }`}
                     >
                       {/* Top Header */}
                       <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
@@ -617,14 +615,14 @@ export default function CheckTrailersPage() {
                           </div>
                           <div>
                             <div className="flex items-center gap-2">
-                              <h3 className="text-sm font-extrabold text-zinc-200">{movie.title}</h3>
+                              <h3 className="text-sm font-extrabold text-zinc-200">{movie.title} - {movie.originalTitle}</h3>
                               <span className="text-[10px] text-zinc-500">({movie.year})</span>
                             </div>
                             <p className="text-[10px] text-zinc-500 font-mono mt-0.5">
-                              IMDb: <a href={`https://imdb.com/title/${movie.imdbId}`} target="_blank" rel="noreferrer" className="hover:underline text-blue-400">{movie.imdbId}</a>
+                              IMDb: <a href={`/movie/${movie.imdbId}`} target="_blank" rel="noreferrer" className="hover:underline text-blue-400">{movie.imdbId}</a>
                               {' · '} Türler: {movie.genres.join(', ')}
                             </p>
-                            
+
                             {isFixed ? (
                               <div className="flex items-center gap-1 mt-2 text-xs font-bold text-emerald-400">
                                 <CheckCircle className="w-3.5 h-3.5" />
@@ -646,9 +644,8 @@ export default function CheckTrailersPage() {
                             {/* Preview button */}
                             <button
                               onClick={() => togglePreview(movie.imdbId)}
-                              className={`p-2 rounded-lg border text-xs font-bold transition-all cursor-pointer ${
-                                showPreview && previewVideoId === movie.trailerYoutubeId ? 'bg-zinc-900 border-zinc-700 text-white' : 'bg-transparent border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-700'
-                              }`}
+                              className={`p-2 rounded-lg border text-xs font-bold transition-all cursor-pointer ${showPreview && previewVideoId === movie.trailerYoutubeId ? 'bg-zinc-900 border-zinc-700 text-white' : 'bg-transparent border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-700'
+                                }`}
                               title="Mevcut Fragmanı Önizle"
                             >
                               <Eye className="w-4 h-4" />
@@ -657,9 +654,8 @@ export default function CheckTrailersPage() {
                             {/* YouTube Search button */}
                             <button
                               onClick={() => toggleYtSearch(movie.imdbId, defaultQuery)}
-                              className={`px-3 py-2 rounded-lg border text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${
-                                showYtSearch ? 'bg-red-600/20 border-red-500 text-red-400' : 'bg-zinc-900 hover:bg-zinc-800 border-zinc-800 text-zinc-300 hover:text-white'
-                              }`}
+                              className={`px-3 py-2 rounded-lg border text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer ${showYtSearch ? 'bg-red-600/20 border-red-500 text-red-400' : 'bg-zinc-900 hover:bg-zinc-800 border-zinc-800 text-zinc-300 hover:text-white'
+                                }`}
                             >
                               <Youtube className="w-4 h-4 text-red-500 fill-red-500" />
                               YouTube&apos;da Ara
@@ -791,7 +787,7 @@ export default function CheckTrailersPage() {
                                       </h4>
                                       <p className="text-[10px] text-zinc-500 truncate mt-1">{result.owner} · {result.viewCount}</p>
                                     </div>
-                                    
+
                                     <div className="flex gap-1.5 mt-2">
                                       <button
                                         onClick={() => togglePreview(movie.imdbId, result.videoId)}

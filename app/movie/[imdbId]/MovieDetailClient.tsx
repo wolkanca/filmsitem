@@ -109,6 +109,53 @@ export default function MovieDetailClient({
   }
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Trailer inline edit
+  const [isTrailerEditOpen, setIsTrailerEditOpen] = useState(false);
+  const [trailerInput, setTrailerInput] = useState('');
+  const [trailerSaving, setTrailerSaving] = useState(false);
+  const [trailerError, setTrailerError] = useState('');
+
+  const handleSaveTrailer = async () => {
+    setTrailerSaving(true);
+    setTrailerError('');
+    try {
+      let youtubeId = trailerInput.trim();
+      const ytMatch = youtubeId.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{11})/);
+      if (ytMatch) youtubeId = ytMatch[1];
+
+      if (!youtubeId) {
+        throw new Error('Geçerli bir YouTube ID veya URL girin.');
+      }
+
+      // YouTube oEmbed ile embed edilebilirlik kontrolü
+      const oembedRes = await fetch(
+        `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${youtubeId}&format=json`
+      );
+      if (!oembedRes.ok) {
+        throw new Error(
+          '⚠️ Bu video embed edilemiyor. Lütfen embed iznine sahip başka bir video deneyin.'
+        );
+      }
+
+      const res = await fetch(`/api/movies/${movie.imdbId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ trailerYoutubeId: youtubeId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Kaydetme başarısız.');
+
+      setMovie((prev) => ({ ...prev, trailerYoutubeId: youtubeId }));
+      setIsTrailerEditOpen(false);
+    } catch (err: unknown) {
+      setTrailerError(err instanceof Error ? err.message : 'Hata oluştu.');
+    } finally {
+      setTrailerSaving(false);
+    }
+  };
+
+
   const [modalSaving, setModalSaving] = useState(false);
   const [modalError, setModalError] = useState('');
   const [modalForm, setModalForm] = useState<ModalFormState>({
@@ -758,6 +805,47 @@ export default function MovieDetailClient({
                 <Play className="w-5 h-5 text-red-500 fill-red-500" /> Resmi Fragman
               </h2>
             </div>
+
+            {/* fragman düzenle */}
+            {isAdmin && !isTrailerEditOpen && (
+              <button
+                type="button"
+                onClick={() => { setTrailerInput(movie.trailerYoutubeId || ''); setTrailerError(''); setIsTrailerEditOpen(true); }}
+                className="mt-1 flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-900 border border-brand-primary/30 text-brand-primary text-xs font-bold hover:bg-brand-primary/10 transition-all cursor-pointer"
+              >
+                <Pencil className="w-3.5 h-3.5" /> Fragman Düzenle
+              </button>
+            )}
+
+            {isAdmin && isTrailerEditOpen && (
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={trailerInput}
+                    onChange={(e) => setTrailerInput(e.target.value)}
+                    placeholder="YouTube ID veya URL yapıştırın"
+                    className="flex-1 rounded-xl bg-zinc-900 border border-white/10 text-zinc-200 text-sm px-3 py-2 outline-none focus:border-brand-primary/60 transition-colors"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleSaveTrailer}
+                    disabled={trailerSaving}
+                    className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-brand-primary/20 border border-brand-primary/40 text-brand-primary text-xs font-bold hover:bg-brand-primary/30 transition-all cursor-pointer disabled:opacity-50"
+                  >
+                    {trailerSaving ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />} Kaydet
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsTrailerEditOpen(false)}
+                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-400 text-xs font-bold hover:bg-zinc-800 transition-all cursor-pointer"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+                {trailerError && <p className="text-xs text-red-400">{trailerError}</p>}
+              </div>
+            )}
 
             {/* Trailer Player */}
             {movie.trailerYoutubeId ? (
