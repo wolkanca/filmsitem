@@ -228,7 +228,7 @@ export default function MovieDetailClient({
         return;
       }
 
-      setIsOverviewOverflowing(el.scrollHeight > 275);
+      setIsOverviewOverflowing(el.scrollHeight > 215);
     };
 
     checkOverflow();
@@ -478,7 +478,7 @@ export default function MovieDetailClient({
         {/* Left main: Plot and Credits */}
         <div className="lg:col-span-8 space-y-8">
           {/* Overview */}
-          <div className="glass p-6 sm:p-8 rounded-3xl min-h-[250px] border border-white/5 space-y-4">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
@@ -497,19 +497,15 @@ export default function MovieDetailClient({
 
             <div
               ref={overviewContentRef}
-              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[275px]'
+              className={`relative overflow-hidden transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[215px]'
                 }`}
             >
-              {movie.plot || movie.plotTr ? (
-                <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line">
-                  {movie.plotTr || movie.plot}
-                </p>
-              ) : (
-                <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line">
-                  {movie.overview || 'Özet eklenmemiş.'}
-                </p>
-              )}
-
+              <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2">
+                {movie.overview || 'Özet eklenmemiş.'}
+              </p>
+              <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-4">
+                {movie.plotTr || movie.plot}
+              </p>
               {!isOverviewExpanded && isOverviewOverflowing && (
                 <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#080c14] to-transparent" />
               )}
@@ -527,7 +523,7 @@ export default function MovieDetailClient({
           </div>
 
           {/* Credits Box */}
-          <div className="glass p-6 sm:p-8 rounded-3xl min-h-[250px] border border-white/5 space-y-6">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">Künye ve Ekip</h2>
             </div>
