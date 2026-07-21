@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { put, list } from '@vercel/blob';
+import { put } from '@vercel/blob';
 import { Movie } from '@/types';
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'movies.json');
@@ -22,10 +22,12 @@ export async function saveMovies(movies: Movie[]): Promise<void> {
   // 2. Save to Vercel Blob store if token is available
   if (process.env.BLOB_READ_WRITE_TOKEN) {
     try {
-      await put('movies.json', jsonContent, {
+      const blob = await put('movies.json', jsonContent, {
         access: 'public',
         addRandomSuffix: false,
       });
+      // Log the URL so you can set BLOB_MOVIES_URL env variable to avoid list() calls
+      console.log('[saveMovies] Blob URL (set as BLOB_MOVIES_URL env var):', blob.url);
     } catch (error) {
       console.error('saveMovies Vercel Blob save error:', error);
     }
@@ -33,22 +35,21 @@ export async function saveMovies(movies: Movie[]): Promise<void> {
 }
 
 export async function getMovies(): Promise<Movie[]> {
-  // 1. Try Vercel Blob if token is available
-  if (process.env.BLOB_READ_WRITE_TOKEN) {
+  // 1. Try Vercel Blob via direct URL (NO list() = NO Advanced Operation charged)
+  //    Set BLOB_MOVIES_URL env variable to the public URL of movies.json in your blob store.
+  //    You can find this URL in the Vercel dashboard or from the saveMovies() log output.
+  const blobUrl = process.env.BLOB_MOVIES_URL;
+  if (blobUrl) {
     try {
-      const { blobs } = await list({ prefix: 'movies.json' });
-      const movieBlob = blobs.find((b) => b.pathname === 'movies.json');
-      if (movieBlob) {
-        const res = await fetch(movieBlob.url, { cache: 'no-store' });
-        if (res.ok) {
-          const data = await res.json();
-          if (Array.isArray(data) && data.length > 0) {
-            return data as Movie[];
-          }
+      const res = await fetch(blobUrl, { cache: 'no-store' });
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data) && data.length > 0) {
+          return data as Movie[];
         }
       }
     } catch (error) {
-      console.warn('getMovies Vercel Blob fetch warning (falling back to local fs):', error);
+      console.warn('getMovies Blob URL fetch warning (falling back to local fs):', error);
     }
   }
 
