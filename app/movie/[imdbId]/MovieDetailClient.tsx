@@ -216,27 +216,6 @@ export default function MovieDetailClient({
     return count > 0 ? parseFloat((total / count).toFixed(1)) : 0;
   }, [movie]);
 
-  useEffect(() => {
-    const checkOverflow = () => {
-      const el = overviewContentRef.current;
-      if (!el) return;
-
-      // Sadece lg (1024px+) ve üzeri ekranlarda çalışsın
-      if (window.innerWidth < 1024) {
-        setIsOverviewOverflowing(false);
-        setIsOverviewExpanded(true);
-        return;
-      }
-
-      setIsOverviewOverflowing(el.scrollHeight > 215);
-    };
-
-    checkOverflow();
-    window.addEventListener('resize', checkOverflow);
-
-    return () => window.removeEventListener('resize', checkOverflow);
-  }, [movie.overview, movie.plot, movie.plotTr]);
-
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -357,6 +336,16 @@ export default function MovieDetailClient({
     <div className="space-y-10 relative">
       {/* Cinematic Backdrop Hero Area */}
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950/60 min-h-[380px] flex items-end">
+        {isAdmin && (
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); openEditModal(movie); }}
+            className="z-20 absolute top-1 right-3 bg-gradient-to-r cursor-pointer disabled:opacity-60 duration-300 flex font-bold from-violet-600 gap-2 hover:opacity-95 items-center justify-center px-6 py-1.5 rounded-xl shadow-lg shadow-violet-600/10 text-xs text-white to-indigo-600 transition-all"
+            title="Filmi Düzenle"
+          >
+            <Pencil className="w-3 h-3" /> Düzenle
+          </button>
+        )}
         {/* Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <PosterImage
@@ -483,22 +472,11 @@ export default function MovieDetailClient({
               <h2 className="text-xl font-extrabold text-zinc-200">
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
               </h2>
-              {isAdmin && (
-                <button
-                  type="button"
-                  onClick={(e) => { e.stopPropagation(); openEditModal(movie); }}
-                  className="absolute top-1 right-3 bg-gradient-to-r cursor-pointer disabled:opacity-60 duration-300 flex font-bold from-violet-600 gap-2 hover:opacity-95 items-center justify-center px-6 py-1.5 rounded-xl shadow-lg shadow-violet-600/10 text-xs text-white to-indigo-600 transition-all"
-                  title="Filmi Düzenle"
-                >
-                  <Pencil className="w-3 h-3" /> Düzenle
-                </button>
-              )}
             </div>
 
             <div
               ref={overviewContentRef}
-              className={`relative overflow-hidden text-sm transition-all duration-300 ${isOverviewExpanded || !isOverviewOverflowing ? 'max-h-none' : 'max-h-[215px]'
-                }`}
+              className={`relative overflow-hidden text-sm transition-all duration-300`}
             >
               <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2">
                 {movie.overview || 'Özet eklenmemiş.'}
@@ -506,20 +484,7 @@ export default function MovieDetailClient({
               <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-4">
                 {movie.plotTr || movie.plot}
               </p>
-              {!isOverviewExpanded && isOverviewOverflowing && (
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#080c14] to-transparent" />
-              )}
             </div>
-
-            {isOverviewOverflowing && (
-              <button
-                type="button"
-                onClick={() => setIsOverviewExpanded((prev) => !prev)}
-                className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-zinc-900/80 px-4 py-2 text-xs font-bold text-zinc-300 transition-all hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
-              >
-                {isOverviewExpanded ? 'Daha Az Göster' : 'Tamamını Göster'}
-              </button>
-            )}
           </div>
 
           {/* Credits Box */}
