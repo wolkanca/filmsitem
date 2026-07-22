@@ -6377,7 +6377,10 @@
     "omdbType": "movie",
     "boxOffice": "$134,478,449",
     "plotTr": "Kripton gezegeninin yok oluşundan hemen önce, bilim insanı Jor-El, bebek oğlu Kal-El’i bir uzay gemisiyle Dünya’ya gönderir. İyi kalpli çiftçiler Jonathan ve Martha Kent tarafından büyütülen genç Clark, süper güçlerinin kaynağını keşfeder ve kötülükle savaşmak için Metropolis’e taşınır. Superman olarak kötü niyetli Lex Luthor ile savaşırken, acemi muhabir Clark Kent olarak da iş arkadaşı Lois Lane’in kalbini kazanmaya çalışır.",
-    "plot": "Just before the destruction of the planet Krypton, scientist Jor-El sends his infant son Kal-El on a spaceship to Earth. Raised by kindly farmers Jonathan and Martha Kent, young Clark discovers the source of his superhuman powers and moves to Metropolis to fight evil. As Superman, he battles the villainous Lex Luthor, while, as novice reporter Clark Kent, he attempts to woo co-worker Lois Lane"
+    "plot": "Just before the destruction of the planet Krypton, scientist Jor-El sends his infant son Kal-El on a spaceship to Earth. Raised by kindly farmers Jonathan and Martha Kent, young Clark discovers the source of his superhuman powers and moves to Metropolis to fight evil. As Superman, he battles the villainous Lex Luthor, while, as novice reporter Clark Kent, he attempts to woo co-worker Lois Lane",
+    "franchiseId": "superman",
+    "franchiseName": "Superman",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0077416",
@@ -7202,7 +7205,10 @@
     "omdbType": "movie",
     "boxOffice": "$108,185,706",
     "plotTr": "Superman: The Movie filminin kaldığı yerden devam eden hikayede, Kripton gezegeninden üç suçlu, General Zod (Terence Stamp), Ursa (Sarah Douglas) ve Non (Jack O’Halloran), uzaydaki bir nükleer patlama sonucu Hayalet Bölge’den serbest kalır. Dünya’ya inerler ve sonunda burayı yönetebileceklerini düşünürler. Bu sırada Superman, gerçek kimliğini öğrenen Lois Lane (Margot Kidder) ile aşk yaşamaktadır. Lex Luthor (Gene Hackman) hapishaneden kaçar ve bu üç suçluyla güçlerini birleştirerek Superman’i yok etmeye kararlıdır.",
-    "plot": "Picking up where “Superman: The Movie” left off, three criminals, General Zod (Terence Stamp), Ursa, (Sarah Douglas), and Non (Jack O’Halloran) from the planet Krypton are released from the Phantom Zone by a nuclear explosion in space. They descend upon Earth where they could finally rule. Superman, meanwhile, is in love with Lois Lane (Margot Kidder), who finds out who he really is. Lex Luthor (Gene Hackman) escapes from prison and is determined to destroy Superman by joining forces with the three criminals."
+    "plot": "Picking up where “Superman: The Movie” left off, three criminals, General Zod (Terence Stamp), Ursa, (Sarah Douglas), and Non (Jack O’Halloran) from the planet Krypton are released from the Phantom Zone by a nuclear explosion in space. They descend upon Earth where they could finally rule. Superman, meanwhile, is in love with Lois Lane (Margot Kidder), who finds out who he really is. Lex Luthor (Gene Hackman) escapes from prison and is determined to destroy Superman by joining forces with the three criminals.",
+    "franchiseId": "superman",
+    "franchiseName": "Superman",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0263102",
