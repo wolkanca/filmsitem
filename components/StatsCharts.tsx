@@ -133,43 +133,8 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           </div>
         </div>
 
-        {/* Type breakdown */}
-        <div className="glass p-6 rounded-2xl border border-white/5">
-          <SectionTitle emoji="🎞️" title="Yapım Türü Dağılımı" />
-          <div className="space-y-4">
-            {typeBreakdown.map((item) => {
-              const maxTypeCount = Math.max(...typeBreakdown.map(t => t.count), 1);
-              const widthPercent = (item.count / maxTypeCount) * 100;
-              const typeLabels: Record<string, string> = {
-                'Movie': '🎬 Sinema Filmi',
-                'TV Series': '📺 TV Dizisi',
-                'TV Episode': '📺 TV Bölümü',
-                'TV Special': '📺 TV Özel',
-                'TV Mini Series': '📺 Mini Dizi',
-              };
-              return (
-                <div key={item.type} className="space-y-1.5">
-                  <div className="flex justify-between text-xs font-semibold text-zinc-400">
-                    <span>{typeLabels[item.type] || item.type}</span>
-                    <span className="text-zinc-300 font-bold">{item.count} yapım</span>
-                  </div>
-                  <div className="w-full bg-zinc-950/60 rounded-full h-2.5 overflow-hidden border border-white/5">
-                    <div
-                      style={{ width: `${widthPercent}%` }}
-                      className="bg-gradient-to-r from-violet-500 to-purple-500 h-full rounded-full shadow-[0_0_10px_rgba(139,92,246,0.3)]"
-                    ></div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Row 4: Production Year + Monthly Watch */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Year distribution */}
-        <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col h-[350px]">
+        <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col h-[500px]">
           <SectionTitle emoji="📅" title="Yapım Yıllarına Göre Dağılım (Son 20)" />
           {yearDistribution.length === 0 ? (
             <div className="flex-grow flex items-center justify-center text-zinc-500 text-sm">
@@ -200,27 +165,6 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           )}
         </div>
 
-        {/* Monthly watch distribution */}
-        <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col h-[350px]">
-          <SectionTitle emoji="📅" title="Aylara Göre İzleme Alışkanlığı" />
-          <div className="flex-grow flex items-end justify-between gap-1.5 px-2 pb-6 border-b border-zinc-800">
-            {monthlyWatchDistribution.map((item) => {
-              const heightPercent = (item.count / maxMonthCount) * 100;
-              return (
-                <div key={item.month} className="flex-1 min-w-[28px] flex flex-col items-center group h-full justify-end">
-                  <div className="text-[9px] text-zinc-400 font-bold opacity-0 group-hover:opacity-100 transition-opacity mb-1.5 duration-200 bg-zinc-900 px-1 py-0.5 rounded border border-white/10">
-                    {item.count}
-                  </div>
-                  <div
-                    style={{ height: `${Math.max(heightPercent, 4)}%` }}
-                    className="w-full rounded-t bg-gradient-to-t from-pink-600 to-pink-400 hover:from-pink-500 hover:to-rose-300 transition-all duration-300 shadow-[0_0_15px_rgba(236,72,153,0.2)] group-hover:shadow-[0_0_20px_rgba(236,72,153,0.4)]"
-                  ></div>
-                  <span className="text-[9px] text-zinc-500 font-bold mt-2 whitespace-nowrap">{item.month.substring(0, 3)}</span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
       </div>
 
       {/* Row 5: Genre Distribution + Directors/Actors */}
