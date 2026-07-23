@@ -2,7 +2,7 @@ import movies from '@/data/movies.json';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-static';
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const SITE_URL = 'https://izlediklerim.wolkanca.com';
 const SITEMAP_LIMIT = 45000;

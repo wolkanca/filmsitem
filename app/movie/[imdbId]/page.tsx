@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const metaDescription =
     [
       movie.overview,
-      moviePlot ? `Konu: ${moviePlot}` : '',
+      moviePlot ? `${moviePlot}` : '',
     ]
       .filter(Boolean)
       .join(' ')

@@ -50,7 +50,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
         {/* 1. My Rating Distribution */}
         <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col h-[350px]">
           <SectionTitle emoji="⭐" title="Puan Dağılımı (Kişisel Skorlar)" />
-          <div className="flex-grow flex items-end justify-between gap-2 px-2 pb-6 border-b border-zinc-800">
+          <div className="overflow-auto flex-grow flex items-end justify-between gap-2 px-2 pb-6 border-b border-zinc-800">
             {ratingDistribution.map((item) => {
               const heightPercent = (item.count / maxRatingCount) * 100;
               return (
@@ -72,7 +72,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
         {/* 2. IMDb Rating Distribution */}
         <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col h-[350px]">
           <SectionTitle emoji="🎯" title="IMDb Puan Dağılımı" />
-          <div className="flex-grow flex items-end justify-between gap-2 px-2 pb-6 border-b border-zinc-800">
+          <div className="overflow-auto flex-grow flex items-end justify-between gap-2 px-2 pb-6 border-b border-zinc-800">
             {imdbRatingDistribution.map((item) => {
               const heightPercent = (item.count / maxImdbRatingCount) * 100;
               return (
@@ -141,7 +141,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
               Veri bulunamadı
             </div>
           ) : (
-            <div className="flex-grow flex items-end justify-between gap-1.5 px-2 pb-6 border-b border-zinc-800 overflow-x-auto">
+            <div className="max-h-[350px] mt-10 flex-grow flex items-end justify-between gap-1.5 px-2 pb-6 border-b border-zinc-800 overflow-x-auto">
               {yearDistribution.slice(-20).map((item) => {
                 const heightPercent = (item.count / maxYearCount) * 100;
                 return (

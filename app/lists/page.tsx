@@ -8,9 +8,9 @@ import { List, Film, ChevronRight } from 'lucide-react';
 export const revalidate = 604800; // 7 gün (saniye)
 
 export const metadata: Metadata = {
-  title: 'Listeler',
+  title: 'Koleksiyonlarım',
   description:
-    'Otomatik olarak oluşturulmuş kişisel film koleksiyonları ve kategoriler. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
+    'Otomatik olarak oluşturulmuş kişisel film koleksiyonlarım, listelerim, kişisel film arşivim.',
 };
 
 type MovieItem = Awaited<ReturnType<typeof getMovies>>[number];
@@ -399,7 +399,7 @@ export default async function ListsPage() {
     <div className="space-y-10 animate-fade-in">
       <div className="border-b border-zinc-800 pb-5">
         <h1 className="text-3xl font-black text-white">
-          🗁 Film Koleksiyonlarım
+          🗁 Koleksiyonlarım
         </h1>
 
         <p className="text-zinc-500 text-sm mt-1">
