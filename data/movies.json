@@ -20462,8 +20462,10 @@
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "LpFpS2zieyo",
-    "plotTr": "Farklı dönemlerden birçok gerçek hikâyeyi bir araya getiriyor ve üç farklı karakterin kesişen öykülerini anlatıyor.",
-    "plot": "Brings together many true stories from different periods and tells the intersecting stories of three different characters."
+    "plotTr": "Nefes: Yer Eksi İki filmi, 1993 yılında Güneydoğu Anadolu Bölgesi’nde terörün yoğun olduğu bir dönemde, yolları kesişen üç farklı karakterin gerçek hikayelerden esinlenen öyküsünü konu almaktadır. Film, iki bin metre yükseklikteki zorlu bir sınır karakolunda görev yapan askerlerin ve bölge halkının yaşadığı dramı, fedakarlıkları ve mücadeleyi beyaz perdeye taşımaktadır.",
+    "plot": "Brings together many true stories from different periods and tells the intersecting stories of three different characters.",
+    "backdrop": "",
+    "listName": []
   },
   {
     "imdbId": "tt1286677",
@@ -20568,7 +20570,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "JJ7Jkx5Koqs",
     "plotTr": "Merkezden bir iletişim istasyonunu tamir etmek için gönderilen dört kişilik bir ekip, aniden bir dağın zirvesinde teröristlerin pusuya düşmesiyle karşı karşıya kalır. Biri eğitimli, varlıklı bir genç, diğeri kaba saba, sokaklarda kurnaz bir serseri olan iki Türk askeri, acımasız bir durumdan sağ çıkabilmek için farklılıklarını bir kenara bırakıp birbirlerine güvenmeyi öğrenmek zorundadır.",
-    "plot": "A four man team sent from headquarters to repair a comm station suddenly falls into a terrorist ambush on the peaks of a mountain. Two conscripted Turkish soldiers, one an educated, wealthy young man, the other a coarse street smart ruffian, have to put aside their differences and learn to trust each other to survive an unforgiving situation."
+    "plot": "A four man team sent from headquarters to repair a comm station suddenly falls into a terrorist ambush on the peaks of a mountain. Two conscripted Turkish soldiers, one an educated, wealthy young man, the other a coarse street smart ruffian, have to put aside their differences and learn to trust each other to survive an unforgiving situation.",
+    "franchiseId": "dag",
+    "franchiseName": "Dağ",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1586001",
@@ -30647,7 +30652,8 @@
     "cast": [
       "George Clooney",
       "Brad Pitt",
-      "Julia Roberts"
+      "Julia Roberts",
+      "Catherine Zeta-Jones"
     ],
     "director": "Steven Soderbergh",
     "writers": [
@@ -31421,7 +31427,10 @@
     "omdbType": "movie",
     "boxOffice": "$206,863,479",
     "plotTr": "Ailesi öldürüldüğünde, milyarder playboy Bruce Wayne Asya’ya gider ve burada Henri Ducard ile Ra’s Al Ghul tarafından kötülükle savaşma konusunda eğitilir. Ducard’ın Gotham Şehri’ndeki kötülüğü yok etme planını öğrendiğinde, Bruce bu planın daha fazla ilerlemesini engeller ve evine geri döner. Kendi çevresine döndüğünde, Bruce suçlulara ve yozlaşmışlara korku salmak için bir yarasa imajını benimser ve “Batman” olarak bilinen bir ikon haline gelir. Ancak bu sessizlik uzun sürmez.",
-    "plot": "When his parents are killed, billionaire playboy Bruce Wayne relocates to Asia, where he is mentored by Henri Ducard and Ra’s Al Ghul in how to fight evil. When learning about the plan to wipe out evil in Gotham City by Ducard, Bruce prevents this plan from getting any further and heads back to his home. Back in his original surroundings, Bruce adopts the image of a bat to strike fear into the criminals and the corrupt as the icon known as “Batman\". But it doesn’t stay quiet for long."
+    "plot": "When his parents are killed, billionaire playboy Bruce Wayne relocates to Asia, where he is mentored by Henri Ducard and Ra’s Al Ghul in how to fight evil. When learning about the plan to wipe out evil in Gotham City by Ducard, Bruce prevents this plan from getting any further and heads back to his home. Back in his original surroundings, Bruce adopts the image of a bat to strike fear into the criminals and the corrupt as the icon known as “Batman\". But it doesn’t stay quiet for long.",
+    "franchiseId": "batman",
+    "franchiseName": "Batman",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0407304",
@@ -35821,7 +35830,10 @@
     "omdbType": "movie",
     "boxOffice": "$534,987,076",
     "plotTr": "Batman Begins (2005) olaylarından bir yıl sonra geçen filmde, Batman, Teğmen James Gordon ve yeni Bölge Savcısı Harvey Dent, Gotham Şehri’ni kasıp kavuran suçluları başarıyla toplamaya başlarlar, ta ki sadece “Joker” olarak bilinen gizemli ve sadist bir suç dehası Gotham’da ortaya çıkıp yeni bir kaos dalgası yaratana kadar. Batman’in Joker’e karşı mücadelesi derinden kişisel bir hal alır, onu “inandığı her şeyle yüzleşmeye” ve onu durdurmak için teknolojisini geliştirmeye zorlar. Bruce Wayne, Dent ve Rachel Dawes arasında bir aşk üçgeni gelişir.",
-    "plot": "Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as “The Joker” appears in Gotham, creating a new wave of chaos. Batman’s struggle against The Joker becomes deeply personal, forcing him to “confront everything he believes” and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes."
+    "plot": "Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as “The Joker” appears in Gotham, creating a new wave of chaos. Batman’s struggle against The Joker becomes deeply personal, forcing him to “confront everything he believes” and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes.",
+    "franchiseId": "batman",
+    "franchiseName": "Batman",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0859163",
@@ -44220,7 +44232,10 @@
     "omdbType": "movie",
     "boxOffice": "$448,149,584",
     "plotTr": "Kara Şövalye (2008) olaylarından sonra, Dent’in suçlarını üstlenerek zedelenen itibarına rağmen, Batman, şehri yok etme planları yapan Bane ile başa çıkmakta zorlanan şehre ve Polis gücüne yardım etmek için müdahale etme zorunluluğu hisseder.",
-    "plot": "Despite his tarnished reputation after the events of The Dark Knight (2008), in which he took the rap for Dent’s crimes, Batman feels compelled to intervene to assist the city and its Police force, which is struggling to cope with Bane’s plans to destroy the city."
+    "plot": "Despite his tarnished reputation after the events of The Dark Knight (2008), in which he took the rap for Dent’s crimes, Batman feels compelled to intervene to assist the city and its Police force, which is struggling to cope with Bane’s plans to destroy the city.",
+    "franchiseId": "batman",
+    "franchiseName": "Batman",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt1764651",
@@ -47911,7 +47926,8 @@
     "cast": [
       "Bruce Willis",
       "Helen Mirren",
-      "John Malkovich"
+      "John Malkovich",
+      "Catherine Zeta-Jones"
     ],
     "director": "Dean Parisot",
     "writers": [
@@ -66976,7 +66992,10 @@
     "plotTr": "İlk filmin başarısının ardından gelen Dağ II, önceki filmde teröristlerin elinden kurtulmayı başaran iki yakın arkadaş Oğuz ve Bekir’in hikayesini konu alır. Yaşadıkları travmanın ardından kenetlenen ikili, Türk Silahlı Kuvvetleri’nin en seçkin birliği olan Bordo Bereliler’e katılır. Yıllar süren zorlu ve yıpratıcı eğitimlerin ardından, sınır ötesindeki ilk resmi görevleri için Irak’a gönderilirler. Görevleri, radikal bir terör örgütü tarafından kaçırılan muhalif Türk gazeteci Ceyda Balaban’ı kurtarmaktır. Operasyon başarıyla tamamlanır ancak eve dönüş yolunda telsiz bağlantısı kesilen 8 kişilik tim, katliam tehdidi altındaki bir Irak Türkmen köyü ile karşı karşıya kalır. Vicdanları ile emirler arasında kalan Bordo Bereliler, yüzlerce ağır silahlı teröriste karşı az sayıdaki köylüyü korumak için geri çekilmeyi reddeder ve dağ başında destansı bir ölüm kalım mücadelesi başlar.",
     "trailerYoutubeId": "3c9v4n3ak-M",
     "boxOffice": "",
-    "plot": "DAG II; tells the story of a clandestine special forces squad; call sign ’Storm Bringer’. Following the events of the first film, Bekir and Oguz, unlikely best friends, have enrolled in the world famous, perpetually grueling Turkish special forces training. Their first mission begins six years later  to infiltrate the most barbarous area of modern day Iraq for a rescue mission."
+    "plot": "DAG II; tells the story of a clandestine special forces squad; call sign ’Storm Bringer’. Following the events of the first film, Bekir and Oguz, unlikely best friends, have enrolled in the world famous, perpetually grueling Turkish special forces training. Their first mission begins six years later  to infiltrate the most barbarous area of modern day Iraq for a rescue mission.",
+    "franchiseId": "dag",
+    "franchiseName": "Dağ",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt13157618",
@@ -79189,7 +79208,8 @@
     "cast": [
       "Jenna Ortega",
       "Emma Myers",
-      "Hunter Doohan"
+      "Hunter Doohan",
+      "Catherine Zeta-Jones"
     ],
     "director": "Tim Burton",
     "writers": [
