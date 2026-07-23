@@ -39,8 +39,8 @@ const KEY_COOLDOWN_MS = 60_000;
 const MAX_RETRIES_PER_KEY = 2;
 
 // Modeli istersen terminalden değiştirebilirsin:
-// $env:GEMINI_MODEL="gemini-2.0-flash"
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+// $env:GEMINI_MODEL="gemini-3.5-flash-lite"
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.5-flash-lite";
 
 if (!GEMINI_API_KEYS.length) {
     console.error("GEMINI_API_KEYS eksik.");
