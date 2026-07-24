@@ -26,6 +26,7 @@ type SortType =
   | 'myRating-desc'
   | 'myRating-asc'
   | 'imdbRating-desc'
+  | 'imdbRating-asc'
   | 'watchDate-desc'
   | 'watchDate-asc';
 
@@ -39,6 +40,7 @@ const VALID_SORTS: SortType[] = [
   'myRating-desc',
   'myRating-asc',
   'imdbRating-desc',
+  'imdbRating-asc',
   'watchDate-desc',
   'watchDate-asc',
 ];
@@ -435,6 +437,13 @@ export default function MoviesPage() {
         );
       }
 
+      if (sortBy === 'imdbRating-asc') {
+        return (
+          a.imdbRating - b.imdbRating ||
+          a.myRating - b.myRating
+        );
+      }
+
       if (sortBy === 'watchDate-desc') {
         return (
           getWatchDateTimestamp(b.watchDate) -
@@ -753,6 +762,22 @@ export default function MoviesPage() {
                   Yapım Yılı (Eski)
                 </option>
 
+                <option value="watchDate-desc">
+                  Son İzlenenler
+                </option>
+
+                <option value="watchDate-asc">
+                  İlk İzlenenler
+                </option>
+
+                <option value="imdbRating-desc">
+                  IMDb Puanı (Yüksek)
+                </option>
+
+                <option value="imdbRating-asc">
+                  IMDb Puanı (Düşük)
+                </option>
+
                 <option value="myRating-desc">
                   Benim Puanım (Yüksek)
                 </option>
@@ -761,24 +786,12 @@ export default function MoviesPage() {
                   Benim Puanım (Düşük)
                 </option>
 
-                <option value="imdbRating-desc">
-                  IMDb Puanı (Yüksek)
-                </option>
-
                 <option value="title-asc">
                   İsim (A-Z)
                 </option>
 
                 <option value="title-desc">
                   İsim (Z-A)
-                </option>
-
-                <option value="watchDate-desc">
-                  Son İzlenenler
-                </option>
-
-                <option value="watchDate-asc">
-                  İlk İzlenenler
                 </option>
               </select>
             </div>
