@@ -164,7 +164,10 @@ export default function ImportCsvPage() {
             • Dosyada en az şu sütun başlıkları bulunmalıdır: <code className="text-emerald-400 font-mono">Const</code> (IMDb ID), <code className="text-emerald-400 font-mono">Title</code>, <code className="text-emerald-400 font-mono">Title Type</code>, <code className="text-emerald-400 font-mono">Your Rating</code>.
           </p>
           <p>
-            • <strong>Tekilleştirme Güvencesi:</strong> Veritabanında zaten kayıtlı olan yapımlar veya dizi bölümleri otomatik olarak taranır ve atlanır. Sadece yeni eklenen yapımlar kaydedilir.
+            • <strong>Tekilleştirme Güvencesi:</strong> Veritabanında zaten kayıtlı olan yapımlar otomatik olarak taranır ve atlanır. Sadece yeni eklenen yapımlar kaydedilir.
+          </p>
+          <p>
+            • <strong>Dizi Bölümleri:</strong> Dizi bölümleri (TV Episode) içe aktarılmaz; sadece dizilerin veya filmlerin kendi sayfaları eklenir.
           </p>
         </div>
 
