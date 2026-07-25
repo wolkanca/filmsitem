@@ -30522,7 +30522,10 @@
     "omdbType": "movie",
     "boxOffice": "$261,441,092",
     "plotTr": "Bob Parr (nam-ı diğer Mr. Incredible) ve eşi Helen (nam-ı diğer Elastigirl), Metroville’in dünyanın en büyük ünlü suçla savaşan süper kahramanlarıdır. Her gün hayat kurtarır ve kötülükle savaşırlar. Ancak on beş yıl sonra, sivil kimlikler benimsemek ve banliyölere çekilmek zorunda kalmışlardır; burada süper kahramanlıktan emekli olup üç çocukları Violet, Dash ve Jack-Jack (gizlice süper güçlerle doğmuşlardır) ile ’normal bir hayat’ yaşamak dışında seçenekleri yoktur. Yeniden aksiyona dönmek için can atan Bob, gizemli bir iletişim onu çok gizli bir görev için uzak bir adaya çağırdığında şansını yakalar. Kısa süre sonra, dünyayı topyekun yıkımdan kurtarmak için süper bir aile çabası gerekeceğini keşfeder.",
-    "plot": "Bob Parr (A.K.A. Mr. Incredible), and his wife Helen (A.K.A. Elastigirl), are the world’s greatest famous crime-fighting superheroes in Metroville. Always saving lives and battling evil on a daily basis. But fifteen years later, they have been forced to adopt civilian identities and retreat to the suburbs where they have no choice but to retire as superheroes to live a “normal life” with their three children Violet, Dash and Jack-Jack (who were secretly born with superpowers). Itching to get back into action, Bob gets his chance when a mysterious communication summons him to a remote island for a top secret assignment. He soon discovers that it will take a super family effort to rescue the world from total destruction."
+    "plot": "Bob Parr (A.K.A. Mr. Incredible), and his wife Helen (A.K.A. Elastigirl), are the world’s greatest famous crime-fighting superheroes in Metroville. Always saving lives and battling evil on a daily basis. But fifteen years later, they have been forced to adopt civilian identities and retreat to the suburbs where they have no choice but to retire as superheroes to live a “normal life” with their three children Violet, Dash and Jack-Jack (who were secretly born with superpowers). Itching to get back into action, Bob gets his chance when a mysterious communication summons him to a remote island for a top secret assignment. He soon discovers that it will take a super family effort to rescue the world from total destruction.",
+    "franchiseId": "incredibles",
+    "franchiseName": "Incredibles",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0420798",
@@ -85010,11 +85013,13 @@
     "imdbRating": 5.2,
     "tmdbRating": 5.2,
     "releaseDate": "1979-09-19",
-    "plot": "",
-    "country": "",
+    "plot": "The former leader of a commando rescue attempt into Vietnam tries to discover why his squad members are being murdered, one-by-one, after the war is over.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "sa6AweY-hoU"
+    "trailerYoutubeId": "sa6AweY-hoU",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0079168",
@@ -85037,7 +85042,7 @@
     ],
     "runtime": 90,
     "cast": [
-      "Jennifer O'Neill",
+      "Jennifer O’Neill",
       "Chuck Norris",
       "Clu Gulager"
     ],
@@ -85049,11 +85054,13 @@
     "imdbRating": 5.2,
     "tmdbRating": 5.2,
     "releaseDate": "1979-05-18",
-    "plot": "",
-    "country": "",
+    "plot": "A team of undercover narcotics agents is conducting an investigation when things mysteriously begin to go haywire. One by one, the squad is eliminated by an assassin. To help discover the identity of the karate killer, the police enlist the aid of karate champion Matt Logan.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "zWDtie5Qqmo"
+    "trailerYoutubeId": "zWDtie5Qqmo",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0081259",
@@ -85086,11 +85093,13 @@
     "imdbRating": 5.1,
     "tmdbRating": 5.1,
     "releaseDate": "1980-08-15",
-    "plot": "",
-    "country": "",
+    "plot": "Scott’s life is plagued by two kinds of flashbacks. First are the childhood memories of the rigorous training he and a friend endured under a martial arts master. The second is of a mission Scott went on that ended with him watching his friend get murdered. Scott later becomes drawn closer to a vicious crime ring known as The Octagon. As he gets closer to the truth, Scott learns that these may be the men that murdered his friend so long ago.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "9p4ePD4pG0M"
+    "trailerYoutubeId": "9p4ePD4pG0M",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0082350",
@@ -85123,11 +85132,13 @@
     "imdbRating": 5.6,
     "tmdbRating": 5.6,
     "releaseDate": "1981-08-14",
-    "plot": "",
-    "country": "",
+    "plot": "Sean Kane is forced to resign from the San Francisco Police Department’s Narcotics Division when he goes berserk after his partner is murdered. He decides to fight alone and follows a trail of drug traffickers into unexpected high places.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "pN75wRRkT4s"
+    "trailerYoutubeId": "pN75wRRkT4s",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0084684",
@@ -85163,11 +85174,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1982-04-02",
-    "plot": "",
-    "country": "",
+    "plot": "Dan Stevens is the sheriff of a small Texas town who checks out a disturbance which turns to murder. The killer is still in the house and he tries to kill Dan, but Dan stops him and arrests him. The killer attempts to flee, but is shot and killed and is taken to a medical institute. Three doctors, led by Dr. Philip Spires, operate on the killer and using a formula the doctors made, they bring him back to life. If that’s not bad enough, the formula also made the killer indestructible. Dr. Tom Halman tries to stop the killer, but he and his wife are killed. After the two remaining doctors are killed, the killer goes after Dr. Halman’s sister Alison, and it’s up to Sheriff Dan Stevens to stop him.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Mv6r7cv45c4"
+    "trailerYoutubeId": "Mv6r7cv45c4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0083960",
@@ -85200,11 +85213,13 @@
     "imdbRating": 5.6,
     "tmdbRating": 5.6,
     "releaseDate": "1982-07-30",
-    "plot": "",
-    "country": "",
+    "plot": "Josh Randall works for the owner of a Hong Kong based casino and is treated like a son. When the owner is approached by someone who’s connected and wants to buy his casino, the man refuses the offer. Later the owner and son are killed. Josh then gets the man’s daughter and tries to protect her. Later Josh is pursued by the police and anyone who helps is killed. Josh tries to get to the people who did it.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "TLetzL3SN7M"
+    "trailerYoutubeId": "TLetzL3SN7M",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0085862",
@@ -85239,11 +85254,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "1983-04-15",
-    "plot": "",
-    "country": "",
+    "plot": "The archetypical renegade Texas Ranger wages war against a drug kingpin with automatic weapons, his wits and martial arts after a gun battle leaves his partner dead. All of this inevitably culminates a martial arts showdown between the drug lord and the ranger, and involving the woman they both love.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "EpXX9AoTIlg"
+    "trailerYoutubeId": "EpXX9AoTIlg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0089604",
@@ -85277,11 +85294,13 @@
     "imdbRating": 5.4,
     "tmdbRating": 5.4,
     "releaseDate": "1985-03-01",
-    "plot": "",
-    "country": "",
+    "plot": "Prequel to the first Missing In Action, set in the early 1980s it shows the capture of Colonel Braddock during the Vietnam war in the 1970s, and his captivity with other American POWs in a brutal prison camp, and his plans to escape.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "eap1lshAjIg"
+    "trailerYoutubeId": "eap1lshAjIg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0088936",
@@ -85315,11 +85334,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "1985-05-03",
-    "plot": "",
-    "country": "",
+    "plot": "Eddie Cusack is a Chicago police officer about to bust some members of the Comacho gang when the gang is shot up by a rival drug gang from the neighboring building, led by Tony Luna. Victor Comacho is the only survivor of the Comacho gang and his older brother, Luis, who is the leader of the gang, retaliates by killing Luna’s family and kidnaps Luna’s daughter, Diana. Cusack must face Tony Luna and Luis Comacho alone because nobody on the police force is willing to help him since he was the only cop who broke the code of silence by testifying against a fellow cop who killed an unarmed teenager, but Cusack is not really alone. A police robot called \"Prowler\" aides Cusack as he takes down the gangs.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Yk5cTz60CP4"
+    "trailerYoutubeId": "Yk5cTz60CP4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0089348",
@@ -85351,11 +85372,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1985-09-27",
-    "plot": "",
-    "country": "",
+    "plot": "A terrorist, Rostov, is planning to unleash a reign of terror on the U.S.. But before he does he decides to go after Matt Hunter, a former CIA agent who lives in Florida. Hunter once had Rostov’s life in his hands, but on orders took him alive, and now Rostov is plagued by nightmares of Hunter killing him. So Rostov goes after him but misses, so Hunter, who has already been approached by his former employers to go after Rostov, after initially turning down the job, because he believed that they should have let him terminate Rostov when he had the chance, decides to go after him. But he is only one man and Rostov has hundreds of men ripping the country apart, so how will he stop it?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "-ttJX4Z1hzk"
+    "trailerYoutubeId": "-ttJX4Z1hzk",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0090927",
@@ -85389,11 +85412,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "1986-02-14",
-    "plot": "",
-    "country": "",
+    "plot": "When terrorists Abdul Rafai and Mustafa hijack a Boeing 707 in Athens with 144 passengers and 8 crew members, they use a grenade to force pilot Captain Roger Campbell to fly to Beirut, Lebanon instead of Rome and New York. Meanwhile the Delta Force commanded by Colonel Nick Alexander and Major Scott McCoy are assigned to resolve the situation. Abdul and Mustafa separate the Jewish and Marine passengers and they are transported to Beirut, while 12 other terrorists come aboard. Then they fly to Algiers and release the women and children. McCoy and the Delta Force team are prepared to attack the plane when Alexander learns that there are now 14 terrorists aboard, and he aborts the mission. Abdul kills a Marine and returns to Beirut with the male passengers on board. Now the Delta Force needs to act in two locations crowded of terrorists to release the hostages. Will they succeed?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "eEqj2cBYUAo"
+    "trailerYoutubeId": "eEqj2cBYUAo",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0091055",
@@ -85428,11 +85453,13 @@
     "imdbRating": 5.2,
     "tmdbRating": 5.2,
     "releaseDate": "1986-11-21",
-    "plot": "",
-    "country": "",
+    "plot": "Max Donigan sets off on a treasure hunt with his friend Leo and newly-acquired partner Patricia, who provided the treasure map. Along the way they encounter a few bar fights, evil \"coyotes\", and other obstacles they are able to overcome with ease. When they find the temple with the treasure, they also find the Firewalker, who wants to retain the power of his ancestors and put an end to the trio’s treasure hunt. In the end, Max and his two friends persevere and return home wealthy.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "7MMshCVkS2E"
+    "trailerYoutubeId": "7MMshCVkS2E",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0094792",
@@ -85464,11 +85491,13 @@
     "imdbRating": 4.9,
     "tmdbRating": 4.9,
     "releaseDate": "1988-01-22",
-    "plot": "",
-    "country": "",
+    "plot": "Colonel James Braddock has a Vietnamese wife who was supposed to leave Vietnam with him when they evacuate. But she loses her papers and wasn’t allowed in the embassy. Braddock went looking for her and her friend took the bracelet Braddock gave his wife and was in an explosion. When Braddock finds the body with bracelet, he assumes it’s his wife so he leaves Vietnam. 12 years later a Reverend in Vietnam who was visiting the States approaches Braddock telling him that his wife is alive and that he has a son. Braddock doesn’t believe him at first but when a man at the CIA asks him to meet with him, Braddock realizes it’s true. So he tries to get them out. So he contacts a friend in Thailand to get what he needs. As they are about to leave, the CIA tries to stop him but Braddock gets away, gets his equipment and heads to Vietnam. When he arrives he goes to the orphanage for Amerasian children, where the Reverend works. He takes him to them and is surprised to see them and his son resents him cause he thinks he abandoned them. They try to leave but a Vietnamese Colonel takes them, he kills his wife and subjects Braddock to torture. Braddock escapes with his son, whom he says to go to the orphanage. The Colonel goes there and takes the Reverend and the children to a prison. Braddock then tries to rescue them.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "BzxjMRdxAqM"
+    "trailerYoutubeId": "BzxjMRdxAqM",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0095296",
@@ -85501,11 +85530,13 @@
     "imdbRating": 5.3,
     "tmdbRating": 5.3,
     "releaseDate": "1988-08-26",
-    "plot": "",
-    "country": "",
+    "plot": "Danny O’Brien is back in action fighting the notorious Simon Moon, also known as The Terror. Three years earlier O’Brien had single-handedly captured The Terror and was called Hero by the people of L.A. Now Simon has escaped and has started killing women again, and O’Brien is the only man who can stop him.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "nj5qKJp5ujY"
+    "trailerYoutubeId": "nj5qKJp5ujY",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0102045",
@@ -85538,11 +85569,13 @@
     "imdbRating": 5.4,
     "tmdbRating": 5.4,
     "releaseDate": "1991-10-25",
-    "plot": "",
-    "country": "",
+    "plot": "After surviving an attempt on his life by his former partner, officer Cliff Garrett (Norris) exacts revenge on those who wronged him by going undercover as a hit man. He works to gain the reputation and trust needed in order to be accepted by the burgeoning Seattle-area criminal underworld, but it is all done in order to take it down from within.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "3wq_NacnCX4"
+    "trailerYoutubeId": "3wq_NacnCX4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0105402",
@@ -85578,11 +85611,13 @@
     "imdbRating": 5.3,
     "tmdbRating": 5.3,
     "releaseDate": "1993-04-30",
-    "plot": "",
-    "country": "",
+    "plot": "Barry is an asthmatic kid having trouble in life. He lives with his father, a computer programmer, in Texas. Barry is struggling to get by in life, dealing with his rough school life, bullies, as well as his health. Barry’s only source of enjoyment is fantasizing that he is with Chuck Norris. Barry becomes sick of getting picked on by the bigger guys, and decides to learn karate, in hopes of one day meeting the great Chuck Norris.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "v7jiQLjzaLE"
+    "trailerYoutubeId": "v7jiQLjzaLE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0107101",
@@ -85616,11 +85651,13 @@
     "imdbRating": 4.8,
     "tmdbRating": 4.8,
     "releaseDate": "1994-01-21",
-    "plot": "",
-    "country": "",
+    "plot": "Shatter and Jackson, two Chicago police officers, are investigating the brutal murder of a rabbi and are summoned to Israel for questioning. While they are in Israel they continue their investigation there on some leads they have. After a while they begin to understand that they are trying to catch a supernatural being, and if they don’t do it fast something terrible will happen.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "FWOVa7jfP7A"
+    "trailerYoutubeId": "FWOVa7jfP7A",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0111658",
@@ -85652,11 +85689,13 @@
     "imdbRating": 5,
     "tmdbRating": 5,
     "releaseDate": "1994-05-14",
-    "plot": "",
-    "country": "",
+    "plot": "An experienced member of Texas Rangers, a special police unit, arrives to compete in a pistol shooting tournament, but so does a hitman who’s planing to assassinate a US senator who will be among the spectators.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "0TwDevPyqJU"
+    "trailerYoutubeId": "0TwDevPyqJU",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0114697",
@@ -85692,11 +85731,13 @@
     "imdbRating": 4.3,
     "tmdbRating": 4.3,
     "releaseDate": "1995-04-28",
-    "plot": "",
-    "country": "",
+    "plot": "With his cop companion shot and killed by terrorists, Reno The Dog pairs up with tough cop Jake in thwarting the criminal organization.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "fzPErq8puf8"
+    "trailerYoutubeId": "fzPErq8puf8",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0116341",
@@ -85733,16 +85774,18 @@
     "imdbRating": 3.8,
     "tmdbRating": 3.8,
     "releaseDate": "1996-11-05",
-    "plot": "",
-    "country": "",
+    "plot": "John McKenna is a spiritual being who is able to transform into bear, wolf or eagle. He lives in the forests of Tanglewood and has dedicated his life to protect them. One day a gang of evil lumberjacks led by Travis Thorne arrive Tanglewood to chop the forest down. McKenna cannot let this happen, and together with his new friends - Lords of the Tanglewood, a band of children who love to play in the forest - he battles against Thorne and his evil gang.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "6ZouJQenJ9I"
+    "trailerYoutubeId": "6ZouJQenJ9I",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0176943",
-    "title": "Logan's War: Bound by Honor",
-    "originalTitle": "Logan's War: Bound by Honor",
+    "title": "Logan’s War: Bound by Honor",
+    "originalTitle": "Logan’s War: Bound by Honor",
     "year": 1998,
     "type": "TV Movie",
     "myRating": 5,
@@ -85770,16 +85813,18 @@
     "imdbRating": 5.2,
     "tmdbRating": 5.2,
     "releaseDate": "1998-11-01",
-    "plot": "",
-    "country": "",
+    "plot": "Logan Fallon was ten years old when his prosecutor father was marked for murder by a gangster he was prosecuting. Logan has this uncanny ability to sense danger before it happens, and he sensed the gangster’s hitmen coming and survived their attack but the rest of his family was not so lucky. Logan chose not to tell the investigator who killed his family cause he wants to get them himself. He is taken in by his Uncle Jake who’s an ex Army Ranger and a martial arts expert, he teaches Logan martial arts and gets him into the Rangers so that he could prepare himself to go after the people who killed his family.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "lyuDDdU2mKs"
+    "trailerYoutubeId": "lyuDDdU2mKs",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0234516",
-    "title": "The President's Man",
-    "originalTitle": "The President's Man",
+    "title": "The President’s Man",
+    "originalTitle": "The President’s Man",
     "year": 2000,
     "type": "TV Movie",
     "myRating": 4,
@@ -85804,11 +85849,13 @@
     "imdbRating": 4.8,
     "tmdbRating": 4.8,
     "releaseDate": "2000-04-02",
-    "plot": "",
-    "country": "",
+    "plot": "Joshua McCord is an aging secret service operative who needs to train a younger man in his field. However, when the first lady is kidnapped by a mysterious band of terrorists, he finds himself thrust head first into a no-holds-barred, kick-butt action mission.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "TlmeBW5tVHM"
+    "trailerYoutubeId": "TlmeBW5tVHM",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0106168",
@@ -85834,7 +85881,7 @@
       "Clarence Gilyard Jr.",
       "Sheree J. Wilson"
     ],
-    "director": "",
+    "director": "Michael Preece, Tony Mordante",
     "writers": [
       "Christopher Canaan",
       "Leslie Greif",
@@ -85843,11 +85890,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "1993-04-21",
-    "plot": "",
-    "country": "",
+    "plot": "Cordell Walker is a veteran Texas Ranger who protects Dallas from the bad guys and believes in dealing with them the old fashioned way (fighting them). He also works on instincts from the childhood he lived on an Indian Reservation with his uncle Ray, after the death of his parents. James Trivette is his partner, a former player for the Dallas Cowboys football team and uses the modern approach to crime solving, such as computers and cellular phones, disbelieving in Walker’s methods. Both are helped by Walker’s mentor and former partner, retired Ranger C.D. Parker, who owns a bar and grill, specialized in Western cuisine and Country-Western themes, and gives Walker advice on some cases. And all of them work for Assistant District Attorney Alex Cahill, a beautiful, strong and brilliant Texas lady who watches that Walker and Trivette don’t break the rules for catching the bad guys.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "NIYZVSElmj4"
+    "trailerYoutubeId": "NIYZVSElmj4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0312450",
@@ -85877,11 +85926,13 @@
     "imdbRating": 2.8,
     "tmdbRating": 2.8,
     "releaseDate": "2003-04-06",
-    "plot": "",
-    "country": "",
+    "plot": "Chuck Norris ventures into the West to stop a horde of ghosts in their deadly path.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "EiMkclXWw5k"
+    "trailerYoutubeId": "EiMkclXWw5k",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0432267",
@@ -85913,11 +85964,13 @@
     "imdbRating": 4.9,
     "tmdbRating": 4.9,
     "releaseDate": "2006-03-14",
-    "plot": "",
-    "country": "",
+    "plot": "A detective comes to the aid of an aged diamond cutter.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "LLHQafGUJU8"
+    "trailerYoutubeId": "LLHQafGUJU8",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt26743864",
@@ -85949,16 +86002,18 @@
     "imdbRating": 2.4,
     "tmdbRating": 2.4,
     "releaseDate": "2024-06-21",
-    "plot": "",
-    "country": "",
+    "plot": "Alastair, the captain of a covert Earth security force, calls in super-powered rookie Jim to join a mission led by Colonel Green and his skilled Marines to track down a mysterious energy disturbance at a base in New Mexico.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "X3qvuTsxmiQ"
+    "trailerYoutubeId": "X3qvuTsxmiQ",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0086998",
-    "title": "Breakin'",
-    "originalTitle": "Breakin'",
+    "title": "Breakin’",
+    "originalTitle": "Breakin’",
     "year": 1984,
     "type": "Movie",
     "myRating": 5,
@@ -85989,11 +86044,13 @@
     "imdbRating": 5.9,
     "tmdbRating": 5.9,
     "releaseDate": "1984-05-04",
-    "plot": "",
-    "country": "",
+    "plot": "A struggling young jazz dancer meets up with two break-dancers. Together they become the sensation of the street crowds.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "kVB6y-4-I4c"
+    "trailerYoutubeId": "kVB6y-4-I4c",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0087727",
@@ -86028,11 +86085,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1984-11-16",
-    "plot": "",
-    "country": "",
+    "plot": "Colonel James Braddock is an American officer who spent seven years in a North Vietnamese POW camp, then escaped 10 years ago. After the bloodiest war, Braddock accompanies a government investigation team that goes to Ho Chi Minh City to check out reports of Americans still held prisoner. Braddock gets the evidence then travels to Thailand, where he meets Tuck, an old Army buddy turned black market kingpin. Together, they launch a mission deep into the jungle to free the American POWs from General Trau.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "hWiQlmsd5fQ"
+    "trailerYoutubeId": "hWiQlmsd5fQ",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0089695",
@@ -86068,11 +86127,13 @@
     "imdbRating": 5.6,
     "tmdbRating": 5.6,
     "releaseDate": "1986-05-02",
-    "plot": "",
-    "country": "",
+    "plot": "Jason Stillwell, a Bruce Lee fan, is beaten numerous times and trains from the ghost of Lee. Jason then must use his newly acquired skills to save Seattle from a crime syndicate, whose top martial artist is the deadly Ivan.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "2b9RBJGdU3Q"
+    "trailerYoutubeId": "2b9RBJGdU3Q",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0092675",
@@ -86105,11 +86166,13 @@
     "imdbRating": 6.8,
     "tmdbRating": 6.8,
     "releaseDate": "1988-04-29",
-    "plot": "",
-    "country": "",
+    "plot": "Frank Dux has spent most his life being trained by Tanaka to participate in the Kumite, the ultimate martial arts tournament, where participants are seriously injured, even killed. Frank decides to go despite being told by his superiors in the army that he can’t because they need him. Two army officers are sent to get him and the trail leads to Hong Kong but Frank eludes them. While Frank advances, he knows that he may have to face Chong Li, the defending champion, who has killed a few participants.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "bCZ1CIQ64YQ"
+    "trailerYoutubeId": "bCZ1CIQ64YQ",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0097138",
@@ -86142,11 +86205,13 @@
     "imdbRating": 5.1,
     "tmdbRating": 5.1,
     "releaseDate": "1989-04-07",
-    "plot": "",
-    "country": "",
+    "plot": "Gibson Rickenbacker is a hired fighter living in a plague-ravaged apocalyptic America where a plague has infested most of the United States and the rest of the world. In New York City, Gibson encounters a woman named Pearl Prophet. Pearl reveals to Gibson that she is a cyborg who is carrying vital-information for a group of scientists in Atlanta who are working on a cure to the plague and Pearl hires Gibson to escort her back to Atlanta. But Pearl is kidnapped by \"Pirates\" a murderous gang led by Fender Tremolo, who wants the cure for themselves and they decide to take Pearl to Atlanta themselves. Gibson, joined by a young woman named Nady Simmons, goes in pursuit of Fender and his gang, as Gibson sets out to rescue Pearl, stop Fender and his gang from reaching Atlanta and defeat Fender who slaughtered Gibson’s family.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "-dv3bpt8_s8"
+    "trailerYoutubeId": "-dv3bpt8_s8",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0097659",
@@ -86179,11 +86244,13 @@
     "imdbRating": 6.4,
     "tmdbRating": 6.4,
     "releaseDate": "1989-09-08",
-    "plot": "",
-    "country": "",
+    "plot": "Kurt Sloan is the corner-man for his brother, U.S. kickboxing champion Eric Sloan. When Kurt witnesses his brother become maliciously paralyzed in the ring by Thailand champion Tong Po, Kurt vows revenge. With the help of Xian, a kickboxing trainer who lives in a remote area of Thailand, Kurt trains for the fight of his life.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "H6Yxw4gxfpI"
+    "trailerYoutubeId": "H6Yxw4gxfpI",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0100029",
@@ -86217,11 +86284,13 @@
     "imdbRating": 6.2,
     "tmdbRating": 6.2,
     "releaseDate": "1991-01-11",
-    "plot": "",
-    "country": "",
+    "plot": "To reunite with this dying brother in Los Angeles, the French Foreign Legion officer, Lyon Gaultier, abandons his unit. Penniless, yet determined to make those who harmed his brother pay, Lyon takes part in an illegal street fight and catches the eye of Cynthia Caldera, an unscrupulous organizer of underground fights. However, as Lyon becomes Lionheart, the unpaid medical bills of his sister-in-law, Hélène, start to pile up. Now, the odds are against Lyon, who desperately wants to help his brother’s family. Can Lionheart defeat brutal Attila, the undisputed champion of Cynthia’s underground fighting matches?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "XZ4x4HqSGFk"
+    "trailerYoutubeId": "XZ4x4HqSGFk",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0099385",
@@ -86253,11 +86322,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "1990-09-14",
-    "plot": "",
-    "country": "",
+    "plot": "The Canadian policeman Louis Burke is assigned in a jail to investigate some murders of prisoners and jailors. When in jail, Lois, using his outstandings martial arts, is able to save his life and make himself respected in that violent world. At last, helped by two another prisoners, he succeeds in finding the truth about the dreadful crimes.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "SRS5y3kC0ms"
+    "trailerYoutubeId": "SRS5y3kC0ms",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0105698",
@@ -86291,11 +86362,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "1992-07-10",
-    "plot": "",
-    "country": "",
+    "plot": "An elite team of soldiers has been used against terrorists where they use astounding physical capabilities to overcome them. Victoria, a reporter, follows them and discovers a part of their secret. When one of the team kills her cameraman she tries to escape. Luc, one of the soldiers begins to have flashbacks and turns sides and helps her as the remainder of the team follows to protect their secrets.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "EhXJHHzphdM"
+    "trailerYoutubeId": "EhXJHHzphdM",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0107711",
@@ -86329,11 +86402,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "1993-01-15",
-    "plot": "",
-    "country": "",
+    "plot": "Sam, an escaped convict, lands up on a farmland owned by a widow. When he learns that a ruthless contractor is trying to take over her land, he helps her to fight against the injustice.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "4E3jLN30b78"
+    "trailerYoutubeId": "4E3jLN30b78",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0107362",
@@ -86369,11 +86444,13 @@
     "imdbRating": 6.5,
     "tmdbRating": 6.5,
     "releaseDate": "1993-06-18",
-    "plot": "",
-    "country": "",
+    "plot": "Young Danny Madigan is a huge fan of Jack Slater, a larger-than-life action hero played by Arnold Schwarzenegger. When his best friend, Nick the projectionist, gives him a magic ticket to the newest Jack Slater movie, Danny is transported into Slater’s world, his number one hero where the good guys always win. It’s a dream come true for Danny, but things take a turn for the worse when one of Slater’s enemies, Benedict the hit man, gets ahold of the ticket and ends up in Danny’s world. Slater and Danny must join forces and travel back and stop him at all costs before it’ll be the end of Jack Slater.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "OJw8o49CNZI"
+    "trailerYoutubeId": "OJw8o49CNZI",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0107076",
@@ -86404,11 +86481,13 @@
     "imdbRating": 6.2,
     "tmdbRating": 6.2,
     "releaseDate": "1993-08-20",
-    "plot": "",
-    "country": "",
+    "plot": "Natasha Binder comes to New Orleans looking for her father, who has gone missing. In doing so, she meets a very hard man called Chance. He helps her find out that her father was killed by an organisation who sell the opportunity to hunt human prey. They are taking advantage of a police strike in New Orleans. Will the Muscles from Brussels win through?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "-pzx4IeYYFg"
+    "trailerYoutubeId": "-pzx4IeYYFg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0111438",
@@ -86443,11 +86522,13 @@
     "imdbRating": 6,
     "tmdbRating": 6,
     "releaseDate": "1994-09-16",
-    "plot": "",
-    "country": "",
+    "plot": "When the ability to travel through time is perfected, a new type of law enforcement agency is formed. It’s called Time Enforcement Commission or TEC. A cop, Max Walker, is assigned to the group. On the day he was chosen, some men attack him and kill his wife. Ten years later Max is still grieving but has become a good agent for the TEC. He tracks down a former co-worker who went into the past to make money. Max brings him back for sentencing but not after telling Max that Senator McComb, the man in charge of TEC, sent him. Max has his eye on McComb.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "7OPLHgw54h4"
+    "trailerYoutubeId": "7OPLHgw54h4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt30973842",
@@ -86481,16 +86562,18 @@
     "imdbRating": 4.2,
     "tmdbRating": 4.2,
     "releaseDate": "2025-01-10",
-    "plot": "",
-    "country": "",
+    "plot": "Serge holds a state secret. He, his family and gardener Leo appear on a government death list. They attempt to devise a plan to stay alive.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "a4NMxIBEdYU"
+    "trailerYoutubeId": "a4NMxIBEdYU",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt6549510",
     "title": "Kill Em All 2",
-    "originalTitle": "Kill'em All 2",
+    "originalTitle": "Kill’em All 2",
     "year": 2024,
     "type": "Movie",
     "myRating": 3,
@@ -86514,11 +86597,13 @@
     "imdbRating": 4.1,
     "tmdbRating": 4.1,
     "releaseDate": "2024-09-24",
-    "plot": "",
-    "country": "",
+    "plot": "Phillip comes face to face with a Russian-French terrorist who comes exact vengeance on him for killing his brother.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "LrZ9L2K23cw"
+    "trailerYoutubeId": "LrZ9L2K23cw",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt23173980",
@@ -86552,11 +86637,13 @@
     "imdbRating": 4.7,
     "tmdbRating": 4.7,
     "releaseDate": "2024-05-21",
-    "plot": "",
-    "country": "",
+    "plot": "Interpol operative Russell Hatch witnesses the death of an informant when a seemingly routine raid goes wrong. Years later, he finds himself protecting the informant’s son from a group of merciless gangs involved in an all-out tur...",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "HRKegxOLrOM"
+    "trailerYoutubeId": "HRKegxOLrOM",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt12808182",
@@ -86593,11 +86680,13 @@
     "imdbRating": 5.3,
     "tmdbRating": 5.3,
     "releaseDate": "2021-07-30",
-    "plot": "",
-    "country": "",
+    "plot": "A mysterious former secret service agent must urgently return to France when his estranged son is falsely accused of arms and drug trafficking by the government, following a blunder by an overzealous bureaucrat and a mafia operation.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "GIQ_TN6uZSA"
+    "trailerYoutubeId": "GIQ_TN6uZSA",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt12497188",
@@ -86617,7 +86706,7 @@
       "Crime",
       "Thriller"
     ],
-    "runtime": 0,
+    "runtime": 190,
     "cast": [
       "David Bateson",
       "Jane Perry",
@@ -86636,11 +86725,13 @@
     "imdbRating": 8.5,
     "tmdbRating": 8.5,
     "releaseDate": "2021-01-20",
-    "plot": "",
-    "country": "",
+    "plot": "Together with Diana Burnwood and Lucas Grey, Agent 47 must face off against The Constant and his mysterious colleagues to take down Providence once and for all.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "7m1-yDalGiA"
+    "trailerYoutubeId": "7m1-yDalGiA",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt7816392",
@@ -86672,11 +86763,13 @@
     "imdbRating": 5.9,
     "tmdbRating": 5.9,
     "releaseDate": "2018-08-22",
-    "plot": "",
-    "country": "",
+    "plot": "The hero independently raises his little daughter and works as a security guard in a nightclub. Work is simple, enough to live. At night, he is on duty, and during the day he can communicate with the girl, because he loves her so much. Once in a bar, a terrible fight takes place, the hero has to intervene, but the consequences were sad. As a result, he finds himself in a police station, and then he is sentenced to prison.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "x6YQlcki2Eg"
+    "trailerYoutubeId": "x6YQlcki2Eg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt5622412",
@@ -86709,11 +86802,13 @@
     "imdbRating": 4.7,
     "tmdbRating": 4.7,
     "releaseDate": "2018-05-25",
-    "plot": "",
-    "country": "",
+    "plot": "A deep-cover operative awakens to find himself imprisoned in a CIA black site on a submarine.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "WOTDGACjzcY"
+    "trailerYoutubeId": "WOTDGACjzcY",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt5208950",
@@ -86745,11 +86840,13 @@
     "imdbRating": 5,
     "tmdbRating": 5,
     "releaseDate": "2018-01-26",
-    "plot": "",
-    "country": "",
+    "plot": "One year after the events of \"Kickboxer: Vengeance\", Kurt Sloan has vowed never to return to Thailand. However, while gearing up for a MMA title shot, he finds himself sedated and forced back into Thailand, this time in prison. He is there because the ones responsible want him to face a 6’8\" 400 lbs. beast named Mongkut and in return for the fight, Kurt will get one million dollars and his freedom back. Kurt at first refuses, in which a bounty is placed on his head as a way to force him to face Mongkut. Kurt soon learns he will have no other choice and will undergo his most rigorous training yet under some unexpected mentors in order to face Mongkut in hopes to regain his freedom. But is later beaten up by mongkut in the the first, but later gears up and defeated mongkut thereby gaining his freedom and pay.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "18yT09uykrY"
+    "trailerYoutubeId": "18yT09uykrY",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt6682754",
@@ -86775,23 +86872,25 @@
       "Kat Foster",
       "Moises Arias"
     ],
-    "director": "",
+    "director": "Dave Callaham, Peter Atencio",
     "writers": [
       "Dave Callaham"
     ],
     "imdbRating": 7.5,
     "tmdbRating": 7.5,
     "releaseDate": "2016-08-19",
-    "plot": "",
-    "country": "",
+    "plot": "Stars global martial arts &amp; actor Jean-Claude Van Damme playing \"Jean-Claude Van Damme\", a global martial arts &amp; film sensation, also operating under the simple alias of \"Johnson\" as the world’s best undercover private contractor. Retired for years, a chance encounter with a lost love brings him back to the game. This time, he’ll be deadlier than ever. Probably.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "6lQ72f-jjx4"
+    "trailerYoutubeId": "6lQ72f-jjx4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt5767628",
-    "title": "Kill 'Em All",
-    "originalTitle": "Kill'em All",
+    "title": "Kill ’Em All",
+    "originalTitle": "Kill’em All",
     "year": 2017,
     "type": "Movie",
     "myRating": 3,
@@ -86820,11 +86919,13 @@
     "imdbRating": 4.3,
     "tmdbRating": 4.3,
     "releaseDate": "2017-06-12",
-    "plot": "",
-    "country": "",
+    "plot": "After a massive shootout, a mysterious stranger (Van Damme) arrives at a local hospital on the brink of death. Then, a foreign gang brazenly comes to the hospital to hunt him down. His nurse, the sole surviving witness to the follow-up shootout, must face an FBI interrogation that unlocks a plot of international intrigue and revenge. With enough twists and turns, KILL’EM ALL will keep you guessing until the final bullet is fired.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "sCVIclirqo0"
+    "trailerYoutubeId": "sCVIclirqo0",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt3488328",
@@ -86855,11 +86956,13 @@
     "imdbRating": 5.1,
     "tmdbRating": 5.1,
     "releaseDate": "2015-06-05",
-    "plot": "",
-    "country": "",
+    "plot": "A man’s heroic attempt to help a woman in distress ends up with him waking up the next day without a kidney and plotting his revenge.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "RpTrypbMr-Q"
+    "trailerYoutubeId": "RpTrypbMr-Q",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt2112277",
@@ -86891,11 +86994,13 @@
     "imdbRating": 4.5,
     "tmdbRating": 4.5,
     "releaseDate": "2014-05-22",
-    "plot": "",
-    "country": "",
+    "plot": "Ten years after their casino heist, four escaped convicts trace their former partner to a desert town, where he is now a lawman with no memory of his criminal past.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "KA-yuXSJQYo"
+    "trailerYoutubeId": "KA-yuXSJQYo",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt2395199",
@@ -86927,11 +87032,13 @@
     "imdbRating": 5.1,
     "tmdbRating": 5.1,
     "releaseDate": "2014-01-24",
-    "plot": "",
-    "country": "",
+    "plot": "Forest ranger and Ex-Navy SEAL Henry is forced by the drug cartel to help retrieve a major shipment of drugs which went missing on the US-Canadian border. While in the woods, he runs into a man who has a vendetta against him, but both men must struggle to escape the forest and defeat the cartel, while at odds and at knife’s edge with each other.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "5CkSg_hb9wg"
+    "trailerYoutubeId": "5CkSg_hb9wg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt2193265",
@@ -86964,11 +87071,13 @@
     "imdbRating": 4.9,
     "tmdbRating": 4.9,
     "releaseDate": "2014-02-08",
-    "plot": "",
-    "country": "",
+    "plot": "Eager to climb the corporate ladder, the nice guy and low-level office drone, Chris, sees his hard work go down the drain when an arrogant and conniving co-worker steals his brilliant idea and lands an important client. Under those circumstances, the tough ex-Marine and determined team-building coach, Storm Rothschild, leads the mismatched office team to a remote tropical island for a mandatory two-day character-building course. However, there, on the secluded haven, whatever can go wrong will go wrong, as ravenous ambition, unpunished rebellion, frail allegiances, and even a ferocious man-eating tiger get in the way of the stranded employees’ safe return to civilisation. Does the team have what it takes to survive?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "TBjKcuGI0kI"
+    "trailerYoutubeId": "TBjKcuGI0kI",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt2040578",
@@ -87002,11 +87111,13 @@
     "imdbRating": 3,
     "tmdbRating": 3,
     "releaseDate": "2012-12-14",
-    "plot": "",
-    "country": "",
+    "plot": "Friends get together for a night out in a bar. Life is wonderful as a couple share their proposal moment. When, suddenly strange things start to happen. Loss of power. Throughout the city. No phones, no lights, just darkness as the friends try to cope. Then an invasion from UFOs, big ones! The sky is darkened by the ships of the alien invaders. The takeover of planet Earth has begun as the five friends struggle to survive amid the chaos and calamity. Will love survive the terror?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "YWKYKG2GUnA"
+    "trailerYoutubeId": "YWKYKG2GUnA",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1975249",
@@ -87039,11 +87150,13 @@
     "imdbRating": 6,
     "tmdbRating": 6,
     "releaseDate": "2012-09-28",
-    "plot": "",
-    "country": "",
+    "plot": "Veteran mercenary Samson Gaul (Jean-Claude Van Damme) knows that in the heat of battle, every bullet counts. He retired from combat when his actions resulted in the deaths of helpless victims, but now he’s the last hope for a desperate father. Mixed Martial Artist, Andrew Fayden (Joe Flanigan, Stargate: Atlantis) knows how to fight, but alone he’s unprepared to navigate the corrupt streets of a foreign city to find his kidnapped daughter. Together, these warriors will stop at nothing to tear apart a vile network of criminals that prey upon the innocent.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "yHPmgcMpp_k"
+    "trailerYoutubeId": "yHPmgcMpp_k",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1659343",
@@ -87080,11 +87193,13 @@
     "imdbRating": 5.1,
     "tmdbRating": 5.1,
     "releaseDate": "2012-10-25",
-    "plot": "",
-    "country": "",
+    "plot": "John awakens from a coma to discover his wife and daughter were slaughtered in a brutal home invasion. Haunted by images of the attack, he vows to kill the man responsible: Luc Deveraux. While John tries to piece his reality back together, things get more complicated when he is pursued by a relentless UniSol named Magnus. Meanwhile, Deveraux and surviving UniSol Andrew Scott are preparing to battle anarchy and build a new order ruled by Unisols without government oversight. They are weeding out the weak and constantly testing their strongest warriors in brutal, life-and-death combat. Luc has emerged operating the Unisol Church of Eventualism, taking in wayward Unisols whom the government has been secretly operating as remote-controlled sleeper agents. His mission is to liberate these Unisols from the implanted memories and the lies the government has inserted in them. As John gets closer to Deveraux and the rogue army of genetically enhanced warriors, he discovers more about himself and begins to call into question everything he believed to be true.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "hHp5n5jhAqE"
+    "trailerYoutubeId": "hHp5n5jhAqE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1286146",
@@ -87117,11 +87232,13 @@
     "imdbRating": 7.3,
     "tmdbRating": 7.3,
     "releaseDate": "2023-07-01",
-    "plot": "",
-    "country": "",
+    "plot": "A military veteran and former mercenary named Frenchy is haunted by his childhood, as well as his past in the military.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "faOS-D_tbrE"
+    "trailerYoutubeId": "faOS-D_tbrE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1130988",
@@ -87156,11 +87273,13 @@
     "imdbRating": 7,
     "tmdbRating": 7,
     "releaseDate": "2019-08-02",
-    "plot": "",
-    "country": "",
+    "plot": "Between his tax problems and his legal battle with his wife for the custody of his daughter, these are hard times for the action movie star who finds that even Steven Seagal has pinched a role from him! In JCVD, Jean-Claude Van Damme returns to the country of his birth to seek the peace and tranquility he can no longer enjoy in the United States.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "_T_Whr4tQOs"
+    "trailerYoutubeId": "_T_Whr4tQOs",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0827521",
@@ -87193,11 +87312,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "2008-03-04",
-    "plot": "",
-    "country": "",
+    "plot": "A former New Orleans cop battles drug cartels and ex-Army Special Forces who are smuggling drugs from Mexico into U.S. through a Texas border town.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Xc0Fvt6XvkM"
+    "trailerYoutubeId": "Xc0Fvt6XvkM",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0783598",
@@ -87229,11 +87350,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "2007-06-20",
-    "plot": "",
-    "country": "",
+    "plot": "Anthony Stowe is a down-and-out detective addicted to heroine whose days always seem to go from bad to worse. Stowe is coming off of a drug deal, in which two officers were killed, and the primary villain, the drugs, the money and the surveillance tapes are still at large. He is also dealing with his wife, who has just informed him that she is pregnant - but the child is not his. After a gunfight in which Stowe comes very close to death, After being severely wounded and losing all will to live, His body gives up and falls into a coma. After an inner battle with himself, He gains again the spirit to live again. While on the road to recovery, Stowe finds himself in a very personal battle to make amends with his kidnapped wife and to take revenge on his assailant once and for all.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Pv_2oV0mcC8"
+    "trailerYoutubeId": "Pv_2oV0mcC8",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0458471",
@@ -87270,11 +87393,13 @@
     "imdbRating": 4.9,
     "tmdbRating": 4.9,
     "releaseDate": "2006-05-23",
-    "plot": "",
-    "country": "",
+    "plot": "Jean Claude plays an official who’s just been appointed as Second In Command to the U.S.Ambassador at an American Embassy in a small, turbulent Eastern European nation. When local insurgents attempt a coup d’etat, the nation’s President takes refuge inside the embassy. The embassy is then besieged by the well-armed insurgents. The U.S. Ambassador is killed in the ensuing action, and it’s now up to Jean-Claude and the embassy’s small detachment of U.S. Marines to fend off the attackers.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "_y2hUZMMp3A"
+    "trailerYoutubeId": "_y2hUZMMp3A",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0462329",
@@ -87306,11 +87431,13 @@
     "imdbRating": 5.2,
     "tmdbRating": 5.2,
     "releaseDate": "2006-11-21",
-    "plot": "",
-    "country": "",
+    "plot": "Jean-Claude will be playing a Combat Vet who’s just spent the last 3 years fighting in Afghanistan and Iraq, who is hired to be a bodyguard to a former World Heavyweight Boxing champ to protect him and his family against a Rap Music Mogul. He sets up a team called \"The Hard Corps\", complications arise when the boxer suspects that his sister may be in love with the bodyguard.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "0IM1us82QHE"
+    "trailerYoutubeId": "0IM1us82QHE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0367478",
@@ -87343,11 +87470,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "2005-01-19",
-    "plot": "",
-    "country": "",
+    "plot": "Ben Archer is a thug/enforcer for a criminal organization. Tiring of the work, he tells his coworkers that he’s ready to retire. His wife Cynthia is a social worker for the INS. She brings a Chinese refugee girl to their home. Soon, Sun Quan wants his daughter back. Cynthia Archer is murdered, and Ben’s son Nicholas disappears, along with the Chinese girl. Ben must save the children and avenge his wife’s murder.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "ALrqbe2j00s"
+    "trailerYoutubeId": "ALrqbe2j00s",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0381442",
@@ -87380,11 +87509,13 @@
     "imdbRating": 6.2,
     "tmdbRating": 6.2,
     "releaseDate": "2004-12-01",
-    "plot": "",
-    "country": "",
+    "plot": "Gus (played by Guillaume Canet) suffers from narcolepsy. He falls asleep all the time and has dreams about supermen from comics (Van Damme would play one of these supermen, a short &amp; secret appearance).",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "_8Zo8FtYVwM"
+    "trailerYoutubeId": "_8Zo8FtYVwM",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0364828",
@@ -87407,18 +87538,20 @@
       "James Caan",
       "James Lesure"
     ],
-    "director": "",
+    "director": "Gary Scott Thompson, David Solomon, Timothy Busfield, Robert Duncan McNeill",
     "writers": [
       "Gary Scott Thompson"
     ],
     "imdbRating": 7.4,
     "tmdbRating": 7.4,
     "releaseDate": "2003-09-22",
-    "plot": "",
-    "country": "",
+    "plot": "Welcome to the Montecito Resort and Casino in Las Vegas, where you can do anything you want, but Ed Deline and his crack surveillance team will be watching. Just remember: what happens in Vegas stays in Vegas.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "YGW0p7vGMNo"
+    "trailerYoutubeId": "YGW0p7vGMNo",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0339135",
@@ -87451,11 +87584,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "2003-08-08",
-    "plot": "",
-    "country": "",
+    "plot": "Kyle LeBlanc is an American working overseas in Russia. When he hears his wife being attacked over the phone, Kyle rushes home to find that he’s too late. The man who killed his wife is found not guilty on lack of evidence. So Kyle takes the law into his own hands, and kills the man to avenge his wife’s death. He is sentenced to life in prison without parole. The Russian prison he is sent to is tough, and the warden amuses himself by putting on fights where he fills his pockets with money by betting on the fights. Kyle begins to break and go crazy, so he is forced into these fights because the warden knows he is a sure thing. Kyle’s cellmate 451 begins to make him think what he fights for. With that, Kyle knows now he must fight another battle: the fight for inner peace. It is the only way he can become the man he once was.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "cA_ctD7fB3w"
+    "trailerYoutubeId": "cA_ctD7fB3w",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0298296",
@@ -87487,11 +87622,13 @@
     "imdbRating": 3.9,
     "tmdbRating": 3.9,
     "releaseDate": "2002-11-05",
-    "plot": "",
-    "country": "",
+    "plot": "On an out of control train holding hostages and high-tech bio-weapons agent Kristoff (Van Damme) becomes a one man army to derail the terrorists and save the lives of everyone on board!",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "pAdJsfL8jGE"
+    "trailerYoutubeId": "pAdJsfL8jGE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0193364",
@@ -87525,11 +87662,13 @@
     "imdbRating": 4.7,
     "tmdbRating": 4.7,
     "releaseDate": "2001-12-14",
-    "plot": "",
-    "country": "",
+    "plot": "Van Damme plays Rudy whose father, Oscar is an archaeologist. His father goes to Israel. When his father disappears, he goes to Israel to find him. The chief of police claims that his father never entered the country, but an old friend of his father’s was expecting him and before he could tell him more, some people start shooting at them. He manages to get away, and when he goes back to the police chief, he still refuses to believe that a crime has been committed. He then has Rudy deported, but Rudy convinces the police woman assigned to bring him to the airport not to and help him find his father.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "8ImEUX53wZk"
+    "trailerYoutubeId": "8ImEUX53wZk",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0238552",
@@ -87563,11 +87702,13 @@
     "imdbRating": 5.4,
     "tmdbRating": 5.4,
     "releaseDate": "2001-05-11",
-    "plot": "",
-    "country": "",
+    "plot": "Jake Riley is working on the \"Torch\" case, a psycho serial killer, who kills women with kids and sets them on fire after they are dead. The killer calls Riley sometimes and now, that Riley retires, the killer has no person to play against anymore. The NSA comes into play here and offers a job to Riley. A replicant, or better a clone of the killer should help him find the real one, as kind of test if it works out. Now Riley is back on track, with a clone of the killer at his hand on the way to discover that nobody is born as murderer.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "UnnPyfuRNCE"
+    "trailerYoutubeId": "UnnPyfuRNCE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0139151",
@@ -87596,16 +87737,18 @@
     ],
     "director": "John G. Avildsen",
     "writers": [
-      "Tom O'Rourke"
+      "Tom O’Rourke"
     ],
     "imdbRating": 5.2,
     "tmdbRating": 5.2,
     "releaseDate": "1999-09-25",
-    "plot": "",
-    "country": "",
+    "plot": "Eddie Lomax (Van Damme) is a vetern soldier sick of life, wandering the desert looking for a reason to die. An incident with a few thugs from the nearby town who steal Eddies motorbike and beat him almost to death, starts in Eddie a flame for revenge. Helped by Mr. Early, and some other good fellows, Eddie is out for vengeance.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "mIeJ3ogJAlQ"
+    "trailerYoutubeId": "mIeJ3ogJAlQ",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0176269",
@@ -87639,11 +87782,13 @@
     "imdbRating": 4.2,
     "tmdbRating": 4.2,
     "releaseDate": "1999-08-20",
-    "plot": "",
-    "country": "",
+    "plot": "Luc Devereaux, the only surviving member of the original Universal Soldier Team. He now works with Dylan Cotner, on a project to create and improve a new Universal Soldier. Their plan is for the Universal soldier or UNISOLS to be controlled by a computer they call SETH. When the government decides to terminate the project, which includes shutting down SETH. SETH, not wanting this to happen, takes steps to prevent this. He first kills Dylan. He then has himself transfered into a body. He then seeks out Luc Devereaux, who is the only person who knows the code that will stop his program from being deleted. So he sends out all the UNISOLS to get him. Luc must try and stay away until SETH program is deleted. But SETH has targeted his daughter as possible leverage.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "DmokVosyZbE"
+    "trailerYoutubeId": "DmokVosyZbE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0126388",
@@ -87677,11 +87822,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "1998-12-03",
-    "plot": "",
-    "country": "",
+    "plot": "Alain Lefevre is a boxer paid by a Marseille mobster to take a dive. When he wins the fight he attempts to flee to America with the mobster’s girlfriend Katrina. This plan fails and he seeks escape by joining the foreign legion. As part of the legion he tangles with abusive lieutenant Steinkampf and bonds with legionnaires Luther, Mackintosh and Rosetti. The mobster discovers his whereabouts and enrolls two hit men to finish him off. With their fort under siege and enemies within, Lefevre finds that second chances are difficult to come by in the Legion.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "_SG7kiDdjMg"
+    "trailerYoutubeId": "_SG7kiDdjMg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0120724",
@@ -87714,11 +87861,13 @@
     "imdbRating": 4.9,
     "tmdbRating": 4.9,
     "releaseDate": "1998-09-04",
-    "plot": "",
-    "country": "",
+    "plot": "A Hong Kong fashion designer (Jean Claude Van Damme, if you can believe that billing) who had previously been involved in knock offs of major label merchandise, such as \"Pumma\" running shoes, attempts to go straight with the help of his new partner (Rob Schneider), who is secretly an undercover CIA agent involved in an investigation of the black market. Their main product, jeans, is involved in the knock offs, which brings a representative (Lela Rochon) of the American company to investigate. Paul Sorvino also appears as the head of the CIA operation in Hong Kong. However, just as Schneider is not as he initially seems, everyone in the film switches roles by film’s end.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "-fH40PS7Ko0"
+    "trailerYoutubeId": "-fH40PS7Ko0",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0119013",
@@ -87754,11 +87903,13 @@
     "imdbRating": 4.8,
     "tmdbRating": 4.8,
     "releaseDate": "1997-04-04",
-    "plot": "",
-    "country": "",
+    "plot": "Counterterrorist officer, Jack Quinn misses his target, Stavros, on the eve of his final mission. From there, he is sent to the colon;y; a rebirth for presumed-dead assassins. He breaks free from there, and seeks the aid of Yaz, a weapons dealer, for his final battle with Stavros.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "-LBlDqsUaGI"
+    "trailerYoutubeId": "-LBlDqsUaGI",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0117011",
@@ -87789,11 +87940,13 @@
     "imdbRating": 5.6,
     "tmdbRating": 5.6,
     "releaseDate": "1996-09-13",
-    "plot": "",
-    "country": "",
+    "plot": "Alain Moreau didn’t know he had a brother, even a twin brother - until he found him laying dead on the street. To reveal the truth about his twin, he now has to continue in his footsteps - he simply has to become Mikhail, travel across the Atlantic and sink into the world that ended his brothers days. Here he meets his brothers beautiful girlfriend Alex, who doesn’t suspect a thing for starters. She works as a waitress in a pub, owned by the Russian mafia, and when they find out Alain’s true intentions, all hell breaks out...",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "ssvDmR3K7UA"
+    "trailerYoutubeId": "ssvDmR3K7UA",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt15815090",
@@ -87825,11 +87978,13 @@
     "imdbRating": 5.8,
     "tmdbRating": 5.8,
     "releaseDate": "2021-11-18",
-    "plot": "",
-    "country": "",
+    "plot": "Lieutenant Colonel Soshnikov and Captain Muravyov are two different characters, two different fates, who are destined to meet at the Khmeimim military base.",
+    "country": "Russia",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Ib2P2zvQswg"
+    "trailerYoutubeId": "Ib2P2zvQswg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt14230458",
@@ -87865,11 +88020,13 @@
     "imdbRating": 7.7,
     "tmdbRating": 7.7,
     "releaseDate": "2023-12-22",
-    "plot": "",
-    "country": "",
+    "plot": "From filmmaker Yorgos Lanthimos and producer Emma Stone comes the incredible tale and fantastical evolution of Bella Baxter (Stone), a young woman crafted by the brilliant and unorthodox scientist Dr. Godwin Baxter (Willem Dafoe). Under Baxter’s protection, Bella is eager to learn. Hungry for the worldliness she is lacking, Bella runs off with Duncan Wedderburn (Mark Ruffalo), a slick and debauched lawyer, on a whirlwind adventure across the continents. Free from the prejudices of her times, Bella experiences sexual trials and a desire for equality.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "-EfYJWRw2FM"
+    "trailerYoutubeId": "-EfYJWRw2FM",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt3228774",
@@ -87905,11 +88062,13 @@
     "imdbRating": 7.3,
     "tmdbRating": 7.3,
     "releaseDate": "2021-05-28",
-    "plot": "",
-    "country": "",
+    "plot": "Before she becomes Cruella de Vil, teenage Estella has a dream. She wishes to become a fashion designer, having been gifted with talent, innovation, and ambition all in equal measures. But life seems intent on making sure her dreams never come true. Having wound up penniless and orphaned in London at 12, 10 years later Estella runs wild through the city streets with her best friends and partners-in-(petty)-crime, Horace and Jasper, two amateur thieves. When a chance encounter vaults Estella into the world of the young rich and famous, however, she begins to question the existence she’s built for herself in London and wonders whether she might, indeed, be destined for more after all.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "WYarpNzzR3Q"
+    "trailerYoutubeId": "WYarpNzzR3Q",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1517268",
@@ -87943,11 +88102,13 @@
     "imdbRating": 6.8,
     "tmdbRating": 6.8,
     "releaseDate": "2023-07-21",
-    "plot": "",
-    "country": "",
+    "plot": "Barbie the Doll lives in bliss in the matriarchal society of Barbieland feeling good about her role in the world in the various iterations of Barbies over the years showing girls that play with her that they can be whatever and whoever they want. On the flip side, Ken, who also lives in Barbieland, is unnoticed except in relation to Barbie, which is however one step above any other doll in Barbieland, such as Allan. One day, Stereotypical Barbie begins to have feelings which she’s never experienced which leads to her world seemingly falling apart. Weird Barbie determines that there is something happening in the real world with someone playing with her being unhappy leading to Stereotypical Barbie reluctantly heading to the real world to rectify what is happening with that person, she first needing to find this person. Much to Barbie’s chagrin, the original Ken, Beach Ken, tags along with her to the real world in he needing to survive in her presence. Beyond their mission to find this person, Barbie and Ken will find the real world unlike anything they know in Barbieland, especially in it being a male dominated society. While Barbie still has to find out what’s going on that made her come to the real world, Ken is finding a newfound control which he wants to bring back to Barbieland. If he is able to do so, the role of Barbie in the real world may be forever changed. On top of everything, executives at Mattel, primarily white men, discover that a \"real life\" Barbie and Ken doll have infiltrated the real world, their mission to capture the pair, but especially Barbie, to put them/her back in their/her place, namely in a manufacturer’s sealed box.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "NlJm3A0gj0Q"
+    "trailerYoutubeId": "NlJm3A0gj0Q",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt27681354",
@@ -87978,11 +88139,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "2026-05-15",
-    "plot": "",
-    "country": "",
+    "plot": "In The Grey follows a covert team of elite operatives who live in the global shadows, as comfortable wielding power and influence as they are automatic weapons and high explosives. When a ruthless despot steals a billion-dollar fortune, the team is sent to steal it back on what would be for anyone else a suicide mission. What begins as an impossible heist gets much worse, spiraling into an all-out war of strategy, deception and survival.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "nufP15iN4GE"
+    "trailerYoutubeId": "nufP15iN4GE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt3606756",
@@ -88020,11 +88183,16 @@
     "imdbRating": 7.5,
     "tmdbRating": 7.5,
     "releaseDate": "2018-06-15",
-    "plot": "",
-    "country": "",
+    "plot": "While the Parr family has accepted its collective calling as superheroes, the fact remains that their special heroism is still illegal. After they are arrested after unsuccessfully trying to stop the Underminer, their future seems bleak. However, the wealthy Deavor siblings of Devtech offer new hope with a bold project to rehabilitate the public image and legal status of Supers, with Elastigirl being assigned on point to be the shining example. Now having agreed for now to stay at home to care of the kids, Mr. Incredible finds domestic life a daunting challenge, especially with baby Jack-Jack’s newly emerged powers making him almost impossible to manage. However, Elastigirl soon has her own concerns dealing with the menace of a new supervillain, Screenslaver, who is wreaking havoc with his mind control abilities. Now, Elastigirl must solve the mystery of this enemy, who has malevolent designs on the world with the Parr family and friends key targets of this evil.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "bqstGugEhng"
+    "trailerYoutubeId": "bqstGugEhng",
+    "backdrop": "",
+    "plotTr": "",
+    "franchiseId": "incredibles",
+    "franchiseName": "Incredibles",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt16288804",
@@ -88050,7 +88218,7 @@
       "Michelle Jenner",
       "Tristán Ulloa"
     ],
-    "director": "",
+    "director": "Albert Pintó, David Barrocal ",
     "writers": [
       "Esther Martínez Lobato",
       "Álex Pina"
@@ -88058,11 +88226,13 @@
     "imdbRating": 7.1,
     "tmdbRating": 7.1,
     "releaseDate": "2023-12-29",
-    "plot": "",
-    "country": "",
+    "plot": "Back to his golden age before the events of \"Money Heist,\" Berlin and a masterful gang gather in Paris to plan one of his most ambitious robberies ever.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "FpxzNUr3f9o"
+    "trailerYoutubeId": "FpxzNUr3f9o",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt42178219",
@@ -88086,21 +88256,23 @@
       "Begoña Vargas",
       "Julio Peña"
     ],
-    "director": "",
+    "director": "Albert Pintó, David Barrocal, José Manuel Cravioto",
     "writers": [],
     "imdbRating": 6.9,
     "tmdbRating": 6.9,
     "releaseDate": "2026-05-15",
-    "plot": "",
-    "country": "",
+    "plot": "Berlin reunites his crew in Seville for an elaborate con targeting a powerful duke and his wife who’ve made the mistake of trying to blackmail him. Their plan involves faking the theft of a priceless painting as cover.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Ltrc8z4AXKo"
+    "trailerYoutubeId": "Ltrc8z4AXKo",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt10048342",
-    "title": "The Queen's Gambit",
-    "originalTitle": "The Queen's Gambit",
+    "title": "The Queen’s Gambit",
+    "originalTitle": "The Queen’s Gambit",
     "year": 2020,
     "type": "TV Mini Series",
     "myRating": 6,
@@ -88119,7 +88291,7 @@
       "Chloe Pirrie",
       "Bill Camp"
     ],
-    "director": "",
+    "director": "Scott Frank",
     "writers": [
       "Scott Frank",
       "Allan Scott"
@@ -88127,11 +88299,13 @@
     "imdbRating": 8.5,
     "tmdbRating": 8.5,
     "releaseDate": "2020-10-23",
-    "plot": "",
-    "country": "",
+    "plot": "Nine year-old orphan Beth Harmon is quiet, sullen, and by all appearances unremarkable. That is, until she plays her first game of chess. Her senses grow sharper, her thinking clearer, and for the first time in her life she feels herself fully in control. By the age of sixteen, she’s competing for the U.S. Open championship. But as Beth hones her skills on the professional circuit, the stakes get higher, her isolation grows more frightening, and the thought of escape becomes all the more tempting. Based on the book by Walter Tevis.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "KkyBuT90aI0"
+    "trailerYoutubeId": "KkyBuT90aI0",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt2442560",
@@ -88156,18 +88330,20 @@
       "Paul Anderson",
       "Sophie Rundle"
     ],
-    "director": "",
+    "director": "Otto Bathurst, Tom Harper, Colm McCarthy, Tim Mielants, David Caffrey, Anthony Byrne",
     "writers": [
       "Steven Knight"
     ],
     "imdbRating": 8.7,
     "tmdbRating": 8.7,
     "releaseDate": "2014-09-30",
-    "plot": "",
-    "country": "",
+    "plot": "Thomas Shelby and his brothers return to Birmingham after serving in the British Army during WWI. Shelby and his gang, the Peaky Blinders, control the city of Birmingham. However, Shelby’s ambitions extend beyond Birmingham, as he plans to build on the business empire he’s created, and dispatch anyone who gets in his way.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "EM12mcTEI88"
+    "trailerYoutubeId": "EM12mcTEI88",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1372306",
@@ -88201,11 +88377,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "2009-09-10",
-    "plot": "",
-    "country": "",
+    "plot": "Twenty-one year old Sammy Smalls has self-esteem issues. She hides behind her frumpy clothes and the slight limp she sustained from a childhood illness. She works in a dead end job as an undercover shoplifter detector at a Big Apple Food Town, her boss Dirk who has his own brand of vigilante justice for the shoplifters. And she considers her parents, although loving in their own unique way, not good role models for her. She doesn’t like people touching her in an emotional manner, the ticklish feeling she gets from such being yet another thing behind which she hides. As a result, she is sexually inexperienced. However, she does have a crush on Eugene Zaslavsky, a busker musician who performs outside her supermarket. Each considers the other a friend, but their attempt to take the friendship into a sexual realm results in utter disaster. Although they vow to remain friends, Eugene won’t sleep with her again due to her sexual inexperience. So Sammy goes on an expedition for advice and sexual experience from whomever and where ever she can find it, except from Eugene. Eugene, not fully realizing it, also has self-image issues with which he must comes to terms before he can be a true friend and possibly more to Sammy.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "K5Knfy3tPOw"
+    "trailerYoutubeId": "K5Knfy3tPOw",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1935902",
@@ -88239,11 +88417,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "2013-04-15",
-    "plot": "",
-    "country": "",
+    "plot": "Based on the comic book series \"The Brass Teapot\" about a mid-twenty-year-old couple who, in these difficult economic times, finds a mysterious, magical brass teapot which makes them money but at a surprising price. After realizing the teapot’s power, John and Alice must decide how far they will go to fulfill their dream.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "g30KBZ4m61Y"
+    "trailerYoutubeId": "g30KBZ4m61Y",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt4414438",
@@ -88277,11 +88457,13 @@
     "imdbRating": 5.6,
     "tmdbRating": 5.6,
     "releaseDate": "2016-10-21",
-    "plot": "",
-    "country": "",
+    "plot": "Sonia is a neurotic jingle writer who’s always dreamt of a big and exciting life. Surprised by a sudden proposal and subsequent ultimatum from her easy-going boyfriend, Chris, Sonia has to decide whether she’ll join the ranks of her married friends or take a leap and pursue her fantasies. A whimsical romantic comedy that’s raunchy and yet gentle, ’It Had To Be You’ explores the choices women face today while satirizing cultural expectations of gender and romance.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "skUILrCSwtw"
+    "trailerYoutubeId": "skUILrCSwtw",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt5101878",
@@ -88315,11 +88497,13 @@
     "imdbRating": 5.5,
     "tmdbRating": 5.5,
     "releaseDate": "2018-03-13",
-    "plot": "",
-    "country": "",
+    "plot": "Eleanor Weller (Hunter) is a therapist who is not coping well with changes in her personal life, including a recent divorce and the growing instability of her daughter. Her ex-husband Adam (Shalhoub) is a once promising playwright whose career has been on a steady decline for many years. When Adam receives a manuscript written by a dead friend, he seizes an opportunity to transform his life.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "s605H97IM8E"
+    "trailerYoutubeId": "s605H97IM8E",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt9484998",
@@ -88356,11 +88540,13 @@
     "imdbRating": 7.4,
     "tmdbRating": 7.4,
     "releaseDate": "2020-07-10",
-    "plot": "",
-    "country": "",
+    "plot": "While stuck at a wedding in Palm Springs, Nyles (Andy Samberg) meets Sarah (Cristin Milioti), the maid of honor and family black sheep. After he rescues her from a disastrous toast, Sarah becomes drawn to Nyles and his offbeat nihilism. But when their impromptu tryst is thwarted by a surreal interruption, Sarah must join Nyles in embracing the idea that nothing really matters, and they begin wreaking spirited havoc on the wedding celebration.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "YoQg0gMOjMU"
+    "trailerYoutubeId": "YoQg0gMOjMU",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0118884",
@@ -88397,11 +88583,13 @@
     "imdbRating": 7.5,
     "tmdbRating": 7.5,
     "releaseDate": "1997-07-11",
-    "plot": "",
-    "country": "",
+    "plot": "Astronomer Dr. Ellie Arroway has long been interested in contact to faraway lands, a love fostered in her childhood by her father, Ted Arroway (David Morse), who died when she was nine-years-old, leaving her orphaned. Her current work in monitoring for extraterrestrial life is based on that love and is in part an homage to her father. Ever since funding from the National Science Foundation (N.S.F.) was pulled on her work, which is referred to some, including her N.S.F. superior David Drumlin (Tom Skerritt), as more science fiction than science, Ellie, with a few of her rogue scientist colleagues, have looked for funding from where ever they could get it to continue their work. When Ellie and her colleagues hear chatter originating from the vicinity of the star Vega, Ellie feels vindicated. But that vindication is short lived when others, including politicians, the military, religious leaders, and other scientists, such as Drumlin, try to take over her work. When the messages received from space are decoded, the project takes on a whole new dimension, which strengthens for Ellie the quest for the truth. Thrown into the mix are the unknown person who has up until now funded most of Ellie’s work and what his motivations are, and Palmer Joss (Matthew McConaughey), a renowned author and theologian, who despite their fundamental differences in outlook, is mutually attracted to Ellie, that attraction based in part on intellect and their common goal of wanting to know the truth.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "ErMMfHSBCAk"
+    "trailerYoutubeId": "ErMMfHSBCAk",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1188729",
@@ -88437,11 +88625,13 @@
     "imdbRating": 6.7,
     "tmdbRating": 6.7,
     "releaseDate": "2009-09-25",
-    "plot": "",
-    "country": "",
+    "plot": "Two crew members are stranded on a spacecraft and quickly - and horrifically - realize they are not alone. Two astronauts awaken in a hyper-sleep chamber aboard a seemingly abandoned spacecraft. It’s pitch black, they are disoriented, and the only sound is a low rumble and creak from the belly of the ship. They can’t remember anything: Who are they? What is their mission? With Lt. Payton staying behind to guide him via radio transmitter, Cpl. Bower ventures deep into the ship and begins to uncover a terrifying reality. Slowly the spacecraft’s shocking, deadly secrets are revealed...and the astronauts find their own survival is more important than they could ever have imagined.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "9q42L4XNVhQ"
+    "trailerYoutubeId": "9q42L4XNVhQ",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0112384",
@@ -88474,11 +88664,13 @@
     "imdbRating": 7.7,
     "tmdbRating": 7.7,
     "releaseDate": "1995-06-30",
-    "plot": "",
-    "country": "",
+    "plot": "Based on the true story of the ill-fated 13th Apollo mission bound for the moon. Astronauts Lovell, Haise and Swigert were scheduled to fly Apollo 14, but are moved up to 13. It’s 1970, and The US has already achieved their lunar landing goal, so there’s little interest in this \"routine\" flight.. until that is, things go very wrong, and prospects of a safe return fade.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "B1KJ9XeZuxA"
+    "trailerYoutubeId": "B1KJ9XeZuxA",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1182345",
@@ -88512,11 +88704,13 @@
     "imdbRating": 7.8,
     "tmdbRating": 7.8,
     "releaseDate": "2009-07-10",
-    "plot": "",
-    "country": "",
+    "plot": "Sam Bell has a three year contract to work for Lunar Industries. For the contract’s entire duration, he is the sole employee based at their lunar station. His primary job responsibility is to harvest and periodically rocket back to Earth supplies of helium-3, the current clean and abundant fuel used on Earth. There is no direct communication link available between the lunar station and Earth, so his only direct real-time interaction is with GERTY, the intelligent computer whose function is to attend to his day to day needs. With such little human contact and all of it indirect, he feels that three years is far too long to be so isolated; he knows he is beginning to hallucinate as the end of his three years approaches. All he wants is to return to Earth to be with his wife Tess and their infant daughter Eve, who was born just prior to his leaving for this job. With two weeks to go, he gets into an accident at one of the mechanical harvesters and is rendered unconscious. Injured, he awakens back at the station in the infirmary, he assumes assisted by GERTY. GERTY tells him that a rescue team named Eliza will come to the station to clean up the aftermath of the accident. After his recuperation, he takes an unauthorized trip back to the broken harvester, where he makes an unexpected discovery. Because of his find, he begins to doubt his sanity, then his true identity, then the company and GERTY’s willingness to do what is best for him. Because of his resulting beliefs, his sole mission becomes how to get back to Earth on his own.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "xV5udqNpP94"
+    "trailerYoutubeId": "xV5udqNpP94",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1446714",
@@ -88545,16 +88739,18 @@
     "writers": [
       "Jon Spaihts",
       "Damon Lindelof",
-      "Dan O'Bannon"
+      "Dan O’Bannon"
     ],
     "imdbRating": 7,
     "tmdbRating": 7,
     "releaseDate": "2012-06-08",
-    "plot": "",
-    "country": "",
+    "plot": "Following a faint trail of clues, the accomplished archaeologist, Doctor Elizabeth Shaw, and her partner, Charlie Holloway, along with a seventeen-man crew, embark on an ambitious, deep-space scientific expedition. Aboard the revolutionary space-exploration starship, USCSS Prometheus, the team sets foot on the rocky terrain of the desolate exomoon, LV-223, in 2093, to investigate the existence of the superior extraterrestrial species known as the \"Engineers\". But, there, inside a mysterious, complex structure of cavernous dark chambers and an intricate underground system of tunnels, more enigmas await. Now, a terrifying discovery threatens not only the outcome of the bold outer-space mission but also the very future of humankind. Is the world prepared for the answers to the fundamental questions of human existence?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "sNFMtH4Kk3s"
+    "trailerYoutubeId": "sNFMtH4Kk3s",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1355644",
@@ -88588,11 +88784,13 @@
     "imdbRating": 7,
     "tmdbRating": 7,
     "releaseDate": "2016-12-21",
-    "plot": "",
-    "country": "",
+    "plot": "The spaceship, Starship Avalon, in its 120-year voyage to a distant colony planet known as the \"Homestead Colony\" and transporting 5,258 people has a malfunction in one of its sleep chambers. As a result one hibernation pod opens prematurely and the one person that awakes, Jim Preston (Chris Pratt) is stranded on the spaceship, still 90 years from his destination.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "sipflRaq2vg"
+    "trailerYoutubeId": "sipflRaq2vg",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt11409836",
@@ -88605,7 +88803,7 @@
     "listName": [
       "Komedi Günlükleri"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BYjE4OWEyOTgtOTNmOC00MDRhLWI0YzMtMjY0YzA2OWM4ZWNkXkEyXkFqcGdeQXVyMTA0NTY3NDQx._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTVhNWI0YjAtZDJmMy00MmE5LWJmODItNzY5YzdjNThjZjdkXkEyXkFqcGc@._V1_.jpg",
     "overview": "Bu yapım \"Selçuk Aydemir\" tarafından yönetilmiş 2022 yapımı bir Comedy eseridir. IMDb puanı 5 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
@@ -88623,11 +88821,13 @@
     "imdbRating": 5,
     "tmdbRating": 5,
     "releaseDate": "2022-11-04",
-    "plot": "",
-    "country": "",
+    "plot": "A mischievous 9-year-old wreaks comical levels of chaos as he and his friends try to impress the neighborhood’s toughest kid.",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "4u89-Ttn6A4"
+    "trailerYoutubeId": "4u89-Ttn6A4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt7298590",
@@ -88640,7 +88840,7 @@
     "listName": [
       "Komedi Günlükleri"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BZjEyMTcwMWMtM2Q5Ny00NjFkLTkzNDktODQwZDE3ZTE1Mjc5XkEyXkFqcGdeQXVyNDI4NTEwMTc@._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BODdhNzQ1YjktYjNjNy00N2Y1LWJmMWYtOTBkNTMzMjAzNmY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "Bu yapım \"Ömer Faruk Yardimci\" tarafından yönetilmiş 2018 yapımı bir Comedy eseridir. IMDb puanı 4.2 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
@@ -88659,11 +88859,13 @@
     "imdbRating": 4.2,
     "tmdbRating": 4.2,
     "releaseDate": "2018-03-30",
-    "plot": "",
-    "country": "",
+    "plot": "Arapsaçı, Ömer Faruk Yardımcı’nın yönettiği ve senaryosunu Ayşe Işıkmen ile birlikte kaleme aldığı 2018 yapımı bir Türk komedi filmidir. Film, eski bir aktörün şöhretli günlerinden kalan eski bir deri ceketin cebinde unuttuğu ve büyük ikramiyenin çıktığı loto kuponu etrafında şekillenir. Bu değerli ceketin tesadüfler zinciriyle elden ele dolaşması, birbiriyle tamamen alakasız insanların yollarının kesişmesine ve hayatlarının adeta bir \"arapsaçına\" dönmesine neden olur. IMDb listelerinde tt7298590 koduyla yer alan bu eğlenceli yapımın güçlü oyuncu kadrosunda Şinasi Yurtsever, Açelya Topaloğlu, Hakan Meriçliler, Ayhan Taş, Burak Satıbol ve usta oyuncu Köksal Engür gibi isimler yer almaktadır.",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "2pj7aZ4NY6E"
+    "trailerYoutubeId": "2pj7aZ4NY6E",
+    "backdrop": "",
+    "plotTr": "Arapsaçı, Ömer Faruk Yardımcı’nın yönettiği ve senaryosunu Ayşe Işıkmen ile birlikte kaleme aldığı 2018 yapımı bir Türk komedi filmidir. Film, eski bir aktörün şöhretli günlerinden kalan eski bir deri ceketin cebinde unuttuğu ve büyük ikramiyenin çıktığı loto kuponu etrafında şekillenir. Bu değerli ceketin tesadüfler zinciriyle elden ele dolaşması, birbiriyle tamamen alakasız insanların yollarının kesişmesine ve hayatlarının adeta bir \"arapsaçına\" dönmesine neden olur. IMDb listelerinde tt7298590 koduyla yer alan bu eğlenceli yapımın güçlü oyuncu kadrosunda Şinasi Yurtsever, Açelya Topaloğlu, Hakan Meriçliler, Ayhan Taş, Burak Satıbol ve usta oyuncu Köksal Engür gibi isimler yer almaktadır."
   },
   {
     "imdbId": "tt21636066",
@@ -88676,7 +88878,7 @@
     "listName": [
       "Komedi Günlükleri"
     ],
-    "poster": "https://m.media-amazon.com/images/M/MV5BMjRhNzhmNjctYmEwNC00OGQ3LWI5YTEtNjdjNGNlNjMwODg3XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjJmOGM0ZDUtYjg2Zi00MWRlLWJiOTMtODhhNGFmNGNlNjNmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     "overview": "Bu yapım \"Ömer Faruk Yardimci\" tarafından yönetilmiş 2022 yapımı bir Comedy eseridir. IMDb puanı 4.7 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
@@ -88695,11 +88897,13 @@
     "imdbRating": 4.7,
     "tmdbRating": 4.7,
     "releaseDate": "2022-11-18",
-    "plot": "",
-    "country": "",
+    "plot": "Bulut goes to the nightclub where Müjde is working, a night before his engagement ceremony. He came across his ex-girlfriend who says that she is pregnant. She says that if he doesn’t break up with Leyla, she’ll talk to the press ...",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "_lkSos46QFw"
+    "trailerYoutubeId": "_lkSos46QFw",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt29942585",
@@ -88730,11 +88934,13 @@
     "imdbRating": 5.1,
     "tmdbRating": 5.1,
     "releaseDate": "2024-02-02",
-    "plot": "",
-    "country": "",
+    "plot": "There is a legend about a yoghurt recipe passed down from father to son. Since this does not happen, the family suffers a curse. An attempt is made to decide who among the twins deserves to learn the knowledge of the legend more.",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "0y4ISK6IOVc"
+    "trailerYoutubeId": "0y4ISK6IOVc",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt11743610",
@@ -88758,7 +88964,7 @@
       "Constance Wu",
       "Taylor Kitsch"
     ],
-    "director": "",
+    "director": " Antoine Fuqua, Frederick E.O. Toye , Sylvain White",
     "writers": [
       "Jack Carr",
       "David DiGilio"
@@ -88766,11 +88972,13 @@
     "imdbRating": 7.9,
     "tmdbRating": 7.9,
     "releaseDate": "2022-07-01",
-    "plot": "",
-    "country": "",
+    "plot": "The series follows James Reece after his entire platoon of Navy SEALs is ambushed during a high-stakes covert mission. Reece returns home to his family with conflicting memories of the event and questions about his culpability. However, as new evidence comes to light, Reece discovers dark forces working against him, endangering not only his life but the lives of those he loves.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "wJ9ztPRw9as"
+    "trailerYoutubeId": "wJ9ztPRw9as",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1735898",
@@ -88804,11 +89012,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "2012-06-01",
-    "plot": "",
-    "country": "",
+    "plot": "Snow White, imprisoned daughter of the late king, escapes just as the Magic Mirror declares her the source of the Evil Queen’s immortality. The Queen sends her men, led by a local huntsman, to bring her back. But upon her capture, the huntsman finds he’s being played and turns against the Queen’s men, saving Snow White in the process. Meanwhile, Snow’s childhood friend, William, learns that she is alive and sets off to save her.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "S0k_L9-APLc"
+    "trailerYoutubeId": "S0k_L9-APLc",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1646987",
@@ -88841,11 +89051,13 @@
     "imdbRating": 5.7,
     "tmdbRating": 5.7,
     "releaseDate": "2012-03-30",
-    "plot": "",
-    "country": "",
+    "plot": "A decade after his heroic defeat of the monstrous Kraken, Perseus-the demigod son of Zeus-is attempting to live a quieter life as a village fisherman and the sole parent to his 10-year old son, Helius. Meanwhile, a struggle for supremacy rages between the gods and the Titans. Dangerously weakened by humanity’s lack of devotion, the gods are losing control of the imprisoned Titans and their ferocious leader, Kronos, father of the long-ruling brothers Zeus, Hades and Poseidon. The triumvirate had overthrown their powerful father long ago, leaving him to rot in the gloomy abyss of Tartarus, a dungeon that lies deep within the cavernous underworld. Perseus cannot ignore his true calling when Hades, along with Zeus’ godly son, Ares (Edgar Ramírez), switch loyalty and make a deal with Kronos to capture Zeus. The Titans’ strength grows stronger as Zeus’ remaining godly powers are siphoned, and hell is unleashed on earth. Enlisting the help of the warrior Queen Andromeda (Rosamund Pike), Poseidon’s demigod son, Argenor (Toby Kebbell), and fallen god Hephaestus (Bill Nighy), Perseus bravely embarks on a treacherous quest into the underworld to rescue Zeus, overthrow the Titans and save mankind.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "8jEWLCZA7R8"
+    "trailerYoutubeId": "8jEWLCZA7R8",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1428538",
@@ -88878,11 +89090,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "2013-01-25",
-    "plot": "",
-    "country": "",
+    "plot": "Siblings Hansel and Gretel are left alone in the woods by their father and captured by a dark witch in a candy house, but they kill the witch and escape. Years later, the orphans have become famous witch hunters. When 11 children go missing in a small village, the Mayor summons Hansel and Gretel to rescue them, and they save red-haired Mina from the local sheriff who wants to burn her for being a witch. Soon they discover that the Blood Moon will approach in three days and that powerful dark witch Muriel is responsible for all the abductions; she intends to use the children with a secret ingredient in a broth that will protect the coven of witches against the fire. Meanwhile, Hansel and Gretel discover secrets about their parents.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "nea3HQvsxD4"
+    "trailerYoutubeId": "nea3HQvsxD4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt2239822",
@@ -88918,11 +89132,13 @@
     "imdbRating": 6.4,
     "tmdbRating": 6.4,
     "releaseDate": "2017-07-21",
-    "plot": "",
-    "country": "",
+    "plot": "In the twenty-eighth century, space station Alpha is a city where beings from different planets live together exchanging their knowledge and culture. Peace is granted by a human force, including Major Valerian (Dane DeHaan) and his partner Sergeant Laureline (Cara Delevingne). They are assigned by the Defense Minister (Herbie Hancock) to retrieve the last species of converter in a dangerous mission. They succeed and back to Alpha, unknown humanoids abduct Commander Arun Filitt (Clive Owen) expecting to steal the converter. They head to a forbidden area that is infected, but Valerian and Laureline follow them and disclose a hidden secret about the race and the infected area.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "5k0WwLx-ZFs"
+    "trailerYoutubeId": "5k0WwLx-ZFs",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1351685",
@@ -88955,11 +89171,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "2013-03-01",
-    "plot": "",
-    "country": "",
+    "plot": "Sent to the market by his uncle to sell their horse and buy thatch for their roof, Jack meets the beautiful Princess Isabelle, whom he rescues from ruffians. He returns home with only a handful of beans given to him by a monk who claimed they were sacred, but that does little to impress his uncle, who tosses them away. In the night, the Princess arrives, having run off to keep herself from marrying Roderick, who is clearly only interested in becoming king. Soon, the beans take root with a giant stalk carrying away the princess and Jack’s house. He soon sets off on an adventure with the king’s guards to rescue the princess, only to find that a mythical land filled with giants really exists.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "xpkcEIsgGmU"
+    "trailerYoutubeId": "xpkcEIsgGmU",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1440129",
@@ -88994,16 +89212,18 @@
     "imdbRating": 5.8,
     "tmdbRating": 5.8,
     "releaseDate": "2012-05-18",
-    "plot": "",
-    "country": "",
+    "plot": "An international fleet of naval warships encounters an alien armada while on a Naval war games exercise and faces the biggest threat mankind has ever faced. An intense battle is fought on sea, land and air. If they lose, the world could face a major extinction event and an alien invasion. Will humans win this alien war, what are the aliens doing here, and what do they want?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "wvXKvbIAq2k"
+    "trailerYoutubeId": "wvXKvbIAq2k",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1731141",
-    "title": "Ender's Game",
-    "originalTitle": "Ender's Game",
+    "title": "Ender’s Game",
+    "originalTitle": "Ender’s Game",
     "year": 2013,
     "type": "Movie",
     "myRating": 5,
@@ -89032,11 +89252,13 @@
     "imdbRating": 6.6,
     "tmdbRating": 6.6,
     "releaseDate": "2013-11-01",
-    "plot": "",
-    "country": "",
+    "plot": "The Earth was ravaged by the Formics, an alien race seemingly determined to destroy humanity. Fifty years later, the people of Earth remain banded together to prevent their own annihilation from this technologically superior alien species. Ender Wiggin, a quiet but brilliant boy, may become the savior of the human race. He is separated from his beloved sister and his terrifying brother and brought to battle school in orbit around earth. He will be tested and honed into an empathetic killer who begins to despise what he does as he learns to fight in hopes of saving Earth and his family.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "g3-6e3TxpdQ"
+    "trailerYoutubeId": "g3-6e3TxpdQ",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0183597",
@@ -89066,11 +89288,13 @@
     "imdbRating": 5.3,
     "tmdbRating": 5.3,
     "releaseDate": "1984-01-01",
-    "plot": "",
-    "country": "",
+    "plot": "This movie is about a Turkish policeman cracking up a ninja’s sadistic gang in Italy. Murat, a fearless Turkish police lieutenant, studied karate for many years in Korea during the Korean War. One day He saves ninja’s life, who trained with him in Korea. The ninja sees it as a humiliating event and has a grudge against Murat. Years after the war, Ninja formed a gang with his warriors in Italy. The Italian police can’t handle this gang. That’s why they ask Turkey for help. Murat will go to Italy to try to bring down Ninja’s ruthless gang.",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "5HGWoZSzWtI"
+    "trailerYoutubeId": "5HGWoZSzWtI",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0182844",
@@ -89102,11 +89326,13 @@
     "imdbRating": 4.4,
     "tmdbRating": 4.4,
     "releaseDate": "1988",
-    "plot": "",
-    "country": "",
+    "plot": "Bombacı, Türk sinemasının efsane ismi Cüneyt Arkın’ın hem senaryosunu yazdığı, hem yönettiği hem de başrolünü üstlendiği 1988 yapımı bir aksiyon, macera ve komedi filmidir. Uzman Film tarafından yapımı üstlenilen film, bir mafya babasının evindeki partide işlenen gizemli bir cinayeti ve bu suçun üzerine yıkılmaya çalışıldığı manken Emel’in hikayesini konu alır. Kendini aklamak isteyen Emel, yeraltı dünyasına karşı koyabilmek için Gırgır Ali lakaplı sıradan bir vatandaştan yardım ister. Yeşilçam’ın unutulmaz isimlerinden Erol Taş, Yıldırım Gencer ve Turgut Özatay gibi oyuncuların da kadrosunda yer aldığı bu yapım, mafyaya karşı verilen amansız ve bir o kadar da mizahi mücadeleyi dönemin absürt aksiyon estetiğiyle izleyiciye aktarır.",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "_7t4G8rl4cE"
+    "trailerYoutubeId": "_7t4G8rl4cE",
+    "backdrop": "",
+    "plotTr": "Bombacı, Türk sinemasının efsane ismi Cüneyt Arkın’ın hem senaryosunu yazdığı, hem yönettiği hem de başrolünü üstlendiği 1988 yapımı bir aksiyon, macera ve komedi filmidir. Uzman Film tarafından yapımı üstlenilen film, bir mafya babasının evindeki partide işlenen gizemli bir cinayeti ve bu suçun üzerine yıkılmaya çalışıldığı manken Emel’in hikayesini konu alır. Kendini aklamak isteyen Emel, yeraltı dünyasına karşı koyabilmek için Gırgır Ali lakaplı sıradan bir vatandaştan yardım ister. Yeşilçam’ın unutulmaz isimlerinden Erol Taş, Yıldırım Gencer ve Turgut Özatay gibi oyuncuların da kadrosunda yer aldığı bu yapım, mafyaya karşı verilen amansız ve bir o kadar da mizahi mücadeleyi dönemin absürt aksiyon estetiğiyle izleyiciye aktarır."
   },
   {
     "imdbId": "tt0929809",
@@ -89138,11 +89364,13 @@
     "imdbRating": 2,
     "tmdbRating": 2,
     "releaseDate": "2007-01-26",
-    "plot": "",
-    "country": "",
+    "plot": "Class of teenage students attempting to save their unconventional school from closure, which was one of the highest-grossing Turkish films of 2007.",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "PrgoQKBt09g"
+    "trailerYoutubeId": "PrgoQKBt09g",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1176142",
@@ -89175,11 +89403,13 @@
     "imdbRating": 2,
     "tmdbRating": 2,
     "releaseDate": "2008-01-10",
-    "plot": "",
-    "country": "",
+    "plot": "It’s a crap movie.Don’t watch it, I was an idiot back then :)",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "xm_CMHc7-xs"
+    "trailerYoutubeId": "xm_CMHc7-xs",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0408236",
@@ -89213,11 +89443,13 @@
     "imdbRating": 7.3,
     "tmdbRating": 7.3,
     "releaseDate": "2007-12-21",
-    "plot": "",
-    "country": "",
+    "plot": "In the Victorian London, the barber Benjamin Barker is married to the gorgeous Lucy and they have a lovely child, Johanna. The beauty of Lucy attracts the attention of the corrupt Judge Turpin, who falsely accuses the barber of a crime that he did not commit and abuses Lucy later after gaining custody of her. After fifteen years in exile, Benjamin returns to London under the new identity of Sweeney Todd, seeking revenge against Turpin. He meets the widow Mrs. Lovett who is the owner of a meat pie shop who tells him that Lucy swallowed arsenic many years ago, and Turpin assigned himself tutor of Johanna. He opens a barber shop above her store, initiating a crime rampage against those who made him suffer and lose his beloved family.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "AAU7dRxGvco"
+    "trailerYoutubeId": "AAU7dRxGvco",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt6906292",
@@ -89249,11 +89481,13 @@
     "imdbRating": 5.4,
     "tmdbRating": 5.4,
     "releaseDate": "2023-08-25",
-    "plot": "",
-    "country": "",
+    "plot": "A bank executive receives a bomb threat while driving his children to school that his car will explode if they stop and get out.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Sxyzdo-RBKc"
+    "trailerYoutubeId": "Sxyzdo-RBKc",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt3402138",
@@ -89288,11 +89522,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "2025-08-01",
-    "plot": "",
-    "country": "",
+    "plot": "Following in his father’s footsteps, a detective works to solve a murder case and save his police department from closure.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "_FBJWJnz0xU"
+    "trailerYoutubeId": "_FBJWJnz0xU",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1235522",
@@ -89325,11 +89561,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "2013-01-18",
-    "plot": "",
-    "country": "",
+    "plot": "In New York City, detective Billy Taggart goes to court for the murder of the suspected rapist Mikey Tavarez, but the Mayor Nicholas Hostetler and the Chief of Police Carl Fairbanks make the important evidence vanish and the case against Billy is dismissed by the judge; however, he is forced to leave the police department. Seven years later, Billy is a private detective and lives with his girlfriend Natalie Barrow, who is an aspiring actress and the sister of Mikey’s suspected victim.Billy’s secretary Katy Bradshaw (Alona Tal) is trying to collect part of the debts to save their business. In the week of the elections, Hostetler summons Billy and offers $25,000 to investigate his wife, Cathleen Hostetler, whom he believes is having a love affair. Billy discovers that Cathleen is meeting Paul Andrews, who is the coordinator of the campaign for Jack Valliant, the opponent of Hostetler and favorite in the election. When Paul is found dead on the street, Billy thinks that he has been double-crossed by Hostetler and he decides to investigate the truth behind Paul’s murder.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "oJWfM40Sklc"
+    "trailerYoutubeId": "oJWfM40Sklc",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0386140",
@@ -89365,11 +89603,13 @@
     "imdbRating": 6,
     "tmdbRating": 6,
     "releaseDate": "2005-10-28",
-    "plot": "",
-    "country": "",
+    "plot": "In 1850--against the backdrop of political unrest, as the scheming Jacob McGivens tries to stop California from joining the Union--the mysterious black-caped masked swordsman, Alejandro de la Vega, aka Zorro, finds himself in an unavoidable predicament. Having spent almost a decade protecting his people and fighting injustice, Alejandro’s wife, Elena, insists that he gives up the black mask, and become a true father to their eight-year-old son, Joaquin. However, when Elena leaves him for the French count, Armand, it becomes evident that the conceited aristocrat is up to no good. Can Zorro, the legendary defender of the innocent, save both his marriage and the country?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "gs19Vnl8M3E"
+    "trailerYoutubeId": "gs19Vnl8M3E",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0120746",
@@ -89408,11 +89648,13 @@
     "imdbRating": 6.8,
     "tmdbRating": 6.8,
     "releaseDate": "1998-07-17",
-    "plot": "",
-    "country": "",
+    "plot": "In 1821 Old California, mysterious black-caped masked avenger of the oppressed, Don Diego de la Vega--Zorro--lands in jail after once again humiliating the evil Spanish governor Don Rafael Montero. With his only daughter raised by Don Rafael as his own, the grizzled swordsman makes a daring escape nearly two decades later, and takes under his wing the unrefined outlaw Alejandro Murietta to teach him the ropes and hopefully become the next Zorro. Now, the stage is set for a ferocious final confrontation, as the new young rapier-wielder prepares to thwart the despicable governor’s sinister plans. Can Alejandro live up to legendary Zorro’s name?",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "abwtRFZx8Rs"
+    "trailerYoutubeId": "abwtRFZx8Rs",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0406310",
@@ -89449,11 +89691,13 @@
     "imdbRating": 6,
     "tmdbRating": 6,
     "releaseDate": "2004-08-25",
-    "plot": "",
-    "country": "",
+    "plot": "In this animated prequel to Van Helsing (2004), Van Helsing travels to Victorian London to catch the mysterious, inhuman serial killer, Mr. Hyde.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "ESZLUTJ2u0k"
+    "trailerYoutubeId": "ESZLUTJ2u0k",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0834001",
@@ -89486,11 +89730,13 @@
     "imdbRating": 6.5,
     "tmdbRating": 6.5,
     "releaseDate": "2009-01-23",
-    "plot": "",
-    "country": "",
+    "plot": "The prequel story traces the origins of the centuries-old blood feud between the aristocratic vampires and their onetime slaves, the Lycans. In the Dark Ages, a young Lycan named Lucian emerges as a powerful leader who rallies the werewolves to rise up against Viktor, the cruel vampire king who has enslaved them. Lucian is joined by his secret lover, Sonja, in his battle against the Vampire army and his struggle for Lycan freedom.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "pexrer4SweU"
+    "trailerYoutubeId": "pexrer4SweU",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1496025",
@@ -89523,11 +89769,13 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "2012-01-20",
-    "plot": "",
-    "country": "",
+    "plot": "Mankind discover the existence of the Vampire and Lycan species and begin a war to annihilate the races. When Selene meets with Michael, they’re hit by a grenade. 12 years later, Selene awakens and meets the vampire, David. She learns she had been the subject of scientist Dr. Jacob Lane, and the Vampire and Lycan species have been practically eradicated from Earth. Now, Selene and David must protect a 12-year-old girl against the Lycans who intend to use her.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "cfx6LAjU7fE"
+    "trailerYoutubeId": "cfx6LAjU7fE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0338526",
@@ -89559,11 +89807,13 @@
     "imdbRating": 6.1,
     "tmdbRating": 6.1,
     "releaseDate": "2004-05-07",
-    "plot": "",
-    "country": "",
+    "plot": "Van Helsing is in the world to rid all evil, even if not everyone agrees with him. The Vatican sends the monster hunter and his ally, Carl, to Transylvania. They have been sent to this land to stop the powerful Count Dracula. Whilst there they join forces with a Gypsy Princess called Anna Valerious, who is determined to end an ancient curse on her family by destroying the vampire. They just don’t know how!",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "W6C6qcCW2JE"
+    "trailerYoutubeId": "W6C6qcCW2JE",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt1411250",
@@ -89599,11 +89849,13 @@
     "imdbRating": 6.4,
     "tmdbRating": 6.4,
     "releaseDate": "2013-09-06",
-    "plot": "",
-    "country": "",
+    "plot": "The infamous Riddick has been left for dead on a sun-scorched planet that appears to be lifeless. Soon, however, he finds himself fighting for survival against alien predators more lethal than any human he’s encountered. The only way off is for Riddick to activate an emergency beacon and alert mercenaries who rapidly descend to the planet in search of their bounty. The first ship to arrive carries a new breed of merc, more lethal and violent, while the second is captained by a man whose pursuit of Riddick is more personal. With time running out and a storm on the horizon that no one could survive, his hunters won’t leave the planet without Riddick’s head as their trophy.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "Zswv4XRN4Ls"
+    "trailerYoutubeId": "Zswv4XRN4Ls",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt0296572",
@@ -89639,11 +89891,13 @@
     "imdbRating": 6.6,
     "tmdbRating": 6.6,
     "releaseDate": "2004-06-11",
-    "plot": "",
-    "country": "",
+    "plot": "Richard Bruno Riddick (Vin Diesel), now a hunted man, finds himself in the middle of two opposing forces in a major crusade. Lord Marshal (Colm Feore) is a warrior priest who is the leader of a sect that is waging the tenth and perhaps final crusade five hundred years in the future. Aereon (Dame Judi Dench) is an ambassador from the Elemental race. She is an ethereal being who helps Riddick unearth his origins.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "6kVvQ1Rtb9k"
+    "trailerYoutubeId": "6kVvQ1Rtb9k",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt7798634",
@@ -89667,7 +89921,7 @@
     "cast": [
       "Samara Weaving",
       "Adam Brody",
-      "Mark O'Brien"
+      "Mark O’Brien"
     ],
     "director": "Matt Bettinelli-Olpin,Tyler Gillett",
     "writers": [
@@ -89677,16 +89931,18 @@
     "imdbRating": 6.9,
     "tmdbRating": 6.9,
     "releaseDate": "2019-08-21",
-    "plot": "",
-    "country": "",
+    "plot": "All of us have made certain efforts so our in-laws will like us, but Grace is going to have to give it her all if she wants to fit in with her brand new husband’s wealthy dynasty, who require her to follow a brutal tradition: for the bride to try to survive her wedding night while the rest of them hunt her down. The class struggle stuff hits the proverbial fan in this extremely black satire starring a brilliant Samara Weaving and including an uncommonly perverse Andie MacDowell.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "5RF5zHVIuv4"
+    "trailerYoutubeId": "5RF5zHVIuv4",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt5164214",
-    "title": "Ocean's Eight",
-    "originalTitle": "Ocean's Eight",
+    "title": "Ocean’s Eight",
+    "originalTitle": "Ocean’s Eight",
     "year": 2018,
     "type": "Movie",
     "myRating": 6,
@@ -89716,11 +89972,16 @@
     "imdbRating": 6.3,
     "tmdbRating": 6.3,
     "releaseDate": "2018-06-08",
-    "plot": "",
-    "country": "",
+    "plot": "Following her release from prison, Debbie Ocean, younger sister of the late Danny Ocean, meets with her former partner-in-crime Lou to convince her to join a heist that she planned while serving her sentence. Debbie and Lou assemble the rest of their team: Rose Weil, a disgraced fashion designer who is deeply in debt with the IRS; Amita, a jewelry maker and friend of Debbie’s who is eager to move out of her mother’s house and start her own life; Nine Ball, a computer hacker; Constance, a street hustler and pickpocket; and Tammy, a profiteer and another friend of Debbie’s who has been secretly selling stolen goods out of her family’s suburban home. Debbie plans to steal the Toussaint, a $150 million Cartier necklace, from the Met Gala in three-and-a-half weeks, and use Met Gala co-host Daphne Kluger, a famous actress known for her long neck, as an unwitting mule who will wear the necklace into the gala.",
+    "country": "United States",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "n5LoVcVsiSQ"
+    "trailerYoutubeId": "n5LoVcVsiSQ",
+    "backdrop": "",
+    "plotTr": "",
+    "franchiseId": "oceans",
+    "franchiseName": "Ocean’s",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt1171721",
@@ -89752,11 +90013,13 @@
     "imdbRating": 6.9,
     "tmdbRating": 6.9,
     "releaseDate": "2008-02-08",
-    "plot": "",
-    "country": "",
+    "plot": "The new Turkish lecturer who came from a different country seems different from the first lecture. \"First lesson you can get from this course is none of you need any lesson.\" was his first words in the course, but one of the student discover that they can learn a lot of things from him and his mysterious past.",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
-    "trailerYoutubeId": "IgE09x0ofb8"
+    "trailerYoutubeId": "IgE09x0ofb8",
+    "backdrop": "",
+    "plotTr": ""
   },
   {
     "imdbId": "tt2865318",
@@ -89788,8 +90051,8 @@
     "imdbRating": 4.3,
     "tmdbRating": 4.3,
     "releaseDate": "2013-05-03",
-    "plot": "",
-    "country": "",
+    "plot": "Zafer, who is president in a small town, is in search of solutions to prevent unemployment and migration in his town. However, not every solution he finds comes to life because of the treachery of his biggest rival, former mayor C...",
+    "country": "Türkiye",
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "JJIw0NIjMdg",
