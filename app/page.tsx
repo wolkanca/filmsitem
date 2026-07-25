@@ -50,7 +50,7 @@ export default async function HomePage() {
             ? anyCinema
             : movies;
 
-  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 63;
+  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 1;
 
   const featuredMovie = featuredPool[currentDay % featuredPool.length];
 
@@ -60,7 +60,7 @@ export default async function HomePage() {
   if (featuredPool.length > 0) {
     const uniqueIndices = new Set<number>();
     const countToPick = Math.min(7, featuredPool.length);
-    let offset = 0;
+    let offset = 186;
 
     while (uniqueIndices.size < countToPick) {
       const idx = (currentDay + offset) % featuredPool.length;

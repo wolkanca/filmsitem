@@ -72555,7 +72555,10 @@
     "country": "United States, Italy, Canada",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Bir New York polisi (Adam Sandler) sonunda karısını (Jennifer Aniston) uzun zamandır söz verdiği Avrupa gezisine götürür. Uçakta tesadüfen karşılaşmaları sonucu yaşlı milyarder Malcolm Quince’in süper yatında düzenlenen samimi bir aile toplantısına davet edilirler. Quince öldürüldüğünde ise modern bir polisiye romanın baş şüphelileri haline gelirler."
+    "plotTr": "Bir New York polisi (Adam Sandler) sonunda karısını (Jennifer Aniston) uzun zamandır söz verdiği Avrupa gezisine götürür. Uçakta tesadüfen karşılaşmaları sonucu yaşlı milyarder Malcolm Quince’in süper yatında düzenlenen samimi bir aile toplantısına davet edilirler. Quince öldürüldüğünde ise modern bir polisiye romanın baş şüphelileri haline gelirler.",
+    "franchiseId": "murder-mystery",
+    "franchiseName": "Murder Mystery",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt4463894",
@@ -80008,7 +80011,10 @@
     "country": "United States",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Tam zamanlı dedektifler Nick ve Audrey, özel dedektiflik bürolarını kurmak için mücadele etmektedirler. Arkadaşları Maharaja’nın görkemli düğününde kaçırılmasıyla kendilerini uluslararası bir kaçırma olayının merkezinde bulurlar."
+    "plotTr": "Tam zamanlı dedektifler Nick ve Audrey, özel dedektiflik bürolarını kurmak için mücadele etmektedirler. Arkadaşları Maharaja’nın görkemli düğününde kaçırılmasıyla kendilerini uluslararası bir kaçırma olayının merkezinde bulurlar.",
+    "franchiseId": "murder-mystery",
+    "franchiseName": "Murder Mystery",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt18315204",
