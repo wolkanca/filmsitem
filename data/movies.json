@@ -89855,7 +89855,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "Zswv4XRN4Ls",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "",
+    "franchiseId": "riddick",
+    "franchiseName": "Riddick",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0296572",
@@ -89897,7 +89900,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "6kVvQ1Rtb9k",
     "backdrop": "",
-    "plotTr": ""
+    "plotTr": "",
+    "franchiseId": "riddick",
+    "franchiseName": "Riddick",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt7798634",
