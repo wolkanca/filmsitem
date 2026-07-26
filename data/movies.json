@@ -26676,9 +26676,12 @@
     ],
     "runtime": 103,
     "cast": [
+      "Sylvester Stallone",
       "Jason Statham",
       "50 Cent",
-      "Megan Fox"
+      "Megan Fox",
+      "Andy Garcia",
+      "Dolph Lundgren"
     ],
     "director": "Scott Waugh",
     "writers": [
@@ -26694,7 +26697,10 @@
     "omdbType": "",
     "boxOffice": "",
     "trailerYoutubeId": "_nXejmpC7qM",
-    "plotTr": "Yeni nesil yıldızlar, Expend4bles’da adrenalin dolu bir macera için dünyanın en iyi aksiyon yıldızlarına katılıyor. Seçkin paralı askerlerden oluşan ekip olarak yeniden bir araya gelen Jason Statham, Dolph Lundgren, Randy Couture ve Sylvester Stallone’a ilk kez Curtis “50 Cent” Jackson, Megan Fox, Tony Jaa, Iko Uwais, Jacob Scipio, Levy Tran ve Andy Garcia katılıyor. Elde edebilecekleri her türlü silah ve bunları kullanma becerisiyle donanmış olan Expendables, dünyanın son savunma hattı ve diğer tüm seçenekler tükendiğinde çağrılan ekiptir. Ancak yeni tarz ve taktiklere sahip yeni ekip üyeleri, “yeni kan” kavramına yepyeni bir anlam kazandıracak."
+    "plotTr": "Yeni nesil yıldızlar, Expend4bles’da adrenalin dolu bir macera için dünyanın en iyi aksiyon yıldızlarına katılıyor. Seçkin paralı askerlerden oluşan ekip olarak yeniden bir araya gelen Jason Statham, Dolph Lundgren, Randy Couture ve Sylvester Stallone’a ilk kez Curtis “50 Cent” Jackson, Megan Fox, Tony Jaa, Iko Uwais, Jacob Scipio, Levy Tran ve Andy Garcia katılıyor. Elde edebilecekleri her türlü silah ve bunları kullanma becerisiyle donanmış olan Expendables, dünyanın son savunma hattı ve diğer tüm seçenekler tükendiğinde çağrılan ekiptir. Ancak yeni tarz ve taktiklere sahip yeni ekip üyeleri, “yeni kan” kavramına yepyeni bir anlam kazandıracak.",
+    "franchiseId": "cehennem-melekleri",
+    "franchiseName": "Cehennem Melekleri",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt3014866",
@@ -40068,7 +40074,9 @@
     "cast": [
       "Sylvester Stallone",
       "Jason Statham",
-      "Jet Li"
+      "Jet Li",
+      "Dolph Lundgren",
+      "Eric Roberts"
     ],
     "director": "Sylvester Stallone",
     "writers": [
@@ -44275,8 +44283,12 @@
     "runtime": 103,
     "cast": [
       "Sylvester Stallone",
+      "Jason Statham",
       "Liam Hemsworth",
-      "Randy Couture"
+      "Randy Couture",
+      "Chuck Norris",
+      "Jean-Claude Van Damme",
+      "Arnold Schwarzenegger"
     ],
     "director": "Simon West",
     "writers": [
@@ -50702,11 +50714,15 @@
     "cast": [
       "Sylvester Stallone",
       "Jason Statham",
-      "Jet Li"
+      "Jet Li",
+      "Arnold Schwarzenegger",
+      "Harrison Ford",
+      "Mel Gibson"
     ],
     "director": "Patrick Hughes",
     "writers": [
       "Sylvester Stallone",
+      "Jason Statham",
       "Creighton Rothenberger",
       "Katrin Benedikt"
     ],
