@@ -539,7 +539,7 @@ export default function AdminMoviesPage() {
                       <div className="flex items-start justify-between gap-2 flex-wrap">
                         <div>
                           <p className="text-sm font-extrabold text-zinc-200 truncate max-w-xs">{movie.title}</p>
-                          <p className="text-[11px] text-zinc-500 font-mono mt-0.5">{movie.imdbId} · {movie.year} · {movie.type}</p>
+                          <p className="text-[11px] text-zinc-500 font-mono mt-0.5">{movie.imdbId} · {movie.year}</p>
                         </div>
                         {/* Status badges */}
                         <div className="flex items-center gap-1.5 flex-shrink-0">
