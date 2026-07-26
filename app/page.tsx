@@ -60,7 +60,7 @@ export default async function HomePage() {
   if (featuredPool.length > 0) {
     const uniqueIndices = new Set<number>();
     const countToPick = Math.min(7, featuredPool.length);
-    let offset = 105;
+    let offset = 95;
 
     while (uniqueIndices.size < countToPick) {
       const idx = (currentDay + offset) % featuredPool.length;
