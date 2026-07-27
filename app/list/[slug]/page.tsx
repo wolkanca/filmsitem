@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import ListDetailTabs from '@/components/ListDetailTabs';
 
-export const revalidate = 604800; // 7 gün (saniye)
+export const revalidate = 2592000; // 30 gün (saniye)
 
 interface Props {
   params: Promise<{

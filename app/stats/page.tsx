@@ -3,7 +3,7 @@ import { getStats } from '@/lib/db';
 import StatsCharts from '@/components/StatsCharts';
 import { Film, Star, Clock, Trophy, Heart, UserCheck } from 'lucide-react';
 
-export const revalidate = 604800; // 7 gün (saniye)
+export const revalidate = 2592000; // 30 gün (saniye)
 
 export const metadata: Metadata = {
   title: 'İstatistikler',

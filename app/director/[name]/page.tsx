@@ -6,7 +6,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { normalizeSearchString } from '@/lib/utils';
 
-export const revalidate = 604800; // 7 gün (saniye)
+export const revalidate = 2592000; // 30 gün (saniye)
 
 interface Props {
   params: Promise<{ name: string }>;
