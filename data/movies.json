@@ -12576,7 +12576,6 @@
       "Michael J. Fox",
       "Christopher Lloyd",
       "Lea Thompson",
-      "Crispin Glover",
       "Tom Wilson"
     ],
     "director": "Robert Zemeckis",
@@ -15033,7 +15032,6 @@
       "Michael J. Fox",
       "Christopher Lloyd",
       "Mary Steenburgen",
-      "Tom Wilson",
       "Lea Thompson"
     ],
     "director": "Robert Zemeckis",
@@ -21629,7 +21627,8 @@
     "cast": [
       "Cem Gelinoglu",
       "Melis Babadag",
-      "Ege Kökenli"
+      "Ege Kökenli",
+      "Müfit Kayacan"
     ],
     "director": "Onur Bilgetay",
     "writers": [
@@ -21644,7 +21643,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "vSLqy50b0lE",
     "plotTr": "Bir dizi yalan ve yanlış anlaşılmanın ardından, dürüst bir zanaatkar olan Aykut, sigorta acentesi Gulsah ile evlilik hazırlıklarının ortasında bulur kendini. Sorun şu ki, Aykut bir hafta sonra nişanlısı Nurhan ile evlenecek ve ailesi gerçeği öğrenirse onu öldürebilir.",
-    "plot": "After a series of lies and misunderstandings, Aykut, a straightforward craftsmen, finds himself in the middle of wedding plans with Gulsah, an insurance broker. The problem is that Aykut is marrying with his fiance Nurhan a week later, whose family could kill him if they know the truth."
+    "plot": "After a series of lies and misunderstandings, Aykut, a straightforward craftsmen, finds himself in the middle of wedding plans with Gulsah, an insurance broker. The problem is that Aykut is marrying with his fiance Nurhan a week later, whose family could kill him if they know the truth.",
+    "franchiseId": "aykut-eniste",
+    "franchiseName": "Aykut Enişte",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt12738164",
@@ -21666,7 +21668,8 @@
     "cast": [
       "Cem Gelinoglu",
       "Melis Babadag",
-      "Hakan Yilmaz"
+      "Hakan Yilmaz",
+      "Müfit Kayacan"
     ],
     "director": "Onur Bilgetay",
     "writers": [
@@ -21682,7 +21685,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "nYFSQzxaPS4",
     "plotTr": "Düğün zamanı geldi. Ancak yeni bir kayınbirader ortaya çıkıyor. Eski yalanların ardından yenileri geliyor. Aykut’un hayatı yeniden bir kabusa dönüşüyor.",
-    "plot": "It is wedding time. But a new brother in-law appears. New lies follow others. Life of Aykut becomes a nightmare again."
+    "plot": "It is wedding time. But a new brother in-law appears. New lies follow others. Life of Aykut becomes a nightmare again.",
+    "franchiseId": "aykut-eniste",
+    "franchiseName": "Aykut Enişte",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt6082222",
@@ -29115,8 +29121,8 @@
       "Johnny Depp",
       "Geoffrey Rush",
       "Orlando Bloom",
-	  "Keira Knightley",
-	  "Jack Davenport"
+      "Keira Knightley",
+      "Jack Davenport"
     ],
     "director": "Gore Verbinski",
     "writers": [
@@ -32272,7 +32278,7 @@
       "Hugo Weaving",
       "Natalie Portman",
       "Rupert Graves",
-	  "Stephen Rea"
+      "Stephen Rea"
     ],
     "director": "James McTeigue",
     "writers": [
@@ -32750,14 +32756,14 @@
       "Johnny Depp",
       "Orlando Bloom",
       "Keira Knightley",
-	  "Jack Davenport"
+      "Jack Davenport"
     ],
     "director": "Gore Verbinski",
     "writers": [
       "Ted Elliott",
       "Terry Rossio",
       "Stuart Beattie",
-	  "Jay Wolpert"
+      "Jay Wolpert"
     ],
     "imdbRating": 7.4,
     "tmdbRating": 7.4,
@@ -34158,7 +34164,7 @@
       "Johnny Depp",
       "Orlando Bloom",
       "Keira Knightley",
-	  "Geoffrey Rush"
+      "Geoffrey Rush"
     ],
     "director": "Gore Verbinski",
     "writers": [
@@ -41815,8 +41821,8 @@
       "Johnny Depp",
       "Penélope Cruz",
       "Ian McShane",
-	  "Geoffrey Rush",
-	  "Kevin McNally"
+      "Geoffrey Rush",
+      "Kevin McNally"
     ],
     "director": "Rob Marshall",
     "writers": [
@@ -51258,7 +51264,8 @@
     "cast": [
       "Cem Yilmaz",
       "Tülin Özen",
-      "Zafer Algöz"
+      "Zafer Algöz",
+      "Cengiz Bozkurt"
     ],
     "director": "Cem Yilmaz",
     "writers": [
@@ -56931,7 +56938,8 @@
     "cast": [
       "Demet Akbag",
       "Yetkin Dikinciler",
-      "Sevil Aki"
+      "Sevil Aki",
+      "Batuhan Begimgil"
     ],
     "director": "Çagan Irmak",
     "writers": [
@@ -59133,7 +59141,7 @@
       "Alexander Skarsgård",
       "Rory J. Saper",
       "Christian Stevens",
-	  "Christoph Waltz"
+      "Christoph Waltz"
     ],
     "director": "David Yates",
     "writers": [
@@ -59249,7 +59257,7 @@
       "Aaron Paul",
       "Lena Headey",
       "Sean Bean",
-	  "Adrian Bouchet"
+      "Adrian Bouchet"
     ],
     "director": "Takeshi Nozue",
     "writers": [
@@ -61207,7 +61215,8 @@
     "cast": [
       "Tolga Çevik",
       "Melis Birkan",
-      "Tuna Çevik"
+      "Tuna Çevik",
+      "Cengiz Bozkurt"
     ],
     "director": "Tolga Örnek",
     "writers": [
@@ -69228,7 +69237,7 @@
       "Tom Holland",
       "Michael Keaton",
       "Robert Downey Jr.",
-	  "Marisa Tomei"
+      "Marisa Tomei"
     ],
     "director": "Jon Watts",
     "writers": [
@@ -70649,7 +70658,7 @@
       "Chadwick Boseman",
       "Michael B. Jordan",
       "Lupita Nyong’o",
-	  "Danai Gurira"
+      "Danai Gurira"
     ],
     "director": "Ryan Coogler",
     "writers": [
@@ -73203,7 +73212,7 @@
       "Tom Holland",
       "Samuel L. Jackson",
       "Jake Gyllenhaal",
-	  "Marisa Tomei"
+      "Marisa Tomei"
     ],
     "director": "Jon Watts",
     "writers": [
@@ -78379,7 +78388,7 @@
       "Tom Holland",
       "Zendaya",
       "Benedict Cumberbatch",
-	  "Jacob Batalon"
+      "Jacob Batalon"
     ],
     "director": "Jon Watts",
     "writers": [
@@ -79713,7 +79722,7 @@
       "Letitia Wright",
       "Lupita Nyong’o",
       "Danai Gurira",
-	  "Winston Duke"
+      "Winston Duke"
     ],
     "director": "Ryan Coogler",
     "writers": [
