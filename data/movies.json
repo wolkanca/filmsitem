@@ -29114,7 +29114,9 @@
     "cast": [
       "Johnny Depp",
       "Geoffrey Rush",
-      "Orlando Bloom"
+      "Orlando Bloom",
+	  "Keira Knightley",
+	  "Jack Davenport"
     ],
     "director": "Gore Verbinski",
     "writers": [
@@ -32269,7 +32271,8 @@
     "cast": [
       "Hugo Weaving",
       "Natalie Portman",
-      "Rupert Graves"
+      "Rupert Graves",
+	  "Stephen Rea"
     ],
     "director": "James McTeigue",
     "writers": [
@@ -32746,13 +32749,15 @@
     "cast": [
       "Johnny Depp",
       "Orlando Bloom",
-      "Keira Knightley"
+      "Keira Knightley",
+	  "Jack Davenport"
     ],
     "director": "Gore Verbinski",
     "writers": [
       "Ted Elliott",
       "Terry Rossio",
-      "Stuart Beattie"
+      "Stuart Beattie",
+	  "Jay Wolpert"
     ],
     "imdbRating": 7.4,
     "tmdbRating": 7.4,
@@ -34152,7 +34157,8 @@
     "cast": [
       "Johnny Depp",
       "Orlando Bloom",
-      "Keira Knightley"
+      "Keira Knightley",
+	  "Geoffrey Rush"
     ],
     "director": "Gore Verbinski",
     "writers": [
@@ -41808,7 +41814,9 @@
     "cast": [
       "Johnny Depp",
       "Penélope Cruz",
-      "Ian McShane"
+      "Ian McShane",
+	  "Geoffrey Rush",
+	  "Kevin McNally"
     ],
     "director": "Rob Marshall",
     "writers": [
@@ -59123,8 +59131,9 @@
     "runtime": 110,
     "cast": [
       "Alexander Skarsgård",
-      "Rory J Saper",
-      "Christian Stevens"
+      "Rory J. Saper",
+      "Christian Stevens",
+	  "Christoph Waltz"
     ],
     "director": "David Yates",
     "writers": [
@@ -59239,7 +59248,8 @@
     "cast": [
       "Aaron Paul",
       "Lena Headey",
-      "Sean Bean"
+      "Sean Bean",
+	  "Adrian Bouchet"
     ],
     "director": "Takeshi Nozue",
     "writers": [
@@ -69217,7 +69227,8 @@
     "cast": [
       "Tom Holland",
       "Michael Keaton",
-      "Robert Downey Jr."
+      "Robert Downey Jr.",
+	  "Marisa Tomei"
     ],
     "director": "Jon Watts",
     "writers": [
@@ -70637,7 +70648,8 @@
     "cast": [
       "Chadwick Boseman",
       "Michael B. Jordan",
-      "Lupita Nyong’o"
+      "Lupita Nyong’o",
+	  "Danai Gurira"
     ],
     "director": "Ryan Coogler",
     "writers": [
@@ -73190,7 +73202,8 @@
     "cast": [
       "Tom Holland",
       "Samuel L. Jackson",
-      "Jake Gyllenhaal"
+      "Jake Gyllenhaal",
+	  "Marisa Tomei"
     ],
     "director": "Jon Watts",
     "writers": [
@@ -78365,7 +78378,8 @@
     "cast": [
       "Tom Holland",
       "Zendaya",
-      "Benedict Cumberbatch"
+      "Benedict Cumberbatch",
+	  "Jacob Batalon"
     ],
     "director": "Jon Watts",
     "writers": [
@@ -79698,7 +79712,8 @@
     "cast": [
       "Letitia Wright",
       "Lupita Nyong’o",
-      "Danai Gurira"
+      "Danai Gurira",
+	  "Winston Duke"
     ],
     "director": "Ryan Coogler",
     "writers": [
