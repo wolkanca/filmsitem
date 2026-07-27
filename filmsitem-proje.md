@@ -1,522 +1,148 @@
-# 🎬 Film Günlüğüm
+# 🎬 İzlediklerim - Kişisel Sinema Günlüğü (Proje Detayları)
 
 ## Proje Tanımı
 
-**Film Günlüğüm**, IMDb export dosyalarından oluşturulan kişisel film arşivini yayınlamak için geliştirilecek modern, hızlı ve SEO dostu bir web uygulamasıdır.
+**İzlediklerim**, IMDb export dosyalarından (CSV/XML) beslenen kişisel film arşivinizi, izleme geçmişinizi, puanlamalarınızı ve detaylı sinema istatistiklerinizi estetik, hızlı ve SEO dostu bir arayüzle sunan modern bir web uygulamasıdır.
 
-Bu proje bir IMDb alternatifi değildir.
-
-Amaç; kullanıcının yıllar boyunca izlediği filmleri, verdiği puanları, oluşturduğu listeleri ve kişisel sinema istatistiklerini estetik bir arayüzle sunmaktır.
-
-Tasarım ve içerik mimarisi mümkün olduğunca bir **kişisel sinema günlüğü** hissi vermelidir.
+Bu proje bir IMDb veya Letterboxd alternatifi değildir. Temel amaç, kullanıcının yıllar boyunca izlediği filmleri, sinema zevkini ve izleme istatistiklerini yansıtan premium bir **dijital sinema günlüğü** oluşturmaktır. Ziyaretçiler bu platformu yeni filmler keşfetmekten ziyade, kullanıcının kişisel sinema yolculuğunu ve tercihlerini incelemek için ziyaret eder.
 
 ---
 
-# Teknoloji
+## 🛠️ Teknoloji Yığını
 
-* Next.js 15 (App Router)
-* TypeScript
-* Tailwind CSS
-* Static Site Generation (SSG)
-* Responsive Tasarım
-* Dark Mode (varsayılan)
-* JSON veya SQLite veri kaynağı
-* Vercel uyumlu deployment
-* TypeScript Strict Mode
-* ESLint
-* Prettier
+* **Framework:** Next.js 15 (App Router & React 19)
+* **Programlama Dili:** TypeScript (Strict Mode)
+* **Stil Yönetimi:** Tailwind CSS & Vanilla CSS (Cam efekti / Glassmorphism)
+* **İkon Kütüphanesi:** Lucide React
+* **Veri Depolama:** `data/movies.json` (Local) & Vercel Blob Store (Cloud)
+* **Yapay Zeka & Veri Zenginleştirme:** Gemini API (`@google/genai`), OMDb API, TMDB API
+* **Dağıtım (Deployment):** Vercel & Netlify uyumlu statik/dinamik hibrit mimari
 
 ---
 
-# Temel Amaçlar
+## 🎯 Temel Özellikler
 
-Sistem aşağıdaki içerikleri yayınlayabilmelidir:
+Sistem, kişisel film arşiviniz üzerinden şu özellikleri dinamik olarak sunar:
 
-* İzlediğim filmler
-* Verdiğim puanlar
-* Favorilerim
-* IMDb listelerim
-* Film istatistiklerim
-* İzleme geçmişim
+* **Kapsamlı Film & Dizi Listeleme:** Arama, gelişmiş filtreleme (tür, yıl, puan, yönetmen) ve sıralama seçenekleri.
+* **Gelişmiş İstatistikler ve Grafikler:** Yıllık izleme sayıları, puan dağılımları, favori tür/yönetmen/oyuncular ve interaktif grafikler.
+* **Özel Arama Motoru (CMD+K / Ctrl+K):** Hızlı ve anlık sonuç veren küresel arama bileşeni.
+* **Sezon ve Bölüm Desteği:** TV dizilerinin sezon ve bölümlerini ayrıştırıp kişisel puan ve izleme tarihleriyle listeleme.
+* **Admin Yönetim Paneli (`/admin`):** Tarayıcı üzerinden IMDb verisi yükleme, eksik posterleri/fragmanları bulma, Gemini ile özet çevirisi yapma ve buluta senkronizasyon.
+* **Zenginleştirilmiş Medya:** YouTube fragman entegrasyonu, yüksek çözünürlüklü poster ve arka plan (backdrop) görselleri.
+* **Tam SEO Uyumluluğu:** Dinamik Open Graph görselleri, meta etiketleri, robots.txt, sitemap.xml ve JSON-LD şema yapıları.
 
 ---
 
-# Veri Kaynağı
+## 🗄️ Veri Modeli
 
-## 1. IMDb Export
+Projede kullanılan temel TypeScript veri modelleri [types/index.ts](file:///c:/filmsitem/types/index.ts) dosyasında tanımlanmıştır:
 
-Sistem IMDb'den alınan XML veya CSV dosyalarını desteklemelidir.
-
-Örnek alanlar:
-
-```json
-{
-  "imdbId": "tt0133093",
-  "title": "The Matrix",
-  "year": 1999,
-  "myRating": 10,
-  "watchDate": "2025-03-10",
-  "listName": "Favoriler"
+```typescript
+export interface Episode {
+  imdbId: string;
+  title: string;
+  episodeNumber: number;
+  seasonNumber: number;
+  myRating: number;
+  watchDate: string;
+  runtime: number;
+  imdbRating: number;
+  overview?: string;
 }
-```
 
----
+export interface Season {
+  seasonNumber: number;
+  episodes: Episode[];
+}
 
-## 2. Film Verisi Zenginleştirme
-
-IMDb ID kullanılarak TMDb veya OMDb API üzerinden aşağıdaki bilgiler çekilmelidir:
-
-* poster
-* backdrop
-* overview
-* genres
-* runtime
-* cast
-* director
-* writers
-* imdbRating
-* tmdbRating
-
----
-
-## Import Sistemi
-
-Komut:
-
-```bash
-npm run import imdb-export.xml
-```
-
-İşlem sonucunda:
-
-```text
-/data/movies.json
-```
-
-oluşturulmalıdır.
-
----
-
-# Veri Modeli
-
-Örnek:
-
-```ts
 export interface Movie {
   imdbId: string;
   title: string;
+  originalTitle: string;
   year: number;
+  type: string; // Movie, TV Series, TV Episode, TV Special, TV Mini Series
 
   myRating: number;
   watchDate: string;
   listName: string[];
 
   poster: string;
-  backdrop: string;
+  backdrop?: string;
 
-  overview: string;
+  overview: string; // Orijinal özet
+  plot: string;      // Detaylı özet
+  plotTr?: string;   // Türkçe özet (Gemini ile çevrilmiş)
+  country: string;
+  omdbType: string;
+  boxOffice: string;
 
   genres: string[];
-
   runtime: number;
 
   cast: string[];
-
   director: string;
-
   writers: string[];
 
   imdbRating: number;
   tmdbRating: number;
+  releaseDate?: string;
+  trailerYoutubeId?: string;
+  seasons?: Season[];
+
+  // Film serisi bilgileri (Franchise)
+  franchiseId?: string;
+  franchiseName?: string;
+  franchiseOrder?: number;
 }
 ```
 
 ---
 
-# Ana Sayfa
+## 🗂️ Sayfa ve URL Mimarisi
 
-## URL
+### Kullanıcı Sayfaları
 
-```text
-/
-```
+1. **Ana Sayfa (`/`):**
+   * Toplam film sayısı, izleme süresi ve ortalama puanı gösteren özet sayaç.
+   * Son eklenen filmler, en yüksek puan verilenler ve rastgele film önerisi kartları.
+2. **Filmler Sayfası (`/movies`):**
+   * Grid (Afiş) veya Liste formatında gösterim.
+   * Tür, Yıl, Yönetmen, Oyuncu ve Puan filtreleri.
+3. **Film Detay Sayfası (`/movie/[imdbId]`):**
+   * Geniş arka plan görseli (backdrop), afiş, film künyesi (süre, türler, yönetmen, oyuncular).
+   * Kişisel puan ve izleme tarihi.
+   * Varsa Türkçe film özeti (Gemini çevirisi) ve YouTube fragmanı.
+   * Benzer film önerileri.
+4. **Listeler Sayfası (`/lists` & `/list/[slug]`):**
+   * Kullanıcının IMDb'de oluşturduğu özel listelerin (Favoriler, İzlenecekler vb.) gösterimi.
+5. **İstatistikler Sayfası (`/stats`):**
+   * [StatsCharts.tsx](file:///c:/filmsitem/components/StatsCharts.tsx) bileşeniyle desteklenen interaktif grafikler (Bar, Histogram, Pasta Grafiği).
+6. **Yönetmen / Oyuncu / Tür / Yazar / Yıl Sayfaları:**
+   * `/director/[name]`, `/actor/[name]`, `/genre/[name]`, `/writer/[name]`, `/year/[year]` url yapıları ile tıklanan kişiye veya türe ait tüm filmlerin listelenmesi.
+7. **Rastgele Film Önerici (`/random`):**
+   * Kütüphaneden rastgele bir film seçer ve detay sayfasına yönlendirir.
 
----
+### Yönetici Sayfaları
 
-## Hero Alanı
-
-```text
-🎬 Film Günlüğüm
-
-Yıllardır izlediğim filmler,
-verdiğim puanlar ve kişisel sinema arşivim.
-
-Toplam Film: XXXX
-Ortalama Puan: X.X
-Toplam İzleme Süresi: XXXX Saat
-```
-
----
-
-## Bölümler
-
-### Son Eklenen Filmler
-
-Poster grid görünümü.
-
----
-
-### En Yüksek Puan Verdiklerim
-
-Kullanıcının verdiği puana göre sıralanmış filmler.
+* **Yönetici Paneli (`/admin`):** Sadece belirlenen yönetici e-postası (`ADMIN_EMAIL`) ile erişilebilen veri güncelleme ekranı.
+* **İçe Aktarma Paneli (`/admin/import`):** IMDb CSV dosyasını sürükle-bırak yöntemiyle sisteme yükler.
+* **Fragman Yönetimi (`/admin/check-trailers`):** Eksik YouTube fragmanlarını bulup ekleme.
+* **Film Yönetimi (`/admin/movies`):** Tüm filmlerin detaylarını düzenleme.
 
 ---
 
-### Son İzlediklerim
+## 🎨 Tasarım Standartları
 
-İzleme tarihine göre sıralama.
-
----
-
-### Rastgele Film Önerisi
-
-Her sayfa yenilendiğinde farklı bir film öner.
+* **Sinematik ve Premium Arayüz:** Koyu tema öncelikli, görsel odaklı premium tasarım.
+* **Glassmorphic Arayüz:** Modern "cam" efekti (`backdrop-blur`) ve yumuşak kenarlık geçişleri.
+* **Mikro Animasyonlar:** Kartların üzerine gelindiğinde (hover) uygulanan yumuşak büyüme efektleri ve parlama animasyonları.
+* **Responsive Tasarım:** Telefon, tablet ve masaüstü bilgisayarlarda kusursuz çalışan esnek ızgara (grid) yerleşimi.
 
 ---
 
-### Bu Akşam Ne İzlesem?
-
-Rastgele seçim ekranına yönlendirme.
-
----
-
-# Film Listeleme
-
-## URL
-
-```text
-/movies
-```
-
----
-
-## Özellikler
-
-### Arama
-
-* Film adı
-* Yönetmen
-* Oyuncu
-
----
-
-### Filtreler
-
-* Tür
-* Yıl
-* Yönetmen
-* Oyuncu
-* IMDb Puanı
-* Benim Puanım
-
----
-
-### Sıralama
-
-* Ad
-* Yıl
-* IMDb Puanı
-* Benim Puanım
-* İzleme Tarihi
-
----
-
-### Görünümler
-
-* Poster Grid
-* Liste Görünümü
-
----
-
-# Film Detay Sayfası
-
-## URL
-
-```text
-/movie/[imdbId]
-```
-
----
-
-## İçerik
-
-### Hero
-
-* Backdrop
-* Poster
-* Film Adı
-* Yıl
-
----
-
-### Bilgiler
-
-* Süre
-* Türler
-* Yönetmen
-* Senaristler
-* Oyuncular
-
----
-
-### Açıklama
-
-Film özeti.
-
----
-
-### Kişisel Bilgiler
-
-```text
-Benim Puanım: 9/10
-
-İzleme Tarihi:
-2025-03-10
-```
-
----
-
-### Benzer Filmler
-
-TMDb benzer filmler API'si kullanılabilir.
-
----
-
-# İstatistikler
-
-## URL
-
-```text
-/stats
-```
-
----
-
-## Kartlar
-
-* Toplam Film
-* Ortalama Puan
-* Toplam İzleme Süresi
-* En Çok İzlenen Tür
-* En Sevdiğim Yönetmen
-* En Sık İzlediğim Oyuncu
-
----
-
-## Grafikler
-
-### Yıllara Göre İzlenen Film Sayısı
-
-Bar Chart
-
----
-
-### Puan Dağılımı
-
-Histogram
-
----
-
-### Tür Dağılımı
-
-Pie Chart
-
----
-
-### En Çok İzlenen Yönetmenler
-
-Bar Chart
-
----
-
-### En Çok İzlenen Oyuncular
-
-Bar Chart
-
----
-
-# Listeler
-
-## URL
-
-```text
-/lists
-```
-
-IMDb listeleri otomatik oluşturulmalıdır.
-
-Örnek:
-
-* Favoriler
-* Bilim Kurgu
-* Kült Filmler
-* Tekrar İzlenecekler
-
----
-
-## Liste Detayı
-
-```text
-/list/[slug]
-```
-
-Listeye ait filmler görüntülenmelidir.
-
----
-
-# Favoriler
-
-## URL
-
-```text
-/favorites
-```
-
-Kullanıcının en yüksek puan verdiği filmler.
-
----
-
-# Rastgele Film
-
-## URL
-
-```text
-/random
-```
-
-Kütüphaneden rastgele bir film seçip göstermelidir.
-
----
-
-# Tasarım
-
-## İlham Kaynakları
-
-* Letterboxd
-* IMDb
-* Netflix
-
----
-
-## Tasarım Hedefleri
-
-* Büyük poster kullanımı
-* Sinematik görünüm
-* Cam efektleri (glassmorphism)
-* Akıcı animasyonlar
-* Mobil öncelikli yaklaşım
-* Minimal ama premium görünüm
-
----
-
-# SEO
-
-Her film sayfası için:
-
-* Dynamic Title
-* Meta Description
-* Open Graph
-* Twitter Card
-* Canonical URL
-* JSON-LD Movie Schema
-
-oluşturulmalıdır.
-
----
-
-# Performans
-
-Hedefler:
-
-* Lighthouse 95+
-* Tam statik üretim
-* Lazy Loading
-* Görsel optimizasyonu
-* Route prefetching
-* ISR desteği
-
----
-
-# Ekstra Özellikler
-
-### Poster Önizleme
-
-Poster tıklanınca büyük görünüm açılmalı.
-
----
-
-### Klavye Desteği
-
-* ← Önceki film
-* → Sonraki film
-* ESC Kapat
-
----
-
-### RSS Feed
-
-```text
-/rss.xml
-```
-
----
-
-### Sitemap
-
-```text
-/sitemap.xml
-```
-
----
-
-### Robots
-
-```text
-/robots.txt
-```
-
----
-
-# Klasör Yapısı
-
-```text
-app/
-components/
-lib/
-scripts/
-data/
-public/
-types/
-```
-
----
-
-# Kod Kalitesi
-
-* Production Ready
-* Reusable Component Architecture
-* Strong Type Safety
-* Server Components öncelikli kullanım
-* Accessibility desteği
-* Clean Code prensipleri
-* Maintainable yapı
-
----
-
-# Ürün Vizyonu
-
-Bu proje bir film veritabanı değildir.
-
-Bu proje, bir sinemaseverin yıllar boyunca oluşturduğu kişisel film arşivini, puanlarını, izleme geçmişini ve sinema zevkini estetik bir şekilde sergileyen dijital bir film günlüğüdür.
-
-Ziyaretçi filmleri keşfetmek için değil, kullanıcının sinema yolculuğunu keşfetmek için siteye gelmelidir.
+## 🚀 Performans ve SEO
+
+* **Statik Üretim (SSG):** Hızlı sayfa yükleme süreleri için statik sayfa üretimi ve ISR (Incremental Static Regeneration) desteği.
+* **Görsel Optimizasyonu:** Next.js `<Image>` bileşeni ve lazy loading ile minimum bant genişliği kullanımı.
+* **SEO Dostu Yapı:** Her film için dinamik `sitemap.xml`, `robots.txt`, `rss.xml` beslemesi ve JSON-LD Movie Schema şemaları.

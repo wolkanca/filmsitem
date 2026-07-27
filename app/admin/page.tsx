@@ -153,7 +153,7 @@ export default function AdminPage() {
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
-    if (username === 'wolkanca' && password === 'wolkanca') {
+    if (username === 'wolkanca' && password === 'wolkanca1wolkanca') {
       document.cookie = 'is_admin=true; path=/; max-age=604800; SameSite=Lax';
       setIsLoggedIn(true);
       setUsername('');
@@ -331,9 +331,8 @@ export default function AdminPage() {
                     <button
                       onClick={handleBlobToggle}
                       disabled={blobLoading}
-                      className={`flex items-center gap-2 text-sm font-bold transition-colors cursor-pointer ${
-                        blobStatus.enabled ? 'text-emerald-400 hover:text-emerald-300' : 'text-zinc-500 hover:text-zinc-300'
-                      }`}
+                      className={`flex items-center gap-2 text-sm font-bold transition-colors cursor-pointer ${blobStatus.enabled ? 'text-emerald-400 hover:text-emerald-300' : 'text-zinc-500 hover:text-zinc-300'
+                        }`}
                     >
                       {blobLoading ? (
                         <Loader2 className="w-5 h-5 animate-spin" />
@@ -349,10 +348,9 @@ export default function AdminPage() {
                   {/* Blob reachability */}
                   <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3">
                     <span className="block text-[10px] text-zinc-500 font-bold uppercase mb-2">Blob Erişimi</span>
-                    <div className={`flex items-center gap-1.5 text-sm font-bold ${
-                      !blobStatus.blobUrl ? 'text-zinc-600' :
-                      blobStatus.blobReachable ? 'text-emerald-400' : 'text-red-400'
-                    }`}>
+                    <div className={`flex items-center gap-1.5 text-sm font-bold ${!blobStatus.blobUrl ? 'text-zinc-600' :
+                        blobStatus.blobReachable ? 'text-emerald-400' : 'text-red-400'
+                      }`}>
                       {!blobStatus.blobUrl ? (
                         <><AlertCircle className="w-4 h-4" /> URL Yok</>
                       ) : blobStatus.blobReachable ? (
@@ -366,9 +364,8 @@ export default function AdminPage() {
                   {/* Local file status */}
                   <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3">
                     <span className="block text-[10px] text-zinc-500 font-bold uppercase mb-2">Local Dosya</span>
-                    <div className={`flex items-center gap-1.5 text-sm font-bold ${
-                      blobStatus.localExists ? 'text-emerald-400' : 'text-red-400'
-                    }`}>
+                    <div className={`flex items-center gap-1.5 text-sm font-bold ${blobStatus.localExists ? 'text-emerald-400' : 'text-red-400'
+                      }`}>
                       {blobStatus.localExists ? (
                         <><CheckCircle2 className="w-4 h-4" /> {blobStatus.localCount} Film</>
                       ) : (
@@ -398,11 +395,10 @@ export default function AdminPage() {
 
                 {/* Alert message */}
                 {blobMessage && (
-                  <div className={`flex items-start gap-2 p-3 rounded-xl text-xs font-medium ${
-                    blobMessage.type === 'success'
+                  <div className={`flex items-start gap-2 p-3 rounded-xl text-xs font-medium ${blobMessage.type === 'success'
                       ? 'bg-emerald-950/30 border border-emerald-500/20 text-emerald-300'
                       : 'bg-red-950/30 border border-red-500/20 text-red-300'
-                  }`}>
+                    }`}>
                     {blobMessage.type === 'success' ? <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5" /> : <XCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />}
                     {blobMessage.text}
                   </div>
