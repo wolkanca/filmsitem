@@ -14766,7 +14766,8 @@
     "cast": [
       "Sylvester Stallone",
       "Kurt Russell",
-      "Teri Hatcher"
+      "Teri Hatcher",
+      "Jack Palance"
     ],
     "director": "Andrei Konchalovsky",
     "writers": [
@@ -23778,7 +23779,8 @@
     "cast": [
       "Mike Myers",
       "Eddie Murphy",
-      "Cameron Diaz"
+      "Cameron Diaz",
+      "John Lithgow"
     ],
     "director": "Andrew Adamson",
     "writers": [
@@ -30051,7 +30053,9 @@
     "cast": [
       "Mike Myers",
       "Eddie Murphy",
-      "Cameron Diaz"
+      "Cameron Diaz",
+      "Antonio Banderas",
+      "Julie Andrews"
     ],
     "director": "Andrew Adamson",
     "writers": [
@@ -31649,7 +31653,8 @@
     "cast": [
       "Johnny Depp",
       "Freddie Highmore",
-      "David Kelly"
+      "David Kelly",
+      "Helena Bonham Carter"
     ],
     "director": "Tim Burton",
     "writers": [
@@ -33560,7 +33565,8 @@
     "cast": [
       "Ben Stiller",
       "Carla Gugino",
-      "Ricky Gervais"
+      "Ricky Gervais",
+      "Dick Van Dyke"
     ],
     "director": "Shawn Levy",
     "writers": [
@@ -34100,7 +34106,8 @@
     "cast": [
       "Mike Myers",
       "Cameron Diaz",
-      "Eddie Murphy"
+      "Eddie Murphy",
+      "Antonio Banderas"
     ],
     "director": "Chris Miller",
     "writers": [
@@ -39790,7 +39797,8 @@
     "cast": [
       "Mike Myers",
       "Cameron Diaz",
-      "Eddie Murphy"
+      "Eddie Murphy",
+      "Antonio Banderas"
     ],
     "director": "Mike Mitchell",
     "writers": [
@@ -61981,7 +61989,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "gs19Vnl8M3E",
     "plotTr": "Zorro Efsanesi, Alejandro Murrieta’nın maskeyi devralmasından on yıl sonra, hem evliliğini kurtarmak hem de California’nın kaderini belirlemek için giriştiği tehlikeli mücadeleyi konu alır. California’nın Amerika Birleşik Devletleri’ne üye devlet olarak katılma sürecinde Alejandro, halkı korumak adına Zorro olarak gizli görevlerine devam eder. Ancak bu durum, eşi Elena ile arasının açılmasına ve boşanmalarına neden olur. Elena’nın gizemli Fransız Kontu Armand ile yakınlaşması ve gizli bir örgütün California’nın birleşmesini engellemek için kurduğu ölümcül komplo, Alejandro’yu yeniden harekete geçirir. Zorro, bu kez sadece masum insanların özgürlüğü için değil, parçalanan ailesini ve aşkını yeniden kazanmak için de kılıcını kuşanmak zorundadır.",
-    "backdrop": ""
+    "backdrop": "",
+    "franchiseId": "zorro",
+    "franchiseName": "Zorro",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt6126428",
@@ -86113,7 +86124,8 @@
     "cast": [
       "Chuck Norris",
       "David Carradine",
-      "Barbara Carrera"
+      "Barbara Carrera",
+      "Leon Isaac Kennedy"
     ],
     "director": "Steve Carver",
     "writers": [
@@ -90210,8 +90222,7 @@
       "Anthony Hopkins",
       "Catherine Zeta-Jones",
       "José María de Tavira",
-      "Tony Amendola",
-      "Stuart Wilson"
+      "Tony Amendola"
     ],
     "director": "Martin Campbell",
     "writers": [
@@ -90228,7 +90239,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "abwtRFZx8Rs",
     "plotTr": "Zorro’nun Maskesi, yirmi yıllık esaretin ardından intikam ve adalet için geri dönen orijinal Zorro ile onun mirasını devralan genç bir hırsızın hikayesini anlatır. Yaşlanan Don Diego de la Vega, zalim Vali Don Rafael Montero’nun elinden kaçtıktan sonra, geçmişte yolları kesişen haydut Alejandro Murrieta’yı yeni Zorro olması için eğitmeye başlar. Diego, Montero tarafından evlatlık olarak büyütülen ve öz kızı olduğundan habersiz olan Elena’ya kavuşmak; Alejandro ise kardeşinin katili Yüzbaşı Love’dan intikam almak istemektedir. California halkını altın madenlerinde köleleştiren zalim yönetime karşı birleşen usta ve çırak, maskenin ardındaki gizemli güçle adaleti yeniden sağlamak için amansız bir mücadeleye girişir.",
-    "backdrop": ""
+    "backdrop": "",
+    "franchiseId": "zorro",
+    "franchiseName": "Zorro",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt1411250",
