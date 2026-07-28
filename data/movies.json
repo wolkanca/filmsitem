@@ -37503,7 +37503,10 @@
     "omdbType": "movie",
     "boxOffice": "$179,883,157",
     "plotTr": "200 yıl önce doğmuş iki mutant kardeş, Logan ve Victor, çocukluk travması yaşar ve birbirlerinden başka kimseye güvenemezler. Temelde, ABD tarihi boyunca savaştan savaşa yaşayan dövüşçüler ve katillerdir. Modern zamanlarda, ABD Albay Stryker onları ve diğer mutantları komando olarak işe alır. Logan ayrılır ve bir oduncu olur, yerel bir öğretmene aşık olur. Logan, Stryker’ın ekibine yeniden katılmayı reddettiğinde, Albay katil Victor’u gönderir. Logan şimdi intikam peşindedir.",
-    "plot": "Two mutant brothers, Logan and Victor, born 200 years ago, suffer childhood trauma and have only each other to depend upon. Basically, they’re fighters and killers, living from war to war throughout U.S. history. In modern times, U.S. Colonel Stryker recruits them and other mutants as commandos. Logan quits and becomes a logger, falling in love with a local teacher. When Logan refuses to rejoin Stryker’s crew, the Colonel sends the murderous Victor. Logan now wants revenge."
+    "plot": "Two mutant brothers, Logan and Victor, born 200 years ago, suffer childhood trauma and have only each other to depend upon. Basically, they’re fighters and killers, living from war to war throughout U.S. history. In modern times, U.S. Colonel Stryker recruits them and other mutants as commandos. Logan quits and becomes a logger, falling in love with a local teacher. When Logan refuses to rejoin Stryker’s crew, the Colonel sends the murderous Victor. Logan now wants revenge.",
+    "franchiseId": "x-men",
+    "franchiseName": "X-Men",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt0796366",
@@ -41941,7 +41944,7 @@
     "plotTr": "Charles Xavier ve Erik Lensherr, Profesör X ve Magneto adlarını almadan önce, güçlerini ilk kez keşfeden iki genç adamdı. Baş düşman olmadan önce, dünyanın şimdiye kadar gördüğü en büyük tehdidi durdurmak için diğer Mutantlarla (bazıları tanıdık, bazıları yeni) birlikte çalışan en yakın arkadaşlardı. Bu süreçte aralarında bir yarık açıldı ve bu da Magneto’nun Kardeşliği ile Profesör X’in X-MEN’i arasındaki ebedi savaşı başlattı.",
     "franchiseId": "x-men",
     "franchiseName": "X-Men",
-    "franchiseOrder": 4,
+    "franchiseOrder": 5,
     "plot": "Before Charles Xavier and Erik Lensherr took the names Professor X and Magneto, they were two young men discovering their powers for the first time. Before they were archenemies, they were closest of friends, working together, with other Mutants (some familiar, some new), to stop the greatest threat the world has ever known. In the process, a rift between them opened, which began the eternal war between Magneto’s Brotherhood and Professor X’s X-MEN."
   },
   {
@@ -50362,7 +50365,7 @@
     "plotTr": "Gelecekte, mutantlar ve onlara yardım eden insanlar, Sentinels adlı güçlü robotlar tarafından katledilir. Profesör Xavier, Wolverine, Magneto, Storm, Kitty Pryde ve arkadaşları Çin’deki bir manastırda buluşur ve Xavier, yenilmez Sentinels’ın, yaratıcıları Dr. Bolivar Trask’ı suikast girişiminde bulunduğu 1973’te yakalanan Mystique’in DNA’sı kullanılarak yaratıldığını açıklar. Xavier, tek şanslarının, Mystique’i niyetinden vazgeçirmeye ikna etmek için Charles Xavier ve Erik Lehnsherr’e katılmak üzere Pryde’ın yeteneğini kullanarak 1973’e geri dönmek olduğunu söyler. Ancak, zaman yolculuğunun zararlarına sadece Wolverine dayanabilir. Mystique’i ve Sentinel Programını durdurmayı başarabilecek ve mutantları ile insan arkadaşlarını yok olmaktan kurtarabilecek midir?",
     "franchiseId": "x-men",
     "franchiseName": "X-Men",
-    "franchiseOrder": 5,
+    "franchiseOrder": 6,
     "plot": "In the future, the mutants and the humans who help them are slaughtered by powerful robots named Sentinels. Professor Xavier, Wolverine, Magneto, Storm, Kitty Pryde, and her friends meet at a monastery in China and Xavier explains that the invincible Sentinels were created using the DNA of Mystique that was captured in 1973 when she tried to assassinate their creator Dr. Bolivar Trask. Xavier tells that their only chance is return to 1973 using Pryde’s ability to join Charles Xavier and Erik Lehnsherr to convince Mystique to give up her intention. However, only Wolverine can withstand the damages of the time travel. Will he succeed in stopping Mystique and the Sentinel Program, and save the mutants and their human friends from annihilation?"
   },
   {
@@ -58653,7 +58656,7 @@
     "plotTr": "Medeniyetin şafağından beri bir tanrı olarak tapılıyordu. Marvel’ın X-Men evreninden ilk ve en güçlü mutant olan Apocalypse, diğer birçok mutantın güçlerini toplayarak ölümsüz ve yenilmez hale geldi. Binlerce yıl sonra uyandığında, bulduğu dünyadan hayal kırıklığına uğrar ve insanlığı temizlemek ve üzerinde hüküm süreceği yeni bir dünya düzeni yaratmak için, morali bozuk Magneto da dahil olmak üzere güçlü mutantlardan oluşan bir ekip toplar. Dünya’nın kaderi tehlikedeyken, Raven, Profesör X’in yardımıyla genç X-Men’den oluşan bir ekibe liderlik ederek en büyük düşmanlarını durdurmalı ve insanlığı tamamen yok olmaktan kurtarmalıdır.",
     "franchiseId": "x-men",
     "franchiseName": "X-Men",
-    "franchiseOrder": 6,
+    "franchiseOrder": 7,
     "plot": "Since the dawn of civilization, he was worshiped as a god. Apocalypse, the first and most powerful mutant from Marvel’s X-Men universe, amassed the powers of many other mutants, becoming immortal and invincible. Upon awakening after thousands of years, he is disillusioned with the world as he finds it and recruits a team of powerful mutants, including a disheartened Magneto, to cleanse mankind and create a new world order, over which he will reign. As the fate of the Earth hangs in the balance, Raven with the help of Professor X must lead a team of young X-Men to stop their greatest nemesis and save mankind from complete destruction."
   },
   {
@@ -72943,7 +72946,7 @@
     "boxOffice": "$65,845,974",
     "franchiseId": "x-men",
     "franchiseName": "X-Men",
-    "franchiseOrder": 7,
+    "franchiseOrder": 8,
     "plotTr": "X-Men. Barışın koruyucuları. Jean Grey, X-Men ekibinin en çok sevilen üyelerinden biridir. Ancak bir görev ters gittiğinde Jean, karanlık ve kadim bir güce maruz kalır. Bu güç, ona ulaşana kadar temas ettiği her şeyi yok etmiştir. Artık dengesizleşmeye başlayan bu gücü, Jean büyük bir öfke ve yıkımla açığa çıkarır. Bu yabancı güç onu yavaş yavaş tüketirken ve dünya tehdit altındayken, X-Men ekibi çok önemli bir gerçekle yüzleşmek zorundadır: Ya dünyayı kurtaracaklardır ya da onu tehdit eden arkadaşlarını."
   },
   {
