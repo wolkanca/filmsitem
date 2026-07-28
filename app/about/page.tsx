@@ -12,10 +12,10 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-6xl">
+    <main className="mx-auto px-2">
       {/* Hero */}
       <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-10 mb-6">
-        <div className="max-w-5xl">
+        <div className="max-w-6xl">
           <div className="mb-6 flex flex-wrap items-center gap-5">
             <div className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-red-600/15">
               <Film className="h-8 w-8 text-red-500" />
@@ -24,7 +24,7 @@ export default function AboutPage() {
               Hakkında
             </h1>
           </div>
-          <p className="m-auto text-3xl leading-8 text-zinc-300 text-center p-10 mb-10 rounded-3xl border border-white/10 bg-zinc-500/20">
+          <p className="m-auto text-3xl leading-8 text-zinc-300 text-center p-6 mb-10 rounded-3xl border border-white/10 bg-zinc-500/20">
             <strong>İzlediklerim</strong>, yıllardır izlediğim film ve dizileri
             kayıt altına almak, puanlamak ve kendi sinema arşivimi oluşturmak
             amacıyla geliştirdiğim kişisel bir projedir.

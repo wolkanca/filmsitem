@@ -45,7 +45,7 @@ export default function RootLayout({
         <Navbar />
 
         {/* Main Content Area */}
-        <main className="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 animate-fade-in">
+        <main className="flex-grow max-w-7xl w-full mx-auto px-2 sm:px-4 lg:px-6 py-8 animate-fade-in">
           {children}
         </main>
 
