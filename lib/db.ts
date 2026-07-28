@@ -299,9 +299,19 @@ export async function getStats(): Promise<Stats> {
     .map(([year, count]) => ({ year: parseInt(year, 10), count }))
     .sort((a, b) => a.year - b.year);
 
+  // Türkiye yapımlarını yönetmen ve oyuncu istatistiklerinden çıkar
+  const nonTurkishMovies = movies.filter((movie) => {
+    const country = (movie.country || '').toLocaleLowerCase('tr-TR');
+
+    return (
+      !country.includes('türkiye') &&
+      !country.includes('turkey')
+    );
+  });
+
   // Top Directors
   const directorsMap: Record<string, number> = {};
-  movies.forEach(m => {
+  nonTurkishMovies.forEach(m => {
     if (m.director) {
       const dirs = m.director.split(',').map(d => d.trim()).filter(d => d.length > 0 && m.type === 'Movie');
       dirs.forEach(d => {
@@ -318,7 +328,7 @@ export async function getStats(): Promise<Stats> {
 
   // Top Actors
   const actorsMap: Record<string, number> = {};
-  movies.forEach(m => {
+  nonTurkishMovies.forEach(m => {
     (m.cast || []).forEach(actor => {
       actorsMap[actor] = (actorsMap[actor] || 0) + 1;
     });

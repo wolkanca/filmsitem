@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { getStats } from '@/lib/db';
 import StatsCharts from '@/components/StatsCharts';
 import { Film, Star, Clock, Trophy, Heart, UserCheck } from 'lucide-react';
@@ -20,6 +21,7 @@ export default async function StatsPage() {
       icon: Film,
       color: 'text-red-400 border-red-500/20 bg-red-500/5',
       desc: 'IMDb listesindeki toplam kayıt sayısı',
+      link: `/movies`,
     },
     {
       title: 'Ortalama Puanım',
@@ -27,6 +29,7 @@ export default async function StatsPage() {
       icon: Star,
       color: 'text-amber-400 border-amber-500/20 bg-amber-500/5',
       desc: 'İzlenen yapımlara verilen genel puan ortalaması',
+      link: `/movies`,
     },
     {
       title: 'Toplam Süre',
@@ -34,6 +37,7 @@ export default async function StatsPage() {
       icon: Clock,
       color: 'text-rose-400 border-rose-500/20 bg-rose-500/5',
       desc: 'Ekran başında geçirilen toplam süre',
+      link: `/movies`,
     },
     {
       title: 'En Çok İzlenen Tür',
@@ -41,6 +45,7 @@ export default async function StatsPage() {
       icon: Trophy,
       color: 'text-emerald-400 border-emerald-500/20 bg-emerald-500/5',
       desc: 'Kütüphanede en çok ağırlığı olan film türü',
+      link: `/genre/${stats.topGenre}`,
     },
     {
       title: 'En Sevilen Yönetmen',
@@ -48,6 +53,7 @@ export default async function StatsPage() {
       icon: Heart,
       color: 'text-rose-400 border-rose-500/20 bg-rose-500/5',
       desc: 'En fazla yapımı izlenen yönetmen',
+      link: `/director/${stats.favoriteDirector}`,
     },
     {
       title: 'En Çok İzlenen Oyuncu',
@@ -55,6 +61,7 @@ export default async function StatsPage() {
       icon: UserCheck,
       color: 'text-sky-400 border-sky-500/20 bg-sky-500/5',
       desc: 'Rol aldığı en fazla yapım izlenen aktör',
+      link: `/actor/${stats.mostWatchedActor}`,
     },
   ];
 
@@ -85,7 +92,11 @@ export default async function StatsPage() {
                   {card.title}
                 </span>
                 <span className="text-2xl font-black text-white block tracking-tight">
-                  {card.value}
+                  {card.link ? (
+                    <Link href={card.link} className="hover:text-white transition-colors">{card.value}</Link>
+                  ) : (
+                    card.value
+                  )}
                 </span>
                 <span className="text-[11px] text-zinc-500 block leading-snug">
                   {card.desc}
