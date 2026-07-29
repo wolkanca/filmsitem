@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto px-2">
+    <main className="mx-auto">
       {/* Hero */}
       <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-10 mb-6">
         <div className="max-w-6xl">
