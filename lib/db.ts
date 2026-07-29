@@ -328,7 +328,7 @@ export async function getStats(): Promise<Stats> {
 
   // Top Actors
   const actorsMap: Record<string, number> = {};
-  nonTurkishMovies.forEach(m => {
+  movies.forEach(m => {
     (m.cast || []).forEach(actor => {
       actorsMap[actor] = (actorsMap[actor] || 0) + 1;
     });
