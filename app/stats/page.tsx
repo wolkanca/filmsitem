@@ -93,7 +93,7 @@ export default async function StatsPage() {
                 </span>
                 <span className="text-2xl font-black text-white block tracking-tight">
                   {card.link ? (
-                    <Link href={card.link} className="hover:text-white transition-colors">{card.value}</Link>
+                    <Link href={card.link} title={card.value} className="hover:text-white transition-colors line-clamp-1">{card.value}</Link>
                   ) : (
                     card.value
                   )}
