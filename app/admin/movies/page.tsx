@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
-  ArrowLeft, Search, Pencil, Check, X, Loader2, Film, Image as ImageIcon, Video
+  ArrowLeft, Search, Pencil, Check, X, Loader2, Film, Image as ImageIcon, Video, Download
 } from 'lucide-react';
 import { Movie } from '@/types';
 import { normalizeSearchString } from '@/lib/utils';
@@ -317,6 +317,68 @@ export default function AdminMoviesPage() {
     setIsModalOpen(true);
   };
 
+  // CSV Export for filtered movies
+  const exportFilteredCSV = () => {
+    if (filteredMovies.length === 0) return;
+
+    const noPoster = (m: Movie) => !m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder');
+
+    const headers = [
+      'IMDb ID', 'Title', 'Original Title', 'Year', 'IMDb Rating',
+      'Director', 'Country', 'Runtime', 'Genres', 'Missing Fields'
+    ];
+
+    const escapeCSV = (val: string) => {
+      if (val.includes(',') || val.includes('"') || val.includes('\n')) {
+        return `"${val.replace(/"/g, '""')}"`;
+      }
+      return val;
+    };
+
+    const rows = filteredMovies.map((m) => {
+      const missing: string[] = [];
+      if (noPoster(m)) missing.push('Poster');
+      if (!m.trailerYoutubeId) missing.push('Fragman');
+      if (!m.overview || m.overview.trim().length === 0) missing.push('Özet');
+      if (!m.plot || m.plot.trim().length === 0) missing.push('Konu');
+      if (!m.plotTr || m.plotTr.trim().length === 0) missing.push('Konu TR');
+      if (!m.genres || m.genres.length === 0) missing.push('Tür');
+      if (!m.director || m.director.trim().length === 0) missing.push('Yönetmen');
+      if (!m.cast || m.cast.length === 0) missing.push('Oyuncu');
+      if (!m.runtime || m.runtime === 0) missing.push('Süre');
+      if (!m.country || m.country.trim().length === 0) missing.push('Ülke');
+      if (!m.year || m.year === 0) missing.push('Yıl');
+      if (!m.imdbRating || m.imdbRating === 0) missing.push('IMDb Puanı');
+      if (!m.releaseDate || m.releaseDate.trim().length === 0) missing.push('Vizyon Tarihi');
+
+      return [
+        m.imdbId,
+        escapeCSV(m.title || ''),
+        escapeCSV(m.originalTitle || ''),
+        String(m.year || ''),
+        String(m.imdbRating || ''),
+        escapeCSV(m.director || ''),
+        escapeCSV(m.country || ''),
+        String(m.runtime || ''),
+        escapeCSV(Array.isArray(m.genres) ? m.genres.join(', ') : ''),
+        escapeCSV(missing.join(', ')),
+      ].join(',');
+    });
+
+    const csvContent = '\uFEFF' + [headers.join(','), ...rows].join('\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+
+    const filterLabel = filterMode === 'all' ? 'tum_filmler' : filterMode;
+    link.href = url;
+    link.download = `eksik_filmler_${filterLabel}_${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   const handleSaveModal = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!editingMovie) return;
@@ -386,9 +448,21 @@ export default function AdminMoviesPage() {
                   <p className="text-zinc-500 text-xs mt-0.5">Afiş, fragman ve tüm film alanlarını manuel olarak düzenleyin.</p>
                 </div>
               </div>
-              <span className="text-xs font-bold text-zinc-500 bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-lg w-fit self-start sm:self-auto">
-                {filteredMovies.length} / {movies.length} film
-              </span>
+              <div className="flex items-center gap-2 self-start sm:self-auto">
+                <span className="text-xs font-bold text-zinc-500 bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-lg">
+                  {filteredMovies.length} / {movies.length} film
+                </span>
+                {filteredMovies.length > 0 && filterMode !== 'all' && (
+                  <button
+                    onClick={exportFilteredCSV}
+                    className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-lg border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 hover:border-emerald-500/50 transition-all cursor-pointer"
+                    title="Filtrelenmiş filmleri CSV olarak indir"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    CSV İndir
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>

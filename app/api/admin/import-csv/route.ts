@@ -1,3 +1,15 @@
+interface ImportResponse {
+  success: boolean;
+  addedCount: number;
+  duplicateCount: number;
+  updatedCount?: number;
+  addedTitles: string[];
+  updatedTitles?: string[];
+  message: string;
+  error?: string;
+}
+
+
 import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 import { Movie } from '@/types';
@@ -28,6 +40,15 @@ function parseCSVLine(line: string): string[] {
   return result;
 }
 
+// Helper: check if a field is empty/missing
+function isFieldEmpty(value: any): boolean {
+  if (value === undefined || value === null) return true;
+  if (typeof value === 'string') return value.trim().length === 0;
+  if (typeof value === 'number') return value === 0;
+  if (Array.isArray(value)) return value.length === 0;
+  return false;
+}
+
 
 export async function POST(req: Request) {
   try {
@@ -41,6 +62,7 @@ export async function POST(req: Request) {
     // 2. Parse form data file
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
+    const fillEmptyOnly = formData.get('fillEmptyOnly') === 'true';
     if (!file) {
       return NextResponse.json({ error: 'Dosya yüklenmedi.' }, { status: 400 });
     }
@@ -86,6 +108,7 @@ export async function POST(req: Request) {
     });
 
     const newStandalone: Movie[] = [];
+    const updatedMovies: { imdbId: string; title: string; year: number }[] = [];
     let duplicateCount = 0;
 
     // 5. Process CSV rows
@@ -95,12 +118,6 @@ export async function POST(req: Request) {
 
       const imdbId = row[indexMap['Const']];
       if (!imdbId || !imdbId.startsWith('tt')) continue;
-
-      // Duplicate check
-      if (existingIds.has(imdbId)) {
-        duplicateCount++;
-        continue;
-      }
 
       const title = row[indexMap['Title']];
       const originalTitle = row[indexMap['Original Title']] || title;
@@ -115,6 +132,60 @@ export async function POST(req: Request) {
       const csvDirector = row[indexMap['Directors']] || '';
 
       if (titleType === 'TV Episode') {
+        continue;
+      }
+
+      // Duplicate check
+      if (existingIds.has(imdbId)) {
+        if (fillEmptyOnly) {
+          // Find existing movie and fill empty fields
+          const existingMovie = currentMovies.find(m => m.imdbId === imdbId);
+          if (existingMovie) {
+            let wasUpdated = false;
+
+            if (isFieldEmpty(existingMovie.originalTitle) && originalTitle) {
+              existingMovie.originalTitle = originalTitle;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.year) && year) {
+              existingMovie.year = year;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.myRating) && myRating) {
+              existingMovie.myRating = myRating;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.watchDate) && watchDate) {
+              existingMovie.watchDate = watchDate;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.imdbRating) && imdbRating) {
+              existingMovie.imdbRating = imdbRating;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.runtime) && runtime) {
+              existingMovie.runtime = runtime;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.genres) && genres.length > 0) {
+              existingMovie.genres = genres;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.releaseDate) && releaseDate) {
+              existingMovie.releaseDate = releaseDate;
+              wasUpdated = true;
+            }
+            if (isFieldEmpty(existingMovie.director) && csvDirector) {
+              existingMovie.director = csvDirector;
+              wasUpdated = true;
+            }
+
+            if (wasUpdated) {
+              updatedMovies.push({ imdbId, title: existingMovie.title, year: existingMovie.year });
+            }
+          }
+        }
+        duplicateCount++;
         continue;
       }
 
@@ -153,14 +224,18 @@ export async function POST(req: Request) {
       });
     }
 
-    // If no new titles to add
-    if (newStandalone.length === 0) {
+    // If no new titles to add and no updates
+    if (newStandalone.length === 0 && updatedMovies.length === 0) {
       return NextResponse.json({
         success: true,
         addedCount: 0,
         duplicateCount,
+        updatedCount: 0,
         addedTitles: [],
-        message: `Yüklenecek yeni film/dizi bulunamadı. (${duplicateCount} film zaten veritabanında mevcut)`
+        updatedTitles: [],
+        message: fillEmptyOnly
+          ? `Güncellenecek boş alan bulunamadı. (${duplicateCount} film zaten veritabanında mevcut)`
+          : `Yüklenecek yeni film/dizi bulunamadı. (${duplicateCount} film zaten veritabanında mevcut)`
       });
     }
 
@@ -170,6 +245,7 @@ export async function POST(req: Request) {
     });
 
     const addedTitles: string[] = newStandalone.map(m => `${m.title} (${m.year})`);
+    const updatedTitles: string[] = updatedMovies.map(m => `${m.title} (${m.year})`);
 
 
 
@@ -196,13 +272,22 @@ export async function POST(req: Request) {
     }
 
     const totalAdded = newStandalone.length;
+    const totalUpdated = updatedMovies.length;
+
+    const messageParts: string[] = [];
+    if (totalAdded > 0) messageParts.push(`${totalAdded} yeni yapım eklendi`);
+    if (totalUpdated > 0) messageParts.push(`${totalUpdated} mevcut yapımın boş alanları dolduruldu`);
+    if (duplicateCount > 0 && !fillEmptyOnly) messageParts.push(`${duplicateCount} mevcut yapım atlandı`);
+    if (duplicateCount > 0 && fillEmptyOnly) messageParts.push(`${duplicateCount - totalUpdated} yapımda değişiklik gerekmedi`);
 
     return NextResponse.json({
       success: true,
       addedCount: totalAdded,
       duplicateCount,
+      updatedCount: totalUpdated,
       addedTitles,
-      message: `${totalAdded} yeni yapım veritabanına başarıyla eklendi, ${duplicateCount} mevcut yapım atlandı.`
+      updatedTitles,
+      message: messageParts.join(', ') + '.'
     });
   } catch (error: any) {
     console.error('Import API error:', error);

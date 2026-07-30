@@ -5,14 +5,16 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
   FileSpreadsheet, ArrowLeft, Upload, Loader2, CheckCircle2,
-  AlertCircle, ChevronRight, HelpCircle, RefreshCw
+  AlertCircle, HelpCircle, RefreshCw, DatabaseZap
 } from 'lucide-react';
 
 interface ImportResponse {
   success: boolean;
   addedCount: number;
   duplicateCount: number;
+  updatedCount?: number;
   addedTitles: string[];
+  updatedTitles?: string[];
   message: string;
   error?: string;
 }
@@ -25,6 +27,7 @@ export default function ImportCsvPage() {
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState<ImportResponse | null>(null);
   const [error, setError] = useState('');
+  const [fillEmptyOnly, setFillEmptyOnly] = useState(false);
   
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -92,6 +95,7 @@ export default function ImportCsvPage() {
 
     const formData = new FormData();
     formData.append('file', file);
+    formData.append('fillEmptyOnly', fillEmptyOnly ? 'true' : 'false');
 
     try {
       const res = await fetch('/api/admin/import-csv', {
@@ -118,6 +122,7 @@ export default function ImportCsvPage() {
     setFile(null);
     setResult(null);
     setError('');
+    setFillEmptyOnly(false);
   };
 
   if (!authorized) return null;
@@ -197,11 +202,17 @@ export default function ImportCsvPage() {
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className={`grid gap-4 ${(result.updatedCount ?? 0) > 0 ? 'grid-cols-3' : 'grid-cols-2'}`}>
               <div className="bg-zinc-950/30 p-5 rounded-2xl border border-zinc-800/80 text-center">
                 <span className="block text-zinc-500 text-xs font-bold uppercase tracking-wider">Eklenen Yapımlar</span>
                 <span className="block text-3xl font-black text-emerald-400 mt-1">{result.addedCount}</span>
               </div>
+              {(result.updatedCount ?? 0) > 0 && (
+                <div className="bg-zinc-950/30 p-5 rounded-2xl border border-violet-500/20 text-center">
+                  <span className="block text-zinc-500 text-xs font-bold uppercase tracking-wider">Güncellenen Yapımlar</span>
+                  <span className="block text-3xl font-black text-violet-400 mt-1">{result.updatedCount}</span>
+                </div>
+              )}
               <div className="bg-zinc-950/30 p-5 rounded-2xl border border-zinc-800/80 text-center">
                 <span className="block text-zinc-500 text-xs font-bold uppercase tracking-wider">Mevcut (Atlanan) Yapımlar</span>
                 <span className="block text-3xl font-black text-zinc-400 mt-1">{result.duplicateCount}</span>
@@ -216,6 +227,21 @@ export default function ImportCsvPage() {
                   {result.addedTitles.map((title, i) => (
                     <div key={i} className="flex items-center gap-2">
                       <span className="text-emerald-500 font-bold shrink-0">+</span>
+                      <span className="truncate">{title}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Updated titles scroll area */}
+            {result.updatedTitles && result.updatedTitles.length > 0 && (
+              <div className="space-y-3">
+                <h4 className="text-xs font-black text-violet-400 uppercase tracking-wider">Boş Alanları Doldurulan Yapımlar ({result.updatedTitles.length})</h4>
+                <div className="max-h-48 overflow-y-auto bg-zinc-950/80 rounded-2xl border border-violet-500/10 p-4 font-mono text-[11px] text-zinc-300 space-y-1.5 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
+                  {result.updatedTitles.map((title, i) => (
+                    <div key={i} className="flex items-center gap-2">
+                      <span className="text-violet-400 font-bold shrink-0">↻</span>
                       <span className="truncate">{title}</span>
                     </div>
                   ))}
@@ -302,6 +328,38 @@ export default function ImportCsvPage() {
               </div>
             </div>
 
+            {/* Import Mode Toggle */}
+            <div className="p-4 bg-zinc-950/40 border border-zinc-800 rounded-2xl">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className={`p-2 rounded-xl border transition-all ${
+                    fillEmptyOnly
+                      ? 'bg-violet-500/10 text-violet-400 border-violet-500/20'
+                      : 'bg-zinc-900/60 text-zinc-500 border-zinc-800'
+                  }`}>
+                    <DatabaseZap className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <p className="text-sm font-bold text-zinc-200">Boş Alanları Doldur</p>
+                    <p className="text-[11px] text-zinc-500 mt-0.5">Mevcut filmlerin eksik alanlarını CSV verisinden tamamla (var olan veriler korunur)</p>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setFillEmptyOnly(prev => !prev)}
+                  className={`relative w-12 h-6 rounded-full transition-all duration-300 cursor-pointer flex-shrink-0 ${
+                    fillEmptyOnly
+                      ? 'bg-violet-600 shadow-lg shadow-violet-600/20'
+                      : 'bg-zinc-800'
+                  }`}
+                >
+                  <span className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-all duration-300 ${
+                    fillEmptyOnly ? 'left-[26px]' : 'left-0.5'
+                  }`} />
+                </button>
+              </div>
+            </div>
+
             {/* Action buttons */}
             <div className="flex gap-4">
               <Link
@@ -313,7 +371,11 @@ export default function ImportCsvPage() {
               <button
                 onClick={handleUpload}
                 disabled={!file || loading}
-                className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 hover:opacity-95 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-emerald-500/20 disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer text-sm"
+                className={`flex-1 flex items-center justify-center gap-2 hover:opacity-95 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg disabled:opacity-40 disabled:pointer-events-none transition-all cursor-pointer text-sm ${
+                  fillEmptyOnly
+                    ? 'bg-gradient-to-r from-violet-600 to-indigo-600 shadow-violet-500/20'
+                    : 'bg-gradient-to-r from-emerald-600 to-teal-600 shadow-emerald-500/20'
+                }`}
               >
                 {loading ? (
                   <>
@@ -323,7 +385,7 @@ export default function ImportCsvPage() {
                 ) : (
                   <>
                     <CheckCircle2 className="w-4 h-4" />
-                    Yükle ve Ekle
+                    {fillEmptyOnly ? 'Yükle ve Boş Alanları Doldur' : 'Yükle ve Ekle'}
                   </>
                 )}
               </button>
