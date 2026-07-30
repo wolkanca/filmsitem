@@ -44,7 +44,7 @@ interface BrokenMovieState {
 export default function CheckTrailersPage() {
   const router = useRouter();
   const [authorized, setAuthorized] = useState(false);
-  const [apiKey, setApiKey] = useState('e3d09f93ae63545fe155c5bde68ca970');
+  const [apiKey, setApiKey] = useState('eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlM2QwOWY5M2FlNjM1NDVmZTE1NWM1YmRlNjhjYTk3MCIsIm5iZiI6MTQyODA5MjQzNy4yMDMsInN1YiI6IjU1MWVmNjE0YzNhMzY4NWFiYzAwMDI5OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vo5ExW0i7fv21oXwTyiiDrOe1w9wA8QIVaB3ZWCNNCs');
 
   // Movie lists
   const [allMovies, setAllMovies] = useState<Movie[]>([]);
