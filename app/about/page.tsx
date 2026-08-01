@@ -24,7 +24,7 @@ export default function AboutPage() {
               Hakkında
             </h1>
           </div>
-          <p className="m-auto text-3xl leading-8 text-zinc-300 text-center p-6 mb-10 rounded-3xl border border-white/10 bg-zinc-500/20">
+          <p className="m-auto text-3xl leading-8 text-zinc-300 text-center max-w-5xl p-10 mb-10 rounded-3xl border border-white/10 bg-zinc-500/20">
             <strong>İzlediklerim</strong>, yıllardır izlediğim film ve dizileri
             kayıt altına almak, puanlamak ve kendi sinema arşivimi oluşturmak
             amacıyla geliştirdiğim kişisel bir projedir.
