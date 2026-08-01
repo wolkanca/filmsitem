@@ -50656,7 +50656,10 @@
     "omdbType": "movie",
     "boxOffice": "$67,349,198",
     "plotTr": "İkonoklast, acımasız polis John McClane, ilk kez, yoldan çıkmış oğlu Jack’e yardım etmek için Moskova’ya gittikten sonra kendini yabancı topraklarda bulur - Jack’in aslında nükleer silah soygununu durdurmak için yüksek eğitimli bir CIA ajanı olduğundan habersizdir. Rus yeraltı dünyasının peşlerinde olması ve savaşa doğru geri sayımla mücadele etmeleriyle, iki McClane, zıt yöntemlerinin onları durdurulamaz kahramanlar yaptığını keşfeder.",
-    "plot": "Iconoclastic, take-no-prisoners cop John McClane, for the first time, finds himself on foreign soil after traveling to Moscow to help his wayward son Jack - unaware that Jack is really a highly-trained CIA operative out to stop a nuclear weapons heist. With the Russian underworld in pursuit, and battling a countdown to war, the two McClanes discover that their opposing methods make them unstoppable heroes."
+    "plot": "Iconoclastic, take-no-prisoners cop John McClane, for the first time, finds himself on foreign soil after traveling to Moscow to help his wayward son Jack - unaware that Jack is really a highly-trained CIA operative out to stop a nuclear weapons heist. With the Russian underworld in pursuit, and battling a countdown to war, the two McClanes discover that their opposing methods make them unstoppable heroes.",
+    "franchiseId": "die-hard",
+    "franchiseName": "Die Hard",
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt2608224",
@@ -72345,7 +72348,10 @@
     "boxOffice": "",
     "trailerYoutubeId": "svIjk-nlh_c",
     "backdrop": "",
-    "plotTr": " Serinin dördüncü filminde, artık yaşlanmış ve özel hayatı altüst olmuş dedektif John McClane (Bruce Willis), 4 Temmuz hafta sonunda ABD’nin tüm dijital altyapısını hedef alan büyük bir siber terör saldırısının ortasında kalır. Eski bir devlet görevlisi olan dahi hacker Thomas Gabriel (Timothy Olyphant), ulaşım, finans ve iletişim ağlarını “indirimli satış” (fire sale) adı verilen bir yöntemle teker teker devre dışı bırakarak ülkeyi kaosa sürüklemeyi hedefler. McClane, koruması altına aldığı genç ve zeki bilgisayar korsanı Matt Farrell (Justin Long) ile güçlerini birleştirerek, bu dijital tehdidi kendi “eski moda” yöntemleriyle durdurmak ve kaçırılan kızı Lucy’yi kurtarmak için zamana karşı amansız bir mücadeleye girer."
+    "plotTr": " Serinin dördüncü filminde, artık yaşlanmış ve özel hayatı altüst olmuş dedektif John McClane (Bruce Willis), 4 Temmuz hafta sonunda ABD’nin tüm dijital altyapısını hedef alan büyük bir siber terör saldırısının ortasında kalır. Eski bir devlet görevlisi olan dahi hacker Thomas Gabriel (Timothy Olyphant), ulaşım, finans ve iletişim ağlarını “indirimli satış” (fire sale) adı verilen bir yöntemle teker teker devre dışı bırakarak ülkeyi kaosa sürüklemeyi hedefler. McClane, koruması altına aldığı genç ve zeki bilgisayar korsanı Matt Farrell (Justin Long) ile güçlerini birleştirerek, bu dijital tehdidi kendi “eski moda” yöntemleriyle durdurmak ve kaçırılan kızı Lucy’yi kurtarmak için zamana karşı amansız bir mücadeleye girer.",
+    "franchiseId": "die-hard",
+    "franchiseName": "Die Hard",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt0117500",
