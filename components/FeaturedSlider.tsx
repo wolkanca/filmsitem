@@ -75,7 +75,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
                 className="absolute inset-0 block"
               >
                 <Image
-                  src={currentMovie.poster}
+                  src={`https://i0.wp.com/izlediklerim.wolkanca.com/${currentMovie.poster}`}
                   alt={currentMovie.title}
                   fill
                   sizes="(max-width: 640px) 150px, 200px"

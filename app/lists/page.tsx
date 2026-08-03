@@ -439,7 +439,7 @@ export default async function ListsPage() {
                 {list.poster && (
                   <div className="absolute inset-0 z-0 opacity-15 transition-opacity duration-500 group-hover:opacity-25">
                     <Image
-                      src={list.poster}
+                      src={`https://i0.wp.com/izlediklerim.wolkanca.com/${list.poster}`}
                       alt={list.name}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
