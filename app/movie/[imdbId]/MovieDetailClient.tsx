@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDownLeft, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -452,7 +452,7 @@ export default function MovieDetailClient({
         {/* Left main: Plot and Credits */}
         <div className="lg:col-span-8 space-y-8">
           {/* Overview */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4 min-h-[350px]">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
@@ -463,7 +463,7 @@ export default function MovieDetailClient({
               ref={overviewContentRef}
               className={`relative overflow-hidden text-sm transition-all duration-300`}
             >
-              <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2 mb-6">
+              <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2 mb-4">
                 {movie.overview || 'Özet eklenmemiş.'}
               </p>
               <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-4">
@@ -593,9 +593,9 @@ export default function MovieDetailClient({
 
               {/* Watch Date */}
               {movie.watchDate && (
-                <div className="bg-zinc-950/60 border border-white/5 rounded-2xl p-4 text-center">
-                  <span className="text-xs font-bold text-zinc-500 uppercase tracking-wider block">İzleme Tarihi</span>
-                  <span className="text-base font-extrabold text-zinc-200 mt-1 block">
+                <div className="bg-zinc-950/60 border border-white/5 rounded-2xl p-4 text-center flex justify-between items-center px-6">
+                  <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider">İzleme Tarihi: </span>
+                  <span className="text-base font-extrabold text-zinc-200">
                     {formatDate(movie.watchDate)}
                   </span>
                 </div>
@@ -604,8 +604,24 @@ export default function MovieDetailClient({
               {/* IMDb rating score */}
               <div className="bg-zinc-950/60 border border-white/5 rounded-2xl p-4 flex justify-between items-center px-6">
                 <div className="text-left">
-                  <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider block">IMDb Puanı</span>
-                  <span className="text-sm font-extrabold text-zinc-300 mt-0.5 block">{movie.imdbRating} / 10</span>
+                  <a
+                    href={`https://www.imdb.com/title/${movie.imdbId}/`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider block">
+                      IMDb Puanı
+                    </span>
+
+                    <div className="mt-0.5 flex items-center gap-1">
+                      <span className="text-sm font-extrabold text-zinc-300">
+                        {movie.imdbRating} / 10
+                      </span>
+
+                      <ExternalLink className="h-4 w-4 text-brand-accent transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ml-2" />
+                    </div>
+                  </a>
                 </div>
                 <div className="text-right">
                   <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider block">TMDb Puanı</span>
@@ -613,18 +629,6 @@ export default function MovieDetailClient({
                 </div>
               </div>
 
-              {/* IMDb External Link */}
-              <a
-                href={`https://www.imdb.com/title/${movie.imdbId}/`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ml-auto mt-4 flex items-center justify-center gap-2 px-4 py-1.5 rounded-lg text-md font-bold bg-[#f5c518]/10 hover:bg-[#f5c518]/20 text-[#f5c518] border border-[#f5c518]/30 hover:border-[#f5c518]/60 transition-all duration-200 shadow-[0_0_12px_rgba(245,197,24,0.08)] hover:shadow-[0_0_16px_rgba(245,197,24,0.2)]"
-              >
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M14.31 9.588v.005c-.077-.048-1.575-.31-1.575-.31l-.35 2.06-.342-2.06S10.551 9.54 10.473 9.588C10.247 9.732 10.1 10.127 10.1 10.7v2.602c0 .572.145.964.37 1.108.076.048.575.1.575.1l.342-2.268.35 2.268s.498-.052.575-.1c.226-.144.37-.536.37-1.108V10.7c0-.573-.147-.968-.372-1.112zM6.792 9.35L6.35 12.23l-.44-2.88H4.2v5.3h1.2v-3.3l.527 3.3h.848l.526-3.3v3.3h1.2v-5.3H6.792zm5.36-5.85C5.664 3.5 1 8.164 1 13.652c0 5.488 4.664 9.848 11.152 9.848S23.5 19.14 23.5 13.652C23.5 8.164 18.64 3.5 12.152 3.5zm4.33 12.51a.5.5 0 01-.5.5H8.02a.5.5 0 01-.5-.5V8.64a.5.5 0 01.5-.5h7.962a.5.5 0 01.5.5v7.37zm-.45-6.01h-1.42v5.3h1.42v-5.3z" />
-                </svg>
-                IMDb’de Gör
-              </a>
             </div>
           </div>
 
