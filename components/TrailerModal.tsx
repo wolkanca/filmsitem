@@ -89,7 +89,7 @@ export default function TrailerModal({
     >
       {/* Modal Container */}
       <div
-        className="relative max-w-4xl w-full flex flex-col bg-zinc-950/95 rounded-3xl border border-white/10 overflow-hidden shadow-2xl"
+        className="relative max-w-6xl w-full flex flex-col bg-zinc-950/95 rounded-3xl border border-white/10 overflow-hidden shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}

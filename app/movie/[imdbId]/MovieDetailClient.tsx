@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDownLeft, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
@@ -451,7 +452,7 @@ export default function MovieDetailClient({
         {/* Left main: Plot and Credits */}
         <div className="lg:col-span-8 space-y-8">
           {/* Overview */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4 min-h-[350px]">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
@@ -462,7 +463,7 @@ export default function MovieDetailClient({
               ref={overviewContentRef}
               className={`relative overflow-hidden text-sm transition-all duration-300`}
             >
-              <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2">
+              <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2 mb-6">
                 {movie.overview || 'Özet eklenmemiş.'}
               </p>
               <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-4">
@@ -472,7 +473,7 @@ export default function MovieDetailClient({
           </div>
 
           {/* Credits Box */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6 min-h-[350px]">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">Künye ve Ekip</h2>
             </div>
@@ -627,15 +628,53 @@ export default function MovieDetailClient({
             </div>
           </div>
 
-          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1">
-            <button
-              type="button"
-              onClick={() => setIsTrailerModalOpen(true)}
-              className="flex h-12 items-center justify-center gap-2 rounded-xl bg-zinc-800/90 hover:bg-zinc-700 border border-white/10 px-5 text-center text-lg font-bold leading-none text-white shadow-[0_10px_25px_rgba(0,0,0,0.3)] transition-all cursor-pointer"
-            >
-              <Film className="h-5 w-5 text-brand-primary" />
-              Fragman
-            </button>
+          <div className="grid grid-cols-1 gap-4">
+            {/* Right side: Trailer Image & Play Button with Title Overlay */}
+            {movie.trailerYoutubeId && (
+              <div className="lg:col-span-5 w-full flex flex-col">
+                <div
+                  onClick={() => setIsTrailerModalOpen(true)}
+                  className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 shadow-xl bg-zinc-900 group cursor-pointer"
+                >
+                  <Image
+                    src={`https://img.youtube.com/vi/${movie.trailerYoutubeId}/hqdefault.jpg`}
+                    alt={`${movie.title} Fragman`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 400px"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+
+                  {/* Gradient Overlay for readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/40 group-hover:from-black/95 transition-colors flex flex-col justify-between p-4">
+
+                    {/* Top Badge */}
+                    <div className="flex items-center gap-1.5 self-start px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-md border border-white/10 text-[11px] font-extrabold text-white uppercase tracking-wider">
+                      <Film className="w-3.5 h-3.5 text-brand-primary" /> Fragman
+                    </div>
+
+                    {/* Center Play Button */}
+                    <div className="self-center flex items-center justify-center">
+                      <div className="w-14 h-14 rounded-full bg-brand-primary/90 text-white flex items-center justify-center shadow-[0_0_25px_rgba(239,68,68,0.5)] group-hover:scale-110 group-hover:bg-brand-primary transition-all duration-300">
+                        <Play className="w-7 h-7 fill-white ml-0.5" />
+                      </div>
+                    </div>
+
+                    {/* Bottom Movie / Trailer Title */}
+                    <div className="space-y-0.5 text-left">
+                      <p className="text-sm font-black text-white tracking-tight line-clamp-1 drop-shadow-md">
+                        {movie.title}
+                      </p>
+                      <p className="text-xs text-zinc-300 font-medium line-clamp-1">
+                        Fragman ({movie.year})
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
             <a
               href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
               target="_blank"
