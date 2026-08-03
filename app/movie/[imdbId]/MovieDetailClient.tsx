@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useEffect, useMemo, useRef } from 'react';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDownLeft, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
 import { Movie } from '@/types';
@@ -39,7 +38,7 @@ export default function MovieDetailClient({
   similarMovies,
   franchiseMovies,
 }: MovieDetailClientProps) {
-  const router = useRouter();
+
   const [isPosterModalOpen, setIsPosterModalOpen] = useState(false);
 
   // Admin state
@@ -215,25 +214,6 @@ export default function MovieDetailClient({
     });
     return count > 0 ? parseFloat((total / count).toFixed(1)) : 0;
   }, [movie]);
-
-  // Keyboard navigation
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      // Ignore if modal is open
-      if (isPosterModalOpen || isModalOpen) return;
-
-      if (e.key === 'ArrowLeft' && prevImdbId) {
-        router.push(`/movie/${prevImdbId}`);
-      } else if (e.key === 'ArrowRight' && nextImdbId) {
-        router.push(`/movie/${nextImdbId}`);
-      } else if (e.key === 'Escape') {
-        router.push('/movies');
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [prevImdbId, nextImdbId, router, isPosterModalOpen, isModalOpen]);
 
   const openEditModal = (movieToEdit: Movie) => {
     setModalForm({
