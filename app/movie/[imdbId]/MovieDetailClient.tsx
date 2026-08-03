@@ -6,6 +6,7 @@ import { Star, Calendar, Clock, User, Film, ChevronLeft, ChevronRight, CornerDow
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
+import TrailerModal from '@/components/TrailerModal';
 import MovieCard from '@/components/MovieCard';
 import PosterImage from '@/components/PosterImage';
 
@@ -40,6 +41,7 @@ export default function MovieDetailClient({
 }: MovieDetailClientProps) {
 
   const [isPosterModalOpen, setIsPosterModalOpen] = useState(false);
+  const [isTrailerModalOpen, setIsTrailerModalOpen] = useState(false);
 
   // Admin state
   const [isAdmin, setIsAdmin] = useState(false);
@@ -115,11 +117,11 @@ export default function MovieDetailClient({
   const [trailerSaving, setTrailerSaving] = useState(false);
   const [trailerError, setTrailerError] = useState('');
 
-  const handleSaveTrailer = async () => {
+  const handleSaveTrailer = async (inputVal?: string) => {
     setTrailerSaving(true);
     setTrailerError('');
     try {
-      let youtubeId = trailerInput.trim();
+      let youtubeId = (inputVal !== undefined ? inputVal : trailerInput).trim();
       const ytMatch = youtubeId.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{11})/);
       if (ytMatch) youtubeId = ytMatch[1];
 
@@ -148,7 +150,9 @@ export default function MovieDetailClient({
       setMovie((prev) => ({ ...prev, trailerYoutubeId: youtubeId }));
       setIsTrailerEditOpen(false);
     } catch (err: unknown) {
-      setTrailerError(err instanceof Error ? err.message : 'Hata oluştu.');
+      const msg = err instanceof Error ? err.message : 'Hata oluştu.';
+      setTrailerError(msg);
+      throw new Error(msg);
     } finally {
       setTrailerSaving(false);
     }
@@ -624,6 +628,14 @@ export default function MovieDetailClient({
           </div>
 
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1">
+            <button
+              type="button"
+              onClick={() => setIsTrailerModalOpen(true)}
+              className="flex h-12 items-center justify-center gap-2 rounded-xl bg-zinc-800/90 hover:bg-zinc-700 border border-white/10 px-5 text-center text-lg font-bold leading-none text-white shadow-[0_10px_25px_rgba(0,0,0,0.3)] transition-all cursor-pointer"
+            >
+              <Film className="h-5 w-5 text-brand-primary" />
+              Fragman
+            </button>
             <a
               href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
               target="_blank"
@@ -643,86 +655,8 @@ export default function MovieDetailClient({
               Paylaş
             </a>
           </div>
-
         </div>
-
-        {/* Trailer */}
-        <div className="lg:col-span-12">
-          <div className="glass p-4 sm:p-6 rounded-3xl border border-white/5 space-y-4">
-
-            {/* fragman düzenle */}
-            {isAdmin && !isTrailerEditOpen && (
-              <button
-                type="button"
-                onClick={() => { setTrailerInput(movie.trailerYoutubeId || ''); setTrailerError(''); setIsTrailerEditOpen(true); }}
-                className="mt-1 flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-900 border border-brand-primary/30 text-brand-primary text-xs font-bold hover:bg-brand-primary/10 transition-all cursor-pointer"
-              >
-                <Pencil className="w-3.5 h-3.5" /> Fragman Düzenle
-              </button>
-            )}
-
-            {isAdmin && isTrailerEditOpen && (
-              <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    value={trailerInput}
-                    onChange={(e) => setTrailerInput(e.target.value)}
-                    placeholder="YouTube ID veya URL yapıştırın"
-                    className="flex-1 rounded-xl bg-zinc-900 border border-white/10 text-zinc-200 text-sm px-3 py-2 outline-none focus:border-brand-primary/60 transition-colors"
-                  />
-                  <button
-                    type="button"
-                    onClick={handleSaveTrailer}
-                    disabled={trailerSaving}
-                    className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-brand-primary/20 border border-brand-primary/40 text-brand-primary text-xs font-bold hover:bg-brand-primary/30 transition-all cursor-pointer disabled:opacity-50"
-                  >
-                    {trailerSaving ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Check className="w-3.5 h-3.5" />} Kaydet
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setIsTrailerEditOpen(false)}
-                    className="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-zinc-900 border border-white/10 text-zinc-400 text-xs font-bold hover:bg-zinc-800 transition-all cursor-pointer"
-                  >
-                    <X className="w-3.5 h-3.5" />
-                  </button>
-                </div>
-                {trailerError && <p className="text-xs text-red-400">{trailerError}</p>}
-              </div>
-            )}
-
-            {/* Trailer Player */}
-            {movie.trailerYoutubeId ? (
-              <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/5 shadow-md">
-                <iframe
-                  key={movie.trailerYoutubeId}
-                  src={`https://www.youtube.com/embed/${movie.trailerYoutubeId}?autoplay=0&rel=0`}
-                  title={`${movie.title} Fragman`}
-                  className="absolute inset-0 h-full w-full border-0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            ) : (
-              <div className="flex flex-col items-center justify-center py-10 rounded-2xl border border-dashed border-zinc-800 bg-zinc-950/30 text-zinc-500 gap-3">
-                <Play className="w-10 h-10 opacity-30" />
-                <p className="text-sm font-medium">Fragman henüz eklenmemiş.</p>
-                {isAdmin && (
-                  <button
-                    type="button"
-                    onClick={() => openEditModal(movie)}
-                    className="mt-1 flex items-center gap-1.5 px-4 py-2 rounded-xl bg-zinc-900 border border-brand-primary/30 text-brand-primary text-xs font-bold hover:bg-brand-primary/10 transition-all cursor-pointer"
-                  >
-                    <Pencil className="w-3.5 h-3.5" /> Fragman Ekle
-                  </button>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-
       </div>
-
 
       {/* Franchise / Film Series Section */}
       {franchiseMovies.length > 1 && (
@@ -1139,6 +1073,16 @@ export default function MovieDetailClient({
           </div>
         </div>
       )}
+
+      <TrailerModal
+        isOpen={isTrailerModalOpen}
+        onClose={() => setIsTrailerModalOpen(false)}
+        trailerYoutubeId={movie.trailerYoutubeId}
+        title={movie.title}
+        year={movie.year}
+        isAdmin={isAdmin}
+        onSaveTrailer={handleSaveTrailer}
+      />
     </div>
   );
 }

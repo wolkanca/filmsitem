@@ -4,7 +4,8 @@ import { useState, useEffect, useRef } from 'react';
 import { Movie } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, ArrowRight, ChevronLeft, ChevronRight, Play, Film } from 'lucide-react';
+import TrailerModal from '@/components/TrailerModal';
 
 interface FeaturedSliderProps {
   movies: Movie[];
@@ -12,6 +13,7 @@ interface FeaturedSliderProps {
 
 export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isTrailerModalOpen, setIsTrailerModalOpen] = useState(false);
 
   // Touch swipe state
   const touchStartX = useRef<number | null>(null);
@@ -125,17 +127,46 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
           </div>
         </div>
 
-        {/* Right side: Trailer Player */}
+        {/* Right side: Trailer Image & Play Button with Title Overlay */}
         {currentMovie.trailerYoutubeId && (
           <div className="lg:col-span-5 w-full flex flex-col pt-4 my-2">
-            <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-white/5 shadow-lg bg-black">
-              <iframe
-                src={`https://www.youtube.com/embed/${currentMovie.trailerYoutubeId}?autoplay=0&rel=0`}
-                title={`${currentMovie.title} Fragman`}
-                className="absolute inset-0 h-full w-full border-0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+            <div
+              onClick={() => setIsTrailerModalOpen(true)}
+              className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/10 shadow-xl bg-zinc-900 group cursor-pointer"
+            >
+              <Image
+                src={`https://img.youtube.com/vi/${currentMovie.trailerYoutubeId}/hqdefault.jpg`}
+                alt={`${currentMovie.title} Fragman`}
+                fill
+                sizes="(max-width: 1024px) 100vw, 400px"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              
+              {/* Gradient Overlay for readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/40 group-hover:from-black/95 transition-colors flex flex-col justify-between p-4">
+                
+                {/* Top Badge */}
+                <div className="flex items-center gap-1.5 self-start px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-md border border-white/10 text-[11px] font-extrabold text-white uppercase tracking-wider">
+                  <Film className="w-3.5 h-3.5 text-brand-primary" /> Fragman
+                </div>
+
+                {/* Center Play Button */}
+                <div className="self-center flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-full bg-brand-primary/90 text-white flex items-center justify-center shadow-[0_0_25px_rgba(239,68,68,0.5)] group-hover:scale-110 group-hover:bg-brand-primary transition-all duration-300">
+                    <Play className="w-7 h-7 fill-white ml-0.5" />
+                  </div>
+                </div>
+
+                {/* Bottom Movie / Trailer Title */}
+                <div className="space-y-0.5 text-left">
+                  <p className="text-sm font-black text-white tracking-tight line-clamp-1 drop-shadow-md">
+                    {currentMovie.title}
+                  </p>
+                  <p className="text-xs text-zinc-300 font-medium line-clamp-1">
+                    Resmi Fragman ({currentMovie.year})
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -171,6 +202,14 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
           />
         ))}
       </div>
+
+      <TrailerModal
+        isOpen={isTrailerModalOpen}
+        onClose={() => setIsTrailerModalOpen(false)}
+        trailerYoutubeId={currentMovie.trailerYoutubeId}
+        title={currentMovie.title}
+        year={currentMovie.year}
+      />
     </div>
   );
 }
