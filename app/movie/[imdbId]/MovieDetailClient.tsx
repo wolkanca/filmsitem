@@ -531,7 +531,7 @@ export default function MovieDetailClient({
               <div>
                 <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-2.5">Başrol Oyuncuları</h3>
                 {movie.cast && movie.cast.length > 0 ? (
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 max-w-sm">
                     {Array.from(new Set(movie.cast)).map((actor, idx) => (
                       <Link
                         key={`${actor}-${idx}`}
@@ -648,13 +648,7 @@ export default function MovieDetailClient({
 
         {/* Trailer */}
         <div className="lg:col-span-12">
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
-            {/* Trailer Header with edit button */}
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-extrabold text-zinc-200 flex items-center gap-2">
-                <Play className="w-5 h-5 text-red-500 fill-red-500" /> Resmi Fragman
-              </h2>
-            </div>
+          <div className="glass p-4 sm:p-6 rounded-3xl border border-white/5 space-y-4">
 
             {/* fragman düzenle */}
             {isAdmin && !isTrailerEditOpen && (
@@ -788,7 +782,7 @@ export default function MovieDetailClient({
       {randomSimilarMovies.length > 0 && (
         <section className="space-y-6 pt-6 border-t border-zinc-800">
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <span>🎬</span> Benzer Yapım Önerileri
+            <span>🎬</span> Benzer Yapımlar
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-6">
             {randomSimilarMovies.map((sm) => (
