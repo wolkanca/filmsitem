@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { getStats } from '@/lib/db';
 import StatsCharts from '@/components/StatsCharts';
-import { Film, Star, Clock, Trophy, Heart, UserCheck } from 'lucide-react';
+import { Film, Star, Clock, Trophy, Heart, UserCheck, ChartNoAxesColumn } from 'lucide-react';
 
 export const revalidate = 2592000; // 30 gün (saniye)
 
@@ -69,7 +69,8 @@ export default async function StatsPage() {
     <div className="space-y-10 animate-fade-in">
       {/* Title */}
       <div className="border-b border-zinc-800 pb-5">
-        <h1 className="text-3xl font-black text-white">📊 Film İstatistiklerim</h1>
+        <h1 className="text-3xl font-black text-white">
+          <ChartNoAxesColumn className="text-zinc-500 h-9 w-9 mr-2 inline" /> Film İstatistiklerim</h1>
         <p className="text-zinc-500 text-sm mt-1">
           Yıllar süren sinema izleme alışkanlıklarımın ve tercihlerimin grafiksel analizi.
         </p>

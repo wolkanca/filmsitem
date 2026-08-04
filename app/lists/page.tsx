@@ -399,7 +399,7 @@ export default async function ListsPage() {
     <div className="space-y-10 animate-fade-in">
       <div className="border-b border-zinc-800 pb-5">
         <h1 className="text-3xl font-black text-white">
-          🗁 Koleksiyonlarım
+          <List className='text-zinc-500 h-9 w-9 mr-2 inline' /> Koleksiyonlarım
         </h1>
 
         <p className="text-zinc-500 text-sm mt-1">
@@ -412,7 +412,7 @@ export default async function ListsPage() {
       {lists.length === 0 ? (
         <div className="text-center py-20 border border-dashed border-zinc-800 rounded-2xl bg-zinc-950/20">
           <span className="text-4xl">
-            🗁
+            <List className='text-zinc-500 h-9 w-9 mr-2 inline' />
           </span>
 
           <h3 className="text-lg font-bold text-zinc-300 mt-4">

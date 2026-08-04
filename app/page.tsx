@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getMovies, getStats } from '@/lib/db';
 import { getBlogPosts } from '@/lib/blog';
 import MovieCard from '@/components/MovieCard';
-import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper } from 'lucide-react';
+import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle } from 'lucide-react';
 import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
@@ -126,7 +126,7 @@ export default async function HomePage() {
 
       {/* Hero Section */}
       <section
-        className="relative isolate overflow-hidden rounded-3xl border border-red-300/20 px-6 py-8 shadow-[0_24px_80px_rgba(127,29,29,0.35)] sm:px-10 sm:py-12 lg:px-14 lg:py-16"
+        className="relative isolate overflow-hidden rounded-3xl border border-red-300/20 px-6 py-8 shadow-[0_24px_80px_rgba(127,29,29,0.35)] sm:px-10 sm:py-12"
         style={{
           background:
             'radial-gradient(circle at 18% 18%, rgba(239,68,68,0.82) 0%, rgba(185,28,28,0.50) 28%, transparent 46%), radial-gradient(circle at 76% 24%, rgba(248,113,113,0.34) 0%, transparent 32%), linear-gradient(135deg, #4c0505 0%, #991b1b 42%, #1f0505 72%, #050505 100%)',
@@ -209,14 +209,6 @@ export default async function HomePage() {
                 Arşiv
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
-
-              <Link
-                href="/random"
-                className="inline-flex items-center gap-2 rounded-xl border border-white/[0.15] bg-black/[0.35] px-7 py-3.5 font-extrabold text-white shadow-[0_12px_28px_rgba(0,0,0,0.28)] backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/10 hover:shadow-[0_16px_34px_rgba(0,0,0,0.38)]"
-              >
-                <span>🎲</span>
-                Rastgele
-              </Link>
             </div>
           </div>
 
@@ -280,9 +272,9 @@ export default async function HomePage() {
           </div>
           <Link
             href="/random"
-            className="flex-shrink-0 bg-brand-primary/10 hover:bg-brand-primary/20 border border-brand-primary/20 text-brand-primary font-bold px-5 py-2.5 rounded-xl transition-all text-sm"
+            className="flex-shrink-0 bg-brand-primary/10 hover:bg-brand-primary/20 border border-brand-primary/20 text-brand-accent font-bold px-5 py-2.5 rounded-xl transition-all text-sm"
           >
-            Çarkı Döndür 🎰
+            Çarkı Döndür <Shuffle className='h-4 w-4 inline-block' />
           </Link>
         </div>
 

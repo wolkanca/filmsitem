@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -473,7 +473,7 @@ export default function MovieDetailClient({
           </div>
 
           {/* Credits Box */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6 min-h-[350px]">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">Künye ve Ekip</h2>
             </div>
@@ -683,18 +683,18 @@ export default function MovieDetailClient({
               href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary px-5 text-center text-lg font-bold leading-none text-white shadow-[0_10px_25px_rgba(239,68,68,0.3)] transition-opacity hover:opacity-90"
+              className="flex h-8 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary px-5 text-center text-sm font-bold leading-none text-white shadow-[0_10px_25px_rgba(239,68,68,0.3)] transition-opacity hover:opacity-90"
             >
-              <Play className="h-5 w-5 fill-white" />
+              <Play className="h-4 w-4 fill-white" />
               İzle
             </a>
             <a
               href={whatsappShareUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-12 items-center justify-center gap-2 rounded-xl bg-zinc-900/80 px-5 text-center text-lg font-bold leading-none text-zinc-200 shadow-[0_10px_25px_rgba(39,39,42,0.35)] transition-all hover:bg-zinc-800 hover:text-white"
+              className="flex h-8 items-center justify-center gap-2 rounded-xl bg-zinc-900/80 px-5 text-center text-sm font-bold leading-none text-zinc-200 shadow-[0_10px_25px_rgba(39,39,42,0.35)] transition-all hover:bg-zinc-800 hover:text-white"
             >
-              <Share2 className="h-5 w-5" />
+              <Share className="h-4 w-4" />
               Paylaş
             </a>
           </div>
