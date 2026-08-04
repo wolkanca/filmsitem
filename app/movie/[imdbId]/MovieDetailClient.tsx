@@ -595,7 +595,7 @@ export default function MovieDetailClient({
               {movie.watchDate && (
                 <div className="bg-zinc-950/60 border border-white/5 rounded-2xl p-4 text-center flex justify-between items-center px-6">
                   <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider">İzleme Tarihi: </span>
-                  <span className="text-base font-extrabold text-zinc-200">
+                  <span className="text-sm font-extrabold text-zinc-200">
                     {formatDate(movie.watchDate)}
                   </span>
                 </div>
