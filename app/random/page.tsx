@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Sparkles, Star, Calendar, RefreshCw, Film, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
+import { Sparkles, Star, RefreshCw, ArrowRight, ChevronDown, ChevronUp, Dices } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor } from '@/lib/utils';
 import PosterImage from '@/components/PosterImage';
@@ -100,7 +100,7 @@ export default function RandomPage() {
       {/* Title */}
       <div className="border-b border-zinc-800 pb-5 text-center md:text-left">
         <h1 className="text-3xl font-black text-white flex items-center justify-center md:justify-start gap-2">
-          <span>🎲</span> Bu Akşam Ne İzlesem?
+          <span><Dices className='w-8 h-8 ' /></span> Bu Akşam Ne İzlesem?
         </h1>
         <p className="text-zinc-500 text-sm mt-1">
           Koleksiyonunuzdan rastgele seçimler yapan akıllı şans çarkı. Alışkanlıklarınıza uygun filtreler uygulayabilirsiniz.
@@ -286,7 +286,7 @@ export default function RandomPage() {
             {/* Waiting state when no selection and not shuffling */}
             {!isShuffling && !selectedMovie && (
               <div className="flex flex-col items-center justify-center text-center space-y-4 max-w-sm">
-                <span className="text-6xl animate-bounce">🎲</span>
+                <span className="text-6xl animate-bounce"><Dices className='w-14 h-14 text-brand-primary ' /></span>
                 <h3 className="text-lg font-bold text-zinc-300">Gecenin Yapımını Seçin!</h3>
                 <p className="text-xs text-zinc-500 leading-relaxed">
                   Çark ayarlarından sınırlandırma yapabilir veya doğrudan kütüphanenizden rastgele bir seçime başlamak için sol taraftaki butona basabilirsiniz.
