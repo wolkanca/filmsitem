@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getMovies, getStats } from '@/lib/db';
 import { getBlogPosts } from '@/lib/blog';
 import MovieCard from '@/components/MovieCard';
-import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle, ChartNoAxesColumn } from 'lucide-react';
+import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle, Info } from 'lucide-react';
 import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
@@ -172,9 +172,9 @@ export default async function HomePage() {
             <Image
               src="/izlediklerim.webp"
               alt="İzlediklerim Logo"
-              width={320}
-              height={260}
-              className="relative z-10 h-auto w-56 drop-shadow-[0_24px_35px_rgba(0,0,0,0.55)] sm:w-64 lg:w-72"
+              width={258}
+              height={258}
+              className="relative z-10 h-auto w-258 drop-shadow-[0_24px_35px_rgba(0,0,0,0.55)] sm:w-64 lg:w-72"
               priority
             />
           </div>
@@ -200,19 +200,16 @@ export default async function HomePage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap justify-center gap-4 pt-2 lg:justify-start">
+              <Link href="/about" className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-500 via-red-600 to-rose-600 px-7 py-3.5 font-extrabold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_12px_32px_rgba(239,68,68,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_18px_42px_rgba(239,68,68,0.6)]">
+                <Info className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                Hakkında
+              </Link>
               <Link
                 href="/movies"
                 className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-500 via-red-600 to-rose-600 px-7 py-3.5 font-extrabold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_12px_32px_rgba(239,68,68,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_18px_42px_rgba(239,68,68,0.6)]"
               >
                 Arşiv
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-              </Link>
-              <Link
-                href="/stats"
-                className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-500 via-red-600 to-rose-600 px-7 py-3.5 font-extrabold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_12px_32px_rgba(239,68,68,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_18px_42px_rgba(239,68,68,0.6)]"
-              >
-                <ChartNoAxesColumn className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                İstatistikler
               </Link>
             </div>
           </div>
