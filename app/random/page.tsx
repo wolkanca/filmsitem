@@ -22,34 +22,14 @@ export default function RandomPage() {
   const [isShuffling, setIsShuffling] = useState(false);
   const [tempMovie, setTempMovie] = useState<Movie | null>(null);
 
-  // Load movies
-  useEffect(() => {
-    async function load() {
-      try {
-        const response = await fetch('/api/movies');
-        const data = await response.json();
-        setMovies(data);
-      } catch (err) {
-        console.error('Failed to load movies:', err);
-      } finally {
-        setLoading(false);
-      }
-    }
-    load();
-  }, []);
-
-  // Filter genres list
-  const genres = useEffect(() => { }, [movies]);
-  const availableGenres = Array.from(new Set(movies.flatMap(m => m.genres || []))).sort();
-
-  // Filter movies pool
-  const getFilteredPool = () => {
-    let pool = [...movies];
+  // Filter movies pool from given array
+  const getFilteredPoolFromData = (movieList: Movie[]) => {
+    let pool = [...movieList];
     if (onlyMovies) {
       pool = pool.filter(m => m.type === 'Movie');
     }
     if (genreFilter) {
-      pool = pool.filter(m => m.genres.includes(genreFilter));
+      pool = pool.filter(m => m.genres?.includes(genreFilter));
     }
     if (ratingFilter) {
       pool = pool.filter(m => m.myRating >= parseInt(ratingFilter, 10));
@@ -57,9 +37,11 @@ export default function RandomPage() {
     return pool;
   };
 
+  const getFilteredPool = () => getFilteredPoolFromData(movies);
+
   // Perform slot machine shuffle animation
-  const handleShuffle = () => {
-    const pool = getFilteredPool();
+  const handleShuffle = (customPool?: Movie[]) => {
+    const pool = (Array.isArray(customPool) ? customPool : null) || getFilteredPool();
     if (pool.length === 0) return;
 
     setIsShuffling(true);
@@ -92,6 +74,35 @@ export default function RandomPage() {
 
     tick();
   };
+
+  // Load movies
+  useEffect(() => {
+    async function load() {
+      try {
+        const response = await fetch('/api/movies');
+        const data = await response.json();
+        setMovies(data);
+
+        // Linkin sonunda ?r veya /?r parametresi varsa otomatik çarkı döndür
+        if (typeof window !== 'undefined') {
+          const urlParams = new URLSearchParams(window.location.search);
+          if (urlParams.has('r') || window.location.search.includes('r')) {
+            const initialPool = getFilteredPoolFromData(data);
+            if (initialPool.length > 0) {
+              handleShuffle(initialPool);
+            }
+          }
+        }
+      } catch (err) {
+        console.error('Failed to load movies:', err);
+      } finally {
+        setLoading(false);
+      }
+    }
+    load();
+  }, []);
+
+  const availableGenres = Array.from(new Set(movies.flatMap(m => m.genres || []))).sort();
 
   const ratingColor = selectedMovie ? getRatingColor(selectedMovie.myRating) : '';
 
@@ -192,7 +203,7 @@ export default function RandomPage() {
             </div>
 
             <button
-              onClick={handleShuffle}
+              onClick={() => handleShuffle()}
               disabled={isShuffling || getFilteredPool().length === 0}
               className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-primary to-brand-secondary hover:opacity-95 text-white font-bold py-3 px-4 rounded-xl transition-all duration-300 shadow-[0_4px_20px_rgba(239,68,68,0.2)] disabled:opacity-50 disabled:cursor-not-allowed"
             >
@@ -268,7 +279,7 @@ export default function RandomPage() {
 
                 <div className="flex items-center gap-4 relative z-10">
                   <button
-                    onClick={handleShuffle}
+                    onClick={() => handleShuffle()}
                     className="bg-white/5 hover:bg-white/10 text-zinc-300 hover:text-white border border-white/10 font-bold px-4 py-2.5 rounded-xl text-xs transition-all flex items-center gap-1"
                   >
                     <RefreshCw className="w-3.5 h-3.5" /> Tekrar Döndür
