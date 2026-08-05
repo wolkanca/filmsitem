@@ -405,7 +405,7 @@ export default async function ListsPage() {
         <p className="text-zinc-500 text-sm mt-1">
           Kişisel puanlarıma, yapım yılına ve
           türlerine göre otomatik olarak derlenen
-          akıllı listeler.
+          akıllı listeler. Toplam {lists.length} adet liste mevcut.
         </p>
       </div>
 
