@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getMovies, getStats } from '@/lib/db';
 import { getBlogPosts } from '@/lib/blog';
 import MovieCard from '@/components/MovieCard';
-import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle } from 'lucide-react';
+import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle, ChartNoAxesColumn } from 'lucide-react';
 import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
@@ -14,8 +14,11 @@ export default async function HomePage() {
   const stats = await getStats();
   const blogPosts = await getBlogPosts(8);
 
+  // Pick a single featured banner movie from high-rated ones
+  const onlyCinema = (m: typeof movies[number]) => m.type === 'Movie';
+
   // Sorting movies for sections
-  const recentlyAdded = movies.slice(-8).reverse();
+  const recentlyAdded = movies.slice(-8);
 
   // Başyapıtlar havuzu
   const masterpieces = [...movies].filter(
@@ -29,14 +32,9 @@ export default async function HomePage() {
   }
 
   const highestRated = masterpieces.slice(0, 8);
-
-  // Pick a single featured banner movie from high-rated ones
-  const withTrailer = (m: typeof movies[number]) => !!m.trailerYoutubeId;
-  const onlyCinema = (m: typeof movies[number]) => m.type === 'Movie';
-
-  const highRatedWithBoth = movies.filter((m) => onlyCinema(m) && m.myRating >= 8 && withTrailer(m));
-  const midRatedWithBoth = movies.filter((m) => onlyCinema(m) && m.myRating >= 7 && withTrailer(m));
-  const anyWithBoth = movies.filter((m) => onlyCinema(m) && withTrailer(m));
+  const highRatedWithBoth = movies.filter((m) => onlyCinema(m) && m.myRating >= 8);
+  const midRatedWithBoth = movies.filter((m) => onlyCinema(m) && m.myRating >= 6);
+  const anyWithBoth = movies.filter((m) => onlyCinema(m));
   const anyCinema = movies.filter((m) => onlyCinema(m));
 
   const featuredPool =
@@ -208,6 +206,13 @@ export default async function HomePage() {
               >
                 Arşiv
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              </Link>
+              <Link
+                href="/stats"
+                className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-500 via-red-600 to-rose-600 px-7 py-3.5 font-extrabold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_12px_32px_rgba(239,68,68,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_18px_42px_rgba(239,68,68,0.6)]"
+              >
+                <ChartNoAxesColumn className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                İstatistikler
               </Link>
             </div>
           </div>

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Clapperboard, List, BarChart2, Sparkles, Search, Menu, X, Info } from 'lucide-react';
+import { Home, Clapperboard, List, BarChart2, Search, Menu, X, Info, Shuffle } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 export default function Navbar() {
@@ -30,6 +30,7 @@ export default function Navbar() {
     { name: 'Listeler', href: '/lists', icon: List },
     { name: 'İstatistik', href: '/stats', icon: BarChart2 },
     { name: 'Hakkında', href: '/about', icon: Info },
+    { name: 'Rastgele', href: '/random', icon: Shuffle },
   ];
 
   return (
