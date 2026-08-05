@@ -206,7 +206,7 @@ export default async function HomePage() {
               </Link>
               <Link
                 href="/movies"
-                className="group inline-flex items-center gap-2 rounded-xl bg-white px-7 py-3.5 font-extrabold text-zinc-900 shadow-[0_0_0_1px_rgba(255,255,255,0.2),0_12px_32px_rgba(255,255,255,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-zinc-100 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.4),0_18px_42px_rgba(255,255,255,0.4)]"
+                className="group inline-flex items-center gap-2 rounded-xl bg-gray-200 px-7 py-3.5 font-extrabold text-zinc-900 shadow-[0_0_0_1px_rgba(255,255,255,0.2),0_12px_32px_rgba(255,255,255,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-zinc-100 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.4),0_18px_42px_rgba(255,255,255,0.4)]"
               >
                 Arşiv
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -274,7 +274,7 @@ export default async function HomePage() {
           </div>
           <Link
             href="/random?r"
-            className="flex-shrink-0 bg-brand-primary/10 hover:bg-brand-primary/20 border border-brand-primary/20 text-brand-accent font-bold px-5 py-2.5 rounded-xl transition-all text-sm"
+            className="flex-shrink-0 bg-brand-primary/10 hover:bg-brand-primary/20 border border-brand-primary/10 text-brand-accent font-bold px-5 py-2.5 rounded-xl transition-all text-sm"
           >
             Çarkı Döndür <Shuffle className='h-4 w-4 inline-block' />
           </Link>
