@@ -48,7 +48,7 @@ export default async function HomePage() {
             ? anyCinema
             : movies;
 
-  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 121;
+  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 214;
 
   const featuredMovie = featuredPool[currentDay % featuredPool.length];
 
