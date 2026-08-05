@@ -18,7 +18,7 @@ export default async function HomePage() {
   const onlyCinema = (m: typeof movies[number]) => m.type === 'Movie';
 
   // Sorting movies for sections
-  const recentlyAdded = movies.slice(-8);
+  const recentlyAdded = movies.slice(-8).reverse();
 
   // Başyapıtlar havuzu
   const masterpieces = [...movies].filter(
