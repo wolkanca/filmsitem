@@ -178,7 +178,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
       {/* Navigation Buttons — always visible on mobile, hover-only on desktop */}
       <button
         onClick={prevSlide}
-        className="absolute left-2 top-1/2 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg
+        className="absolute left-2 top-36 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg
           opacity-100 sm:opacity-0 sm:group-hover/slider:opacity-100 focus:opacity-100 z-20"
         aria-label="Previous recommendation"
       >
@@ -186,7 +186,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-2 top-1/2 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg
+        className="absolute right-2 top-36 -translate-y-1/2 bg-zinc-900/80 hover:bg-brand-primary text-white p-2 rounded-full border border-white/10 hover:border-brand-primary transition-all duration-300 shadow-lg
           opacity-100 sm:opacity-0 sm:group-hover/slider:opacity-100 focus:opacity-100 z-20"
         aria-label="Next recommendation"
       >
