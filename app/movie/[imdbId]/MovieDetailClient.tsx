@@ -461,7 +461,7 @@ export default function MovieDetailClient({
 
             <div
               ref={overviewContentRef}
-              className={`relative overflow-hidden text-sm transition-all duration-300 min-h-[160px]`}
+              className={`relative overflow-hidden text-sm transition-all duration-300 pb-2 min-h-[160px]`}
             >
               <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2 mb-4">
                 {movie.overview || 'Özet eklenmemiş.'}
