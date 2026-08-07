@@ -48,7 +48,7 @@ export default async function HomePage() {
             ? anyCinema
             : movies;
 
-  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 196;
+  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 250;
 
   const featuredMovie = featuredPool[currentDay % featuredPool.length];
 
@@ -287,7 +287,7 @@ export default async function HomePage() {
       <section className="space-y-6">
         <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <BadgePlus className="w-6 h-6 text-zinc-300" /> Son Eklenenler
+            <BadgePlus className="w-6 h-6 text-zinc-300" /> Son İzlediklerim
           </h2>
           <Link href="/movies?sort=watchDate" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
             Tümü <ArrowRight className="w-3 h-3" />
