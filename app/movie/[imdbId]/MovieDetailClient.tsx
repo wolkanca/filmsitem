@@ -562,7 +562,7 @@ export default function MovieDetailClient({
         <div className="lg:col-span-4 space-y-6">
 
           {/* Personal review card */}
-          <div className="glass bg-gradient-to-br from-zinc-900/60 to-red-950/10 p-6 sm:p-8 rounded-3xl border border-brand-primary/20 space-y-6 mb-8 shadow-[0_10px_35px_rgba(239,68,68,0.1)]">
+          <div className="glass bg-gradient-to-br from-zinc-900/60 to-red-950/10 p-6 sm:p-8 rounded-3xl border border-brand-primary/20 space-y-6 mb-4 shadow-[0_10px_35px_rgba(239,68,68,0.1)]">
             <h2 className="text-lg font-black text-white tracking-tight flex items-center gap-2">
               <Eye className="w-5 h-5 text-brand-primary" /> Notlarım
             </h2>

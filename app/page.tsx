@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { getMovies, getStats } from '@/lib/db';
 import { getBlogPosts } from '@/lib/blog';
 import MovieCard from '@/components/MovieCard';
-import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle, Info } from 'lucide-react';
+import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle, Info, BadgePlus, Crown } from 'lucide-react';
 import Image from 'next/image';
 import { formatDate } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
@@ -287,7 +287,7 @@ export default async function HomePage() {
       <section className="space-y-6">
         <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <span>🔥</span> Son Eklenen Yapımlar
+            <BadgePlus className="w-6 h-6 text-zinc-300" /> Son Eklenenler
           </h2>
           <Link href="/movies?sort=watchDate" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
             Tümü <ArrowRight className="w-3 h-3" />
@@ -307,7 +307,7 @@ export default async function HomePage() {
       <section className="space-y-6">
         <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <span>👑</span> Başyapıtlarım
+            <Crown className="w-6 h-6 text-zinc-300" /> Başyapıtlarım
           </h2>
           <Link href="/list/favoriler" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
             Tümü <ArrowRight className="w-3 h-3" />
@@ -326,7 +326,7 @@ export default async function HomePage() {
           <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
             <div>
               <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-                <span>🌟</span> Keşfedilmemiş Hazineler
+                <Sparkles className="w-6 h-6 text-zinc-300" /> Keşfedilmemiş Hazineler
               </h2>
               <p className="text-xs text-zinc-500 mt-1">
                 IMDb&apos;de düşük puanlı ama benim favorilerim olan sürpriz yapımlar
@@ -349,7 +349,7 @@ export default async function HomePage() {
         <section className="space-y-6">
           <div className="flex justify-between items-center border-b border-zinc-800 pb-3">
             <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-              <Newspaper className="w-6 h-6 text-brand-primary" /> Blogumdan Son Yazılar
+              <Newspaper className="w-6 h-6 text-zinc-300" /> Blog
             </h2>
             <a
               href="https://wolkanca.com/kategori/eglence"
