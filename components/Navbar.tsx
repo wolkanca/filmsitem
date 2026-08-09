@@ -30,7 +30,6 @@ export default function Navbar() {
     { name: 'Listeler', href: '/lists', icon: List },
     { name: 'İstatistik', href: '/stats', icon: BarChart2 },
     { name: 'Hakkında', href: '/about', icon: Info },
-    { name: 'Rastgele', href: '/random', icon: Shuffle },
   ];
 
   return (
