@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share, Share2 } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -705,6 +705,7 @@ export default function MovieDetailClient({
             <a
               href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
               target="_blank"
+              title="İzle"
               rel="noopener noreferrer"
               className="flex h-8 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary px-5 text-center text-sm font-bold leading-none text-white shadow-[0_10px_25px_rgba(239,68,68,0.3)] transition-opacity hover:opacity-90"
             >
@@ -718,7 +719,7 @@ export default function MovieDetailClient({
               title="Paylaş"
               className="flex h-8 items-center justify-center gap-2 rounded-xl bg-zinc-900/80 px-5 text-center text-sm font-bold leading-none text-zinc-200 shadow-[0_10px_25px_rgba(39,39,42,0.35)] transition-all hover:bg-zinc-800 hover:text-white"
             >
-              <Share2 className="h-5 w-5" />
+              <Share2 className="h-4 w-4" /> Paylaş
             </button>
           </div>
         </div>
