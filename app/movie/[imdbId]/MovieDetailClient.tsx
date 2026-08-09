@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share, Share2 } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -316,6 +316,29 @@ export default function MovieDetailClient({
 
     return value;
   }
+
+
+  const handleShare = async () => {
+    const shareData = {
+      title: `${movie.title} (${movie.year})`,
+      text: `${movie.title} filmini İzlediklerim'de görüntüle.`,
+      url: window.location.href,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        alert('Bağlantı panoya kopyalandı.');
+      }
+    } catch (error) {
+      // Kullanıcı paylaşım penceresini kapattığında da hata oluşabilir.
+      if (error instanceof Error && error.name !== 'AbortError') {
+        console.error('Paylaşım hatası:', error);
+      }
+    }
+  };
 
   return (
     <div className="space-y-10 relative">
@@ -688,15 +711,15 @@ export default function MovieDetailClient({
               <Play className="h-4 w-4 fill-white" />
               İzle
             </a>
-            <a
-              href={whatsappShareUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              type="button"
+              onClick={handleShare}
+              aria-label={`${movie.title} filmini paylaş`}
+              title="Paylaş"
               className="flex h-8 items-center justify-center gap-2 rounded-xl bg-zinc-900/80 px-5 text-center text-sm font-bold leading-none text-zinc-200 shadow-[0_10px_25px_rgba(39,39,42,0.35)] transition-all hover:bg-zinc-800 hover:text-white"
             >
-              <Share className="h-4 w-4" />
-              Paylaş
-            </a>
+              <Share2 className="h-5 w-5" />
+            </button>
           </div>
         </div>
       </div>
