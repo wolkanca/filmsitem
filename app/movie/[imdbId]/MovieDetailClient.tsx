@@ -377,11 +377,7 @@ export default function MovieDetailClient({
           <div className="relative flex-shrink-0 mx-auto">
             <div
               onClick={() => hasRealPoster && setIsPosterModalOpen(true)}
-              className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl
-      
-                bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300
-                 group ${hasRealPoster ? 'cursor-zoom-in' : 'cursor-default'}`}
-            >
+              className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${hasRealPoster ? 'cursor-zoom-in' : 'cursor-default'}`}>
               <PosterImage
                 src={movie.poster}
                 alt={movie.title}
