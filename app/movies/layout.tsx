@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: 'Film Arşivi - Tüm İzlediğim Filmler',
   description:
     'İzlediğim tüm filmleri puan, tür, yıl ve yönetmene göre filtreleyerek keşfedin. Kişisel sinema arşivim. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
+  alternates: {
+    canonical: '/movies',
+  },
 };
 
 export default function MoviesLayout({
