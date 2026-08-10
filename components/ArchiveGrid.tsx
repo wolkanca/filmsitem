@@ -200,7 +200,7 @@ function InfiniteMovieGrid({ movies, sort }: { movies: Movie[]; sort: SortOption
     setTimeout(() => {
       setVisibleCount((prev) => Math.min(prev + PAGE_SIZE, sortedMovies.length));
       setIsLoading(false);
-    }, 200);
+    }, 400);
   }, [hasMore, isLoading, sortedMovies.length]);
 
   useEffect(() => {
