@@ -507,7 +507,7 @@ export default function MoviesPage() {
         window.scrollY || document.documentElement.scrollTop;
       const clientHeight = window.innerHeight;
 
-      if (scrollHeight - scrollTop - clientHeight < 300) {
+      if (scrollHeight - scrollTop - clientHeight < 500) {
         setVisibleCount((previousCount) =>
           Math.min(
             previousCount + PAGE_SIZE,
