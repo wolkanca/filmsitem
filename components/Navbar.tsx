@@ -123,14 +123,7 @@ export default function Navbar() {
       )}
 
       {/* Mobile Drawer */}
-      <div
-        className={`
-          fixed top-0 right-0 z-50 h-full w-full lg:hidden
-          bg-zinc-950/95 border-l border-white/10 backdrop-blur-xl shadow-2xl
-          transform transition-transform duration-300 ease-in-out
-          ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}
-        `}
-      >
+      <div className={`fixed top-0 right-0 z-50 h-full w-full lg:hidden bg-zinc-950/95 border-l border-white/10 backdrop-blur-xl shadow-2xl transform transition-transform duration-300 ease-in-out ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         {/* Drawer Header */}
         <div className="flex items-center justify-between px-5 h-16 border-b border-white/10">
           <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
@@ -173,14 +166,7 @@ export default function Navbar() {
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
                 style={{ transitionDelay: mobileOpen ? `${idx * 40}ms` : '0ms' }}
-                className={`
-                  flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium
-                  transition-all duration-300
-                  ${isActive
-                    ? 'bg-gradient-to-r from-red-950/60 to-rose-950/60 border border-brand-primary/40 text-white shadow-[0_0_20px_rgba(239,68,68,0.12)]'
-                    : 'text-zinc-400 hover:text-white hover:bg-white/5 border border-transparent'
-                  }
-                `}
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${isActive ? 'bg-gradient-to-r from-red-950/60 to-rose-950/60 border border-brand-primary/40 text-white shadow-[0_0_20px_rgba(239,68,68,0.12)]' : 'text-zinc-400 hover:text-white hover:bg-white/5 border border-transparent'}`}
               >
                 <Icon className={`w-5 h-5 flex-shrink-0 ${isActive ? 'text-brand-primary' : 'text-zinc-500'}`} />
                 <span>{item.name}</span>
