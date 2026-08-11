@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Loader2, Share2 } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Clapperboard, Loader2, Share2 } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -583,7 +583,7 @@ export default function MovieDetailClient({
           {/* Personal review card */}
           <div className="glass bg-gradient-to-br from-zinc-900/60 to-red-950/10 p-6 sm:p-8 rounded-3xl border border-brand-primary/20 space-y-6 mb-4 shadow-[0_10px_35px_rgba(239,68,68,0.1)]">
             <h2 className="text-lg font-black text-white tracking-tight flex items-center gap-2">
-              <Eye className="w-5 h-5 text-brand-primary" /> Notlarım
+              <Eye className="w-5 h-5 text-brand-accent/80" /> Notlarım
             </h2>
 
             <div className="cursor-pointer" onClick={() => window.open(`https://www.imdb.com/title/${movie.imdbId}/`, '_blank', 'noopener,noreferrer')}>
@@ -779,8 +779,8 @@ export default function MovieDetailClient({
       {/* Similar Movies Section */}
       {randomSimilarMovies.length > 0 && (
         <section className="space-y-6 pt-6 border-t border-zinc-800">
-          <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
-            <span>🎬</span> Benzer Yapımlar
+          <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
+            <Clapperboard className="w-5 h-5" /> Benzer Yapımlar
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-6">
             {randomSimilarMovies.map((sm) => (
