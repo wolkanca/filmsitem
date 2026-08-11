@@ -586,7 +586,7 @@ export default function MovieDetailClient({
               <Eye className="w-5 h-5 text-brand-primary" /> Notlarım
             </h2>
 
-            <div>
+            <div className="cursor-pointer" onClick={() => window.open(`https://www.imdb.com/title/${movie.imdbId}/`, '_blank', 'noopener,noreferrer')}>
               {/* My Rating */}
               <div className="bg-zinc-950/60 border border-white/5 rounded-2xl p-4 text-center">
                 <span className="text-xs font-bold text-zinc-500 uppercase tracking-wider">
@@ -627,6 +627,7 @@ export default function MovieDetailClient({
                     href={`https://www.imdb.com/title/${movie.imdbId}/`}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
                     className="group"
                   >
                     <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider block">
