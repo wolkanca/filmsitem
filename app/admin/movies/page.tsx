@@ -18,7 +18,7 @@ export default function AdminMoviesPage() {
   const [moviesLoading, setMoviesLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [filterMode, setFilterMode] = useState<
-    'all' | 'no-poster' | 'no-trailer' | 'both-missing' |
+    'all' | 'is-featured' | 'no-poster' | 'no-trailer' | 'both-missing' |
     'no-overview' | 'no-plot' | 'no-plotTr' | 'no-genres' | 'no-director' |
     'no-cast' | 'no-runtime' | 'no-country' | 'no-year' | 'no-imdb-rating' | 'no-release-date'
   >('all');
@@ -56,6 +56,7 @@ export default function AdminMoviesPage() {
     tmdbRating: number;
     releaseDate: string;
     trailerYoutubeId: string;
+    isFeatured: boolean;
   }
 
   const [editingMovie, setEditingMovie] = useState<Movie | null>(null);
@@ -87,6 +88,7 @@ export default function AdminMoviesPage() {
     tmdbRating: 0,
     releaseDate: '',
     trailerYoutubeId: '',
+    isFeatured: false,
   });
 
   // Check admin session
@@ -132,7 +134,9 @@ export default function AdminMoviesPage() {
 
     // Apply filter mode
     const noPoster = (m: Movie) => !m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder');
-    if (filterMode === 'no-poster') {
+    if (filterMode === 'is-featured') {
+      list = list.filter((m) => m.isFeatured);
+    } else if (filterMode === 'no-poster') {
       list = list.filter(noPoster);
     } else if (filterMode === 'no-trailer') {
       list = list.filter((m) => !m.trailerYoutubeId);
@@ -312,9 +316,33 @@ export default function AdminMoviesPage() {
       tmdbRating: movie.tmdbRating || 0,
       releaseDate: movie.releaseDate || '',
       trailerYoutubeId: movie.trailerYoutubeId || '',
+      isFeatured: Boolean(movie.isFeatured),
     });
     setModalError('');
     setIsModalOpen(true);
+  };
+
+  const toggleFeatured = async (movie: Movie) => {
+    const nextVal = !movie.isFeatured;
+    try {
+      setMovies((prev) =>
+        prev.map((m) => (m.imdbId === movie.imdbId ? { ...m, isFeatured: nextVal } : m))
+      );
+      const res = await fetch(`/api/movies/${movie.imdbId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ isFeatured: nextVal }),
+      });
+      if (!res.ok) {
+        setMovies((prev) =>
+          prev.map((m) => (m.imdbId === movie.imdbId ? { ...m, isFeatured: !nextVal } : m))
+        );
+      }
+    } catch {
+      setMovies((prev) =>
+        prev.map((m) => (m.imdbId === movie.imdbId ? { ...m, isFeatured: !nextVal } : m))
+      );
+    }
   };
 
   // CSV Export for filtered movies
@@ -473,6 +501,7 @@ export default function AdminMoviesPage() {
           <div className="flex flex-wrap gap-2">
             {([
               { key: 'all', label: '🎬 Tümü', color: 'violet', count: movies.length },
+              { key: 'is-featured', label: '⭐ Slider Öne Çıkarılanlar', color: 'yellow', count: movies.filter((m) => m.isFeatured).length },
               { key: 'no-poster', label: '🖼️ Afiş Yok', color: 'amber', count: movies.filter((m) => !m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')).length },
               { key: 'no-trailer', label: '▶️ Fragman Yok', color: 'blue', count: movies.filter((m) => !m.trailerYoutubeId).length },
               { key: 'both-missing', label: '⚠️ Afiş+Fragman Yok', color: 'red', count: movies.filter((m) => (!m.poster || m.poster.includes('unsplash.com') || m.poster.includes('placeholder')) && !m.trailerYoutubeId).length },
@@ -617,6 +646,14 @@ export default function AdminMoviesPage() {
                         </div>
                         {/* Status badges */}
                         <div className="flex items-center gap-1.5 flex-shrink-0">
+                          <button
+                            type="button"
+                            onClick={() => toggleFeatured(movie)}
+                            title="Slider'da Öne Çıkar durumunu aç/kapat"
+                            className={`text-[10px] font-bold px-2 py-0.5 rounded-full border cursor-pointer transition-all ${movie.isFeatured ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 hover:bg-amber-500/30' : 'bg-zinc-800 text-zinc-500 border-zinc-700 hover:text-zinc-300 hover:border-zinc-600'}`}
+                          >
+                            {movie.isFeatured ? '⭐ Slider Öne Çıkarıldı' : '+ Slider Öne Çıkar'}
+                          </button>
                           <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${hasPoster ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : 'bg-zinc-800 text-zinc-500 border-zinc-700'}`}>
                             {hasPoster ? '✓ Poster' : '✗ Poster'}
                           </span>
@@ -868,6 +905,19 @@ export default function AdminMoviesPage() {
                       className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
                     />
                   </div>
+                </div>
+                <div className="pt-2">
+                  <label className="inline-flex items-center gap-3 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={modalForm.isFeatured}
+                      onChange={(e) => setModalForm(prev => ({ ...prev, isFeatured: e.target.checked }))}
+                      className="w-4 h-4 text-amber-500 bg-zinc-900 border-zinc-700 rounded focus:ring-amber-500/30"
+                    />
+                    <span className="text-xs font-bold text-amber-300 flex items-center gap-1">
+                      ⭐ Slider&apos;da Öne Çıkar (Hero & Slider Featured)
+                    </span>
+                  </label>
                 </div>
               </div>
 

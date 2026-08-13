@@ -68283,7 +68283,8 @@
     "franchiseId": "jurassic-park",
     "franchiseName": "Jurassic Park",
     "franchiseOrder": 7,
-    "plot": "Five years after the events of Jurassic World Dominion, the planet’s ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures across land, sea and air within that tropical biosphere hold, in their DNA, the key to a drug that will bring miraculous life-saving benefits to humankind. Covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure the genetic material. When Zora’s operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on a forbidden island that had once housed an undisclosed research facility for Jurassic Park. There, in a terrain populated by dinosaurs of vastly different species, they come face-to-face with a sinister, shocking discovery that has been hidden from the world for decades."
+    "plot": "Five years after the events of Jurassic World Dominion, the planet’s ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures across land, sea and air within that tropical biosphere hold, in their DNA, the key to a drug that will bring miraculous life-saving benefits to humankind. Covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure the genetic material. When Zora’s operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on a forbidden island that had once housed an undisclosed research facility for Jurassic Park. There, in a terrain populated by dinosaurs of vastly different species, they come face-to-face with a sinister, shocking discovery that has been hidden from the world for decades.",
+    "isFeatured": true
   },
   {
     "imdbId": "tt27497448",
@@ -69246,7 +69247,7 @@
     "plotTr": "Geçirdiği trajik bir yamaç paraşütü kazası sonrası boynundan aşağısı felç kalan Refik (Haluk Bilginer), tekerlekli sandalyeye mahkum, oldukça varlıklı, entelektüel ve disiplinli bir iş adamıdır. Hayatını idame ettirebilmek için kendisine yardımcı olacak bir bakıcı arayışına girer. Tam bu sırada yolu; geçmişi biraz sabıkalı, hayatı hiç ciddiye almayan, fevri ama son derece samimi ve içi dışı bir olan Ferruh (Feyyaz Yiğit) ile kesişir. Refik, çevresindeki herkesin aksine kendisine acıyarak bakmayan bu sıra dışı adamı işe alır. İki bambaşka sosyo-kültürel dünyadan gelen, birbirine tamamen zıt bu iki karakterin zoraki birlikteliği, zamanla birbirlerinin hayatını kökten değiştiren, önyargıları yıkan ve mizah dolu çok güçlü bir dostluğa dönüşür.",
     "boxOffice": "",
     "plot": "The film centers on Refik, a wealthy and cultured man who is left paralyzed from the neck down after a paragliding accident, and Ferruh, a carefree man with a chaotic background who is hired as his caregiver. Despite their completely contrasting personalities, backgrounds, and worldviews, the unexpected encounter between these two opposite characters soon transforms into a powerful, humorous, and life-changing friendship that challenges their prejudices and gives them a second chance at life.",
-    "backdrop": ""
+    "isFeatured": true
   },
   {
     "imdbId": "tt30825738",
@@ -72357,7 +72358,8 @@
     "franchiseName": "Korkunç Bir Film",
     "franchiseOrder": 6,
     "boxOffice": "$106,483,187",
-    "plot": "Two friends find themselves caught up in mayhem involving killers, monsters and supernatural creatures once again."
+    "plot": "Two friends find themselves caught up in mayhem involving killers, monsters and supernatural creatures once again.",
+    "isFeatured": true
   },
   {
     "imdbId": "tt37287335",
@@ -84319,7 +84321,8 @@
     "country": "France",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "2050 yılında yapay zekâ her yerde. Öyle ki insanlık, en gizli ve kötü arzuları da dahil olmak üzere her ihtiyacını ve her arzusunu karşılamak için ona bağımlı. Sakin bir yerleşim bölgesinde, dört ev robotu aniden efendilerini kendi evlerinde rehin almaya karar verir. Birbirine kilitlenmiş, pek de kaynaşmamış bir aile, müdahaleci bir komşu ve onun girişimci seks robotu, giderek histerikleşen bir atmosferde birbirlerine katlanmak zorunda kalırlar. Dışarıda ise, androidlerin en yeni nesli olan Yonyx’ler kontrolü ele geçirmeye çalışmaktadır. Tehdit yaklaştıkça, insanlar başka yerlere yönelir, kıskanır ve evlerindeki robotların şaşkın bakışları altında birbirlerine saldırırlar. Belki de ruhu olan robotlardır, ya da değildir."
+    "plotTr": "2050 yılında yapay zekâ her yerde. Öyle ki insanlık, en gizli ve kötü arzuları da dahil olmak üzere her ihtiyacını ve her arzusunu karşılamak için ona bağımlı. Sakin bir yerleşim bölgesinde, dört ev robotu aniden efendilerini kendi evlerinde rehin almaya karar verir. Birbirine kilitlenmiş, pek de kaynaşmamış bir aile, müdahaleci bir komşu ve onun girişimci seks robotu, giderek histerikleşen bir atmosferde birbirlerine katlanmak zorunda kalırlar. Dışarıda ise, androidlerin en yeni nesli olan Yonyx’ler kontrolü ele geçirmeye çalışmaktadır. Tehdit yaklaştıkça, insanlar başka yerlere yönelir, kıskanır ve evlerindeki robotların şaşkın bakışları altında birbirlerine saldırırlar. Belki de ruhu olan robotlardır, ya da değildir.",
+    "isFeatured": true
   },
   {
     "imdbId": "tt14158554",

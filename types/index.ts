@@ -56,4 +56,8 @@ export interface Movie {
   franchiseId?: string;
   franchiseName?: string;
   franchiseOrder?: number;
+
+  // Slider'da öne çıkarılan film mi?
+  isFeatured?: boolean;
 }
+

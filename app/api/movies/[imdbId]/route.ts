@@ -26,6 +26,9 @@ export async function PATCH(
     const numberFields = [
       'year', 'myRating', 'runtime', 'imdbRating', 'tmdbRating'
     ];
+    const booleanFields = [
+      'isFeatured'
+    ];
     const stringArrayFields = [
       'listName', 'genres', 'cast', 'writers'
     ];
@@ -42,6 +45,12 @@ export async function PATCH(
       if (field in body) {
         const num = Number(body[field]);
         updates[field] = isNaN(num) ? 0 : num;
+      }
+    }
+
+    for (const field of booleanFields) {
+      if (field in body) {
+        updates[field] = Boolean(body[field]);
       }
     }
 

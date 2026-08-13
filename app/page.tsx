@@ -50,24 +50,46 @@ export default async function HomePage() {
 
   const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 300;
 
-  const featuredMovie = featuredPool[currentDay % featuredPool.length];
+  // Manuel olarak öne çıkarılan filmler (isFeatured: true)
+  const manualFeatured = movies.filter((m) => onlyCinema(m) && m.isFeatured);
 
-  // Günün rastgele film önerileri için 7 benzersiz film seç
+  const featuredMovie =
+    manualFeatured.length > 0
+      ? manualFeatured[currentDay % manualFeatured.length]
+      : featuredPool[currentDay % featuredPool.length];
+
+  // Slider film önerileri için:
+  // Manuel öne çıkarılanlar (isFeatured) önceliklidir. Eksik kalırsa (7'den azsa) otomatik algoritmik havuzdan tamamlanır.
   const featuredMovies = [];
+  const manualSet = new Set<string>();
 
-  if (featuredPool.length > 0) {
-    const uniqueIndices = new Set<number>();
-    const countToPick = Math.min(7, featuredPool.length);
-    let offset = 0;
-
-    while (uniqueIndices.size < countToPick) {
-      const idx = (currentDay + offset) % featuredPool.length;
-      uniqueIndices.add(idx);
-      offset++;
+  if (manualFeatured.length > 0) {
+    for (const m of manualFeatured) {
+      featuredMovies.push(m);
+      if (m.imdbId) manualSet.add(m.imdbId);
     }
+  }
 
-    for (const idx of uniqueIndices) {
-      featuredMovies.push(featuredPool[idx]);
+  if (featuredMovies.length < 7 && featuredPool.length > 0) {
+    const remainingCount = 7 - featuredMovies.length;
+    const availableFromPool = featuredPool.filter(
+      (m) => !m.imdbId || !manualSet.has(m.imdbId)
+    );
+
+    if (availableFromPool.length > 0) {
+      const countToPick = Math.min(remainingCount, availableFromPool.length);
+      const uniqueIndices = new Set<number>();
+      let offset = 0;
+
+      while (uniqueIndices.size < countToPick && offset < availableFromPool.length * 2) {
+        const idx = (currentDay + offset) % availableFromPool.length;
+        uniqueIndices.add(idx);
+        offset++;
+      }
+
+      for (const idx of uniqueIndices) {
+        featuredMovies.push(availableFromPool[idx]);
+      }
     }
   }
 

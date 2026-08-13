@@ -108,6 +108,7 @@ export default function MovieDetailClient({
     tmdbRating: number;
     releaseDate: string;
     trailerYoutubeId: string;
+    isFeatured: boolean;
   }
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -187,6 +188,7 @@ export default function MovieDetailClient({
     tmdbRating: 0,
     releaseDate: '',
     trailerYoutubeId: '',
+    isFeatured: false,
   });
 
   // Active season tab for series
@@ -246,6 +248,7 @@ export default function MovieDetailClient({
       tmdbRating: movieToEdit.tmdbRating || 0,
       releaseDate: movieToEdit.releaseDate || '',
       trailerYoutubeId: movieToEdit.trailerYoutubeId || '',
+      isFeatured: Boolean(movieToEdit.isFeatured),
     });
     setModalError('');
     setIsModalOpen(true);
@@ -345,14 +348,38 @@ export default function MovieDetailClient({
       {/* Cinematic Backdrop Hero Area */}
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950/60 min-h-[380px] flex items-end">
         {isAdmin && (
-          <button
-            type="button"
-            onClick={(e) => { e.stopPropagation(); openEditModal(movie); }}
-            className="z-20 absolute top-1 right-3 bg-gradient-to-r cursor-pointer disabled:opacity-60 duration-300 flex font-bold from-violet-600 gap-2 hover:opacity-95 items-center justify-center px-6 py-1.5 rounded-xl shadow-lg shadow-violet-600/10 text-xs text-white to-indigo-600 transition-all"
-            title="Filmi Düzenle"
-          >
-            <Pencil className="w-3 h-3" /> Düzenle
-          </button>
+          <div className="z-20 absolute top-3 right-3 flex items-center gap-2">
+            <button
+              type="button"
+              onClick={async (e) => {
+                e.stopPropagation();
+                const nextVal = !movie.isFeatured;
+                setMovie((prev) => ({ ...prev, isFeatured: nextVal }));
+                try {
+                  await fetch(`/api/movies/${movie.imdbId}`, {
+                    method: 'PATCH',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ isFeatured: nextVal }),
+                  });
+                } catch {
+                  setMovie((prev) => ({ ...prev, isFeatured: !nextVal }));
+                }
+              }}
+              className={`cursor-pointer duration-300 flex font-bold gap-1.5 items-center justify-center px-4 py-1.5 rounded-xl text-xs transition-all border ${movie.isFeatured ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 hover:bg-amber-500/30' : 'bg-zinc-900/80 text-zinc-300 border-zinc-700 hover:bg-zinc-800'}`}
+              title="Slider'da Öne Çıkar durumunu değiştir"
+            >
+              <Star className={`w-3.5 h-3.5 ${movie.isFeatured ? 'fill-amber-300 text-amber-300' : ''}`} />
+              {movie.isFeatured ? 'Öne Çıkarıldı' : 'Öne Çıkar'}
+            </button>
+            <button
+              type="button"
+              onClick={(e) => { e.stopPropagation(); openEditModal(movie); }}
+              className="bg-gradient-to-r cursor-pointer disabled:opacity-60 duration-300 flex font-bold from-violet-600 gap-2 hover:opacity-95 items-center justify-center px-5 py-1.5 rounded-xl shadow-lg shadow-violet-600/10 text-xs text-white to-indigo-600 transition-all"
+              title="Filmi Düzenle"
+            >
+              <Pencil className="w-3 h-3" /> Düzenle
+            </button>
+          </div>
         )}
         {/* Backdrop Image */}
         <div className="absolute inset-0 z-0">
@@ -924,6 +951,19 @@ export default function MovieDetailClient({
                       className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
                     />
                   </div>
+                </div>
+                <div className="pt-2">
+                  <label className="inline-flex items-center gap-3 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      checked={modalForm.isFeatured}
+                      onChange={(e) => setModalForm(prev => ({ ...prev, isFeatured: e.target.checked }))}
+                      className="w-4 h-4 text-amber-500 bg-zinc-900 border-zinc-700 rounded focus:ring-amber-500/30"
+                    />
+                    <span className="text-xs font-bold text-amber-300 flex items-center gap-1">
+                      ⭐ Slider&apos;da Öne Çıkar (Hero & Slider Featured)
+                    </span>
+                  </label>
                 </div>
               </div>
 
