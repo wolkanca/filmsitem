@@ -86,8 +86,7 @@ export default function RandomPage() {
         // Linkin sonunda ?r veya /?r parametresi varsa otomatik çarkı döndür
         if (typeof window !== 'undefined') {
           const urlParams = new URLSearchParams(window.location.search);
-          const hasReferrer = document.referrer !== '';
-          if ((urlParams.has('r') || window.location.search.includes('r')) && hasReferrer) {
+          if (urlParams.has('r') || window.location.search.includes('r')) {
             const initialPool = getFilteredPoolFromData(data);
             if (initialPool.length > 0) {
               handleShuffle(initialPool);
