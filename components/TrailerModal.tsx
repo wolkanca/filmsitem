@@ -127,7 +127,7 @@ export default function TrailerModal({
         </div>
 
         {/* Content Body */}
-        <div className="p-2 sm:p-4 space-y-3">
+        <div className="space-y-3">
           {/* Admin Edit Form Bar */}
           {isAdmin && isEditing && (
             <div className="p-3 bg-zinc-900/90 rounded-2xl border border-brand-primary/30 flex flex-col gap-2">
@@ -160,7 +160,7 @@ export default function TrailerModal({
           )}
 
           {trailerYoutubeId ? (
-            <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-white/5 bg-black shadow-inner">
+            <div className="relative aspect-video w-full overflow-hidden bg-black shadow-inner">
               <iframe
                 key={trailerYoutubeId}
                 src={`https://www.youtube.com/embed/${trailerYoutubeId}?autoplay=1&rel=0`}
