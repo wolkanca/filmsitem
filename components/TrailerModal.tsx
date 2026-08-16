@@ -93,7 +93,7 @@ export default function TrailerModal({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-zinc-900/50">
+        <div className="flex items-center justify-between px-6 py-4 bg-zinc-900/50">
           <div className="flex items-center gap-2">
             <Film className="w-5 h-5 text-brand-primary" />
             <h3 className="text-lg font-bold text-white tracking-tight line-clamp-1">
