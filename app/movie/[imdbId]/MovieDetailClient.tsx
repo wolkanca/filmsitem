@@ -298,7 +298,7 @@ export default function MovieDetailClient({
     }
   };
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://izlediklerim.wolkanca.com';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://izlediklerim.com';
   const movieUrl = `${baseUrl}/movie/${movie.imdbId}`;
 
   const whatsappShareUrl = `https://wa.me/?text=${encodeURIComponent(

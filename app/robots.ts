@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://izlediklerim.wolkanca.com/sitemap.xml',
+    sitemap: 'https://izlediklerim.net/sitemap.xml',
   };
 }

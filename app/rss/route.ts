@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getMovies } from '@/lib/db';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://izlediklerim.wolkanca.com';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://izlediklerim.com';
 
   try {
     const movies = await getMovies();

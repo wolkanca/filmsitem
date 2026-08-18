@@ -152,7 +152,7 @@ export default function PosterImage({
 
   return (
     <Image
-      src={`https://i0.wp.com/izlediklerim.wolkanca.com/${imgSrc}`}
+      src={`https://i0.wp.com/izlediklerim.com/${imgSrc}`}
       alt={alt}
       fill={fill}
       sizes={sizes}

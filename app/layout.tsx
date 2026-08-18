@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://izlediklerim.wolkanca.com'),
+  metadataBase: new URL('https://izlediklerim.com'),
   title: {
     default: 'İzlediklerim - Kişisel Sinema Arşivim',
     template: '%s - İzlediklerim',

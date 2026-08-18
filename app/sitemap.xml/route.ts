@@ -2,7 +2,7 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-static';
 export const revalidate = 86400;
 
-const SITE_URL = 'https://izlediklerim.wolkanca.com';
+const SITE_URL = 'https://izlediklerim.com';
 
 const SITEMAP_SECTIONS = [
     'pages',
