@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import https from 'https';
 
+export const dynamic = 'force-static';
+
+
 function fetchWithHttps(url: string, options: https.RequestOptions = {}): Promise<{ status: number; text: string }> {
   return new Promise((resolve, reject) => {
     const req = https.get(url, options, (res) => {

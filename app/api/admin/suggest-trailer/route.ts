@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-static';
+
+
 // GET /api/admin/suggest-trailer?imdbId=ttXXXXXX&apiKey=... — Search TMDb for a movie's trailer by IMDb ID
 export async function GET(req: Request) {
   try {

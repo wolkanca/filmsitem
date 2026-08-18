@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getMovies } from '@/lib/db';
 
+export const dynamic = 'force-static';
 export const revalidate = 604800; // 7 gün (saniye)
 
 export async function GET() {

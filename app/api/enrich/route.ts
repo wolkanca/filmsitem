@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 import { getMovies, saveMovies } from '@/lib/db';
 
+export const dynamic = 'force-static';
+
+
 const state = {
   isRunning: false,
   total: 0,

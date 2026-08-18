@@ -1,6 +1,9 @@
 import { NextResponse } from 'next/server';
 import { getStore } from '@netlify/blobs';
 
+export const dynamic = 'force-static';
+
+
 // Helper to check admin status
 function checkIsAdmin(req: Request): boolean {
   const cookieHeader = req.headers.get('cookie') || '';
