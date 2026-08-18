@@ -14,7 +14,7 @@ Bu proje bir IMDb veya Letterboxd alternatifi değildir. Temel amaç, kullanıc�
 * **Programlama Dili:** TypeScript (Strict Mode)
 * **Stil Yönetimi:** Tailwind CSS & Vanilla CSS (Cam efekti / Glassmorphism)
 * **İkon Kütüphanesi:** Lucide React
-* **Veri Depolama:** `data/movies.json` (Local) & Vercel Blob Store (Cloud)
+* **Veri Depolama:** `data/movies.json` (Local)
 * **Yapay Zeka & Veri Zenginleştirme:** Gemini API (`@google/genai`), OMDb API, TMDB API
 * **Dağıtım (Deployment):** Vercel & Netlify uyumlu statik/dinamik hibrit mimari
 
@@ -28,7 +28,7 @@ Sistem, kişisel film arşiviniz üzerinden şu özellikleri dinamik olarak suna
 * **Gelişmiş İstatistikler ve Grafikler:** Yıllık izleme sayıları, puan dağılımları, favori tür/yönetmen/oyuncular ve interaktif grafikler.
 * **Özel Arama Motoru (CMD+K / Ctrl+K):** Hızlı ve anlık sonuç veren küresel arama bileşeni.
 * **Sezon ve Bölüm Desteği:** TV dizilerinin sezon ve bölümlerini ayrıştırıp kişisel puan ve izleme tarihleriyle listeleme.
-* **Admin Yönetim Paneli (`/admin`):** Tarayıcı üzerinden IMDb verisi yükleme, eksik posterleri/fragmanları bulma, Gemini ile özet çevirisi yapma ve buluta senkronizasyon.
+* **Admin Yönetim Paneli (`/admin`):** Tarayıcı üzerinden IMDb verisi yükleme, eksik posterleri/fragmanları bulma, Gemini ile özet çevirisi yapma ve metadata yönetimi.
 * **Zenginleştirilmiş Medya:** YouTube fragman entegrasyonu, yüksek çözünürlüklü poster ve arka plan (backdrop) görselleri.
 * **Tam SEO Uyumluluğu:** Dinamik Open Graph görselleri, meta etiketleri, robots.txt, sitemap.xml ve JSON-LD şema yapıları.
 

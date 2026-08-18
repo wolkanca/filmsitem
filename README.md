@@ -8,7 +8,7 @@ Kişisel bir sinema günlüğü konseptiyle tasarlanmıştır.
 
 ## ✨ Özellikler
 
-* **Dinamik Veri Akışı:** Local JSON (`data/movies.json`) veya Vercel Blob Store bulut entegrasyonu.
+* **Dinamik Veri Akışı:** Local JSON (`data/movies.json`) veritabanı.
 * **Gelişmiş Arama (Ctrl+K / Cmd+K):** Hızlı, anlık sonuç veren küresel arama.
 * **İnteraktif Grafik ve İstatistikler:** Puan dağılımları, yıllık izleme adetleri, tür analizleri, en çok izlenen yönetmen ve oyuncu grafikleri (interaktif bileşenlerle).
 * **Dizi / Bölüm Desteği:** TV şovlarının sezon ve bölümlerini ayıklayıp, kişisel puanlama ve izleme tarihi bilgileriyle birlikte listeleme.
@@ -18,7 +18,6 @@ Kişisel bir sinema günlüğü konseptiyle tasarlanmıştır.
   * IMDb CSV dosyalarını tarayıcıdan yükleme.
   * YouTube fragmanlarını bulup güncelleme.
   * Türkçe çeviri, afiş ve metadata kontrolleri yapma.
-  * Vercel Blob deposuna tek tıkla yerel veritabanını (`movies.json`) senkronize etme.
 * **SEO Dostu & Performans:** Hızlı statik sayfa üretimi (SSG/ISR), dinamik Open Graph kartları, JSON-LD Movie Schema, otomatik `sitemap.xml`, `robots.txt` ve `rss.xml`.
 
 ---
@@ -49,13 +48,6 @@ OMDB_API_KEY=kendi_omdb_api_keyleriniz
 
 # Yönetici Paneli Giriş E-postası
 ADMIN_EMAIL=yonetici_epostasi@gmail.com
-
-# Vercel Blob Depolama Ayarları (Bulut senkronizasyonu için)
-BLOB_STORE_ID="store_id_degeriniz"
-BLOB_READ_WRITE_TOKEN="vercel_blob_rw_token_degeriniz"
-
-# Buluttaki movies.json Dosyasının Doğrudan Adresi
-BLOB_MOVIES_URL=https://<store-id>.public.blob.vercel-storage.com/movies.json
 ```
 
 ### 3. Uygulamayı Başlatın
@@ -81,7 +73,6 @@ Veritabanını işlemek ve zenginleştirmek için `scripts/` klasöründe yer al
 
 * **`npm run import <imdb-csv-dosyası>`:** IMDb'den indirdiğiniz CSV formatındaki film/dizi listenizi içe aktararak `data/movies.json` dosyasını oluşturur.
 * **`npm run enrich-posters`:** `movies.json` dosyasındaki filmleri tarayarak OMDb API üzerinden eksik poster, yönetmen, yazar, oyuncu ve puan bilgilerini indirir.
-* **`npm run sync-blob`:** Yerel `data/movies.json` veritabanını, Vercel Blob deposuna yükler (bulut veritabanını günceller).
 
 ### Diğer Yardımcı Scriptler
 
@@ -100,25 +91,15 @@ Yardımcı araçları çalıştırmak için `node scripts/<script_adi>.mjs` komu
 ## 📂 Klasör Yapısı
 
 * **`app/`**: Next.js 15 App Router sayfaları.
-  * **`admin/`**: İçe aktarma, fragman kontrolleri ve bulut senkronizasyon araçlarını barındıran yönetim paneli.
+  * **`admin/`**: İçe aktarma, fragman ve metadata yönetim araçlarını barındıran yönetim paneli.
   * **`movie/[imdbId]/`**: Detaylı film/dizi sunumu, fragmanlar ve benzer film önerileri.
   * **`stats/`**: Detaylı grafikler ve istatistik sayfası.
   * **`lists/`**: Özel listelerin ve koleksiyonların bulunduğu sayfalar.
   * **`director/`**, **`actor/`**, **`genre/`**, **`writer/`**, **`year/`**: Keşif ve kategorilendirme sayfaları.
   * **`api/`**: Küresel arama, statik verileri çekme ve admin işlemleri için API uç noktaları.
 * **`components/`**: Yeniden kullanılabilir React bileşenleri (`Navbar`, `Footer`, `MovieCard`, `ArchiveGrid`, `StatsCharts` vb.).
-* **`data/`**: Yerel veritabanı dosyaları (`movies.json` ve bulut yapılandırması).
-* **`lib/`**: Veritabanı okuma/yazma işlemleri, yardımcı fonksiyonlar ve Vercel Blob bağlantı mantığı.
+* **`data/`**: Yerel veritabanı dosyaları (`movies.json`).
+* **`lib/`**: Veritabanı okuma/yazma işlemleri ve yardımcı fonksiyonlar.
 * **`scripts/`**: Veriyi zenginleştirme, optimize etme ve bakım işleri için yazılmış CLI scriptleri.
 * **`types/`**: TypeScript arayüz tanımlamaları.
 * **`public/`**: Favicon, logo ve statik medya dosyaları.
-
----
-
-## ☁️ Bulut Senkronizasyonu (Vercel Blob)
-
-Proje, Vercel Blob ile entegre çalışacak şekilde tasarlanmıştır. Bu sayede local dosya sistemi kısıtlamalarından kurtularak veritabanınızı dinamik olarak bulutta saklayabilirsiniz:
-
-1. **Local veri değişikliği:** `/admin/import` arayüzü veya yerel CLI scriptleri ile yerelde `data/movies.json` güncellenir.
-2. **Buluta Yükleme:** Yönetim panelinden "Buluta Eşitle" seçeneği veya `npm run sync-blob` komutu ile dosya Vercel Blob üzerine yüklenir.
-3. **Canlı Sunucu Kullanımı:** Canlıdaki uygulama, getMovies() çağrısında doğrudan `BLOB_MOVIES_URL` adresinden veriyi okur. Böylece her veri güncellemesinde uygulamayı yeniden build etmeye gerek kalmaz.

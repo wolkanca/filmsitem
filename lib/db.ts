@@ -1,47 +1,12 @@
 import fs from 'fs';
 import path from 'path';
-import { put } from '@vercel/blob';
 import { Movie } from '@/types';
 
 const DATA_FILE = path.join(process.cwd(), 'data', 'movies.json');
-const CONFIG_FILE = path.join(process.cwd(), 'data', 'blob-config.json');
-
-interface BlobConfig {
-  enabled: boolean;
-  blobUrl: string;
-  lastSync: string | null;
-  lastSyncDirection: string | null;
-}
-
-function readBlobConfig(): BlobConfig {
-  const envUrl = process.env.BLOB_MOVIES_URL || '';
-  const defaults: BlobConfig = {
-    enabled: !!envUrl,
-    blobUrl: envUrl,
-    lastSync: null,
-    lastSyncDirection: null,
-  };
-  try {
-    if (fs.existsSync(CONFIG_FILE)) {
-      const raw = fs.readFileSync(CONFIG_FILE, 'utf8');
-      return { ...defaults, ...JSON.parse(raw) };
-    }
-  } catch { /* ignore */ }
-  return defaults;
-}
-
-function writeBlobConfig(config: BlobConfig): void {
-  try {
-    const dir = path.dirname(CONFIG_FILE);
-    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(CONFIG_FILE, JSON.stringify(config, null, 2), 'utf8');
-  } catch { /* Vercel read-only fs — ignore */ }
-}
 
 export async function saveMovies(movies: Movie[]): Promise<void> {
   const jsonContent = JSON.stringify(movies, null, 2);
 
-  // 1. Save to local filesystem if accessible
   try {
     const dir = path.dirname(DATA_FILE);
     if (!fs.existsSync(dir)) {
@@ -51,49 +16,9 @@ export async function saveMovies(movies: Movie[]): Promise<void> {
   } catch (error) {
     console.warn('saveMovies local fs write error:', error);
   }
-
-  // 2. Save to Vercel Blob store if enabled in config
-  const blobConfig = readBlobConfig();
-  if (blobConfig.enabled && process.env.BLOB_READ_WRITE_TOKEN) {
-    try {
-      const blob = await put('movies.json', jsonContent, {
-        access: 'public',
-        addRandomSuffix: false,
-      });
-      // Update config with current URL
-      blobConfig.blobUrl = blob.url;
-      blobConfig.lastSync = new Date().toISOString();
-      blobConfig.lastSyncDirection = 'local_to_blob';
-      writeBlobConfig(blobConfig);
-      console.log('[saveMovies] Blob URL:', blob.url);
-    } catch (error) {
-      console.error('saveMovies Vercel Blob save error:', error);
-    }
-  }
 }
 
 export async function getMovies(): Promise<Movie[]> {
-  // 1. Try Vercel Blob via direct URL if blob is enabled in admin config
-  //    (NO list() call = NO Advanced Operation charged)
-  const blobConfig = readBlobConfig();
-  if (blobConfig.enabled && blobConfig.blobUrl) {
-    try {
-      const res = await fetch(blobConfig.blobUrl, {
-        cache: 'no-store',
-        signal: AbortSignal.timeout(8000),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data) && data.length > 0) {
-          return data as Movie[];
-        }
-      }
-    } catch (error) {
-      console.warn('getMovies Blob fetch failed — falling back to local fs:', error);
-    }
-  }
-
-  // 2. Fallback: local fs data/movies.json
   try {
     if (fs.existsSync(DATA_FILE)) {
       const fileContent = fs.readFileSync(DATA_FILE, 'utf8');

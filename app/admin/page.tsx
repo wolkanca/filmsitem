@@ -1,13 +1,11 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import {
   Shield, Lock, User, LogOut, ArrowRight, Sparkles, Video,
-  Loader2, Film, FileSpreadsheet, Mail, Database, RefreshCw,
-  ToggleLeft, ToggleRight, ArrowUpFromLine, ArrowDownToLine,
-  CheckCircle2, XCircle, AlertCircle, Wifi, WifiOff
+  Loader2, Film, FileSpreadsheet
 } from 'lucide-react';
 
 export default function AdminPage() {
@@ -31,34 +29,12 @@ export default function AdminPage() {
     changes?: string[];
   } | null>(null);
 
-  // Blob management state
-  const [blobStatus, setBlobStatus] = useState<{
-    enabled: boolean;
-    blobUrl: string;
-    blobReachable: boolean;
-    localExists: boolean;
-    localCount: number;
-    lastSync: string | null;
-    lastSyncDirection: string | null;
-  } | null>(null);
-  const [blobLoading, setBlobLoading] = useState(false);
-  const [blobSyncing, setBlobSyncing] = useState<'local_to_blob' | 'blob_to_local' | null>(null);
-  const [blobMessage, setBlobMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
-
   // Check login cookie on mount
   useEffect(() => {
     setMounted(true);
     const cookies = document.cookie.split(';');
     const isAlreadyAdmin = cookies.some((c) => c.trim().startsWith('is_admin=true'));
     setIsLoggedIn(isAlreadyAdmin);
-  }, []);
-
-  // Fetch blob status
-  const fetchBlobStatus = useCallback(async () => {
-    try {
-      const res = await fetch('/api/admin/blob-settings');
-      if (res.ok) setBlobStatus(await res.json());
-    } catch { /* ignore */ }
   }, []);
 
   // Poll enrich wizard status when logged in
@@ -76,79 +52,8 @@ export default function AdminPage() {
     checkEnrichStatus();
     const interval = setInterval(checkEnrichStatus, 1500);
 
-    fetchBlobStatus();
-
     return () => clearInterval(interval);
-  }, [isLoggedIn, fetchBlobStatus]);
-
-  // Blob toggle
-  const handleBlobToggle = async () => {
-    if (!blobStatus) return;
-    setBlobLoading(true);
-    setBlobMessage(null);
-    try {
-      const res = await fetch('/api/admin/blob-settings', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ enabled: !blobStatus.enabled }),
-      });
-      if (res.ok) {
-        await fetchBlobStatus();
-        setBlobMessage({
-          type: 'success',
-          text: !blobStatus.enabled ? 'Blob veritabanı etkinleştirildi.' : 'Blob veritabanı devre dışı bırakıldı. Veriler local dosyadan okunacak.',
-        });
-      }
-    } catch {
-      setBlobMessage({ type: 'error', text: 'Ayar kaydedilemedi.' });
-    } finally {
-      setBlobLoading(false);
-    }
-  };
-
-  // Blob sync
-  const handleBlobSync = async (direction: 'local_to_blob' | 'blob_to_local') => {
-    setBlobSyncing(direction);
-    setBlobMessage(null);
-    try {
-      const res = await fetch('/api/admin/blob-sync', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ direction }),
-      });
-      const data = await res.json();
-      if (res.ok && data.success) {
-        setBlobMessage({ type: 'success', text: data.message });
-        await fetchBlobStatus();
-      } else {
-        setBlobMessage({ type: 'error', text: data.error || 'Senkronizasyon başarısız.' });
-      }
-    } catch {
-      setBlobMessage({ type: 'error', text: 'Senkronizasyon sırasında bir hata oluştu.' });
-    } finally {
-      setBlobSyncing(null);
-    }
-  };
-
-  // Auto-detect blob URL
-  const handleDetectBlobUrl = async () => {
-    setBlobLoading(true);
-    setBlobMessage(null);
-    try {
-      const res = await fetch('/api/admin/blob-settings', { method: 'PUT' });
-      const data = await res.json();
-      if (res.ok && data.success) {
-        setBlobMessage({ type: 'success', text: `Blob URL tespit edildi: ${data.url}` });
-        await fetchBlobStatus();
-      } else {
-        setBlobMessage({ type: 'error', text: data.error || 'URL tespit edilemedi.' });
-      }
-    } catch {
-      setBlobMessage({ type: 'error', text: 'Bağlantı hatası.' });
-    } finally {
-      setBlobLoading(false);
-    }
-  };
+  }, [isLoggedIn]);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
@@ -295,168 +200,7 @@ export default function AdminPage() {
             </Link>
           </div>
 
-          {/* Blob Database Management Panel */}
-          <div className="glass-card p-6 rounded-3xl border border-white/5 bg-gradient-to-br from-zinc-950/40 to-cyan-950/10 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-cyan-500/5 rounded-full blur-3xl -z-10" />
 
-            <div className="flex items-center gap-3 mb-5">
-              <div className="p-2.5 bg-cyan-500/10 rounded-xl text-cyan-400 border border-cyan-500/20">
-                <Database className="w-5 h-5" />
-              </div>
-              <div>
-                <h2 className="text-base font-black text-white">Blob Veritabanı Yöneticisi</h2>
-                <p className="text-zinc-500 text-[11px] mt-0.5">Vercel Blob ↔ Local dosya senkronizasyonu ve erişim kontrolü</p>
-              </div>
-              <button
-                onClick={fetchBlobStatus}
-                className="ml-auto p-2 text-zinc-500 hover:text-cyan-400 transition-colors cursor-pointer rounded-lg hover:bg-cyan-500/10"
-                title="Yenile"
-              >
-                <RefreshCw className="w-4 h-4" />
-              </button>
-            </div>
-
-            {!blobStatus ? (
-              <div className="flex items-center gap-2 text-zinc-500 text-sm py-4">
-                <Loader2 className="w-4 h-4 animate-spin" />
-                Blob durumu kontrol ediliyor...
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {/* Status row */}
-                <div className="grid grid-cols-3 gap-3">
-                  {/* Blob toggle */}
-                  <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3">
-                    <span className="block text-[10px] text-zinc-500 font-bold uppercase mb-2">Blob Durumu</span>
-                    <button
-                      onClick={handleBlobToggle}
-                      disabled={blobLoading}
-                      className={`flex items-center gap-2 text-sm font-bold transition-colors cursor-pointer ${blobStatus.enabled ? 'text-emerald-400 hover:text-emerald-300' : 'text-zinc-500 hover:text-zinc-300'
-                        }`}
-                    >
-                      {blobLoading ? (
-                        <Loader2 className="w-5 h-5 animate-spin" />
-                      ) : blobStatus.enabled ? (
-                        <ToggleRight className="w-6 h-6" />
-                      ) : (
-                        <ToggleLeft className="w-6 h-6" />
-                      )}
-                      {blobStatus.enabled ? 'Açık' : 'Kapalı'}
-                    </button>
-                  </div>
-
-                  {/* Blob reachability */}
-                  <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3">
-                    <span className="block text-[10px] text-zinc-500 font-bold uppercase mb-2">Blob Erişimi</span>
-                    <div className={`flex items-center gap-1.5 text-sm font-bold ${!blobStatus.blobUrl ? 'text-zinc-600' :
-                        blobStatus.blobReachable ? 'text-emerald-400' : 'text-red-400'
-                      }`}>
-                      {!blobStatus.blobUrl ? (
-                        <><AlertCircle className="w-4 h-4" /> URL Yok</>
-                      ) : blobStatus.blobReachable ? (
-                        <><Wifi className="w-4 h-4" /> Erişilebilir</>
-                      ) : (
-                        <><WifiOff className="w-4 h-4" /> Ulaşılamıyor</>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Local file status */}
-                  <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-3">
-                    <span className="block text-[10px] text-zinc-500 font-bold uppercase mb-2">Local Dosya</span>
-                    <div className={`flex items-center gap-1.5 text-sm font-bold ${blobStatus.localExists ? 'text-emerald-400' : 'text-red-400'
-                      }`}>
-                      {blobStatus.localExists ? (
-                        <><CheckCircle2 className="w-4 h-4" /> {blobStatus.localCount} Film</>
-                      ) : (
-                        <><XCircle className="w-4 h-4" /> Bulunamadı</>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                {/* Last sync info */}
-                {blobStatus.lastSync && (
-                  <div className="text-[11px] text-zinc-600 flex items-center gap-1.5">
-                    <RefreshCw className="w-3 h-3" />
-                    Son senkronizasyon: <span className="text-zinc-400">
-                      {new Date(blobStatus.lastSync).toLocaleString('tr-TR')} &mdash;
-                      {blobStatus.lastSyncDirection === 'local_to_blob' ? ' Local → Blob' : ' Blob → Local'}
-                    </span>
-                  </div>
-                )}
-
-                {/* Blob URL */}
-                {blobStatus.blobUrl && (
-                  <div className="text-[10px] text-zinc-700 truncate font-mono bg-zinc-900/40 px-3 py-1.5 rounded-lg border border-zinc-800">
-                    {blobStatus.blobUrl}
-                  </div>
-                )}
-
-                {/* Alert message */}
-                {blobMessage && (
-                  <div className={`flex items-start gap-2 p-3 rounded-xl text-xs font-medium ${blobMessage.type === 'success'
-                      ? 'bg-emerald-950/30 border border-emerald-500/20 text-emerald-300'
-                      : 'bg-red-950/30 border border-red-500/20 text-red-300'
-                    }`}>
-                    {blobMessage.type === 'success' ? <CheckCircle2 className="w-4 h-4 flex-shrink-0 mt-0.5" /> : <XCircle className="w-4 h-4 flex-shrink-0 mt-0.5" />}
-                    {blobMessage.text}
-                  </div>
-                )}
-
-                {/* Action buttons */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-                  {/* Local → Blob */}
-                  <button
-                    onClick={() => handleBlobSync('local_to_blob')}
-                    disabled={!!blobSyncing || blobLoading}
-                    className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 hover:bg-cyan-500/20 text-xs font-bold transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
-                  >
-                    {blobSyncing === 'local_to_blob' ? (
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                    ) : (
-                      <ArrowUpFromLine className="w-4 h-4" />
-                    )}
-                    Local → Blob
-                  </button>
-
-                  {/* Blob → Local */}
-                  <button
-                    onClick={() => handleBlobSync('blob_to_local')}
-                    disabled={!!blobSyncing || blobLoading || !blobStatus.blobUrl}
-                    className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-violet-500/10 border border-violet-500/20 text-violet-400 hover:bg-violet-500/20 text-xs font-bold transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
-                  >
-                    {blobSyncing === 'blob_to_local' ? (
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                    ) : (
-                      <ArrowDownToLine className="w-4 h-4" />
-                    )}
-                    Blob → Local
-                  </button>
-
-                  {/* Auto-detect URL */}
-                  <button
-                    onClick={handleDetectBlobUrl}
-                    disabled={!!blobSyncing || blobLoading}
-                    className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 hover:bg-amber-500/20 text-xs font-bold transition-all cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
-                  >
-                    {blobLoading ? (
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                    ) : (
-                      <RefreshCw className="w-4 h-4" />
-                    )}
-                    URL Tespit Et
-                  </button>
-                </div>
-
-                {/* Info note */}
-                <p className="text-[10px] text-zinc-700 leading-relaxed">
-                  <strong className="text-zinc-600">Blob Kapalı:</strong> Veriler yalnızca local dosyadan okunur, Blob API kotası harcanmaz. &nbsp;
-                  <strong className="text-zinc-600">Blob Açık:</strong> Veriler önce Blob&#39;dan çekilir, erişilemezse local dosyaya fallback yapılır.
-                </p>
-              </div>
-            )}
-          </div>
 
           {/* Enrich status summary (wizard details) */}
           {enrichStatus && enrichStatus.changes && enrichStatus.changes.length > 0 && (
