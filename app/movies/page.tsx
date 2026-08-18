@@ -2,13 +2,15 @@
 
 import { useState, useMemo, useEffect } from 'react';
 import type { ReactNode } from 'react';
-import { Clapperboard } from 'lucide-react';
 import { Movie } from '@/types';
+import moviesData from '@/data/movies.json';
 import MovieCard from '@/components/MovieCard';
+import MovieListRow from '@/components/MovieListRow';
 import {
   Search,
   SlidersHorizontal,
   LayoutGrid,
+  List,
   RotateCcw,
   Film,
   Tv,
@@ -27,7 +29,6 @@ type SortType =
   | 'myRating-desc'
   | 'myRating-asc'
   | 'imdbRating-desc'
-  | 'imdbRating-asc'
   | 'watchDate-desc'
   | 'watchDate-asc';
 
@@ -41,7 +42,6 @@ const VALID_SORTS: SortType[] = [
   'myRating-desc',
   'myRating-asc',
   'imdbRating-desc',
-  'imdbRating-asc',
   'watchDate-desc',
   'watchDate-asc',
 ];
@@ -107,8 +107,7 @@ function getWatchDateTimestamp(watchDate: string | undefined | null): number {
 }
 
 export default function MoviesPage() {
-  const [movies, setMovies] = useState<Movie[]>([]);
-  const [loading, setLoading] = useState(true);
+  const movies = moviesData as Movie[];
   const [isAdmin, setIsAdmin] = useState(false);
 
   const [activeTab, setActiveTab] = useState<TabType>('all');
@@ -121,6 +120,7 @@ export default function MoviesPage() {
   const [minMyRating, setMinMyRating] = useState('');
   const [minImdbRating, setMinImdbRating] = useState('');
   const [sortBy, setSortByState] = useState<SortType>(DEFAULT_SORT);
+  const [viewMode, setViewModeState] = useState<'grid' | 'list'>('grid');
   const [showFilters, setShowFilters] = useState(false);
 
   // localStorage ve URL parametrelerini yükler.
@@ -161,6 +161,12 @@ export default function MoviesPage() {
       }
     }
 
+    const savedView = localStorage.getItem('movies-view-mode');
+
+    if (savedView === 'grid' || savedView === 'list') {
+      setViewModeState(savedView);
+    }
+
     const savedGenre = localStorage.getItem('movies-genre');
 
     if (savedGenre) {
@@ -192,29 +198,8 @@ export default function MoviesPage() {
     setIsMounted(true);
   }, []);
 
-  // Filmleri yerel API üzerinden yükler.
+  // Admin oturum çerezini kontrol eder.
   useEffect(() => {
-    async function load() {
-      try {
-        const response = await fetch('/api/movies');
-
-        if (!response.ok) {
-          throw new Error(`Movies API error: ${response.status}`);
-        }
-
-        const data = await response.json();
-
-        setMovies(data);
-      } catch (error) {
-        console.error('Failed to load movies:', error);
-      } finally {
-        setLoading(false);
-      }
-    }
-
-    load();
-
-    // Admin oturum çerezini kontrol eder.
     const cookies = document.cookie.split(';');
     const isAlreadyAdmin = cookies.some((cookie) =>
       cookie.trim().startsWith('is_admin=true')
@@ -227,6 +212,12 @@ export default function MoviesPage() {
   const setSortBy = (value: SortType) => {
     setSortByState(value);
     localStorage.setItem('movies-sort-by', value);
+  };
+
+  // Görünüm tercihini kaydeder.
+  const setViewMode = (value: 'grid' | 'list') => {
+    setViewModeState(value);
+    localStorage.setItem('movies-view-mode', value);
   };
 
   // Film veya dizi olmayan yapımları kontrol eder.
@@ -438,13 +429,6 @@ export default function MoviesPage() {
         );
       }
 
-      if (sortBy === 'imdbRating-asc') {
-        return (
-          a.imdbRating - b.imdbRating ||
-          a.myRating - b.myRating
-        );
-      }
-
       if (sortBy === 'watchDate-desc') {
         return (
           getWatchDateTimestamp(b.watchDate) -
@@ -507,7 +491,7 @@ export default function MoviesPage() {
         window.scrollY || document.documentElement.scrollTop;
       const clientHeight = window.innerHeight;
 
-      if (scrollHeight - scrollTop - clientHeight < 500) {
+      if (scrollHeight - scrollTop - clientHeight < 300) {
         setVisibleCount((previousCount) =>
           Math.min(
             previousCount + PAGE_SIZE,
@@ -560,7 +544,7 @@ export default function MoviesPage() {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-5">
         <div>
           <h1 className="text-3xl font-black text-white">
-            <Clapperboard className='text-zinc-500 h-9 w-9 mr-2 inline' /> Kitaplığım
+            🎬 Kitaplığım
           </h1>
 
           <p className="text-zinc-500 text-sm mt-1">
@@ -586,6 +570,34 @@ export default function MoviesPage() {
             <SlidersHorizontal className="w-4 h-4" />
             Filtreler
           </button>
+
+          <div className="bg-zinc-950/60 p-1 rounded-xl border border-white/5 flex items-center gap-1">
+            <button
+              type="button"
+              onClick={() => setViewMode('grid')}
+              className={`p-2 rounded-lg transition-all ${viewMode === 'grid'
+                ? 'bg-zinc-800 text-brand-primary shadow'
+                : 'text-zinc-500 hover:text-zinc-300'
+                }`}
+              aria-label="Izgara görünümü"
+              title="Izgara görünümü"
+            >
+              <LayoutGrid className="w-4 h-4" />
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setViewMode('list')}
+              className={`p-2 rounded-lg transition-all ${viewMode === 'list'
+                ? 'bg-zinc-800 text-brand-primary shadow'
+                : 'text-zinc-500 hover:text-zinc-300'
+                }`}
+              aria-label="Liste görünümü"
+              title="Liste görünümü"
+            >
+              <List className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -763,22 +775,6 @@ export default function MoviesPage() {
                   Yapım Yılı (Eski)
                 </option>
 
-                <option value="watchDate-desc">
-                  Son İzlenenler
-                </option>
-
-                <option value="watchDate-asc">
-                  İlk İzlenenler
-                </option>
-
-                <option value="imdbRating-desc">
-                  IMDb Puanı (Yüksek)
-                </option>
-
-                <option value="imdbRating-asc">
-                  IMDb Puanı (Düşük)
-                </option>
-
                 <option value="myRating-desc">
                   Benim Puanım (Yüksek)
                 </option>
@@ -787,12 +783,24 @@ export default function MoviesPage() {
                   Benim Puanım (Düşük)
                 </option>
 
+                <option value="imdbRating-desc">
+                  IMDb Puanı (Yüksek)
+                </option>
+
                 <option value="title-asc">
                   İsim (A-Z)
                 </option>
 
                 <option value="title-desc">
                   İsim (Z-A)
+                </option>
+
+                <option value="watchDate-desc">
+                  Son İzlenenler
+                </option>
+
+                <option value="watchDate-asc">
+                  İlk İzlenenler
                 </option>
               </select>
             </div>
@@ -833,15 +841,7 @@ export default function MoviesPage() {
       </div>
 
       {/* İçerik */}
-      {loading ? (
-        <div className="flex flex-col items-center justify-center py-20 gap-4">
-          <div className="w-10 h-10 border-4 border-brand-primary border-t-transparent rounded-full animate-spin" />
-
-          <span className="text-sm text-zinc-500">
-            Kitaplık yükleniyor...
-          </span>
-        </div>
-      ) : filteredAndSortedMovies.length === 0 ? (
+      {filteredAndSortedMovies.length === 0 ? (
         <div className="text-center py-20 border border-dashed border-zinc-800 rounded-2xl bg-zinc-950/20">
           <span className="text-4xl">🔍</span>
 
@@ -862,10 +862,19 @@ export default function MoviesPage() {
             Aramayı Temizle
           </button>
         </div>
-      ) : (
+      ) : viewMode === 'grid' ? (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {displayedMovies.map((movie) => (
             <MovieCard
+              key={movie.imdbId}
+              movie={movie}
+            />
+          ))}
+        </div>
+      ) : (
+        <div className="flex flex-col gap-4">
+          {displayedMovies.map((movie) => (
+            <MovieListRow
               key={movie.imdbId}
               movie={movie}
             />
