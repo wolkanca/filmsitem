@@ -356,7 +356,7 @@ export default function MovieDetailClient({
         <div className="lg:col-span-8 space-y-6">
 
           {/* Overview */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4 min-h-[350px]">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
@@ -365,7 +365,7 @@ export default function MovieDetailClient({
 
             <div
               ref={overviewContentRef}
-              className={`relative overflow-hidden text-sm transition-all duration-300 pb-2 min-h-[160px]`}
+              className={`relative overflow-hidden text-sm transition-all duration-300 pb-2`}
             >
               <p className="text-zinc-400 text-md leading-relaxed whitespace-pre-line mt-2 mb-4">
                 {movie.overview || 'Özet eklenmemiş.'}
