@@ -544,7 +544,7 @@ export default function MoviesPage() {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800 pb-5">
         <div>
           <h1 className="text-3xl font-black text-white">
-            🎬 Kitaplığım
+            <Library className="text-zinc-500 h-9 w-9 mr-2 inline" /> Kitaplığım
           </h1>
 
           <p className="text-zinc-500 text-sm mt-1">

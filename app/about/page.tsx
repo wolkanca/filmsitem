@@ -130,7 +130,7 @@ export default function AboutPage() {
             <div className="space-y-4 text-zinc-300">
               <p className="text-lg leading-relaxed">
                 Site hakkında görüş, öneri, hata bildirimi veya herhangi bir sinema sohbeti için yandaki formu kullanarak bana doğrudan mesaj gönderebilirsiniz. Her türlü görüş, öneri veya geri bildiriminiz için <a href="https://wolkanca.com" target="_blank" rel="noopener noreferrer"
-                  className="text-white/80 hover:text-white underline decoration-red-500/30 underline-offset-4 transition">wolkanca.com</a> üzerinden <span className="[unicode-bidi:bidi-override] [direction:rtl] text-white/80 hover:text-white transition">moc.liamg@naklow</span> mail adresinden de ulaşabilirsiniz.
+                  className="text-white/80 hover:text-white underline decoration-red-500/30 underline-offset-4 transition">wolkanca.com</a> üzerinden <span className="[unicode-bidi:bidi-override] text-white/80 hover:text-white hover:text-white underline decoration-red-500/30 underline-offset-4 transition">info@izlediklerim.com</span> mail adresinden de ulaşabilirsiniz.
               </p>
             </div>
           </div>
