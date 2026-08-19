@@ -75,9 +75,7 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
           <p className="text-zinc-500 text-sm">
-            © {currentYear}{' '}
-            <span className="text-zinc-300 font-semibold">İzlediklerim</span>
-            {' '}— Kişisel Sinema Arşivi
+            © {currentYear}{' '}<a href="https://izlediklerim.com/" className="text-zinc-300 hover:text-brand-primary font-semibold transition-colors">izlediklerim.com</a>
           </p>
           <div className="flex items-center gap-3 text-sm text-zinc-500">
             <span>
