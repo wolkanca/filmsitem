@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, Clapperboard, Share2, Globe, CalendarDays } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, Clapperboard, Share2, Globe, CalendarDays, Banknote } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -315,19 +315,13 @@ export default function MovieDetailClient({
                   <span>{movie.runtime} dk</span>
                 </div>
               )}
-              {movie.genres && movie.genres.length > 0 && (
+              {movie.omdbType && movie.omdbType.length > 0 && (
                 <div className="flex items-center gap-1.5">
                   <Film className="w-4 h-4 text-brand-primary" />
                   <div className="flex items-center gap-1 flex-wrap">
-                    {movie.genres.map((g, idx) => (
-                      <Link
-                        key={`${g}-${idx}`}
-                        href={`/genre/${encodeURIComponent(g)}`}
-                        className="hover:text-brand-primary transition-colors"
-                      >
-                        {g}{idx < movie.genres.length - 1 ? ',' : ''}
-                      </Link>
-                    ))}
+                    <span className="capitalize">
+                      {movie.omdbType}
+                    </span>
                   </div>
                 </div>
               )}
@@ -345,7 +339,8 @@ export default function MovieDetailClient({
               )}
               {movie.boxOffice && (
                 <div className="flex items-center gap-1.5">
-                  <span className="px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 text-[11px] font-semibold border border-emerald-800/40">
+                  <Banknote className="w-4 h-4 text-emerald-400" />
+                  <span className="text-emerald-300 text-[11px] font-semibold">
                     {formatBoxOffice(movie.boxOffice)}
                   </span>
                 </div>
