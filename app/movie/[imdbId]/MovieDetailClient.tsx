@@ -319,8 +319,8 @@ export default function MovieDetailClient({
                 <div className="flex items-center gap-1.5">
                   <Film className="w-4 h-4 text-brand-primary" />
                   <div className="flex items-center gap-1 flex-wrap">
-                    <span className="capitalize">
-                      {movie.omdbType}
+                    <span>
+                      {({ movie: 'Film', series: 'Dizi', game: 'Oyun', 'music video': 'Müzik' } as Record<string, string>)[movie.omdbType.toLowerCase()] ?? movie.omdbType}
                     </span>
                   </div>
                 </div>
