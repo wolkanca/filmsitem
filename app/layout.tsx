@@ -55,7 +55,7 @@ export default function RootLayout({
 
         {/* Global Search Dialog */}
         <GlobalSearch />
-        <ServiceWorkerRegister />
+        {/* <ServiceWorkerRegister /> */}
         <GoogleAnalytics gaId="G-W94XTXVMTQ" />
       </body>
     </html>
