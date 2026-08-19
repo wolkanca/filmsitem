@@ -1,6 +1,6 @@
 export const runtime = 'nodejs';
 export const dynamic = 'force-static';
-export const revalidate = 86400;
+export const revalidate = 2592000;
 
 const SITE_URL = 'https://izlediklerim.com';
 

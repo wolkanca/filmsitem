@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { getMovies } from '@/lib/db';
 
 export const dynamic = 'force-static';
-
+export const revalidate = 2592000;
 
 export async function GET() {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://izlediklerim.com';

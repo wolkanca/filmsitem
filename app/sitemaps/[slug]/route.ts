@@ -2,10 +2,10 @@ import movies from '@/data/movies.json';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-static';
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const SITE_URL = 'https://izlediklerim.com';
-const SITEMAP_LIMIT = 45000;
+const SITEMAP_LIMIT = 10000;
 
 type Movie = {
     imdbId?: string;
