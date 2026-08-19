@@ -3,7 +3,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, X, Check, Clapperboard, Loader2, Share2 } from 'lucide-react';
+import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, Clapperboard, Share2, Globe, CalendarDays } from 'lucide-react';
 import { Movie } from '@/types';
 import { getRatingColor, formatDate } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
@@ -47,16 +47,11 @@ export default function MovieDetailClient({
   // Admin state
   const [isAdmin, setIsAdmin] = useState(false);
 
-  // Long overview / plot collapse state
-  const [isOverviewExpanded, setIsOverviewExpanded] = useState(false);
-
   // Client-side random selection.
   // Server sends a relevant pool of up to 12 similar movies; this displays 4 of them randomly.
   const [randomSimilarMovies, setRandomSimilarMovies] = useState<Movie[]>([]);
 
-
   const overviewContentRef = useRef<HTMLDivElement | null>(null);
-  const [isOverviewOverflowing, setIsOverviewOverflowing] = useState(false);
 
   // Local state for the movie to handle visual updates immediately after saving edits
   const [movie, setMovie] = useState<Movie>(initialMovie);
@@ -82,48 +77,9 @@ export default function MovieDetailClient({
     setRandomSimilarMovies(selectedMovies);
   }, [similarMovies, movie.imdbId]);
 
-  // Detailed movie edit modal states
-  interface ModalFormState {
-    title: string;
-    originalTitle: string;
-    year: number;
-    type: string;
-    myRating: number;
-    watchDate: string;
-    listName: string;
-    poster: string;
-    backdrop: string;
-    overview: string;
-    plot: string;
-    plotTr: string;
-    country: string;
-    omdbType: string;
-    boxOffice: string;
-    genres: string;
-    runtime: number;
-    cast: string;
-    director: string;
-    writers: string;
-    imdbRating: number;
-    tmdbRating: number;
-    releaseDate: string;
-    trailerYoutubeId: string;
-    isFeatured: boolean;
-  }
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Trailer inline edit
-  const [isTrailerEditOpen, setIsTrailerEditOpen] = useState(false);
-  const [trailerInput, setTrailerInput] = useState('');
-  const [trailerSaving, setTrailerSaving] = useState(false);
-  const [trailerError, setTrailerError] = useState('');
-
   const handleSaveTrailer = async (inputVal?: string) => {
-    setTrailerSaving(true);
-    setTrailerError('');
     try {
-      let youtubeId = (inputVal !== undefined ? inputVal : trailerInput).trim();
+      let youtubeId = (inputVal || '').trim();
       const ytMatch = youtubeId.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{11})/);
       if (ytMatch) youtubeId = ytMatch[1];
 
@@ -150,54 +106,33 @@ export default function MovieDetailClient({
       if (!res.ok) throw new Error(data.error || 'Kaydetme başarısız.');
 
       setMovie((prev) => ({ ...prev, trailerYoutubeId: youtubeId }));
-      setIsTrailerEditOpen(false);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : 'Hata oluştu.';
-      setTrailerError(msg);
       throw new Error(msg);
-    } finally {
-      setTrailerSaving(false);
     }
   };
 
+  const handleSavePoster = async (inputVal?: string) => {
+    try {
+      const posterUrl = (inputVal || '').trim();
+      if (!posterUrl) {
+        throw new Error('Geçerli bir poster URL girin.');
+      }
 
-  const [modalSaving, setModalSaving] = useState(false);
-  const [modalError, setModalError] = useState('');
-  const [modalForm, setModalForm] = useState<ModalFormState>({
-    title: '',
-    originalTitle: '',
-    year: 0,
-    type: 'Movie',
-    myRating: 0,
-    watchDate: '',
-    listName: '',
-    poster: '',
-    backdrop: '',
-    overview: '',
-    plot: '',
-    plotTr: '',
-    country: '',
-    omdbType: '',
-    boxOffice: '',
-    genres: '',
-    runtime: 0,
-    cast: '',
-    director: '',
-    writers: '',
-    imdbRating: 0,
-    tmdbRating: 0,
-    releaseDate: '',
-    trailerYoutubeId: '',
-    isFeatured: false,
-  });
+      const res = await fetch(`/api/movies/${movie.imdbId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ poster: posterUrl }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Kaydetme başarısız.');
 
-  // Active season tab for series
-  const [activeSeasonTab, setActiveSeasonTab] = useState<number>(() => {
-    if (movie.seasons && movie.seasons.length > 0) {
-      return movie.seasons[0].seasonNumber;
+      setMovie((prev) => ({ ...prev, poster: posterUrl }));
+    } catch (err: unknown) {
+      const msg = err instanceof Error ? err.message : 'Hata oluştu.';
+      throw new Error(msg);
     }
-    return 1;
-  });
+  };
 
   // Detect admin cookie
   useEffect(() => {
@@ -222,91 +157,10 @@ export default function MovieDetailClient({
     return count > 0 ? parseFloat((total / count).toFixed(1)) : 0;
   }, [movie]);
 
-  const openEditModal = (movieToEdit: Movie) => {
-    setModalForm({
-      title: movieToEdit.title || '',
-      originalTitle: movieToEdit.originalTitle || '',
-      year: movieToEdit.year || 0,
-      type: movieToEdit.type || 'Movie',
-      myRating: movieToEdit.myRating || 0,
-      watchDate: movieToEdit.watchDate || '',
-      listName: Array.isArray(movieToEdit.listName) ? movieToEdit.listName.join(', ') : '',
-      poster: movieToEdit.poster || '',
-      backdrop: movieToEdit.backdrop || '',
-      overview: movieToEdit.overview || '',
-      plot: movieToEdit.plot || '',
-      plotTr: movieToEdit.plotTr || '',
-      country: movieToEdit.country || '',
-      omdbType: movieToEdit.omdbType || '',
-      boxOffice: movieToEdit.boxOffice || '',
-      genres: Array.isArray(movieToEdit.genres) ? movieToEdit.genres.join(', ') : '',
-      runtime: movieToEdit.runtime || 0,
-      cast: Array.isArray(movieToEdit.cast) ? movieToEdit.cast.join(', ') : '',
-      director: movieToEdit.director || '',
-      writers: Array.isArray(movieToEdit.writers) ? movieToEdit.writers.join(', ') : '',
-      imdbRating: movieToEdit.imdbRating || 0,
-      tmdbRating: movieToEdit.tmdbRating || 0,
-      releaseDate: movieToEdit.releaseDate || '',
-      trailerYoutubeId: movieToEdit.trailerYoutubeId || '',
-      isFeatured: Boolean(movieToEdit.isFeatured),
-    });
-    setModalError('');
-    setIsModalOpen(true);
-  };
-
-  const handleSaveModal = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    setModalSaving(true);
-    setModalError('');
-
-    try {
-      const payload = {
-        ...modalForm,
-        listName: modalForm.listName.split(',').map(s => s.trim()).filter(Boolean),
-        genres: modalForm.genres.split(',').map(s => s.trim()).filter(Boolean),
-        cast: modalForm.cast.split(',').map(s => s.trim()).filter(Boolean),
-        writers: modalForm.writers.split(',').map(s => s.trim()).filter(Boolean),
-      };
-
-      // Accept full YouTube URL or just the ID
-      let youtubeId = payload.trailerYoutubeId.trim();
-      const ytMatch = youtubeId.match(/(?:v=|youtu\.be\/|embed\/)([A-Za-z0-9_-]{11})/);
-      if (ytMatch) youtubeId = ytMatch[1];
-      payload.trailerYoutubeId = youtubeId;
-
-      const res = await fetch(`/api/movies/${movie.imdbId}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Kaydetme başarısız.');
-
-      setMovie((prev) => ({
-        ...prev,
-        ...payload,
-      }));
-
-      setIsModalOpen(false);
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : 'Hata oluştu.';
-      setModalError(msg);
-    } finally {
-      setModalSaving(false);
-    }
-  };
-
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://izlediklerim.com';
   const movieUrl = `${baseUrl}/movie/${movie.imdbId}`;
 
-  const whatsappShareUrl = `https://wa.me/?text=${encodeURIComponent(
-    `${movie.title} - ${movieUrl}`
-  )}`;
-
   const hasRealPoster = !!movie.poster && !isPlaceholderUrl(movie.poster);
-
 
   function formatBoxOffice(value?: string | null) {
     if (!value || value === 'N/A') return null;
@@ -319,7 +173,6 @@ export default function MovieDetailClient({
 
     return value;
   }
-
 
   const handleShare = async () => {
     const shareData = {
@@ -336,7 +189,6 @@ export default function MovieDetailClient({
         alert('Bağlantı panoya kopyalandı.');
       }
     } catch (error) {
-      // Kullanıcı paylaşım penceresini kapattığında da hata oluşabilir.
       if (error instanceof Error && error.name !== 'AbortError') {
         console.error('Paylaşım hatası:', error);
       }
@@ -371,14 +223,13 @@ export default function MovieDetailClient({
               <Star className={`w-3.5 h-3.5 ${movie.isFeatured ? 'fill-amber-300 text-amber-300' : ''}`} />
               {movie.isFeatured ? 'Öne Çıkarıldı' : 'Öne Çıkar'}
             </button>
-            <button
-              type="button"
-              onClick={(e) => { e.stopPropagation(); openEditModal(movie); }}
-              className="bg-gradient-to-r cursor-pointer disabled:opacity-60 duration-300 flex font-bold from-violet-600 gap-2 hover:opacity-95 items-center justify-center px-5 py-1.5 rounded-xl shadow-lg shadow-violet-600/10 text-xs text-white to-indigo-600 transition-all"
-              title="Filmi Düzenle"
+            <Link
+              href={`/admin/movies?edit=${movie.imdbId}`}
+              className="bg-gradient-to-r cursor-pointer duration-300 flex font-bold from-violet-600 gap-2 hover:opacity-95 items-center justify-center px-5 py-1.5 rounded-xl shadow-lg shadow-violet-600/10 text-xs text-white to-indigo-600 transition-all"
+              title="Filmi Admin Panelinde Düzenle"
             >
               <Pencil className="w-3 h-3" /> Düzenle
-            </button>
+            </Link>
           </div>
         )}
         {/* Backdrop Image */}
@@ -403,8 +254,8 @@ export default function MovieDetailClient({
           {/* Movie Poster Image (clickable) */}
           <div className="relative flex-shrink-0 mx-auto">
             <div
-              onClick={() => hasRealPoster && setIsPosterModalOpen(true)}
-              className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${hasRealPoster ? 'cursor-zoom-in' : 'cursor-default'}`}>
+              onClick={() => (hasRealPoster || isAdmin) && setIsPosterModalOpen(true)}
+              className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${(hasRealPoster || isAdmin) ? 'cursor-pointer' : 'cursor-default'}`}>
               <PosterImage
                 src={movie.poster}
                 alt={movie.title}
@@ -415,11 +266,11 @@ export default function MovieDetailClient({
                 fallbackTitle={movie.title}
                 trailerYoutubeId={movie.trailerYoutubeId}
               />
-              {/* Zoom hint only when there is a real (non-placeholder) poster */}
-              {hasRealPoster && (
+              {/* Zoom / Edit hint */}
+              {(hasRealPoster || isAdmin) && (
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
                   <span className="text-white text-xs font-bold bg-black/60 px-3 py-1.5 rounded-full border border-white/10 flex items-center gap-1">
-                    <Eye className="w-3.5 h-3.5" /> Büyüt
+                    <Eye className="w-3.5 h-3.5" /> {isAdmin ? 'Görüntüle / Düzenle' : 'Büyüt'}
                   </span>
                 </div>
               )}
@@ -449,54 +300,66 @@ export default function MovieDetailClient({
               )}
             </div>
 
-            {/* Quick Metadata Info */}
-            <div className="flex flex-wrap items-center gap-y-2 gap-x-3 text-xs text-zinc-300 border-t border-white/5 pt-4">
+            {/* Quick Meta */}
+            <div className="flex flex-wrap gap-4 text-xs font-bold text-zinc-300 pt-2 items-center">
               <Link
                 href={`/year/${movie.year}`}
-                className="flex items-center gap-1.5 font-bold hover:text-brand-primary transition-colors bg-zinc-900/60 border border-white/5 hover:border-brand-primary/20 px-2.5 py-1.5 rounded-lg"
+                className="flex items-center gap-1.5 hover:text-brand-primary transition-colors"
               >
-                <Calendar className="w-3.5 h-3.5 text-zinc-500" />
-                {movie.year}
+                <Calendar className="w-4 h-4 text-brand-primary" />
+                <span>{movie.year}</span>
               </Link>
               {movie.runtime > 0 && (
-                <span className="flex items-center gap-1.5 font-bold bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  <Clock className="w-3.5 h-3.5 text-zinc-500" />
-                  {movie.runtime} dakika
-                </span>
+                <div className="flex items-center gap-1.5">
+                  <Clock className="w-4 h-4 text-brand-primary" />
+                  <span>{movie.runtime} dk</span>
+                </div>
               )}
-              {movie.omdbType && (
-                <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  Tür: <strong className="text-zinc-300 capitalize">{movie.omdbType}</strong>
-                </span>
+              {movie.genres && movie.genres.length > 0 && (
+                <div className="flex items-center gap-1.5">
+                  <Film className="w-4 h-4 text-brand-primary" />
+                  <div className="flex items-center gap-1 flex-wrap">
+                    {movie.genres.map((g, idx) => (
+                      <Link
+                        key={`${g}-${idx}`}
+                        href={`/genre/${encodeURIComponent(g)}`}
+                        className="hover:text-brand-primary transition-colors"
+                      >
+                        {g}{idx < movie.genres.length - 1 ? ',' : ''}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
               )}
-
-              {movie.country && (
-                <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  Ülke: <strong className="text-zinc-300">{movie.country?.split(",").slice(0, 3).join(", ")}</strong>
-                </span>
-              )}
-
-              {movie.boxOffice && (
-                <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  Gişe: <strong className="text-zinc-300">{formatBoxOffice(movie.boxOffice)}</strong>
-                </span>
-              )}
-
               {movie.releaseDate && (
-                <span className="font-medium text-zinc-400 bg-zinc-900/60 border border-white/5 px-2.5 py-1.5 rounded-lg">
-                  Vizyon: <strong className="text-zinc-300">{formatDate(movie.releaseDate)}</strong>
-                </span>
+                <div className="flex items-center gap-1.5">
+                  <CalendarDays className="w-4 h-4 text-brand-primary" />
+                  <span>{formatDate(movie.releaseDate)}</span>
+                </div>
+              )}
+              {movie.country && (
+                <div className="flex items-center gap-1.5">
+                  <Globe className="w-4 h-4 text-blue-400" />
+                  <span>{movie.country}</span>
+                </div>
+              )}
+              {movie.boxOffice && (
+                <div className="flex items-center gap-1.5">
+                  <span className="px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 text-[11px] font-semibold border border-emerald-800/40">
+                    {formatBoxOffice(movie.boxOffice)}
+                  </span>
+                </div>
               )}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Two Column details: Details & Review */}
+      {/* Main Layout Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        {/* Left / Main info */}
+        <div className="lg:col-span-8 space-y-6">
 
-        {/* Left main: Plot and Credits */}
-        <div className="lg:col-span-8 space-y-8">
           {/* Overview */}
           <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4">
             <div className="flex items-center justify-between gap-4">
@@ -519,7 +382,7 @@ export default function MovieDetailClient({
           </div>
 
           {/* Credits Box */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6 min-h-[350px]">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-6">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">Künye ve Ekip</h2>
             </div>
@@ -598,8 +461,8 @@ export default function MovieDetailClient({
                   <span className="text-zinc-500 text-xs italic">Oyuncu bilgisi eklenmemiş.</span>
                 )}
               </div>
-
             </div>
+
           </div>
 
         </div>
@@ -818,364 +681,16 @@ export default function MovieDetailClient({
       )}
 
       {/* Large Poster view overlay modal */}
-      {movie.poster && (
+      {(movie.poster || isAdmin) && (
         <PosterModal
           isOpen={isPosterModalOpen}
           onClose={() => setIsPosterModalOpen(false)}
           imageUrl={movie.poster}
           title={movie.title}
+          year={movie.year}
+          isAdmin={isAdmin}
+          onSavePoster={handleSavePoster}
         />
-      )}
-
-      {/* Detailed Edit Modal */}
-      {isModalOpen && (
-        <div
-          onClick={() => setIsModalOpen(false)}
-          className="fixed inset-0 z-50 flex justify-center bg-black/80 overflow-y-auto animate-fade-in text-left w-full h-full"
-        >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className="glass w-full rounded-3xl border border-white/10 bg-zinc-950/90 shadow-2xl overflow-hidden flex flex-col"
-          >
-            {/* Modal Header */}
-            <div className="flex items-center justify-between p-6 border-b border-zinc-800 bg-zinc-900/40">
-              <div className="flex items-center gap-3">
-                <div className="p-2 bg-violet-500/10 rounded-xl text-violet-400 border border-violet-500/20">
-                  <Pencil className="w-5 h-5" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-black text-white">Film Bilgilerini Düzenle</h3>
-                  <p className="text-zinc-500 text-xs mt-0.5">{movie.title} ({movie.imdbId})</p>
-                </div>
-              </div>
-              <button
-                type="button"
-                onClick={() => setIsModalOpen(false)}
-                className="p-2 rounded-xl text-zinc-500 hover:text-white hover:bg-zinc-800 border border-zinc-800 transition-all cursor-pointer"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-
-            {/* Modal Content - Scrollable Form */}
-            <form onSubmit={handleSaveModal} className="flex-1 overflow-y-auto p-6 md:p-8 space-y-8 custom-scrollbar">
-              {modalError && (
-                <div className="p-4 bg-red-950/30 border border-red-500/20 text-red-200 rounded-xl text-xs font-semibold">
-                  ⚠️ {modalError}
-                </div>
-              )}
-
-              {/* Group 1: Temel Bilgiler */}
-              <div className="space-y-4">
-                <h4 className="text-xs font-black text-violet-400 uppercase tracking-widest border-b border-zinc-800/80 pb-2">1. Temel Bilgiler</h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Film Adı (Türkçe / Genel)</label>
-                    <input
-                      type="text"
-                      required
-                      value={modalForm.title}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, title: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Orijinal Film Adı</label>
-                    <input
-                      type="text"
-                      required
-                      value={modalForm.originalTitle}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, originalTitle: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Yapım Yılı</label>
-                    <input
-                      type="number"
-                      required
-                      value={modalForm.year}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, year: parseInt(e.target.value) || 0 }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Yapım Tipi</label>
-                    <select
-                      value={modalForm.type}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, type: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all bg-zinc-950"
-                    >
-                      <option value="Movie">Movie</option>
-                      <option value="TV Series">TV Series</option>
-                      <option value="TV Episode">TV Episode</option>
-                      <option value="TV Special">TV Special</option>
-                      <option value="TV Mini Series">TV Mini Series</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-
-              {/* Group 2: Değerlendirme & Durum */}
-              <div className="space-y-4">
-                <h4 className="text-xs font-black text-violet-400 uppercase tracking-widest border-b border-zinc-800/80 pb-2">2. Değerlendirme & Durum</h4>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Benim Puanım (1-10)</label>
-                    <input
-                      type="number"
-                      min="0"
-                      max="10"
-                      step="1"
-                      value={modalForm.myRating}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, myRating: parseInt(e.target.value) || 0 }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">İzleme Tarihi</label>
-                    <input
-                      type="date"
-                      value={modalForm.watchDate}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, watchDate: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Dahil Olduğu Listeler (Virgülle Ayırın)</label>
-                    <input
-                      type="text"
-                      value={modalForm.listName}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, listName: e.target.value }))}
-                      placeholder="Favoriler, Komedi Günlükleri vb."
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                </div>
-                <div className="pt-2">
-                  <label className="inline-flex items-center gap-3 cursor-pointer select-none">
-                    <input
-                      type="checkbox"
-                      checked={modalForm.isFeatured}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, isFeatured: e.target.checked }))}
-                      className="w-4 h-4 text-amber-500 bg-zinc-900 border-zinc-700 rounded focus:ring-amber-500/30"
-                    />
-                    <span className="text-xs font-bold text-amber-300 flex items-center gap-1">
-                      ⭐ Slider&apos;da Öne Çıkar (Hero & Slider Featured)
-                    </span>
-                  </label>
-                </div>
-              </div>
-
-              {/* Group 3: Görseller & Medya */}
-              <div className="space-y-4">
-                <h4 className="text-xs font-black text-violet-400 uppercase tracking-widest border-b border-zinc-800/80 pb-2">3. Görseller & Medya</h4>
-                <div className="grid grid-cols-1 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Poster URL</label>
-                    <input
-                      type="text"
-                      value={modalForm.poster}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, poster: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all font-mono"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Arka Plan (Backdrop) URL</label>
-                    <input
-                      type="text"
-                      value={modalForm.backdrop}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, backdrop: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all font-mono"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">YouTube Fragman ID</label>
-                    <input
-                      type="text"
-                      value={modalForm.trailerYoutubeId}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, trailerYoutubeId: e.target.value }))}
-                      placeholder="Örn: dQw4w9WgXcQ"
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all font-mono"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Group 4: Açıklamalar */}
-              <div className="space-y-4">
-                <h4 className="text-xs font-black text-violet-400 uppercase tracking-widest border-b border-zinc-800/80 pb-2">4. Konu & Özet</h4>
-                <div className="grid grid-cols-1 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Kısa Özet (Overview)</label>
-                    <textarea
-                      value={modalForm.overview}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, overview: e.target.value }))}
-                      rows={3}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all resize-y"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">İngilizce Konu (Plot)</label>
-                    <textarea
-                      value={modalForm.plot}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, plot: e.target.value }))}
-                      rows={4}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all resize-y"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Türkçe Konu Detayı (Plot TR)</label>
-                    <textarea
-                      value={modalForm.plotTr}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, plotTr: e.target.value }))}
-                      rows={4}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all resize-y"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Group 5: Yapım Bilgileri */}
-              <div className="space-y-4">
-                <h4 className="text-xs font-black text-violet-400 uppercase tracking-widest border-b border-zinc-800/80 pb-2">5. Yapım Bilgileri</h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Türler (Virgülle Ayırın)</label>
-                    <input
-                      type="text"
-                      value={modalForm.genres}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, genres: e.target.value }))}
-                      placeholder="Comedy, Drama, Action"
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Süre (Dakika)</label>
-                    <input
-                      type="number"
-                      value={modalForm.runtime}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, runtime: parseInt(e.target.value) || 0 }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Yönetmen (Virgülle Ayırın)</label>
-                    <input
-                      type="text"
-                      value={modalForm.director}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, director: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Senaristler (Virgülle Ayırın)</label>
-                    <input
-                      type="text"
-                      value={modalForm.writers}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, writers: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1 md:col-span-2">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Oyuncular (Virgülle Ayırın)</label>
-                    <input
-                      type="text"
-                      value={modalForm.cast}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, cast: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Ülke</label>
-                    <input
-                      type="text"
-                      value={modalForm.country}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, country: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Gişe (Box Office)</label>
-                    <input
-                      type="text"
-                      value={modalForm.boxOffice}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, boxOffice: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">IMDb Puanı</label>
-                    <input
-                      type="number"
-                      step="0.1"
-                      value={modalForm.imdbRating}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, imdbRating: parseFloat(e.target.value) || 0 }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">TMDb Puanı</label>
-                    <input
-                      type="number"
-                      step="0.1"
-                      value={modalForm.tmdbRating}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, tmdbRating: parseFloat(e.target.value) || 0 }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Vizyon Tarihi (Release Date)</label>
-                    <input
-                      type="text"
-                      value={modalForm.releaseDate}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, releaseDate: e.target.value }))}
-                      placeholder="Örn: 1999-10-15"
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">OMDb Tipi</label>
-                    <input
-                      type="text"
-                      value={modalForm.omdbType}
-                      onChange={(e) => setModalForm(prev => ({ ...prev, omdbType: e.target.value }))}
-                      className="w-full bg-zinc-900/60 border border-zinc-800 focus:border-violet-500/50 rounded-xl py-2.5 px-3 text-sm text-white focus:outline-none transition-all"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Modal Footer Buttons */}
-              <div className="flex items-center justify-end gap-3 pt-6 border-t border-zinc-800">
-                <button
-                  type="button"
-                  onClick={() => setIsModalOpen(false)}
-                  className="px-5 py-2.5 rounded-xl border border-zinc-800 hover:border-zinc-700 bg-zinc-900/50 hover:bg-zinc-900 text-zinc-400 hover:text-white text-sm font-bold transition-all cursor-pointer"
-                >
-                  İptal
-                </button>
-                <button
-                  type="submit"
-                  disabled={modalSaving}
-                  className="flex items-center justify-center gap-2 bg-gradient-to-r from-violet-600 to-indigo-600 hover:opacity-95 text-white font-bold py-2.5 px-6 rounded-xl shadow-lg shadow-violet-600/10 transition-all duration-300 disabled:opacity-60 cursor-pointer text-sm"
-                >
-                  {modalSaving ? (
-                    <>
-                      <Loader2 className="w-4 h-4 animate-spin" />
-                      Kaydediliyor...
-                    </>
-                  ) : (
-                    <>
-                      <Check className="w-4 h-4" />
-                      Değişiklikleri Kaydet
-                    </>
-                  )}
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
       )}
 
       <TrailerModal
