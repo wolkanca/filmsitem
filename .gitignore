@@ -34,3 +34,11 @@ next-env.d.ts
 
 # User CSV files (raw import data)
 *.csv
+
+# Admin & Local Tools (Local only - Not pushed to GitHub)
+/app/admin/
+/app/enrich/
+/app/enrich-trailers/
+/app/api/admin/
+/app/api/enrich/
+/app/api/enrich-trailers/
