@@ -315,16 +315,6 @@ export default function MovieDetailClient({
                   <span>{movie.runtime} dk</span>
                 </div>
               )}
-              {movie.omdbType && movie.omdbType.length > 0 && (
-                <div className="flex items-center gap-1.5">
-                  <Film className="w-4 h-4 text-zinc-500" />
-                  <div className="flex items-center gap-1 flex-wrap">
-                    <span>
-                      {({ movie: 'Film', series: 'Dizi', game: 'Oyun', 'music video': 'Müzik' } as Record<string, string>)[movie.omdbType.toLowerCase()] ?? movie.omdbType}
-                    </span>
-                  </div>
-                </div>
-              )}
               {movie.releaseDate && (
                 <div className="flex items-center gap-1.5">
                   <CalendarDays className="w-4 h-4 text-zinc-500" />
