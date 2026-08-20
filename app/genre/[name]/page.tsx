@@ -52,26 +52,18 @@ export default async function GenrePage({ params }: Props) {
 
   return (
     <div className="space-y-8">
-      {/* Breadcrumb / Back button */}
-      <Link
-        href="/movies"
-        className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-semibold"
-      >
-        <ArrowLeft className="w-4 h-4" /> Filmlerime Dön
-      </Link>
-
       {/* Header and Statistics Banner */}
       <div className="glass-card p-6 sm:p-8 rounded-2xl relative overflow-hidden border border-card-border/50">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-brand-primary/10 rounded-full blur-[100px] -z-10" />
+        <div className="absolute top-0 right-0 w-80 h-80 bg-brand-rose/10 rounded-full blur-[100px] -z-10" />
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
           <div>
-            <span className="text-xs font-bold text-brand-primary uppercase tracking-widest block mb-1">Türe Göre Arşiv</span>
+            <span className="text-xs font-bold text-brand-rose uppercase tracking-widest block mb-1">Türe Göre Arşiv</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
-              {decodedName} Filmleri
+              {decodedName}
             </h1>
             <p className="text-zinc-500 text-sm mt-1">
-              Bu türde toplam {totalCount} yapım izlediniz.
+              {decodedName} türünde toplam {totalCount} yapım.
             </p>
           </div>
 

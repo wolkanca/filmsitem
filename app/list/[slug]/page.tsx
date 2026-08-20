@@ -471,19 +471,10 @@ export default async function ListDetailPage({
   return (
     <div className="space-y-8 animate-fade-in">
       <div className="space-y-4">
-        <Link
-          href="/lists"
-          className="inline-flex items-center gap-1.5 text-xs font-bold text-zinc-400 hover:text-white transition-colors"
-        >
-          <ArrowLeft className="w-3.5 h-3.5" />
-
-          Koleksiyonlara Dön
-        </Link>
-
         <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-zinc-950 via-zinc-950 to-red-950/20 p-6 sm:p-8">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <div>
-              <div className="flex items-center gap-3 text-brand-primary">
+              <div className="flex items-center gap-3 text-brand-rose">
                 <List className="w-7 h-7" />
 
                 <span className="text-xs font-extrabold uppercase tracking-[0.22em]">
@@ -496,13 +487,7 @@ export default async function ListDetailPage({
               </h1>
 
               <p className="text-zinc-500 text-sm mt-2">
-                Bu koleksiyonda
-                toplam{' '}
-                {
-                  collection.movies
-                    .length
-                }{' '}
-                yapım izlediniz.
+                Bu koleksiyonda toplam {collection.movies.length} yapım.
               </p>
             </div>
 
@@ -513,10 +498,7 @@ export default async function ListDetailPage({
                 </div>
 
                 <div className="mt-2 text-2xl font-black text-white">
-                  {
-                    collection.movies
-                      .length
-                  }
+                  {collection.movies.length}
                 </div>
               </div>
 
@@ -583,11 +565,7 @@ export default async function ListDetailPage({
         </div>
       </div>
 
-      <ListDetailTabs
-        movies={
-          collection.movies
-        }
-      />
+      <ListDetailTabs movies={collection.movies} />
     </div>
   );
 }

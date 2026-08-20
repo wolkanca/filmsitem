@@ -71,14 +71,6 @@ export default async function WriterPage({ params }: Props) {
 
   return (
     <div className="space-y-8 animate-fade-in">
-      {/* Breadcrumb / Back button */}
-      <Link
-        href="/movies"
-        className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-semibold"
-      >
-        <ArrowLeft className="w-4 h-4" /> Filmlerime Dön
-      </Link>
-
       {/* Header and Statistics Banner */}
       <div className="glass-card p-6 sm:p-8 rounded-2xl relative overflow-hidden border border-card-border/50">
         <div className="absolute top-0 right-0 w-80 h-80 bg-brand-rose/10 rounded-full blur-[100px] -z-10" />
@@ -88,10 +80,10 @@ export default async function WriterPage({ params }: Props) {
             <span className="text-xs font-bold text-brand-rose uppercase tracking-widest block mb-1">Senariste Göre Arşiv</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight flex items-center gap-3">
               <User className="w-8 h-8 text-brand-rose shrink-0" />
-              {decodedName} Filmleri
+              {decodedName}
             </h1>
             <p className="text-zinc-500 text-sm mt-1">
-              Bu senaristin yazdığı toplam {totalCount} yapım izlediniz.
+              {decodedName} yazdığı {totalCount} yapım.
             </p>
             {(directorMoviesCount > 0 || writerMoviesCount > 0) && (
               <div className="flex flex-wrap gap-2 mt-4">
