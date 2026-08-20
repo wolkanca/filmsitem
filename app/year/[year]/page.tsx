@@ -47,14 +47,6 @@ export default async function YearPage({ params }: Props) {
 
   return (
     <div className="space-y-8">
-      {/* Breadcrumb / Back button */}
-      <Link
-        href="/movies"
-        className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors text-sm font-semibold"
-      >
-        <ArrowLeft className="w-4 h-4" /> Filmlerime Dön
-      </Link>
-
       {/* Header and Statistics Banner */}
       <div className="glass-card p-6 sm:p-8 rounded-2xl relative overflow-hidden border border-card-border/50">
         <div className="absolute top-0 right-0 w-80 h-80 bg-brand-secondary/10 rounded-full blur-[100px] -z-10" />
@@ -64,10 +56,10 @@ export default async function YearPage({ params }: Props) {
             <span className="text-xs font-bold text-brand-secondary uppercase tracking-widest block mb-1">Yıla Göre Arşiv</span>
             <h1 className="text-3xl sm:text-4xl font-black text-white tracking-tight flex items-center gap-3">
               <Calendar className="w-8 h-8 text-brand-secondary shrink-0" />
-              {resolvedParams.year} Yapımları
+              {resolvedParams.year}
             </h1>
             <p className="text-zinc-500 text-sm mt-1">
-              Bu yıla ait toplam {totalCount} yapım izlediniz.
+              {resolvedParams.year} yılına ait {totalCount} yapım.
             </p>
           </div>
 
