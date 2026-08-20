@@ -281,16 +281,16 @@ export default function MovieDetailClient({
           <div className="flex-grow space-y-4 text-left">
             <div className="space-y-1">
               <div className="flex flex-wrap gap-2 mb-1.5">
-                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-red-500/10 text-red-300 border border-red-500/20 uppercase tracking-wider">
+                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-red-500/10 text-red-300 border border-red-500/20 capitalize tracking-wider">
                   {movie.type === 'Movie' ? 'Sinema Filmi' : movie.type}
                 </span>
                 {Array.from(new Set(movie.listName)).map((list, idx) => (
-                  <span key={`${list}-${idx}`} className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-500/10 text-rose-300 border border-rose-500/20">
+                  <span key={`${list}-${idx}`} className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-500/10 text-rose-300 border border-rose-500/20 capitalize">
                     {list}
                   </span>
                 ))}
               </div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-black text-zinc-100 tracking-tight">
                 {movie.title}
               </h1>
               {movie.originalTitle && movie.originalTitle !== movie.title && (
@@ -306,18 +306,18 @@ export default function MovieDetailClient({
                 href={`/year/${movie.year}`}
                 className="flex items-center gap-1.5 hover:text-brand-primary transition-colors"
               >
-                <Calendar className="w-4 h-4 text-brand-primary" />
+                <Calendar className="w-4 h-4 text-zinc-500" />
                 <span>{movie.year}</span>
               </Link>
               {movie.runtime > 0 && (
                 <div className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4 text-brand-primary" />
+                  <Clock className="w-4 h-4 text-zinc-500" />
                   <span>{movie.runtime} dk</span>
                 </div>
               )}
               {movie.omdbType && movie.omdbType.length > 0 && (
                 <div className="flex items-center gap-1.5">
-                  <Film className="w-4 h-4 text-brand-primary" />
+                  <Film className="w-4 h-4 text-zinc-500" />
                   <div className="flex items-center gap-1 flex-wrap">
                     <span>
                       {({ movie: 'Film', series: 'Dizi', game: 'Oyun', 'music video': 'Müzik' } as Record<string, string>)[movie.omdbType.toLowerCase()] ?? movie.omdbType}
@@ -327,14 +327,21 @@ export default function MovieDetailClient({
               )}
               {movie.releaseDate && (
                 <div className="flex items-center gap-1.5">
-                  <CalendarDays className="w-4 h-4 text-brand-primary" />
+                  <CalendarDays className="w-4 h-4 text-zinc-500" />
                   <span>{formatDate(movie.releaseDate)}</span>
                 </div>
               )}
               {movie.country && (
                 <div className="flex items-center gap-1.5">
                   <Globe className="w-4 h-4 text-blue-400" />
-                  <span>{movie.country}</span>
+                  <span>
+                    {(() => {
+                      const countries = movie.country.split(',').map((c) => c.trim());
+                      return countries.length >= 3
+                        ? countries.slice(0, 2).join(', ')
+                        : movie.country;
+                    })()}
+                  </span>
                 </div>
               )}
               {movie.boxOffice && (
@@ -394,7 +401,7 @@ export default function MovieDetailClient({
                           href={`/director/${encodeURIComponent(d)}`}
                           className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-primary/40 hover:bg-brand-primary/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
                         >
-                          <User className="w-3.5 h-3.5 text-brand-primary" />
+                          <User className="w-3.5 h-3.5 text-zinc-500" />
                           {d}
                         </Link>
                       ))}
@@ -412,7 +419,7 @@ export default function MovieDetailClient({
                           href={`/writer/${encodeURIComponent(w)}`}
                           className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-rose/40 hover:bg-brand-rose/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
                         >
-                          <Pencil className="w-3.5 h-3.5 text-brand-rose" />
+                          <Pencil className="w-3.5 h-3.5 text-zinc-500" />
                           {w}
                         </Link>
                       ))}
@@ -467,8 +474,8 @@ export default function MovieDetailClient({
 
           {/* Personal review card */}
           <div className="glass bg-gradient-to-br from-zinc-900/60 to-red-950/10 p-6 sm:p-8 rounded-3xl border border-brand-primary/20 space-y-6 mb-4 shadow-[0_10px_35px_rgba(239,68,68,0.1)]">
-            <h2 className="text-lg font-black text-white tracking-tight flex items-center gap-2">
-              <Eye className="w-5 h-5 text-brand-accent/80" /> Notlarım
+            <h2 className="text-lg font-black text-zinc-200 tracking-tight flex items-center gap-2">
+              <Eye className="w-5 h-5 text-zinc-500" /> Notlarım
             </h2>
 
             <div className="cursor-pointer" onClick={() => window.open(`https://www.imdb.com/title/${movie.imdbId}/`, '_blank', 'noopener,noreferrer')}>
