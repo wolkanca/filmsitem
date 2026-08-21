@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
   return {
-    title: `${decodedName}`,
+    title: `${decodedName} - Yönetmen Arşivi`,
     description: `Kütüphanemdeki yönetmen ${decodedName} yönettiği filmler, kişisel puanlarım ve yorumlarım.`,
   };
 }
