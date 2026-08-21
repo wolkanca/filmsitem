@@ -20,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
   return {
-    title: `${resolvedParams.year} Yılı Yapımları`,
-    description: `Kütüphanemdeki ${resolvedParams.year} yılı yapımı filmler, incelemelerim ve kişisel puanlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
+    title: `${resolvedParams.year}`,
+    description: `Kütüphanemdeki ${resolvedParams.year} yılı yapımı filmler, kişisel puanlarım ve yorumlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
   };
 }
 

@@ -2364,7 +2364,7 @@
     "plot": "James Bond 007 is Britain’s top agent, and is on an exciting mission, to solve the mysterious murder of a fellow agent. The task sends him to Jamaica, where he joins forces with Quarrel and a loyal C.I.A. Agent, Felix Leiter. While dodging tarantulas, “fire breathing dragons”, and a trio of assassins, known as “the three blind mice”. Bond meets up with the beautiful Honey Ryder and goes face to face with the evil Dr. No.",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 5
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0056172",
@@ -2608,7 +2608,7 @@
     "plot": "James Bond 007 is on the search for a Russian decoding machine, known as “Lektor”. Bond needs to find this machine, before the evil S.P.E.C.T.R.E. organization discovers it. While being romantically linked with Russian girl, Tatiana Romanova, Bond sneaks his way around Istanbul, while each S.P.E.C.T.R.E. Agent tries to pick him off, including the over powering Donald “Red” Grant and ex K.G.B. Agent Rosa Klebb, who knows all of the tricks in the book, and even possesses an incredible poison tipped shoe.",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 6
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0057012",
@@ -2732,7 +2732,7 @@
     "plotTr": "James Bond (Sir Sean Connery) geri döndü ve bir sonraki görevi onu, Auric Goldfinger (Gert Fröbe) ve adamlarının Fort Knox’a baskın düzenleyip dünya ekonomisini yok etmeyi planladığı Fort Knox’a götürüyor. Dünyayı bir kez daha kurtarmak için Bond’un Goldfinger ile arkadaş olması, katil şapkalardan kaçması ve Goldfinger’ın kişisel pilotu, seksi Pussy Galore’dan (Honor Blackman) uzak durması gerekecek. Pussy Galore’un Bond’a karşı hisleri olmayabilir, ama 007 onun fikrini değiştirmesine yardımcı olacak mı?",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 7
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0059800",
@@ -2775,7 +2775,7 @@
     "plot": "James Bond continues on his fourth mission, with his aim to recover 2 stolen warheads. They’ve been taken by the SPECTRE organisation, and the world’s held hostage as Bond heads to Nassau, Bahamas. Here, he meets Domino and is forced into a thrilling confrontation with SPECTRE agent Emil Largo on-board his boat, the Disco Volante.",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 8
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt0059578",
@@ -17814,7 +17814,7 @@
     "plot": "When a deadly satellite weapon system falls into the wrong hands, only Agent James Bond 007 (Pierce Brosnan) can save the world from certain disaster. Armed with his licence to kill, Bond races to Russia in search of the stolen access codes for “GoldenEye”, an awesome space weapon that can fire a devastating electromagnetic pulse toward Earth. But 007 is up against an enemy who anticipates his every move: a mastermind motivated by years of simmering hatred. Bond also squares off against Xenia Onatopp (Famke Janssen), an assassin who uses pleasure as her ultimate weapon.",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 1
+    "franchiseOrder": 5
   },
   {
     "imdbId": "tt0114709",
@@ -19032,7 +19032,7 @@
     "plot": "Agent James Bond 007 (Pierce Brosnan) is on a mission which includes a media tycoon, his former lover and a Chinese Agent. Elliot Carver (Jonathan Pryce) wants to complete his global media empire, but in order for this to work, he must achieve broadcasting rights in China. Carver wants to start up World War III by starting a confrontation over British and Chinese waters. Bond gains the help of Wai Lin (Michelle Yeoh) on his quest to stop him, but how will Bond feel when he meets up with his former lover, Paris (Teri Hatcher), who is now Carver’s wife.",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 2
+    "franchiseOrder": 6
   },
   {
     "imdbId": "tt0118799",
@@ -22720,7 +22720,7 @@
     "plot": "James Bond (Pierce Brosnan) is back. An oil tycoon is murdered in MI6, and Bond is sent to protect his daughter. Renard (Robert Carlyle), who has a bullet lodged in his brain from a previous Agent, is secretly planning the destruction of a pipeline. Bond gains a hand from research scientist Dr. Christmas Jones (Denise Richards), who witnesses the action which happens when Bond meets up with Renard, but Bond becomes suspicious about Elektra King (Sophie Marceau), especially when Bond’s boss, M (Dame Judi Dench) goes missing. Bond must work quickly to prevent Renard from destroying Europe.",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 3
+    "franchiseOrder": 7
   },
   {
     "imdbId": "tt0120363",
@@ -29418,7 +29418,7 @@
     "plot": "Pierce Brosnan gives one last mission as James Bond 007. Starting off in North Korea, Bond is betrayed and captured. Fourteen months later, Bond is set free, but traded for Zao (Rick Yune) who was captured by MI6. When back in his world, Bond sets off to track down Zao. Bond gets caught up in yet another scheme which sends him to millionaire Gustav Graves (Toby Stephens). Another MI6 Agent known as Miranda Frost (Rosamund Pike) is also posing as a friend of Graves. Bond is invited to a presentation held by Graves about a satellite found in space which can project a huge laser beam. Bond must stop this madman with a fellow American Agent, known as Jinx Johnson (Halle Berry). While Bond tries to stop Graves and Zao, will he finally reveal who betrayed him?",
     "franchiseId": "007",
     "franchiseName": "007",
-    "franchiseOrder": 4
+    "franchiseOrder": 8
   },
   {
     "imdbId": "tt0167261",
@@ -82267,7 +82267,7 @@
       "Kült Eserler"
     ],
     "poster": "/images/movies/tt13675832-poster.webp",
-    "overview": "Bu yapım Omer Sinir tarafından yönetilmiş 2021 yapımı bir Comedy eseridir. IMDb puanı 9 olarak kaydedilmiştir.",
+    "overview": "Bu yapım Ömer Sinir tarafından yönetilmiş 2021 yapımı bir Comedy eseridir. IMDb puanı 9 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
     ],
@@ -82278,7 +82278,7 @@
       "Ahmet Kürsat Öçalan",
       "Ezgi Ay"
     ],
-    "director": "Omer Sinir, Onur Uzun",
+    "director": "Ömer Sinir, Onur Uzun",
     "writers": [
       "Feyyaz Yigit",
       "Aziz Kedi"
@@ -82852,7 +82852,7 @@
       "Cagla Irmak",
       "Sebnem Sönmez"
     ],
-    "director": "Caner Ozyurtlu, Omer Sinir",
+    "director": "Caner Ozyurtlu, Ömer Sinir",
     "writers": [
       "Selçuk Aydemir"
     ],
@@ -87170,7 +87170,7 @@
       "Komedi Günlükleri"
     ],
     "poster": "/images/movies/tt31027788-poster.webp",
-    "overview": "Bu yapım “Omer Sinir” tarafından yönetilmiş 2024 yapımı bir Comedy eseridir. IMDb puanı 8.1 olarak kaydedilmiştir.",
+    "overview": "Bu yapım “Ömer Sinir” tarafından yönetilmiş 2024 yapımı bir Comedy eseridir. IMDb puanı 8.1 olarak kaydedilmiştir.",
     "genres": [
       "Comedy"
     ],
@@ -87181,7 +87181,7 @@
       "Mehtap Ozdemir",
       "Yosi Mizrahi"
     ],
-    "director": "Omer Sinir",
+    "director": "Ömer Sinir",
     "writers": [
       "Ogunc Ersoz"
     ],

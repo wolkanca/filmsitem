@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     notFound();
   }
   return {
-    title: `${decodedName} Filmleri`,
-    description: `Kütüphanemdeki en iyi ${decodedName} türündeki filmler, incelemelerim ve kişisel puanlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
+    title: `${decodedName}`,
+    description: `Kütüphanemdeki en iyi ${decodedName} türündeki filmler, kişisel puanlarım ve yorumlarım. Kişisel sinema istatistiklerimi barındıran modern film günlüğü.`,
   };
 }
 
