@@ -38520,7 +38520,8 @@
     "plot": "Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as “The Joker” appears in Gotham, creating a new wave of chaos. Batman’s struggle against The Joker becomes deeply personal, forcing him to “confront everything he believes” and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes.",
     "franchiseId": "batman",
     "franchiseName": "Batman",
-    "franchiseOrder": 3
+    "franchiseOrder": 3,
+    "isFeatured": true
   },
   {
     "imdbId": "tt0859163",
@@ -68283,8 +68284,7 @@
     "franchiseId": "jurassic-park",
     "franchiseName": "Jurassic Park",
     "franchiseOrder": 7,
-    "plot": "Five years after the events of Jurassic World Dominion, the planet’s ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures across land, sea and air within that tropical biosphere hold, in their DNA, the key to a drug that will bring miraculous life-saving benefits to humankind. Covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure the genetic material. When Zora’s operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on a forbidden island that had once housed an undisclosed research facility for Jurassic Park. There, in a terrain populated by dinosaurs of vastly different species, they come face-to-face with a sinister, shocking discovery that has been hidden from the world for decades.",
-    "isFeatured": true
+    "plot": "Five years after the events of Jurassic World Dominion, the planet’s ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures across land, sea and air within that tropical biosphere hold, in their DNA, the key to a drug that will bring miraculous life-saving benefits to humankind. Covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure the genetic material. When Zora’s operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on a forbidden island that had once housed an undisclosed research facility for Jurassic Park. There, in a terrain populated by dinosaurs of vastly different species, they come face-to-face with a sinister, shocking discovery that has been hidden from the world for decades."
   },
   {
     "imdbId": "tt27497448",
@@ -84381,7 +84381,7 @@
       "Tom Holland",
       "Mark Wahlberg",
       "Antonio Banderas",
-	  "Tati Gabrielle"
+      "Tati Gabrielle"
     ],
     "director": "Ruben Fleischer",
     "writers": [
