@@ -5,12 +5,10 @@ import type { ReactNode } from 'react';
 import { Movie } from '@/types';
 import moviesData from '@/data/movies.json';
 import MovieCard from '@/components/MovieCard';
-import MovieListRow from '@/components/MovieListRow';
+
 import {
   Search,
   SlidersHorizontal,
-  LayoutGrid,
-  List,
   RotateCcw,
   Film,
   Tv,
@@ -70,7 +68,7 @@ const TABS: {
     {
       key: 'other',
       label: 'Diğer',
-      icon: <LayoutGrid className="w-4 h-4" />,
+      icon: <Library className="w-4 h-4" />,
     },
   ];
 
@@ -109,7 +107,6 @@ function getWatchDateTimestamp(watchDate: string | undefined | null): number {
 
 export default function MoviesPage() {
   const movies = moviesData as Movie[];
-  const [isAdmin, setIsAdmin] = useState(false);
 
   const [activeTab, setActiveTab] = useState<TabType>('all');
   const [isMounted, setIsMounted] = useState(false);
@@ -121,7 +118,7 @@ export default function MoviesPage() {
   const [minMyRating, setMinMyRating] = useState('');
   const [minImdbRating, setMinImdbRating] = useState('');
   const [sortBy, setSortByState] = useState<SortType>(DEFAULT_SORT);
-  const [viewMode, setViewModeState] = useState<'grid' | 'list'>('grid');
+
   const [showFilters, setShowFilters] = useState(false);
 
   // localStorage ve URL parametrelerini yükler.
@@ -162,11 +159,6 @@ export default function MoviesPage() {
       }
     }
 
-    const savedView = localStorage.getItem('movies-view-mode');
-
-    if (savedView === 'grid' || savedView === 'list') {
-      setViewModeState(savedView);
-    }
 
     const savedGenre = localStorage.getItem('movies-genre');
 
@@ -199,27 +191,12 @@ export default function MoviesPage() {
     setIsMounted(true);
   }, []);
 
-  // Admin oturum çerezini kontrol eder.
-  useEffect(() => {
-    const cookies = document.cookie.split(';');
-    const isAlreadyAdmin = cookies.some((cookie) =>
-      cookie.trim().startsWith('is_admin=true')
-    );
-
-    setIsAdmin(isAlreadyAdmin);
-  }, []);
-
   // Sıralamayı kaydeder.
   const setSortBy = (value: SortType) => {
     setSortByState(value);
     localStorage.setItem('movies-sort-by', value);
   };
 
-  // Görünüm tercihini kaydeder.
-  const setViewMode = (value: 'grid' | 'list') => {
-    setViewModeState(value);
-    localStorage.setItem('movies-view-mode', value);
-  };
 
   // Film veya dizi olmayan yapımları kontrol eder.
   function isOther(movie: Movie): boolean {
@@ -572,33 +549,7 @@ export default function MoviesPage() {
             Filtreler
           </button>
 
-          <div className="bg-zinc-950/60 p-1 rounded-xl border border-white/5 flex items-center gap-1">
-            <button
-              type="button"
-              onClick={() => setViewMode('grid')}
-              className={`p-2 rounded-lg transition-all ${viewMode === 'grid'
-                ? 'bg-zinc-800 text-brand-primary shadow'
-                : 'text-zinc-500 hover:text-zinc-300'
-                }`}
-              aria-label="Izgara görünümü"
-              title="Izgara görünümü"
-            >
-              <LayoutGrid className="w-4 h-4" />
-            </button>
 
-            <button
-              type="button"
-              onClick={() => setViewMode('list')}
-              className={`p-2 rounded-lg transition-all ${viewMode === 'list'
-                ? 'bg-zinc-800 text-brand-primary shadow'
-                : 'text-zinc-500 hover:text-zinc-300'
-                }`}
-              aria-label="Liste görünümü"
-              title="Liste görünümü"
-            >
-              <List className="w-4 h-4" />
-            </button>
-          </div>
         </div>
       </div>
 
@@ -863,19 +814,10 @@ export default function MoviesPage() {
             Aramayı Temizle
           </button>
         </div>
-      ) : viewMode === 'grid' ? (
+      ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {displayedMovies.map((movie) => (
             <MovieCard
-              key={movie.imdbId}
-              movie={movie}
-            />
-          ))}
-        </div>
-      ) : (
-        <div className="flex flex-col gap-4">
-          {displayedMovies.map((movie) => (
-            <MovieListRow
               key={movie.imdbId}
               movie={movie}
             />
