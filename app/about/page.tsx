@@ -14,27 +14,27 @@ export default function AboutPage() {
   return (
     <main className="mx-auto">
       {/* Hero */}
-      <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-10 mb-6">
+      <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-8 mb-6">
         <div className="max-w-6xl">
           <div className="mb-6 flex flex-wrap items-center gap-5">
-            <div className="inline-flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-red-600/15">
+            <div className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-red-600/15">
               <Film className="h-8 w-8 text-red-500" />
             </div>
-            <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white md:text-4xl">
               Hakkında
             </h1>
           </div>
-          <p className="m-auto sm:text-3xl text-2xl leading-8 text-zinc-300 text-center max-w-5xl p-10 mb-10 rounded-3xl border border-white/10 bg-zinc-500/20">
+          <p className="m-auto sm:text-3xl text-2xl leading-8 text-zinc-300 text-center max-w-5xl p-8 mb-10 rounded-3xl border border-white/10 bg-zinc-500/20">
             <strong>İzlediklerim</strong>, yıllardır izlediğim film ve dizileri
             kayıt altına almak, puanlamak ve kendi sinema arşivimi oluşturmak
             amacıyla geliştirdiğim kişisel bir projedir.
           </p>
 
-          <h2 className="mt-6 mb-3 text-xl font-bold text-white">
+          <h2 className="mt-6 mb-2 text-xl font-bold text-white">
             Kişisel Bir Sinema Günlüğü
           </h2>
 
-          <p className="text-lg leading-8 text-zinc-300">
+          <p className="text-lg leading-8 mb-2 text-zinc-300">
             İzlediklerim bir film veritabanı olmaktan çok, yıllar boyunca oluşturduğum kişisel sinema geçmişini saklayan dijital bir günlük. Burada yer alan her puan, her favori ve her liste zaman içinde oluşmuş gerçek izleme alışkanlıklarımı yansıtıyor. Amacım yalnızca film listelemek değil; yıllar sonra dönüp baktığımda hangi filmi ne zaman izlediğimi, nasıl değerlendirdiğimi ve sinema zevkimin nasıl değiştiğini görebileceğim kalıcı bir arşiv oluşturmak. Site sürekli geliştiriliyor. Yeni özellikler eklenmeye ve koleksiyon büyümeye devam ediyor.
           </p>
 
