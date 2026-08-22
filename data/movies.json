@@ -28828,12 +28828,13 @@
     "trailerYoutubeId": "O2Y3FFFIvRI",
     "country": "United States, Germany",
     "omdbType": "movie",
-    "plotTr": "Blade’in annesi, henüz Blade onun karnındayken vampirlerin acımasız saldırısı sonucunda katledilmiştir. İntikam ateşiyle yanıp tutuşan Blade, bilincini kazandığı günden itibaren kendisini vampirleri temizlemeye adamıştır. Henüz doğmamışken ucundan bulaştığı vampir saldırısı nedeniyle genlerinde onların özelliklerinden de bulunan Blade vampirler tarafından ’Gündüz Gezen’ olarak isimlendirilmektedir. Blade’in kendileri için dev bir tehlike oluşturduğunu bilen vampirler de onu bir an önce avlamak istemektedirler.",
+    "plotTr": "Blade’in annesi, henüz Blade onun karnındayken vampirlerin acımasız saldırısı sonucunda katledilmiştir. İntikam ateşiyle yanıp tutuşan Blade, bilincini kazandığı günden itibaren kendisini vampirleri temizlemeye adamıştır. Henüz doğmamışken ucundan bulaştığı vampir saldırısı nedeniyle genlerinde onların özelliklerinden de bulunan Blade vampirler tarafından “Gündüz Gezen” olarak isimlendirilmektedir. Blade’in kendileri için dev bir tehlike oluşturduğunu bilen vampirler de onu bir an önce avlamak istemektedirler.",
+    "plot": "In a world where vampires walk the earth, Blade has a goal. His goal is to rid the world of all vampire evil. When Blade witnesses a vampire bite Dr. Karen Jenson, he fights away the beast and takes Jenson back to his hideout. Here, alongside Abraham Whistler, Blade attempts to help heal Jenson. The vampire Quinn who was attacked by Blade, reports back to his master Deacon Frost, who is planning a huge surprise for the human population.",
     "franchiseId": "blade",
     "franchiseName": "Blade",
     "franchiseOrder": 1,
     "boxOffice": "$70,087,718",
-    "plot": "In a world where vampires walk the earth, Blade has a goal. His goal is to rid the world of all vampire evil. When Blade witnesses a vampire bite Dr. Karen Jenson, he fights away the beast and takes Jenson back to his hideout. Here, alongside Abraham Whistler, Blade attempts to help heal Jenson. The vampire Quinn who was attacked by Blade, reports back to his master Deacon Frost, who is planning a huge surprise for the human population."
+    "isFeatured": true
   },
   {
     "imdbId": "tt0187738",
@@ -68281,10 +68282,11 @@
     "omdbType": "movie",
     "boxOffice": "$339,640,400",
     "plotTr": "Jurassic World Dominion’daki olayların üzerinden beş yıl geçtikten sonra, gezegenin ekolojisinin dinozorlar için büyük ölçüde elverişsiz olduğu ortaya çıktı. Hayatta kalanlar, bir zamanlar gelişip çoğaldıkları iklime benzeyen, izole ekvatoral ortamlarda yaşıyor. Bu tropikal biyosferde karada, denizde ve havada bulunan en devasa üç canlı, DNA’larında insanlığa mucizevi, hayat kurtarıcı faydalar sağlayacak bir ilacın anahtarını barındırıyor. Gizli operasyonlar uzmanı Zora Bennett, genetik materyali ele geçirmek üzere çok gizli bir görevde yetenekli bir ekibi yönetmek üzere görevlendirilir. Zora’nın operasyonu, yağmacı su dinozorları yüzünden tekne gezisi sırasında alabora olan bir sivil aileyle kesiştiğinde, hepsi bir zamanlar Jurassic Park’a ait gizli bir araştırma tesisine ev sahipliği yapmış olan yasak bir adada mahsur kalırlar. Orada, birbirinden çok farklı türlerdeki dinozorların yaşadığı bir arazide, onlarca yıldır dünyadan gizlenmiş olan, ürkütücü ve şok edici bir keşifle karşı karşıya kalırlar.",
+    "plot": "Five years after the events of Jurassic World Dominion, the planet’s ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures across land, sea and air within that tropical biosphere hold, in their DNA, the key to a drug that will bring miraculous life-saving benefits to humankind. Covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure the genetic material. When Zora’s operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on a forbidden island that had once housed an undisclosed research facility for Jurassic Park. There, in a terrain populated by dinosaurs of vastly different species, they come face-to-face with a sinister, shocking discovery that has been hidden from the world for decades.",
     "franchiseId": "jurassic-park",
     "franchiseName": "Jurassic Park",
     "franchiseOrder": 7,
-    "plot": "Five years after the events of Jurassic World Dominion, the planet’s ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures across land, sea and air within that tropical biosphere hold, in their DNA, the key to a drug that will bring miraculous life-saving benefits to humankind. Covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure the genetic material. When Zora’s operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on a forbidden island that had once housed an undisclosed research facility for Jurassic Park. There, in a terrain populated by dinosaurs of vastly different species, they come face-to-face with a sinister, shocking discovery that has been hidden from the world for decades."
+    "isFeatured": true
   },
   {
     "imdbId": "tt27497448",
