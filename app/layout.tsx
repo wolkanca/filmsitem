@@ -4,7 +4,6 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import GlobalSearch from '@/components/GlobalSearch';
-import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
 import '@/app/global.css';
 
 const inter = Inter({
@@ -55,7 +54,6 @@ export default function RootLayout({
 
         {/* Global Search Dialog */}
         <GlobalSearch />
-        {/* <ServiceWorkerRegister /> */}
         <GoogleAnalytics gaId="G-W94XTXVMTQ" />
       </body>
     </html>
