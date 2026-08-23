@@ -71,8 +71,8 @@ export default function MovieDetailClient({
       .slice(0, 12);
 
     const selectedMovies = [...candidatePool]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 5);
+      .sort(() => Math.random() - 0.6)
+      .slice(0, 6);
 
     setRandomSimilarMovies(selectedMovies);
   }, [similarMovies, movie.imdbId]);
@@ -620,7 +620,7 @@ export default function MovieDetailClient({
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-6">
             {franchiseMovies.map((franchiseMovie) => {
               const isCurrentMovie =
                 franchiseMovie.imdbId === movie.imdbId;
@@ -664,7 +664,7 @@ export default function MovieDetailClient({
           <h2 className="text-xl font-black text-white tracking-tight flex items-center gap-2">
             <Clapperboard className="w-5 h-5" /> Benzer Yapımlar
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
             {randomSimilarMovies.map((sm) => (
               <MovieCard key={sm.imdbId} movie={sm} />
             ))}
