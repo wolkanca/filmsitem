@@ -15,16 +15,8 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const decodedName = decodeURIComponent(resolvedParams.name);
-  const movies = await getMovies();
-  const exists = movies.some((m) => {
-    if (!m.cast) return false;
-    return m.cast.some((c) => normalizeSearchString(c) === normalizeSearchString(decodedName));
-  });
-  if (!exists) {
-    notFound();
-  }
   return {
-    title: `${decodedName}`,
+    title: `${decodedName} - Oyuncu Arşivi`,
     description: `Kütüphanemdeki oyuncu ${decodedName} rol aldığı filmler, kişisel puanlarım ve yorumlarım.`,
   };
 }
