@@ -153,7 +153,7 @@ export default function PosterImage({
 
   return (
     <Image
-      src={`https://alsetek.com/izlediklerim${imgSrc}`}
+      src={imgSrc}
       alt={alt}
       fill={fill}
       sizes={sizes}

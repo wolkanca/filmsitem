@@ -22,7 +22,7 @@ export default function MovieListRow({ movie }: MovieListRowProps) {
         className="relative w-16 h-24 flex-shrink-0 bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800"
       >
         <PosterImage
-          src={`https://alsetek.com/izlediklerim${movie.poster}`}
+          src={movie.poster}
           alt={movie.title}
           fill
           sizes="64px"

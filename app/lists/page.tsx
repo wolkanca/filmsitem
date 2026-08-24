@@ -439,7 +439,7 @@ export default async function ListsPage() {
                 {list.poster && (
                   <div className="absolute inset-0 z-0 opacity-15 transition-opacity duration-500 group-hover:opacity-25">
                     <Image
-                      src={`https://alsetek.com/izlediklerim${list.poster}`}
+                      src={list.poster}
                       alt={list.name}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
