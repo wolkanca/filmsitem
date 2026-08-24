@@ -17,7 +17,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
 
         {/* Poster Image */}
         <PosterImage
-          src={movie.poster}
+          src={`https://alsetek.com/izlediklerim${movie.poster}`}
           alt={movie.title}
           fill
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"

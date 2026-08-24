@@ -79,7 +79,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
                 className="absolute inset-0 block"
               >
                 <Image
-                  src={currentMovie.poster}
+                  src={`https://alsetek.com/izlediklerim${currentMovie.poster}`}
                   alt={currentMovie.title}
                   fill
                   sizes="(max-width: 640px) 150px, 200px"

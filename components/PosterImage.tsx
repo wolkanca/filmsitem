@@ -12,6 +12,7 @@ const PLACEHOLDER_PATTERNS = [
   'placehold.co',
   'placeholder.com',
   'dummyimage.com',
+  'alsetek.com'
 ];
 
 function isPlaceholderUrl(url?: string | null): boolean {
@@ -152,7 +153,7 @@ export default function PosterImage({
 
   return (
     <Image
-      src={imgSrc}
+      src={`https://alsetek.com/izlediklerim${imgSrc}`}
       alt={alt}
       fill={fill}
       sizes={sizes}
