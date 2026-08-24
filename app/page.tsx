@@ -48,7 +48,7 @@ export default async function HomePage() {
             ? anyCinema
             : movies;
 
-  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 300;
+  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 250;
 
   // Manuel olarak öne çıkarılan filmler (isFeatured: true)
   const manualFeatured = movies.filter((m) => onlyCinema(m) && m.isFeatured);
