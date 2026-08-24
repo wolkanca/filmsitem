@@ -144,10 +144,6 @@ async function main() {
       if (idx !== -1) {
         movies[idx].poster = posterUrl;
 
-        if (isPlaceholder(movies[idx].backdrop)) {
-          movies[idx].backdrop = posterUrl;
-        }
-
         // Diğer alanları da güncelle (varsa)
         if (result) {
           if (result.plot && movies[idx].overview.includes('yükleniyor')) {

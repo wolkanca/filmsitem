@@ -152,12 +152,12 @@ export default async function HomePage() {
             'radial-gradient(circle at 18% 18%, rgba(239,68,68,0.82) 0%, rgba(185,28,28,0.50) 28%, transparent 46%), radial-gradient(circle at 76% 24%, rgba(248,113,113,0.34) 0%, transparent 32%), linear-gradient(135deg, #4c0505 0%, #991b1b 42%, #1f0505 72%, #050505 100%)',
         }}
       >
-        {/* Cinematic red backdrop */}
-        {featuredMovie?.backdrop && (
+        {/* Cinematic red background visual */}
+        {featuredMovie?.poster && (
           <div className="absolute inset-0 -z-20 opacity-25 mix-blend-overlay">
             <Image
-              src={featuredMovie.backdrop}
-              alt="Backdrop blur"
+              src={featuredMovie.poster}
+              alt="Poster blur"
               fill
               sizes="100vw"
               className="object-cover blur-sm scale-105"

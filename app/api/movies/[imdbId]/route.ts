@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { revalidatePath } from 'next/cache';
 import { getMovies, saveMovies } from '@/lib/db';
 
-// PATCH /api/movies/:imdbId — update poster, backdrop, trailerYoutubeId
+// PATCH /api/movies/:imdbId — update poster, trailerYoutubeId, etc.
 export async function PATCH(
   req: Request,
   { params }: { params: Promise<{ imdbId: string }> }
@@ -19,7 +19,7 @@ export async function PATCH(
     const body = await req.json();
 
     const stringFields = [
-      'title', 'originalTitle', 'type', 'watchDate', 'poster', 'backdrop',
+      'title', 'originalTitle', 'type', 'watchDate', 'poster',
       'overview', 'plot', 'plotTr', 'country', 'omdbType', 'boxOffice',
       'director', 'releaseDate', 'trailerYoutubeId'
     ];

@@ -4,7 +4,6 @@ import path from 'path';
 const args = process.argv.slice(2);
 
 const inputPathArg = args.find((arg) => !arg.startsWith('--')) || './data/movies.json';
-const checkBackdrop = args.includes('--backdrop');
 const fixWithYoutube = args.includes('--fix-youtube');
 
 const inputPath = path.resolve(process.cwd(), inputPathArg);
@@ -16,7 +15,6 @@ const jsonLogPath = path.resolve(process.cwd(), 'broken-images-log.json');
 console.log('Okunacak dosya:', inputPath);
 console.log('Log dosyası:', logPath);
 console.log('JSON log dosyası:', jsonLogPath);
-console.log('Backdrop kontrolü:', checkBackdrop ? 'Açık' : 'Kapalı');
 console.log('YouTube thumbnail ile düzeltme:', fixWithYoutube ? 'Açık' : 'Kapalı');
 
 const raw = await fs.readFile(inputPath, 'utf8');
@@ -106,10 +104,6 @@ let fixedCount = 0;
 
 for (const movie of movies) {
     const fieldsToCheck = ['poster'];
-
-    if (checkBackdrop) {
-        fieldsToCheck.push('backdrop');
-    }
 
     for (const field of fieldsToCheck) {
         const imageUrl = movie[field];

@@ -148,7 +148,6 @@ async function enrichFromTMDB(imdbId, titleType) {
     const tmdbId = tmdbItem.id;
     const overview = tmdbItem.overview || '';
     const poster = tmdbItem.poster_path ? `https://image.tmdb.org/t/p/w500${tmdbItem.poster_path}` : '';
-    const backdrop = tmdbItem.backdrop_path ? `https://image.tmdb.org/t/p/original${tmdbItem.backdrop_path}` : '';
     const tmdbRating = tmdbItem.vote_average || 0;
 
     // Fetch credits for cast and crew
@@ -173,7 +172,6 @@ async function enrichFromTMDB(imdbId, titleType) {
 
     return {
       poster,
-      backdrop,
       overview,
       cast,
       director: director || undefined,
@@ -257,7 +255,6 @@ async function start() {
       watchDate,
       listName: listNames,
       poster: '',
-      backdrop: '',
       overview: 'Film detayları yükleniyor...',
       genres,
       runtime,
@@ -321,7 +318,6 @@ async function start() {
         watchDate: ep.watchDate,
         listName: [],
         poster: '',
-        backdrop: '',
         overview: 'Dizi detayları yükleniyor...',
         genres: ep.genres || [],
         runtime: ep.runtime || 0,
@@ -386,7 +382,6 @@ async function start() {
       const details = await enrichFromTMDB(m.imdbId, m.type);
       if (details) {
         m.poster = details.poster || m.poster;
-        m.backdrop = details.backdrop || m.backdrop;
         m.overview = details.overview || m.overview;
         m.cast = details.cast || m.cast;
         m.director = details.director || m.director;
@@ -404,12 +399,11 @@ async function start() {
     console.log('No TMDB_API_KEY found. Generating intelligent fallback values...');
     // Fallback: create pretty visual posters and placeholders
     movies.forEach(m => {
-      // Pick a beautiful topic-based random visual from Unsplash for fallback poster/backdrop
+      // Pick a beautiful topic-based random visual from Unsplash for fallback poster
       const term = encodeURIComponent(m.genres[0] || 'cinema');
       // Use unsplash random with a specific seed to make it stable per movie
       const idSum = m.imdbId.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
       m.poster = `https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=500&auto=format&fit=crop`; // Cinema theme
-      m.backdrop = `https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop`;
       m.overview = `Bu yapım "${m.director || 'Bilinmeyen Yönetmen'}" tarafından yönetilmiş ${m.year} yapımı bir ${m.genres.join(', ') || 'sinema'} eseridir. IMDb puanı ${m.imdbRating} olarak kaydedilmiştir.`;
       m.cast = [];
       m.writers = [];
