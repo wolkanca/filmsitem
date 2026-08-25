@@ -5,6 +5,7 @@ import type { ReactNode } from 'react';
 import { Movie } from '@/types';
 import moviesData from '@/data/movies.json';
 import MovieCard from '@/components/MovieCard';
+import { normalizeSearchString } from '@/lib/utils';
 
 import {
   Search,
@@ -295,81 +296,141 @@ export default function MoviesPage() {
 
   // Arama, filtreleme ve sıralama
   const filteredAndSortedMovies = useMemo(() => {
-    let result = [...tabFilteredMovies];
+    let candidateMovies = [...tabFilteredMovies];
+    const isSearching = Boolean(searchQuery.trim());
+    const priorityMap = new Map<Movie, number>();
 
-    // Başlık, özgün başlık, yönetmen, oyuncu, senarist, tür ve liste araması
-    if (searchQuery.trim()) {
+    // Başlık, özgün başlık, yönetmen, oyuncu, senarist, tür, liste, özet ve konu (plot/plotTr) araması
+    if (isSearching) {
       const query = searchQuery.trim().toLocaleLowerCase('tr');
+      const normalizedQuery = normalizeSearchString(searchQuery).trim();
+      const searchMatches: { movie: Movie; priority: number }[] = [];
 
-      result = result.filter((movie) => {
+      candidateMovies.forEach((movie) => {
         const title = movie.title?.toLocaleLowerCase('tr') || '';
         const originalTitle =
           movie.originalTitle?.toLocaleLowerCase('tr') || '';
         const director =
           movie.director?.toLocaleLowerCase('tr') || '';
+        const overview = movie.overview?.toLocaleLowerCase('tr') || '';
+        const plot = movie.plot?.toLocaleLowerCase('tr') || '';
+        const plotTr = movie.plotTr?.toLocaleLowerCase('tr') || '';
 
-        const castMatches =
-          movie.cast?.some((person) =>
-            person.toLocaleLowerCase('tr').includes(query)
-          ) ?? false;
+        const titleNorm = normalizeSearchString(movie.title || '');
+        const origTitleNorm = normalizeSearchString(movie.originalTitle || '');
+        const directorNorm = normalizeSearchString(movie.director || '');
+        const overviewNorm = normalizeSearchString(movie.overview || '');
+        const plotNorm = normalizeSearchString(movie.plot || '');
+        const plotTrNorm = normalizeSearchString(movie.plotTr || '');
+        const imdbIdNorm = normalizeSearchString(movie.imdbId || '');
+        const yearStr = movie.year?.toString() || '';
 
-        const writersMatch =
-          movie.writers?.some((writer) =>
-            writer.toLocaleLowerCase('tr').includes(query)
-          ) ?? false;
-
-        const genresMatch =
-          movie.genres?.some((genre) =>
-            genre.toLocaleLowerCase('tr').includes(query)
-          ) ?? false;
-
-        const listsMatch =
-          movie.listName?.some((listName) =>
-            listName.toLocaleLowerCase('tr').includes(query)
-          ) ?? false;
-
-        return (
+        const isTitleMatch =
           title.includes(query) ||
           originalTitle.includes(query) ||
+          titleNorm.includes(normalizedQuery) ||
+          origTitleNorm.includes(normalizedQuery) ||
+          imdbIdNorm.includes(normalizedQuery) ||
+          yearStr === query;
+
+        const isPersonMatch =
           director.includes(query) ||
-          castMatches ||
-          writersMatch ||
-          genresMatch ||
-          listsMatch
-        );
+          directorNorm.includes(normalizedQuery) ||
+          (movie.cast?.some(
+            (person) =>
+              person.toLocaleLowerCase('tr').includes(query) ||
+              normalizeSearchString(person).includes(normalizedQuery)
+          ) ?? false) ||
+          (movie.writers?.some(
+            (writer) =>
+              writer.toLocaleLowerCase('tr').includes(query) ||
+              normalizeSearchString(writer).includes(normalizedQuery)
+          ) ?? false);
+
+        const isCategoryMatch =
+          (movie.genres?.some(
+            (genre) =>
+              genre.toLocaleLowerCase('tr').includes(query) ||
+              normalizeSearchString(genre).includes(normalizedQuery)
+          ) ?? false) ||
+          (movie.listName?.some(
+            (listName) =>
+              listName.toLocaleLowerCase('tr').includes(query) ||
+              normalizeSearchString(listName).includes(normalizedQuery)
+          ) ?? false);
+
+        const isPrimaryMatch = isTitleMatch || isPersonMatch || isCategoryMatch;
+
+        const isPlotMatch =
+          overview.includes(query) ||
+          plot.includes(query) ||
+          plotTr.includes(query) ||
+          overviewNorm.includes(normalizedQuery) ||
+          plotNorm.includes(normalizedQuery) ||
+          plotTrNorm.includes(normalizedQuery) ||
+          (movie.seasons?.some((s) =>
+            s.episodes?.some(
+              (ep) =>
+                (ep.overview &&
+                  (ep.overview.toLocaleLowerCase('tr').includes(query) ||
+                    normalizeSearchString(ep.overview).includes(normalizedQuery))) ||
+                (ep.title &&
+                  (ep.title.toLocaleLowerCase('tr').includes(query) ||
+                    normalizeSearchString(ep.title).includes(normalizedQuery)))
+            )
+          ) ?? false);
+
+        if (isPrimaryMatch) {
+          searchMatches.push({ movie, priority: 2 });
+          priorityMap.set(movie, 2);
+        } else if (isPlotMatch) {
+          searchMatches.push({ movie, priority: 1 });
+          priorityMap.set(movie, 1);
+        }
       });
+
+      candidateMovies = searchMatches.map((sm) => sm.movie);
     }
 
     // Tür filtresi
     if (selectedGenre) {
-      result = result.filter((movie) =>
+      candidateMovies = candidateMovies.filter((movie) =>
         movie.genres?.includes(selectedGenre)
       );
     }
 
     // Yapım yılı filtresi
     if (selectedYear) {
-      result = result.filter(
+      candidateMovies = candidateMovies.filter(
         (movie) => movie.year === Number(selectedYear)
       );
     }
 
     // Kişisel puan filtresi
     if (minMyRating) {
-      result = result.filter(
+      candidateMovies = candidateMovies.filter(
         (movie) => movie.myRating >= Number(minMyRating)
       );
     }
 
     // IMDb puanı filtresi
     if (minImdbRating) {
-      result = result.filter(
+      candidateMovies = candidateMovies.filter(
         (movie) => movie.imdbRating >= Number(minImdbRating)
       );
     }
 
     // Sıralama
-    result.sort((a, b) => {
+    candidateMovies.sort((a, b) => {
+      // Arama aktifse öncelik sıralaması: Birincil eşleşmeler (başlık, kişi, tür) önce, plot/özet eşleşmeleri en altta
+      if (isSearching) {
+        const priorityA = priorityMap.get(a) ?? 0;
+        const priorityB = priorityMap.get(b) ?? 0;
+        if (priorityA !== priorityB) {
+          return priorityB - priorityA;
+        }
+      }
+
       if (sortBy === 'title-asc') {
         return a.title.localeCompare(b.title, 'tr');
       }
@@ -432,7 +493,7 @@ export default function MoviesPage() {
       return 0;
     });
 
-    return result;
+    return candidateMovies;
   }, [
     tabFilteredMovies,
     searchQuery,

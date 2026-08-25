@@ -109,14 +109,70 @@ export default function GlobalSearch() {
     const term = normalizeSearchString(query).trim();
 
     // 1. Movies & TV Series (including IMDb ID search, e.g. tt29730305)
-    const matchedMovies = movies.filter(
-      (m) =>
-        normalizeSearchString(m.title).includes(term) ||
-        normalizeSearchString(m.originalTitle).includes(term) ||
-        (m.overview && normalizeSearchString(m.overview).includes(term)) ||
-        m.year.toString().includes(term) ||
-        normalizeSearchString(m.imdbId).includes(term)
-    );
+    // Priority scoring: Title > OriginalTitle > IMDb ID > Year > Cast/Director > Plot/Overview
+    const scoredMovies: { movie: Movie; score: number }[] = [];
+    movies.forEach((m) => {
+      const titleNorm = normalizeSearchString(m.title || '');
+      const origTitleNorm = normalizeSearchString(m.originalTitle || '');
+      const imdbIdNorm = normalizeSearchString(m.imdbId || '');
+      const yearStr = m.year?.toString() || '';
+
+      let score = 0;
+
+      if (titleNorm === term) {
+        score = 1000;
+      } else if (origTitleNorm === term) {
+        score = 900;
+      } else if (imdbIdNorm === term) {
+        score = 850;
+      } else if (titleNorm.startsWith(term)) {
+        score = 800;
+      } else if (origTitleNorm.startsWith(term)) {
+        score = 700;
+      } else if (titleNorm.includes(term)) {
+        score = 600;
+      } else if (origTitleNorm.includes(term)) {
+        score = 500;
+      } else if (imdbIdNorm.includes(term)) {
+        score = 450;
+      } else if (yearStr === term) {
+        score = 300;
+      } else {
+        const isDirectorMatch = m.director && normalizeSearchString(m.director).includes(term);
+        const isCastMatch = m.cast?.some((c) => normalizeSearchString(c).includes(term));
+        const isWriterMatch = m.writers?.some((w) => normalizeSearchString(w).includes(term));
+        const isGenreMatch = m.genres?.some((g) => normalizeSearchString(g).includes(term));
+        const isListMatch = m.listName?.some((l) => normalizeSearchString(l).includes(term));
+
+        if (isDirectorMatch || isCastMatch) {
+          score = 200;
+        } else if (isWriterMatch || isGenreMatch || isListMatch) {
+          score = 150;
+        } else {
+          const isOverviewMatch = m.overview && normalizeSearchString(m.overview).includes(term);
+          const isPlotMatch = m.plot && normalizeSearchString(m.plot).includes(term);
+          const isPlotTrMatch = m.plotTr && normalizeSearchString(m.plotTr).includes(term);
+          const isEpisodeMatch = m.seasons?.some((s) =>
+            s.episodes?.some(
+              (e) =>
+                (e.overview && normalizeSearchString(e.overview).includes(term)) ||
+                (e.title && normalizeSearchString(e.title).includes(term))
+            )
+          );
+
+          if (isOverviewMatch || isPlotMatch || isPlotTrMatch || isEpisodeMatch) {
+            score = 1; // Plot/özet eşleşmesi en düşük öncelik
+          }
+        }
+      }
+
+      if (score > 0) {
+        scoredMovies.push({ movie: m, score });
+      }
+    });
+
+    scoredMovies.sort((a, b) => b.score - a.score || b.movie.year - a.movie.year);
+    const matchedMovies = scoredMovies.map((sm) => sm.movie);
 
     // 2. Actors (cast)
     const actorMatches = new Map<string, number>();
