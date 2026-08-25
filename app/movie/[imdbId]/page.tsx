@@ -9,15 +9,6 @@ interface Props {
   params: Promise<{ imdbId: string }>;
 }
 
-// Generate static params for SSG
-export async function generateStaticParams() {
-  const movies = await getMovies();
-
-  return movies.map((movie) => ({
-    imdbId: movie.imdbId,
-  }));
-}
-
 // Dynamic SEO Metadata
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { imdbId } = await params;
