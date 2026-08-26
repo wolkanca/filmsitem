@@ -30,12 +30,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const moviePlot = movie.plotTr || movie.plot || '';
 
-  const metaDescription =
-    [movie.overview, moviePlot]
-      .filter(Boolean)
-      .join(' ')
-      .slice(0, 250)
-      .trimEnd() + '...';
+  const fullDescription = [movie.overview, moviePlot]
+    .filter(Boolean)
+    .join(' ')
+    .trim();
+
+  let metaDescription = fullDescription;
+
+  if (fullDescription.length > 280) {
+    const cutoff = fullDescription.indexOf(' ', 280);
+
+    metaDescription =
+      (cutoff === -1 ? fullDescription : fullDescription.slice(0, cutoff))
+        .trimEnd() + '...';
+  }
 
   const canonicalUrl = `https://izlediklerim.com/movie/${movie.imdbId}`;
 
