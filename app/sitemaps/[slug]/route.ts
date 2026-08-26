@@ -10,6 +10,7 @@ const SITEMAP_LIMIT = 10000;
 type Movie = {
     imdbId?: string;
     title?: string;
+    poster?: string;
     year?: string | number;
     genres?: string[] | string;
     genre?: string[] | string;
@@ -21,11 +22,17 @@ type Movie = {
     lists?: string | string[];
 };
 
+type SitemapImage = {
+    loc: string;
+    title?: string;
+};
+
 type SitemapItem = {
     loc: string;
     lastmod?: string;
     changefreq?: string;
     priority?: number;
+    images?: SitemapImage[];
 };
 
 function escapeXml(value: string) {
@@ -79,17 +86,30 @@ function uniqueValues(values: Array<string | undefined | null>) {
 }
 
 function renderUrl(item: SitemapItem) {
+    const images = item.images
+        ?.filter((image) => image.loc)
+        .map(
+            (image) => `    <image:image>
+      <image:loc>${escapeXml(image.loc)}</image:loc>
+      ${image.title ? `<image:title>${escapeXml(image.title)}</image:title>` : ''}
+    </image:image>`
+        )
+        .join('\n');
+
     return `  <url>
     <loc>${escapeXml(item.loc)}</loc>
     ${item.lastmod ? `<lastmod>${escapeXml(item.lastmod)}</lastmod>` : ''}
     ${item.changefreq ? `<changefreq>${item.changefreq}</changefreq>` : ''}
     ${typeof item.priority === 'number' ? `<priority>${item.priority.toFixed(1)}</priority>` : ''}
+${images || ''}
   </url>`;
 }
 
 function renderSitemap(items: SitemapItem[]) {
     return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${items.map(renderUrl).join('\n')}
 </urlset>`;
 }
@@ -123,6 +143,14 @@ function getMoviePages(): SitemapItem[] {
             loc: `${SITE_URL}/movie/${movie.imdbId}`,
             changefreq: 'monthly',
             priority: 0.7,
+            images: movie.poster
+                ? [
+                    {
+                        loc: `${SITE_URL}${movie.poster}`,
+                        title: movie.title,
+                    },
+                ]
+                : undefined,
         }));
 }
 
