@@ -71,6 +71,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: fullTitle,
       description: metaDescription,
       images: movie.poster ? [movie.poster] : [],
+      site: '@wolkanca',
+      creator: '@wolkanca',
     },
   };
 }
@@ -398,28 +400,27 @@ export default async function MovieDetailPage({ params }: Props) {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Movie',
+
     name: movie.title,
     image: movie.poster,
-    dateCreated: movie.year.toString(),
+    url: `https://izlediklerim.com/movie/${movie.imdbId}`,
 
-    director: movie.director
+    ...(movie.releaseDate
       ? {
-        '@type': 'Person',
-        name: movie.director,
+        datePublished: movie.releaseDate,
       }
-      : undefined,
+      : {}),
+
+    ...(movie.director
+      ? {
+        director: {
+          '@type': 'Person',
+          name: movie.director,
+        },
+      }
+      : {}),
 
     description: movie.overview,
-
-    aggregateRating: movie.imdbRating
-      ? {
-        '@type': 'AggregateRating',
-        ratingValue: movie.imdbRating.toString(),
-        bestRating: '10',
-        worstRating: '1',
-        ratingCount: '1000',
-      }
-      : undefined,
   };
 
   return (
