@@ -20,47 +20,57 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const title =
+    movie.originalTitle &&
+      movie.originalTitle.trim().toLowerCase() !== movie.title?.trim().toLowerCase()
+      ? `${movie.originalTitle} - ${movie.title}`
+      : movie.title;
+
+  const fullTitle = `${title} (${movie.year})`;
+
   const moviePlot = movie.plotTr || movie.plot || '';
 
   const metaDescription =
-    [
-      movie.overview,
-      moviePlot ? `${moviePlot}` : '',
-    ]
+    [movie.overview, moviePlot]
       .filter(Boolean)
       .join(' ')
       .slice(0, 250)
       .trimEnd() + '...';
 
+  const canonicalUrl = `https://izlediklerim.com/movie/${movie.imdbId}`;
+
   return {
-    title: `${movie.originalTitle &&
-      movie.originalTitle.trim().toLowerCase() !== movie.title?.trim().toLowerCase()
-      ? `${movie.originalTitle} - ${movie.title}`
-      : movie.title} (${movie.year})`,
+    title: fullTitle,
     description: metaDescription,
 
+    metadataBase: new URL('https://izlediklerim.com'),
+
+    alternates: {
+      canonical: canonicalUrl,
+    },
+
     openGraph: {
-      title: `${movie.originalTitle &&
-        movie.originalTitle.trim().toLowerCase() !== movie.title?.trim().toLowerCase()
-        ? `${movie.originalTitle} - ${movie.title}`
-        : movie.title} (${movie.year})`,
+      title: fullTitle,
       description: metaDescription,
-      images: movie.poster ? [{ url: movie.poster }] : [],
+      url: canonicalUrl,
+      siteName: 'İzlediklerim',
+      locale: 'tr_TR',
       type: 'video.movie',
+      images: movie.poster
+        ? [
+          {
+            url: movie.poster,
+            alt: `${movie.title} (${movie.year})`,
+          },
+        ]
+        : [],
     },
 
     twitter: {
       card: 'summary_large_image',
-      title: `${movie.originalTitle &&
-        movie.originalTitle.trim().toLowerCase() !== movie.title?.trim().toLowerCase()
-        ? `${movie.originalTitle} - ${movie.title}`
-        : movie.title} (${movie.year})`,
+      title: fullTitle,
       description: metaDescription,
       images: movie.poster ? [movie.poster] : [],
-    },
-
-    alternates: {
-      canonical: `/movie/${movie.imdbId}`,
     },
   };
 }
