@@ -258,12 +258,12 @@ export default function MovieDetailClient({
               className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${(hasRealPoster || isAdmin) ? 'cursor-pointer' : 'cursor-default'}`}>
               <PosterImage
                 src={movie.poster}
-                alt={`${movie.title} afişi`}
+                alt={`${movie.title} ${movie.year} filminin afişi`}
                 fill
                 sizes="(max-width: 640px) 240px, 240px"
                 className="object-cover"
                 priority
-                fallbackTitle={movie.title}
+                fallbackTitle={`${movie.title} ${movie.year} filminin afişi`}
                 trailerYoutubeId={movie.trailerYoutubeId}
               />
               {/* Zoom / Edit hint */}
