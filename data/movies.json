@@ -59310,6 +59310,51 @@
     "franchiseOrder": 4
   },
   {
+    "imdbId": "tt12037194",
+    "title": "Furiosa: A Mad Max Saga",
+    "originalTitle": "Furiosa: A Mad Max Saga",
+    "year": 2024,
+    "type": "Movie",
+    "myRating": 7,
+    "watchDate": "2024-06-27",
+    "listName": [
+      "Favoriler",
+      "10 Puanlık Başyapıtlar",
+      "Bilim Kurgu"
+    ],
+    "poster": "/images/movies/tt12037194-poster.webp",
+    "overview": "Bu yapım “George Miller” tarafından yönetilmiş 2024 yapımı bir Action, Adventure, Sci-Fi eseridir.",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "runtime": 148,
+    "cast": [
+      "Anya Taylor-Joy",
+      "Chris Hemsworth",
+      "Tom Burke",
+      "Nathan Jones"
+    ],
+    "director": "George Miller",
+    "writers": [
+      "George Miller",
+      "Nico Lathouris"
+    ],
+    "imdbRating": 7.5,
+    "tmdbRating": 7.5,
+    "releaseDate": "2024-05-24",
+    "trailerYoutubeId": "XJMuhwVlca4",
+    "country": "Australia, United States",
+    "omdbType": "movie",
+    "boxOffice": "$172,800,000",
+    "plotTr": "Dünyanın çöküşünden yıllar önce genç Furiosa, Yeşil Diyar'dan kaçırılır ve Savaş Lordu Dementus'un liderliğindeki büyük bir motorcu çetesinin eline düşer. Çorak topraklarda ilerlerken Immortan Joe'nun yönettiği kale ile karşılaşırlar. İki tiran üstünlük için savaşırken Furiosa, evine dönmenin bir yolunu bulmak ve intikam almak için zorlu sınavlardan geçer.",
+    "plot": "The origin story of renegade warrior Furiosa before her encounter and teamup with Mad Max.",
+    "franchiseId": "mad-max",
+    "franchiseName": "Mad Max",
+    "franchiseOrder": 5
+  },
+  {
     "imdbId": "tt2848292",
     "title": "Pitch Perfect 2",
     "originalTitle": "Pitch Perfect 2",
