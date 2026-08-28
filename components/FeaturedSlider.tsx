@@ -32,10 +32,10 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
   };
 
-  // Auto-play effect: slide every 15 seconds.
+  // Auto-play effect: slide every 10 seconds.
   // Triggers/resets when currentIndex changes (manual navigation resets the timer).
   useEffect(() => {
-    const timer = setInterval(nextSlide, 15000);
+    const timer = setInterval(nextSlide, 10000);
     return () => clearInterval(timer);
   }, [currentIndex]);
 
