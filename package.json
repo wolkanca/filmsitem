@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "import": "node scripts/import.js",
-    "enrich-posters": "node scripts/enrich-posters.js"
+    "enrich-posters": "node scripts/enrich-posters.js",
+    "warm-image-cache": "node scripts/warm-image-cache.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.10.0",

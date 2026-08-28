@@ -42,3 +42,6 @@ next-env.d.ts
 /app/api/admin/
 /app/api/enrich/
 /app/api/enrich-trailers/
+
+# Scripts
+/scripts
