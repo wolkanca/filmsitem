@@ -710,7 +710,7 @@ export default function MoviesPage() {
             {/* Kişisel puan filtresi */}
             <div className="space-y-1.5">
               <label className="text-xs font-bold text-zinc-500 uppercase tracking-wider">
-                Benim Puanım (Min)
+                Puanım (Min)
               </label>
 
               <select
@@ -789,11 +789,11 @@ export default function MoviesPage() {
                 </option>
 
                 <option value="myRating-desc">
-                  Benim Puanım (Yüksek)
+                  Puanım (Yüksek)
                 </option>
 
                 <option value="myRating-asc">
-                  Benim Puanım (Düşük)
+                  Puanım (Düşük)
                 </option>
 
                 <option value="imdbRating-desc">
