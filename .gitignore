@@ -43,5 +43,5 @@ next-env.d.ts
 /app/api/enrich/
 /app/api/enrich-trailers/
 
-# Scripts
-/scripts
+# Scripts - local only
+/scripts/
