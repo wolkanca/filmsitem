@@ -4820,7 +4820,10 @@
     "omdbType": "movie",
     "boxOffice": "$280,083,300",
     "plotTr": "Amity Adası’nda sıcak bir yazdır; burası ana geçim kaynağı plajları olan küçük bir topluluktur. Yeni Şerif Martin Brody bir köpekbalığı saldırısı kurbanının kalıntılarını keşfettiğinde, ilk eğilimi plajları yüzücülere kapatmaktır. Bu durum Belediye Başkanı Larry Vaughn ve birkaç yerel iş adamının hoşuna gitmez. Brody, o hafta sonu genç bir çocuğun yırtıcı tarafından öldürülmesiyle pişmanlıkla geri adım atar. Ölen çocuğun annesi köpekbalığı için ödül koyar ve Amity kısa sürede ödülü kazanmayı uman amatör avcılar ve balıkçılarla dolar. Köpekbalığı avında çok deneyimli yerel bir balıkçı olan Quint, yaratığı yüklü bir ücret karşılığında avlamayı teklif eder. Kısa süre sonra Quint, Brody ve Oşinografi Enstitüsü’nden Matt Hooper, Büyük Beyaz köpekbalığını avlamak için denize açılırlar. Brody’nin yaratıkla ilk karşılaşmalarından sonra kısaca özetlediği gibi, ’daha büyük bir tekneye ihtiyaçları olacak’.",
-    "plot": "It’s a hot summer on Amity Island, a small community whose main business is its beaches. When new Sheriff Martin Brody discovers the remains of a shark attack victim, his first inclination is to close the beaches to swimmers. This doesn’t sit well with Mayor Larry Vaughn and several of the local businessmen. Brody backs down to his regret as that weekend a young boy is killed by the predator. The dead boy’s mother puts out a bounty on the shark and Amity is soon swamped with amateur hunters and fisherman hoping to cash in on the reward. A local fisherman with much experience hunting sharks, Quint, offers to hunt down the creature for a hefty fee. Soon Quint, Brody and Matt Hooper from the Oceanographic Institute are at sea hunting the Great White shark. As Brody succinctly surmises after their first encounter with the creature, they’re going to need a bigger boat."
+    "plot": "It’s a hot summer on Amity Island, a small community whose main business is its beaches. When new Sheriff Martin Brody discovers the remains of a shark attack victim, his first inclination is to close the beaches to swimmers. This doesn’t sit well with Mayor Larry Vaughn and several of the local businessmen. Brody backs down to his regret as that weekend a young boy is killed by the predator. The dead boy’s mother puts out a bounty on the shark and Amity is soon swamped with amateur hunters and fisherman hoping to cash in on the reward. A local fisherman with much experience hunting sharks, Quint, offers to hunt down the creature for a hefty fee. Soon Quint, Brody and Matt Hooper from the Oceanographic Institute are at sea hunting the Great White shark. As Brody succinctly surmises after their first encounter with the creature, they’re going to need a bigger boat.",
+    "franchiseId": "Jaws",
+    "franchiseName": "Jaws",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0071853",
@@ -94103,7 +94106,7 @@
     "imdbRating": 6.6,
     "tmdbRating": 6.6,
     "releaseDate": "2016-12-02",
-    "trailerYoutubeId": "g9pW3B8Ycc4",
+    "trailerYoutubeId": "lRFN-S89eu4",
     "country": "United States, Chile, France",
     "omdbType": "movie",
     "plotTr": "John F. Kennedy’nin suikastının hemen ardından Jackie Kennedy, Beyaz Saray’daki son günlerini ve eşinin cenaze hazırlıklarını yaşar. Yaşadığı büyük travmaya rağmen eşinin mirasını korumaya ve kamuoyunun onu nasıl hatırlayacağını şekillendirmeye çalışır.",
@@ -94182,7 +94185,10 @@
     "plotTr": "Gazeteci Eddie Brock, güçlü ve uzaylı bir organizma olan Venom ile birleşir. Eddie ve Venom aynı bedeni paylaşmayı öğrenirken, insanları tehdit eden başka bir simbiyotun ortaya çıkması ikisini tehlikeli bir mücadelenin içine sürükler.",
     "boxOffice": "$856,085,161",
     "plot": "",
-    "poster": "/images/movies/tt1270797-poster.webp"
+    "poster": "/images/movies/tt1270797-poster.webp",
+    "franchiseId": "venom",
+    "franchiseName": "Venom",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt16366836",
@@ -94220,7 +94226,10 @@
     "plotTr": "Eddie Brock ve Venom, hem insanlardan hem de simbiyotların geldiği dünyadan gelen tehditler nedeniyle kaçmaktadır. Takip edildikleri sırada Venom’un geçmişi ve onu yaratan kozmik güçler ortaya çıkar ve ikili büyük bir seçim yapmak zorunda kalır.",
     "boxOffice": "$478,937,618",
     "plot": "",
-    "poster": "/images/movies/tt16366836-poster.webp"
+    "poster": "/images/movies/tt16366836-poster.webp",
+    "franchiseId": "venom",
+    "franchiseName": "Venom",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt7097896",
@@ -94261,7 +94270,10 @@
     "plotTr": "Eddie Brock ve Venom birlikte yaşamaya çalışırken seri katil Cletus Kasady, Carnage adlı ölümcül bir simbiyotla birleşir. İki simbiyot arasındaki çatışma büyüdükçe Eddie ve Venom, Carnage’ı durdurmak için mücadele eder.",
     "boxOffice": "$506,813,864",
     "plot": "",
-    "poster": "/images/movies/tt7097896-poster.webp"
+    "poster": "/images/movies/tt7097896-poster.webp",
+    "franchiseId": "venom",
+    "franchiseName": "Venom",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt7975244",
@@ -94299,7 +94311,10 @@
     "plotTr": "Spencer ortadan kaybolduğunda arkadaşları onu bulmak için yeniden Jumanji oyununa girer. Ancak oyun değişmiştir ve ekip bu kez bilinmeyen bölgelerde yeni tehlikelerle karşılaşırken Spencer’ı kurtarmaya çalışır.",
     "boxOffice": "$690,831,246",
     "plot": "",
-    "poster": "/images/movies/tt7975244-poster.webp"
+    "poster": "/images/movies/tt7975244-poster.webp",
+    "franchiseId": "jumanji",
+    "franchiseName": "Jumanji",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt0417658",
@@ -95046,7 +95061,10 @@
     "plotTr": "Bir Predator gemisinin Dünya’ya düşmesiyle Alien ve Predator arasındaki savaş küçük bir Colorado kasabasına taşınır. Kasaba halkı, iki ölümcül uzaylı türünün çatışmasının ortasında hayatta kalmaya çalışır.",
     "boxOffice": "$130,262,000",
     "plot": "",
-    "poster": "/images/movies/tt0758730-poster.webp"
+    "poster": "/images/movies/tt0758730-poster.webp",
+    "franchiseId": "avp",
+    "franchiseName": "AVP",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0370263",
@@ -95086,7 +95104,10 @@
     "plotTr": "Bir grup araştırmacı, Antarktika’nın derinliklerinde gizli bir piramit keşfeder. Piramidin Alien ve Predator türlerinin yüzyıllardır süren savaşları için bir arena olarak kullanıldığını öğrenirler ve kendilerini ölümcül bir çatışmanın içinde bulurlar.",
     "boxOffice": "$172,544,654",
     "plot": "",
-    "poster": "/images/movies/tt0370263-poster.webp"
+    "poster": "/images/movies/tt0370263-poster.webp",
+    "franchiseId": "avp",
+    "franchiseName": "AVP",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt11866324",
@@ -95574,7 +95595,10 @@
     "plotTr": "Peter Parker, New York’ta Örümcek Adam olarak suçla mücadele etmeye devam ederken geçmişteki olayların ardından yeni bir döneme girer. Şehirde ortaya çıkan tehditler ve kendi hayatındaki sorumluluklar, kahraman kimliğiyle kişisel yaşamı arasında yeni bir denge kurmasını gerektirir.",
     "boxOffice": "",
     "plot": "",
-    "poster": "/images/movies/tt22084616-poster.webp"
+    "poster": "/images/movies/tt22084616-poster.webp",
+    "franchiseId": "orumcek-adam mcu",
+    "franchiseName": "Örümcek-Adam – MCU",
+    "franchiseOrder": 4
   },
   {
     "imdbId": "tt1320291",
@@ -95686,7 +95710,10 @@
     "plotTr": "Amity kasabasında yeni bir köpekbalığı saldırısı yaşanınca polis şefi Martin Brody yeniden tehlikenin peşine düşer. Yetkililer saldırıları inkâr etmeye çalışırken Brody, kasaba halkını korumak için dev köpekbalığını durdurmaya çalışır.",
     "boxOffice": "$208,000,000",
     "plot": "",
-    "poster": "/images/movies/tt0077766-poster.webp"
+    "poster": "/images/movies/tt0077766-poster.webp",
+    "franchiseId": "Jaws",
+    "franchiseName": "Jaws",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt10954600",
@@ -95726,7 +95753,10 @@
     "plotTr": "Scott Lang ve ailesi, kuantum âlemine çekilir ve burada bambaşka bir dünyayla karşılaşır. Kang the Conqueror’ın kontrolündeki bu tehlikeli evrenden kurtulmaya çalışırken aile, kendi sınırlarını ve birbirlerine olan bağlılıklarını sınar.",
     "boxOffice": "$476,071,180",
     "plot": "",
-    "poster": "/images/movies/tt10954600-poster.webp"
+    "poster": "/images/movies/tt10954600-poster.webp",
+    "franchiseId": "ant-man",
+    "franchiseName": "Ant-Man",
+    "franchiseOrder": 3
   },
   {
     "imdbId": "tt30400277",
