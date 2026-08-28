@@ -25,9 +25,18 @@ export default async function HomePage() {
     (m) => m.myRating >= 10 && m.myRating >= 9 && m.type === 'Movie'
   );
 
-  // Fisher-Yates shuffle → rastgele 8 seç
+  // Deterministic seed based on current day — changes once per day, same on server & client
+  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 250;
+
+  // LCG seeded random (avoids Math.random() hydration mismatch)
+  const seededRand = (seed: number) => {
+    const a = 1664525, c = 1013904223, m = 2 ** 32;
+    return ((a * seed + c) % m) / m;
+  };
+
+  // Fisher-Yates shuffle with stable daily seed
   for (let i = masterpieces.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(seededRand(currentDay + i) * (i + 1));
     [masterpieces[i], masterpieces[j]] = [masterpieces[j], masterpieces[i]];
   }
 
@@ -48,7 +57,7 @@ export default async function HomePage() {
             ? anyCinema
             : movies;
 
-  const currentDay = Math.floor(Date.now() / (1000 * 60 * 60 * 24)) + 250;
+  // (currentDay declared above, before the shuffle)
 
   // Manuel olarak öne çıkarılan filmler (isFeatured: true)
   const manualFeatured = movies.filter((m) => onlyCinema(m) && m.isFeatured);
@@ -135,7 +144,7 @@ export default async function HomePage() {
     hiddenGemsPoolFallback.length >= 5 ? hiddenGemsPoolFallback : hiddenGemsPool;
 
   for (let i = gemsSource.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(seededRand(currentDay * 3 + i) * (i + 1));
     [gemsSource[i], gemsSource[j]] = [gemsSource[j], gemsSource[i]];
   }
 
