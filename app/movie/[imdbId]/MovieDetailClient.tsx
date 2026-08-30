@@ -353,7 +353,7 @@ export default function MovieDetailClient({
         <div className="lg:col-span-8 space-y-6">
 
           {/* Overview */}
-          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4 min-h-[300px]">
+          <div className="glass p-6 sm:p-8 rounded-3xl border border-white/5 space-y-4 min-h-[320px]">
             <div className="flex items-center justify-between gap-4">
               <h2 className="text-xl font-extrabold text-zinc-200">
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
