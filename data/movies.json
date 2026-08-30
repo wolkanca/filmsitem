@@ -15877,7 +15877,10 @@
     "omdbType": "movie",
     "boxOffice": "$113,502,426",
     "plotTr": "Addams Ailesi, Charles Addams’ın karikatürlerinden çıkar. Gotik yaşam tarzının tüm özellikleriyle (hizmetçi olarak kopmuş bir el dahil) yaşarlar ve oldukça zengindirler. Bu karışıma, dolandırıcı bir muhasebeci ve tefecisi ile tefecinin oğlunu ailenin uzun süredir kayıp olan Fester Amcası olarak aralarına sızdırma planı eklenir. Sahte Fester, keşfedilmeden önce kasaya girmeyi başarabilecek mi?",
-    "plot": "The Addams Family steps out of Charles Addams’ cartoons. They live with all of the trappings of the macabre (including a detached hand for a servant) and are quite wealthy. Added to this mix is a crooked accountant and his loan shark and a plot to slip the shark’s son into the family as their long-lost Uncle Fester. Can the false Fester find his way into the vault before he is discovered?"
+    "plot": "The Addams Family steps out of Charles Addams’ cartoons. They live with all of the trappings of the macabre (including a detached hand for a servant) and are quite wealthy. Added to this mix is a crooked accountant and his loan shark and a plot to slip the shark’s son into the family as their long-lost Uncle Fester. Can the false Fester find his way into the vault before he is discovered?",
+    "franchiseId": "addams-ailesi",
+    "franchiseName": "Addams Ailesi",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0103644",
@@ -16645,7 +16648,10 @@
     "omdbType": "movie",
     "boxOffice": "$48,919,043",
     "plotTr": "Addams ailesine sevimli bir erkek bebek katıldığında, Wednesday ve Pugsley ondan nefret etmezler, sadece varlığından pek de heyecan duymazlar. Tamam... evet, ondan nefret ederler. Bu yüzden ondan bir şekilde kurtulmak için plan yaparlar. Bu arada, ebeveynleri ona bir dadı tutar ve dadı Fester’ı baştan çıkarır, ancak ona karşı kötü niyetleri vardır. Addams’lar onu durdurmalı, ama nasıl?",
-    "plot": "When an adorable baby boy is added to the Addams household, Wednesday and Pugsley do not hate him, they just aren’t necessarily excited about his existence. OK...yeah, they do hate him. So they plot to get rid of him one way or another. Meanwhile, their parents hire a nanny for him and she charms Fester, but has evil intentions for him. The Addamses must stop her, but how?"
+    "plot": "When an adorable baby boy is added to the Addams household, Wednesday and Pugsley do not hate him, they just aren’t necessarily excited about his existence. OK...yeah, they do hate him. So they plot to get rid of him one way or another. Meanwhile, their parents hire a nanny for him and she charms Fester, but has evil intentions for him. The Addamses must stop her, but how?",
+    "franchiseId": "addams-ailesi",
+    "franchiseName": "Addams Ailesi",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt0108052",
