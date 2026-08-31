@@ -4,6 +4,7 @@ import { getMovies, getMovieById } from '@/lib/db';
 import MovieDetailClient from './MovieDetailClient';
 
 export const revalidate = 2592000; // 30 gün (saniye)
+export const dynamic = 'force-static';
 
 interface Props {
   params: Promise<{ imdbId: string }>;
