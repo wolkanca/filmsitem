@@ -15,10 +15,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://izlediklerim.com'),
   title: {
-    default: 'İzlediklerim - Kişisel Sinema Arşivim',
+    default: 'İzlediklerim',
     template: '%s - İzlediklerim',
   },
-  description: 'Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
+  description: 'İzlediklerim - Kişisel Sinema Arşivim. Yıllardır izlediğim filmler, verdiğim puanlar, oluşturduğum listeler ve kişisel sinema istatistiklerimi barındıran modern film günlüğü.',
   authors: [{ name: 'Volkan Yılmaz' }],
   icons: {
     icon: [
