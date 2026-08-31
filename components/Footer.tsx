@@ -45,13 +45,13 @@ export default function Footer() {
                 className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2"
               >
                 {collectionLinks.map((collection) => (
-                  <Link
+                  <a
                     key={collection.href}
                     href={collection.href}
                     className="rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-2 text-[11px] font-bold text-zinc-400 transition-all duration-200 hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
                   >
                     {collection.name}
-                  </Link>
+                  </a>
                 ))}
               </nav>
             </div>
