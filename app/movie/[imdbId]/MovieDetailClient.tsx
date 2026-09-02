@@ -582,10 +582,10 @@ export default function MovieDetailClient({
 
           <div className="grid grid-cols-2 gap-4">
             <a
-              href={`https://www.google.com/search?q=${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
+              href={`/izle/${encodeURIComponent(movie.title + ' ' + movie.year + ' izle')}`}
               target="_blank"
               title="İzle"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="flex h-8 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-brand-primary to-brand-secondary px-5 text-center text-sm font-bold leading-none text-white shadow-[0_10px_25px_rgba(239,68,68,0.3)] transition-opacity hover:opacity-90"
             >
               <Play className="h-4 w-4 fill-white" />
