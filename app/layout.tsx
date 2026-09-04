@@ -39,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className="dark scroll-smooth">
+    <html lang="tr" className="dark scroll-smooth" data-scroll-behavior="smooth">
       <body className={`${inter.variable} font-sans min-h-screen bg-background text-foreground flex flex-col antialiased min-w-[320px]`}>
         {/* Navbar */}
         <Navbar />
