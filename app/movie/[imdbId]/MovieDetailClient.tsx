@@ -303,6 +303,7 @@ export default function MovieDetailClient({
             {/* Quick Meta */}
             <div className="flex flex-wrap gap-4 text-xs font-bold text-zinc-300 pt-2 items-center">
               <Link
+                prefetch={false}
                 href={`/year/${movie.year}`}
                 className="flex items-center gap-1.5 hover:text-brand-primary transition-colors"
               >
@@ -386,7 +387,7 @@ export default function MovieDetailClient({
                     <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Yönetmen</h3>
                     <div className="flex flex-wrap gap-1.5">
                       {Array.from(new Set(movie.director.split(',').map((d) => d.trim()).filter(Boolean))).map((d, idx) => (
-                        <Link
+                        <Link prefetch={false}
                           key={`${d}-${idx}`}
                           href={`/director/${encodeURIComponent(d)}`}
                           className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-primary/40 hover:bg-brand-primary/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
@@ -404,7 +405,7 @@ export default function MovieDetailClient({
                     <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Senaristler</h3>
                     <div className="flex flex-wrap gap-1.5">
                       {Array.from(new Set(movie.writers)).map((w, idx) => (
-                        <Link
+                        <Link prefetch={false}
                           key={`${w}-${idx}`}
                           href={`/writer/${encodeURIComponent(w)}`}
                           className="flex items-center gap-1.5 bg-zinc-900 border border-white/5 hover:border-brand-rose/40 hover:bg-brand-rose/5 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-semibold transition-all"
@@ -421,7 +422,7 @@ export default function MovieDetailClient({
                   <h3 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-1.5">Kategoriler / Türler</h3>
                   <div className="flex flex-wrap gap-1.5">
                     {Array.from(new Set(movie.genres)).map((g, idx) => (
-                      <Link
+                      <Link prefetch={false}
                         key={`${g}-${idx}`}
                         href={`/genre/${encodeURIComponent(g)}`}
                         className="bg-gradient-to-r from-zinc-900 to-slate-900 border border-zinc-800 hover:border-brand-primary/40 hover:from-zinc-900/80 hover:to-slate-900/80 text-zinc-200 px-3 py-1.5 rounded-lg text-xs font-bold transition-all"
@@ -439,7 +440,7 @@ export default function MovieDetailClient({
                 {movie.cast && movie.cast.length > 0 ? (
                   <div className="flex flex-col gap-2 max-w-sm">
                     {Array.from(new Set(movie.cast)).map((actor, idx) => (
-                      <Link
+                      <Link prefetch={false}
                         key={`${actor}-${idx}`}
                         href={`/actor/${encodeURIComponent(actor)}`}
                         className="flex items-center gap-2 text-zinc-300 hover:text-brand-primary hover:border-brand-primary/20 bg-zinc-900/40 border border-white/5 px-3 py-2 rounded-xl text-xs font-semibold transition-all"
