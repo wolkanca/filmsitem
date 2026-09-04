@@ -242,7 +242,7 @@ export default function RandomPage() {
                 <div className="absolute -inset-10 bg-red-500/10 rounded-full blur-3xl z-0 pointer-events-none"></div>
 
                 <div className="relative z-10 aspect-[2/3] w-48 sm:w-56 overflow-hidden rounded-2xl border border-red-500/30 bg-zinc-900 shadow-[0_15px_40px_rgba(239,68,68,0.25)] group hover:scale-105 transition-transform duration-300">
-                  <Link href={`/movie/${selectedMovie.imdbId}`}><PosterImage
+                  <Link prefetch={false} href={`/movie/${selectedMovie.imdbId}`}><PosterImage
                     src={selectedMovie.poster}
                     alt={selectedMovie.title}
                     fill
@@ -284,7 +284,7 @@ export default function RandomPage() {
                   >
                     <RefreshCw className="w-3.5 h-3.5" /> Tekrar Döndür
                   </button>
-                  <Link
+                  <Link prefetch={false}
                     href={`/movie/${selectedMovie.imdbId}`}
                     className="bg-brand-primary text-white font-bold px-4 py-2.5 rounded-xl text-xs hover:bg-red-600 transition-all flex items-center gap-1 shadow-md shadow-brand-primary/10"
                   >
