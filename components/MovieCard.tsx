@@ -12,7 +12,7 @@ export default function MovieCard({ movie }: MovieCardProps) {
   const ratingColor = getRatingColor(movie.myRating);
 
   return (
-    <Link href={`/movie/${movie.imdbId}`} className="group block relative">
+    <Link prefetch={false} href={`/movie/${movie.imdbId}`} className="group block relative">
       <div className="relative aspect-[2/3] w-full overflow-hidden rounded-xl bg-zinc-900 border border-card-border transition-all duration-500 group-hover:scale-105 group-hover:border-brand-primary/40 group-hover:shadow-[0_15px_30px_-10px_rgba(239,68,68,0.3)]">
 
         {/* Poster Image */}

@@ -431,7 +431,7 @@ export default async function ListsPage() {
             const slug = slugify(list.name);
 
             return (
-              <Link
+              <Link prefetch={false}
                 key={list.name}
                 href={`/list/${slug}`}
                 className="group relative overflow-hidden rounded-2xl border border-white/5 bg-zinc-950/50 min-h-[160px] flex items-center transition-all duration-300 hover:border-brand-primary/30 hover:scale-[1.01] hover:shadow-[0_10px_25px_rgba(239,68,68,0.15)]"

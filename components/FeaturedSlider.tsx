@@ -74,7 +74,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
         <div className={`flex flex-col md:flex-row gap-6 items-center md:items-start ${currentMovie.trailerYoutubeId ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
           <div className="relative aspect-[2/3] w-full md:w-[200px] md:h-[300px] flex-shrink-0 overflow-hidden rounded-xl bg-zinc-900 border border-zinc-800">
             {currentMovie.poster ? (
-              <Link
+              <Link prefetch={false}
                 href={`/movie/${currentMovie.imdbId}`}
                 className="absolute inset-0 block"
               >
@@ -97,7 +97,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
                 GÜNÜN ÖNERİSİ {currentIndex + 1}/{movies.length}
               </span>
               <h3 className="text-xl sm:text-2xl font-black text-white mt-1 py-2">
-                <Link href={`/movie/${currentMovie.imdbId}`}>
+                <Link prefetch={false} href={`/movie/${currentMovie.imdbId}`}>
                   {currentMovie.title}{' '}
                   <span className="text-zinc-500 font-normal text-lg">({currentMovie.year})</span>
                 </Link>
@@ -119,7 +119,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
                 <span className="text-xs text-zinc-500">IMDb Puanı:</span>
                 <span className="text-sm font-bold text-zinc-300">{currentMovie.imdbRating}</span>
               </div>
-              <Link
+              <Link prefetch={false}
                 href={`/movie/${currentMovie.imdbId}`}
                 className="text-xs text-brand-primary font-bold hover:underline inline-flex items-center gap-1"
               >

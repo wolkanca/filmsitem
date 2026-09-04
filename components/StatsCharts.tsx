@@ -100,7 +100,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           <p className="text-[11px] text-zinc-600 -mt-4 mb-5">Benim puanım vs IMDb ortalaması</p>
           <div className="space-y-4">
             {ratingComparison.map((item) => (
-              <Link
+              <Link prefetch={false}
                 key={item.label}
                 href={`/genre/${encodeURIComponent(item.label)}`}
                 className="block group"
@@ -145,7 +145,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
               {yearDistribution.slice(-20).map((item) => {
                 const heightPercent = (item.count / maxYearCount) * 100;
                 return (
-                  <Link
+                  <Link prefetch={false}
                     key={item.year}
                     href={`/year/${item.year}`}
                     className="flex-1 min-w-[28px] flex flex-col items-center group h-full justify-end"
@@ -176,7 +176,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
             {genreDistribution.slice(0, 10).map((item) => {
               const widthPercent = (item.count / maxGenreCount) * 100;
               return (
-                <Link
+                <Link prefetch={false}
                   key={item.name}
                   href={`/genre/${encodeURIComponent(item.name)}`}
                   className="block space-y-1.5 group"
@@ -210,7 +210,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
               {topDirectors.map((item) => {
                 const widthPercent = (item.count / maxDirectorCount) * 100;
                 return (
-                  <Link
+                  <Link prefetch={false}
                     key={item.name}
                     href={`/director/${encodeURIComponent(item.name)}`}
                     className="flex items-center gap-4 group"
@@ -240,7 +240,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
               {topActors.map((item) => {
                 const widthPercent = (item.count / maxActorCount) * 100;
                 return (
-                  <Link
+                  <Link prefetch={false}
                     key={item.name}
                     href={`/actor/${encodeURIComponent(item.name)}`}
                     className="flex items-center gap-4 group"
@@ -271,7 +271,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           <SectionTitle emoji="⏱️" title="En Uzun Filmler" />
           <div className="space-y-3">
             {longestMovies.map((m, i) => (
-              <Link
+              <Link prefetch={false}
                 key={m.imdbId}
                 href={`/movie/${m.imdbId}`}
                 className="flex items-center gap-3 group"
@@ -294,7 +294,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           <SectionTitle emoji="⚡" title="En Kısa Filmler" />
           <div className="space-y-3">
             {shortestMovies.map((m, i) => (
-              <Link
+              <Link prefetch={false}
                 key={m.imdbId}
                 href={`/movie/${m.imdbId}`}
                 className="flex items-center gap-3 group"
@@ -318,7 +318,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           <p className="text-[10px] text-zinc-600 -mt-4 mb-4">IMDb ile en çok fark verdiğim filmler</p>
           <div className="space-y-3">
             {mostControversial.map((m, i) => (
-              <Link
+              <Link prefetch={false}
                 key={m.imdbId}
                 href={`/movie/${m.imdbId}`}
                 className="flex items-center gap-3 group"
@@ -352,7 +352,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           <SectionTitle emoji="💖" title="En Yüksek Puanladıklarım" />
           <div className="space-y-3">
             {highestRatedByMe.map((m, i) => (
-              <Link
+              <Link prefetch={false}
                 key={m.imdbId}
                 href={`/movie/${m.imdbId}`}
                 className="flex items-center gap-3 group"
@@ -375,7 +375,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           <SectionTitle emoji="🏆" title="IMDb&apos;de En Yüksek Puanlılar" />
           <div className="space-y-3">
             {highestRatedOnImdb.map((m, i) => (
-              <Link
+              <Link prefetch={false}
                 key={m.imdbId}
                 href={`/movie/${m.imdbId}`}
                 className="flex items-center gap-3 group"
