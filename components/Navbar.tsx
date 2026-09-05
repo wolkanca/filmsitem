@@ -40,7 +40,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center gap-2 group">
+              <Link prefetch={false} href="/" className="flex items-center gap-2 group">
                 <img src="/izlediklerim.webp" alt="logo" className="w-7 h-7 drop-shadow-[0_0_6px_rgba(239,68,68,0.5)] group-hover:scale-110 transition-transform duration-200" />
                 <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent tracking-wider text-xl group-hover:opacity-90 transition-opacity">
                   İZLEDİKLERİM
