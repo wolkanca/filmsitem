@@ -55,7 +55,7 @@ export default function Navbar() {
                 const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
 
                 return (
-                  <Link
+                  <Link prefetch={false}
                     key={item.href}
                     href={item.href}
                     className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${isActive
@@ -126,7 +126,7 @@ export default function Navbar() {
       <div className={`fixed top-0 right-0 z-50 h-full w-full lg:hidden bg-zinc-950/95 border-l border-white/10 backdrop-blur-xl shadow-2xl transform transition-transform duration-300 ease-in-out ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         {/* Drawer Header */}
         <div className="flex items-center justify-between px-5 h-16 border-b border-white/10">
-          <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
+          <Link prefetch={false} href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
             <img src="/favicon.svg" alt="logo" className="w-6 h-6" />
             <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-primary via-brand-secondary to-brand-accent text-base tracking-wider">
               İZLEDİKLERİM
@@ -161,7 +161,7 @@ export default function Navbar() {
             const isActive = pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href));
 
             return (
-              <Link
+              <Link prefetch={false}
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
