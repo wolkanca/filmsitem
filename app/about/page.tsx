@@ -16,7 +16,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="rounded-3xl border border-white/10 bg-gradient-to-br from-zinc-900 to-black p-8 mb-6">
         <div className="max-w-6xl">
-          <div className="mb-6 flex flex-wrap items-center gap-5">
+          <div className="mb-8 flex flex-wrap items-center gap-5">
             <div className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-red-600/15">
               <Film className="h-8 w-8 text-red-500" />
             </div>
@@ -30,13 +30,33 @@ export default function AboutPage() {
             amacıyla geliştirdiğim kişisel bir projedir.
           </p>
 
-          <h2 className="mt-6 mb-2 text-xl font-bold text-white">
-            Kişisel Bir Sinema Günlüğü
-          </h2>
+          <div className="flow-root">
+            <div className="mb-6 w-full sm:float-right sm:ml-8 sm:mb-4 sm:w-72 md:w-60">
+              <div className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/40 p-2 shadow-2xl ring-1 ring-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20">
+                <a href="https://wolkanca.com/" target="_blank" rel="noopener noreferrer" title="Volkan Yılmaz Kişisel Websitesi">
+                  <img
+                    src="/images/retro.webp"
+                    alt="Volkan Yılmaz - RetroKafa"
+                    width={720}
+                    height={1080}
+                    loading="lazy"
+                    className="w-full h-auto rounded-xl object-cover transition duration-300"
+                  /></a>
+              </div>
+            </div>
 
-          <p className="text-lg leading-8 mb-2 text-zinc-300">
-            İzlediklerim bir film veritabanı olmaktan çok, yıllar boyunca oluşturduğum kişisel sinema geçmişini saklayan dijital bir günlük. Burada yer alan her puan, her favori ve her liste zaman içinde oluşmuş gerçek izleme alışkanlıklarımı yansıtıyor. Amacım yalnızca film listelemek değil; yıllar sonra dönüp baktığımda hangi filmi ne zaman izlediğimi, nasıl değerlendirdiğimi ve sinema zevkimin nasıl değiştiğini görebileceğim kalıcı bir arşiv oluşturmak. Site sürekli geliştiriliyor. Yeni özellikler eklenmeye ve koleksiyon büyümeye devam ediyor.
-          </p>
+            <h2 className="mt-8 mb-4 text-xl font-bold text-white md:text-2xl">
+              Kişisel Bir Sinema Günlüğü
+            </h2>
+
+            <p className="text-lg leading-8 text-zinc-300 mb-4">
+              İzlediklerim bir film veritabanı olmaktan çok, yıllar boyunca oluşturduğum kişisel sinema geçmişini saklayan dijital bir günlük. Burada yer alan her puan, her favori ve her liste zaman içinde oluşmuş gerçek izleme alışkanlıklarımı yansıtıyor.
+            </p>
+
+            <p className="text-lg leading-8 text-zinc-300">
+              Amacım yalnızca film listelemek değil; yıllar sonra dönüp baktığımda hangi filmi ne zaman izlediğimi, nasıl değerlendirdiğimi ve sinema zevkimin nasıl değiştiğini görebileceğim kalıcı bir arşiv oluşturmak. Site sürekli geliştiriliyor. Yeni özellikler eklenmeye ve koleksiyon büyümeye devam ediyor.
+            </p>
+          </div>
 
         </div>
       </section>
