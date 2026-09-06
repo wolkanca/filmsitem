@@ -31,15 +31,14 @@ export default function AboutPage() {
           </p>
 
           <div className="flow-root">
-            <div className="mb-6 w-full sm:float-right sm:ml-8 sm:mb-4 sm:w-72 md:w-60">
+            <div className="mb-6 w-full sm:float-right sm:ml-8 sm:mb-4 sm:w-72 md:w-48">
               <div className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/40 p-2 shadow-2xl ring-1 ring-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20">
-                <a href="https://wolkanca.com/" target="_blank" rel="noopener noreferrer" title="Volkan Yılmaz Kişisel Websitesi">
+                <a href="/images/retro.webp" target="_blank" title="RetroKafa">
                   <img
                     src="/images/retro.webp"
-                    alt="Volkan Yılmaz - RetroKafa"
+                    alt="RetroKafa - Volkan Yılmaz"
                     width={720}
                     height={1080}
-                    loading="lazy"
                     className="w-full h-auto rounded-xl object-cover transition duration-300"
                   /></a>
               </div>
