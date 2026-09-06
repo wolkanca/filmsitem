@@ -32,7 +32,7 @@ export default function AboutPage() {
 
           <div className="flow-root">
             <div className="mb-6 w-full sm:float-right sm:ml-8 sm:mb-4 sm:w-72 md:w-48">
-              <div className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/40 p-2 shadow-2xl ring-1 ring-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20">
+              <figure className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/40 p-2 shadow-2xl ring-1 ring-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20">
                 <a href="/images/retro.webp" target="_blank" title="RetroKafa">
                   <img
                     src="/images/retro.webp"
@@ -40,8 +40,10 @@ export default function AboutPage() {
                     width={720}
                     height={1080}
                     className="w-full h-auto rounded-xl object-cover transition duration-300"
-                  /></a>
-              </div>
+                  />
+                </a>
+                <figcaption className="mt-2 text-xs leading-relaxed text-zinc-400 text-center block">Volkan Yılmaz</figcaption>
+              </figure>
             </div>
 
             <h2 className="mt-8 mb-4 text-xl font-bold text-white md:text-2xl">
@@ -105,15 +107,13 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <ul className="space-y-3 text-zinc-300">
-            <li>• İzlediğim filmler ve diziler</li>
-            <li>• Kişisel puanlarım</li>
-            <li>• Favorilerim</li>
-            <li>• Türlere göre koleksiyonlar</li>
-            <li>• İstatistikler</li>
-            <li>• Rastgele film önerileri</li>
-            <li>• Benzer film önerileri</li>
-            <li>• Keşfedilmeyi bekleyen filmler</li>
+          <ul className="space-y-3 text-zinc-300 list-disc list-inside">
+            <li>İzlediğim filmler ve diziler</li>
+            <li>Kişisel puanlarım</li>
+            <li>Favorilerim</li>
+            <li>Türlere göre koleksiyonlar</li>
+            <li>İstatistikler</li>
+            <li>Keşfedilmeyi bekleyen filmler</li>
           </ul>
         </div>
 
