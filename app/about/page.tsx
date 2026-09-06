@@ -32,7 +32,7 @@ export default function AboutPage() {
 
           <div className="flow-root">
             <div className="mb-6 w-full sm:float-right sm:ml-8 sm:mb-4 sm:w-72 md:w-48">
-              <figure className="group overflow-hidden rounded-2xl border border-white/10 bg-zinc-950/40 p-2 shadow-2xl ring-1 ring-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/20">
+              <figure className="group overflow-hidden rounded-2xl bg-zinc-950/40 p-2 shadow-2xl ring-1 ring-white/5 backdrop-blur-sm transition-all duration-300">
                 <a href="/images/retro.webp" target="_blank" title="RetroKafa">
                   <img
                     src="/images/retro.webp"
