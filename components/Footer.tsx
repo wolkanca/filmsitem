@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const collectionLinks = [
   { name: 'Favoriler', href: '/list/favoriler' },
-  { name: '10 Puanlık Başyapıtlar', href: '/list/10-puanlik-basyapitlar' },
+  { name: 'Başyapıtlar', href: '/list/10-puanlik-basyapitlar' },
   { name: 'Sinema Klasikleri', href: '/list/sinema-klasikleri' },
   { name: 'Kült Eserler', href: '/list/kult-eserler' },
   { name: 'Seri Filmler', href: '/list/seri-filmler' },
@@ -48,7 +48,7 @@ export default function Footer() {
                   <a
                     key={collection.href}
                     href={collection.href}
-                    className="rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-2 text-[11px] font-bold text-zinc-400 transition-all duration-200 hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
+                    className="rounded-lg border border-white/5 bg-zinc-950/40 px-3 py-2 text-sm font-medium text-zinc-400 transition-all duration-200 hover:border-brand-primary/40 hover:bg-brand-primary/10 hover:text-white"
                   >
                     {collection.name}
                   </a>
@@ -57,17 +57,12 @@ export default function Footer() {
             </div>
             <div className="max-w-sm">
               <h2 className="text-md font-black text-white uppercase tracking-wider">
-                Veri Kaynağı
+                Bilgi
               </h2>
               <p className="text-sm text-zinc-500 mt-2 mb-4 leading-relaxed">
-                Sitedeki veriler Volkan Yılmaz’ın izlediği ve IMDb’de puanladığı filmleri içermektedir, verilerin çoğu{' '}
-                <a className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">
-                  TMDB API
-                </a>
-                ’den alınmıştır.<br />
-                Afişler, fragmanlar, IMDB verileri ve puanlar TMDB’den, YouTube’dan ise fragmanlar eklenmektedir.
-                <br /><br />
-                Bu site wolkanca.com’un bir parçasıdır, her türlü görüş ve öneri için <a href="/about#iletisim" className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" >İletişim</a> sayfasından bana ulaşabilirsiniz.
+                Sitedeki veriler Volkan Yılmaz’ın izlediği ve IMDb’de puanladığı filmleri içermektedir, verilerin çoğu <a className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB API</a>’den alınmıştır. Afişler, fragmanlar, IMDB verileri ve puanlar TMDB’den, YouTube’dan ise fragmanlar eklenmektedir.
+                <br />
+                Her türlü görüş ve öneri için <a href="https://wolkanca.com/iletisim" className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" target="_blank" rel="noopener noreferrer" >İletişim</a> sayfasından bana ulaşabilirsiniz.
               </p>
             </div>
           </div>
