@@ -39,7 +39,7 @@ export default function AboutPage() {
                     alt="RetroKafa - Volkan Yılmaz"
                     width={720}
                     height={1080}
-                    className="w-full h-auto rounded-xl object-cover transition duration-300"
+                    className="w-full h-auto rounded-xl object-cover transition duration-300 hover:scale-105"
                   />
                 </a>
                 <figcaption className="mt-2 text-xs leading-relaxed text-zinc-400 text-center block">Volkan Yılmaz</figcaption>
