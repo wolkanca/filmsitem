@@ -29,7 +29,7 @@ export default function Footer() {
             <div className="flex-1 space-y-4">
               <div>
                 <h2 className="text-md font-black text-white uppercase tracking-wider">
-                  Koleksiyonlar
+                  <a href="/lists">Koleksiyonlar</a>
                 </h2>
                 <p className="text-sm text-zinc-500 mt-2 leading-relaxed max-w-2xl">
                   İzlediğim yapımları tür, dönem, puan ve formatlarına göre otomatik oluşturulan{' '}
@@ -57,7 +57,7 @@ export default function Footer() {
             </div>
             <div className="max-w-sm">
               <h2 className="text-md font-black text-white uppercase tracking-wider">
-                Bilgi
+                <a href="/about">Bilgi</a>
               </h2>
               <p className="text-sm text-zinc-500 mt-2 mb-4 leading-relaxed">
                 Sitedeki veriler Volkan Yılmaz’ın izlediği ve IMDb’de puanladığı filmleri içermektedir, verilerin çoğu <a className="text-zinc-400 hover:text-brand-secondary font-semibold transition-colors" href="https://www.themoviedb.org/" target="_blank" rel="noopener noreferrer">TMDB API</a>’den alınmıştır. Afişler, fragmanlar, IMDB verileri ve puanlar TMDB’den, YouTube’dan ise fragmanlar eklenmektedir.
