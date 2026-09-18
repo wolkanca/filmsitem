@@ -411,7 +411,7 @@ export default async function MovieDetailPage({ params }: Props) {
     '@type': 'Movie',
 
     name: movie.title,
-    image: movie.poster,
+    image: `https://izlediklerim.com${movie.poster}`,
     url: `https://izlediklerim.com/movie/${movie.imdbId}`,
 
     ...(movie.releaseDate
@@ -447,7 +447,7 @@ export default async function MovieDetailPage({ params }: Props) {
         <link
           rel="preload"
           as="image"
-          href={movie.poster}
+          href={`https://izlediklerim.com${movie.poster}`}
           fetchPriority="high"
         />
       )}

@@ -235,7 +235,7 @@ export default function MovieDetailClient({
         {/* Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <PosterImage
-            src={movie.poster}
+            src={`https://izlediklerim.com${movie.poster}`}
             alt={movie.title}
             fill
             sizes="100vw"
@@ -258,7 +258,7 @@ export default function MovieDetailClient({
               onClick={() => (hasRealPoster || isAdmin) && setIsPosterModalOpen(true)}
               className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${(hasRealPoster || isAdmin) ? 'cursor-pointer' : 'cursor-default'}`}>
               <PosterImage
-                src={movie.poster}
+                src={`https://izlediklerim.com${movie.poster}`}
                 alt={`${movie.title} (${movie.year}) filminin afişi`}
                 fill
                 sizes="(max-width: 640px) 240px, 240px"
