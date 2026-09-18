@@ -432,26 +432,8 @@ export default async function MovieDetailPage({ params }: Props) {
     description: movie.overview,
   };
 
-  const isRealPoster =
-    Boolean(
-      movie.poster &&
-      !['unsplash.com', 'via.placeholder.com', 'placehold.co', 'placeholder.com', 'dummyimage.com', 'alsetek.com'].some(
-        (pattern) => movie.poster?.includes(pattern)
-      )
-    );
-
   return (
     <>
-      {/* Preload LCP Backdrop Image */}
-      {isRealPoster && (
-        <link
-          rel="preload"
-          as="image"
-          href={`https://izlediklerim.com${movie.poster}`}
-          fetchPriority="high"
-        />
-      )}
-
       {/* JSON-LD Schema */}
       <script
         type="application/ld+json"
