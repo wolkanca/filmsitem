@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Movie } from '@/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,6 +13,9 @@ interface FeaturedSliderProps {
 }
 
 export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
+  // Guard before hooks — required by Rules of Hooks
+  if (!movies || movies.length === 0) return null;
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTrailerModalOpen, setIsTrailerModalOpen] = useState(false);
   const router = useRouter();
@@ -22,22 +25,20 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
   const touchEndX = useRef<number | null>(null);
   const SWIPE_THRESHOLD = 50; // px
 
-  if (!movies || movies.length === 0) return null;
-
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % movies.length);
-  };
+  }, [movies.length]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
-  };
+  }, [movies.length]);
 
   // Auto-play effect: slide every 10 seconds.
   // Triggers/resets when currentIndex changes (manual navigation resets the timer).
   useEffect(() => {
     const timer = setInterval(nextSlide, 10000);
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, [currentIndex, nextSlide]);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.changedTouches[0].clientX;
