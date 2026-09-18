@@ -21,6 +21,11 @@
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
+  "allowScripts": {
+    "@google/genai": true,
+    "protobufjs": true,
+    "sharp": true
+  },
   "devDependencies": {
     "@types/node": "^20.14.9",
     "@types/react": "^19.0.1",
