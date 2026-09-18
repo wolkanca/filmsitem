@@ -7,7 +7,7 @@ import GlobalSearch from '@/components/GlobalSearch';
 import '@/app/global.css';
 
 const inter = Inter({
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-sans',
   display: 'swap',
 });
