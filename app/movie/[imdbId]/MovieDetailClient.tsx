@@ -241,7 +241,7 @@ export default function MovieDetailClient({
             sizes="100vw"
             className="object-cover opacity-30 select-none pointer-events-none"
             priority
-
+            fetchPriority="high"
             fallbackTitle={movie.title}
             trailerYoutubeId={movie.trailerYoutubeId}
           />
@@ -264,6 +264,7 @@ export default function MovieDetailClient({
                 sizes="(max-width: 640px) 240px, 240px"
                 className="object-cover"
                 priority
+                fetchPriority="high"
                 fallbackTitle={`${movie.title} (${movie.year}) filminin afişi`}
                 trailerYoutubeId={movie.trailerYoutubeId}
               />

@@ -27,6 +27,7 @@ interface PosterImageProps {
   sizes?: string;
   className?: string;
   priority?: boolean;
+  fetchPriority?: 'high' | 'low' | 'auto';
   fallbackTitle?: string;
   trailerYoutubeId?: string | null;
   /** Called when image is in YouTube-thumbnail fallback state and user clicks it */
@@ -43,11 +44,14 @@ export default function PosterImage({
   sizes,
   className,
   priority,
+  fetchPriority,
   fallbackTitle,
   trailerYoutubeId,
   onYoutubeClick,
   disableYoutubeClick = false,
 }: PosterImageProps) {
+  const effectiveFetchPriority = fetchPriority ?? (priority ? 'high' : undefined);
+
   // If the src is a placeholder AND we have a trailer, skip straight to YouTube thumbnail
   const shouldUseYoutubeDirect =
     trailerYoutubeId && isPlaceholderUrl(src);
@@ -132,6 +136,7 @@ export default function PosterImage({
           sizes={sizes}
           className={className}
           priority={priority}
+          fetchPriority={effectiveFetchPriority}
           onError={handleError}
         />
         {/* Play overlay */}
@@ -159,6 +164,7 @@ export default function PosterImage({
       sizes={sizes}
       className={className}
       priority={priority}
+      fetchPriority={effectiveFetchPriority}
       onError={handleError}
     />
   );
