@@ -75,7 +75,7 @@ export default function Navbar() {
               >
                 <Search className="w-4 h-4 text-zinc-500" />
                 <span>Ara</span>
-                <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-black bg-zinc-950 text-zinc-500 rounded border border-white/5 font-sans leading-none ml-1">⌘K</kbd>
+                <kbd className="hidden sm:inline-block px-1.5 py-0.5 text-[9px] font-black bg-zinc-950 text-zinc-400 rounded border border-white/5 font-sans leading-none ml-1">⌘K</kbd>
               </button>
 
               <a
