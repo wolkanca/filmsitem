@@ -1,3 +1,22 @@
+/** MovieCard bileşeni ve /movies arama için gereken minimum film alanları. */
+export interface MovieCardMovie {
+  imdbId: string;
+  title: string;
+  originalTitle: string;
+  year: number;
+  type: string;
+  myRating: number;
+  imdbRating: number;
+  watchDate: string;
+  poster: string;
+  genres: string[];
+  director: string;
+  trailerYoutubeId?: string;
+  cast: string[];
+  writers: string[];
+  listName: string[];
+}
+
 export interface Episode {
   imdbId: string;
   title: string;

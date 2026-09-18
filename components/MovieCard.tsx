@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { Star, Calendar } from 'lucide-react';
-import { Movie } from '@/types';
+import { MovieCardMovie } from '@/types';
 import { getRatingColor } from '@/lib/utils';
 import PosterImage from '@/components/PosterImage';
 
 interface MovieCardProps {
-  movie: Movie;
+  movie: MovieCardMovie;
 }
 
 export default function MovieCard({ movie }: MovieCardProps) {
