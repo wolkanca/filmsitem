@@ -24,6 +24,24 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/_next/static/css/:path*",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "text/css; charset=utf-8",
+          },
+        ],
+      },
+      {
+        source: "/_next/static/chunks/:path*",
+        headers: [
+          {
+            key: "Content-Type",
+            value: "application/javascript; charset=utf-8",
+          },
+        ],
+      },
     ];
   },
   images: {
