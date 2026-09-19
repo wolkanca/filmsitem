@@ -3,6 +3,25 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   htmlLimitedBots: /.*/,
 
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          // Accept başlığında text/markdown içeren istekleri arka planda Markdown API handler'ına yönlendirir
+          source: "/:path*",
+          has: [
+            {
+              type: "header",
+              key: "accept",
+              value: "(.*text/markdown.*)",
+            },
+          ],
+          destination: "/api/markdown?path=:path*",
+        },
+      ],
+    };
+  },
+
   async redirects() {
     return [
       {
@@ -55,6 +74,7 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+
   images: {
     unoptimized: true,
 
