@@ -13,9 +13,6 @@ interface FeaturedSliderProps {
 }
 
 export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
-  // Guard before hooks — required by Rules of Hooks
-  if (!movies || movies.length === 0) return null;
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isTrailerModalOpen, setIsTrailerModalOpen] = useState(false);
   const router = useRouter();
@@ -26,12 +23,15 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
   const SWIPE_THRESHOLD = 50; // px
 
   const nextSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % movies.length);
-  }, [movies.length]);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % (movies?.length || 1));
+  }, [movies?.length]);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
-  }, [movies.length]);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + (movies?.length || 1)) % (movies?.length || 1));
+  }, [movies?.length]);
+
+  // Guard after all hooks
+  if (!movies || movies.length === 0) return null;
 
   // Auto-play effect: slide every 10 seconds.
   // Triggers/resets when currentIndex changes (manual navigation resets the timer).
@@ -210,7 +210,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
       <TrailerModal
         isOpen={isTrailerModalOpen}
         onClose={() => setIsTrailerModalOpen(false)}
-        trailerYoutubeId={currentMovie.trailerYoutubeId}
+        trailerYoutubeId={currentMovie.trailerYoutubeId ?? ''}
         title={currentMovie.title}
         year={currentMovie.year}
       />
