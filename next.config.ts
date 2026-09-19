@@ -16,6 +16,17 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Tüm sayfalara AI Agent keşif Link başlıklarını ekler
+        source: "/:path*",
+        headers: [
+          {
+            key: "Link",
+            value:
+              '</.well-known/agent-card.json>; rel="service-desc"; type="application/json", </.well-known/agent-card.json>; rel="describedby"; type="application/json", </.well-known/agent-card.json>; rel="agent-card"; type="application/json"',
+          },
+        ],
+      },
+      {
         source: "/images/movies/:path*",
         headers: [
           {
