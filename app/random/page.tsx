@@ -107,7 +107,7 @@ export default function RandomPage() {
   const ratingColor = selectedMovie ? getRatingColor(selectedMovie.myRating) : '';
 
   return (
-    <div className="space-y-10 animate-fade-in">
+    <div className="space-y-10 animate-fade-in min-h-[70vh]">
       {/* Title */}
       <div className="border-b border-zinc-800 pb-5 text-center md:text-left">
         <h1 className="text-3xl font-black text-white flex items-center justify-center md:justify-start gap-2">
