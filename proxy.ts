@@ -22,9 +22,9 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     /*
-     * Statik dosyalar, API rotaları ve Next.js dahili yolları hariç
-     * tüm sayfa isteklerinde çalışır.
+     * Statik dosyalar, API rotaları, _next dahili yolları ve uzantılı dosyalar hariç
+     * sadece sayfa rotalarında çalışır.
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|images|robots.txt|sitemap.xml|sitemaps|rss).*)',
+    '/((?!api|_next|favicon.ico|images|robots.txt|sitemap.xml|sitemaps|rss|.*\\..*).*)',
   ],
 }
