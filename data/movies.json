@@ -35550,7 +35550,10 @@
     "omdbType": "movie",
     "boxOffice": "",
     "trailerYoutubeId": "hW8DtxhVHOs",
-    "plotTr": "Kanada’nın kuzeyindeki uzak bir elmas madeninde meydana gelen çökme sonucu 26 madenci yer altında mahsur kalır. Onları kurtaracak ağır ekipmanı ulaştırmak için, donmuş okyanus ve göllerin üzerindeki tehlikeli buz yollarında ilerlemek zorunda olan bir tır konvoyu kurulur. Deneyimli tır şoförü Mike McCann (Liam Neeson), aphasia hastası kardeşi Gurty (Marcus Thomas), görevli Jim Goldenrod (Laurence Fishburne) ve genç sürücü Tantoo’dan oluşan ekip; sadece erimeye başlayan buzlar ve şiddetli fırtınalarla değil, aynı zamanda operasyonu sabote etmek isteyen beklenmedik, sinsi bir tehditle de savaşmak zorundadır."
+    "plotTr": "Kanada’nın kuzeyindeki uzak bir elmas madeninde meydana gelen çökme sonucu 26 madenci yer altında mahsur kalır. Onları kurtaracak ağır ekipmanı ulaştırmak için, donmuş okyanus ve göllerin üzerindeki tehlikeli buz yollarında ilerlemek zorunda olan bir tır konvoyu kurulur. Deneyimli tır şoförü Mike McCann (Liam Neeson), aphasia hastası kardeşi Gurty (Marcus Thomas), görevli Jim Goldenrod (Laurence Fishburne) ve genç sürücü Tantoo’dan oluşan ekip; sadece erimeye başlayan buzlar ve şiddetli fırtınalarla değil, aynı zamanda operasyonu sabote etmek isteyen beklenmedik, sinsi bir tehditle de savaşmak zorundadır.",
+    "franchiseId": "ice-road",
+    "franchiseName": "Ice Road",
+    "franchiseOrder": 1
   },
   {
     "imdbId": "tt0079817",
@@ -67913,7 +67916,10 @@
     "country": "Australia, United States",
     "omdbType": "movie",
     "boxOffice": "",
-    "plotTr": "Mike, merhum kardeşinin küllerini Everest Dağı’na serpmek için Nepal’e gider. Mike ve dağ rehberi bir tur otobüsünde paralı askerlerle karşılaşınca, kendilerini, yolcuları ve yerel köylüleri kurtarmak için savaşmak zorunda kalırlar..."
+    "plotTr": "Mike, merhum kardeşinin küllerini Everest Dağı’na serpmek için Nepal’e gider. Mike ve dağ rehberi bir tur otobüsünde paralı askerlerle karşılaşınca, kendilerini, yolcuları ve yerel köylüleri kurtarmak için savaşmak zorunda kalırlar...",
+    "franchiseId": "ice-road",
+    "franchiseName": "Ice Road",
+    "franchiseOrder": 2
   },
   {
     "imdbId": "tt13357520",
