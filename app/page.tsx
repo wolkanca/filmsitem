@@ -231,11 +231,11 @@ export default async function HomePage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap justify-center gap-4 pt-2 lg:justify-start">
-              <Link href="/about" className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-500 via-red-600 to-rose-600 px-7 py-3.5 font-extrabold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_12px_32px_rgba(239,68,68,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_18px_42px_rgba(239,68,68,0.6)]">
+              <Link prefetch={false} href="/about" className="group inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-red-500 via-red-600 to-rose-600 px-7 py-3.5 font-extrabold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.16),0_12px_32px_rgba(239,68,68,0.45)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.24),0_18px_42px_rgba(239,68,68,0.6)]">
                 <Info className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 Hakkında
               </Link>
-              <Link
+              <Link prefetch={false}
                 href="/movies"
                 className="group inline-flex items-center gap-2 rounded-xl bg-gray-200 px-7 py-3.5 font-extrabold text-zinc-900 shadow-[0_0_0_1px_rgba(255,255,255,0.2),0_12px_32px_rgba(255,255,255,0.25)] transition-all duration-300 hover:-translate-y-0.5 hover:bg-zinc-100 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.4),0_18px_42px_rgba(255,255,255,0.4)]"
               >
@@ -253,7 +253,7 @@ export default async function HomePage() {
               <div className="flex min-h-[112px] flex-col items-center justify-center">
                 <Film className="mb-3 h-7 w-7 text-red-300 drop-shadow-[0_0_14px_rgba(248,113,113,0.55)]" />
                 <span className="text-3xl font-black text-white/[0.90] [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  <Link href="/stats">{stats.totalCount}</Link>
+                  <Link prefetch={false} href="/stats">{stats.totalCount}</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Toplam İzlenen
@@ -267,7 +267,7 @@ export default async function HomePage() {
               <div className="flex min-h-[112px] flex-col items-center justify-center">
                 <Star className="mb-3 h-7 w-7 text-brand-accent drop-shadow-[0_0_14px_rgba(250,204,21,0.45)]" />
                 <span className="text-3xl font-black text-white/[0.90] [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  <Link href="/stats">{stats.averageRating}</Link>
+                  <Link prefetch={false} href="/stats">{stats.averageRating}</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Ortalama Puanım
@@ -281,7 +281,7 @@ export default async function HomePage() {
               <div className="flex min-h-[120px] flex-col items-center justify-center">
                 <Clock className="mb-3 h-8 w-8 text-rose-300 drop-shadow-[0_0_16px_rgba(244,63,94,0.55)]" />
                 <span className="text-4xl font-black text-white/[0.90] [text-shadow:0_0_18px_rgba(255,255,255,0.22)]">
-                  <Link href="/stats">{stats.totalRuntimeHours} Saat</Link>
+                  <Link prefetch={false} href="/stats">{stats.totalRuntimeHours} Saat</Link>
                 </span>
                 <span className="mt-2 text-xs font-semibold text-white/[0.55]">
                   Toplam İzleme Süresi
@@ -303,7 +303,7 @@ export default async function HomePage() {
               Kararsız mısınız? Kütüphanenizden özenle seçilen bu yapımlar sinema gecenizi renklendirebilir.
             </p>
           </div>
-          <Link
+          <Link prefetch={false}
             href="/random?r"
             className="flex-shrink-0 bg-brand-primary/10 hover:bg-brand-primary/20 border border-brand-primary/10 text-brand-accent font-bold px-5 py-2.5 rounded-xl transition-all text-sm"
           >
@@ -320,7 +320,7 @@ export default async function HomePage() {
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <BadgePlus className="w-6 h-6 text-zinc-300" /> Son İzlediklerim
           </h2>
-          <Link href="/movies?sort=watchDate" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
+          <Link prefetch={false} href="/movies?sort=watchDate" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
             Tümü <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
@@ -340,7 +340,7 @@ export default async function HomePage() {
           <h2 className="text-2xl font-black text-white tracking-tight flex items-center gap-2">
             <Crown className="w-6 h-6 text-zinc-300" /> Başyapıtlarım
           </h2>
-          <Link href="/list/favoriler" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
+          <Link prefetch={false} href="/list/favoriler" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
             Tümü <ArrowRight className="w-3 h-3" />
           </Link>
         </div>
@@ -363,7 +363,7 @@ export default async function HomePage() {
                 IMDb&apos;de düşük puanlı ama benim favorilerim olan sürpriz yapımlar
               </p>
             </div>
-            <Link href="/movies?sort=myRating-desc" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
+            <Link prefetch={false} href="/movies?sort=myRating-desc" className="text-xs text-zinc-400 hover:text-white flex items-center gap-1 font-bold">
               Tümü <ArrowRight className="w-3 h-3" />
             </Link>
           </div>
