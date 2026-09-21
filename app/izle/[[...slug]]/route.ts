@@ -16,7 +16,7 @@ export async function GET(
 
   const query = rawQuery.trim();
 
-  if (!query) {
+  if (!query || !query.endsWith(' izle')) {
     return NextResponse.redirect(new URL('/', request.url), 307);
   }
 
