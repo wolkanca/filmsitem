@@ -33,8 +33,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
   // Guard after all hooks
   if (!movies || movies.length === 0) return null;
 
-  // Auto-play effect: slide every 10 seconds.
-  // Triggers/resets when currentIndex changes (manual navigation resets the timer).
+  // Slider otomatik geçiş: her 10 saniyede bir sonraki slayta geçer
   useEffect(() => {
     const timer = setInterval(nextSlide, 10000);
     return () => clearInterval(timer);

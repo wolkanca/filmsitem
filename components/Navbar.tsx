@@ -9,7 +9,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Sayfa değişince menüyü kapat
+  // Sayfa rotası değişince mobil menüyü kapat
   useEffect(() => {
     setMobileOpen(false);
   }, [pathname]);
