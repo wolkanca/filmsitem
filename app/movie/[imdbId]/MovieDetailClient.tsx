@@ -201,34 +201,11 @@ export default function MovieDetailClient({
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-zinc-950/60 min-h-[380px] flex items-end">
         {isAdmin && (
           <div className="z-20 absolute top-3 right-3 flex items-center gap-2">
-            <button
-              type="button"
-              onClick={async (e) => {
-                e.stopPropagation();
-                const nextVal = !movie.isFeatured;
-                setMovie((prev) => ({ ...prev, isFeatured: nextVal }));
-                try {
-                  await fetch(`/api/movies/${movie.imdbId}`, {
-                    method: 'PATCH',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ isFeatured: nextVal }),
-                  });
-                } catch {
-                  setMovie((prev) => ({ ...prev, isFeatured: !nextVal }));
-                }
-              }}
-              className={`cursor-pointer duration-300 flex font-bold gap-1.5 items-center justify-center px-4 py-1.5 rounded-xl text-xs transition-all border ${movie.isFeatured ? 'bg-amber-500/20 text-amber-300 border-amber-500/40 hover:bg-amber-500/30' : 'bg-zinc-900/80 text-zinc-300 border-zinc-700 hover:bg-zinc-800'}`}
-              title="Slider'da Öne Çıkar durumunu değiştir"
-            >
-              <Star className={`w-3.5 h-3.5 ${movie.isFeatured ? 'fill-amber-300 text-amber-300' : ''}`} />
-              {movie.isFeatured ? 'Öne Çıkarıldı' : 'Öne Çıkar'}
-            </button>
             <Link
               href={`/admin/movies?edit=${movie.imdbId}`}
               className="bg-gradient-to-r cursor-pointer duration-300 flex font-bold from-violet-600 gap-2 hover:opacity-95 items-center justify-center px-5 py-1.5 rounded-xl shadow-lg shadow-violet-600/10 text-xs text-white to-indigo-600 transition-all"
-              title="Filmi Admin Panelinde Düzenle"
-            >
-              <Pencil className="w-3 h-3" /> Düzenle
+              title="Filmi Admin Panelinde Düzenle">
+              <Pencil className="w-3 h-3" />
             </Link>
           </div>
         )}
@@ -268,14 +245,6 @@ export default function MovieDetailClient({
                 fallbackTitle={`${movie.title} (${movie.year}) filminin afişi`}
                 trailerYoutubeId={movie.trailerYoutubeId}
               />
-              {/* Zoom / Edit hint */}
-              {(hasRealPoster || isAdmin) && (
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                  <span className="text-white text-xs font-bold bg-black/60 px-3 py-1.5 rounded-full border border-white/10 flex items-center gap-1">
-                    <Eye className="w-3.5 h-3.5" /> {isAdmin ? 'Görüntüle / Düzenle' : 'Büyüt'}
-                  </span>
-                </div>
-              )}
             </div>
           </div>
 
@@ -362,7 +331,6 @@ export default function MovieDetailClient({
                 {movie.type === 'TV Series' || movie.type === 'TV Mini Series' ? 'Dizinin Özeti' : 'Filmin Özeti'}
               </h2>
             </div>
-
             <div
               ref={overviewContentRef}
               className={`relative overflow-hidden text-sm transition-all duration-300 pb-2`}

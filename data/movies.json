@@ -28696,8 +28696,7 @@
     "franchiseId": "blade",
     "franchiseName": "Blade",
     "franchiseOrder": 1,
-    "boxOffice": "$70,087,718",
-    "isFeatured": true
+    "boxOffice": "$70,087,718"
   },
   {
     "imdbId": "tt0187738",
@@ -68003,8 +68002,7 @@
     "plot": "Five years after the events of Jurassic World Dominion, the planet’s ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures across land, sea and air within that tropical biosphere hold, in their DNA, the key to a drug that will bring miraculous life-saving benefits to humankind. Covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure the genetic material. When Zora’s operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on a forbidden island that had once housed an undisclosed research facility for Jurassic Park. There, in a terrain populated by dinosaurs of vastly different species, they come face-to-face with a sinister, shocking discovery that has been hidden from the world for decades.",
     "franchiseId": "jurassic-park",
     "franchiseName": "Jurassic Park",
-    "franchiseOrder": 7,
-    "isFeatured": true
+    "franchiseOrder": 7
   },
   {
     "imdbId": "tt27497448",

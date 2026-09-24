@@ -45,7 +45,7 @@ export default async function StatsPage() {
       icon: Trophy,
       color: 'text-emerald-400 border-emerald-500/20 bg-emerald-500/5',
       desc: 'Kütüphanede en çok ağırlığı olan film türü',
-      link: `/genre/${stats.topGenre}`,
+      link: `#en-cok-izlenen-turler`,
     },
     {
       title: 'En Sevilen Yönetmen',
@@ -53,7 +53,7 @@ export default async function StatsPage() {
       icon: Heart,
       color: 'text-rose-400 border-rose-500/20 bg-rose-500/5',
       desc: 'En fazla yapımı izlenen yönetmen',
-      link: `/director/${stats.favoriteDirector}`,
+      link: `#en-cok-izlenen-yonetmenler`,
     },
     {
       title: 'En Çok İzlenen Oyuncu',
@@ -61,7 +61,7 @@ export default async function StatsPage() {
       icon: UserCheck,
       color: 'text-sky-400 border-sky-500/20 bg-sky-500/5',
       desc: 'Rol aldığı en fazla yapım izlenen aktör',
-      link: `/actor/${stats.mostWatchedActor}`,
+      link: `#en-cok-izlenen-oyuncular`,
     },
   ];
 

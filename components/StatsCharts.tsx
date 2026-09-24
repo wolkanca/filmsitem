@@ -170,10 +170,10 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
       {/* Row 5: Genre Distribution + Directors/Actors */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Genres Distribution (Horizontal Bar Chart) */}
-        <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
+        <div id="en-cok-izlenen-turler" className="glass p-6 rounded-2xl border border-white/5 flex flex-col justify-between">
           <SectionTitle emoji="🎭" title="En Çok İzlenen Türler" />
           <div className="space-y-4 flex-grow flex flex-col justify-center">
-            {genreDistribution.slice(0, 10).map((item) => {
+            {genreDistribution.slice(0, 15).map((item) => {
               const widthPercent = (item.count / maxGenreCount) * 100;
               return (
                 <Link prefetch={false}
@@ -203,7 +203,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
         {/* Top Directors & Actors Leaderboard */}
         <div className="glass p-6 rounded-2xl border border-white/5 flex flex-col gap-6">
           <div>
-            <h3 className="text-sm font-extrabold uppercase tracking-wider text-zinc-400 mb-4 flex items-center gap-2">
+            <h3 id="en-cok-izlenen-yonetmenler" className="scroll-mt-20 text-sm font-extrabold uppercase tracking-wider text-zinc-400 mb-4 flex items-center gap-2">
               <span>🎬</span> En Çok İzlenen Yönetmenler
             </h3>
             <div className="space-y-3">
@@ -233,7 +233,7 @@ export default function StatsCharts({ stats }: StatsChartsProps) {
           </div>
 
           <div className="border-t border-zinc-800/80 pt-4">
-            <h3 className="text-sm font-extrabold uppercase tracking-wider text-zinc-400 mb-4 flex items-center gap-2">
+            <h3 id="en-cok-izlenen-oyuncular" className="scroll-mt-20 text-sm font-extrabold uppercase tracking-wider text-zinc-400 mb-4 flex items-center gap-2">
               <span>🎭</span> En Çok İzlenen Oyuncular
             </h3>
             <div className="space-y-3">

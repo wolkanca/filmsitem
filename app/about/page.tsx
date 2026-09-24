@@ -109,11 +109,10 @@ export default function AboutPage() {
 
           <ul className="space-y-3 text-zinc-300 list-disc list-inside">
             <li>İzlediğim filmler ve diziler</li>
-            <li>Kişisel puanlarım</li>
-            <li>Favorilerim</li>
+            <li>Kişisel puanlarım ve favorilerim</li>
             <li>Türlere göre koleksiyonlar</li>
-            <li>İstatistikler</li>
             <li>Keşfedilmeyi bekleyen filmler</li>
+            <li>İstatistikler</li>
           </ul>
         </div>
 
