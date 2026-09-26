@@ -13,7 +13,7 @@ export interface BlogPost {
 export async function getBlogPosts(limit = 6): Promise<BlogPost[]> {
   try {
     const res = await fetch(FEED_URL, {
-      next: { revalidate: 2592000 }, // 30 gün önbellekle
+      next: { revalidate: 604800 }, // 7 gün önbellekleme
     });
 
     if (!res.ok) {
