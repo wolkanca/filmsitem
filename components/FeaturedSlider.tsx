@@ -30,14 +30,15 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + (movies?.length || 1)) % (movies?.length || 1));
   }, [movies?.length]);
 
-  // Guard after all hooks
-  if (!movies || movies.length === 0) return null;
-
   // Slider otomatik geçiş: her 10 saniyede bir sonraki slayta geçer
   useEffect(() => {
+    if (!movies || movies.length === 0) return;
     const timer = setInterval(nextSlide, 10000);
     return () => clearInterval(timer);
-  }, [currentIndex, nextSlide]);
+  }, [currentIndex, nextSlide, movies]);
+
+  // Guard after all hooks
+  if (!movies || movies.length === 0) return null;
 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.changedTouches[0].clientX;
