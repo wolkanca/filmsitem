@@ -3,4 +3,40 @@ Allow: /
 Disallow: /izle/
 Content-Signal: search=yes, ai-train=no
 
+User-agent: Yandex
+User-agent: Amazonbot
+User-agent: CCBot
+User-agent: GPTBot
+User-agent: GenAI
+User-agent: Owler
+User-agent: FacebookBot
+User-agent: meta-externalagent
+User-agent: facebookexternalhit/1.1
+User-agent: AhrefsBot
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+User-agent: SemrushBot-BA
+User-agent: SemrushBot-SI
+User-agent: SemrushBot-SWA
+User-agent: SemrushBot-CT
+User-agent: DotBot
+User-agent: dotbot
+User-Agent: MJ12bot
+User-agent: DataForSeoBot
+User-agent: SEOkicks-Robot
+User-agent: SurveyBot
+User-agent: Alexibot
+User-agent: PetalBot
+User-agent: BLEXBot
+User-agent: Bytespider
+User-agent: MegaIndex.ru
+User-agent: megaIndex.ru
+User-agent: megaindex.com
+User-agent: MegaIndex.ru/2.0
+User-agent: sistrix
+User-agent: SISTRIX Crawler
+User-agent: SISTRIX
+User-agent: crawler4j
+Crawl-Delay: 20
+
 Sitemap: https://izlediklerim.com/sitemap.xml
