@@ -3,11 +3,14 @@ export function formatDate(dateString: string): string {
   try {
     const date = new Date(dateString);
     if (isNaN(date.getTime())) return dateString;
-    return date.toLocaleDateString('tr-TR', {
+    // timeZone: 'UTC' kullanılarak server (Vercel/UTC) ile client (farklı timezone)
+    // arasındaki hydration uyumsuzluğu önlenir.
+    return new Intl.DateTimeFormat('tr-TR', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
-    });
+      timeZone: 'UTC',
+    }).format(date);
   } catch {
     return dateString;
   }
