@@ -68,10 +68,30 @@ export function normalizeSearchString(text: string): string {
 /**
  * Film poster URL'sini gösterim için hazırlar.
  * Yerel veya izlediklerim.com kaynaklı poster yollarını alsetek.com CDN'ine yönlendirir.
+ * Localhost ortamında ise harici CDN dönüşümü yapmaz, yerel dosyaları korur.
  */
 export function getMoviePosterUrl(url?: string | null): string {
   if (!url) return '';
   const trimmed = url.trim();
+
+  // Localhost ortamındaysa harici CDN dönüşümü yapma
+  const isLocal =
+    process.env.NODE_ENV === 'development' ||
+    (typeof window !== 'undefined' &&
+      (window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1' ||
+        window.location.hostname === '[::1]'));
+
+  if (isLocal) {
+    if (trimmed.startsWith('https://izlediklerim.com/images/')) {
+      return trimmed.replace('https://izlediklerim.com', '');
+    }
+    if (trimmed.startsWith('http://izlediklerim.com/images/')) {
+      return trimmed.replace('http://izlediklerim.com', '');
+    }
+    return trimmed;
+  }
+
   if (trimmed.startsWith('/images/')) {
     return `https://alsetek.com/izlediklerim${trimmed}`;
   }
