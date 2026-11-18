@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { getMovies, getMovieById } from '@/lib/db';
 import MovieDetailClient from './MovieDetailClient';
 
@@ -16,6 +16,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const movie = await getMovieById(imdbId);
 
   if (!movie) {
+    const cleanId = imdbId?.trim().toLowerCase();
+    if (cleanId && /^tt\d+$/i.test(cleanId)) {
+      redirect(`https://www.imdb.com/title/${cleanId}/`);
+    }
+
     return {
       title: 'Film Bulunamadı',
     };
@@ -91,6 +96,11 @@ export default async function MovieDetailPage({ params }: Props) {
   const movie = await getMovieById(imdbId);
 
   if (!movie) {
+    const cleanId = imdbId?.trim().toLowerCase();
+    if (cleanId && /^tt\d+$/i.test(cleanId)) {
+      redirect(`https://www.imdb.com/title/${cleanId}/`);
+    }
+
     notFound();
   }
 
