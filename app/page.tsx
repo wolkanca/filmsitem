@@ -4,7 +4,7 @@ import { getBlogPosts } from '@/lib/blog';
 import MovieCard from '@/components/MovieCard';
 import { Star, Film, Clock, Sparkles, ArrowRight, ExternalLink, Newspaper, Shuffle, Info, BadgePlus, Crown } from 'lucide-react';
 import Image from 'next/image';
-import { formatDate } from '@/lib/utils';
+import { formatDate, getMoviePosterUrl } from '@/lib/utils';
 import FeaturedSlider from '@/components/FeaturedSlider';
 
 export const revalidate = 2592000; // 30 gün (saniye)
@@ -165,7 +165,7 @@ export default async function HomePage() {
         {featuredMovie?.poster && (
           <div className="absolute inset-0 -z-20 opacity-25 mix-blend-overlay">
             <Image
-              src={featuredMovie.poster}
+              src={getMoviePosterUrl(featuredMovie.poster)}
               alt="Poster blur"
               fill
               sizes="100vw"

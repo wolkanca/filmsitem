@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { Search, X, Film, Tv, User, Tag, List, Star, Loader2, Sparkles } from 'lucide-react';
 import { Movie } from '@/types';
-import { slugify, getRatingColor, normalizeSearchString } from '@/lib/utils';
+import { slugify, getRatingColor, normalizeSearchString, getMoviePosterUrl } from '@/lib/utils';
 import Image from 'next/image';
 
 interface SearchItem {
@@ -535,7 +535,7 @@ export default function GlobalSearch() {
                                   <div className="relative w-8 h-12 bg-zinc-900 border border-white/5 rounded-md overflow-hidden shrink-0">
                                     {item.poster ? (
                                       <Image
-                                        src={item.poster}
+                                        src={getMoviePosterUrl(item.poster)}
                                         alt={item.title}
                                         fill
                                         sizes="32px"

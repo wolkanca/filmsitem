@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useRouter } from "next/navigation";
 import { Star, ArrowRight, ChevronLeft, ChevronRight, Play, Film } from 'lucide-react';
 import TrailerModal from '@/components/TrailerModal';
+import { getMoviePosterUrl } from '@/lib/utils';
 
 interface FeaturedSliderProps {
   movies: Movie[];
@@ -80,7 +81,7 @@ export default function FeaturedSlider({ movies }: FeaturedSliderProps) {
                 className="absolute inset-0 block"
               >
                 <Image
-                  src={currentMovie.poster}
+                  src={getMoviePosterUrl(currentMovie.poster)}
                   alt={currentMovie.title}
                   fill
                   sizes="(max-width: 640px) 150px, 200px"

@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Play } from 'lucide-react';
+import { getMoviePosterUrl } from '@/lib/utils';
 
 // Known placeholder image patterns — when the poster matches these, we treat it as "no poster"
 const PLACEHOLDER_PATTERNS = [
@@ -12,7 +13,6 @@ const PLACEHOLDER_PATTERNS = [
   'placehold.co',
   'placeholder.com',
   'dummyimage.com',
-  'alsetek.com'
 ];
 
 function isPlaceholderUrl(url?: string | null): boolean {
@@ -51,14 +51,15 @@ export default function PosterImage({
   disableYoutubeClick = false,
 }: PosterImageProps) {
   const effectiveFetchPriority = fetchPriority ?? (priority ? 'high' : undefined);
+  const resolvedSrc = src ? getMoviePosterUrl(src) : src;
 
   // If the src is a placeholder AND we have a trailer, skip straight to YouTube thumbnail
   const shouldUseYoutubeDirect =
-    trailerYoutubeId && isPlaceholderUrl(src);
+    trailerYoutubeId && isPlaceholderUrl(resolvedSrc);
 
   const initialSrc = shouldUseYoutubeDirect
     ? `https://img.youtube.com/vi/${trailerYoutubeId}/hqdefault.jpg`
-    : src;
+    : resolvedSrc;
 
   const safeSrc: string | null =
     !initialSrc || isPlaceholderUrl(initialSrc) ? null : initialSrc;
@@ -71,13 +72,14 @@ export default function PosterImage({
 
   // Sync state if src or trailerYoutubeId changes
   useEffect(() => {
-    const useDirect = trailerYoutubeId && isPlaceholderUrl(src);
+    const activeSrc = src ? getMoviePosterUrl(src) : src;
+    const useDirect = trailerYoutubeId && isPlaceholderUrl(activeSrc);
     if (useDirect) {
       setImgSrc(`https://img.youtube.com/vi/${trailerYoutubeId}/hqdefault.jpg`);
       setTriedYoutube(true);
       setIsYoutubeFallback(true);
     } else {
-      setImgSrc(!src || isPlaceholderUrl(src) ? null : src);
+      setImgSrc(!activeSrc || isPlaceholderUrl(activeSrc) ? null : activeSrc);
       setTriedYoutube(false);
       setIsYoutubeFallback(false);
     }

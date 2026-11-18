@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Star, Calendar, Clock, User, Film, ExternalLink, Eye, Play, Pencil, Clapperboard, Share2, Globe, CalendarDays, Banknote } from 'lucide-react';
 import { Movie } from '@/types';
-import { getRatingColor, formatDate } from '@/lib/utils';
+import { getRatingColor, formatDate, getMoviePosterUrl } from '@/lib/utils';
 import PosterModal from '@/components/PosterModal';
 import TrailerModal from '@/components/TrailerModal';
 import MovieCard from '@/components/MovieCard';
@@ -212,7 +212,7 @@ export default function MovieDetailClient({
         {/* Backdrop Image */}
         <div className="absolute inset-0 z-0">
           <PosterImage
-            src={`https://izlediklerim.com${movie.poster}`}
+            src={getMoviePosterUrl(movie.poster)}
             alt={movie.title}
             fill
             sizes="100vw"
@@ -235,7 +235,7 @@ export default function MovieDetailClient({
               onClick={() => (hasRealPoster || isAdmin) && setIsPosterModalOpen(true)}
               className={`relative aspect-[2/3] w-60 sm:w-60 md:w-60 overflow-hidden rounded-2xl bg-zinc-900 border border-white/10 shadow-2xl transition-transform hover:scale-[1.02] duration-300 group ${(hasRealPoster || isAdmin) ? 'cursor-pointer' : 'cursor-default'}`}>
               <PosterImage
-                src={`https://izlediklerim.com${movie.poster}`}
+                src={getMoviePosterUrl(movie.poster)}
                 alt={`${movie.title} (${movie.year}) filminin afişi`}
                 fill
                 sizes="(max-width: 640px) 240px, 240px"
@@ -648,7 +648,7 @@ export default function MovieDetailClient({
         <PosterModal
           isOpen={isPosterModalOpen}
           onClose={() => setIsPosterModalOpen(false)}
-          imageUrl={movie.poster}
+          imageUrl={getMoviePosterUrl(movie.poster)}
           title={movie.title}
           year={movie.year}
           isAdmin={isAdmin}

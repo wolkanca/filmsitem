@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getMovies } from '@/lib/db';
-import { slugify } from '@/lib/utils';
+import { slugify, getMoviePosterUrl } from '@/lib/utils';
 import { List, Film, ChevronRight } from 'lucide-react';
 
 export const revalidate = 2592000; // 30 gün (saniye)
@@ -439,7 +439,7 @@ export default async function ListsPage() {
                 {list.poster && (
                   <div className="absolute inset-0 z-0 opacity-15 transition-opacity duration-500 group-hover:opacity-25">
                     <Image
-                      src={list.poster}
+                      src={getMoviePosterUrl(list.poster)}
                       alt={list.name}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"

@@ -1,4 +1,5 @@
 import movies from '@/data/movies.json';
+import { getMoviePosterUrl } from '@/lib/utils';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-static';
@@ -146,7 +147,7 @@ function getMoviePages(): SitemapItem[] {
             images: movie.poster
                 ? [
                     {
-                        loc: `${SITE_URL}${movie.poster}`,
+                        loc: getMoviePosterUrl(movie.poster),
                         title: movie.title,
                     },
                 ]

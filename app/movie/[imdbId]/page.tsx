@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound, redirect } from 'next/navigation';
 import { getMovies, getMovieById } from '@/lib/db';
+import { getMoviePosterUrl } from '@/lib/utils';
 import MovieDetailClient from './MovieDetailClient';
 
 export const revalidate = 2592000; // 30 gün (saniye)
@@ -73,7 +74,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: movie.poster
         ? [
           {
-            url: movie.poster,
+            url: getMoviePosterUrl(movie.poster),
             alt: `${movie.title} (${movie.year})`,
           },
         ]
@@ -84,7 +85,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: 'summary_large_image',
       title: fullTitle,
       description: metaDescription,
-      images: movie.poster ? [movie.poster] : [],
+      images: movie.poster ? [getMoviePosterUrl(movie.poster)] : [],
       site: '@wolkanca',
       creator: '@wolkanca',
     },
@@ -421,7 +422,7 @@ export default async function MovieDetailPage({ params }: Props) {
     '@type': 'Movie',
 
     name: movie.title,
-    image: `https://izlediklerim.com${movie.poster}`,
+    image: getMoviePosterUrl(movie.poster),
     url: `https://izlediklerim.com/movie/${movie.imdbId}`,
 
     ...(movie.releaseDate

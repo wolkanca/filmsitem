@@ -65,3 +65,22 @@ export function normalizeSearchString(text: string): string {
     .join('');
 }
 
+/**
+ * Film poster URL'sini gösterim için hazırlar.
+ * Yerel veya izlediklerim.com kaynaklı poster yollarını alsetek.com CDN'ine yönlendirir.
+ */
+export function getMoviePosterUrl(url?: string | null): string {
+  if (!url) return '';
+  const trimmed = url.trim();
+  if (trimmed.startsWith('/images/')) {
+    return `https://alsetek.com/izlediklerim${trimmed}`;
+  }
+  if (trimmed.startsWith('https://izlediklerim.com/images/')) {
+    return trimmed.replace('https://izlediklerim.com/images/', 'https://alsetek.com/izlediklerim/images/');
+  }
+  if (trimmed.startsWith('http://izlediklerim.com/images/')) {
+    return trimmed.replace('http://izlediklerim.com/images/', 'https://alsetek.com/izlediklerim/images/');
+  }
+  return trimmed;
+}
+

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import Image from 'next/image';
 import { X, ImageIcon, Pencil, Check, Loader2 } from 'lucide-react';
+import { getMoviePosterUrl } from '@/lib/utils';
 
 interface PosterModalProps {
   isOpen: boolean;
@@ -160,7 +161,7 @@ export default function PosterModal({
           {imageUrl ? (
             <div className="relative aspect-[2/3] w-full max-h-[70vh] min-h-[360px] rounded-2xl overflow-hidden bg-zinc-900 border border-white/5">
               <Image
-                src={imageUrl}
+                src={getMoviePosterUrl(imageUrl)}
                 alt={title}
                 fill
                 className="object-contain"
